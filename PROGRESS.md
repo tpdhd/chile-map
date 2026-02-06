@@ -21,7 +21,7 @@
 
 ### 2026-02-06 (Cron Job)
 **Locations expanded:** Valdivia, Osorno
-**New recommendations added:** 22
+**New recommendations added:** 22 (hit Brave Search rate limits, otherwise would have done more)
 
 **Valdivia (6 → 18, +12):**
 - Noche Valdiviana 2025 (March 1 festival!)
