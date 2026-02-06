@@ -58,4 +58,3 @@ export default defineConfig({
     })
   ],
 })
-// build optimization
