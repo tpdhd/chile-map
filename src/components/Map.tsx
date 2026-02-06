@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import { MapContainer, TileLayer, Marker, Popup, Polyline, useMap } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Polyline, useMap } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import { Location, Recommendation } from '../App'
@@ -141,7 +141,7 @@ export default function Map({
       minZoom={4}
       maxZoom={15}
       className="h-full w-full"
-      attributionControl={true}
+      attributionControl={false}
       zoomControl={true}
     >
       {/* Dark mode tile layer */}
@@ -166,7 +166,7 @@ export default function Map({
         positions={routeCoordinates}
       />
 
-      {/* Location markers */}
+      {/* Location markers - No popup, opens bottom sheet directly */}
       {locations.map((location) => (
         <Marker
           key={location.id}
@@ -175,28 +175,10 @@ export default function Map({
           eventHandlers={{
             click: () => onLocationSelect(location),
           }}
-        >
-          <Popup>
-            <div className="text-chile-text-primary">
-              <h3 className="font-bold text-lg mb-1">{location.name}</h3>
-              <p className="text-sm text-chile-text-secondary mb-2">
-                {location.startDate} - {location.endDate} • {location.durationDays} days
-              </p>
-              <p className="text-sm mb-3">{location.description}</p>
-              <div className="flex items-center gap-2">
-                <span className="px-2 py-1 text-xs rounded bg-chile-bg-card">
-                  {location.recommendations.length} recommendations
-                </span>
-                <span className="px-2 py-1 text-xs rounded bg-chile-bg-card">
-                  {location.type}
-                </span>
-              </div>
-            </div>
-          </Popup>
-        </Marker>
+        />
       ))}
 
-      {/* Recommendation markers for selected location */}
+      {/* Recommendation markers for selected location - No popup, updates bottom sheet */}
       {selectedLocation && selectedLocation.recommendations
         .filter(rec => !activeCategory || rec.category === activeCategory)
         .map((recommendation) => (
@@ -207,37 +189,7 @@ export default function Map({
             eventHandlers={{
               click: () => onRecommendationSelect(recommendation),
             }}
-          >
-            <Popup>
-              <div className="text-chile-text-primary max-w-xs">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-lg">{categoryIcons[recommendation.category] || '📍'}</span>
-                  <h3 className="font-bold text-base">{recommendation.name}</h3>
-                </div>
-                <p className="text-sm text-chile-text-secondary mb-2">
-                  {recommendation.nameEs}
-                </p>
-                <p className="text-sm mb-3">{recommendation.description}</p>
-                <div className="flex flex-wrap gap-1 mb-3">
-                  {recommendation.tags.map((tag, idx) => (
-                    <span key={idx} className="px-2 py-0.5 text-xs rounded bg-chile-bg-card">
-                      #{tag}
-                    </span>
-                  ))}
-                </div>
-                {recommendation.address && (
-                  <p className="text-xs text-chile-text-muted mb-2">
-                    📍 {recommendation.address}
-                  </p>
-                )}
-                {recommendation.priceRange && (
-                  <p className="text-xs text-chile-text-muted">
-                    💰 {recommendation.priceRange}
-                  </p>
-                )}
-              </div>
-            </Popup>
-          </Marker>
+          />
         ))}
 
       {/* Map controller for view changes */}

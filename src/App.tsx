@@ -101,13 +101,16 @@ function App() {
     setVisited(newVisited)
   }
 
-  // Filter recommendations by search and category
+  // Filter recommendations by search and category (searches through invisible tags too)
   const filteredRecommendations = selectedLocation?.recommendations.filter(rec => {
     const matchesCategory = !activeCategory || rec.category === activeCategory
+    const query = searchQuery.toLowerCase()
     const matchesSearch = !searchQuery || 
-      rec.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      rec.nameEs?.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      rec.category.toLowerCase().includes(searchQuery.toLowerCase())
+      rec.name.toLowerCase().includes(query) ||
+      rec.nameEs?.toLowerCase().includes(query) ||
+      rec.category.toLowerCase().includes(query) ||
+      rec.description?.toLowerCase().includes(query) ||
+      rec.tags?.some(tag => tag.toLowerCase().includes(query))
     return matchesCategory && matchesSearch
   }) || []
 
@@ -158,8 +161,20 @@ function App() {
         )}
       </div>
 
-      {/* FLOATING MENU - Top Right */}
-      <div className="absolute top-4 right-4 z-[600]">
+      {/* FLOATING MENU - Top Right with Search */}
+      <div className="absolute top-4 right-4 z-[600] flex items-center gap-2">
+        {/* Omni-Search */}
+        <div className="relative">
+          <input
+            type="text"
+            placeholder="🔍 Suchen..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-32 focus:w-48 transition-all px-3 py-2 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg text-sm placeholder:text-chile-text-muted focus:outline-none border border-white/10"
+          />
+        </div>
+        
+        {/* Burger Menu */}
         <button
           onClick={() => setShowMenu(!showMenu)}
           className="w-10 h-10 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg flex items-center justify-center border border-white/10"
@@ -194,7 +209,6 @@ function App() {
             </button>
             <button
               onClick={() => {
-                // Export favorites as text
                 const allRecs = tripData.locations.flatMap(loc => 
                   loc.recommendations
                     .filter(rec => favorites.has(rec.id))
@@ -213,6 +227,15 @@ function App() {
               <span>📋</span> Favoriten kopieren
             </button>
             <div className="border-t border-white/10">
+              <button
+                onClick={() => {
+                  alert('ℹ️ Chile Trip Map\n\nKartendaten:\n© OpenStreetMap contributors\n© CARTO\n\nPowered by Leaflet\n\nMade with ❤️ for our Chile adventure')
+                  setShowMenu(false)
+                }}
+                className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3 text-chile-text-muted"
+              >
+                <span>ℹ️</span> Info & Credits
+              </button>
               <div className="px-4 py-2 text-xs text-chile-text-muted">
                 {tripData.trip.totalDays} Tage • {tripData.locations.length} Orte
               </div>
@@ -250,54 +273,41 @@ function App() {
           absolute bottom-0 left-0 right-0 z-[500]
           bg-chile-bg-card/95 backdrop-blur-sm rounded-t-3xl shadow-lg
           transition-transform duration-300 ease-out
-          ${sheetExpanded ? 'translate-y-0' : 'translate-y-[calc(100%-80px)]'}
+          ${sheetExpanded ? 'translate-y-0' : 'translate-y-[calc(100%-64px)]'}
         `}
-        style={{ maxHeight: '75vh' }}
+        style={{ maxHeight: '50vh' }}
       >
-        {/* Sheet Handle */}
+        {/* Sheet Handle - Clear drag indicator */}
         <div 
-          className="flex justify-center py-3 cursor-pointer"
+          className="flex flex-col items-center pt-2 pb-1 cursor-pointer group"
           onClick={() => setSheetExpanded(!sheetExpanded)}
         >
-          <div className="w-12 h-1.5 bg-white/30 rounded-full" />
+          <div className="w-10 h-1 bg-white/40 rounded-full group-hover:bg-white/60 transition-colors" />
+          <div className="w-6 h-0.5 bg-white/20 rounded-full mt-1" />
         </div>
 
-        {/* Sheet Header - Always visible */}
-        <div className="px-4 pb-3">
-          <div className="flex items-center justify-between">
+        {/* Sheet Header - Compact */}
+        <div className="px-4 pb-2">
+          <div 
+            className="flex items-center justify-between cursor-pointer"
+            onClick={() => setSheetExpanded(!sheetExpanded)}
+          >
             <div className="flex-1 min-w-0">
-              <h2 className="font-bold text-lg truncate">{selectedLocation?.name || 'Wähle einen Ort'}</h2>
+              <h2 className="font-bold text-base truncate">{selectedLocation?.name || 'Wähle einen Ort'}</h2>
               {selectedLocation && (
-                <p className="text-sm text-chile-text-muted">
+                <p className="text-xs text-chile-text-muted">
                   {selectedLocation.recommendations.length} Empfehlungen
                 </p>
               )}
             </div>
-            <button
-              onClick={() => setSheetExpanded(!sheetExpanded)}
-              className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center"
-            >
-              <span className={`transform transition-transform ${sheetExpanded ? 'rotate-180' : ''}`}>▲</span>
-            </button>
           </div>
         </div>
 
         {/* Sheet Content - Only when expanded */}
         {sheetExpanded && selectedLocation && (
-          <div className="overflow-y-auto px-4 pb-6" style={{ maxHeight: 'calc(75vh - 100px)' }}>
-            {/* Search */}
-            <div className="mb-4">
-              <input
-                type="text"
-                placeholder="Suchen..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full px-4 py-2 bg-white/10 rounded-xl text-sm placeholder:text-chile-text-muted focus:outline-none focus:ring-2 focus:ring-chile-accent-teal"
-              />
-            </div>
-
-            {/* Category Filter */}
-            <div className="flex gap-2 overflow-x-auto pb-3 mb-4 scrollbar-hide">
+          <div className="overflow-y-auto px-4 pb-4" style={{ maxHeight: 'calc(50vh - 70px)' }}>
+            {/* Category Filter - Compact */}
+            <div className="flex gap-1.5 overflow-x-auto pb-2 mb-2 scrollbar-hide">
               <button
                 onClick={() => setActiveCategory(null)}
                 className={`px-3 py-1.5 rounded-full text-sm whitespace-nowrap ${!activeCategory ? 'bg-chile-accent-red text-white' : 'bg-white/10'}`}
@@ -320,53 +330,41 @@ function App() {
               })}
             </div>
 
-            {/* Recommendations List */}
-            <div className="space-y-3">
+            {/* Recommendations List - Compact */}
+            <div className="space-y-2">
               {filteredRecommendations.map(rec => (
                 <div 
                   key={rec.id}
                   className={`
-                    p-4 rounded-xl transition-all
+                    p-2.5 rounded-lg transition-all
                     ${selectedRecommendation?.id === rec.id ? 'bg-chile-accent-red/20 ring-1 ring-chile-accent-red' : 'bg-white/5'}
-                    ${visited.has(rec.id) ? 'border-l-4 border-green-500' : ''}
+                    ${visited.has(rec.id) ? 'border-l-2 border-green-500' : ''}
                   `}
                   onClick={() => handleRecommendationSelect(rec)}
                 >
-                  <div className="flex items-start gap-3">
-                    {/* Category Icon */}
-                    <span className="text-2xl">{CATEGORY_ICONS[rec.category] || '📍'}</span>
+                  <div className="flex items-center gap-2">
+                    {/* Category Icon - Smaller */}
+                    <span className="text-lg flex-shrink-0">{CATEGORY_ICONS[rec.category] || '📍'}</span>
                     
-                    {/* Content */}
+                    {/* Content - Compact */}
                     <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-2">
-                        <span className="font-medium truncate">{rec.name}</span>
+                      <div className="flex items-center gap-1">
+                        <span className="font-medium text-sm truncate">{rec.name}</span>
                         {visited.has(rec.id) && <span className="text-green-400 text-xs">✓</span>}
                       </div>
-                      {rec.nameEs && (
-                        <div className="text-xs text-chile-text-muted truncate">{rec.nameEs}</div>
-                      )}
-                      <div className="text-xs text-chile-text-muted mt-1">
-                        {rec.category}
-                        {rec.priceRange && ` • ${rec.priceRange}`}
+                      <div className="text-xs text-chile-text-muted truncate">
+                        {rec.category}{rec.priceRange && ` • ${rec.priceRange}`}
                       </div>
-                      {rec.description && (
-                        <p className="text-sm text-chile-text-secondary mt-2 line-clamp-2">{rec.description}</p>
-                      )}
-                      {notes[rec.id] && (
-                        <div className="mt-2 text-xs bg-chile-accent-teal/20 text-chile-accent-teal px-2 py-1 rounded">
-                          📝 {notes[rec.id]}
-                        </div>
-                      )}
                     </div>
 
-                    {/* Actions */}
-                    <div className="flex flex-col gap-2">
+                    {/* Actions - Side by side */}
+                    <div className="flex items-center gap-1 flex-shrink-0">
                       <button
                         onClick={(e) => {
                           e.stopPropagation()
                           toggleFavorite(rec.id)
                         }}
-                        className={`w-8 h-8 rounded-full flex items-center justify-center ${favorites.has(rec.id) ? 'bg-red-500' : 'bg-white/10'}`}
+                        className={`w-7 h-7 rounded-full flex items-center justify-center text-sm ${favorites.has(rec.id) ? 'bg-red-500' : 'bg-white/10'}`}
                       >
                         {favorites.has(rec.id) ? '❤️' : '🤍'}
                       </button>
@@ -375,50 +373,58 @@ function App() {
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
-                        className="w-8 h-8 rounded-full bg-chile-accent-teal flex items-center justify-center"
+                        className="w-7 h-7 rounded-full bg-chile-accent-teal flex items-center justify-center text-sm"
                       >
-                        📍
+                        ➤
                       </a>
                     </div>
                   </div>
 
-                  {/* Expanded detail when selected */}
+                  {/* Expanded detail when selected - Compact */}
                   {selectedRecommendation?.id === rec.id && (
-                    <div className="mt-4 pt-4 border-t border-white/10 space-y-3">
+                    <div className="mt-2 pt-2 border-t border-white/10 space-y-1.5 text-xs">
+                      {rec.description && (
+                        <p className="text-chile-text-secondary">{rec.description}</p>
+                      )}
                       {rec.address && (
-                        <div className="text-sm">
+                        <div>
                           <span className="text-chile-text-muted">📍 </span>
                           {rec.address}
                         </div>
                       )}
                       {rec.openingHours && (
-                        <div className="text-sm">
+                        <div>
                           <span className="text-chile-text-muted">🕐 </span>
                           {rec.openingHours}
                         </div>
                       )}
                       {rec.mustTry && rec.mustTry.length > 0 && (
-                        <div className="text-sm">
-                          <span className="text-chile-text-muted">⭐ Must-Try: </span>
+                        <div>
+                          <span className="text-chile-text-muted">⭐ </span>
                           {rec.mustTry.join(', ')}
                         </div>
                       )}
+                      {notes[rec.id] && (
+                        <div className="bg-chile-accent-teal/20 text-chile-accent-teal px-2 py-1 rounded">
+                          📝 {notes[rec.id]}
+                        </div>
+                      )}
                       
-                      {/* Actions Row */}
-                      <div className="flex gap-2 pt-2">
+                      {/* Actions Row - Compact */}
+                      <div className="flex gap-2 pt-1">
                         <button
                           onClick={(e) => {
                             e.stopPropagation()
                             toggleVisited(rec.id)
                           }}
-                          className={`flex-1 py-2 rounded-lg text-sm ${visited.has(rec.id) ? 'bg-green-500 text-white' : 'bg-white/10'}`}
+                          className={`flex-1 py-1.5 rounded text-xs ${visited.has(rec.id) ? 'bg-green-500 text-white' : 'bg-white/10'}`}
                         >
-                          {visited.has(rec.id) ? '✅ Besucht' : '☐ Als besucht markieren'}
+                          {visited.has(rec.id) ? '✅ Besucht' : '☐ Besucht'}
                         </button>
                         <button
                           onClick={(e) => {
                             e.stopPropagation()
-                            const note = prompt('Notiz hinzufügen:', notes[rec.id] || '')
+                            const note = prompt('Notiz:', notes[rec.id] || '')
                             if (note !== null) {
                               if (note.trim()) {
                                 setNotes({ ...notes, [rec.id]: note.trim() })
@@ -429,7 +435,7 @@ function App() {
                               }
                             }
                           }}
-                          className="px-4 py-2 rounded-lg text-sm bg-white/10"
+                          className="px-3 py-1.5 rounded text-xs bg-white/10"
                         >
                           📝
                         </button>
