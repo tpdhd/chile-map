@@ -29,28 +29,27 @@ export default defineConfig({
         ],
       },
       manifest: {
-        name: 'Chile Road Trip March 2025',
+        name: 'Chile Road Trip 2025',
         short_name: 'Chile Trip',
-        description: 'Interactive map of our Chile road trip with 97 curated recommendations',
-        theme_color: '#0f0f14',
+        description: 'Interactive map for our Chile adventure',
+        theme_color: '#dc2626',
         background_color: '#0f0f14',
         display: 'standalone',
-        orientation: 'portrait-primary',
-        start_url: '/',
-        scope: '/',
-        categories: ['travel', 'navigation', 'lifestyle'],
+        orientation: 'any',
+        start_url: '/chile-map/',
+        scope: '/chile-map/',
+        id: '/chile-map/',
+        categories: ['travel', 'navigation'],
         icons: [
           {
             src: 'pwa-192x192.svg',
             sizes: '192x192',
-            type: 'image/svg+xml',
-            purpose: 'any'
+            type: 'image/svg+xml'
           },
           {
             src: 'pwa-512x512.svg',
             sizes: '512x512',
-            type: 'image/svg+xml',
-            purpose: 'any maskable'
+            type: 'image/svg+xml'
           }
         ]
       }
