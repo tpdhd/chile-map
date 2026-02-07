@@ -2277,7 +2277,7 @@
       "endDate": "2025-03-15",
       "durationDays": 3,
       "type": "main",
-      "description": "Prehistoric landscape with ancient araucaria forests, volcanic terrain, and emerald lakes",
+      "description": "Prähistorische Landschaft mit uralten Araukarienwäldern, vulkanischem Gelände und smaragdgrünen Seen",
       "recommendations": [
         {
           "id": "conguillio-laguna-conguillio",
@@ -2288,7 +2288,7 @@
             -38.66,
             -71.62
           ],
-          "description": "Stunning emerald lake surrounded by araucaria forests with Llaima volcano backdrop. Easy trails around the lake. Main attraction of the park.",
+          "description": "Atemberaubender smaragdgrüner See, umgeben von Araukarienwäldern mit dem Vulkan Llaima im Hintergrund. Einfache Wanderwege um den See. Hauptattraktion des Parks.",
           "descriptionEs": "Impresionante lago esmeralda rodeado de bosques de araucarias con el volcán Llaima de fondo. Senderos fáciles alrededor del lago. Principal atracción del parque.",
           "address": "Parque Nacional Conguillío",
           "googleMapsLink": "https://maps.google.com/?q=-38.6600,-71.6200",
@@ -2311,7 +2311,7 @@
             -38.65,
             -71.63
           ],
-          "description": "Walk among thousand-year-old araucaria trees (monkey puzzle trees). Includes the famous 'Araucaria Madre' with 2m trunk diameter. Moderate 2-3 hour hike.",
+          "description": "Wandere zwischen tausendjährigen Araukarien. Beinhaltet die berühmte 'Araucaria Madre' mit 2m Stammdurchmesser. Moderate 2-3-stündige Wanderung.",
           "descriptionEs": "Camina entre araucarias milenarias. Incluye la famosa 'Araucaria Madre' con tronco de 2m de diámetro. Caminata moderada de 2-3 horas.",
           "address": "Parque Nacional Conguillío",
           "website": "https://sendasconguillio.cl/",
@@ -2335,7 +2335,7 @@
             -38.67,
             -71.61
           ],
-          "description": "Small lagoon with vivid colors reflecting the surrounding forest. Easy 30-minute trail, perfect to combine with other short hikes.",
+          "description": "Kleine Lagune mit lebhaften Farben, die den umgebenden Wald widerspiegeln. Einfacher 30-Minuten-Weg, perfekt zum Kombinieren mit anderen kurzen Wanderungen.",
           "descriptionEs": "Pequeña laguna con colores vívidos que reflejan el bosque circundante. Sendero fácil de 30 minutos, perfecto para combinar con otras caminatas cortas.",
           "address": "Parque Nacional Conguillío",
           "googleMapsLink": "https://maps.google.com/?q=-38.6700,-71.6100",
@@ -2358,7 +2358,7 @@
             -38.64,
             -71.65
           ],
-          "description": "10km trail with excellent views of Lago Conguillío, Volcán Llaima, and diverse forest types at different altitudes. Moderate to challenging, 4-5 hours.",
+          "description": "10km langer Weg mit hervorragenden Ausblicken auf den Lago Conguillío, Volcán Llaima und verschiedene Waldtypen in unterschiedlichen Höhenlagen. Moderat bis anspruchsvoll, 4-5 Stunden.",
           "descriptionEs": "Sendero de 10km con excelentes vistas del Lago Conguillío, Volcán Llaima y diversos tipos de bosque. Moderado a desafiante, 4-5 horas.",
           "address": "Parque Nacional Conguillío",
           "website": "https://sendasconguillio.cl/parque-nacional-conguillio/atractivos/",
@@ -2382,7 +2382,7 @@
             -38.63,
             -71.67
           ],
-          "description": "Lake rich in birdlife, accessible from the Captren entrance. 1-hour loop trail around the lagoon. Good for birdwatching.",
+          "description": "Vogelreicher See, zugänglich vom Captrén-Eingang. 1-stündiger Rundweg um die Lagune. Gut für Vogelbeobachtung.",
           "descriptionEs": "Lago rico en avifauna, accesible desde la entrada de Captren. Sendero de 1 hora alrededor de la laguna. Bueno para observación de aves.",
           "address": "Sector Captrén, Parque Nacional Conguillío",
           "googleMapsLink": "https://maps.google.com/?q=-38.6300,-71.6700",
@@ -2405,7 +2405,7 @@
             -38.635,
             -71.66
           ],
-          "description": "6km trail through native forest, ideal for families. Named for the black woodpecker (carpintero negro) often spotted here.",
+          "description": "6km langer Weg durch einheimischen Wald, ideal für Familien. Benannt nach dem Schwarzspecht (Carpintero Negro), der hier oft gesichtet wird.",
           "descriptionEs": "Sendero de 6km a través del bosque nativo, ideal para familias. Nombrado por el carpintero negro que se puede observar aquí.",
           "address": "Parque Nacional Conguillío",
           "googleMapsLink": "https://maps.google.com/?q=-38.6350,-71.6600",
@@ -2428,7 +2428,7 @@
             -38.45,
             -71.5667
           ],
-          "description": "Less visited reserve adjacent to Conguillío with pristine araucaria forests. Good alternative base with lodges and restaurants.",
+          "description": "Weniger besuchtes Reservat angrenzend an Conguillío mit unberührten Araukarienwäldern. Gute alternative Basis mit Lodges und Restaurants.",
           "descriptionEs": "Reserva menos visitada adyacente a Conguillío con bosques de araucarias prístinos. Buena base alternativa con cabañas y restaurantes.",
           "address": "Reserva Nacional Malalcahuello",
           "googleMapsLink": "https://maps.google.com/?q=-38.4500,-71.5667",
@@ -2451,7 +2451,7 @@
             -38.7,
             -71.55
           ],
-          "description": "Impressive waterfall accessible from the southern park entrance. Short walk from the road. Combine with Laguna Verde.",
+          "description": "Beeindruckender Wasserfall, zugänglich vom Südeingang des Parks. Kurzer Weg von der Straße. Kombinieren mit Laguna Verde.",
           "descriptionEs": "Impresionante cascada accesible desde la entrada sur del parque. Caminata corta desde el camino. Combina con Laguna Verde.",
           "address": "Entrada Sur, Parque Nacional Conguillío",
           "googleMapsLink": "https://maps.google.com/?q=-38.7000,-71.5500",
@@ -2473,7 +2473,7 @@
             -38.655,
             -71.625
           ],
-          "description": "Lodging inside the park at the edge of Lago Conguillío. Wake up surrounded by araucarias. Book well in advance for March.",
+          "description": "Unterkunft im Park am Rand des Lago Conguillío. Wache umgeben von Araukarien auf. Für März weit im Voraus buchen.",
           "descriptionEs": "Alojamiento dentro del parque junto al Lago Conguillío. Despierta rodeado de araucarias. Reserva con anticipación para marzo.",
           "address": "Lago Conguillío, Parque Nacional",
           "website": "https://sendasconguillio.cl/",
@@ -2496,7 +2496,7 @@
             -38.69,
             -71.57
           ],
-          "description": "Green-tinted lagoon near the southern entrance. Easy access, beautiful reflections of surrounding forest.",
+          "description": "Grün schimmernde Lagune nahe dem Südeingang. Einfacher Zugang, wunderschöne Spiegelungen des umgebenden Waldes.",
           "descriptionEs": "Laguna de tinte verde cerca de la entrada sur. Fácil acceso, hermosos reflejos del bosque circundante.",
           "address": "Sector Sur, Parque Nacional Conguillío",
           "googleMapsLink": "https://maps.google.com/?q=-38.6900,-71.5700",
@@ -2519,7 +2519,7 @@
             -38.68,
             -71.6
           ],
-          "description": "Llaima (3,125m) is one of Chile's most active volcanoes. Multiple viewpoints within the park offer dramatic perspectives, especially at sunrise.",
+          "description": "Llaima (3.125m) ist einer der aktivsten Vulkane Chiles. Mehrere Aussichtspunkte im Park bieten dramatische Perspektiven, besonders bei Sonnenaufgang.",
           "descriptionEs": "Llaima (3.125m) es uno de los volcanes más activos de Chile. Múltiples miradores dentro del parque ofrecen perspectivas dramáticas, especialmente al amanecer.",
           "address": "Parque Nacional Conguillío",
           "googleMapsLink": "https://maps.google.com/?q=-38.6800,-71.6000",
@@ -2542,7 +2542,7 @@
             -38.655,
             -71.64
           ],
-          "description": "Scenic hike to a sacred rock formation in the araucaria forest. Moderate difficulty, about 3 hours round trip. Less crowded than main trails.",
+          "description": "Malerische Wanderung zu einer heiligen Felsformation im Araukarienwald. Mittlerer Schwierigkeitsgrad, etwa 3 Stunden Rundweg. Weniger überlaufen als die Hauptwege.",
           "descriptionEs": "Caminata escénica a una formación rocosa sagrada en el bosque de araucarias. Dificultad moderada, unas 3 horas ida y vuelta. Menos concurrido que senderos principales.",
           "address": "Sector Captrén, Parque Nacional Conguillío",
           "googleMapsLink": "https://maps.google.com/?q=-38.6550,-71.6400",
@@ -2565,7 +2565,7 @@
             -38.38,
             -71.58
           ],
-          "description": "Active volcano near Malalcahuello with dramatic crater. Summer hiking possible with guide. Views of the Araucanía from the slopes.",
+          "description": "Aktiver Vulkan nahe Malalcahuello mit dramatischem Krater. Sommerwanderungen mit Führer möglich. Blick auf die Araucanía von den Hängen.",
           "descriptionEs": "Volcán activo cerca de Malalcahuello con cráter dramático. Senderismo de verano posible con guía. Vistas de la Araucanía desde las laderas.",
           "address": "Reserva Nacional Malalcahuello",
           "googleMapsLink": "https://maps.google.com/?q=-38.3800,-71.5800",
