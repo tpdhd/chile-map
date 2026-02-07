@@ -1602,7 +1602,7 @@
       "endDate": "2025-03-10",
       "durationDays": 2,
       "type": "main",
-      "description": "Rural area with the infamous former Colonia Dignidad, now Villa Baviera - a complex site of memory and German heritage",
+      "description": "Ländliche Gegend mit der berüchtigten ehemaligen Colonia Dignidad, heute Villa Baviera - ein komplexer Ort der Erinnerung und des deutschen Erbes",
       "recommendations": [
         {
           "id": "san-carlos-villa-baviera",
@@ -1613,7 +1613,7 @@
             -36.5833,
             -71.6833
           ],
-          "description": "Former Colonia Dignidad, now open for tourism. German-style village with hotel, restaurant (Zippelhaus), and small museum about its dark history. Complex site of memory.",
+          "description": "Ehemalige Colonia Dignidad, heute für Tourismus geöffnet. Deutsches Dorf mit Hotel, Restaurant (Zippelhaus) und kleinem Museum über die dunkle Geschichte. Komplexer Erinnerungsort.",
           "descriptionEs": "Ex Colonia Dignidad, ahora abierta al turismo. Villa de estilo alemán con hotel, restaurante (Zippelhaus) y pequeño museo sobre su oscura historia. Sitio de memoria complejo.",
           "address": "Villa Baviera, Parral",
           "website": "https://villabaviera.cl/",
@@ -1637,7 +1637,7 @@
             -36.5833,
             -71.6833
           ],
-          "description": "Small museum inside Villa Baviera documenting the history of Colonia Dignidad. Important for understanding Chile's complex past.",
+          "description": "Kleines Museum in der Villa Baviera, das die Geschichte der Colonia Dignidad dokumentiert. Wichtig, um Chiles komplexe Vergangenheit zu verstehen.",
           "descriptionEs": "Pequeño museo dentro de Villa Baviera que documenta la historia de Colonia Dignidad. Importante para entender el complejo pasado de Chile.",
           "address": "Villa Baviera, Parral",
           "website": "https://villabaviera.cl/museo/",
@@ -1660,7 +1660,7 @@
             -36.5833,
             -71.6833
           ],
-          "description": "German restaurant inside Villa Baviera serving traditional dishes like kuchen, sausages, and German-style meals. Surreal dining experience.",
+          "description": "Deutsches Restaurant in der Villa Baviera mit traditionellen Gerichten wie Kuchen, Würstchen und deutschen Speisen. Surreales kulinarisches Erlebnis.",
           "descriptionEs": "Restaurante alemán dentro de Villa Baviera que sirve platos tradicionales como kuchen, salchichas y comidas estilo alemán. Experiencia gastronómica surrealista.",
           "address": "Villa Baviera, Parral",
           "googleMapsLink": "https://maps.google.com/?q=-36.5833,-71.6833",
@@ -1682,7 +1682,7 @@
             -36.4167,
             -71.95
           ],
-          "description": "Lesser-known wine region with boutique wineries. Good opportunity to taste local wines away from tourist crowds.",
+          "description": "Weniger bekannte Weinregion mit Boutique-Weingütern. Gute Gelegenheit, lokale Weine abseits der Touristenmassen zu probieren.",
           "descriptionEs": "Región vinícola menos conocida con bodegas boutique. Buena oportunidad para probar vinos locales lejos de las multitudes turísticas.",
           "address": "Región del Ñuble",
           "googleMapsLink": "https://maps.google.com/?q=-36.4167,-71.9500",
@@ -1704,7 +1704,7 @@
             -37.35,
             -71.3833
           ],
-          "description": "National park with volcanic landscapes, the Antuco volcano, and a beautiful glacial lake. About 2 hours from San Carlos. Moderate hikes available.",
+          "description": "Nationalpark mit Vulkanlandschaften, dem Vulkan Antuco und einem wunderschönen Gletschersee. Etwa 2 Stunden von San Carlos. Moderate Wanderungen möglich.",
           "descriptionEs": "Parque nacional con paisajes volcánicos, el volcán Antuco y un hermoso lago glaciar. A unas 2 horas de San Carlos. Senderos de dificultad moderada.",
           "address": "Parque Nacional Laguna del Laja",
           "googleMapsLink": "https://maps.google.com/?q=-37.3500,-71.3833",
@@ -1727,7 +1727,7 @@
             -36.4167,
             -71.95
           ],
-          "description": "Traditional Chilean town with plaza, local markets, and authentic provincial atmosphere. Good for experiencing everyday Chile.",
+          "description": "Traditioneller chilenischer Ort mit Plaza, lokalen Märkten und authentischer Provinzatmosphäre. Gut, um das alltägliche Chile zu erleben.",
           "descriptionEs": "Pueblo chileno tradicional con plaza, mercados locales y auténtica atmósfera provincial. Bueno para experimentar el Chile cotidiano.",
           "address": "San Carlos, Ñuble",
           "googleMapsLink": "https://maps.google.com/?q=-36.4167,-71.9500",
@@ -1749,7 +1749,7 @@
             -36.8,
             -71.4
           ],
-          "description": "The scenic mountain road towards Termas de Chillán offers beautiful views of the Andes. Consider a day trip or stop en route to your next destination.",
+          "description": "Die malerische Bergstraße Richtung Termas de Chillán bietet wunderschöne Ausblicke auf die Anden. Ein Tagesausflug oder Zwischenstopp auf dem Weg zum nächsten Ziel lohnt sich.",
           "descriptionEs": "El camino de montaña hacia Termas de Chillán ofrece hermosas vistas de los Andes. Considera un viaje de un día o parada camino a tu próximo destino.",
           "address": "Camino a Termas de Chillán",
           "googleMapsLink": "https://maps.google.com/?q=-36.8000,-71.4000",
@@ -1771,7 +1771,7 @@
             -36.6066,
             -72.1034
           ],
-          "description": "Famous covered market in nearby Chillán known for longanizas (sausages), local produce, and traditional Chilean goods.",
+          "description": "Berühmter überdachter Markt im nahen Chillán, bekannt für Longanizas (Würste), lokale Produkte und traditionelle chilenische Waren.",
           "descriptionEs": "Famoso mercado techado en Chillán cercano, conocido por longanizas, productos locales y artículos tradicionales chilenos.",
           "address": "Maipón 600, Chillán",
           "googleMapsLink": "https://maps.google.com/?q=-36.6066,-72.1034",
@@ -1794,7 +1794,7 @@
             -36.4,
             -71.95
           ],
-          "description": "Violeta Parra was born in 1917 in nearby San Carlos. Visit sites commemorating Chile's legendary folk singer who wrote 'Gracias a la Vida'.",
+          "description": "Violeta Parra wurde 1917 im nahen San Carlos geboren. Besuche Orte, die Chiles legendäre Folksängerin ehren, die 'Gracias a la Vida' schrieb.",
           "descriptionEs": "Violeta Parra nació en 1917 en San Carlos cercano. Visita sitios que conmemoran a la legendaria cantante folclórica chilena que escribió 'Gracias a la Vida'.",
           "address": "San Carlos, Ñuble",
           "googleMapsLink": "https://maps.google.com/?q=-36.4000,-71.9500",
@@ -1817,7 +1817,7 @@
             -36.4167,
             -71.95
           ],
-          "description": "Traditional artisans of the Ñuble region: weavers, basketmakers, and leather workers. Ask locally for workshops open to visitors.",
+          "description": "Traditionelle Kunsthandwerker der Ñuble-Region: Weber, Korbflechter und Lederarbeiter. Frag vor Ort nach Werkstätten, die Besucher empfangen.",
           "descriptionEs": "Artesanos tradicionales de la región del Ñuble: tejedores, canasteros y talabarteros. Pregunta localmente por talleres abiertos a visitantes.",
           "address": "Región del Ñuble",
           "googleMapsLink": "https://maps.google.com/?q=-36.4167,-71.9500",
@@ -1840,7 +1840,7 @@
             -36.4167,
             -71.95
           ],
-          "description": "The Ñuble region is famous for its longanizas (sausages). Each producer has unique recipes. Buy fresh at local markets or roadside stands.",
+          "description": "Die Ñuble-Region ist berühmt für ihre Longanizas (Würste). Jeder Produzent hat einzigartige Rezepte. Kaufe frisch auf lokalen Märkten oder an Straßenständen.",
           "descriptionEs": "La región del Ñuble es famosa por sus longanizas. Cada productor tiene recetas únicas. Compra frescas en mercados locales o puestos en el camino.",
           "address": "Mercado San Carlos",
           "googleMapsLink": "https://maps.google.com/?q=-36.4167,-71.9500",
@@ -1863,7 +1863,7 @@
             -36.1333,
             -71.8333
           ],
-          "description": "Pablo Neruda's birthplace. Visit the train station museum dedicated to the poet. Gateway to Villa Baviera (30km). Authentic rural Chile.",
+          "description": "Geburtsort von Pablo Neruda. Besuche das Bahnhofsmuseum, das dem Dichter gewidmet ist. Tor zu Villa Baviera (30km). Authentisches ländliches Chile.",
           "descriptionEs": "Lugar de nacimiento de Pablo Neruda. Visita el museo de la estación de tren dedicado al poeta. Puerta de entrada a Villa Baviera (30km). Chile rural auténtico.",
           "address": "Parral, Ñuble",
           "googleMapsLink": "https://maps.google.com/?q=-36.1333,-71.8333",
@@ -1886,7 +1886,7 @@
             -36.4167,
             -71.95
           ],
-          "description": "The Ñuble region is heartland of Chilean huaso (cowboy) culture. If visiting during a festival, watch traditional rodeo with colleras (paired riders).",
+          "description": "Die Ñuble-Region ist das Herzland der chilenischen Huaso-Kultur (Cowboys). Bei einem Besuch während eines Festes: Schau dir traditionellen Rodeo mit Colleras (Reiterpaaren) an.",
           "descriptionEs": "La región del Ñuble es el corazón de la cultura huasa chilena. Si visitas durante un festival, mira rodeo tradicional con colleras (jinetes en parejas).",
           "address": "Medialuna local, San Carlos",
           "googleMapsLink": "https://maps.google.com/?q=-36.4167,-71.9500",
@@ -1909,7 +1909,7 @@
             -36.5,
             -71.8
           ],
-          "description": "Stay at a traditional fundo (ranch) or visit working farms. Experience rural Chilean hospitality, home-cooked food, and countryside peace.",
+          "description": "Übernachte auf einem traditionellen Fundo (Ranch) oder besuche arbeitende Bauernhöfe. Erlebe ländliche chilenische Gastfreundschaft, Hausmannskost und Landidylle.",
           "descriptionEs": "Alójate en un fundo tradicional o visita granjas en funcionamiento. Experimenta la hospitalidad rural chilena, comida casera y tranquilidad del campo.",
           "address": "Zona rural, Ñuble",
           "googleMapsLink": "https://maps.google.com/?q=-36.5000,-71.8000",
@@ -1932,7 +1932,7 @@
             -37.2333,
             -72.4167
           ],
-          "description": "Impressive 35m waterfall on the Laja River, about 1 hour south. Popular roadside attraction with restaurants and viewpoints. Chile's most famous waterfall.",
+          "description": "Beeindruckender 35m hoher Wasserfall am Fluss Laja, etwa 1 Stunde südlich. Beliebte Sehenswürdigkeit an der Straße mit Restaurants und Aussichtspunkten. Chiles berühmtester Wasserfall.",
           "descriptionEs": "Impresionante cascada de 35m en el Río Laja, a aprox. 1 hora al sur. Popular atracción junto a la carretera con restaurantes y miradores. La cascada más famosa de Chile.",
           "address": "Ruta 5 Sur, Km 490",
           "googleMapsLink": "https://maps.google.com/?q=-37.2333,-72.4167",
@@ -1955,7 +1955,7 @@
             -36.45,
             -71.9
           ],
-          "description": "Try 'País' wine, Chile's oldest grape variety brought by Spanish missionaries. Making a comeback with small producers. Unique historical taste.",
+          "description": "Probiere 'País'-Wein, Chiles älteste Rebsorte, von spanischen Missionaren gebracht. Erlebt ein Comeback bei kleinen Produzenten. Einzigartiger historischer Geschmack.",
           "descriptionEs": "Prueba vino 'País', la variedad de uva más antigua de Chile traída por misioneros españoles. Regresando con pequeños productores. Sabor histórico único.",
           "address": "Viñedos locales, Ñuble",
           "googleMapsLink": "https://maps.google.com/?q=-36.4500,-71.9000",
