@@ -95,11 +95,11 @@
 
 ## 📊 Fakten-Feature
 
-### Status: 187 Fakten ✓ (2026-02-07)
-- Geographie, Kultur, Geschichte, Natur, Essen
+### Status: 253 Fakten ✓ (2026-02-08)
+- Geographie, Kultur, Geschichte, Natur, Essen, Unique, Beach
 - Mit Location-Referenzen wo relevant
 - Quellen aus Insight Guides, Rough Guides, und Recherche
-- Gute Balance: Chiloé 20, Conguillío 16, Pucón 15, Frutillar 13, Wine Resort 11, Santiago 10
+- Gute Balance: Chillán 23, Chiloé 20, Algarrobo 20, Quillimari 19, Wine Resort 19, San Carlos 18, Conguillío 16, Pucón 15, Frutillar 13, Santiago 10, Valdivia 9, Osorno 9, General 62
 
 ### UI für Fakten (ERLEDIGT ✓ 2026-02-07)
 - ✓ 📖 Icon im Burger-Menu
@@ -123,14 +123,16 @@
 - [ ] Dark/Light Mode Toggle
 - [ ] Foto-Galerie pro Location
 
-### Status Empfehlungen (2026-02-07)
+### Status Empfehlungen (2026-02-08)
 - Santiago: 22 | Quillimari: 20 | Algarrobo: 19
-- Wine Resort: 22 ✓ | San Carlos: 16 | Chillán: 20
+- Wine Resort: 22 | San Carlos: 20 ✓ | Chillán: 20
 - Conguillío: 23 | Pucón: 28 | Valdivia: 25
 - Osorno: 21 | Frutillar/PV: 22 | Puerto Montt/Chiloé: 38
-- **Total: 276 Empfehlungen**
+- **Total: 280 Empfehlungen**
 
-### Status Fakten (2026-02-07)
-- **Total: 197 Fakten** (wine-resort +10)
+### Status Fakten (2026-02-08)
+- **Total: 253 Fakten** (+28 from book research)
+- Fokus: unterrepräsentierte Locations aufgeholt
+- Quillimari 7→19, Algarrobo 9→20, San Carlos 7→18, Chillán 9→23
 
-*Letzte Aktualisierung: 2026-02-07*
+*Letzte Aktualisierung: 2026-02-08*
