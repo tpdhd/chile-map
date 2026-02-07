@@ -192,10 +192,13 @@ export default function Map({
       center={[-33.45, -70.65] as [number, number]} // Santiago
       zoom={5}
       minZoom={4}
-      maxZoom={15}
+      maxZoom={22}
+      zoomSnap={0.5}
+      zoomDelta={0.5}
+      wheelPxPerZoomLevel={120}
       className="h-full w-full"
       attributionControl={false}
-      zoomControl={true}
+      zoomControl={false}
     >
       {/* Dark mode tile layer - Mapbox Dark */}
       <TileLayer
