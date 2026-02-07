@@ -2,6 +2,19 @@ import { useState, useEffect, useRef } from 'react'
 import { Location, Recommendation } from '../App'
 import WeatherWidget from './WeatherWidget'
 
+// Google Maps search URL helper
+const getGoogleMapsSearchUrl = (name: string, locationName?: string) => {
+  const query = locationName ? `${name}, ${locationName}, Chile` : `${name}, Chile`
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`
+}
+
+// Google Maps Icon SVG
+const GoogleMapsIcon = () => (
+  <svg viewBox="0 0 24 24" className="w-4 h-4 inline-block mr-1" fill="currentColor">
+    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+  </svg>
+)
+
 // Storage keys
 const FAVORITES_KEY = 'chile-trip-favorites'
 const NOTES_KEY = 'chile-trip-notes'
@@ -574,16 +587,22 @@ export default function LocationPanel({
                 </a>
               )}
               <a 
-                href={selectedRecommendation.googleMapsLink || `https://maps.google.com/?q=${selectedRecommendation.coordinates[0]},${selectedRecommendation.coordinates[1]}`}
+                href={getGoogleMapsSearchUrl(selectedRecommendation.name, location.name)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3 py-1.5 text-sm rounded-lg bg-chile-accent-red hover:bg-opacity-90 transition-colors"
+                className="px-3 py-1.5 text-sm rounded-lg bg-white text-gray-800 hover:bg-gray-100 transition-colors flex items-center gap-1"
               >
-                📍 Google Maps
+                <svg viewBox="0 0 48 48" className="w-4 h-4">
+                  <path fill="#48b564" d="M35.76,26.36h0.01c0,0-3.77,5.53-6.94,9.64c-2.74,3.55-3.54,6.59-3.77,8.06 c-0.21,1.36-0.66,3.94-1.02,3.94c-0.36,0-0.81-2.59-1.02-3.94c-0.23-1.47-1.03-4.51-3.77-8.06c-3.17-4.11-6.95-9.64-6.95-9.64 S8,20.45,8,16c0-7.73,6.27-14,14-14s14,6.27,14,14C36,20.45,35.76,26.36,35.76,26.36z"/>
+                  <path fill="#378b55" d="M31.77,27.31l-8.08,8.08c0.58-0.2,1.2-0.28,1.83-0.14c0.61,0.13,1.17,0.46,1.61,0.9 l8.08-8.08C34.18,27.22,32.8,26.95,31.77,27.31z"/>
+                  <path fill="#48b564" d="M28.22,35.64l-8.08,8.08c0.37,0.71,0.68,1.36,0.92,1.89l8.08-8.08 C28.78,36.87,28.47,36.22,28.22,35.64z"/>
+                  <circle cx="22" cy="16" r="5" fill="#fff"/>
+                </svg>
+                Google Maps
               </a>
               <button
                 onClick={() => {
-                  const link = selectedRecommendation.googleMapsLink || `https://maps.google.com/?q=${selectedRecommendation.coordinates[0]},${selectedRecommendation.coordinates[1]}`
+                  const link = getGoogleMapsSearchUrl(selectedRecommendation.name, location.name)
                   navigator.clipboard.writeText(link)
                   // Brief visual feedback
                   const btn = document.activeElement as HTMLButtonElement
@@ -598,7 +617,7 @@ export default function LocationPanel({
               {typeof navigator !== 'undefined' && navigator.share && (
                 <button
                   onClick={async () => {
-                    const link = selectedRecommendation.googleMapsLink || `https://maps.google.com/?q=${selectedRecommendation.coordinates[0]},${selectedRecommendation.coordinates[1]}`
+                    const link = getGoogleMapsSearchUrl(selectedRecommendation.name, location.name)
                     const noteText = notes[selectedRecommendation.id]
                     try {
                       await navigator.share({

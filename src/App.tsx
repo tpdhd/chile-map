@@ -83,6 +83,12 @@ const CATEGORY_LABELS: Record<string, string> = {
   'seafood': 'Meeresfrüchte',
 }
 
+// Google Maps search URL helper
+const getGoogleMapsSearchUrl = (name: string, locationName?: string) => {
+  const query = locationName ? `${name}, ${locationName}, Chile` : `${name}, Chile`
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`
+}
+
 function App() {
   const [selectedLocation, setSelectedLocation] = useState<Location | null>(null)
   const [selectedRecommendation, setSelectedRecommendation] = useState<Recommendation | null>(null)
@@ -480,13 +486,19 @@ function App() {
                         {favorites.has(rec.id) ? '❤️' : '🤍'}
                       </button>
                       <a
-                        href={rec.googleMapsLink || `https://maps.google.com/?q=${rec.coordinates[0]},${rec.coordinates[1]}`}
+                        href={getGoogleMapsSearchUrl(rec.name, selectedLocation?.name)}
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
-                        className="w-7 h-7 rounded-full bg-chile-accent-teal flex items-center justify-center text-sm"
+                        className="w-7 h-7 rounded-full bg-white flex items-center justify-center"
+                        title="In Google Maps suchen"
                       >
-                        ➤
+                        <svg viewBox="0 0 48 48" className="w-4 h-4">
+                          <path fill="#48b564" d="M35.76,26.36h0.01c0,0-3.77,5.53-6.94,9.64c-2.74,3.55-3.54,6.59-3.77,8.06c-0.21,1.36-0.66,3.94-1.02,3.94c-0.36,0-0.81-2.59-1.02-3.94c-0.23-1.47-1.03-4.51-3.77-8.06c-3.17-4.11-6.95-9.64-6.95-9.64S8,20.45,8,16c0-7.73,6.27-14,14-14s14,6.27,14,14C36,20.45,35.76,26.36,35.76,26.36z"/>
+                          <path fill="#378b55" d="M31.77,27.31l-8.08,8.08c0.58-0.2,1.2-0.28,1.83-0.14c0.61,0.13,1.17,0.46,1.61,0.9l8.08-8.08C34.18,27.22,32.8,26.95,31.77,27.31z"/>
+                          <path fill="#48b564" d="M28.22,35.64l-8.08,8.08c0.37,0.71,0.68,1.36,0.92,1.89l8.08-8.08C28.78,36.87,28.47,36.22,28.22,35.64z"/>
+                          <circle cx="22" cy="16" r="5" fill="#fff"/>
+                        </svg>
                       </a>
                     </div>
                   </div>
