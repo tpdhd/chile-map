@@ -1,0 +1,336 @@
+{
+  "lastUpdated": "2026-02-07",
+  "currency": {
+    "CLP_to_USD": 0.00105,
+    "CLP_to_EUR": 0.00098,
+    "note": "Approximate rates as of early 2026"
+  },
+  "rentalCompanies": [
+    {
+      "name": "Chilean Rent-A-Car",
+      "type": "local",
+      "rating": 8.2,
+      "website": "https://www.chileanrentacar.cl",
+      "locations": ["Santiago SCL", "Antofagasta", "Calama", "Concepción", "Temuco", "Puerto Montt"],
+      "allowsOneWay": true,
+      "oneWayFeeNote": "Varies by distance, ~CLP 0.45/km",
+      "minAge": 23,
+      "underage": { "minAge": 20, "surchargePerDay": "CLP 12,900" },
+      "insurance": {
+        "cdwIncluded": true,
+        "deductible": { "economy": "CLP 500,000", "midsize": "CLP 700,000", "suv": "CLP 900,000" },
+        "fullCoverageAvailable": true
+      },
+      "features": ["Unlimited mileage", "TAG included", "Airport pickup"]
+    },
+    {
+      "name": "Europcar",
+      "type": "international",
+      "rating": 9.2,
+      "website": "https://www.europcar.com/en-us/places/car-rental-chile",
+      "locations": ["Santiago SCL", "Temuco", "Puerto Montt", "Punta Arenas", "Calama", "30+ locations"],
+      "allowsOneWay": true,
+      "oneWayFeeNote": "Available between all Chilean offices, fee based on distance",
+      "minAge": 21,
+      "insurance": {
+        "cdwIncluded": true,
+        "deductible": "USD 500–1500 depending on category",
+        "fullCoverageAvailable": true
+      },
+      "features": ["Wide network", "Transfercar relocation partner", "Argentina crossings available"]
+    },
+    {
+      "name": "Hertz",
+      "type": "international",
+      "rating": 8.7,
+      "website": "https://www.hertz.com/rentacar/reservation/",
+      "locations": ["Santiago SCL", "Puerto Montt", "Temuco", "Punta Arenas", "Calama"],
+      "allowsOneWay": true,
+      "oneWayFeeNote": "One-way fees apply, must book in advance",
+      "minAge": 21,
+      "averageDailyRate": "USD 54",
+      "insurance": {
+        "cdwIncluded": true,
+        "fullCoverageAvailable": true
+      },
+      "features": ["Transfercar relocation partner", "Large fleet", "International standards"]
+    },
+    {
+      "name": "Budget / Avis",
+      "type": "international",
+      "rating": 8.8,
+      "website": "https://www.budget.com",
+      "locations": ["Santiago SCL", "Puerto Montt", "Temuco", "Punta Arenas"],
+      "allowsOneWay": true,
+      "oneWayFeeNote": "Must book in advance, fees payable at pickup",
+      "minAge": 21,
+      "insurance": {
+        "cdwIncluded": true,
+        "fullCoverageAvailable": true
+      },
+      "features": ["Good availability", "Reliable fleet"]
+    },
+    {
+      "name": "Econorent",
+      "type": "local",
+      "rating": 2.0,
+      "ratingNote": "Low ratings on aggregator sites — use with caution",
+      "website": "https://www.econorent.cl",
+      "locations": ["Santiago SCL", "Temuco", "Puerto Montt", "Concepción"],
+      "allowsOneWay": true,
+      "oneWayFeeNote": "Available, fees vary",
+      "minAge": 22,
+      "insurance": {
+        "cdwIncluded": true,
+        "fullCoverageAvailable": true
+      },
+      "features": ["Budget option", "Coverage in Chile and Argentina"]
+    },
+    {
+      "name": "Rosselot Rent-A-Car",
+      "type": "local",
+      "rating": 8.7,
+      "website": "https://www.rosselot.cl",
+      "locations": ["Santiago SCL", "Viña del Mar", "Concepción", "Temuco", "Puerto Montt"],
+      "allowsOneWay": true,
+      "oneWayFeeNote": "Available between major cities",
+      "minAge": 21,
+      "insurance": {
+        "cdwIncluded": true,
+        "fullCoverageAvailable": true
+      },
+      "features": ["Local expertise", "Good fleet variety"]
+    },
+    {
+      "name": "LYS Rent a Car",
+      "type": "local-broker",
+      "rating": 9.5,
+      "website": "https://www.lys.cl",
+      "locations": ["Santiago", "Calama", "Puerto Montt", "Punta Arenas"],
+      "allowsOneWay": true,
+      "oneWayFeeNote": "Santiago→Puerto Montt: USD 390, Santiago→Punta Arenas: USD 1290, Puerto Montt→Punta Arenas: USD 790",
+      "minAge": 21,
+      "insurance": {
+        "cdwIncluded": true,
+        "deductible": "USD 500–1500 per event",
+        "fullCoverageAvailable": true
+      },
+      "features": ["Broker with best deals", "English support 24/7", "Excellent reviews", "Since 1997"]
+    },
+    {
+      "name": "Mitta Rent a Car",
+      "type": "local",
+      "rating": 8.5,
+      "website": "https://www.mitta.cl",
+      "locations": ["Santiago", "Temuco", "Puerto Montt", "Punta Arenas"],
+      "allowsOneWay": true,
+      "oneWayFeeNote": "Transfercar relocation partner",
+      "minAge": 21,
+      "insurance": {
+        "cdwIncluded": true,
+        "fullCoverageAvailable": true
+      },
+      "features": ["Transfercar partner", "Good local coverage"]
+    }
+  ],
+  "oneWayRoutes": [
+    {
+      "from": "Santiago (SCL Airport)",
+      "to": "Temuco (ZCO Airport)",
+      "distance": "680 km",
+      "driveTime": "7–8 hours",
+      "estimatedDropOffFee": "USD 200–300",
+      "estimatedDropOffFeeCLP": "CLP 190,000–285,000",
+      "tollCosts": "USD 20–30",
+      "fuelCost": "USD 55–70"
+    },
+    {
+      "from": "Santiago (SCL Airport)",
+      "to": "Osorno",
+      "distance": "920 km",
+      "driveTime": "10–11 hours",
+      "estimatedDropOffFee": "USD 300–380",
+      "estimatedDropOffFeeCLP": "CLP 285,000–360,000",
+      "tollCosts": "USD 30–45",
+      "fuelCost": "USD 75–95"
+    },
+    {
+      "from": "Santiago (SCL Airport)",
+      "to": "Puerto Montt (PMO Airport)",
+      "distance": "1,020 km",
+      "driveTime": "11–12 hours",
+      "estimatedDropOffFee": "USD 350–450",
+      "estimatedDropOffFeeCLP": "CLP 300,000–430,000",
+      "tollCosts": "USD 40–60",
+      "fuelCost": "USD 85–105"
+    },
+    {
+      "from": "Santiago (SCL Airport)",
+      "to": "Punta Arenas",
+      "distance": "3,100 km",
+      "driveTime": "36+ hours (multi-day)",
+      "estimatedDropOffFee": "USD 1,200–1,400",
+      "estimatedDropOffFeeCLP": "CLP 1,140,000–1,330,000",
+      "tollCosts": "USD 40–60",
+      "fuelCost": "USD 250–320"
+    },
+    {
+      "from": "Puerto Montt",
+      "to": "Punta Arenas / Puerto Natales",
+      "distance": "1,900 km",
+      "driveTime": "24+ hours (multi-day, ferries needed)",
+      "estimatedDropOffFee": "USD 700–900",
+      "estimatedDropOffFeeCLP": "CLP 665,000–855,000",
+      "tollCosts": "Minimal (Carretera Austral mostly free)",
+      "fuelCost": "USD 150–200"
+    }
+  ],
+  "dailyRates": {
+    "period": "February/March 2026 (high season)",
+    "note": "Prices from aggregator sites, actual may vary",
+    "categories": [
+      {
+        "category": "Economy",
+        "examples": "Hyundai i10, Suzuki Alto, Kia Picanto",
+        "dailyRate": { "low": 15, "high": 35, "currency": "USD" },
+        "transmission": "Manual (mostly)"
+      },
+      {
+        "category": "Compact",
+        "examples": "Kia Rio, Hyundai Accent, Chevrolet Onix",
+        "dailyRate": { "low": 22, "high": 45, "currency": "USD" },
+        "transmission": "Manual or Automatic"
+      },
+      {
+        "category": "Midsize / Sedan",
+        "examples": "Nissan Versa, VW Voyage, Citroen C-Elysee",
+        "dailyRate": { "low": 30, "high": 55, "currency": "USD" },
+        "transmission": "Automatic available"
+      },
+      {
+        "category": "Compact SUV / Crossover",
+        "examples": "MG ZS, Chery Tiggo, Toyota Raize, VW T-Cross",
+        "dailyRate": { "low": 35, "high": 65, "currency": "USD" },
+        "transmission": "Manual or Automatic"
+      },
+      {
+        "category": "Full SUV",
+        "examples": "Subaru Forester, VW Taos, Toyota Corolla Cross",
+        "dailyRate": { "low": 50, "high": 90, "currency": "USD" },
+        "transmission": "Automatic"
+      },
+      {
+        "category": "Pickup 4x4",
+        "examples": "Toyota Hilux, Nissan Navara, Mitsubishi L200",
+        "dailyRate": { "low": 70, "high": 130, "currency": "USD" },
+        "transmission": "Manual or Automatic"
+      }
+    ]
+  },
+  "fuelInfo": {
+    "pricePerLiter": { "CLP": 1230, "USD": 1.35, "EUR": 1.25 },
+    "fuelType": "Bencina 95 (Unleaded gasoline)",
+    "dieselAvailable": true,
+    "dieselPricePerLiter": { "CLP": 1050, "USD": 1.15, "EUR": 1.07 },
+    "stationBrand": "Copec (most common), Shell, Petrobras, Terpel",
+    "availability": "Frequent on Ruta 5, scarcer on Carretera Austral",
+    "tips": [
+      "Full-service stations (attendants pump gas for you)",
+      "Cash (Chilean pesos) widely accepted",
+      "Credit cards accepted at most stations",
+      "Copec 'Pronto' stores have good food, coffee, clean bathrooms",
+      "Always fill up before leaving main highway"
+    ]
+  },
+  "tollInfo": {
+    "santiagoUrban": {
+      "system": "TAG (electronic, mandatory)",
+      "note": "Rental cars include TAG transponder",
+      "costPerTrip": "CLP 2,000–5,000 per highway section"
+    },
+    "intercityRuta5": {
+      "system": "Manual toll booths (cash/card)",
+      "costPerPlaza": "CLP 800–4,500",
+      "santiagoToPuertoMontt": "CLP 40,000–60,000 total (USD 40–60)"
+    }
+  },
+  "drivingRules": {
+    "side": "Right",
+    "speedLimits": {
+      "urban": "50–60 km/h",
+      "rural": "100 km/h",
+      "highway": "120 km/h"
+    },
+    "alcoholLimit": "0.3 g/L blood (very strict, ~1 small beer)",
+    "seatbelts": "Mandatory for all occupants",
+    "headlights": "Must be ON at all times, even during day",
+    "rightOnRed": "NOT allowed (unless specifically signed)",
+    "mobilePhone": "Prohibited without hands-free",
+    "smoking": "Prohibited while driving",
+    "emergencyNumbers": {
+      "police": "133",
+      "ambulance": "131",
+      "fire": "132"
+    }
+  },
+  "documents": {
+    "required": [
+      "Valid passport",
+      "Valid driver's license from home country (Latin alphabet readable)",
+      "Credit card in renter's name (not debit/prepaid)",
+      "Rental agreement / booking confirmation"
+    ],
+    "recommended": [
+      "International Driving Permit (IDP) — not strictly required if license is in Latin script, but recommended",
+      "Second credit card as backup",
+      "Print of travel insurance policy"
+    ],
+    "notes": [
+      "Foreign tourists can drive with home country license for up to 90 days",
+      "IDP is required if license uses non-Latin characters (Chinese, Arabic, etc.)",
+      "German/EU licenses are accepted without IDP",
+      "Credit card must have sufficient limit for guarantee deposit (CLP 500,000–2,000,000)"
+    ]
+  },
+  "bookingPlatforms": [
+    { "name": "DiscoverCars", "url": "https://www.discovercars.com/chile", "note": "Best aggregator, 7M+ users, free cancellation" },
+    { "name": "KAYAK", "url": "https://www.kayak.com/Chile-Car-Rentals.48.crc.html", "note": "Good comparison tool" },
+    { "name": "Skyscanner Cars", "url": "https://www.skyscanner.com/car-rental-in/chile/29475429.html", "note": "From $33/day" },
+    { "name": "Momondo", "url": "https://www.momondo.com/car-rental/Chile-48-crc.ksp", "note": "From $22/day" },
+    { "name": "Booking.com Cars", "url": "https://www.booking.com/cars/country/cl.html", "note": "Convenient if already using Booking" },
+    { "name": "AutoEurope", "url": "https://www.autoeurope.com", "note": "Good for European travelers" },
+    { "name": "LYS Rent a Car (direct)", "url": "https://www.lys.cl", "note": "Best local broker, transparent pricing" },
+    { "name": "Chilean Rent-A-Car (direct)", "url": "https://www.chileanrentacar.cl", "note": "Major local company" },
+    { "name": "Transfercar Chile", "url": "https://www.transfercar.cl", "note": "FREE relocation deals!" }
+  ],
+  "relocationDeals": {
+    "available": true,
+    "platform": "Transfercar Chile",
+    "website": "https://www.transfercar.cl",
+    "partners": ["Hertz", "Europcar", "Mitta"],
+    "howItWorks": "Rental companies need cars moved between cities. You drive them for FREE (0 or very low daily cost), sometimes with fuel and TAG included.",
+    "limitations": [
+      "Limited availability — check frequently",
+      "Fixed routes and timeframes",
+      "Usually 2-5 day windows to complete the drive",
+      "Seasonal: more deals during/after peak season"
+    ],
+    "tip": "Check regularly for Santiago→Puerto Montt relocations, especially after summer season (March/April)"
+  },
+  "roadConditions": {
+    "ruta5_santiago_to_puerto_montt": {
+      "quality": "Excellent",
+      "lanes": "4-lane divided highway",
+      "surface": "Fully paved, well-maintained",
+      "services": "Regular rest stops, Copec stations, restaurants",
+      "tolls": "Multiple toll plazas (manual, cash/card)"
+    },
+    "carretera_austral": {
+      "quality": "Mixed — paved sections + gravel/dirt",
+      "lanes": "2-lane, narrow in places",
+      "surface": "Asphalt, gravel, dirt, volcanic ash",
+      "services": "Sparse — plan fuel stops carefully",
+      "recommendation": "SUV or pickup truck strongly recommended"
+    }
+  }
+}

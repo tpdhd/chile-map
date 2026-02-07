@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chile Car Rental Guide — Santiago → South</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #0f0f14;
+      --bg-secondary: #1a1a24;
+      --bg-card: #242432;
+      --accent-red: #e63946;
+      --accent-teal: #2a9d8f;
+      --accent-gold: #e9c46a;
+      --accent-purple: #9b5de5;
+      --text-primary: #f1f1f1;
+      --text-secondary: #a0a0b0;
+      --text-muted: #6b6b7b;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #0f0f14 0%, #1a1a24 40%, #242432 100%);
+      border-bottom: 1px solid rgba(230, 57, 70, 0.3);
+      padding: 3rem 1.5rem 2.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(ellipse at 30% 50%, rgba(230, 57, 70, 0.08) 0%, transparent 60%),
+                  radial-gradient(ellipse at 70% 50%, rgba(42, 157, 143, 0.06) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      position: relative;
+    }
+    .hero h1 span { color: var(--accent-red); }
+    .hero p {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .hero .route-badge {
+      display: inline-block;
+      background: rgba(230, 57, 70, 0.15);
+      border: 1px solid rgba(230, 57, 70, 0.3);
+      border-radius: 99px;
+      padding: 0.35rem 1rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--accent-red);
+      margin-top: 1rem;
+      position: relative;
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Section */
+    .section {
+      padding: 2.5rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .section:last-child { border-bottom: none; }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .section-title .icon {
+      font-size: 1.3rem;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--bg-card);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: border-color 0.2s;
+    }
+    .card:hover {
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+    }
+
+    /* Company card */
+    .company-card {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      align-items: start;
+    }
+    .company-card .meta {
+      text-align: right;
+    }
+    .company-card .rating {
+      background: var(--accent-teal);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      display: inline-block;
+    }
+    .company-card .rating.low {
+      background: #c0392b;
+    }
+    .company-card .type-badge {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 0.3rem;
+    }
+
+    /* Route table */
+    .route-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+    }
+    .route-table th {
+      text-align: left;
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.7rem 0.8rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .route-table td {
+      padding: 0.8rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+      color: var(--text-secondary);
+    }
+    .route-table tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .route-table .price {
+      color: var(--accent-gold);
+      font-weight: 600;
+    }
+    .route-table .highlight-row td {
+      background: rgba(230, 57, 70, 0.06);
+    }
+
+    /* Price grid */
+    .price-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+    .price-card {
+      background: var(--bg-secondary);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .price-card .category {
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 0.25rem;
+    }
+    .price-card .examples {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .price-card .price-range {
+      color: var(--accent-gold);
+      font-size: 1.3rem;
+      font-weight: 800;
+    }
+    .price-card .price-range span {
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: var(--text-muted);
+    }
+
+    /* Info list */
+    .info-list {
+      list-style: none;
+      padding: 0;
+    }
+    .info-list li {
+      padding: 0.6rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+    }
+    .info-list li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--accent-teal);
+      font-weight: 700;
+    }
+
+    /* Warning/tip boxes */
+    .callout {
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      margin: 1rem 0;
+      font-size: 0.92rem;
+    }
+    .callout-warning {
+      background: rgba(230, 57, 70, 0.1);
+      border-left: 4px solid var(--accent-red);
+    }
+    .callout-tip {
+      background: rgba(42, 157, 143, 0.1);
+      border-left: 4px solid var(--accent-teal);
+    }
+    .callout-gold {
+      background: rgba(233, 196, 106, 0.1);
+      border-left: 4px solid var(--accent-gold);
+    }
+    .callout strong {
+      display: block;
+      margin-bottom: 0.3rem;
+      color: var(--text-primary);
+    }
+
+    /* Links */
+    a {
+      color: var(--accent-teal);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    a:hover { color: var(--accent-gold); }
+
+    /* Booking links grid */
+    .booking-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 0.75rem;
+    }
+    .booking-link {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: var(--bg-secondary);
+      border-radius: 10px;
+      padding: 0.9rem 1.1rem;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: all 0.2s;
+      text-decoration: none;
+    }
+    .booking-link:hover {
+      border-color: var(--accent-teal);
+      background: rgba(42, 157, 143, 0.08);
+      transform: translateY(-1px);
+      color: var(--text-primary);
+    }
+    .booking-link .bl-name {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--text-primary);
+    }
+    .booking-link .bl-note {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* Rule grid */
+    .rule-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 0.75rem;
+    }
+    .rule-item {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 0.8rem 1rem;
+      text-align: center;
+    }
+    .rule-item .rule-value {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--accent-red);
+    }
+    .rule-item .rule-label {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 0.2rem;
+    }
+
+    /* Tags */
+    .tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.3rem;
+      margin-bottom: 0.2rem;
+    }
+    .tag-green { background: rgba(42, 157, 143, 0.2); color: var(--accent-teal); }
+    .tag-red { background: rgba(230, 57, 70, 0.2); color: var(--accent-red); }
+    .tag-gold { background: rgba(233, 196, 106, 0.2); color: var(--accent-gold); }
+    .tag-purple { background: rgba(155, 93, 229, 0.2); color: var(--accent-purple); }
+
+    /* Back link */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      padding: 0.5rem 0;
+      margin-bottom: 0.5rem;
+      position: relative;
+      z-index: 1;
+    }
+    .back-link:hover { color: var(--accent-teal); }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    /* TOC */
+    .toc {
+      background: var(--bg-secondary);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .toc h3 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+    .toc-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 0.3rem;
+    }
+    .toc-list a {
+      display: block;
+      padding: 0.35rem 0;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+    }
+    .toc-list a:hover { color: var(--accent-teal); }
+    .toc-list a::before {
+      content: '# ';
+      color: var(--accent-red);
+      font-weight: 700;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.6rem; }
+      .route-table { font-size: 0.78rem; }
+      .route-table th, .route-table td { padding: 0.5rem 0.4rem; }
+      .price-grid { grid-template-columns: 1fr; }
+      .booking-grid { grid-template-columns: 1fr; }
+      .rule-grid { grid-template-columns: repeat(2, 1fr); }
+      .toc-list { grid-template-columns: 1fr; }
+    }
+
+    /* Scroll behavior */
+    html { scroll-behavior: smooth; }
+    :target::before {
+      content: '';
+      display: block;
+      height: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="container">
+    <a href="/" class="back-link">← Back to Chile Map</a>
+    <h1>🚗 <span>Car Rental</span> Guide</h1>
+    <p>Everything you need to rent a car in Santiago and drive south through Chile's Lake District</p>
+    <div class="route-badge">Santiago SCL → Ruta 5 South → Puerto Montt PMO</div>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- TOC -->
+  <nav class="toc">
+    <h3>Quick Navigation</h3>
+    <ul class="toc-list">
+      <li><a href="#companies">Rental Companies</a></li>
+      <li><a href="#one-way">One-Way Fees & Routes</a></li>
+      <li><a href="#prices">Daily Rates</a></li>
+      <li><a href="#documents">Documents Needed</a></li>
+      <li><a href="#insurance">Insurance</a></li>
+      <li><a href="#road-conditions">Road Conditions</a></li>
+      <li><a href="#fuel">Fuel & Costs</a></li>
+      <li><a href="#tolls">Tolls (TAG System)</a></li>
+      <li><a href="#rules">Driving Rules</a></li>
+      <li><a href="#relocation">Free Relocation Deals</a></li>
+      <li><a href="#booking">Booking Platforms</a></li>
+      <li><a href="#tips">Pro Tips</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==================== RENTAL COMPANIES ==================== -->
+  <section class="section" id="companies">
+    <h2 class="section-title"><span class="icon">🏢</span> Rental Companies</h2>
+    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+      Both international and local companies operate in Chile. Local companies often offer better prices; internationals have wider networks. All major companies allow one-way rentals.
+    </p>
+
+    <!-- Chilean Rent-A-Car -->
+    <div class="card company-card">
+      <div>
+        <h3>Chilean Rent-A-Car</h3>
+        <p>Major local company with locations at all main airports (SCL, ZCO, PMO). Good fleet variety, clear policies published online. Minimum age 23 (20 with surcharge).</p>
+        <div style="margin-top: 0.5rem;">
+          <span class="tag tag-green">Unlimited Mileage</span>
+          <span class="tag tag-green">TAG Included</span>
+          <span class="tag tag-green">Airport Pickup</span>
+        </div>
+        <a href="https://www.chileanrentacar.cl" target="_blank" style="font-size: 0.85rem;">chileanrentacar.cl →</a>
+      </div>
+      <div class="meta">
+        <span class="rating">8.2</span>
+        <div class="type-badge">Local</div>
+      </div>
+    </div>
+
+    <!-- LYS -->
+    <div class="card company-card">
+      <div>
+        <h3>LYS Rent a Car ⭐</h3>
+        <p>Top-rated broker since 1997. They work with multiple suppliers to find the best deal. Transparent one-way fee pricing. 24/7 English support. Highly recommended by travelers.</p>
+        <div style="margin-top: 0.5rem;">
+          <span class="tag tag-gold">Best Broker</span>
+          <span class="tag tag-green">24/7 English Support</span>
+          <span class="tag tag-green">Clear Pricing</span>
+        </div>
+        <a href="https://www.lys.cl" target="_blank" style="font-size: 0.85rem;">lys.cl →</a>
+      </div>
+      <div class="meta">
+        <span class="rating">9.5</span>
+        <div class="type-badge">Broker</div>
+      </div>
+    </div>
+
+    <!-- Europcar -->
+    <div class="card company-card">
+      <div>
+        <h3>Europcar</h3>
+        <p>Largest international network in Chile (30+ offices). One-way between all offices. Partner with Transfercar for relocation deals. Argentina crossings possible with advance notice.</p>
+        <div style="margin-top: 0.5rem;">
+          <span class="tag tag-purple">International</span>
+          <span class="tag tag-green">30+ Offices</span>
+          <span class="tag tag-green">Argentina OK</span>
+        </div>
+        <a href="https://www.europcar.com/en-us/places/car-rental-chile" target="_blank" style="font-size: 0.85rem;">europcar.com →</a>
+      </div>
+      <div class="meta">
+        <span class="rating">9.2</span>
+        <div class="type-badge">International</div>
+      </div>
+    </div>
+
+    <!-- Hertz -->
+    <div class="card company-card">
+      <div>
+        <h3>Hertz</h3>
+        <p>Well-known international brand. Offices at Santiago SCL, Puerto Montt, Temuco, Punta Arenas. Avg daily rate ~$54 USD. Transfercar relocation partner.</p>
+        <div style="margin-top: 0.5rem;">
+          <span class="tag tag-purple">International</span>
+          <span class="tag tag-green">Transfercar Partner</span>
+        </div>
+        <a href="https://www.hertz.com" target="_blank" style="font-size: 0.85rem;">hertz.com →</a>
+      </div>
+      <div class="meta">
+        <span class="rating">8.7</span>
+        <div class="type-badge">International</div>
+      </div>
+    </div>
+
+    <!-- Budget/Avis -->
+    <div class="card company-card">
+      <div>
+        <h3>Budget / Avis</h3>
+        <p>Reliable international companies. Good availability at main airports. One-way must be booked in advance. Fees payable at pickup.</p>
+        <div style="margin-top: 0.5rem;">
+          <span class="tag tag-purple">International</span>
+          <span class="tag tag-green">Reliable</span>
+        </div>
+        <a href="https://www.budget.com" target="_blank" style="font-size: 0.85rem;">budget.com →</a>
+      </div>
+      <div class="meta">
+        <span class="rating">8.8</span>
+        <div class="type-badge">International</div>
+      </div>
+    </div>
+
+    <!-- Rosselot -->
+    <div class="card company-card">
+      <div>
+        <h3>Rosselot Rent-A-Car</h3>
+        <p>Established local company. Good fleet variety. Available on most aggregator platforms. Offices at SCL, Viña del Mar, Concepción, Temuco, Puerto Montt.</p>
+        <div style="margin-top: 0.5rem;">
+          <span class="tag tag-green">Good Reviews</span>
+          <span class="tag tag-green">Local Expert</span>
+        </div>
+        <a href="https://www.rosselot.cl" target="_blank" style="font-size: 0.85rem;">rosselot.cl →</a>
+      </div>
+      <div class="meta">
+        <span class="rating">8.7</span>
+        <div class="type-badge">Local</div>
+      </div>
+    </div>
+
+    <!-- Mitta -->
+    <div class="card company-card">
+      <div>
+        <h3>Mitta Rent a Car</h3>
+        <p>Growing local company with Transfercar relocation partnership. Offices in Santiago, Temuco, Puerto Montt, Punta Arenas.</p>
+        <div style="margin-top: 0.5rem;">
+          <span class="tag tag-green">Transfercar Partner</span>
+          <span class="tag tag-green">Growing Network</span>
+        </div>
+        <a href="https://www.mitta.cl" target="_blank" style="font-size: 0.85rem;">mitta.cl →</a>
+      </div>
+      <div class="meta">
+        <span class="rating">8.5</span>
+        <div class="type-badge">Local</div>
+      </div>
+    </div>
+
+    <!-- Econorent -->
+    <div class="card company-card">
+      <div>
+        <h3>Econorent</h3>
+        <p>Budget option but low customer satisfaction ratings on review sites. Use with caution. Can be cheapest on aggregator searches. Available at SCL and other airports.</p>
+        <div style="margin-top: 0.5rem;">
+          <span class="tag tag-gold">Budget Option</span>
+          <span class="tag tag-red">Low Reviews</span>
+        </div>
+        <a href="https://www.econorent.cl" target="_blank" style="font-size: 0.85rem;">econorent.cl →</a>
+      </div>
+      <div class="meta">
+        <span class="rating low">2.0</span>
+        <div class="type-badge">Local</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ONE-WAY FEES ==================== -->
+  <section class="section" id="one-way">
+    <h2 class="section-title"><span class="icon">📍</span> One-Way Routes & Drop-Off Fees</h2>
+
+    <div class="callout callout-warning">
+      <strong>⚠️ One-way fees are expensive in Chile</strong>
+      The industry standard is approximately <strong>USD $0.45 per km</strong>. All companies charge similar rates — there's no way to avoid it. But for a long country like Chile, one-way makes the most sense.
+    </div>
+
+    <div class="callout callout-tip">
+      <strong>💡 Pro Tip: Rent in Santiago, drop in Puerto Montt</strong>
+      This is the sweet spot. The drop-off fee is ~$390 USD — much cheaper than going all the way to Patagonia ($1,290). Santiago→Puerto Montt on Ruta 5 is an excellent, fully-paved 4-lane highway.
+    </div>
+
+    <p style="color: var(--text-secondary); margin: 1rem 0 0.5rem; font-weight: 600;">
+      ✅ Yes, you can rent at Santiago SCL Airport and drop at Puerto Montt PMO Airport.
+    </p>
+
+    <div style="overflow-x: auto;">
+      <table class="route-table">
+        <thead>
+          <tr>
+            <th>Route</th>
+            <th>Distance</th>
+            <th>Drive Time</th>
+            <th>Drop-Off Fee</th>
+            <th>Tolls</th>
+            <th>Fuel</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Santiago → Temuco</strong></td>
+            <td>680 km</td>
+            <td>7–8 hrs</td>
+            <td class="price">$200–300</td>
+            <td>$20–30</td>
+            <td>$55–70</td>
+          </tr>
+          <tr>
+            <td><strong>Santiago → Osorno</strong></td>
+            <td>920 km</td>
+            <td>10–11 hrs</td>
+            <td class="price">$300–380</td>
+            <td>$30–45</td>
+            <td>$75–95</td>
+          </tr>
+          <tr class="highlight-row">
+            <td><strong>Santiago → Puerto Montt ⭐</strong></td>
+            <td>1,020 km</td>
+            <td>11–12 hrs</td>
+            <td class="price">$350–450</td>
+            <td>$40–60</td>
+            <td>$85–105</td>
+          </tr>
+          <tr>
+            <td><strong>Santiago → Punta Arenas</strong></td>
+            <td>3,100 km</td>
+            <td>36+ hrs</td>
+            <td class="price">$1,200–1,400</td>
+            <td>$40–60</td>
+            <td>$250–320</td>
+          </tr>
+          <tr>
+            <td><strong>Puerto Montt → Punta Arenas</strong></td>
+            <td>1,900 km</td>
+            <td>24+ hrs</td>
+            <td class="price">$700–900</td>
+            <td>Minimal</td>
+            <td>$150–200</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 0.5rem;">
+      All prices in USD. Drop-off fees from LYS and aggregator comparisons. Fuel estimate based on compact car ~7L/100km at $1.35/L.
+    </p>
+
+    <div class="callout callout-gold" style="margin-top: 1.5rem;">
+      <strong>💰 Cost Estimate: 10-day Santiago → Puerto Montt</strong>
+      Compact car at $30/day × 10 = $300 rental + $400 drop-off + $50 tolls + $90 fuel = <strong>~$840 USD total</strong>
+    </div>
+  </section>
+
+  <!-- ==================== DAILY RATES ==================== -->
+  <section class="section" id="prices">
+    <h2 class="section-title"><span class="icon">💵</span> Daily Rates (Feb/Mar 2026)</h2>
+    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+      High season rates (summer in Chile). Book early for best prices. Santiago is cheapest; Patagonia can be 2–3× more expensive. Prices include CDW insurance and unlimited mileage.
+    </p>
+
+    <div class="price-grid">
+      <div class="price-card">
+        <div class="category">Economy</div>
+        <div class="examples">Hyundai i10, Suzuki Alto, Kia Picanto</div>
+        <div class="price-range">$15–35 <span>/day</span></div>
+        <div style="color: var(--text-muted); font-size: 0.8rem; margin-top: 0.3rem;">Manual transmission (mostly)</div>
+      </div>
+      <div class="price-card">
+        <div class="category">Compact</div>
+        <div class="examples">Kia Rio, Hyundai Accent, Chevrolet Onix</div>
+        <div class="price-range">$22–45 <span>/day</span></div>
+        <div style="color: var(--text-muted); font-size: 0.8rem; margin-top: 0.3rem;">Manual or Automatic</div>
+      </div>
+      <div class="price-card">
+        <div class="category">Midsize / Sedan</div>
+        <div class="examples">Nissan Versa, VW Voyage</div>
+        <div class="price-range">$30–55 <span>/day</span></div>
+        <div style="color: var(--text-muted); font-size: 0.8rem; margin-top: 0.3rem;">Automatic available</div>
+      </div>
+      <div class="price-card">
+        <div class="category">Compact SUV</div>
+        <div class="examples">MG ZS, Toyota Raize, VW T-Cross</div>
+        <div class="price-range">$35–65 <span>/day</span></div>
+        <div style="color: var(--text-muted); font-size: 0.8rem; margin-top: 0.3rem;">Best value for comfort</div>
+      </div>
+      <div class="price-card">
+        <div class="category">Full SUV</div>
+        <div class="examples">Subaru Forester, VW Taos</div>
+        <div class="price-range">$50–90 <span>/day</span></div>
+        <div style="color: var(--text-muted); font-size: 0.8rem; margin-top: 0.3rem;">Recommended for Patagonia</div>
+      </div>
+      <div class="price-card">
+        <div class="category">Pickup 4×4</div>
+        <div class="examples">Toyota Hilux, Nissan Navara</div>
+        <div class="price-range">$70–130 <span>/day</span></div>
+        <div style="color: var(--text-muted); font-size: 0.8rem; margin-top: 0.3rem;">Required for bad roads</div>
+      </div>
+    </div>
+
+    <div class="callout callout-tip" style="margin-top: 1rem;">
+      <strong>🎯 Recommendation for Santiago → Puerto Montt</strong>
+      A <strong>Compact</strong> or <strong>Compact SUV</strong> is perfect. Ruta 5 is a modern 4-lane highway — no need for 4×4. Save money with a compact. Only get an SUV/pickup if continuing to Carretera Austral.
+    </div>
+
+    <p style="color: var(--text-secondary); margin-top: 0.75rem; font-size: 0.88rem;">
+      <strong>Note on transmissions:</strong> Chile heavily favors manual cars. Automatic is available but pricier and limited — standard sedans with automatic start around $100/day at some companies. Book automatic early if needed.
+    </p>
+  </section>
+
+  <!-- ==================== DOCUMENTS ==================== -->
+  <section class="section" id="documents">
+    <h2 class="section-title"><span class="icon">📋</span> Required Documents</h2>
+
+    <div class="card">
+      <h3 style="color: var(--accent-red);">Required</h3>
+      <ul class="info-list">
+        <li><strong>Valid passport</strong> — must be valid throughout rental period</li>
+        <li><strong>Driver's license from your home country</strong> — must be readable in Latin script</li>
+        <li><strong>Credit card in renter's name</strong> — Visa, MasterCard, Amex, or Diners Club. <em>No debit or prepaid cards!</em></li>
+        <li><strong>Booking confirmation</strong> — printed or digital</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3 style="color: var(--accent-teal);">Recommended</h3>
+      <ul class="info-list">
+        <li><strong>International Driving Permit (IDP)</strong> — not strictly required for German/EU licenses, but recommended as backup. Required if your license is in non-Latin script (Chinese, Arabic, etc.)</li>
+        <li><strong>Second credit card</strong> — some companies require high guarantee deposits</li>
+        <li><strong>Travel insurance documentation</strong></li>
+      </ul>
+    </div>
+
+    <div class="callout callout-tip">
+      <strong>🇩🇪 For German/EU License Holders</strong>
+      Your German Führerschein is accepted in Chile for up to 90 days (tourist visa duration). An IDP is nice to have but not required. The U.S. Embassy in Chile confirms: "Visitors can drive with a valid license for the duration of their tourist permit."
+    </div>
+
+    <div class="callout callout-warning">
+      <strong>💳 Credit Card Guarantee Deposits</strong>
+      Companies block a significant amount on your credit card:
+      <br>• Economy/Compact: <strong>CLP 500,000</strong> (~€490)
+      <br>• Midsize/Crossover: <strong>CLP 700,000</strong> (~€685)
+      <br>• SUV: <strong>CLP 900,000</strong> (~€880)
+      <br>• Pickup 4×4: <strong>CLP 1,500,000–2,000,000</strong> (~€1,470–1,960)
+      <br>Make sure your credit card limit can handle this!
+    </div>
+  </section>
+
+  <!-- ==================== INSURANCE ==================== -->
+  <section class="section" id="insurance">
+    <h2 class="section-title"><span class="icon">🛡️</span> Insurance</h2>
+
+    <div class="card">
+      <h3>What's Included (Standard)</h3>
+      <p>Most Chilean rental companies include basic insurance in the rate:</p>
+      <ul class="info-list">
+        <li><strong>CDW (Collision Damage Waiver)</strong> — covers damage to the rental car with a deductible</li>
+        <li><strong>DAT/Third-Party Liability</strong> — covers damage to other vehicles/property</li>
+        <li><strong>Theft protection</strong> — with deductible</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Deductibles (Your Responsibility Per Incident)</h3>
+      <p style="margin-bottom: 0.5rem;">The deductible is per accident, not per rental:</p>
+      <ul class="info-list">
+        <li>Economy/Compact: <strong>CLP 500,000</strong> (~$525 USD)</li>
+        <li>Midsize/Crossover: <strong>CLP 700,000</strong> (~$735 USD)</li>
+        <li>SUV/Pickup: <strong>CLP 900,000</strong> (~$945 USD)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Optional Upgrades</h3>
+      <ul class="info-list">
+        <li><strong>Full coverage (zero deductible)</strong> — eliminates deductible entirely. Costs ~$10–20/day extra</li>
+        <li><strong>Tire/windshield coverage</strong> — standard CDW often excludes tires, wheels, and windshield</li>
+        <li><strong>Roadside assistance upgrade</strong> — enhanced towing coverage (important for remote areas)</li>
+      </ul>
+    </div>
+
+    <div class="callout callout-warning">
+      <strong>⚠️ Insurance Coverage vs. Road Type</strong>
+      Insurance companies only cover damage when the vehicle is appropriate for the road. If you rent an economy car and drive it on gravel/dirt roads in Patagonia, damage may NOT be covered. For Ruta 5 (Santiago→Puerto Montt), any car is fine.
+    </div>
+
+    <div class="callout callout-tip">
+      <strong>💡 Tip: Start in Santiago for better insurance</strong>
+      LYS recommends renting in Santiago (not Patagonia) even for south-bound trips. Reason: rates are lower AND insurance deductibles are lower than rentals starting in Patagonia.
+    </div>
+  </section>
+
+  <!-- ==================== ROAD CONDITIONS ==================== -->
+  <section class="section" id="road-conditions">
+    <h2 class="section-title"><span class="icon">🛣️</span> Road Conditions: Ruta 5</h2>
+
+    <div class="card">
+      <h3 style="color: var(--accent-teal);">Ruta 5 (Pan-American Highway): Santiago → Puerto Montt</h3>
+      <p><strong>Excellent condition.</strong> Modern, well-maintained 4-lane divided highway for the entire 1,020 km stretch. Comparable to European motorways.</p>
+      <ul class="info-list">
+        <li>Fully paved, 4 lanes (2 each direction) with median barrier</li>
+        <li>Speed limit: 120 km/h</li>
+        <li>Regular Copec gas stations with "Pronto" rest stops (food, coffee, bathrooms)</li>
+        <li>Multiple toll plazas along the way (manual, cash/card)</li>
+        <li>Well-marked with good signage</li>
+        <li>Any car type is suitable — no need for SUV or 4×4</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3 style="color: var(--accent-gold);">Carretera Austral (Ruta 7): Puerto Montt → South</h3>
+      <p><strong>Mixed conditions — proceed with caution.</strong> Beautiful but challenging. Only attempt with proper vehicle.</p>
+      <ul class="info-list">
+        <li>Mix of asphalt, gravel, dirt, and volcanic ash</li>
+        <li>2-lane, narrow in places, no median</li>
+        <li>Limited services — plan fuel stops carefully</li>
+        <li><strong>SUV or pickup truck strongly recommended</strong></li>
+        <li>Carry spare tire kit, air compressor, and emergency supplies</li>
+        <li>Some sections require ferry crossings</li>
+      </ul>
+    </div>
+
+    <div class="callout callout-tip">
+      <strong>📱 Navigation</strong>
+      Download offline maps (Google Maps or Maps.me) before leaving Santiago. Cell coverage is good on Ruta 5 and in towns, but can be spotty between cities and in mountains. Waze works well in Chile.
+    </div>
+  </section>
+
+  <!-- ==================== FUEL ==================== -->
+  <section class="section" id="fuel">
+    <h2 class="section-title"><span class="icon">⛽</span> Fuel Costs & Availability</h2>
+
+    <div class="rule-grid" style="margin-bottom: 1.5rem;">
+      <div class="rule-item">
+        <div class="rule-value">$1.35</div>
+        <div class="rule-label">USD per liter (Bencina 95)</div>
+      </div>
+      <div class="rule-item">
+        <div class="rule-value">€1.25</div>
+        <div class="rule-label">EUR per liter (approx)</div>
+      </div>
+      <div class="rule-item">
+        <div class="rule-value">$1.15</div>
+        <div class="rule-label">USD per liter (Diesel)</div>
+      </div>
+      <div class="rule-item">
+        <div class="rule-value">~$90</div>
+        <div class="rule-label">Santiago→Pto Montt fuel</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Fuel Stations</h3>
+      <ul class="info-list">
+        <li><strong>Copec</strong> is the dominant brand — most common along Ruta 5</li>
+        <li>Also Shell, Petrobras (now Terpel) available</li>
+        <li><strong>Full-service</strong> — attendants pump gas, clean windows, check oil if asked</li>
+        <li>Cash (Chilean pesos) and credit cards accepted</li>
+        <li>Fuel type: <strong>Bencina 95</strong> (unleaded gasoline) — no leaded fuel</li>
+        <li><strong>Copec "Pronto" stores</strong> — excellent for coffee, fresh OJ, sandwiches, clean restrooms</li>
+      </ul>
+    </div>
+
+    <div class="callout callout-warning">
+      <strong>⚠️ Always verify bills and change at gas stations</strong>
+      Double-check what pump shows before and after filling. Attendant scams (not resetting the pump) are rare but possible.
+    </div>
+  </section>
+
+  <!-- ==================== TOLLS ==================== -->
+  <section class="section" id="tolls">
+    <h2 class="section-title"><span class="icon">🏗️</span> Tolls & TAG System</h2>
+
+    <div class="card">
+      <h3>Santiago Urban Highways — TAG Required</h3>
+      <p>Six major highways in Santiago use <strong>mandatory electronic TAG</strong> transponders. No cash option. <strong>All rental cars include TAG</strong> — confirm at pickup.</p>
+      <ul class="info-list">
+        <li>Autopista Central, Costanera Norte, Vespucio Norte/Sur, Túnel San Cristóbal, Autopista 68</li>
+        <li>Cost: CLP 2,000–5,000 per highway section (~$2–5 USD)</li>
+        <li>Without TAG: $12 USD day-pass fee per highway used</li>
+        <li>TAG charges added to your rental invoice after return</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Intercity Ruta 5 — Manual Toll Booths</h3>
+      <p>Traditional toll plazas with booths. <strong>Cash (Chilean pesos) strongly recommended</strong>. Some accept Visa/MC.</p>
+      <ul class="info-list">
+        <li>Each plaza: CLP 800–4,500 (~$1–5 USD)</li>
+        <li>Santiago to Puerto Montt total: <strong>CLP 40,000–60,000</strong> (~$40–60 USD)</li>
+        <li>Multiple plazas along the route (approximately every 80–100 km)</li>
+        <li>Weekend surcharge: 15–20% higher on Fridays afternoon through Sunday</li>
+      </ul>
+    </div>
+
+    <div class="callout callout-tip">
+      <strong>💡 Carry CLP 60,000–80,000 in cash for tolls</strong>
+      Even though some plazas accept cards, cash is faster and always accepted. Get Chilean pesos at SCL airport or ATM before departing Santiago.
+    </div>
+  </section>
+
+  <!-- ==================== DRIVING RULES ==================== -->
+  <section class="section" id="rules">
+    <h2 class="section-title"><span class="icon">⚖️</span> Driving Rules & Speed Limits</h2>
+
+    <div class="rule-grid" style="margin-bottom: 1.5rem;">
+      <div class="rule-item">
+        <div class="rule-value">120</div>
+        <div class="rule-label">km/h Highway Limit</div>
+      </div>
+      <div class="rule-item">
+        <div class="rule-value">100</div>
+        <div class="rule-label">km/h Rural Roads</div>
+      </div>
+      <div class="rule-item">
+        <div class="rule-value">50–60</div>
+        <div class="rule-label">km/h Urban Areas</div>
+      </div>
+      <div class="rule-item">
+        <div class="rule-value">0.3 g/L</div>
+        <div class="rule-label">Blood Alcohol Limit</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Essential Rules for Tourists</h3>
+      <ul class="info-list">
+        <li><strong>Drive on the RIGHT</strong> side of the road</li>
+        <li><strong>Headlights must be ON at ALL times</strong> — even during daytime</li>
+        <li><strong>Seatbelts mandatory</strong> for all occupants</li>
+        <li><strong>NO right turn on red</strong> — unless specifically signed (very rare)</li>
+        <li><strong>NO mobile phone</strong> while driving (hands-free only)</li>
+        <li><strong>NO smoking</strong> while driving — it's illegal</li>
+        <li><strong>NO eating</strong> while driving</li>
+        <li><strong>Pedestrians always have right of way</strong> at crossings</li>
+        <li><strong>Speed cameras and radar guns</strong> are frequent — fines are steep</li>
+        <li><strong>Never offer money to police</strong> — Chilean police (Carabineros) are honest and rarely corrupt</li>
+      </ul>
+    </div>
+
+    <div class="callout callout-warning">
+      <strong>⚠️ Alcohol: Extremely strict</strong>
+      Chile's BAC limit is <strong>0.3 g/L</strong> — that's about one small beer. Heavy fines and possible imprisonment. Don't risk it. The safest approach: zero alcohol if driving.
+    </div>
+
+    <div class="callout callout-tip">
+      <strong>🚔 If stopped by Carabineros</strong>
+      Be polite and respectful. Keep documents ready (license, passport, rental papers — should be in the glove box). Tourists who are friendly almost never get tickets. There are regular checkpoints on highways.
+    </div>
+
+    <div class="card">
+      <h3>Santiago-Specific Rules</h3>
+      <ul class="info-list">
+        <li><strong>Bus-only lanes</strong> (yellow median) — DO NOT use them, enforced by cameras</li>
+        <li><strong>Reversible lanes</strong> on main roads change direction during rush hours</li>
+        <li><strong>Vehicle restrictions</strong> — during high pollution days, cars with certain license plate numbers are banned from 7:30 AM–9:00 PM (mainly affects older cars without catalytic converters; rental cars typically exempt)</li>
+        <li><strong>Narrow parking spaces</strong> — get a compact car for Santiago</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Emergency Numbers</h3>
+      <div class="rule-grid">
+        <div class="rule-item">
+          <div class="rule-value">133</div>
+          <div class="rule-label">Carabineros (Police)</div>
+        </div>
+        <div class="rule-item">
+          <div class="rule-value">131</div>
+          <div class="rule-label">Ambulance</div>
+        </div>
+        <div class="rule-item">
+          <div class="rule-value">132</div>
+          <div class="rule-label">Fire Department</div>
+        </div>
+      </div>
+      <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">Note: Dispatchers unlikely to speak English — learn basic emergency Spanish phrases</p>
+    </div>
+  </section>
+
+  <!-- ==================== RESTRICTIONS ==================== -->
+  <section class="section" id="restrictions">
+    <h2 class="section-title"><span class="icon">🚫</span> Restrictions</h2>
+
+    <div class="card">
+      <h3>Where You Can't Take Rental Cars</h3>
+      <ul class="info-list">
+        <li><strong>Peru and Bolivia</strong> — completely prohibited. Cars get stolen, and diplomatic relations are complicated</li>
+        <li><strong>Argentina</strong> — possible WITH advance authorization (5 working days), extra permit fee (USD 90–290), and extra insurance. Not all companies allow it</li>
+        <li><strong>Off-road driving</strong> — not permitted with standard rental. Insurance won't cover damage</li>
+        <li><strong>Unpaved roads with economy cars</strong> — technically allowed, but insurance won't cover damage if vehicle isn't suitable for the road</li>
+      </ul>
+    </div>
+
+    <div class="callout callout-tip">
+      <strong>🇦🇷 Planning to cross to Argentina?</strong>
+      Notify your rental company at booking time. You'll need: passport photos + license copies of all drivers sent in advance. If license and passport are from different countries, an IDP is required. Extra fee: $90–290 USD. No roadside assistance outside Chile.
+    </div>
+  </section>
+
+  <!-- ==================== RELOCATION DEALS ==================== -->
+  <section class="section" id="relocation">
+    <h2 class="section-title"><span class="icon">🎁</span> Free Relocation Deals</h2>
+
+    <div class="callout callout-gold">
+      <strong>🤑 Drive for FREE with Transfercar Chile!</strong>
+      Rental companies (Hertz, Europcar, Mitta) need cars moved between cities. Instead of using expensive trucks, they let travelers drive them — often for <strong>$0/day</strong>, sometimes with fuel and TAG included!
+    </div>
+
+    <div class="card">
+      <h3><a href="https://www.transfercar.cl" target="_blank">Transfercar Chile</a></h3>
+      <p>The main platform for relocation deals in Chile.</p>
+      <ul class="info-list">
+        <li><strong>How it works:</strong> Check the website for available relocations → Book → Drive the car to the destination within the given timeframe</li>
+        <li><strong>Cost:</strong> Usually $0/day, sometimes small daily fee</li>
+        <li><strong>Partners:</strong> Hertz, Europcar, Mitta, and others</li>
+        <li><strong>Perks:</strong> Sometimes includes full tank and TAG</li>
+        <li><strong>Window:</strong> Usually 2–5 days to complete the drive</li>
+        <li><strong>Best time:</strong> After summer season (March/April) — companies need cars moved back north</li>
+      </ul>
+    </div>
+
+    <div class="callout callout-warning">
+      <strong>⚠️ Limitations of Relocation Deals</strong>
+      Limited availability — routes and dates are fixed. You can't customize. Must check the site frequently. Not guaranteed to match your travel dates. But if it works out, it's the cheapest possible option!
+    </div>
+  </section>
+
+  <!-- ==================== BOOKING PLATFORMS ==================== -->
+  <section class="section" id="booking">
+    <h2 class="section-title"><span class="icon">🔍</span> Best Booking Platforms</h2>
+    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+      Compare prices across these aggregators, then also check direct company websites. Sometimes direct is cheaper (no middleman), sometimes aggregators have exclusive deals.
+    </p>
+
+    <div class="booking-grid">
+      <a href="https://www.discovercars.com/chile" target="_blank" class="booking-link">
+        <div>
+          <div class="bl-name">DiscoverCars</div>
+          <div class="bl-note">Best aggregator, 7M+ users</div>
+        </div>
+      </a>
+      <a href="https://www.kayak.com/Chile-Car-Rentals.48.crc.html" target="_blank" class="booking-link">
+        <div>
+          <div class="bl-name">KAYAK</div>
+          <div class="bl-note">Great comparison tool</div>
+        </div>
+      </a>
+      <a href="https://www.skyscanner.com/car-rental-in/chile/29475429.html" target="_blank" class="booking-link">
+        <div>
+          <div class="bl-name">Skyscanner Cars</div>
+          <div class="bl-note">From $33/day</div>
+        </div>
+      </a>
+      <a href="https://www.momondo.com/car-rental/Chile-48-crc.ksp" target="_blank" class="booking-link">
+        <div>
+          <div class="bl-name">Momondo</div>
+          <div class="bl-note">From $22/day</div>
+        </div>
+      </a>
+      <a href="https://www.booking.com/cars/country/cl.html" target="_blank" class="booking-link">
+        <div>
+          <div class="bl-name">Booking.com Cars</div>
+          <div class="bl-note">Convenient integration</div>
+        </div>
+      </a>
+      <a href="https://www.autoeurope.com" target="_blank" class="booking-link">
+        <div>
+          <div class="bl-name">AutoEurope</div>
+          <div class="bl-note">Good for EU travelers</div>
+        </div>
+      </a>
+      <a href="https://www.lys.cl" target="_blank" class="booking-link" style="border-color: var(--accent-gold);">
+        <div>
+          <div class="bl-name">LYS Rent a Car ⭐</div>
+          <div class="bl-note">Best broker, direct pricing</div>
+        </div>
+      </a>
+      <a href="https://www.chileanrentacar.cl" target="_blank" class="booking-link">
+        <div>
+          <div class="bl-name">Chilean Rent-A-Car</div>
+          <div class="bl-note">Major local, direct booking</div>
+        </div>
+      </a>
+      <a href="https://www.transfercar.cl" target="_blank" class="booking-link" style="border-color: var(--accent-gold);">
+        <div>
+          <div class="bl-name">Transfercar Chile 🎁</div>
+          <div class="bl-note">FREE relocation deals!</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ==================== PRO TIPS ==================== -->
+  <section class="section" id="tips">
+    <h2 class="section-title"><span class="icon">🏆</span> Pro Tips for the Santiago → South Road Trip</h2>
+
+    <div class="card">
+      <h3>🗓️ Planning</h3>
+      <ul class="info-list">
+        <li><strong>Book early</strong> for Feb/Mar — this is peak summer season in Chile</li>
+        <li><strong>Check Transfercar first</strong> — if there's a free relocation deal matching your dates, take it</li>
+        <li><strong>Compare 3+ platforms</strong> — prices vary significantly between aggregators</li>
+        <li><strong>Consider rental length</strong> — one-way drop-off fee stays fixed; longer rentals make it proportionally cheaper</li>
+        <li><strong>Travel north→south</strong> recommended by LYS: better rates, better insurance starting from Santiago</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>💰 Saving Money</h3>
+      <ul class="info-list">
+        <li><strong>Manual transmission</strong> is significantly cheaper than automatic in Chile</li>
+        <li><strong>Compact car</strong> is all you need for Ruta 5 — save $15–30/day vs. SUV</li>
+        <li><strong>Drop off in Puerto Montt</strong> (~$400 fee) instead of Punta Arenas (~$1,300 fee) — fly PMO→SCL cheaply</li>
+        <li><strong>Book direct</strong> with local companies (Chilean, Rosselot) — sometimes no middleman markup</li>
+        <li><strong>Get cash for tolls</strong> — avoid premium card charges at booths</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>🚗 On the Road</h3>
+      <ul class="info-list">
+        <li><strong>Fill up at every Copec station</strong> — don't let tank go below half, especially heading south</li>
+        <li><strong>Copec "Pronto" = your best friend</strong> — great coffee, food, and bathrooms on the highway</li>
+        <li><strong>Carry Chilean pesos</strong> — small towns, tolls, and parking often cash-only</li>
+        <li><strong>Download offline maps</strong> — Google Maps lets you download regions for offline use</li>
+        <li><strong>Don't drive at night</strong> in rural areas — animals on road, poor lighting, fatigued truck drivers</li>
+        <li><strong>Check vehicle thoroughly at pickup</strong> — photograph every scratch and dent</li>
+        <li><strong>Keep all documents in car</strong> — rental contract, license, passport. Regular police checkpoints on highways</li>
+        <li><strong>Parking: look for the assistant</strong> — "cuidadores de autos" watch your car for a small tip (CLP 500–1,000)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>🍽️ Road Trip Food & Culture</h3>
+      <ul class="info-list">
+        <li>Chileans eat dinner late (after 8:30 PM) — plan accordingly</li>
+        <li>Chile = amazing <strong>seafood, fresh fruit, and wine</strong></li>
+        <li>Tip 10% at restaurants</li>
+        <li>Few people speak English outside Santiago — learn basic Spanish</li>
+        <li>Carry only new/clean USD or EUR bills for exchange — old/torn bills are rejected</li>
+        <li>Don't leave <strong>anything visible</strong> in the car — use the trunk</li>
+      </ul>
+    </div>
+
+    <div class="callout callout-gold">
+      <strong>🎯 The Optimal Strategy</strong>
+      <br>1. Check <a href="https://www.transfercar.cl">Transfercar.cl</a> for free relocation deals
+      <br>2. If none available, compare on <a href="https://www.discovercars.com/chile">DiscoverCars</a> + <a href="https://www.kayak.com/Chile-Car-Rentals.48.crc.html">KAYAK</a>
+      <br>3. Also get a quote from <a href="https://www.lys.cl">LYS</a> directly (best broker)
+      <br>4. Book a compact/manual car from Santiago SCL
+      <br>5. Drop off at Puerto Montt PMO Airport
+      <br>6. Fly PMO → SCL (from ~$40 USD one-way with JetSmart/SKY)
+      <br>7. Budget: <strong>~$800–1,000 total</strong> for a 10-day road trip
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Chile Road Trip Car Rental Guide — Last updated February 2026</p>
+  <p style="margin-top: 0.3rem;">Prices are estimates and may vary. Always confirm with rental companies directly.</p>
+  <p style="margin-top: 0.5rem;"><a href="/">← Back to Chile Map</a></p>
+</footer>
+
+</body>
+</html>

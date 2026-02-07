@@ -1762,8 +1762,141 @@
       "location": "santiago",
       "source": "Insight Guides Chile 2024",
       "id": 252
+    },
+    {
+      "id": 253,
+      "text": "Der Pisco Sour ist Chiles Nationalcocktail: 3 Teile Pisco, 1 Teil Limettensaft, Zucker, Eiweiß und Eis — kräftig schütteln!",
+      "category": "food",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 254,
+      "text": "Ein 'Completo' ist Chiles Version des Hot Dogs — beladen mit Avocado, Tomate und Mayo. Ein 'Italiano' hat die Farben der italienischen Flagge: grüne Avocado, weiße Mayo, rote Tomate.",
+      "category": "food",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 255,
+      "text": "Sopaipillas sind frittierte Kürbis-Teigfladen — bei Regen werden sie auf der Straße verkauft. Mit Senf oder Pebre (scharfer Salsa) sind sie der ultimative Snack.",
+      "category": "food",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 256,
+      "text": "Die Empanada de Pino ist Chiles Nationalgebäck: gefüllt mit Hackfleisch, Zwiebeln, Ei, Oliven und Rosinen. An der Küste gibt es Empanadas de Mariscos mit Muscheln.",
+      "category": "food",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 257,
+      "text": "Cochamó-Tal südlich von Puerto Montt wird 'Yosemite des Südens' genannt — Granitfelsen, Regenwälder mit 1.000 Jahre alten Alerzen und Kletterrouten von Weltklasse.",
+      "category": "nature",
+      "location": "frutillar-puerto-varas",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 258,
+      "text": "Das Teatro del Lago in Frutillar ist ein hochmoderner Konzertsaal mit Kupferdach direkt am See — weltbekannte Orchester spielen vor der Kulisse von Vulkanen.",
+      "category": "culture",
+      "location": "frutillar-puerto-varas",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 259,
+      "text": "Der Lago Todos Los Santos heißt auch 'Lago Esmeralda' wegen seines intensiv smaragdgrünen Wassers — einer der schönsten Seen des Lake District.",
+      "category": "nature",
+      "location": "frutillar-puerto-varas",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 260,
+      "text": "Puerto Octay war die erste deutsche Siedlung am Llanquihue (1852). Im Museum 'El Colono' stehen noch die Destillierapparate für Chicha — einen fermentierten Apfelmost.",
+      "category": "history",
+      "location": "frutillar-puerto-varas",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 261,
+      "text": "Die Fiestas Patrias am 18. September sind Chiles größtes Fest: Fondas (Tanzpavillons mit Eukalyptus-Dach), Cueca-Tänze, Empanadas, Chicha und Rodeos überall im Land.",
+      "category": "culture",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 262,
+      "text": "Im Cajón del Maipo zeigen weiße Fahnen am Straßenrand, dass Anwohner selbstgemachte Spezialitäten verkaufen: Ofenbrot, Honig, Marmeladen und Empanadas.",
+      "category": "food",
+      "location": "wine-resort",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 263,
+      "text": "Ein Vulkanausbruch des Osorno im Jahr 1850 leitete den Río Petrohué um — statt in den Lago Llanquihue fließt er seitdem in den Lago Todos Los Santos. Die alten Lavaströme sind noch sichtbar.",
+      "category": "nature",
+      "location": "frutillar-puerto-varas",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 264,
+      "text": "Die Besteigung des Volcán Osorno ist die schwierigste Vulkan-Herausforderung der Region — fünf Stunden zum Gipfel, Eis- und Schneeausrüstung nötig, maximal 2 Wanderer pro Guide.",
+      "category": "nature",
+      "location": "osorno",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 265,
+      "text": "Das Refugio Teski am Volcán Osorno hat Outdoor-Whirlpools — Pisco Sour in der Hand, Blick über den Lago Llanquihue, umgeben von blauen Eishöhlen.",
+      "category": "unique",
+      "location": "osorno",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 266,
+      "text": "Der Sendero Termas de Callao im Parque Vicente Pérez Rosales führt zu kostenlosen heißen Quellen mitten in der Wildnis — erreichbar nur per Boot und Wanderung.",
+      "category": "nature",
+      "location": "frutillar-puerto-varas",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 267,
+      "text": "Am Dalcahue-Markt auf Chiloé werden sonntags traditionelle Curanto-Mahlzeiten zubereitet: Meeresfrüchte, Fleisch und Milcao (Kartoffelbrot) — gekocht über heißen Steinen in einem Erdloch.",
+      "category": "food",
+      "location": "chiloe",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 268,
+      "text": "Pumas leben in den Bergen des Lake District und können bis zu 1,5 Meter lang werden. Sie greifen selten Menschen an, aber Guanako-Skelette mit gebrochenen Hälsen verraten ihre Anwesenheit.",
+      "category": "nature",
+      "location": "pucon",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 269,
+      "text": "Die Llaca ist das einzige verbliebene Beuteltier der südlichen Anden — es lebt in den Bäumen, ernährt sich von Früchten und Insekten und hält im Winter einen Halbwinterschlaf.",
+      "category": "nature",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 270,
+      "text": "Chiles Hirschkäfer (stag beetle) wird bis zu 9 cm lang — er lebt in den Eichen- und Coigüe-Wäldern des Lake District und ist einer der größten Käfer der Welt.",
+      "category": "nature",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 271,
+      "text": "In Puerto Varas kann man im Januar und Februar Mountainbike-Downhill auf den Skipisten des Volcán Osorno fahren — die Sessellifte laufen ganzjährig.",
+      "category": "unique",
+      "location": "frutillar-puerto-varas",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 272,
+      "text": "Der Parque Nacional Vicente Pérez Rosales ist mit über 2.510 km² der meistbesuchte Nationalpark Chiles — gegründet 1926 als erster Nationalpark des Landes.",
+      "category": "nature",
+      "location": "frutillar-puerto-varas",
+      "source": "Rough Guides Chile 2023"
     }
   ],
   "lastUpdated": "2026-02-08",
-  "totalFacts": 252
+  "totalFacts": 272
 }
