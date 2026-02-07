@@ -150,8 +150,66 @@
       "category": "unique",
       "location": "algarrobo",
       "coordinates": [-33.3550, -71.6420]
+    },
+    {
+      "id": 26,
+      "text": "Chile hat über 500 geologisch aktive Vulkane, davon sind etwa 60 in den letzten 500 Jahren ausgebrochen.",
+      "category": "nature"
+    },
+    {
+      "id": 27,
+      "text": "Der Aufstieg zum Krater des Villarrica (2.840m) dauert etwa 4 Stunden — dank eines Skilifts, der die Strecke verkürzt.",
+      "category": "nature",
+      "location": "pucon",
+      "coordinates": [-39.4200, -71.9400]
+    },
+    {
+      "id": 28,
+      "text": "Der Palacio de la Moneda wurde am 11. September 1973 beim Militärputsch von chilenischen Luftwaffen-Kampfjets bombardiert.",
+      "category": "history",
+      "location": "santiago",
+      "coordinates": [-33.4430, -70.6537]
+    },
+    {
+      "id": 29,
+      "text": "Pedro de Valdivia wurde 1553 von den Mapuche unter Führung von Lautaro getötet — der Legende nach wurde ihm geschmolzenes Gold eingeflößt.",
+      "category": "history"
+    },
+    {
+      "id": 30,
+      "text": "Pablo Nerudas drei Häuser in Isla Negra, Santiago und Valparaíso sind heute Museen und fast unverändert seit seinem Tod.",
+      "category": "culture",
+      "location": "algarrobo",
+      "coordinates": [-33.4350, -71.6930]
+    },
+    {
+      "id": 31,
+      "text": "Der Futaleufú in Aysén gilt als Chiles Wildwasser-Paradies — mit Stromschnellen bis Grad 5+ auf der internationalen Skala.",
+      "category": "nature"
+    },
+    {
+      "id": 32,
+      "text": "Im Cerro Alegre und Cerro Concepción in Valparaíso siedelten sich im 19. Jh. englische und deutsche Einwanderer an — daher die bunten Häuser.",
+      "category": "history"
+    },
+    {
+      "id": 33,
+      "text": "Der Ascensor Polanco in Valparaíso ist einzigartig: Er steigt vertikal durch einen Tunnel im Berg zu einem schwebenden Steg.",
+      "category": "unique"
+    },
+    {
+      "id": 34,
+      "text": "Die Baños de Colina oberhalb von Santiago haben natürliche Pools in Terrassen geschnitzt — perfekt um Mondlandschaften zu betrachten.",
+      "category": "nature",
+      "location": "santiago"
+    },
+    {
+      "id": 35,
+      "text": "Der Parque Nacional Vicente Pérez Rosales wurde 1926 gegründet — er war der erste Nationalpark Chiles und ist vom Vulkan Osorno dominiert.",
+      "category": "nature",
+      "location": "osorno"
     }
   ],
   "lastUpdated": "2026-02-07",
-  "totalFacts": 25
+  "totalFacts": 35
 }

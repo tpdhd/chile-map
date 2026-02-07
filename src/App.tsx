@@ -14,19 +14,66 @@ const VISITED_KEY = 'chile-trip-visited'
 
 // Category icons for quick visual reference
 const CATEGORY_ICONS: Record<string, string> = {
+  'restaurant': '🍽️',
   'Restaurant': '🍽️',
+  'café': '☕',
   'Café': '☕',
+  'cafe': '☕',
+  'bar': '🍺',
   'Bar': '🍺',
-  'Viewpoint': '🏔️',
+  'viewpoint': '👁️',
+  'Viewpoint': '👁️',
+  'museum': '🏛️',
   'Museum': '🏛️',
+  'market': '🛒',
   'Market': '🛒',
+  'park': '🌳',
   'Park': '🌳',
+  'beach': '🏖️',
   'Beach': '🏖️',
+  'winery': '🍷',
   'Winery': '🍷',
-  'Nature': '🌿',
+  'nature': '🌲',
+  'Nature': '🌲',
+  'historical': '🏰',
   'Historic': '🏰',
+  'activity': '🎯',
   'Activity': '🎯',
+  'shopping': '🛍️',
   'Shopping': '🛍️',
+  'unique': '⭐',
+  'Unique': '⭐',
+  'art': '🎨',
+  'Art': '🎨',
+  'hotspring': '♨️',
+  'Hotspring': '♨️',
+  'hiking': '🥾',
+  'Hiking': '🥾',
+  'event': '🎪',
+  'Event': '🎪',
+}
+
+// Category German labels
+const CATEGORY_LABELS: Record<string, string> = {
+  'restaurant': 'Restaurant',
+  'café': 'Café',
+  'cafe': 'Café',
+  'bar': 'Bar',
+  'viewpoint': 'Aussichtspunkt',
+  'museum': 'Museum',
+  'market': 'Markt',
+  'park': 'Park',
+  'beach': 'Strand',
+  'winery': 'Weingut',
+  'nature': 'Natur',
+  'historical': 'Historisch',
+  'activity': 'Aktivität',
+  'shopping': 'Einkaufen',
+  'unique': 'Besonders',
+  'art': 'Kunst',
+  'hotspring': 'Therme',
+  'hiking': 'Wandern',
+  'event': 'Event',
 }
 
 function App() {
@@ -316,14 +363,15 @@ function App() {
               </button>
               {categories.map(cat => {
                 const count = selectedLocation.recommendations.filter(r => r.category === cat).length
+                const label = CATEGORY_LABELS[cat.toLowerCase()] || cat
                 return (
                   <button
                     key={cat}
                     onClick={() => setActiveCategory(activeCategory === cat ? null : cat)}
                     className={`px-3 py-1.5 rounded-full text-sm whitespace-nowrap flex items-center gap-1 ${activeCategory === cat ? 'bg-chile-accent-teal text-white' : 'bg-white/10'}`}
                   >
-                    <span>{CATEGORY_ICONS[cat] || '📍'}</span>
-                    <span>{cat}</span>
+                    <span>{CATEGORY_ICONS[cat] || CATEGORY_ICONS[cat.toLowerCase()] || '📍'}</span>
+                    <span>{label}</span>
                     <span className="opacity-60">({count})</span>
                   </button>
                 )
@@ -353,7 +401,7 @@ function App() {
                         {visited.has(rec.id) && <span className="text-green-400 text-xs">✓</span>}
                       </div>
                       <div className="text-xs text-chile-text-muted truncate">
-                        {rec.category}{rec.priceRange && ` • ${rec.priceRange}`}
+                        {CATEGORY_LABELS[rec.category.toLowerCase()] || rec.category}{rec.priceRange && ` • ${rec.priceRange}`}
                       </div>
                     </div>
 

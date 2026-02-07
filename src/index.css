@@ -116,6 +116,39 @@
   font-size: 12px;
 }
 
+/* Selected marker pulsing effect */
+.custom-marker.selected {
+  animation: marker-pulse 1.5s ease-in-out infinite;
+  z-index: 1000 !important;
+}
+
+@keyframes marker-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(230, 57, 70, 0.7);
+  }
+  50% {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 12px rgba(230, 57, 70, 0);
+  }
+}
+
+/* Highlighted recommendation in list */
+.recommendation-highlighted {
+  background: rgba(230, 57, 70, 0.2) !important;
+  border-left: 3px solid #e63946 !important;
+  animation: highlight-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes highlight-pulse {
+  0%, 100% {
+    background: rgba(230, 57, 70, 0.2);
+  }
+  50% {
+    background: rgba(230, 57, 70, 0.35);
+  }
+}
+
 /* Route line */
 .route-line {
   stroke-dasharray: 10, 6;

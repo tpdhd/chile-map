@@ -65,16 +65,28 @@ interface MapProps {
 }
 
 // Component to handle map view changes
-function MapController({ selectedLocation }: { selectedLocation: Location | null }) {
+function MapController({ 
+  selectedLocation, 
+  selectedRecommendation 
+}: { 
+  selectedLocation: Location | null
+  selectedRecommendation: Recommendation | null 
+}) {
   const map = useMap()
 
   useEffect(() => {
-    if (selectedLocation) {
+    if (selectedRecommendation) {
+      // Fly to recommendation with higher zoom
+      map.flyTo(selectedRecommendation.coordinates as [number, number], 14, {
+        duration: 1
+      })
+    } else if (selectedLocation) {
+      // Fly to location
       map.flyTo(selectedLocation.coordinates as [number, number], 10, {
         duration: 1.5
       })
     }
-  }, [selectedLocation, map])
+  }, [selectedLocation, selectedRecommendation, map])
 
   return null
 }
@@ -95,10 +107,11 @@ export default function Map({
   // Create custom markers for locations
   const createLocationIcon = (location: Location, isSelected: boolean) => {
     const locationNumber = locations.findIndex(l => l.id === location.id) + 1
+    const selectedClass = isSelected ? 'selected' : ''
     
     return L.divIcon({
       html: `
-        <div class="custom-marker location-marker" style="
+        <div class="custom-marker location-marker ${selectedClass}" style="
           background: ${isSelected ? '#e63946' : '#2a9d8f'};
           color: white;
         ">
@@ -116,10 +129,11 @@ export default function Map({
   const createRecommendationIcon = (recommendation: Recommendation, isSelected: boolean) => {
     const color = categoryColors[recommendation.category] || '#6b6b7b'
     const icon = categoryIcons[recommendation.category] || '📍'
+    const selectedClass = isSelected ? 'selected' : ''
     
     return L.divIcon({
       html: `
-        <div class="custom-marker recommendation-marker" style="
+        <div class="custom-marker recommendation-marker ${selectedClass}" style="
           background: ${isSelected ? '#e63946' : color};
           color: white;
         ">
@@ -195,7 +209,10 @@ export default function Map({
         ))}
 
       {/* Map controller for view changes */}
-      <MapController selectedLocation={selectedLocation} />
+      <MapController 
+        selectedLocation={selectedLocation} 
+        selectedRecommendation={selectedRecommendation}
+      />
     </MapContainer>
   )
 }
