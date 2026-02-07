@@ -224,6 +224,9 @@ export default function Map({
         crossOrigin="anonymous"
         className="smooth-tiles"
         maxNativeZoom={22}
+        keepBuffer={16}
+        updateWhenZooming={false}
+        updateWhenIdle={true}
       />
 
       {/* Route line */}
