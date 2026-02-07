@@ -816,8 +816,306 @@
       "category": "food",
       "location": "san-carlos",
       "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 121,
+      "text": "Pichidangui hat einen 7 km langen Strand aus weißem, pudrigem Sand — einer der unberührtesten Strände an der Küste nördlich von Valparaíso.",
+      "category": "beach",
+      "location": "quillimari",
+      "coordinates": [
+        -32.15,
+        -71.52
+      ],
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 122,
+      "text": "Der Governor's Chair bei Pichidangui ist mit 695 Metern die höchste Meeresklippe Chiles — an klaren Tagen von Valparaíso aus sichtbar.",
+      "category": "geography",
+      "location": "quillimari",
+      "coordinates": [
+        -32.15,
+        -71.52
+      ],
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 123,
+      "text": "Die Los Molles-Felsengärten zwischen Pichidangui und Pichicuy bilden unterirdische Kavernen, in denen das Meer ein donnerndes Brüllen erzeugt.",
+      "category": "nature",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 124,
+      "text": "Eine Kirche in Pichicuy wurde auf einem Felsvorsprung direkt über dem Meer gebaut — ein einzigartiges architektonisches Wahrzeichen der Region.",
+      "category": "unique",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 125,
+      "text": "Los Vilos, 30 km nördlich von Pichidangui, hat seinen Namen angeblich von 'Lord Willow' — einem britischen Piraten, der hier Schiffbruch erlitt und blieb.",
+      "category": "history",
+      "location": "quillimari",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 126,
+      "text": "Die Isla de los Lobos, 5 km südlich von Los Vilos, beherbergt eine große Robbenkolonie — ein beliebtes Ausflugsziel für Tierbeobachtung.",
+      "category": "nature",
+      "location": "quillimari",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 127,
+      "text": "David Alfaro Siqueiros malte nach dem verheerenden Erdbeben von 1939 in Chillán die berühmten Murales 'Death to the Invader' in der Escuela México.",
+      "category": "culture",
+      "location": "chillan",
+      "coordinates": [
+        -36.6,
+        -72.1
+      ],
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 128,
+      "text": "Das Erdbeben von 1939 in Chillán tötete 28.000 Menschen — David Alfaro Siqueiros und Xavier Guerrero verewigten die Tragödie in monumentalen Wandgemälden.",
+      "category": "history",
+      "location": "chillan",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 129,
+      "text": "Die Feria de Chillán ist der größte und lebhafteste Markt Chiles — samstags platzt er aus dem Platz und breitet sich in die umliegenden Straßen aus.",
+      "category": "culture",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 130,
+      "text": "Chillán ist der Geburtsort von Claudio Arrau, einem der bedeutendsten klassischen Pianisten des 20. Jahrhunderts — ihm ist ein Museum gewidmet.",
+      "category": "culture",
+      "location": "chillan",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 131,
+      "text": "Die Termas de Chillán haben mit 13 km die längste Skipiste Südamerikas — nach dem Skifahren kann man in heißen Thermalquellen entspannen.",
+      "category": "nature",
+      "location": "chillan",
+      "coordinates": [
+        -36.9,
+        -71.4
+      ],
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 132,
+      "text": "Der Mercado de Chillán verkauft die komplette Huaso-Tracht: von Filzhüten über handgewebte Ponchos bis zu geschnitzten Holzsteigbügeln.",
+      "category": "culture",
+      "location": "chillan",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 133,
+      "text": "Ein 36 Meter hohes Betonkreuz auf der Plaza de Chillán erinnert an die 30.000 Opfer des Erdbebens von 1939 — das Wahrzeichen der wiederaufgebauten Stadt.",
+      "category": "history",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 134,
+      "text": "Die Kathedrale von Chillán wurde 1941-1961 erdbebensicher gebaut — in Form eines Tunnels aus neun hohen Bögen, ein Meisterwerk moderner Architektur.",
+      "category": "unique",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 135,
+      "text": "Isla Teja in Valdivia beherbergt drei ausgezeichnete Museen und bietet wunderschöne Ausblicke über den Fluss zurück zum Mercado Fluvial.",
+      "category": "culture",
+      "location": "valdivia",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 136,
+      "text": "Valdivia hat mehr Regen als London — trotzdem ist die Stadt am Río Valdivia für ihre deutsche Brauerei-Tradition und ausgezeichnetes Bier bekannt.",
+      "category": "food",
+      "location": "valdivia",
+      "coordinates": [
+        -39.8142,
+        -73.2459
+      ],
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 137,
+      "text": "Das Bierfest Kunstmann Ende Januar in Valdivia feiert lokales Craft Beer — eine der wichtigsten Brauereitraditionen Südamerikas.",
+      "category": "culture",
+      "location": "valdivia",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 138,
+      "text": "Zwischen der zweiten und dritten Februarwoche erstrahlt Valdivia in der 'Valdivia Week' mit einer Parade beleuchteter Boote und einem spektakulären Feuerwerk.",
+      "category": "culture",
+      "location": "valdivia",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 139,
+      "text": "Das Museo de Arte Contemporáneo in Valdivia ist in der alten Kunstmann-Brauerei untergebracht — zeitgenössische Kunst trifft auf Brauerei-Geschichte.",
+      "category": "culture",
+      "location": "valdivia",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 140,
+      "text": "Im Volcán Llaima im Parque Nacional Conguillío fand 2008 der letzte große Ausbruch statt — er ist einer der drei aktivsten Vulkane des Kontinents.",
+      "category": "nature",
+      "location": "conguillio",
+      "coordinates": [
+        -38.65,
+        -71.63
+      ],
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 141,
+      "text": "Das Lava-Feld im Süden des Parque Nacional Conguillío besteht entweder aus rollenden Staubebenen oder Wänden aus spitzem, frisch erstarrtem Gestein.",
+      "category": "geography",
+      "location": "conguillio",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 142,
+      "text": "Der Sendero Pastos Blancos im Conguillío-Park durchquert 11 km spektakuläre Landschaft mit Panoramablicken auf Sierra Nevada, Lago Conguillío und das Truful-Truful-Tal.",
+      "category": "nature",
+      "location": "conguillio",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 143,
+      "text": "Im Jahr 2015 bedrohten Waldbrände die jahrhundertealten Araukarien im Parque Nacional Conguillío — Chile erklärte daraufhin den nationalen Notstand.",
+      "category": "history",
+      "location": "conguillio",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 144,
+      "text": "Der Sendero Subtramo Arpehue im Conguillío führt von der Truful-Truful-Station zur Laguna Captrén und passiert die Mapuche-Gemeinde Andrés Huenupi.",
+      "category": "culture",
+      "location": "conguillio",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 145,
+      "text": "Osorno wurde von 1553 bis 1796 regelmäßig von den Mapuche geplündert — trotz seiner hervorragenden Verteidigungsposition als spanische Grenzfestung.",
+      "category": "history",
+      "location": "osorno",
+      "coordinates": [
+        -40.57,
+        -73.13
+      ],
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 146,
+      "text": "Die deutsche Architektur in Osorno ist an der Reihe hölzerner Häuser entlang der Calle Mackenna sichtbar — gebaut zwischen 1876 und 1923.",
+      "category": "culture",
+      "location": "osorno",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 147,
+      "text": "Das Museo Municipal in Osorno zeigt eine Mumie aus der Atacama-Wüste, Mapuche-Machtsteine und schwere Silberkragen — ein faszinierender Mix prähistorischer Exponate.",
+      "category": "culture",
+      "location": "osorno",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 148,
+      "text": "Der Vulkan Calbuco brach 2015 zum ersten Mal seit 42 Jahren aus — die Eruption war so heftig, dass Asche bis nach Argentinien flog.",
+      "category": "nature",
+      "location": "osorno",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 149,
+      "text": "Die Cervecería Märzen bei Osorno ist eine fantastische deutsche Mikrobrauerei, die Bock, Doppelbock und Märzen serviert — versteckt hinter Bäumen im Wald.",
+      "category": "food",
+      "location": "osorno",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 150,
+      "text": "Der Lake District erstreckt sich über 339 km von Temuco bis Puerto Montt — eine Region aus Vulkanen, Wäldern und kristallklaren Seen.",
+      "category": "geography",
+      "location": "frutillar-puerto-varas",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 151,
+      "text": "Im Lago Llanquihue-Gebiet regnet es über 4.000 mm pro Jahr — mehr als in jedem anderen Teil Chiles außer Patagonien.",
+      "category": "nature",
+      "location": "frutillar-puerto-varas",
+      "coordinates": [
+        -41.2,
+        -72.85
+      ],
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 152,
+      "text": "Frutillar wird besonders voll während der Semanas Musicales Ende Januar/Anfang Februar — ein renommiertes klassisches Musikfestival am Lago Llanquihue.",
+      "category": "culture",
+      "location": "frutillar-puerto-varas",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 153,
+      "text": "Das Museo Colonial Alemán de Frutillar zeigt eine kreisförmige Scheune 'Campanario' — in der früher Pferde im Kreis getrieben wurden, um Getreide zu dreschen.",
+      "category": "culture",
+      "location": "frutillar-puerto-varas",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 154,
+      "text": "Puerto Octay war die erste deutsche Siedlung am Lago Llanquihue (1852) — ein freundlicher Ort mit nadelspitzer Kirche und Häusern mit verzierten Dachvorsprüngen.",
+      "category": "history",
+      "location": "frutillar-puerto-varas",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 155,
+      "text": "Das Casablanca-Tal zwischen Santiago und Valparaíso profitiert von Meeresbrisen — es produziert einige der besten Weißweine Chiles.",
+      "category": "food",
+      "location": "wine-resort",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 156,
+      "text": "Don Silvestre Ochagavía brachte 1850 Cabernet Sauvignon-Reben aus Frankreich — kurz bevor die Reblaus-Plage die europäischen Weinstöcke zerstörte.",
+      "category": "history",
+      "location": "wine-resort",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 157,
+      "text": "Viña Cousiño Macul befindet sich seit 1856 in Familienbesitz — Doña Isidora Goyenechea ließ die Keller bauen und einen Önologen aus Bordeaux holen.",
+      "category": "history",
+      "location": "wine-resort",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 158,
+      "text": "Die Vendimia (Weinlese) findet zwischen Anfang März und Mitte April statt — in Santa Cruz gibt es ein großes Festival mit Kunsthandwerk und Weinproben.",
+      "category": "food",
+      "location": "wine-resort",
+      "source": "Insight Guides Chile 2024"
     }
   ],
   "lastUpdated": "2026-02-07",
-  "totalFacts": 120
+  "totalFacts": 158
 }
