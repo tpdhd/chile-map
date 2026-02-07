@@ -5,6 +5,8 @@ import factsData from './data/facts.json'
 
 // Lazy load the map for faster initial render
 const Map = lazy(() => import('./components/Map'))
+const CarRentalPage = lazy(() => import('./components/CarRentalPage'))
+const SettingsPage = lazy(() => import('./components/SettingsPage'))
 
 export type Location = typeof tripData.locations[0]
 export type Recommendation = typeof tripData.locations[0]['recommendations'][0]
@@ -105,6 +107,8 @@ function App() {
   const searchInputRef = useRef<HTMLInputElement>(null)
   const [showFacts, setShowFacts] = useState(false)
   const [currentFactIndex, setCurrentFactIndex] = useState(0)
+  const [showCarRental, setShowCarRental] = useState(false)
+  const [showSettings, setShowSettings] = useState(false)
 
   // Get facts for current location or random
   const locationFacts = useMemo(() => {
@@ -396,6 +400,24 @@ function App() {
         {/* Menu Dropdown */}
         {showMenu && (
           <div className="absolute top-12 right-0 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg border border-white/10 min-w-[200px] overflow-hidden">
+            <button
+              onClick={() => {
+                setShowCarRental(true)
+                setShowMenu(false)
+              }}
+              className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
+            >
+              <span>🚗</span> Mietwagen Guide
+            </button>
+            <button
+              onClick={() => {
+                setShowSettings(true)
+                setShowMenu(false)
+              }}
+              className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
+            >
+              <span>⚙️</span> Einstellungen
+            </button>
             <button
               onClick={() => {
                 setShowFacts(true)
@@ -806,6 +828,20 @@ function App() {
             </div>
           </div>
         </div>
+      )}
+
+      {/* CAR RENTAL PAGE */}
+      {showCarRental && (
+        <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">🚗</div></div>}>
+          <CarRentalPage onClose={() => setShowCarRental(false)} />
+        </Suspense>
+      )}
+
+      {/* SETTINGS PAGE */}
+      {showSettings && (
+        <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">⚙️</div></div>}>
+          <SettingsPage onClose={() => setShowSettings(false)} />
+        </Suspense>
       )}
 
       {/* Click outside to close dropdowns */}
