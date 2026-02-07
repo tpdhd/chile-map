@@ -1,4 +1,4 @@
-import { useState, useEffect, Suspense, lazy, useMemo } from 'react'
+import { useState, useEffect, useRef, useCallback, Suspense, lazy, useMemo } from 'react'
 import { MapLoading } from './components/LoadingState'
 import tripData from './data/trip-data.json'
 import factsData from './data/facts.json'
@@ -100,6 +100,9 @@ function App() {
   const [notes, setNotes] = useState<Record<string, string>>({})
   const [visited, setVisited] = useState<Set<string>>(new Set())
   const [searchQuery, setSearchQuery] = useState('')
+  const [globalSearchResults, setGlobalSearchResults] = useState<Array<{ location: Location; recommendation: Recommendation }>>([])
+  const [showSearchResults, setShowSearchResults] = useState(false)
+  const searchInputRef = useRef<HTMLInputElement>(null)
   const [showFacts, setShowFacts] = useState(false)
   const [currentFactIndex, setCurrentFactIndex] = useState(0)
 
@@ -111,6 +114,69 @@ function App() {
     )
     return locFacts.length > 0 ? locFacts : factsData.facts
   }, [selectedLocation])
+
+  // Global search across ALL locations and recommendations
+  const performGlobalSearch = useCallback((query: string) => {
+    if (!query.trim()) {
+      setGlobalSearchResults([])
+      setShowSearchResults(false)
+      return
+    }
+    const q = query.toLowerCase().trim()
+    const results: Array<{ location: Location; recommendation: Recommendation }> = []
+    for (const loc of tripData.locations) {
+      for (const rec of loc.recommendations) {
+        const matchesName = rec.name.toLowerCase().includes(q)
+        const matchesNameEs = rec.nameEs?.toLowerCase().includes(q)
+        const matchesCategory = rec.category.toLowerCase().includes(q)
+        const matchesCategoryLabel = (CATEGORY_LABELS[rec.category.toLowerCase()] || '').toLowerCase().includes(q)
+        const matchesDescription = rec.description?.toLowerCase().includes(q)
+        const matchesTags = rec.tags?.some((tag: string) => tag.toLowerCase().includes(q))
+        const matchesLocation = loc.name.toLowerCase().includes(q)
+        const matchesAddress = rec.address?.toLowerCase().includes(q)
+        if (matchesName || matchesNameEs || matchesCategory || matchesCategoryLabel || matchesDescription || matchesTags || matchesLocation || matchesAddress) {
+          results.push({ location: loc, recommendation: rec })
+        }
+      }
+    }
+    setGlobalSearchResults(results)
+    setShowSearchResults(true)
+  }, [])
+
+  const handleSearchKeyDown = useCallback((e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      e.preventDefault()
+      performGlobalSearch(searchQuery)
+    }
+    if (e.key === 'Escape') {
+      setShowSearchResults(false)
+      setSearchQuery('')
+      searchInputRef.current?.blur()
+    }
+  }, [searchQuery, performGlobalSearch])
+
+  const handleSearchResultClick = useCallback((result: { location: Location; recommendation: Recommendation }) => {
+    // Select the location
+    setSelectedLocation(result.location)
+    // Select the recommendation
+    setSelectedRecommendation(result.recommendation)
+    // Expand the bottom sheet
+    setSheetExpanded(true)
+    // Clear search state
+    setShowSearchResults(false)
+    setSearchQuery('')
+    // Clear category filter so the recommendation is visible
+    setActiveCategory(null)
+    // Scroll to the recommendation in the bottom sheet after render
+    setTimeout(() => {
+      const element = document.getElementById(`rec-${result.recommendation.id}`)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        element.classList.add('flash-highlight')
+        setTimeout(() => element.classList.remove('flash-highlight'), 2000)
+      }
+    }, 400)
+  }, [])
 
   // Load saved data from localStorage
   useEffect(() => {
@@ -223,7 +289,7 @@ function App() {
   const daysUntil = Math.ceil((tripStart.getTime() - now.getTime()) / (1000 * 60 * 60 * 24))
 
   return (
-    <div className="h-screen w-screen overflow-hidden bg-chile-bg-primary relative">
+    <div className="h-[100dvh] w-screen overflow-hidden bg-chile-bg-primary relative">
       {/* FULL SCREEN MAP */}
       <div className="absolute inset-0">
         <Suspense fallback={<MapLoading />}>
@@ -239,7 +305,7 @@ function App() {
       </div>
 
       {/* FLOATING HEADER - Top Left */}
-      <div className="absolute top-4 left-4 z-[600] flex items-center gap-2">
+      <div className="absolute left-4 z-[600] flex items-center gap-2" style={{ top: 'calc(env(safe-area-inset-top, 0px) + 1rem)' }}>
         {/* Location Picker Button - Pulses when location selected */}
         <button
           onClick={() => setShowLocationPicker(!showLocationPicker)}
@@ -266,16 +332,57 @@ function App() {
       </div>
 
       {/* FLOATING MENU - Top Right with Search */}
-      <div className="absolute top-4 right-4 z-[600] flex items-center gap-2">
+      <div className="absolute right-4 z-[600] flex items-center gap-2" style={{ top: 'calc(env(safe-area-inset-top, 0px) + 1rem)' }}>
         {/* Omni-Search - Compact to avoid overlap */}
         <div className="relative">
           <input
+            ref={searchInputRef}
             type="text"
             placeholder="🔍"
             value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-10 focus:w-36 transition-all px-2 py-2 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg text-sm placeholder:text-chile-text-muted focus:outline-none border border-white/10 focus:placeholder:opacity-0"
+            onChange={(e) => {
+              setSearchQuery(e.target.value)
+              // Live search as user types
+              if (e.target.value.trim().length >= 2) {
+                performGlobalSearch(e.target.value)
+              } else if (e.target.value.trim().length === 0) {
+                setGlobalSearchResults([])
+                setShowSearchResults(false)
+              }
+            }}
+            onKeyDown={handleSearchKeyDown}
+            className="w-10 focus:w-48 transition-all px-2 py-2 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg text-sm placeholder:text-chile-text-muted focus:outline-none border border-white/10 focus:border-chile-accent-red/50 focus:placeholder:opacity-0"
           />
+          {/* Global Search Results Dropdown */}
+          {showSearchResults && globalSearchResults.length > 0 && (
+            <div className="absolute top-12 right-0 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg border border-white/10 max-h-[60vh] overflow-y-auto w-72 animate-slide-up">
+              <div className="px-3 py-2 border-b border-white/10 text-xs text-chile-text-muted">
+                {globalSearchResults.length} Ergebnis{globalSearchResults.length !== 1 ? 'se' : ''} gefunden
+              </div>
+              {globalSearchResults.map((result, idx) => (
+                <button
+                  key={`${result.recommendation.id}-${idx}`}
+                  onClick={() => handleSearchResultClick(result)}
+                  className="w-full px-3 py-2.5 text-left hover:bg-white/10 flex items-center gap-2 transition-colors border-b border-white/5 last:border-b-0"
+                >
+                  <span className="text-lg flex-shrink-0">{CATEGORY_ICONS[result.recommendation.category] || '📍'}</span>
+                  <div className="flex-1 min-w-0">
+                    <div className="font-medium text-sm truncate">{result.recommendation.name}</div>
+                    <div className="text-xs text-chile-text-muted truncate">
+                      📍 {result.location.name} • {CATEGORY_LABELS[result.recommendation.category.toLowerCase()] || result.recommendation.category}
+                    </div>
+                  </div>
+                </button>
+              ))}
+            </div>
+          )}
+          {showSearchResults && globalSearchResults.length === 0 && searchQuery.trim().length >= 2 && (
+            <div className="absolute top-12 right-0 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg border border-white/10 w-60 animate-slide-up">
+              <div className="px-4 py-3 text-sm text-chile-text-muted text-center">
+                Keine Ergebnisse für "{searchQuery}"
+              </div>
+            </div>
+          )}
         </div>
         
         {/* Burger Menu */}
@@ -361,7 +468,7 @@ function App() {
 
       {/* LOCATION PICKER DROPDOWN */}
       {showLocationPicker && (
-        <div className="absolute top-16 left-4 z-[600] bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg border border-white/10 max-h-[60vh] overflow-y-auto w-72">
+        <div className="absolute left-4 z-[600] bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg border border-white/10 max-h-[60vh] overflow-y-auto w-72" style={{ top: 'calc(env(safe-area-inset-top, 0px) + 4rem)' }}>
           {tripData.locations.map((loc, index) => {
             const isSelected = selectedLocation?.id === loc.id
             return (
@@ -401,7 +508,7 @@ function App() {
           transition-transform duration-300 ease-out
           ${sheetExpanded ? 'translate-y-0' : 'translate-y-[calc(100%-64px)]'}
         `}
-        style={{ maxHeight: '50vh' }}
+        style={{ maxHeight: '50vh', paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}
       >
         {/* Sheet Handle - Clear drag indicator */}
         <div 
@@ -702,12 +809,13 @@ function App() {
       )}
 
       {/* Click outside to close dropdowns */}
-      {(showLocationPicker || showMenu) && (
+      {(showLocationPicker || showMenu || showSearchResults) && (
         <div 
           className="absolute inset-0 z-[550]"
           onClick={() => {
             setShowLocationPicker(false)
             setShowMenu(false)
+            setShowSearchResults(false)
           }}
         />
       )}
