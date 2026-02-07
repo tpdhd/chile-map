@@ -197,16 +197,16 @@ export default function Map({
       attributionControl={false}
       zoomControl={true}
     >
-      {/* Dark mode tile layer - Stadia Alidade Smooth Dark */}
+      {/* Dark mode tile layer - Mapbox Dark */}
       <TileLayer
-        url={`https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png?api_key=${atob('YTg4NTQ5NTEtNWJiYy00MzNiLTllNTMtNTFiYWJiZWFjM2E4')}`}
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://stadiamaps.com/">Stadia Maps</a>'
-        maxZoom={20}
+        url={`https://api.mapbox.com/styles/v1/mapbox/dark-v11/tiles/256/{z}/{x}/{y}@2x?access_token=${atob('cGsuZXlKMUlqb2liWE53WkROMklpd2lZU0k2SW1OdGJHTTNaalZ3Y2pCMk0zUXphM05uZEdsMmFIcDFiV1FpZlEuWnZaWWQ5UlRVczdUcmw0WFZ6RWRlQQ==')}`}
+        attribution='&copy; <a href="https://www.mapbox.com/">Mapbox</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        maxZoom={22}
         tileSize={256}
+        zoomOffset={0}
         crossOrigin="anonymous"
-        detectRetina={true}
         className="smooth-tiles"
-        maxNativeZoom={20}
+        maxNativeZoom={22}
       />
 
       {/* Route line */}
