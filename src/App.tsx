@@ -1,6 +1,7 @@
-import { useState, useEffect, Suspense, lazy } from 'react'
+import { useState, useEffect, Suspense, lazy, useMemo } from 'react'
 import { MapLoading } from './components/LoadingState'
 import tripData from './data/trip-data.json'
+import factsData from './data/facts.json'
 
 // Lazy load the map for faster initial render
 const Map = lazy(() => import('./components/Map'))
@@ -93,6 +94,17 @@ function App() {
   const [notes, setNotes] = useState<Record<string, string>>({})
   const [visited, setVisited] = useState<Set<string>>(new Set())
   const [searchQuery, setSearchQuery] = useState('')
+  const [showFacts, setShowFacts] = useState(false)
+  const [currentFactIndex, setCurrentFactIndex] = useState(0)
+
+  // Get facts for current location or random
+  const locationFacts = useMemo(() => {
+    if (!selectedLocation) return factsData.facts
+    const locFacts = factsData.facts.filter(
+      f => f.location === selectedLocation.id || !f.location
+    )
+    return locFacts.length > 0 ? locFacts : factsData.facts
+  }, [selectedLocation])
 
   // Load saved data from localStorage
   useEffect(() => {
@@ -254,6 +266,17 @@ function App() {
         {/* Menu Dropdown */}
         {showMenu && (
           <div className="absolute top-12 right-0 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg border border-white/10 min-w-[200px] overflow-hidden">
+            <button
+              onClick={() => {
+                setShowFacts(true)
+                setShowMenu(false)
+                // Random fact to start
+                setCurrentFactIndex(Math.floor(Math.random() * locationFacts.length))
+              }}
+              className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
+            >
+              <span>📖</span> Chile Fakten ({factsData.totalFacts})
+            </button>
             <button
               onClick={() => {
                 const coords = tripData.locations.map(loc => `${loc.coordinates[0]},${loc.coordinates[1]}`)
@@ -535,6 +558,112 @@ function App() {
           </div>
         )}
       </div>
+
+      {/* FACTS MODAL */}
+      {showFacts && (
+        <div className="absolute inset-0 z-[700] flex items-center justify-center p-4">
+          {/* Backdrop */}
+          <div 
+            className="absolute inset-0 bg-black/70 backdrop-blur-sm"
+            onClick={() => setShowFacts(false)}
+          />
+          
+          {/* Facts Card */}
+          <div className="relative bg-chile-bg-card/95 backdrop-blur-sm rounded-2xl shadow-2xl border border-white/10 max-w-md w-full max-h-[80vh] overflow-hidden animate-slide-up">
+            {/* Header */}
+            <div className="px-4 py-3 border-b border-white/10 flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <span className="text-2xl">📖</span>
+                <div>
+                  <h2 className="font-bold text-lg">Chile Fakten</h2>
+                  <p className="text-xs text-chile-text-muted">
+                    {selectedLocation ? `${selectedLocation.name} & Allgemein` : 'Alle Fakten'} • {locationFacts.length} verfügbar
+                  </p>
+                </div>
+              </div>
+              <button
+                onClick={() => setShowFacts(false)}
+                className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+              >
+                ✕
+              </button>
+            </div>
+
+            {/* Fact Content */}
+            <div className="p-6">
+              {locationFacts.length > 0 && (
+                <div className="space-y-4">
+                  {/* Category Badge */}
+                  <div className="flex items-center gap-2">
+                    <span className={`
+                      px-2 py-1 rounded-full text-xs font-medium
+                      ${locationFacts[currentFactIndex]?.category === 'nature' ? 'bg-green-500/20 text-green-400' : ''}
+                      ${locationFacts[currentFactIndex]?.category === 'history' ? 'bg-amber-500/20 text-amber-400' : ''}
+                      ${locationFacts[currentFactIndex]?.category === 'culture' ? 'bg-purple-500/20 text-purple-400' : ''}
+                      ${locationFacts[currentFactIndex]?.category === 'food' ? 'bg-orange-500/20 text-orange-400' : ''}
+                      ${locationFacts[currentFactIndex]?.category === 'geography' ? 'bg-blue-500/20 text-blue-400' : ''}
+                      ${locationFacts[currentFactIndex]?.category === 'unique' ? 'bg-pink-500/20 text-pink-400' : ''}
+                      ${locationFacts[currentFactIndex]?.category === 'beach' ? 'bg-cyan-500/20 text-cyan-400' : ''}
+                    `}>
+                      {locationFacts[currentFactIndex]?.category === 'nature' && '🌲 Natur'}
+                      {locationFacts[currentFactIndex]?.category === 'history' && '🏰 Geschichte'}
+                      {locationFacts[currentFactIndex]?.category === 'culture' && '🎭 Kultur'}
+                      {locationFacts[currentFactIndex]?.category === 'food' && '🍽️ Essen'}
+                      {locationFacts[currentFactIndex]?.category === 'geography' && '🌍 Geographie'}
+                      {locationFacts[currentFactIndex]?.category === 'unique' && '⭐ Besonders'}
+                      {locationFacts[currentFactIndex]?.category === 'beach' && '🏖️ Strand'}
+                    </span>
+                    {locationFacts[currentFactIndex]?.location && (
+                      <span className="text-xs text-chile-text-muted">
+                        📍 {tripData.locations.find(l => l.id === locationFacts[currentFactIndex]?.location)?.name || locationFacts[currentFactIndex]?.location}
+                      </span>
+                    )}
+                  </div>
+
+                  {/* Fact Text */}
+                  <p className="text-lg leading-relaxed">
+                    {locationFacts[currentFactIndex]?.text}
+                  </p>
+
+                  {/* Source */}
+                  {locationFacts[currentFactIndex]?.source && (
+                    <p className="text-xs text-chile-text-muted italic">
+                      Quelle: {locationFacts[currentFactIndex]?.source}
+                    </p>
+                  )}
+
+                  {/* Counter */}
+                  <div className="text-center text-sm text-chile-text-muted">
+                    {currentFactIndex + 1} / {locationFacts.length}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Navigation */}
+            <div className="px-4 py-3 border-t border-white/10 flex gap-2">
+              <button
+                onClick={() => setCurrentFactIndex(prev => prev > 0 ? prev - 1 : locationFacts.length - 1)}
+                className="flex-1 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors flex items-center justify-center gap-2"
+              >
+                ← Zurück
+              </button>
+              <button
+                onClick={() => setCurrentFactIndex(Math.floor(Math.random() * locationFacts.length))}
+                className="px-4 py-2 rounded-lg bg-chile-accent-teal hover:bg-chile-accent-teal/80 transition-colors"
+              >
+                🎲
+              </button>
+              <button
+                onClick={() => setCurrentFactIndex(prev => prev < locationFacts.length - 1 ? prev + 1 : 0)}
+                className="flex-1 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors flex items-center justify-center gap-2"
+              >
+                Weiter →
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Click outside to close dropdowns */}
       {(showLocationPicker || showMenu) && (
