@@ -2371,6 +2371,97 @@
             "unique"
           ],
           "source": "book-insight-guides"
+        },
+        {
+          "id": "san-carlos-buchupureo",
+          "name": "Buchupureo Surf Beach",
+          "nameEs": "Playa de Surf Buchupureo",
+          "category": "beach",
+          "coordinates": [
+            -36.1325,
+            -72.7964
+          ],
+          "description": "Unberührtes Surferparadies 120 km nordwestlich von Chillán. Left-Point-Break-Wellen bis zu 6 m, dunkler Sand an der Playa La Boca. Idyllisches Küstendorf mit authentischer Atmosphäre.",
+          "descriptionEs": "Paraíso surfista prístino a 120 km al noroeste de Chillán. Olas de left point break de hasta 6 m, arena oscura en Playa La Boca. Pueblo costero idílico con ambiente auténtico.",
+          "address": "Buchupureo, Cobquecura, Ñuble",
+          "googleMapsLink": "https://maps.google.com/?q=-36.1325,-72.7964",
+          "priceRange": "$",
+          "tags": [
+            "surf",
+            "beach",
+            "pristine",
+            "waves",
+            "point-break",
+            "coastal"
+          ],
+          "source": "Rough Guides Chile 2023"
+        },
+        {
+          "id": "san-carlos-iglesia-de-piedra",
+          "name": "Iglesia de Piedra",
+          "nameEs": "Iglesia de Piedra",
+          "category": "nature",
+          "coordinates": [
+            -36.1,
+            -72.8
+          ],
+          "description": "Reihe hoher Meereshöhlen mit Durchgängen hinunter zum Ozean, 5 km nördlich von Cobquecura. Die Felsformationen bilden eine natürliche 'Steinkirche' — spektakulär bei Ebbe.",
+          "descriptionEs": "Serie de altas cuevas marinas con pasadizos que bajan al océano, 5 km al norte de Cobquecura. Las formaciones rocosas forman una 'iglesia de piedra' natural — espectacular en marea baja.",
+          "address": "5 km norte de Cobquecura, Ñuble",
+          "googleMapsLink": "https://maps.google.com/?q=-36.1000,-72.8000",
+          "tags": [
+            "caves",
+            "rock-formations",
+            "coastal",
+            "natural-wonder",
+            "scenic"
+          ],
+          "source": "Rough Guides Chile 2023"
+        },
+        {
+          "id": "san-carlos-cuna-de-prat",
+          "name": "Santuario Cuna de Prat",
+          "nameEs": "Santuario Cuna de Prat",
+          "category": "museum",
+          "coordinates": [
+            -36.4,
+            -72.4
+          ],
+          "description": "Geburtsort des Marinehelden Arturo Prat (1848) in Ninhue. Wunderschöne koloniale Hacienda mit Museum für Marine-Erinnerungsstücke. Einblick in chilenische Heldengeschichte und ländliche Kolonialarchitektur.",
+          "descriptionEs": "Lugar de nacimiento del héroe naval Arturo Prat (1848) en Ninhue. Hermosa hacienda colonial con museo de recuerdos navales. Visión de la historia heroica chilena y arquitectura colonial rural.",
+          "address": "Ninhue, Ñuble",
+          "googleMapsLink": "https://maps.google.com/?q=-36.4000,-72.4000",
+          "tags": [
+            "museum",
+            "history",
+            "naval",
+            "colonial",
+            "hacienda",
+            "Prat"
+          ],
+          "source": "Rough Guides Chile 2023"
+        },
+        {
+          "id": "san-carlos-hacienda-san-agustin",
+          "name": "Hacienda San Agustín de Puñal",
+          "nameEs": "Hacienda San Agustín de Puñal",
+          "category": "historical",
+          "coordinates": [
+            -36.405,
+            -72.405
+          ],
+          "description": "Koloniale Hacienda mit großem Innenhof und eleganten Veranden — ein herausragendes Beispiel ländlicher Kolonialarchitektur in der Region Ñuble.",
+          "descriptionEs": "Hacienda colonial con gran patio interior y elegantes verandas — un ejemplo sobresaliente de arquitectura colonial rural en la región de Ñuble.",
+          "address": "Ninhue, Ñuble",
+          "googleMapsLink": "https://maps.google.com/?q=-36.4050,-72.4050",
+          "tags": [
+            "colonial",
+            "architecture",
+            "hacienda",
+            "historical",
+            "rural"
+          ],
+          "source": "Rough Guides Chile 2023"
         }
       ]
     },

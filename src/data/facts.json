@@ -1385,8 +1385,200 @@
       "location": "wine-resort",
       "source": "Insight Guides Chile 2024",
       "id": 198
+    },
+    {
+      "id": 199,
+      "text": "Pichidangui bedeutet auf Mapudungun 'klein'. Der Ort hat weiße Sandstrände mit starker Brandung — perfekt zum Surfen.",
+      "category": "beach",
+      "location": "quillimari",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 200,
+      "text": "In Pichicuy steht eine Kirche auf einem Felsvorsprung über dem Meer — ein dramatischer Anblick an der Küste nördlich von Quillimari.",
+      "category": "culture",
+      "location": "quillimari",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 201,
+      "text": "Die Felsgärten von Los Molles haben unterirdische Höhlen, die ein donnerndes Tosen erzeugen, wenn die Wellen hineinbrechen.",
+      "category": "nature",
+      "location": "quillimari",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 202,
+      "text": "Der Sillón del Gobernador (Gouverneursstuhl) ist mit 695 m die höchste Seeklippe Chiles — bei gutem Wetter von Valparaíso aus sichtbar.",
+      "category": "geography",
+      "location": "quillimari",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 203,
+      "text": "La Ligua ist berühmt für ihre Dulces — traditionelle Kuchen aus Biskuit und Baiser, gefüllt mit Manjar. Ein lohnender Abstecher von der Autobahn.",
+      "category": "food",
+      "location": "quillimari",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 204,
+      "text": "La Ligua war Heimat von La Quintrala (Catalina de los Ríos y Lisperguer, geb. 1604), einer der finstersten Gestalten Chiles, die über 40 Menschen ermordete — darunter ihren eigenen Vater.",
+      "category": "history",
+      "location": "quillimari",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 205,
+      "text": "Isla Negra hat eine besondere Atmosphäre — Pablo Nerudas Lieblingshaus überblickt einen rauen Küstenabschnitt, wo Wellen gegen bucklige Felsen im weißen Sand krachen.",
+      "category": "culture",
+      "location": "algarrobo",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 206,
+      "text": "Cartagena wurde im frühen 19. Jahrhundert mit der Ankunft der Eisenbahn aus Santiago zu einem der ersten beliebten Badeorte Chiles.",
+      "category": "history",
+      "location": "algarrobo",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 207,
+      "text": "Das Casablanca-Tal zwischen Santiago und Valparaíso produziert Chiles beste Weißweine — Meeresbrisen schaffen perfekte Bedingungen für Sauvignon Blanc und Chardonnay.",
+      "category": "food",
+      "location": "algarrobo",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 208,
+      "text": "Viña Undurraga bei Melipilla lässt sich ideal mit einem Besuch in Algarrobo oder Las Cruces verbinden — Weinkultur trifft Küstengenuss.",
+      "category": "food",
+      "location": "algarrobo",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 209,
+      "text": "San Antonio ist ein Arbeitshafen mit Picadas (einfachen Restaurants) direkt am Hafen, wo Fischer essen — riesige Teller Meeresfrüchte zu sehr günstigen Preisen.",
+      "category": "food",
+      "location": "algarrobo",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 210,
+      "text": "Das Itata-Tal erstreckt sich von Chillán nordwestlich bis zu einer Reihe ruhiger Küstenstädte, darunter das idyllische Surfdorf Buchupureo.",
+      "category": "geography",
+      "location": "san-carlos",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 211,
+      "text": "In Ninhue steht das Santuario Cuna de Prat, Geburtsort des Marinehelden Arturo Prat (1848), in einer wunderschönen kolonialen Hacienda.",
+      "category": "history",
+      "location": "san-carlos",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 212,
+      "text": "Die Hacienda des Prat-Museums ist ein Musterbeispiel kolonialer Landarchitektur mit großem Innenhof und eleganten Veranden.",
+      "category": "history",
+      "location": "san-carlos",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 213,
+      "text": "Die Region Ñuble ist Chiles jüngste Verwaltungsregion — erst kürzlich von Biobío abgetrennt, mit San Carlos als einer ihrer Hauptstädte.",
+      "category": "geography",
+      "location": "san-carlos",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 214,
+      "text": "Die Gegend um San Carlos ist Chiles ländliches Kernland, wo der Kult des Huaso (Cowboy) lebt — mit häufigen Rodeos in Stadien namens Medialunas.",
+      "category": "culture",
+      "location": "san-carlos",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 215,
+      "text": "Chillán wurde seit seiner Gründung 1550 wiederholt durch Erdbeben und Mapuche-Angriffe zerstört und neu aufgebaut. Die meiste Architektur stammt von nach dem Erdbeben 1939.",
+      "category": "history",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 216,
+      "text": "Ein 36 m hohes Betonkreuz auf der Plaza Bernardo O'Higgins in Chillán erinnert an die 30.000 Opfer des Erdbebens von 1939.",
+      "category": "history",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 217,
+      "text": "Die Escuela México in Chillán wurde mit mexikanischen Spenden nach der Erdbebenkatastrophe 1939 gebaut. David Alfaro Siqueiros und Xavier Guerrero schufen dort auf Initiative Pablo Nerudas Wandgemälde.",
+      "category": "culture",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 218,
+      "text": "Die Feria de Chillán ist der größte und lebendigste Markt Chiles — Huaso-Hüte, Ponchos, Lederstiefel und geschnitzte Holzsteigbügel.",
+      "category": "culture",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 219,
+      "text": "Violeta Parra wurde 1917 in Chillán geboren. Ihre Familie brachte auch ihren Bruder Nicanor (Chiles 'Anti-Dichter') und Roberto hervor, den Schöpfer eines neuen Cueca-Stils.",
+      "category": "culture",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 220,
+      "text": "Der Pudú, ein winziger rötlicher Hirsch, der nur in Chile vorkommt, lebt in Dickichten dicht bewaldeter Gebiete zwischen Chillán und Chiloé — fast unmöglich zu entdecken.",
+      "category": "nature",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 221,
+      "text": "Chile führte 1853 Briefmarken ein — nur 13 Jahre nach Großbritannien, dem Erfinder der Briefmarke.",
+      "category": "history",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 222,
+      "text": "Valparaíso wurde 1536 von Juan de Saavedra benannt, der von Heimweh nach seinem spanischen Heimatort überwältigt wurde und es 'Paradies-Tal' (Valle del Paraíso) nannte.",
+      "category": "history",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 223,
+      "text": "Der Ascensor Polanco in Valparaíso (1915) steigt senkrecht durch das Innere eines Hügels empor und tritt oben aus einem Turm hervor, der über einen Hängesteg mit der Hügelspitze verbunden ist.",
+      "category": "unique",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 224,
+      "text": "1834 bestieg Charles Darwin den Cerro La Campana östlich von Valparaíso — heute ein Nationalpark, in dem man seinen Spuren folgen kann.",
+      "category": "history",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 225,
+      "text": "Das Skigebiet Nevados de Chillán hat mit fast 13 km die längste Skipiste Südamerikas.",
+      "category": "unique",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 226,
+      "text": "Buchupureo, 120 km nordwestlich von Chillán, ist ein unberührtes Surferparadies mit Left-Point-Break-Wellen von bis zu 6 Metern.",
+      "category": "beach",
+      "location": "san-carlos",
+      "source": "Rough Guides Chile 2023"
     }
   ],
-  "lastUpdated": "2026-02-07",
-  "totalFacts": 197
+  "lastUpdated": "2026-02-08",
+  "totalFacts": 225
 }
