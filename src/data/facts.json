@@ -603,8 +603,106 @@
       "text": "Merkén ist ein traditionelles Mapuche-Gewürz aus geräuchertem Chili — es wird auf der Feria Libre in Temuco verkauft und gibt Gerichten eine rauchige Schärfe.",
       "category": "food",
       "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 96,
+      "text": "Congrio (Kingklip) ist trotz seines Namens kein Aal, sondern ein Fisch — Pablo Neruda widmete ihm sein berühmtes Gedicht 'Oda al Caldillo de Congrio'.",
+      "category": "food",
+      "location": "santiago",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 97,
+      "text": "Die Kartoffel stammt wahrscheinlich aus Chiloé — Wissenschaftler glauben, sie wurde hier vor 13.000 Jahren domestiziert, bevor sie sich in die Anden ausbreitete.",
+      "category": "food",
+      "location": "chiloe",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 98,
+      "text": "Auf den kleineren Inseln Chiloés gibt es immer noch exotische Kartoffelsorten wie die 'Mojón de Gato' (Katzenkot) — lang, dünn und schwarz.",
+      "category": "food",
+      "location": "chiloe",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 99,
+      "text": "Milkao ist ein traditionelles Chilote-Brot aus geriebenen Kartoffeln, gebraten in Schmalz oder auf einem Curanto gedämpft.",
+      "category": "food",
+      "location": "chiloe",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 100,
+      "text": "Der Humboldt-Strom bringt kaltes antarktisches Wasser die chilenische Küste hinauf — daher die reiche Meeresfrüchte-Vielfalt.",
+      "category": "nature",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 101,
+      "text": "Chile ist nur an seiner breitesten Stelle 355 km breit — von den Andengipfeln kann man oft die Pazifikstrände sehen.",
+      "category": "geography",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 102,
+      "text": "Der Vulkan Calbuco brach 2015 zum ersten Mal seit 42 Jahren aus — die Eruption war so heftig, dass Asche bis nach Argentinien flog.",
+      "category": "nature",
+      "location": "osorno",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 103,
+      "text": "Im Lago Llanquihue-Gebiet regnet es über 4.000 mm pro Jahr — mehr als in jedem anderen Teil Chiles außer Patagonien.",
+      "category": "nature",
+      "location": "frutillar-puerto-varas",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 104,
+      "text": "Die Atacama-Wüste enthält so wenig Feuchtigkeit, dass die NASA hier Mars-Rover testet — es ist einer der trockensten Orte der Erde.",
+      "category": "nature",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 105,
+      "text": "Chiles Erdbeben 2010 (8.8 Magnitude) war so stark, dass es Wissenschaftlern zufolge die Erdachse leicht verschob.",
+      "category": "nature",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 106,
+      "text": "Punta Arenas hat selten Temperaturen über 10°C — die südlichste Großstadt der Welt ist oft in Wolken gehüllt.",
+      "category": "geography",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 107,
+      "text": "Chile nennt Rapa Nui jetzt offiziell bei seinem indigenen Namen — 'Osterinsel' war der europäische Name, weil ein Holländer sie an Ostern 1722 entdeckte.",
+      "category": "culture",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 108,
+      "text": "In Chiloé fallen jährlich über 4.000 mm Regen — und in der Atacama manchmal 0 mm. Chile hat beide Extrem-Niederschläge.",
+      "category": "nature",
+      "location": "chiloe",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 109,
+      "text": "Tunas (Kaktusfeigen) sind in Chile so verbreitet wie Äpfel — sie werden oft zu erfrischenden Säften gepresst.",
+      "category": "food",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 110,
+      "text": "Chiloés Palafitos sind die letzten Stelzenhäuser Chiles — sie stehen über dem Wasser, damit Fischer bei Flut und Ebbe arbeiten können.",
+      "category": "culture",
+      "location": "chiloe",
+      "source": "Insight Guides Chile 2024"
     }
   ],
   "lastUpdated": "2026-02-07",
-  "totalFacts": 95
+  "totalFacts": 110
 }

@@ -195,7 +195,7 @@ export default function Map({
         url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
         maxZoom={19}
-        keepBuffer={256}
+        keepBuffer={512}
         updateWhenZooming={false}
         updateWhenIdle={true}
         tileSize={256}
@@ -210,6 +210,8 @@ export default function Map({
         // @ts-ignore
         fadeAnimation={true}
         zoomAnimation={true}
+        // @ts-ignore - Preload more tiles
+        loadingBackground="#0f0f14"
       />
 
       {/* Route line */}

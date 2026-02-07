@@ -94,18 +94,39 @@
   background: #0f0f14;
 }
 
-/* Smooth tile loading */
+/* Smooth tile loading - optimized for performance */
 .smooth-tiles .leaflet-tile {
   will-change: opacity;
-  transition: opacity 0.25s ease-out;
+  transition: opacity 0.2s ease-out;
+  image-rendering: optimizeSpeed;
 }
 
 .leaflet-tile-container {
   will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .leaflet-zoom-anim .leaflet-zoom-animated {
-  transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1);
+  transition: transform 0.2s cubic-bezier(0, 0, 0.25, 1);
+}
+
+/* Prevent tile flickering on zoom */
+.leaflet-tile-loaded {
+  opacity: 1 !important;
+}
+
+.leaflet-fade-anim .leaflet-tile {
+  will-change: opacity;
+}
+
+/* GPU acceleration for smooth panning */
+.leaflet-pane {
+  transform: translateZ(0);
+}
+
+.leaflet-map-pane {
+  will-change: transform;
 }
 
 .leaflet-control-zoom a {
