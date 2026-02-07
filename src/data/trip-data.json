@@ -21,7 +21,7 @@
       "endDate": "2025-03-05",
       "durationDays": 2,
       "type": "main",
-      "description": "Chile's vibrant capital with world-class dining, historic neighborhoods, and stunning Andes views",
+      "description": "Chiles lebendige Hauptstadt mit Weltklasse-Gastronomie, historischen Vierteln und atemberaubender Anden-Aussicht",
       "recommendations": [
         {
           "id": "santiago-mercado-central",
@@ -32,7 +32,7 @@
             -33.4335,
             -70.651
           ],
-          "description": "Historic 1872 seafood market, ranked 5th best food market by National Geographic. Try 'Donde Augusto' or 'Tio Lucho' for fresh Chilean seafood.",
+          "description": "Historischer Fischmarkt von 1872, von National Geographic zum 5. besten Lebensmittelmarkt gewählt. Probiere 'Donde Augusto' oder 'Tio Lucho' für frische chilenische Meeresfrüchte.",
           "descriptionEs": "Mercado histórico de 1872, elegido 5to mejor mercado de comida por National Geographic. Prueba 'Donde Augusto' para mariscos frescos.",
           "address": "San Pablo 967, Santiago Centro",
           "googleMapsLink": "https://maps.google.com/?q=-33.4335,-70.6510",
@@ -55,7 +55,7 @@
             -33.4256,
             -70.6325
           ],
-          "description": "722-hectare urban park with panoramic city views. Take the teleférico (cable car) or funicular up. Visit Jardín Japonés and see the Virgin statue at the summit.",
+          "description": "722 Hektar großer Stadtpark mit Panoramablick. Fahre mit der Seilbahn oder Standseilbahn hinauf. Besuche den Japanischen Garten und die Marienstatue auf dem Gipfel.",
           "descriptionEs": "Parque urbano de 722 hectáreas con vistas panorámicas. Sube en teleférico o funicular. Visita el Jardín Japonés y la Virgen en la cumbre.",
           "address": "Av. El Cerro 750, Providencia",
           "website": "https://telefericosantiago.cl/",
@@ -79,7 +79,7 @@
             -33.44,
             -70.64
           ],
-          "description": "Bohemian historic district with cafés, galleries, independent boutiques. Walk the cobblestone streets, visit antique fairs on weekends. Gateway to Cerro Santa Lucía.",
+          "description": "Bohemisches historisches Viertel mit Cafés, Galerien und unabhängigen Boutiquen. Schlendere durch die Kopfsteinpflasterstraßen, besuche am Wochenende Antiquitätenmärkte. Tor zum Cerro Santa Lucía.",
           "descriptionEs": "Barrio histórico bohemio con cafés, galerías y boutiques. Pasea por sus calles empedradas y visita ferias de antigüedades los fines de semana.",
           "address": "Calle José Victorino Lastarria, Santiago Centro",
           "googleMapsLink": "https://maps.google.com/?q=-33.4400,-70.6400",
@@ -102,7 +102,7 @@
             -33.4395,
             -70.6404
           ],
-          "description": "Major cultural hub with free exhibitions, theater, concerts. Modern architecture with public plazas. Check their March 2025 program for events.",
+          "description": "Kulturzentrum mit kostenlosen Ausstellungen, Theater und Konzerten. Moderne Architektur mit öffentlichen Plätzen. Schau dir das Programm für März 2025 an.",
           "descriptionEs": "Centro cultural con exposiciones gratuitas, teatro, conciertos. Arquitectura moderna con plazas públicas.",
           "address": "Av. Libertador Bernardo O'Higgins 227, Santiago",
           "website": "https://www.gam.cl/",
@@ -126,7 +126,7 @@
             -33.4405,
             -70.644
           ],
-          "description": "Historic hill where Santiago was founded in 1541. Beautiful gardens, terraces with city views, Neptune Fountain. Free entry, easy walk from Lastarria.",
+          "description": "Historischer Hügel, wo Santiago 1541 gegründet wurde. Wunderschöne Gärten, Terrassen mit Stadtblick, Neptunbrunnen. Eintritt frei, kurzer Spaziergang von Lastarria.",
           "descriptionEs": "Cerro histórico donde se fundó Santiago en 1541. Hermosos jardines, terrazas con vistas, Fuente Neptuno. Entrada libre.",
           "address": "Santa Lucía, Santiago Centro",
           "googleMapsLink": "https://maps.google.com/?q=-33.4405,-70.6440",
@@ -149,7 +149,7 @@
             -33.437,
             -70.6427
           ],
-          "description": "Chile's premier art museum in stunning neoclassical building (1910). Free entry. Adjacent to Parque Forestal, perfect for a post-museum stroll.",
+          "description": "Chiles wichtigstes Kunstmuseum in einem atemberaubenden neoklassischen Gebäude (1910). Eintritt frei. Neben dem Parque Forestal, perfekt für einen Spaziergang nach dem Museumsbesuch.",
           "descriptionEs": "Principal museo de arte de Chile en edificio neoclásico de 1910. Entrada gratuita. Junto al Parque Forestal.",
           "address": "José Miguel de la Barra 650, Santiago",
           "website": "https://www.mnba.gob.cl/",
@@ -173,7 +173,7 @@
             -33.4398,
             -70.6396
           ],
-          "description": "Contemporary Chilean and Latin American art in a beautifully restored heritage house in Lastarria. Intimate, well-curated exhibitions.",
+          "description": "Zeitgenössische chilenische und lateinamerikanische Kunst in einem liebevoll restaurierten Denkmalhaus in Lastarria. Intime, gut kuratierte Ausstellungen.",
           "descriptionEs": "Arte contemporáneo chileno y latinoamericano en casona patrimonial restaurada en Lastarria. Exposiciones íntimas y bien curadas.",
           "address": "José Victorino Lastarria 307, Santiago",
           "website": "https://mavi.cl/",
@@ -196,7 +196,7 @@
             -33.4401,
             -70.6392
           ],
-          "description": "Chile's largest wine bar with 400+ Chilean wines by the glass. Excellent food pairings. Perfect introduction to Chilean wine regions.",
+          "description": "Chiles größte Weinbar mit über 400 chilenischen Weinen glasweise. Hervorragende Speisekombinationen. Perfekte Einführung in chilenische Weinregionen.",
           "descriptionEs": "El bar de vinos más grande de Chile con 400+ vinos chilenos por copa. Excelentes maridajes. Perfecta introducción a los vinos chilenos.",
           "address": "José Victorino Lastarria 276, Santiago",
           "website": "https://www.bocanariz.cl/",
@@ -219,7 +219,7 @@
             -33.465,
             -70.66
           ],
-          "description": "Major music festival March 21-23, 2025 at Parque O'Higgins. International and Chilean artists across multiple stages.",
+          "description": "Großes Musikfestival vom 21.-23. März 2025 im Parque O'Higgins. Internationale und chilenische Künstler auf mehreren Bühnen.",
           "descriptionEs": "Festival de música del 21-23 de marzo 2025 en Parque O'Higgins. Artistas internacionales y chilenos en múltiples escenarios.",
           "address": "Parque O'Higgins, Santiago",
           "website": "https://www.lollapaloozacl.com/",
@@ -243,7 +243,7 @@
             -33.6167,
             -70.5833
           ],
-          "description": "Chile's most famous winery, 45 min from Santiago. Tours of historic cellars, including the legendary Casillero del Diablo. Book in advance.",
+          "description": "Chiles berühmtestes Weingut, 45 Min von Santiago. Führungen durch historische Weinkeller, inkl. dem legendären Casillero del Diablo. Vorab buchen.",
           "descriptionEs": "La viña más famosa de Chile, a 45 min de Santiago. Tours por bodegas históricas, incluyendo el legendario Casillero del Diablo.",
           "address": "Av. Virginia Subercaseaux 210, Pirque",
           "website": "https://enoturismo.conchaytoro.com/",
@@ -266,7 +266,7 @@
             -33.4083,
             -70.5772
           ],
-          "description": "World's 50 Best Restaurant. Chef Rodolfo Guzmán showcases Chilean terroir with foraged ingredients from the Andes to Patagonia. Book months ahead.",
+          "description": "Unter den 50 besten Restaurants der Welt. Chef Rodolfo Guzmán präsentiert chilenisches Terroir mit gesammelten Zutaten von den Anden bis Patagonien. Monate vorher buchen.",
           "descriptionEs": "Entre los 50 Mejores Restaurantes del Mundo. Chef Rodolfo Guzmán muestra el terroir chileno con ingredientes recolectados desde los Andes hasta la Patagonia. Reserva con meses de anticipación.",
           "address": "Nueva Costanera 3467, Vitacura",
           "website": "https://borago.cl/",
@@ -290,7 +290,7 @@
             -33.44,
             -70.635
           ],
-          "description": "Indigenous Chilean cuisine celebrating Mapuche, Rapa Nui, and Atacameño culinary traditions. Unique opportunity to taste ancestral recipes in modern presentation.",
+          "description": "Indigene chilenische Küche, die Mapuche-, Rapa Nui- und Atacameño-Traditionen feiert. Einzigartige Gelegenheit, Ahnenrezepte in moderner Präsentation zu probieren.",
           "descriptionEs": "Cocina indígena chilena celebrando tradiciones culinarias Mapuche, Rapa Nui y Atacameña. Oportunidad única de probar recetas ancestrales en presentación moderna.",
           "address": "Constitución 136, Bellavista",
           "website": "https://peumayen.cl/",
@@ -314,7 +314,7 @@
             -33.45,
             -70.62
           ],
-          "description": "Trendy neighborhood with antique shops, independent boutiques, design studios, and hip cafés. Great for vintage hunting and creative atmosphere.",
+          "description": "Trendiges Viertel mit Antiquitätenläden, unabhängigen Boutiquen, Designstudios und hippen Cafés. Perfekt zum Stöbern nach Vintage-Schätzen und für kreative Atmosphäre.",
           "descriptionEs": "Barrio de moda con tiendas de antigüedades, boutiques independientes, estudios de diseño y cafés hipster. Genial para buscar vintage y atmósfera creativa.",
           "address": "Barrio Italia, Providencia/Ñuñoa",
           "googleMapsLink": "https://maps.google.com/?q=-33.4500,-70.6200",
@@ -337,7 +337,7 @@
             -33.4378,
             -70.6504
           ],
-          "description": "Historic heart of Santiago since 1541. Metropolitan Cathedral, Central Post Office, National History Museum. Street performers, chess players, and city life.",
+          "description": "Historisches Herz von Santiago seit 1541. Metropolitankathedrale, Hauptpost, Nationalhistorisches Museum. Straßenkünstler, Schachspieler und pulsierendes Stadtleben.",
           "descriptionEs": "Corazón histórico de Santiago desde 1541. Catedral Metropolitana, Correo Central, Museo de Historia Nacional. Artistas callejeros, ajedrecistas y vida urbana.",
           "address": "Plaza de Armas, Santiago Centro",
           "googleMapsLink": "https://maps.google.com/?q=-33.4378,-70.6504",
@@ -360,7 +360,7 @@
             -33.443,
             -70.6537
           ],
-          "description": "Presidential palace with complex history including 1973 coup. Free tours Mon-Fri. Underground Centro Cultural La Moneda has excellent art exhibitions.",
+          "description": "Präsidentenpalast mit komplexer Geschichte, inklusive Putsch von 1973. Kostenlose Führungen Mo-Fr. Das unterirdische Kulturzentrum La Moneda hat hervorragende Kunstausstellungen.",
           "descriptionEs": "Palacio presidencial con compleja historia incluyendo el golpe de 1973. Tours gratuitos Lun-Vie. Centro Cultural La Moneda subterráneo tiene excelentes exposiciones de arte.",
           "address": "Moneda 1141, Santiago Centro",
           "website": "https://www.ccplm.gob.cl/",
