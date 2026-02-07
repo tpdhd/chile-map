@@ -406,8 +406,139 @@
       "location": "algarrobo",
       "coordinates": [-33.3550, -71.6900],
       "source": "trip-data"
+    },
+    {
+      "id": 66,
+      "text": "Violeta Parra wurde 1917 in Chillán geboren — sie schrieb 'Gracias a la Vida', eines der bekanntesten lateinamerikanischen Lieder überhaupt.",
+      "category": "culture",
+      "location": "san-carlos",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 67,
+      "text": "Pablo Nerudas 'Oda al Caldillo de Congrio' ist ein Rezept in Versform — er beschreibt jeden Schritt dieser traditionellen chilenischen Fischsuppe.",
+      "category": "food",
+      "location": "santiago",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 68,
+      "text": "Carménère war in Bordeaux fast ausgestorben — in Chile wurde es bis 1998 für Merlot gehalten, ist heute aber Chiles Signature-Wein.",
+      "category": "food",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 69,
+      "text": "Der Pudú ist das kleinste Reh der Welt und lebt in Chiles Süden — es ist vom Aussterben bedroht und steht auf dem chilenischen Wappen.",
+      "category": "nature",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 70,
+      "text": "Die Mapuche-Legende von Cai Cai und Tren Tren erklärt die Entstehung Chiloés — zwei Riesenschlangen kämpften, Wasser überflutete das Land.",
+      "category": "culture",
+      "location": "chiloe",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 71,
+      "text": "Victor Jara war der berühmteste Vertreter der 'Nueva Canción Chilena' — er wurde 1973 während des Putsches im Estadio Chile ermordet.",
+      "category": "culture",
+      "location": "santiago",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 72,
+      "text": "88% der chilenischen Bevölkerung leben in Städten — 40% davon allein in Greater Santiago.",
+      "category": "geography",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 73,
+      "text": "Die erste europäische Kolonie in Villarrica wurde 1552 gegründet — aber von den Mapuche belagert und 1602 vollständig zerstört.",
+      "category": "history",
+      "location": "pucon",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 74,
+      "text": "Villarrica wurde erst 1882 wieder besiedelt — fast 300 Jahre nach der Zerstörung durch die Mapuche.",
+      "category": "history",
+      "location": "pucon",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 75,
+      "text": "Der Lago Colico nahe Pucón war der letzte große See, den Europäer in Chile 'entdeckten' — erst Anfang des 20. Jahrhunderts kartiert.",
+      "category": "history",
+      "location": "pucon",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 76,
+      "text": "Cordero (Lamm) aus Magallanes schmeckt besonders gut, weil die Seewinde das Gras mit Salz bedecken — und die Weiden pestizidfrei sind.",
+      "category": "food",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 77,
+      "text": "Die Maquí-Beere aus dem Valdivianischen Regenwald hat mehr Antioxidantien als Açaí, Heidelbeeren und Brombeeren zusammen.",
+      "category": "food",
+      "location": "valdivia",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 78,
+      "text": "Der Trauco ist ein Waldgeist aus Chiloés Mythologie — ungewollte Schwangerschaften wurden früher oft ihm zugeschrieben.",
+      "category": "culture",
+      "location": "chiloe",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 79,
+      "text": "Pichidangui und Pichicuy heißen so, weil 'pichi' auf Mapudungun 'klein' bedeutet.",
+      "category": "culture",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 80,
+      "text": "Die Cueca, Chiles Nationaltanz, ahmt einen Hahn nach, der eine Henne verfolgt — Taschentücher werden dabei geschwenkt.",
+      "category": "culture",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 81,
+      "text": "Der Parque Nacional Vicente Pérez Rosales wurde 1926 gegründet — er war der erste Nationalpark Chiles.",
+      "category": "nature",
+      "location": "osorno",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 82,
+      "text": "Ferdinand Magellan nannte Feuerland 'Land des Feuers' — er sah 1520 den Rauch der Lagerfeuer der Ureinwohner.",
+      "category": "history",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 83,
+      "text": "Chile hat über 500 geologisch aktive Vulkane — davon sind etwa 60 in den letzten 500 Jahren ausgebrochen.",
+      "category": "nature",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 84,
+      "text": "Der berühmte chilenische Küchenwein 'Pipeño' wird traditionell in Tonkrügen (tinajas) vergoren — eine Methode aus vorspanischer Zeit.",
+      "category": "food",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 85,
+      "text": "Das Casablanca-Tal auf dem Weg nach Valparaíso profitiert von Meeresbrisen — es produziert einige der besten Weißweine Chiles.",
+      "category": "food",
+      "source": "Insight Guides Chile 2024"
     }
   ],
   "lastUpdated": "2026-02-07",
-  "totalFacts": 65
+  "totalFacts": 85
 }
