@@ -5288,14 +5288,15 @@
         },
         {
           "id": "frutillar-semanas-musicales",
-          "name": "Semanas Musicales Festival",
-          "nameEs": "Semanas Musicales de Frutillar",
-          "category": "event",
+          "name": "Semanas Musicales Festival (Not during trip)",
+          "nameEs": "Semanas Musicales de Frutillar (No durante el viaje)",
+          "category": "info",
           "coordinates": [
             -41.12,
             -73.065
           ],
-          "description": "Klassisches Musikfestival Ende Januar/Anfang Februar. International renommiertes Event im Teatro del Lago. Reservierungen weit im Voraus nötig.",
+          "description": "⚠️ NICHT WÄHREND DER REISE: Klassisches Musikfestival Ende Januar/Anfang Februar. International renommiertes Event im Teatro del Lago. Für zukünftige Reisen vormerken!",
+          "descriptionEs": "⚠️ NO DURANTE EL VIAJE: Festival de música clásica a fines de enero/principios de febrero. Evento internacional renombrado en el Teatro del Lago. ¡Marcar para futuros viajes!",
           "address": "Teatro del Lago, Frutillar",
           "website": "http://semanasmusicales.cl",
           "priceRange": "$$$",
@@ -5304,7 +5305,8 @@
             "festival",
             "international",
             "cultural",
-            "january"
+            "january-february",
+            "not-during-trip"
           ],
           "source": "Rough Guide 2023"
         },
