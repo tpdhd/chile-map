@@ -106,11 +106,11 @@ function MapController({
 
   useEffect(() => {
     if (selectedRecommendation) {
-      // Fly to recommendation with maximum zoom
+      // Fly to recommendation with moderate zoom
       // Offset center SOUTH so marker appears in TOP HALF of screen (above bottom sheet)
       const coords = selectedRecommendation.coordinates as [number, number]
-      const offsetLat = coords[0] - 0.001 // Smaller offset at high zoom
-      map.flyTo([offsetLat, coords[1]], 18, {
+      const offsetLat = coords[0] - 0.003 // Offset for top-half positioning
+      map.flyTo([offsetLat, coords[1]], 11, {
         duration: 1
       })
     } else if (selectedLocation) {
