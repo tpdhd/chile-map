@@ -5627,6 +5627,122 @@
           "source": "brave-search"
         },
         {
+          "id": "puerto-montt-club-angels",
+          "name": "Club Angels",
+          "nameEs": "Club Angels",
+          "category": "bar",
+          "coordinates": [
+            -41.4689,
+            -72.9411
+          ],
+          "description": "Der einzige Gay Bar entlang der gesamten Carretera Austral. Treffpunkt für die LGBTQ+ Community in Puerto Montt.",
+          "descriptionEs": "El único bar gay a lo largo de toda la Carretera Austral. Punto de encuentro de la comunidad LGBTQ+ en Puerto Montt.",
+          "address": "Puerto Montt",
+          "googleMapsLink": "https://maps.google.com/?q=-41.4689,-72.9411",
+          "priceRange": "$$",
+          "tags": [
+            "bar",
+            "lgbtq",
+            "nightlife",
+            "puerto-montt"
+          ],
+          "source": "Carretera Austral Guide 2022"
+        },
+        {
+          "id": "puerto-montt-casa-ideas",
+          "name": "Casa de Ideas",
+          "nameEs": "Casa de Ideas",
+          "category": "shopping",
+          "coordinates": [
+            -41.4693,
+            -72.9424
+          ],
+          "description": "Beliebter Laden für Spiele, Spielzeug und Haushaltswaren. Von lokalen Familien für Regentage empfohlen - ein Muss mit Kindern!",
+          "descriptionEs": "Tienda popular para juegos, juguetes y artículos del hogar. Recomendada por familias locales para días lluviosos.",
+          "address": "Mall Paseo Costanera, Puerto Montt",
+          "googleMapsLink": "https://maps.google.com/?q=-41.4693,-72.9424",
+          "priceRange": "$$",
+          "tags": [
+            "shopping",
+            "kids",
+            "games",
+            "rainy-day",
+            "puerto-montt"
+          ],
+          "source": "Carretera Austral Guide 2022"
+        },
+        {
+          "id": "puerto-montt-parque-alerce-andino",
+          "name": "Alerce Andino National Park",
+          "nameEs": "Parque Nacional Alerce Andino",
+          "category": "nature",
+          "coordinates": [
+            -41.6,
+            -72.6167
+          ],
+          "description": "Nationalpark 46km südöstlich von Puerto Montt. Teil der Route of Parks. Uralte Alerce-Bäume (chilenische Lärchen), die bis zu 4.000 Jahre alt werden. Wanderwege durch Valdivianischen Regenwald.",
+          "descriptionEs": "Parque nacional a 46km al sureste de Puerto Montt. Parte de la Ruta de los Parques. Antiguos alerces que pueden alcanzar 4.000 años. Senderos por selva valdiviana.",
+          "address": "46km SE von Puerto Montt, Carretera Austral Km 41",
+          "website": "https://www.conaf.cl/parques/parque-nacional-alerce-andino/",
+          "googleMapsLink": "https://maps.google.com/?q=-41.6000,-72.6167",
+          "priceRange": "$",
+          "tags": [
+            "national-park",
+            "ancient-trees",
+            "hiking",
+            "rainforest",
+            "route-of-parks"
+          ],
+          "source": "Carretera Austral Guide 2022"
+        },
+        {
+          "id": "puerto-montt-cicloaustral",
+          "name": "CicloAustral Bike Rental",
+          "nameEs": "CicloAustral Arriendo de Bicicletas",
+          "category": "service",
+          "coordinates": [
+            -41.4689,
+            -72.9411
+          ],
+          "description": "Fahrradverleih und geführte Touren entlang der Carretera Austral. Pickup/Dropoff in Puerto Montt, Coyhaique und Villa O'Higgins. Cannondale-Bikes mit Ortlieb-Taschen. Ab $22.000/Tag.",
+          "descriptionEs": "Arriendo de bicicletas y tours guiados por la Carretera Austral. Retiro/entrega en Puerto Montt, Coyhaique y Villa O'Higgins. Bicicletas Cannondale con bolsos Ortlieb. Desde $22.000/día.",
+          "address": "Puerto Montt (Pickup Point)",
+          "website": "https://cicloaustralchile.com",
+          "googleMapsLink": "https://maps.google.com/?q=-41.4689,-72.9411",
+          "priceRange": "$$",
+          "tags": [
+            "bike-rental",
+            "cycling",
+            "tours",
+            "carretera-austral",
+            "puerto-montt"
+          ],
+          "source": "Carretera Austral Guide 2022"
+        },
+        {
+          "id": "puerto-montt-safety-tip",
+          "name": "Puerto Montt Safety Tip",
+          "nameEs": "Consejo de Seguridad Puerto Montt",
+          "category": "tip",
+          "coordinates": [
+            -41.4689,
+            -72.9411
+          ],
+          "description": "Nachts Vorsicht in rauen Gegenden von Puerto Montt wegen Betrunkener. Taxis sind das beste Transportmittel nachts. Bars mit verdächtigen roten Vorhängen sind nicht die sichersten Orte. Die gesamte Carretera Austral-Region ist ansonsten erstaunlich sicher.",
+          "descriptionEs": "Cuidado de noche en zonas difíciles de Puerto Montt por ebrios. Los taxis son el mejor transporte nocturno. Bares con cortinas rojas sospechosas no son los lugares más seguros. Toda la región de la Carretera Austral es sorprendentemente segura.",
+          "address": "Puerto Montt",
+          "googleMapsLink": "https://maps.google.com/?q=-41.4689,-72.9411",
+          "priceRange": "n/a",
+          "tags": [
+            "safety",
+            "tip",
+            "nightlife",
+            "transport",
+            "puerto-montt"
+          ],
+          "source": "Carretera Austral Guide 2022"
+        },
+        {
           "id": "chiloe-achao-quinchao",
           "name": "Achao & Quinchao Island",
           "nameEs": "Achao e Isla Quinchao",
