@@ -389,7 +389,7 @@
       "endDate": "2025-03-06",
       "durationDays": 1,
       "type": "main",
-      "description": "Small coastal fishing village with beautiful beaches, part of the Pichidangui-Quilimarí tourist route",
+      "description": "Kleines Fischerdorf an der Küste mit wunderschönen Stränden, Teil der touristischen Route Pichidangui-Quilimarí",
       "recommendations": [
         {
           "id": "quillimari-playa",
@@ -400,7 +400,7 @@
             -32.1167,
             -71.5
           ],
-          "description": "Peaceful beach in a small fishing village. Less crowded than nearby Los Vilos. Good for walks, relaxation, and fresh seafood.",
+          "description": "Ruhiger Strand in einem kleinen Fischerdorf. Weniger überlaufen als das nahe Los Vilos. Ideal für Spaziergänge, Entspannung und frische Meeresfrüchte.",
           "descriptionEs": "Playa tranquila en pequeño pueblo de pescadores. Menos concurrida que Los Vilos. Ideal para caminatas y mariscos frescos.",
           "address": "Quilimarí, Los Vilos",
           "googleMapsLink": "https://maps.google.com/?q=-32.1167,-71.5000",
@@ -422,7 +422,7 @@
             -32.1333,
             -71.5167
           ],
-          "description": "Beautiful curved beach nearby with calm waters. Good for SUP and kayaking. Small town with restaurants and services.",
+          "description": "Wunderschöner geschwungener Strand in der Nähe mit ruhigem Wasser. Gut für SUP und Kajakfahren. Kleiner Ort mit Restaurants und Infrastruktur.",
           "descriptionEs": "Hermosa playa cercana con aguas tranquilas. Buena para SUP y kayak. Pueblo pequeño con restaurantes y servicios.",
           "address": "Pichidangui, Los Vilos",
           "googleMapsLink": "https://maps.google.com/?q=-32.1333,-71.5167",
@@ -444,7 +444,7 @@
             -32.12,
             -71.48
           ],
-          "description": "Local bakery and cultural center showcasing traditional Quilimarí pastries and regional culinary heritage. High quality artisanal treats.",
+          "description": "Lokale Bäckerei und Kulturzentrum mit traditionellem Quilimarí-Gebäck und regionalem kulinarischem Erbe. Handgemachte Köstlichkeiten in hoher Qualität.",
           "descriptionEs": "Panadería y centro cultural con repostería tradicional de Quilimarí y patrimonio culinario regional. Productos artesanales de alta calidad.",
           "address": "Ruta Quilimarí-Guanguali Km 8.8",
           "googleMapsLink": "https://maps.google.com/?q=-32.12,-71.48",
@@ -466,7 +466,7 @@
             -31.9167,
             -71.5167
           ],
-          "description": "Larger coastal town 20km away with costanera, fishing pier, Piedra de la Virgen rock formation, and Laguna Conchalí nature reserve.",
+          "description": "Größerer Küstenort 20km entfernt mit Uferpromenade, Fischerhafen, Felsformation Piedra de la Virgen und Naturreservat Laguna Conchalí.",
           "descriptionEs": "Pueblo costero más grande a 20km con costanera, muelle de pescadores, Piedra de la Virgen y Reserva Laguna Conchalí.",
           "address": "Los Vilos, Región de Coquimbo",
           "googleMapsLink": "https://maps.google.com/?q=-31.9167,-71.5167",
@@ -488,7 +488,7 @@
             -32.1167,
             -71.5
           ],
-          "description": "Quilimarí and Caimanes have preserved examples of colonial architecture worth exploring on foot.",
+          "description": "Quilimarí und Caimanes haben erhaltene Beispiele kolonialer Architektur, die sich zu Fuß erkunden lassen.",
           "descriptionEs": "Quilimarí y Caimanes tienen ejemplos preservados de arquitectura colonial que vale la pena explorar a pie.",
           "address": "Quilimarí & Caimanes, Los Vilos",
           "googleMapsLink": "https://maps.google.com/?q=-32.1167,-71.5000",
@@ -510,7 +510,7 @@
             -31.8833,
             -71.5
           ],
-          "description": "Ramsar-listed wetland 7km north of Los Vilos. Excellent birdwatching: Coscoroba swans, white-faced ibis, Chilean mockingbird. Trails, picnic areas, and a beautiful beach at the end.",
+          "description": "Ramsar-Feuchtgebiet 7km nördlich von Los Vilos. Hervorragend für Vogelbeobachtung: Coscorobaschwäne, Brillensichler, Chile-Spottdrossel. Wanderwege, Picknickplätze und ein schöner Strand am Ende.",
           "descriptionEs": "Humedal Ramsar a 7km al norte de Los Vilos. Excelente observación de aves: cisnes coscoroba, bandurrias, tenca chilena. Senderos, áreas de picnic y hermosa playa al final.",
           "address": "7km norte de Los Vilos, Ruta 5",
           "googleMapsLink": "https://maps.google.com/?q=-31.8833,-71.5000",
@@ -533,7 +533,7 @@
             -31.915,
             -71.518
           ],
-          "description": "Iconic rock formation in Los Vilos bay with a shrine to the Virgin Mary. Beautiful sunset spot and symbol of the town. Easily accessible from the costanera.",
+          "description": "Ikonische Felsformation in der Bucht von Los Vilos mit einem Schrein der Jungfrau Maria. Wunderschöner Sonnenuntergangsort und Symbol des Ortes. Leicht erreichbar von der Uferpromenade.",
           "descriptionEs": "Icónica formación rocosa en la bahía de Los Vilos con un santuario a la Virgen María. Hermoso lugar para atardeceres y símbolo del pueblo. Fácilmente accesible desde la costanera.",
           "address": "Costanera Los Vilos",
           "googleMapsLink": "https://maps.google.com/?q=-31.9150,-71.5180",
@@ -556,7 +556,7 @@
             -31.9167,
             -71.5167
           ],
-          "description": "Pleasant seaside promenade along Los Vilos bay. Restaurants, fishing pier, views of Piedra de la Virgen. Good for evening strolls and sunset watching.",
+          "description": "Angenehme Uferpromenade entlang der Bucht von Los Vilos. Restaurants, Fischerhafen, Blick auf die Piedra de la Virgen. Perfekt für Abendspaziergänge und Sonnenuntergang.",
           "descriptionEs": "Agradable paseo costero a lo largo de la bahía de Los Vilos. Restaurantes, muelle de pescadores, vistas a Piedra de la Virgen. Bueno para paseos de atardecer.",
           "address": "Costanera, Los Vilos",
           "googleMapsLink": "https://maps.google.com/?q=-31.9167,-71.5167",
@@ -579,7 +579,7 @@
             -31.9,
             -71.51
           ],
-          "description": "Traditional fishing cove north of Los Vilos. Fresh seafood directly from fishermen. Authentic local experience away from tourist areas.",
+          "description": "Traditionelle Fischerbucht nördlich von Los Vilos. Frische Meeresfrüchte direkt vom Fischer. Authentisches lokales Erlebnis abseits der Touristenpfade.",
           "descriptionEs": "Caleta de pescadores tradicional al norte de Los Vilos. Mariscos frescos directamente de pescadores. Experiencia local auténtica lejos de zonas turísticas.",
           "address": "Caleta San Pedro, Los Vilos",
           "googleMapsLink": "https://maps.google.com/?q=-31.9000,-71.5100",
@@ -602,7 +602,7 @@
             -32.1333,
             -71.52
           ],
-          "description": "Good surf spot with consistent waves for beginners and intermediate surfers. Board rentals and lessons available. Less crowded than Pichilemu.",
+          "description": "Guter Surfspot mit konstanten Wellen für Anfänger und Fortgeschrittene. Brettverleih und Unterricht verfügbar. Weniger überlaufen als Pichilemu.",
           "descriptionEs": "Buen spot de surf con olas consistentes para principiantes e intermedios. Arriendo de tablas y clases disponibles. Menos concurrido que Pichilemu.",
           "address": "Playa Pichidangui",
           "googleMapsLink": "https://maps.google.com/?q=-32.1333,-71.5200",
@@ -625,7 +625,7 @@
             -32.132,
             -71.516
           ],
-          "description": "Calm bay perfect for stand-up paddleboarding and kayaking. Rentals available on the beach in summer. Explore the coastline or just paddle around.",
+          "description": "Ruhige Bucht perfekt für Stand-Up-Paddling und Kajakfahren. Verleih im Sommer am Strand verfügbar. Erkunde die Küste oder paddle einfach herum.",
           "descriptionEs": "Bahía tranquila perfecta para paddle surf y kayak. Arriendos disponibles en la playa en verano. Explora la costa o simplemente rema.",
           "address": "Playa Pichidangui",
           "googleMapsLink": "https://maps.google.com/?q=-32.1320,-71.5160",
@@ -648,7 +648,7 @@
             -32.1167,
             -71.5
           ],
-          "description": "Buy fresh fish and shellfish directly from local fishermen in Quilimarí. Best in the morning when boats return. Can be prepared at simple beachside stands.",
+          "description": "Kaufe frischen Fisch und Meeresfrüchte direkt von lokalen Fischern in Quilimarí. Am besten morgens, wenn die Boote zurückkehren. Wird an einfachen Ständen am Strand zubereitet.",
           "descriptionEs": "Compra pescado y mariscos frescos directamente de pescadores locales en Quilimarí. Mejor en la mañana cuando regresan los botes. Se preparan en puestos simples junto a la playa.",
           "address": "Caleta Quilimarí",
           "googleMapsLink": "https://maps.google.com/?q=-32.1167,-71.5000",
@@ -671,7 +671,7 @@
             -32.115,
             -71.505
           ],
-          "description": "The cliffs above Quilimarí beach offer spectacular sunset views over the Pacific. Bring a picnic and watch the sky change colors.",
+          "description": "Die Klippen über dem Strand von Quilimarí bieten spektakuläre Sonnenuntergangsblicke über den Pazifik. Bringe ein Picknick mit und beobachte, wie der Himmel die Farben wechselt.",
           "descriptionEs": "Los acantilados sobre la playa de Quilimarí ofrecen espectaculares vistas del atardecer sobre el Pacífico. Trae un picnic y mira el cielo cambiar de colores.",
           "address": "Quilimarí",
           "googleMapsLink": "https://maps.google.com/?q=-32.1150,-71.5050",
@@ -694,7 +694,7 @@
             -32.05,
             -71.4
           ],
-          "description": "Small inland village with preserved colonial architecture and local artisans. Known for mining history and traditional crafts. Authentic rural Chile.",
+          "description": "Kleines Dorf im Landesinneren mit erhaltener Kolonialarchitektur und lokalen Kunsthandwerkern. Bekannt für Bergbaugeschichte und traditionelles Handwerk. Authentisches ländliches Chile.",
           "descriptionEs": "Pequeño pueblo interior con arquitectura colonial preservada y artesanos locales. Conocido por su historia minera y artesanías tradicionales. Chile rural auténtico.",
           "address": "Caimanes, Ruta D-71",
           "googleMapsLink": "https://maps.google.com/?q=-32.0500,-71.4000",
@@ -717,7 +717,7 @@
             -32,
             -71.5
           ],
-          "description": "Beautiful hidden beach between Los Vilos and Quilimarí. Clear waters, rocky coastline, excellent for snorkeling. Less crowded than main beaches.",
+          "description": "Wunderschöner versteckter Strand zwischen Los Vilos und Quilimarí. Klares Wasser, felsige Küste, hervorragend zum Schnorcheln. Weniger überlaufen als die Hauptstrände.",
           "descriptionEs": "Hermosa playa escondida entre Los Vilos y Quilimarí. Aguas claras, costa rocosa, excelente para snorkel. Menos concurrida que las playas principales.",
           "address": "Totoralillo Norte",
           "googleMapsLink": "https://maps.google.com/?q=-32.0000,-71.5000",
@@ -740,7 +740,7 @@
             -31.7833,
             -71.5333
           ],
-          "description": "Long sandy beach north of Los Vilos, popular with locals. Good waves for bodyboarding. Simple restaurants serving fresh seafood.",
+          "description": "Langer Sandstrand nördlich von Los Vilos, beliebt bei Einheimischen. Gute Wellen zum Bodyboarden. Einfache Restaurants mit frischen Meeresfrüchten.",
           "descriptionEs": "Playa larga de arena al norte de Los Vilos, popular con locales. Buenas olas para bodyboard. Restaurantes simples sirviendo mariscos frescos.",
           "address": "Chigualoco",
           "googleMapsLink": "https://maps.google.com/?q=-31.7833,-71.5333",
@@ -763,7 +763,7 @@
             -32.45,
             -71.2333
           ],
-          "description": "Town 40km south famous throughout Chile for dulces de La Ligua: alfajores, empolvados, chilenitos. Stop on the drive to/from Santiago. Bakeries everywhere.",
+          "description": "Ort 40km südlich, in ganz Chile berühmt für die Süßigkeiten von La Ligua: Alfajores, Empolvados, Chilenitos. Halt auf der Fahrt nach/von Santiago. Überall Bäckereien.",
           "descriptionEs": "Pueblo a 40km al sur famoso en todo Chile por los dulces de La Ligua: alfajores, empolvados, chilenitos. Parada en el camino a/desde Santiago. Panaderías por todos lados.",
           "address": "La Ligua, Ruta 5",
           "googleMapsLink": "https://maps.google.com/?q=-32.4500,-71.2333",
@@ -786,7 +786,7 @@
             -31.917,
             -71.52
           ],
-          "description": "Active fishing pier where boats unload their daily catch. Watch the fishermen work, buy fresh seafood, or enjoy nearby restaurants.",
+          "description": "Aktiver Fischerhafen, wo die Boote ihren täglichen Fang ausladen. Beobachte die Fischer bei der Arbeit, kaufe frische Meeresfrüchte oder genieße die nahen Restaurants.",
           "descriptionEs": "Muelle de pesca activo donde los botes descargan su pesca diaria. Mira trabajar a los pescadores, compra mariscos frescos o disfruta restaurantes cercanos.",
           "address": "Muelle, Los Vilos",
           "googleMapsLink": "https://maps.google.com/?q=-31.9170,-71.5200",
@@ -809,7 +809,7 @@
             -32.11,
             -71.51
           ],
-          "description": "Long beach walk from Quilimarí to neighboring coves. Easy flat terrain, best at low tide. Bring water and sun protection.",
+          "description": "Lange Strandwanderung von Quilimarí zu benachbarten Buchten. Einfaches flaches Gelände, am besten bei Ebbe. Wasser und Sonnenschutz mitbringen.",
           "descriptionEs": "Caminata larga por la playa desde Quilimarí hacia caletas vecinas. Terreno fácil y plano, mejor con marea baja. Trae agua y protección solar.",
           "address": "Playa Quilimarí",
           "googleMapsLink": "https://maps.google.com/?q=-32.1100,-71.5100",
@@ -832,7 +832,7 @@
             -31.9167,
             -71.5167
           ],
-          "description": "Multiple seafood restaurants along the Los Vilos costanera. Try caldillo de congrio, empanadas de mariscos, or machas a la parmesana. Fresh and affordable.",
+          "description": "Mehrere Meeresfrüchte-Restaurants entlang der Uferpromenade von Los Vilos. Probiere Caldillo de Congrio, Empanadas de Mariscos oder Machas a la Parmesana. Frisch und günstig.",
           "descriptionEs": "Múltiples restaurantes de mariscos a lo largo de la costanera de Los Vilos. Prueba caldillo de congrio, empanadas de mariscos o machas a la parmesana. Fresco y económico.",
           "address": "Costanera Los Vilos",
           "googleMapsLink": "https://maps.google.com/?q=-31.9167,-71.5167",
