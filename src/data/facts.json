@@ -1,0 +1,157 @@
+{
+  "facts": [
+    {
+      "id": 1,
+      "text": "Chile ist das längste Land der Welt — 4.300 km von Nord nach Süd, aber nur durchschnittlich 177 km breit.",
+      "category": "geography"
+    },
+    {
+      "id": 2,
+      "text": "Der Name 'Alameda' (Santiagos Hauptstraße) stammt aus dem Arabischen und bedeutet 'eine Allee mit Bäumen und Plätzen zur Erholung'.",
+      "category": "culture",
+      "location": "santiago",
+      "coordinates": [-33.4400, -70.6500]
+    },
+    {
+      "id": 3,
+      "text": "Die Copihue, Chiles Nationalblume, wächst von Valparaíso bis Osorno. Sie braucht 500 Jahre zum Reifen und kann über 1.000 Jahre alt werden.",
+      "category": "nature"
+    },
+    {
+      "id": 4,
+      "text": "Über 80% der chilenischen Weinexporte sind nachhaltig zertifiziert — einer der höchsten Anteile weltweit.",
+      "category": "food"
+    },
+    {
+      "id": 5,
+      "text": "Gabriela Mistral (1889-1957) aus Chile war die erste Person Lateinamerikas, die den Nobelpreis für Literatur erhielt (1945).",
+      "category": "culture"
+    },
+    {
+      "id": 6,
+      "text": "Santiago wurde 1541 von Pedro de Valdivia auf dem Cerro Santa Lucía gegründet, der damals 'Huelén' (Schmerz) auf Mapudungun hieß.",
+      "category": "history",
+      "location": "santiago",
+      "coordinates": [-33.4405, -70.6440]
+    },
+    {
+      "id": 7,
+      "text": "Die Araukarie (Monkey Puzzle Tree) braucht 500 Jahre zum vollständigen Reifen und kann über 1.000 Jahre alt werden.",
+      "category": "nature",
+      "location": "conguillio"
+    },
+    {
+      "id": 8,
+      "text": "Charles Darwin besuchte die Termas de Cauquenes 1834 und notierte, dass die Wasser lange für ihre heilenden Eigenschaften berühmt waren.",
+      "category": "history"
+    },
+    {
+      "id": 9,
+      "text": "Das Erdbeben von 1960 mit Epizentrum Valdivia war mit Magnitude 9.5 das stärkste je aufgezeichnete Erdbeben der Welt.",
+      "category": "history",
+      "location": "valdivia",
+      "coordinates": [-39.8142, -73.2459]
+    },
+    {
+      "id": 10,
+      "text": "Die Mapuche verteidigten ihr Land so erfolgreich, dass der Biobío-Fluss von 1600 bis 1882 die Grenze zwischen spanischem und Mapuche-Territorium bildete.",
+      "category": "history"
+    },
+    {
+      "id": 11,
+      "text": "Sewell, die 'Stadt der Treppen', wurde 1905 auf 2.000m Höhe für Minenarbeiter gebaut und ist heute UNESCO-Weltkulturerbe.",
+      "category": "culture"
+    },
+    {
+      "id": 12,
+      "text": "Der Lago Llanquihue ist mit 877 km² der viertgrößte See Südamerikas und hat ein fast ozeanisches Klima mit eigenen Mini-Wettersystemen.",
+      "category": "nature",
+      "location": "frutillar-puerto-varas",
+      "coordinates": [-41.2000, -72.8500]
+    },
+    {
+      "id": 13,
+      "text": "Chiloés 16 Holzkirchen (17.-18. Jh.) wurden ohne einen einzigen Nagel gebaut und sind seit 2000 UNESCO-Weltkulturerbe.",
+      "category": "culture",
+      "location": "chiloe"
+    },
+    {
+      "id": 14,
+      "text": "Der Vulkan Villarrica ist einer der aktivsten Vulkane der Welt — sein Lavasee im Krater leuchtet nachts sichtbar rot.",
+      "category": "nature",
+      "location": "pucon",
+      "coordinates": [-39.3500, -71.9333]
+    },
+    {
+      "id": 15,
+      "text": "Curanto ist ein traditionelles Gericht aus Chiloé: Meeresfrüchte, Fleisch und Kartoffeln werden in einem Erdloch mit heißen Steinen gegart.",
+      "category": "food",
+      "location": "chiloe"
+    },
+    {
+      "id": 16,
+      "text": "Pablo Nerudas Kindheit in Temuco prägte seine Poesie — sein Vater arbeitete bei der Eisenbahn, was das dortige Eisenbahnmuseum ihm widmet.",
+      "category": "culture",
+      "location": "pucon"
+    },
+    {
+      "id": 17,
+      "text": "Die Termas Geométricas bestehen aus 17 geometrischen Pools, verbunden durch preisgekrönte rote Holzstege durch den Regenwald.",
+      "category": "nature",
+      "location": "pucon",
+      "coordinates": [-39.5167, -71.8833]
+    },
+    {
+      "id": 18,
+      "text": "Der Parque Nacional Conguillío wurde erst 1950 gegründet und enthält 1.200 Jahre alte Araukarien.",
+      "category": "nature",
+      "location": "conguillio",
+      "coordinates": [-38.6500, -71.6333]
+    },
+    {
+      "id": 19,
+      "text": "Valdivia wurde 1600 von einem holländischen Piraten übernommen — als einzige Stadt Chiles jemals von Piraten besetzt.",
+      "category": "history",
+      "location": "valdivia"
+    },
+    {
+      "id": 20,
+      "text": "Die deutschen Siedler im Süden brachten das Kuchen (Kuchen!) mit — heute ist es ein chilenischer Klassiker, besonders in Frutillar.",
+      "category": "food",
+      "location": "frutillar-puerto-varas"
+    },
+    {
+      "id": 21,
+      "text": "Etwa 13% der Chilenen identifizieren sich als indigen — die Mapuche sind das größte der 10 anerkannten Völker.",
+      "category": "culture"
+    },
+    {
+      "id": 22,
+      "text": "Der Lago Colico nahe Pucón war der letzte große See, der von Europäern entdeckt wurde — erst Anfang des 20. Jahrhunderts kartografiert.",
+      "category": "history",
+      "location": "pucon"
+    },
+    {
+      "id": 23,
+      "text": "Die Saltos del Petrohué stürzen mit 370 Kubikmetern pro Sekunde über uralte Lavaflüsse — das smaragdgrüne Wasser ist legendär.",
+      "category": "nature",
+      "location": "osorno",
+      "coordinates": [-41.1167, -72.4000]
+    },
+    {
+      "id": 24,
+      "text": "Chiloés Mythologie kennt den Caleuche, ein Geisterschiff, das nachts mit Musik und Licht erscheint und die Seelen Ertrunkener transportiert.",
+      "category": "culture",
+      "location": "chiloe"
+    },
+    {
+      "id": 25,
+      "text": "Die San Alfonso del Mar Piscine in Algarrobo hält den Guinness-Rekord als größter Pool der Welt: 1 km lang, 8 Hektar, 250.000 m³ Meerwasser.",
+      "category": "unique",
+      "location": "algarrobo",
+      "coordinates": [-33.3550, -71.6420]
+    }
+  ],
+  "lastUpdated": "2026-02-07",
+  "totalFacts": 25
+}

@@ -144,14 +144,16 @@ export default function Map({
       attributionControl={false}
       zoomControl={true}
     >
-      {/* Dark mode tile layer */}
+      {/* Dark mode tile layer - optimized for smooth zooming */}
       <TileLayer
         url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
         maxZoom={19}
-        keepBuffer={8}
+        keepBuffer={16}
         updateWhenZooming={false}
         updateWhenIdle={true}
+        tileSize={256}
+        crossOrigin="anonymous"
       />
 
       {/* Route line */}
