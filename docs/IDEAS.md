@@ -95,11 +95,11 @@
 
 ## 📊 Fakten-Feature
 
-### Status: 253 Fakten ✓ (2026-02-08)
+### Status: 260 Fakten ✓ (2026-02-08)
 - Geographie, Kultur, Geschichte, Natur, Essen, Unique, Beach
 - Mit Location-Referenzen wo relevant
 - Quellen aus Insight Guides, Rough Guides, und Recherche
-- Gute Balance: Chillán 23, Chiloé 20, Algarrobo 20, Quillimari 19, Wine Resort 19, San Carlos 18, Conguillío 16, Pucón 15, Frutillar 13, Santiago 10, Valdivia 9, Osorno 9, General 62
+- Alle Locations 12+ Fakten! General 62, Chillán 21, Chiloé 20, Quillimari 19, Wine Resort 19, Algarrobo 18, San Carlos 18, Conguillío 16, Valdivia 15, Pucón 15, Osorno 13, Santiago 12, Frutillar 12
 
 ### UI für Fakten (ERLEDIGT ✓ 2026-02-07)
 - ✓ 📖 Icon im Burger-Menu
@@ -131,8 +131,10 @@
 - **Total: 280 Empfehlungen**
 
 ### Status Fakten (2026-02-08)
-- **Total: 253 Fakten** (+28 from book research)
+- **Total: 260 Fakten** (+42 from book research, +21 from prior sessions)
 - Fokus: unterrepräsentierte Locations aufgeholt
-- Quillimari 7→19, Algarrobo 9→20, San Carlos 7→18, Chillán 9→23
+- Quillimari 7→19, Algarrobo 9→18, San Carlos 7→18, Chillán 9→21
+- Valdivia 9→15, Osorno 9→13, Santiago 10→12
+- Alle Locations jetzt 12+ Fakten ✓
 
 *Letzte Aktualisierung: 2026-02-08*
