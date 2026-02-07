@@ -216,12 +216,12 @@
           "nameEs": "Lollapalooza Chile 2025",
           "category": "event",
           "coordinates": [
-            -33.465,
-            -70.66
+            -33.4947,
+            -70.7036
           ],
-          "description": "Großes Musikfestival vom 21.-23. März 2025 im Parque O'Higgins. Internationale und chilenische Künstler auf mehreren Bühnen.",
-          "descriptionEs": "Festival de música del 21-23 de marzo 2025 en Parque O'Higgins. Artistas internacionales y chilenos en múltiples escenarios.",
-          "address": "Parque O'Higgins, Santiago",
+          "description": "Großes Musikfestival vom 21.-23. März 2025 im Parque Bicentenario de Cerrillos. Internationale und chilenische Künstler auf mehreren Bühnen. ACHTUNG: Ihr seid dann schon auf Chiloé!",
+          "descriptionEs": "Festival de música del 21-23 de marzo 2025 en Parque Bicentenario de Cerrillos. Artistas internacionales y chilenos en múltiples escenarios. NOTA: ¡Estarán en Chiloé en esas fechas!",
+          "address": "Parque Bicentenario de Cerrillos, Santiago",
           "website": "https://www.lollapaloozacl.com/",
           "googleMapsLink": "https://maps.google.com/?q=-33.4650,-70.6600",
           "eventDate": "2025-03-21",
