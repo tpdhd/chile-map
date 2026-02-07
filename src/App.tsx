@@ -515,6 +515,12 @@ function App() {
                           {rec.mustTry.join(', ')}
                         </div>
                       )}
+                      {rec.source && (
+                        <div className="flex items-center gap-1">
+                          <span className="text-chile-text-muted">ℹ️</span>
+                          <span className="text-chile-text-muted italic">{rec.source}</span>
+                        </div>
+                      )}
                       {notes[rec.id] && (
                         <div className="bg-chile-accent-teal/20 text-chile-accent-teal px-2 py-1 rounded">
                           📝 {notes[rec.id]}
