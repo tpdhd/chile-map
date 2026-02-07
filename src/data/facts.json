@@ -10,7 +10,10 @@
       "text": "Der Name 'Alameda' (Santiagos Hauptstraße) stammt aus dem Arabischen und bedeutet 'eine Allee mit Bäumen und Plätzen zur Erholung'.",
       "category": "culture",
       "location": "santiago",
-      "coordinates": [-33.4400, -70.6500]
+      "coordinates": [
+        -33.44,
+        -70.65
+      ]
     },
     {
       "id": 3,
@@ -32,7 +35,10 @@
       "text": "Santiago wurde 1541 von Pedro de Valdivia auf dem Cerro Santa Lucía gegründet, der damals 'Huelén' (Schmerz) auf Mapudungun hieß.",
       "category": "history",
       "location": "santiago",
-      "coordinates": [-33.4405, -70.6440]
+      "coordinates": [
+        -33.4405,
+        -70.644
+      ]
     },
     {
       "id": 7,
@@ -50,7 +56,10 @@
       "text": "Das Erdbeben von 1960 mit Epizentrum Valdivia war mit Magnitude 9.5 das stärkste je aufgezeichnete Erdbeben der Welt.",
       "category": "history",
       "location": "valdivia",
-      "coordinates": [-39.8142, -73.2459]
+      "coordinates": [
+        -39.8142,
+        -73.2459
+      ]
     },
     {
       "id": 10,
@@ -67,7 +76,10 @@
       "text": "Der Lago Llanquihue ist mit 877 km² der viertgrößte See Südamerikas und hat ein fast ozeanisches Klima mit eigenen Mini-Wettersystemen.",
       "category": "nature",
       "location": "frutillar-puerto-varas",
-      "coordinates": [-41.2000, -72.8500]
+      "coordinates": [
+        -41.2,
+        -72.85
+      ]
     },
     {
       "id": 13,
@@ -80,7 +92,10 @@
       "text": "Der Vulkan Villarrica ist einer der aktivsten Vulkane der Welt — sein Lavasee im Krater leuchtet nachts sichtbar rot.",
       "category": "nature",
       "location": "pucon",
-      "coordinates": [-39.3500, -71.9333]
+      "coordinates": [
+        -39.35,
+        -71.9333
+      ]
     },
     {
       "id": 15,
@@ -99,14 +114,20 @@
       "text": "Die Termas Geométricas bestehen aus 17 geometrischen Pools, verbunden durch preisgekrönte rote Holzstege durch den Regenwald.",
       "category": "nature",
       "location": "pucon",
-      "coordinates": [-39.5167, -71.8833]
+      "coordinates": [
+        -39.5167,
+        -71.8833
+      ]
     },
     {
       "id": 18,
       "text": "Der Parque Nacional Conguillío wurde erst 1950 gegründet und enthält 1.200 Jahre alte Araukarien.",
       "category": "nature",
       "location": "conguillio",
-      "coordinates": [-38.6500, -71.6333]
+      "coordinates": [
+        -38.65,
+        -71.6333
+      ]
     },
     {
       "id": 19,
@@ -136,7 +157,10 @@
       "text": "Die Saltos del Petrohué stürzen mit 370 Kubikmetern pro Sekunde über uralte Lavaflüsse — das smaragdgrüne Wasser ist legendär.",
       "category": "nature",
       "location": "osorno",
-      "coordinates": [-41.1167, -72.4000]
+      "coordinates": [
+        -41.1167,
+        -72.4
+      ]
     },
     {
       "id": 24,
@@ -149,7 +173,10 @@
       "text": "Die San Alfonso del Mar Piscine in Algarrobo hält den Guinness-Rekord als größter Pool der Welt: 1 km lang, 8 Hektar, 250.000 m³ Meerwasser.",
       "category": "unique",
       "location": "algarrobo",
-      "coordinates": [-33.3550, -71.6420]
+      "coordinates": [
+        -33.355,
+        -71.642
+      ]
     },
     {
       "id": 26,
@@ -161,14 +188,20 @@
       "text": "Der Aufstieg zum Krater des Villarrica (2.840m) dauert etwa 4 Stunden — dank eines Skilifts, der die Strecke verkürzt.",
       "category": "nature",
       "location": "pucon",
-      "coordinates": [-39.4200, -71.9400]
+      "coordinates": [
+        -39.42,
+        -71.94
+      ]
     },
     {
       "id": 28,
       "text": "Der Palacio de la Moneda wurde am 11. September 1973 beim Militärputsch von chilenischen Luftwaffen-Kampfjets bombardiert.",
       "category": "history",
       "location": "santiago",
-      "coordinates": [-33.4430, -70.6537]
+      "coordinates": [
+        -33.443,
+        -70.6537
+      ]
     },
     {
       "id": 29,
@@ -180,7 +213,10 @@
       "text": "Pablo Nerudas drei Häuser in Isla Negra, Santiago und Valparaíso sind heute Museen und fast unverändert seit seinem Tod.",
       "category": "culture",
       "location": "algarrobo",
-      "coordinates": [-33.4350, -71.6930]
+      "coordinates": [
+        -33.435,
+        -71.693
+      ]
     },
     {
       "id": 31,
@@ -301,7 +337,10 @@
       "text": "Der Mercado Central in Santiago wurde 1872 eröffnet und von National Geographic zum 5. besten Lebensmittelmarkt der Welt gewählt.",
       "category": "food",
       "location": "santiago",
-      "coordinates": [-33.4335, -70.6510],
+      "coordinates": [
+        -33.4335,
+        -70.651
+      ],
       "source": "Brave Search"
     },
     {
@@ -309,7 +348,10 @@
       "text": "Villa Baviera (ehem. Colonia Dignidad) war eine deutsche Enklave mit dunkler Geschichte — heute ein kontroverses touristisches Ziel.",
       "category": "history",
       "location": "san-carlos",
-      "coordinates": [-36.5833, -71.6833],
+      "coordinates": [
+        -36.5833,
+        -71.6833
+      ],
       "source": "trip-data"
     },
     {
@@ -404,7 +446,10 @@
       "text": "Die Humboldt-Pinguine in Algarrobo sind eine der nördlichsten Pinguinkolonien der Welt — über 2.000 Tiere leben auf dem Islote Pájaros Niños.",
       "category": "nature",
       "location": "algarrobo",
-      "coordinates": [-33.3550, -71.6900],
+      "coordinates": [
+        -33.355,
+        -71.69
+      ],
       "source": "trip-data"
     },
     {
@@ -701,8 +746,78 @@
       "category": "culture",
       "location": "chiloe",
       "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 111,
+      "text": "Das Carménère war in Bordeaux fast ausgestorben — in Chile wurde es bis 1998 für Merlot gehalten, ist heute aber Chiles Signature-Wein.",
+      "category": "food",
+      "location": "wine-resort",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 112,
+      "text": "Pedro de Valdivia versteckte 120 Patrioten auf dem Weingut Santa Rita — heute heißt ihr bekanntester Wein '120'.",
+      "category": "history",
+      "location": "wine-resort",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 113,
+      "text": "Pomaire, das Töpferdorf nahe Santiago, ist seit vorspanischer Zeit für seine schwarze Keramik bekannt — die Tradition ist über 500 Jahre alt.",
+      "category": "culture",
+      "location": "wine-resort",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 114,
+      "text": "Das Cajón del Maipo bietet Rafting auf dem Maipo-Fluss — derselbe Fluss, der Santiagos Wasser liefert.",
+      "category": "nature",
+      "location": "wine-resort",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 115,
+      "text": "Chiles älteste durchgehend produzierende Weingüter liegen im Maipo-Tal — einige seit 1850 in Familienbesitz.",
+      "category": "food",
+      "location": "wine-resort",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 116,
+      "text": "Villa Baviera (Ex-Colonia Dignidad) war eine geschlossene deutsche Enklave, die von 1961-2005 unter Paul Schäfer existierte — heute ein kontroverses Tourismusziel.",
+      "category": "history",
+      "location": "san-carlos",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 117,
+      "text": "Pablo Neruda wurde 1904 in Parral geboren, 30km von Villa Baviera — sein Vater war Eisenbahner.",
+      "category": "culture",
+      "location": "san-carlos",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 118,
+      "text": "Die Longanizas aus Chillán sind berühmt in ganz Chile — jeder Metzger hat sein eigenes Geheimrezept mit Gewürzen.",
+      "category": "food",
+      "location": "san-carlos",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 119,
+      "text": "Das Erdbeben von 1939 in Chillán tötete 28.000 Menschen — David Alfaro Siqueiros malte danach die berühmten Murales der Escuela México.",
+      "category": "history",
+      "location": "chillan",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 120,
+      "text": "Die 'Ruta del Vino del Ñuble' ist weniger bekannt als Maipo, aber produziert exzellente Weine aus der País-Traube — Chiles älteste Rebsorte.",
+      "category": "food",
+      "location": "san-carlos",
+      "source": "Insight Guides Chile 2024"
     }
   ],
   "lastUpdated": "2026-02-07",
-  "totalFacts": 110
+  "totalFacts": 120
 }
