@@ -374,6 +374,170 @@
             "exhibitions"
           ],
           "source": "brave-search"
+        },
+        {
+          "id": "santiago-museo-memoria",
+          "name": "Museum of Memory and Human Rights",
+          "nameEs": "Museo de la Memoria y los Derechos Humanos",
+          "category": "museum",
+          "coordinates": [
+            -33.4375,
+            -70.6642
+          ],
+          "description": "Wichtiges Museum zur Erinnerung an die Opfer der Pinochet-Diktatur (1973-1990). Bewegende Multimedia-Ausstellungen, Fotos, Kunst und Literatur erzählen die Geschichte des Militärputsches. Essentiell für das Verständnis der chilenischen Geschichte.",
+          "descriptionEs": "Museo dedicado a las víctimas de la dictadura de Pinochet (1973-1990). Exhibiciones multimedia conmovedoras, fotos, arte y literatura cuentan la historia del golpe militar.",
+          "address": "Matucana 501, Santiago",
+          "website": "https://museodelamemoria.cl/",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4375,-70.6642",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "museum",
+            "history",
+            "pinochet",
+            "human-rights",
+            "essential"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "santiago-la-vega",
+          "name": "La Vega Central Market",
+          "nameEs": "Feria Municipal La Vega",
+          "category": "restaurant",
+          "coordinates": [
+            -33.4305,
+            -70.6483
+          ],
+          "description": "Authentischer Großmarkt nördlich des Mercado Central. Hier kaufen die Einheimischen ein. Günstigere Restaurants als im Mercado Central, riesige Auswahl an Obst, Gemüse und chilenischen Produkten.",
+          "descriptionEs": "Mercado mayorista auténtico al norte del Mercado Central. Donde compran los locales. Restaurantes más baratos que el Mercado Central, enorme variedad de frutas, verduras y productos chilenos.",
+          "address": "Nueva Rengifo 400, Recoleta",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4305,-70.6483",
+          "priceRange": "$",
+          "tags": [
+            "market",
+            "authentic",
+            "local",
+            "budget",
+            "food"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "santiago-barrio-brasil",
+          "name": "Barrio Brasil",
+          "nameEs": "Barrio Brasil",
+          "category": "unique",
+          "coordinates": [
+            -33.4417,
+            -70.6633
+          ],
+          "description": "Wiederbelebtes Boheme-Viertel mit der großen Plaza Brasil im Zentrum. Alte Villen, hippe Bars und Restaurants, lebendige Nachbarschaft. Großartige Meeresfrüchte-Restaurants und Nachtleben.",
+          "descriptionEs": "Barrio bohemio revitalizado con la gran Plaza Brasil en el centro. Antiguas mansiones, bares y restaurantes de moda, vecindario vibrante. Excelentes restaurantes de mariscos y vida nocturna.",
+          "address": "Plaza Brasil, Santiago Centro",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4417,-70.6633",
+          "priceRange": "$$",
+          "tags": [
+            "neighborhood",
+            "bohemian",
+            "nightlife",
+            "restaurants",
+            "hipster"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "santiago-el-hoyo",
+          "name": "El Hoyo Restaurant",
+          "nameEs": "El Hoyo",
+          "category": "restaurant",
+          "coordinates": [
+            -33.4517,
+            -70.6667
+          ],
+          "description": "Von Anthony Bourdain als 'bestes Essen in Chile' bezeichnet. Rustikales Restaurant nahe Estación Central, spezialisiert auf herzhafte Schweinefleischgerichte: Pernil (Schweinekeule) und Arrollado (Schweinerollbraten).",
+          "descriptionEs": "Anthony Bourdain lo llamó 'la mejor comida de Chile'. Restaurante rústico cerca de Estación Central, especializado en platos de cerdo: pernil y arrollado.",
+          "address": "San Vicente 375, Santiago",
+          "website": "https://elhoyo.cl/",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4517,-70.6667",
+          "priceRange": "$$",
+          "tags": [
+            "restaurant",
+            "traditional",
+            "pork",
+            "bourdain",
+            "local-favorite"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "santiago-los-dominicos",
+          "name": "Los Dominicos Crafts Market",
+          "nameEs": "Pueblito Los Dominicos",
+          "category": "unique",
+          "coordinates": [
+            -33.4167,
+            -70.5333
+          ],
+          "description": "Großer Kunsthandwerksmarkt im Osten Santiagos in einem nachgebauten Kolonialdorf. Hochwertige chilenische Handarbeiten: Lapislazuli-Schmuck, Kupfer, Keramik, Textilien. Ideal für Souvenirs.",
+          "descriptionEs": "Gran mercado de artesanías en el este de Santiago en un pueblo colonial reconstruido. Artesanías chilenas de alta calidad: joyas de lapislázuli, cobre, cerámica, textiles. Ideal para recuerdos.",
+          "address": "Av. Apoquindo 9085, Las Condes",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4167,-70.5333",
+          "priceRange": "$$",
+          "tags": [
+            "market",
+            "crafts",
+            "souvenirs",
+            "artisan",
+            "shopping"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "santiago-barrio-bellavista",
+          "name": "Barrio Bellavista",
+          "nameEs": "Barrio Bellavista",
+          "category": "unique",
+          "coordinates": [
+            -33.4333,
+            -70.6333
+          ],
+          "description": "Lebhaftes Viertel am Fuß des Cerro San Cristóbal. Voller Cafés, Restaurants, Bars und Clubs. Die Hauptstraße Pío Nono ist das Zentrum des Nachtlebens. Hier liegt auch Pablo Nerudas Haus La Chascona.",
+          "descriptionEs": "Barrio vibrante al pie del Cerro San Cristóbal. Lleno de cafés, restaurantes, bares y clubs. La calle principal Pío Nono es el centro de la vida nocturna. Aquí está La Chascona de Pablo Neruda.",
+          "address": "Barrio Bellavista, Recoleta",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4333,-70.6333",
+          "priceRange": "$$",
+          "tags": [
+            "neighborhood",
+            "nightlife",
+            "restaurants",
+            "bars",
+            "neruda"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "santiago-la-chascona",
+          "name": "La Chascona (Neruda House)",
+          "nameEs": "Casa Museo La Chascona",
+          "category": "museum",
+          "coordinates": [
+            -33.4317,
+            -70.6331
+          ],
+          "description": "Pablo Nerudas Haus in Santiago, benannt nach seiner Geliebten Matilde. Exzentrische Architektur, voller Sammlungen des Dichters. Eine von drei Neruda-Häusern in Chile. Reservierung empfohlen.",
+          "descriptionEs": "Casa de Pablo Neruda en Santiago, nombrada por su amada Matilde. Arquitectura excéntrica, llena de colecciones del poeta. Una de las tres casas de Neruda en Chile. Se recomienda reservar.",
+          "address": "Fernando Márquez de la Plata 0192, Bellavista",
+          "website": "https://fundacionneruda.org/",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4317,-70.6331",
+          "priceRange": "$$",
+          "tags": [
+            "museum",
+            "neruda",
+            "poetry",
+            "culture",
+            "architecture"
+          ],
+          "source": "Rough Guide 2023"
         }
       ]
     },
