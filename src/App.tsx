@@ -145,12 +145,23 @@ function App() {
     setSelectedRecommendation(null)
     setSheetExpanded(true)
     
-    // If selected from map, do NOT open the location picker automatically
-    // The picker should only open when user explicitly clicks the button
-    if (!fromMap) {
+    if (fromMap) {
+      // When clicked on map: open location picker briefly to show which location is highlighted
+      setShowLocationPicker(true)
+      // Auto-scroll to the location in the picker
+      setTimeout(() => {
+        const locEl = document.getElementById(`loc-${location.id}`)
+        if (locEl) {
+          locEl.scrollIntoView({ behavior: 'smooth', block: 'center' })
+          locEl.classList.add('location-flash')
+          setTimeout(() => locEl.classList.remove('location-flash'), 2000)
+        }
+      }, 100)
+      // Auto-close picker after 2.5s so user sees it then it gets out of the way
+      setTimeout(() => setShowLocationPicker(false), 2500)
+    } else {
       setShowLocationPicker(false)
     }
-    // Note: fromMap=true just updates the location, no picker auto-open
   }
 
   const handleRecommendationSelect = (recommendation: Recommendation) => {
@@ -163,9 +174,9 @@ function App() {
         element.scrollIntoView({ behavior: 'smooth', block: 'center' })
         // Flash effect for visibility
         element.classList.add('flash-highlight')
-        setTimeout(() => element.classList.remove('flash-highlight'), 1500)
+        setTimeout(() => element.classList.remove('flash-highlight'), 2000)
       }
-    }, 150)
+    }, 200)
   }
 
   const toggleFavorite = (id: string) => {

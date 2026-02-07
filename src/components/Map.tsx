@@ -158,6 +158,7 @@ export default function Map({
   const createLocationIcon = (location: Location, isSelected: boolean) => {
     const locationNumber = locations.findIndex(l => l.id === location.id) + 1
     const selectedClass = isSelected ? 'selected' : ''
+    const size = isSelected ? 40 : 32
     
     return L.divIcon({
       html: `
@@ -170,9 +171,9 @@ export default function Map({
         </div>
       `,
       className: `custom-div-icon ${isSelected ? 'marker-selected' : ''}`,
-      iconSize: [32, 32],
-      iconAnchor: [16, 16],
-      popupAnchor: [0, -16]
+      iconSize: [size, size],
+      iconAnchor: [size/2, size/2],
+      popupAnchor: [0, -size/2]
     })
   }
 

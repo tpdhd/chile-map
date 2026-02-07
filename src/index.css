@@ -89,6 +89,28 @@
   }
 }
 
+/* Flash highlight for location in picker when selected from map */
+.location-flash {
+  animation: location-flash-anim 2s ease-out !important;
+}
+
+@keyframes location-flash-anim {
+  0% {
+    background: rgba(230, 57, 70, 0.8) !important;
+    box-shadow: inset 0 0 30px rgba(230, 57, 70, 0.6);
+    transform: scale(1.02);
+  }
+  30% {
+    background: rgba(230, 57, 70, 0.5) !important;
+    box-shadow: inset 0 0 20px rgba(230, 57, 70, 0.4);
+  }
+  100% {
+    background: rgba(230, 57, 70, 0.15) !important;
+    box-shadow: none;
+    transform: scale(1);
+  }
+}
+
 /* Leaflet dark mode overrides */
 .leaflet-container {
   background: #0f0f14;
@@ -171,13 +193,22 @@
   font-size: 12px;
 }
 
-/* Selected marker pulsing effect - GREEN highlight */
+/* Selected marker pulsing effect - bright red/white highlight */
 .custom-marker.selected {
   animation: marker-pulse 1.5s ease-in-out infinite;
   z-index: 10000 !important;
-  border: 4px solid white !important;
-  box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.6), 0 4px 16px rgba(0, 0, 0, 0.6) !important;
-  background: #22c55e !important;
+  border: 4px solid #fff !important;
+  box-shadow: 0 0 0 6px rgba(230, 57, 70, 0.7), 0 0 20px 8px rgba(230, 57, 70, 0.4), 0 4px 16px rgba(0, 0, 0, 0.6) !important;
+  background: #e63946 !important;
+}
+
+/* Selected LOCATION marker gets extra large treatment */
+.custom-marker.location-marker.selected {
+  width: 40px !important;
+  height: 40px !important;
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  border: 5px solid #fff !important;
 }
 
 /* Location marker in menu when highlighted via map click */
@@ -208,11 +239,11 @@
 @keyframes marker-pulse {
   0%, 100% {
     transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+    box-shadow: 0 0 0 6px rgba(230, 57, 70, 0.7), 0 0 20px 8px rgba(230, 57, 70, 0.4);
   }
   50% {
-    transform: scale(1.25);
-    box-shadow: 0 0 0 16px rgba(34, 197, 94, 0);
+    transform: scale(1.2);
+    box-shadow: 0 0 0 18px rgba(230, 57, 70, 0), 0 0 30px 12px rgba(230, 57, 70, 0);
   }
 }
 
