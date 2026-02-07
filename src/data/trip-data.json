@@ -1801,6 +1801,195 @@
             "daytrip"
           ],
           "source": "Rough Guide 2023"
+        },
+        {
+          "id": "wine-resort-cousino-macul",
+          "name": "Viña Cousiño Macul",
+          "nameEs": "Viña Cousiño Macul",
+          "category": "winery",
+          "coordinates": [
+            -33.4833,
+            -70.5833
+          ],
+          "description": "Chiles ältestes Weingut, seit 1856 in Familienbesitz. Doña Isidora Goyenechea ließ die Keller bauen und holte einen Önologen aus Bordeaux. Fahrrad-Touren und klassische Kellerbesichtigungen verfügbar.",
+          "descriptionEs": "La viña más antigua de Chile, en propiedad familiar desde 1856. Doña Isidora Goyenechea mandó construir las bodegas y trajo un enólogo de Burdeos. Tours en bicicleta y visitas clásicas a bodegas.",
+          "address": "Av Quilín 7100, Peñalolén",
+          "website": "https://cousinomacul.com/",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4833,-70.5833",
+          "priceRange": "$$",
+          "tags": [
+            "wine",
+            "historic",
+            "oldest",
+            "bike-tour",
+            "family-owned"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "wine-resort-santa-carolina",
+          "name": "Viña Santa Carolina",
+          "nameEs": "Viña Santa Carolina",
+          "category": "winery",
+          "coordinates": [
+            -33.4517,
+            -70.6167
+          ],
+          "description": "Über 140 Jahre alte Weintradition, bequem per Santiago Metro erreichbar. Geführte Touren durch den historischen Park, das Kolonialhaus und die Keller. Verkostung von drei Premiumweinen inklusive.",
+          "descriptionEs": "Más de 140 años de tradición vinícola, accesible cómodamente por metro de Santiago. Tours guiados por el parque histórico, casa colonial y bodegas. Degustación de tres vinos premium incluida.",
+          "address": "Rodrigo de Araya 43, Macul",
+          "website": "https://santacarolina.cl/",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4517,-70.6167",
+          "priceRange": "$$",
+          "tags": [
+            "wine",
+            "metro-accessible",
+            "historic",
+            "colonial",
+            "tour"
+          ],
+          "source": "Insight Guides 2024"
+        },
+        {
+          "id": "wine-resort-cascada-animas",
+          "name": "Cascada de las Ánimas",
+          "nameEs": "Cascada de las Ánimas",
+          "category": "nature",
+          "coordinates": [
+            -33.6417,
+            -70.3167
+          ],
+          "description": "Ehemaliges Pferderanch aus dem 19. Jh., heute Abenteuer-Lodge am Río Maipo. Reiten, Rafting, Kajak, Zipline und eine geführte Wanderung zum 20m-Wasserfall. Restaurant mit Blick auf die Schlucht.",
+          "descriptionEs": "Antiguo rancho de caballos del siglo XIX, hoy lodge de aventura junto al Río Maipo. Cabalgatas, rafting, kayak, tirolesa y caminata guiada a la cascada de 20m. Restaurante con vista al cañón.",
+          "address": "San Alfonso, Cajón del Maipo",
+          "website": "https://cascadadelasanimas.cl/",
+          "googleMapsLink": "https://maps.google.com/?q=-33.6417,-70.3167",
+          "priceRange": "$$",
+          "tags": [
+            "adventure",
+            "rafting",
+            "waterfall",
+            "horseriding",
+            "canyon"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "wine-resort-banos-colina",
+          "name": "Baños de Colina Hot Springs",
+          "nameEs": "Termas Baños de Colina",
+          "category": "hotspring",
+          "coordinates": [
+            -33.8167,
+            -70.0167
+          ],
+          "description": "Natürliche Thermalpools in Terrassen am Berghang geschnitzt, mit Blick auf eine Mondlandschaft. Am Wochenende überfüllt, unter der Woche paradiesisch. 2h von Santiago, nur mit Auto/Tour erreichbar.",
+          "descriptionEs": "Piscinas termales naturales talladas en terrazas en la ladera de la montaña, con vistas a un paisaje lunar. Llenas los fines de semana, paradisíacas entre semana. A 2h de Santiago, solo accesible en auto/tour.",
+          "address": "Baños de Colina, Cajón del Maipo",
+          "googleMapsLink": "https://maps.google.com/?q=-33.8167,-70.0167",
+          "priceRange": "$",
+          "tags": [
+            "hotspring",
+            "natural",
+            "mountains",
+            "thermal",
+            "scenic"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "wine-resort-museo-andino",
+          "name": "Museo Andino (Santa Rita)",
+          "nameEs": "Museo Andino",
+          "category": "museum",
+          "coordinates": [
+            -33.7833,
+            -70.5667
+          ],
+          "description": "Prä-kolumbisches Museum auf dem Gelände der Viña Santa Rita. Beeindruckende Sammlung von Mapuche-Silberschmuck, Keramik und Textilien. Kombi-Ticket mit Weinverkostung empfehlenswert.",
+          "descriptionEs": "Museo precolombino en el predio de Viña Santa Rita. Impresionante colección de joyería mapuche en plata, cerámica y textiles. Recomendable ticket combo con degustación de vinos.",
+          "address": "Viña Santa Rita, Alto Jahuel",
+          "website": "https://santarita.cl/museo-andino/",
+          "googleMapsLink": "https://maps.google.com/?q=-33.7833,-70.5667",
+          "priceRange": "$",
+          "tags": [
+            "museum",
+            "pre-columbian",
+            "mapuche",
+            "silver",
+            "wine"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "wine-resort-embalse-yeso",
+          "name": "Embalse El Yeso",
+          "nameEs": "Embalse El Yeso",
+          "category": "nature",
+          "coordinates": [
+            -33.7333,
+            -70.0833
+          ],
+          "description": "Atemberaubender türkisfarbener Stausee auf 2.500m Höhe in den Anden. Surreale Landschaft mit schneebedeckten Bergen. Fotomotiv Nummer 1 im Cajón del Maipo. Am besten unter der Woche besuchen.",
+          "descriptionEs": "Impresionante embalse turquesa a 2.500m de altitud en los Andes. Paisaje surrealista con montañas nevadas. Motivo fotográfico número 1 del Cajón del Maipo. Mejor visitar entre semana.",
+          "address": "Embalse El Yeso, San José de Maipo",
+          "googleMapsLink": "https://maps.google.com/?q=-33.7333,-70.0833",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "lake",
+            "reservoir",
+            "andes",
+            "turquoise",
+            "photography"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "wine-resort-san-jose-maipo",
+          "name": "San José de Maipo",
+          "nameEs": "San José de Maipo",
+          "category": "unique",
+          "coordinates": [
+            -33.6417,
+            -70.3583
+          ],
+          "description": "Hübsches Verwaltungszentrum des Cajón del Maipo mit Adobe-Häusern und Kolonialkirche. Letzte Tankstelle im Tal! Straßenstände mit Honig, Kuchen und frischem Brot.",
+          "descriptionEs": "Bonito centro administrativo del Cajón del Maipo con casas de adobe e iglesia colonial. ¡Última gasolinera del valle! Puestos con miel, kuchen y pan amasado.",
+          "address": "San José de Maipo",
+          "googleMapsLink": "https://maps.google.com/?q=-33.6417,-70.3583",
+          "priceRange": "$",
+          "tags": [
+            "town",
+            "colonial",
+            "adobe",
+            "charming",
+            "food-stalls"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "wine-resort-viña-matetic",
+          "name": "Viña Matetic",
+          "nameEs": "Viña Matetic",
+          "category": "winery",
+          "coordinates": [
+            -33.4333,
+            -71.4167
+          ],
+          "description": "Am westlichen Rand des Casablanca-Tals gelegen. Produziert hervorragende Weine und hat ein preisgekröntes Restaurant, das für Kreativität und Qualität gefeiert wird. Auch mit Gästehaus.",
+          "descriptionEs": "Ubicada en el borde occidental del Valle de Casablanca. Produce excelentes vinos y tiene un restaurante premiado, celebrado por su creatividad y calidad. También con casa de huéspedes.",
+          "address": "Fundo El Rosario, Casablanca",
+          "website": "https://matetic.com/",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4333,-71.4167",
+          "priceRange": "$$$",
+          "tags": [
+            "wine",
+            "restaurant",
+            "casablanca",
+            "premium",
+            "guesthouse"
+          ],
+          "source": "Insight Guides 2024"
         }
       ]
     },

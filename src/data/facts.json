@@ -1316,8 +1316,77 @@
       "location": "san-carlos",
       "source": "Rough Guides Chile 2023",
       "id": 188
+    },
+    {
+      "text": "Die Viña Cousiño Macul ist seit 1856 ununterbrochen in Familienbesitz — das älteste durchgehend produzierende Weingut Chiles.",
+      "category": "food",
+      "location": "wine-resort",
+      "source": "Rough Guides Chile 2023",
+      "id": 189
+    },
+    {
+      "text": "Der Embalse El Yeso auf 2.500m Höhe hat türkisfarbenes Wasser, das an die Karibik erinnert — mitten in den schneebedeckten Anden.",
+      "category": "nature",
+      "location": "wine-resort",
+      "source": "Rough Guides Chile 2023",
+      "id": 190
+    },
+    {
+      "text": "Im Cajón del Maipo verkaufen Straßenstände lokalen Honig, frisches pan amasado (Ofenbrot) und Chicha (fermentierten Apfelmost).",
+      "category": "food",
+      "location": "wine-resort",
+      "source": "Rough Guides Chile 2023",
+      "id": 191
+    },
+    {
+      "text": "Pomaire war ein 'pueblo de indios' — ein von den Spaniern im 18. Jh. gegründetes Dorf zur Kontrolle der indigenen Bevölkerung. Heute ist es berühmt für seine 1,5kg-Empanadas.",
+      "category": "culture",
+      "location": "wine-resort",
+      "source": "Rough Guides Chile 2023",
+      "id": 192
+    },
+    {
+      "text": "Die Cascada de las Ánimas im Cajón del Maipo war im 19. Jh. eine Pferderanch — heute bietet sie Rafting, Zipline und einen 20m-Wasserfall.",
+      "category": "nature",
+      "location": "wine-resort",
+      "source": "Rough Guides Chile 2023",
+      "id": 193
+    },
+    {
+      "text": "Algarrobos Islote Pájaros Niños beherbergt sowohl Humboldt- als auch Magellan-Pinguine — eine der wenigen Kolonien, wo beide Arten zusammenleben.",
+      "category": "nature",
+      "location": "algarrobo",
+      "source": "Rough Guides Chile 2023",
+      "id": 194
+    },
+    {
+      "text": "Die Weinlese (vendimia) im Casablanca-Tal erlaubt Besuchern, selbst Trauben zu schneiden und den Verarbeitungsprozess zu lernen.",
+      "category": "food",
+      "location": "wine-resort",
+      "source": "Insight Guides Chile 2024",
+      "id": 195
+    },
+    {
+      "text": "Chile exportiert Wein im Wert von über 2 Milliarden US-Dollar jährlich — die größten Märkte sind UK, USA und China.",
+      "category": "food",
+      "source": "Insight Guides Chile 2024",
+      "id": 196
+    },
+    {
+      "text": "Viña Santa Rita versteckte 1814 genau 120 Patrioten in ihren Kellern — daher heißt ihr berühmtester Wein heute '120'.",
+      "category": "history",
+      "location": "wine-resort",
+      "source": "Insight Guides Chile 2024",
+      "id": 197
+    },
+    {
+      "text": "Der Tren Sabores del Valle ist ein restaurierter Dampfzug aus dem 19. Jahrhundert, der durch das Colchagua-Tal fährt und an Weingütern hält.",
+      "category": "unique",
+      "location": "wine-resort",
+      "source": "Insight Guides Chile 2024",
+      "id": 198
     }
   ],
   "lastUpdated": "2026-02-07",
-  "totalFacts": 187
+  "totalFacts": 197
 }
