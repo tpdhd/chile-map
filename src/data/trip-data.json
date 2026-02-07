@@ -1983,7 +1983,7 @@
       "endDate": "2025-03-12",
       "durationDays": 2,
       "type": "main",
-      "description": "Gateway to Nevados de Chillán hot springs and ski resort, with historic murals and excellent markets",
+      "description": "Tor zu den Thermalquellen und dem Skigebiet Nevados de Chillán, mit historischen Wandmalereien und hervorragenden Märkten",
       "recommendations": [
         {
           "id": "chillan-termas",
@@ -1994,7 +1994,7 @@
             -36.8942,
             -71.4153
           ],
-          "description": "Famous thermal resort with 9 hot spring pools rich in sulfur and iron. March is ideal for outdoor activities: hiking, mountain biking, canopy. Book spa treatments in advance.",
+          "description": "Berühmtes Thermalresort mit 9 heißen Quellen, reich an Schwefel und Eisen. März ist ideal für Outdoor-Aktivitäten: Wandern, Mountainbiken, Canopy. Spa-Behandlungen im Voraus buchen.",
           "descriptionEs": "Famoso resort termal con 9 piscinas de aguas termales ricas en azufre y hierro. Marzo es ideal para actividades: senderismo, bicicleta de montaña, canopy. Reserva tratamientos de spa con anticipación.",
           "address": "Termas de Chillán, Pinto",
           "website": "https://termaschillan.cl/",
@@ -2018,7 +2018,7 @@
             -36.85,
             -71.45
           ],
-          "description": "Mountain valley with lodges, restaurants, and access to hiking trails. Base for exploring Nevados de Chillán area. Good for trekking through native forest.",
+          "description": "Bergtal mit Lodges, Restaurants und Zugang zu Wanderwegen. Basis zum Erkunden des Nevados de Chillán-Gebiets. Gut für Trekking durch einheimischen Wald.",
           "descriptionEs": "Valle de montaña con cabañas, restaurantes y acceso a senderos. Base para explorar el área de Nevados de Chillán. Bueno para trekking en bosque nativo.",
           "address": "Valle Las Trancas, Pinto",
           "website": "https://trancas.cl/",
@@ -2042,7 +2042,7 @@
             -36.61,
             -72.1
           ],
-          "description": "Murals by famous Mexican artist David Alfaro Siqueiros at the Escuela México, painted after the 1939 earthquake. Important Latin American art.",
+          "description": "Wandmalereien des berühmten mexikanischen Künstlers David Alfaro Siqueiros in der Escuela México, gemalt nach dem Erdbeben von 1939. Bedeutende lateinamerikanische Kunst.",
           "descriptionEs": "Murales del famoso artista mexicano David Alfaro Siqueiros en la Escuela México, pintados después del terremoto de 1939. Arte latinoamericano importante.",
           "address": "Escuela México, Av. O'Higgins, Chillán",
           "googleMapsLink": "https://maps.google.com/?q=-36.6100,-72.1000",
@@ -2065,7 +2065,7 @@
             -36.6066,
             -72.1034
           ],
-          "description": "One of Chile's most traditional markets. Famous for longanizas (sausages), local produce, and crafts. Saturday is the biggest market day.",
+          "description": "Einer der traditionellsten Märkte Chiles. Berühmt für Longanizas (Würste), lokale Produkte und Kunsthandwerk. Samstag ist der größte Markttag.",
           "descriptionEs": "Uno de los mercados más tradicionales de Chile. Famoso por longanizas, productos locales y artesanías. El sábado es el día de mayor actividad.",
           "address": "Maipón 600, Chillán",
           "googleMapsLink": "https://maps.google.com/?q=-36.6066,-72.1034",
@@ -2088,7 +2088,7 @@
             -36.86,
             -71.44
           ],
-          "description": "Multiple trails through native forest with views of Chillán volcano. Options for all levels: from easy walks to moderate 3-4 hour treks.",
+          "description": "Mehrere Wanderwege durch einheimischen Wald mit Blick auf den Vulkan Chillán. Optionen für alle Levels: von einfachen Spaziergängen bis zu moderaten 3-4-Stunden-Treks.",
           "descriptionEs": "Múltiples senderos a través del bosque nativo con vistas al volcán Chillán. Opciones para todos los niveles: desde caminatas fáciles hasta treks de 3-4 horas.",
           "address": "Valle Las Trancas, Pinto",
           "googleMapsLink": "https://maps.google.com/?q=-36.8600,-71.4400",
@@ -2111,7 +2111,7 @@
             -36.8942,
             -71.4153
           ],
-          "description": "Mountain biking trails from easy to expert. March is summer season with clear trails. Bike rental available at resort.",
+          "description": "Mountainbike-Strecken von einfach bis Experte. März ist Sommersaison mit klaren Wegen. Fahrradverleih am Resort verfügbar.",
           "descriptionEs": "Senderos de bicicleta de montaña desde fácil hasta experto. Marzo es temporada de verano con senderos despejados. Arriendo de bicicletas disponible.",
           "address": "Nevados de Chillán Resort",
           "website": "https://www.nevadosdechillan.com/",
@@ -2134,7 +2134,7 @@
             -36.88,
             -71.42
           ],
-          "description": "Zip-lines and treetop walkways through native lenga and roble forest. Family-friendly adventure with stunning forest views.",
+          "description": "Seilrutschen und Baumwipfelpfade durch einheimischen Lenga- und Roble-Wald. Familienfreundliches Abenteuer mit atemberaubenden Waldblicken.",
           "descriptionEs": "Tirolesas y pasarelas entre copas de árboles en bosque nativo de lengas y robles. Aventura familiar con impresionantes vistas del bosque.",
           "address": "Hotel Termas de Chillán",
           "googleMapsLink": "https://maps.google.com/?q=-36.8800,-71.4200",
@@ -2156,7 +2156,7 @@
             -36.83,
             -71.48
           ],
-          "description": "Beautiful valley with hiking trails and mountain views. Less crowded alternative to main Termas area.",
+          "description": "Wunderschönes Tal mit Wanderwegen und Bergblicken. Weniger überlaufene Alternative zum Hauptgebiet der Termas.",
           "descriptionEs": "Hermoso valle con senderos y vistas de montaña. Alternativa menos concurrida al área principal de Termas.",
           "address": "Valle Hermoso, Chillán",
           "website": "https://trancas.cl/valle-hermoso-chillan/",
@@ -2180,7 +2180,7 @@
             -36.605,
             -72.102
           ],
-          "description": "Memorial to Chile's beloved folk singer who wrote 'Gracias a la Vida'. Small museum about her life and legacy. Important cultural pilgrimage.",
+          "description": "Gedenkstätte für Chiles geliebte Folksängerin, die 'Gracias a la Vida' schrieb. Kleines Museum über ihr Leben und Vermächtnis. Wichtige kulturelle Pilgerstätte.",
           "descriptionEs": "Memorial a la querida cantante folclórica de Chile que escribió 'Gracias a la Vida'. Pequeño museo sobre su vida y legado. Peregrinaje cultural importante.",
           "address": "Centro, Chillán",
           "googleMapsLink": "https://maps.google.com/?q=-36.6050,-72.1020",
@@ -2203,7 +2203,7 @@
             -36.6066,
             -72.1034
           ],
-          "description": "Modernist cathedral built after 1939 earthquake with striking concrete cross architecture. Unusual design worth seeing. On the main plaza.",
+          "description": "Modernistische Kathedrale, erbaut nach dem Erdbeben von 1939, mit auffälliger Betonkreuz-Architektur. Ungewöhnliches Design, das sich lohnt. An der Hauptplaza.",
           "descriptionEs": "Catedral modernista construida después del terremoto de 1939 con llamativa arquitectura de cruz de concreto. Diseño inusual que vale la pena ver. En la plaza principal.",
           "address": "Plaza de Armas, Chillán",
           "googleMapsLink": "https://maps.google.com/?q=-36.6066,-72.1034",
@@ -2226,7 +2226,7 @@
             -36.6066,
             -72.1034
           ],
-          "description": "Chillán is famous for longanizas (sausages). Multiple stalls in the market. Try them grilled or in sandwiches. Each producer has unique recipes.",
+          "description": "Chillán ist berühmt für Longanizas (Würste). Mehrere Stände auf dem Markt. Probiere sie gegrillt oder im Sandwich. Jeder Produzent hat eigene Rezepte.",
           "descriptionEs": "Chillán es famoso por sus longanizas. Múltiples puestos en el mercado. Pruébalas a la parrilla o en sándwiches. Cada productor tiene recetas únicas.",
           "address": "Mercado de Chillán",
           "googleMapsLink": "https://maps.google.com/?q=-36.6066,-72.1034",
@@ -2249,7 +2249,7 @@
             -36.607,
             -72.103
           ],
-          "description": "Museum honoring world-famous pianist Claudio Arrau, born in Chillán. Personal items, awards, and history of one of the 20th century's greatest pianists.",
+          "description": "Museum zu Ehren des weltberühmten Pianisten Claudio Arrau, geboren in Chillán. Persönliche Gegenstände, Auszeichnungen und Geschichte eines der größten Pianisten des 20. Jahrhunderts.",
           "descriptionEs": "Museo en honor al pianista de fama mundial Claudio Arrau, nacido en Chillán. Objetos personales, premios e historia de uno de los mejores pianistas del siglo XX.",
           "address": "Centro, Chillán",
           "googleMapsLink": "https://maps.google.com/?q=-36.6070,-72.1030",
