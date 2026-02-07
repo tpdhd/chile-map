@@ -1716,8 +1716,92 @@
       "category": "nature",
       "location": "frutillar-puerto-varas",
       "source": "Rough Guides Chile 2023"
+    },
+    {
+      "text": "Die Iglesia San Francisco an der Alameda ist Santiagos ältestes Gebäude — erbaut zwischen 1586 und 1628. Die Virgen del Socorro im Inneren reiste 1540 auf Pedro de Valdivias Sattel nach Chile.",
+      "category": "history",
+      "location": "santiago",
+      "source": "Rough Guides Chile 2023",
+      "id": 248
+    },
+    {
+      "text": "Londres 38 in Santiago war eines der vier Folterzentren unter Pinochet — das einzige, das nicht zerstört wurde. Zwischen 1973 und 1974 wurden dort 96 Menschen ermordet.",
+      "category": "history",
+      "location": "santiago",
+      "source": "Rough Guides Chile 2023",
+      "id": 249
+    },
+    {
+      "text": "La Chimba, der alte Quechua-Name für Barrio Bellavista, bedeutet \"die andere Seite des Flusses\" — das Viertel entstand, als Santiago über den Mapocho hinauswuchs.",
+      "category": "culture",
+      "location": "santiago",
+      "source": "Rough Guides Chile 2023",
+      "id": 250
+    },
+    {
+      "text": "Der Gran Torre Santiago (300m) ist der höchste Wolkenkratzer Lateinamerikas — entworfen vom argentinischen Architekten César Pelli, mit Aussichtsplattform Sky Costanera.",
+      "category": "unique",
+      "location": "santiago",
+      "source": "Rough Guides Chile 2023",
+      "id": 251
+    },
+    {
+      "text": "Die Estación Central hat ein kolossales Metalldach, das 1896 in der französischen Schneider-Creusot-Gießerei gegossen und nach Santiago verschifft wurde.",
+      "category": "history",
+      "location": "santiago",
+      "source": "Rough Guides Chile 2023",
+      "id": 252
+    },
+    {
+      "text": "Im Museo de Historia Natural im Parque Quinta Normal steht ein komplettes Blauwal-Skelett — und ein Moai von der Osterinsel mit dem mysteriösen, unentschlüsselten Rongorongo-Schrift.",
+      "category": "culture",
+      "location": "santiago",
+      "source": "Rough Guides Chile 2023",
+      "id": 253
+    },
+    {
+      "text": "Das Teatro Municipal in Santiago wurde 1857 eingeweiht — eine prächtige französisch-neoklassizistische Bühne für Oper, Ballett und Konzerte mit roten Samtpolstern und Kristallleuchtern.",
+      "category": "culture",
+      "location": "santiago",
+      "source": "Rough Guides Chile 2023",
+      "id": 254
+    },
+    {
+      "text": "Die Basílica de la Merced in Santiago beherbergt eine Rongorongo-Tafel von der Osterinsel — eine von nur 29 weltweit erhaltenen, in einer noch nicht entschlüsselten Schrift.",
+      "category": "culture",
+      "location": "santiago",
+      "source": "Rough Guides Chile 2023",
+      "id": 255
+    },
+    {
+      "text": "Die Feria Fluvial in Valdivia ist ein Flussmarkt, an dem sich Seelöwen unter den Verkaufsständen tummeln und auf Fischabfälle warten — ein einzigartiges Schauspiel.",
+      "category": "unique",
+      "location": "valdivia",
+      "source": "Rough Guides Chile 2023",
+      "id": 256
+    },
+    {
+      "text": "Valdivias Festungssystem an der Mündung des Río Valdivia war das größte der spanischen Krone in Südamerika — 17 Forts schützten den Zugang zum Fluss.",
+      "category": "history",
+      "location": "valdivia",
+      "source": "Rough Guides Chile 2023",
+      "id": 257
+    },
+    {
+      "text": "Die Cervecería Kunstmann bei Valdivia braut seit 1960 deutsches Bier in Chile — ihr jährliches Bierfest im Januar ist eines der größten in Südamerika.",
+      "category": "food",
+      "location": "valdivia",
+      "source": "Rough Guides Chile 2023",
+      "id": 258
+    },
+    {
+      "text": "Das Erdbeben von 1960 hob in Valdivia den Meeresboden und senkte das Flussufer — ganze Stadtteile versanken, und ein neues Feuchtgebiet (Río Cruces) entstand aus dem Nichts.",
+      "category": "nature",
+      "location": "valdivia",
+      "source": "Rough Guides Chile 2023",
+      "id": 259
     }
   ],
   "lastUpdated": "2026-02-08",
-  "totalFacts": 247
+  "totalFacts": 259
 }

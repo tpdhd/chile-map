@@ -95,12 +95,12 @@
 
 ## 📊 Fakten-Feature
 
-### Status: 247 Fakten ✓ (2026-02-08, dedupliziert)
+### Status: 259 Fakten ✓ (2026-02-08, dedupliziert + erweitert)
 - Geographie, Kultur, Geschichte, Natur, Essen, Unique, Beach
 - Mit Location-Referenzen wo relevant
 - Quellen aus Insight Guides, Rough Guides, und Recherche
-- 25 Duplikate entfernt (272→247)
-- General 63, Chiloé 21, Frutillar/PV 19, Wine Resort 18, Algarrobo 16, San Carlos 16, Conguillío 15, Pucón 15, Osorno 14, Chillán 14, Santiago 12, Valdivia 12, Quillimari 12
+- 25 Duplikate entfernt, 12 neue Santiago/Valdivia-Fakten
+- General 63, Chiloé 21, Santiago 20, Frutillar/PV 19, Wine Resort 18, Valdivia 16, Algarrobo 16, San Carlos 16, Conguillío 15, Pucón 15, Osorno 14, Chillán 14, Quillimari 12
 
 ### UI für Fakten (ERLEDIGT ✓ 2026-02-07)
 - ✓ 📖 Icon im Burger-Menu
@@ -132,8 +132,9 @@
 - **Total: 280 Empfehlungen**
 
 ### Status Fakten (2026-02-08)
-- **Total: 247 Fakten** (dedupliziert, aus Buch-Recherche)
-- 25 echte Duplikate entfernt, alle Locations weiterhin 12+ Fakten ✓
-- Alle Quellen: Insight Guides 2024, Rough Guides 2023, Brave Search
+- **Total: 259 Fakten** (dedupliziert + erweitert)
+- 25 Duplikate entfernt, 12 neue Santiago/Valdivia-Fakten hinzugefügt
+- Santiago: 12→20, Valdivia: 12→16
+- Alle Locations 12+ Fakten ✓
 
 *Letzte Aktualisierung: 2026-02-08*
