@@ -21,9 +21,12 @@ const DefaultIcon = L.icon({
 })
 L.Marker.prototype.options.icon = DefaultIcon
 
-// Category colors mapping
+// Category colors mapping - vibrant and distinct
 const categoryColors: Record<string, string> = {
   restaurant: '#ff6b6b',
+  café: '#d4a574',
+  cafe: '#d4a574',
+  bar: '#8b5cf6',
   hiking: '#4ecdc4',
   event: '#ffe66d',
   museum: '#95e1d3',
@@ -36,11 +39,26 @@ const categoryColors: Record<string, string> = {
   historical: '#d4a373',
   viewpoint: '#ffd60a',
   shopping: '#f72585',
+  waterfall: '#38bdf8',
+  volcano: '#ef4444',
+  lake: '#3b82f6',
+  garden: '#a3e635',
+  church: '#f5d0fe',
+  monument: '#a8a29e',
+  theater: '#fb923c',
+  nightlife: '#6366f1',
+  transport: '#64748b',
+  food: '#f97316',
+  dessert: '#fbbf24',
+  seafood: '#22d3d8',
 }
 
-// Category icons mapping
+// Category icons mapping - comprehensive
 const categoryIcons: Record<string, string> = {
   restaurant: '🍽️',
+  café: '☕',
+  cafe: '☕',
+  bar: '🍺',
   hiking: '🥾',
   event: '🎪',
   museum: '🏛️',
@@ -53,6 +71,18 @@ const categoryIcons: Record<string, string> = {
   historical: '🏰',
   viewpoint: '👁️',
   shopping: '🛍️',
+  waterfall: '💧',
+  volcano: '🌋',
+  lake: '💙',
+  garden: '🌺',
+  church: '⛪',
+  monument: '🗿',
+  theater: '🎭',
+  nightlife: '🌙',
+  transport: '🚂',
+  food: '🥘',
+  dessert: '🍰',
+  seafood: '🦐',
 }
 
 interface MapProps {
@@ -165,13 +195,14 @@ export default function Map({
         url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
         maxZoom={19}
-        keepBuffer={32}
+        keepBuffer={64}
         updateWhenZooming={false}
         updateWhenIdle={true}
         tileSize={256}
         crossOrigin="anonymous"
         subdomains="abcd"
-        detectRetina={true}
+        detectRetina={false}
+        className="smooth-tiles"
       />
 
       {/* Route line */}

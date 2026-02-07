@@ -311,8 +311,103 @@
       "location": "san-carlos",
       "coordinates": [-36.5833, -71.6833],
       "source": "trip-data"
+    },
+    {
+      "id": 51,
+      "text": "Chiloé ist die zweitgrößte Insel Südamerikas — nur Feuerland ist größer.",
+      "category": "geography",
+      "location": "chiloe",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 52,
+      "text": "Der Volcán Ojos del Salado (6.893m) an der Grenze zu Argentinien ist der höchste aktive Vulkan der Welt.",
+      "category": "nature",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 53,
+      "text": "Die Atacama-Wüste ist so trocken, dass NASA hier Mars-Rover testet — manche Regionen hatten seit 400 Jahren keinen Regen.",
+      "category": "nature",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 54,
+      "text": "Osterinsel (Rapa Nui) ist einer der abgelegensten bewohnten Orte der Erde — 3.700 km vom chilenischen Festland entfernt.",
+      "category": "geography",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 55,
+      "text": "Puerto Williams auf Feuerland ist die südlichste Stadt der Welt — noch südlicher als das argentinische Ushuaia.",
+      "category": "geography",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 56,
+      "text": "Chile produziert etwa ein Drittel des weltweiten Kupfers — die Chuquicamata-Mine ist eine der größten offenen Minen der Welt.",
+      "category": "unique",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 57,
+      "text": "Die Termas de Chillán haben die längste Skipiste Südamerikas — und man kann danach in heißen Thermalquellen entspannen.",
+      "category": "nature",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 58,
+      "text": "Der Río Futaleufú gilt als einer der besten Wildwasser-Flüsse der Welt — Stromschnellen bis Grad 5+ ziehen Profis an.",
+      "category": "nature",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 59,
+      "text": "Die Straße der Sieben Seen (Ruta de los Siete Lagos) verbindet sieben kristallklare Seen im Seengebiet zwischen Chile und Argentinien.",
+      "category": "nature",
+      "location": "pucon",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 60,
+      "text": "Bahía Inglesa bei Copiapó ist einer der schönsten Strände Chiles — das türkisfarbene Wasser erinnert an die Karibik.",
+      "category": "beach",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 61,
+      "text": "Im Parque Nacional Lauca leben wilde Vicuñas, Flamingos und Pumas — auf über 4.500m Höhe an der bolivianischen Grenze.",
+      "category": "nature",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 62,
+      "text": "Die Torres del Paine im Nationalpark sind 2.500m hohe Granittürme — eines der meistfotografierten Naturwunder Südamerikas.",
+      "category": "nature",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 63,
+      "text": "Valdivia hat mehr Regen als London — die Stadt am Río Valdivia ist bekannt für ihre deutsche Brauerei-Tradition und Kuchen.",
+      "category": "food",
+      "location": "valdivia",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 64,
+      "text": "Puerto Montt ist das Tor zur Carretera Austral — von hier starten Fähren und Flüge in die wilde Aysén-Region.",
+      "category": "unique",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 65,
+      "text": "Die Humboldt-Pinguine in Algarrobo sind eine der nördlichsten Pinguinkolonien der Welt — über 2.000 Tiere leben auf dem Islote Pájaros Niños.",
+      "category": "nature",
+      "location": "algarrobo",
+      "coordinates": [-33.3550, -71.6900],
+      "source": "trip-data"
     }
   ],
   "lastUpdated": "2026-02-07",
-  "totalFacts": 50
+  "totalFacts": 65
 }

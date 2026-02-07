@@ -15,42 +15,36 @@ const VISITED_KEY = 'chile-trip-visited'
 // Category icons for quick visual reference
 const CATEGORY_ICONS: Record<string, string> = {
   'restaurant': '🍽️',
-  'Restaurant': '🍽️',
   'café': '☕',
-  'Café': '☕',
   'cafe': '☕',
   'bar': '🍺',
-  'Bar': '🍺',
   'viewpoint': '👁️',
-  'Viewpoint': '👁️',
   'museum': '🏛️',
-  'Museum': '🏛️',
   'market': '🛒',
-  'Market': '🛒',
   'park': '🌳',
-  'Park': '🌳',
   'beach': '🏖️',
-  'Beach': '🏖️',
   'winery': '🍷',
-  'Winery': '🍷',
   'nature': '🌲',
-  'Nature': '🌲',
   'historical': '🏰',
-  'Historic': '🏰',
   'activity': '🎯',
-  'Activity': '🎯',
   'shopping': '🛍️',
-  'Shopping': '🛍️',
   'unique': '⭐',
-  'Unique': '⭐',
   'art': '🎨',
-  'Art': '🎨',
   'hotspring': '♨️',
-  'Hotspring': '♨️',
   'hiking': '🥾',
-  'Hiking': '🥾',
   'event': '🎪',
-  'Event': '🎪',
+  'waterfall': '💧',
+  'volcano': '🌋',
+  'lake': '💙',
+  'garden': '🌺',
+  'church': '⛪',
+  'monument': '🗿',
+  'theater': '🎭',
+  'nightlife': '🌙',
+  'transport': '🚂',
+  'food': '🥘',
+  'dessert': '🍰',
+  'seafood': '🦐',
 }
 
 // Category German labels
@@ -74,6 +68,18 @@ const CATEGORY_LABELS: Record<string, string> = {
   'hotspring': 'Therme',
   'hiking': 'Wandern',
   'event': 'Event',
+  'waterfall': 'Wasserfall',
+  'volcano': 'Vulkan',
+  'lake': 'See',
+  'garden': 'Garten',
+  'church': 'Kirche',
+  'monument': 'Denkmal',
+  'theater': 'Theater',
+  'nightlife': 'Nachtleben',
+  'transport': 'Transport',
+  'food': 'Essen',
+  'dessert': 'Dessert',
+  'seafood': 'Meeresfrüchte',
 }
 
 function App() {
@@ -126,11 +132,16 @@ function App() {
   const handleRecommendationSelect = (recommendation: Recommendation) => {
     setSelectedRecommendation(recommendation)
     setSheetExpanded(true)
-    // Auto-scroll to recommendation in list
+    // Auto-scroll to recommendation in list with slight delay for animation
     setTimeout(() => {
       const element = document.getElementById(`rec-${recommendation.id}`)
-      element?.scrollIntoView({ behavior: 'smooth', block: 'center' })
-    }, 100)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        // Flash effect for visibility
+        element.classList.add('flash-highlight')
+        setTimeout(() => element.classList.remove('flash-highlight'), 1500)
+      }
+    }, 150)
   }
 
   const toggleFavorite = (id: string) => {
@@ -194,13 +205,19 @@ function App() {
 
       {/* FLOATING HEADER - Top Left */}
       <div className="absolute top-4 left-4 z-[600] flex items-center gap-2">
-        {/* Location Picker Button */}
+        {/* Location Picker Button - Pulses when location selected */}
         <button
           onClick={() => setShowLocationPicker(!showLocationPicker)}
-          className="px-4 py-2 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg flex items-center gap-2 border border-white/10"
+          className={`
+            px-4 py-2 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg flex items-center gap-2 
+            border transition-all duration-300
+            ${selectedLocation ? 'border-chile-accent-red/50 location-selected-btn' : 'border-white/10'}
+          `}
         >
           <span className="text-lg">🇨🇱</span>
-          <span className="font-medium max-w-[120px] truncate">{selectedLocation?.name || 'Wähle Ort'}</span>
+          <span className={`font-medium max-w-[120px] truncate ${selectedLocation ? 'text-chile-accent-red' : ''}`}>
+            {selectedLocation?.name || 'Wähle Ort'}
+          </span>
           <span className="text-chile-text-muted">{showLocationPicker ? '▲' : '▼'}</span>
         </button>
 
@@ -299,23 +316,33 @@ function App() {
       {/* LOCATION PICKER DROPDOWN */}
       {showLocationPicker && (
         <div className="absolute top-16 left-4 z-[600] bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg border border-white/10 max-h-[60vh] overflow-y-auto w-72">
-          {tripData.locations.map((loc, index) => (
-            <button
-              key={loc.id}
-              onClick={() => handleLocationSelect(loc)}
-              className={`w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3 ${selectedLocation?.id === loc.id ? 'bg-chile-accent-red/20' : ''}`}
-            >
-              <span className="w-6 h-6 rounded-full bg-chile-accent-red/30 flex items-center justify-center text-xs font-bold">
-                {index + 1}
-              </span>
-              <div className="flex-1 min-w-0">
-                <div className="font-medium truncate">{loc.name}</div>
-                <div className="text-xs text-chile-text-muted">
-                  {loc.recommendations.length} Empfehlungen • {loc.durationDays} {loc.durationDays === 1 ? 'Tag' : 'Tage'}
+          {tripData.locations.map((loc, index) => {
+            const isSelected = selectedLocation?.id === loc.id
+            return (
+              <button
+                key={loc.id}
+                onClick={() => handleLocationSelect(loc)}
+                className={`
+                  w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3 transition-all
+                  ${isSelected ? 'bg-chile-accent-red/30 border-l-4 border-chile-accent-red animate-pulse-glow' : ''}
+                `}
+              >
+                <span className={`
+                  w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold transition-all
+                  ${isSelected ? 'bg-chile-accent-red text-white scale-110' : 'bg-chile-accent-red/30'}
+                `}>
+                  {index + 1}
+                </span>
+                <div className="flex-1 min-w-0">
+                  <div className={`font-medium truncate ${isSelected ? 'text-chile-accent-red' : ''}`}>{loc.name}</div>
+                  <div className="text-xs text-chile-text-muted">
+                    {loc.recommendations.length} Empfehlungen • {loc.durationDays} {loc.durationDays === 1 ? 'Tag' : 'Tage'}
+                  </div>
                 </div>
-              </div>
-            </button>
-          ))}
+                {isSelected && <span className="text-chile-accent-red text-lg">◉</span>}
+              </button>
+            )
+          })}
         </div>
       )}
 
