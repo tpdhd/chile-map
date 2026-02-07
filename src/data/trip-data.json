@@ -2476,6 +2476,134 @@
             "local-hero"
           ],
           "source": "brave-search"
+        },
+        {
+          "id": "chillan-feria",
+          "name": "Feria de Chillán Market",
+          "nameEs": "Feria de Chillán",
+          "category": "unique",
+          "coordinates": [
+            -36.608,
+            -72.103
+          ],
+          "description": "Exuberanter Open-Air-Markt auf der Plaza de la Merced. Frische Produkte, Kunsthandwerk, Strickwaren, Lederwaren, Schmuck, Gemälde, Antiquariat. Samstags besonders lebendig!",
+          "address": "Plaza de la Merced, Chillán",
+          "priceRange": "$",
+          "tags": [
+            "market",
+            "crafts",
+            "produce",
+            "saturday",
+            "lively"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "chillan-abuelita",
+          "name": "La Abuelita Pastelería",
+          "nameEs": "La Abuelita",
+          "category": "restaurant",
+          "coordinates": [
+            -36.607,
+            -72.1
+          ],
+          "description": "Beste Bäckerei in Chillán für Kuchen und Kaffee. Attraktives Holzinterieur. Perfekt für eine Kaffeepause.",
+          "address": "Constitución 635, Chillán",
+          "priceRange": "$",
+          "tags": [
+            "bakery",
+            "cakes",
+            "coffee",
+            "pastries",
+            "cozy"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "chillan-aguas-calientes",
+          "name": "Valle de Aguas Calientes Hike",
+          "nameEs": "Valle de Aguas Calientes",
+          "category": "hiking",
+          "coordinates": [
+            -36.91,
+            -71.42
+          ],
+          "description": "Ideale Tageswanderung oder Reittour von Nevados de Chillán. Natürliche heiße Quellen am Zusammenfluss dreier Flüsse. 8km bergauf vom Skigebiet.",
+          "address": "Valle de Aguas Calientes, Nevados de Chillán",
+          "priceRange": "$",
+          "tags": [
+            "hiking",
+            "hotsprings",
+            "horseback",
+            "natural",
+            "day-trip"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "chillan-parque-aguas",
+          "name": "Parque de Aguas Nevados",
+          "nameEs": "Parque de Aguas Nevados",
+          "category": "hotspring",
+          "coordinates": [
+            -36.9,
+            -71.41
+          ],
+          "description": "Gut gepflegte Thermalanlage am Fuß des Skigebiets. Vier heiße Schwefelbecken verschiedener Temperaturen, Swim-up-Bar, Wasserrutsche! Pfade zu türkischem Dampfbad und Schlammpackung.",
+          "address": "Base Nevados de Chillán",
+          "website": "http://nevadosdechillan.com",
+          "priceRange": "$$",
+          "tags": [
+            "hotspring",
+            "pool",
+            "swim-up-bar",
+            "mudpack",
+            "spa"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "chillan-buchupureo",
+          "name": "Buchupureo Surf Beach",
+          "nameEs": "Playa Buchupureo",
+          "category": "beach",
+          "coordinates": [
+            -36.53,
+            -72.8
+          ],
+          "description": "Ursprüngliches Surfer-Paradies 120km NW von Chillán. Lange, schnelle, röhrenförmige Wellen bis 6m! Fischer ziehen Boote mit Ochsen. Mikrolima für Papayas.",
+          "address": "Buchupureo, 120km von Chillán",
+          "priceRange": "$",
+          "tags": [
+            "surfing",
+            "waves",
+            "fishing",
+            "pristine",
+            "hidden-gem"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "chillan-longest-run",
+          "name": "Nevados de Chillán Skiing",
+          "nameEs": "Ski Nevados de Chillán",
+          "category": "unique",
+          "coordinates": [
+            -36.9,
+            -71.41
+          ],
+          "description": "Längste Skipiste Südamerikas: fast 13km! 11 Lifte, 29 Pisten. Auch im Sommer: Wandern, Reiten, Mountainbiken. Kein Geldautomat vor Ort!",
+          "address": "Nevados de Chillán, 80km östlich von Chillán",
+          "website": "http://nevadosdechillan.com",
+          "priceRange": "$$$",
+          "tags": [
+            "skiing",
+            "longest-run",
+            "mountainbiking",
+            "year-round",
+            "resort"
+          ],
+          "source": "Rough Guide 2023"
         }
       ]
     },
@@ -2792,6 +2920,222 @@
             "views"
           ],
           "source": "brave-search"
+        },
+        {
+          "id": "conguillio-baita",
+          "name": "La Baita Conguillío Lodge",
+          "nameEs": "La Baita Conguillío",
+          "category": "unique",
+          "coordinates": [
+            -38.68,
+            -71.62
+          ],
+          "description": "Von Ex-Sängerin Isabel geführt: attraktive Lodge mit Hot Tub, 6 voll ausgestattete Cabañas. Aktivitätszentrum für Trekking, Ökotourismus, Winterskifahren und Schneewandern.",
+          "address": "2.5km südlich von Laguna Verde",
+          "website": "http://labaitaconguillio.cl",
+          "priceRange": "$$",
+          "tags": [
+            "lodge",
+            "cabins",
+            "hot-tub",
+            "activities",
+            "eco"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "conguillio-araucaria-madre",
+          "name": "Araucaria Madre Tree",
+          "nameEs": "Araucaria Madre",
+          "category": "nature",
+          "coordinates": [
+            -38.67,
+            -71.65
+          ],
+          "description": "Legendärer 1.500 Jahre alter Araukarienbaum! Höhepunkt des Sendero Los Carpinteros (8km, 5h). Einer der ältesten Bäume Chiles.",
+          "address": "Sendero Los Carpinteros, Conguillío",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "tree",
+            "ancient",
+            "araucaria",
+            "1500-years",
+            "iconic"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "conguillio-sierra-nevada-trail",
+          "name": "Sierra Nevada Trail",
+          "nameEs": "Sendero Sierra Nevada",
+          "category": "hiking",
+          "coordinates": [
+            -38.67,
+            -71.59
+          ],
+          "description": "Spektakulärer 7km Trail (2,5h) von Playa Linda am Ostende des Lago Conguillío. Unglaubliche Aussichten auf die Sierra Nevada durch Araukarienwald.",
+          "address": "Playa Linda, Lago Conguillío",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "hiking",
+            "sierra-nevada",
+            "araucaria",
+            "scenic",
+            "moderate"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "conguillio-pastos-blancos",
+          "name": "Sendero Pastos Blancos",
+          "nameEs": "Sendero Pastos Blancos",
+          "category": "hiking",
+          "coordinates": [
+            -38.68,
+            -71.65
+          ],
+          "description": "Herausfordernderer 11km Trail (5h) von Laguna Verde zur Laguna Captrén. Panoramablicke auf Sierra Nevada, Lago Conguillío und Truful-Truful-Tal.",
+          "address": "Von Laguna Verde nach Laguna Captrén",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "hiking",
+            "challenging",
+            "panoramic",
+            "full-day",
+            "scenic"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "conguillio-termas-malleco",
+          "name": "Termas Malleco",
+          "nameEs": "Termas Malleco",
+          "category": "hotspring",
+          "coordinates": [
+            -38.37,
+            -71.73
+          ],
+          "description": "Thermalquellen knapp außerhalb des Parks. Quelle in enger Schlucht in Höhle mit brodelndem Schwefelwasser und Fumarolen. Zwei Gästehäuser verfügbar.",
+          "address": "9km östlich der Conaf-Station",
+          "website": "http://termasmalleco.cl",
+          "priceRange": "$$",
+          "tags": [
+            "hotspring",
+            "cave",
+            "sulfur",
+            "fumaroles",
+            "natural"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "conguillio-curacautin-fogon",
+          "name": "Fogón del Córdobes",
+          "nameEs": "Fogón del Córdobes",
+          "category": "restaurant",
+          "coordinates": [
+            -38.434,
+            -71.884
+          ],
+          "description": "Bestes Restaurant in Curacautín (nördliches Tor zum Park). Einfache Gerichte: gegrilltes Rind und Lachs, deutsche Schweinerippchen, gemischter Grill für Zwei.",
+          "address": "Yungay 215, Curacautín",
+          "priceRange": "$$",
+          "tags": [
+            "grill",
+            "steakhouse",
+            "german",
+            "mixed-grill",
+            "curacautin"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "conguillio-epu-pewen",
+          "name": "Hostal Epu Pewen",
+          "nameEs": "Hostal Epu Pewen",
+          "category": "unique",
+          "coordinates": [
+            -38.435,
+            -71.885
+          ],
+          "description": "Gemütliches Gästehaus von halb-mapuche Paar geführt. Einladender Gemeinschaftsraum mit Gitarre. Organisieren Trekking und andere Outdoor-Aktivitäten.",
+          "address": "Rodríguez 705, Curacautín",
+          "website": "http://epupewen.cl",
+          "priceRange": "$",
+          "tags": [
+            "hostel",
+            "mapuche",
+            "trekking",
+            "guitar",
+            "community"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "conguillio-la-esfera",
+          "name": "La Esfera Pewenche Restaurant",
+          "nameEs": "La Esfera Restaurante",
+          "category": "restaurant",
+          "coordinates": [
+            -38.45,
+            -71.68
+          ],
+          "description": "Holzkuppel-Restaurant mit PEWENCHE Fusionsküche! Chef Ariel Ñamcupil: Piñon-Ravioli, Calamari mit Merkén-Gemüse, langsam geschmortes Lamm. Einzigartig!",
+          "address": "Camino Internacional Km 69.5, Malalcahuello",
+          "website": "http://vorticechile.com",
+          "priceRange": "$$$",
+          "tags": [
+            "pewenche",
+            "fusion",
+            "indigenous",
+            "pinones",
+            "dome"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "conguillio-canon-blanco",
+          "name": "Termas Cañon del Blanco",
+          "nameEs": "Termas Cañon del Blanco",
+          "category": "hotspring",
+          "coordinates": [
+            -38.48,
+            -71.55
+          ],
+          "description": "Idyllische Thermalquellen mit Tinas (Hot Tubs) versteckt in dichter Vegetation. Camping, Quincho zum Essen, Hostel mit Daunendecken. Geführte Wanderungen und Glamping!",
+          "address": "Ruta 929, Nähe Malalcahuello",
+          "website": "http://canondelblanco.cl",
+          "priceRange": "$$",
+          "tags": [
+            "hotspring",
+            "glamping",
+            "tinas",
+            "nature",
+            "hiking"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "conguillio-corralco-skiing",
+          "name": "Corralco Ski Center",
+          "nameEs": "Centro de Ski Corralco",
+          "category": "unique",
+          "coordinates": [
+            -38.44,
+            -71.59
+          ],
+          "description": "Skigebiet auf der Seite des Lonquimay-Vulkans. 28,5km Pisten für alle Level, 4 Schlepplifte, 2 Sessellifte. Im Sommer: Wandern zum Krater Navidad von 1988.",
+          "address": "Reserva Malalcahuello-Nalcas",
+          "website": "http://corralco.com",
+          "priceRange": "$$$",
+          "tags": [
+            "skiing",
+            "volcano",
+            "crater",
+            "summer-hiking",
+            "navidad"
+          ],
+          "source": "Rough Guide 2023"
         }
       ]
     },
@@ -3151,6 +3495,262 @@
             "summer"
           ],
           "source": "brave-search"
+        },
+        {
+          "id": "pucon-termas-peumayen",
+          "name": "Termas Peumayen",
+          "nameEs": "Termas Peumayen",
+          "category": "hotspring",
+          "coordinates": [
+            -39.35,
+            -71.85
+          ],
+          "description": "Neue Thermalquelle mit wunderschönen Flusspools. Bekannt für die Lodge mit Luxuszimmern und das FRANZÖSISCH-MAPUCHE Fusionsrestaurant - rote Quinoa Tabouleh, Honig-Glasiertes Kalbfleisch!",
+          "address": "Camino Pucón-Huife Km 28",
+          "website": "http://termaspeumayen.cl",
+          "priceRange": "$$$",
+          "tags": [
+            "hotspring",
+            "spa",
+            "french-mapuche",
+            "fusion",
+            "luxury"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "pucon-just-delicious",
+          "name": "Just Delicious Falafel",
+          "nameEs": "Just Delicious",
+          "category": "restaurant",
+          "coordinates": [
+            -39.2735,
+            -71.9685
+          ],
+          "description": "Israelisch-chilenisches Hole-in-the-Wall mit erstklassigem Falafel und Hummus. Auch Quiche und Gemüsesuppe. Nahöstliche Aromen in Araucanía!",
+          "address": "Colo Colo at O Higgins, Pucón",
+          "priceRange": "$",
+          "tags": [
+            "falafel",
+            "israeli",
+            "vegetarian",
+            "cheap-eats",
+            "middle-eastern"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "pucon-latitude-39",
+          "name": "Latitude 39°",
+          "nameEs": "Latitude 39°",
+          "category": "restaurant",
+          "coordinates": [
+            -39.274,
+            -71.968
+          ],
+          "description": "Von freundlichen Kaliforniern geführt: Fish Tacos, riesige Frühstücks-Burritos, kreative Burger (Buddha Burger mit asiatischem Slaw!), regionale Biere.",
+          "address": "Urrutia 436, Pucón",
+          "priceRange": "$$",
+          "tags": [
+            "tex-mex",
+            "californian",
+            "fish-tacos",
+            "burgers",
+            "american"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "pucon-trattoria-pietro",
+          "name": "La Trattoria da Pietro",
+          "nameEs": "La Trattoria da Pietro",
+          "category": "restaurant",
+          "coordinates": [
+            -39.2728,
+            -71.9675
+          ],
+          "description": "Authentisches italienisches Restaurant mit hausgemachter Safran-Spaghetti, gefüllten Paninis, echtem Tiramisu. Versteckt im Einkaufszentrum.",
+          "address": "O Higgins at Colo Colo, Pucón",
+          "priceRange": "$$",
+          "tags": [
+            "italian",
+            "pasta",
+            "authentic",
+            "tiramisu",
+            "hidden-gem"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "pucon-trawen",
+          "name": "Trawen Organic Restaurant",
+          "nameEs": "Restaurante Trawen",
+          "category": "restaurant",
+          "coordinates": [
+            -39.2732,
+            -71.9675
+          ],
+          "description": "Ausgefallenes Restaurant mit phantasievollen, biologischen, international inspirierten Gerichten: Ziegenkäse-Gnocchi, Speck-Hirsch mit Polenta, Quinotto mit Forelle.",
+          "address": "O Higgins 311, Pucón",
+          "website": "http://trawen.cl",
+          "priceRange": "$$",
+          "tags": [
+            "organic",
+            "creative",
+            "quinoa",
+            "venison",
+            "gourmet"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "pucon-mamas-tapas",
+          "name": "Mamas and Tapas",
+          "nameEs": "Mamas and Tapas",
+          "category": "bar",
+          "coordinates": [
+            -39.273,
+            -71.967
+          ],
+          "description": "Lokale Institution seit Jahren. Exzellente Bierauswahl und 2-für-1 Cocktail-Specials aus einer langen Liste. Der Hotspot fürs Nachtleben!",
+          "address": "O Higgins 587, Pucón",
+          "priceRange": "$$",
+          "tags": [
+            "bar",
+            "cocktails",
+            "nightlife",
+            "2for1",
+            "institution"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "pucon-le-lutin",
+          "name": "Le Lutin Bakery",
+          "nameEs": "Le Lutin Boulangerie",
+          "category": "restaurant",
+          "coordinates": [
+            -39.2728,
+            -71.9675
+          ],
+          "description": "DIE Bäckerei für echtes Brot und riesige Pains au Chocolat in Pucón. Französische Qualität.",
+          "address": "Colo-Colo at O Higgins, Pucón",
+          "priceRange": "$",
+          "tags": [
+            "bakery",
+            "french",
+            "bread",
+            "croissants",
+            "breakfast"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "pucon-santuario-cani",
+          "name": "Santuario El Cañi",
+          "nameEs": "Santuario El Cañi",
+          "category": "hiking",
+          "coordinates": [
+            -39.26,
+            -71.81
+          ],
+          "description": "400 Hektar Araukaria-Wald, 1991 von Naturschützern gerettet. Hauptwanderweg (9km, 5-6h) steigt steil zur Laguna Negra auf, Rundblick auf alle Vulkane.",
+          "address": "21km östlich von Pucón",
+          "priceRange": "$",
+          "tags": [
+            "hiking",
+            "araucaria",
+            "forest",
+            "laguna",
+            "conservation"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "pucon-cocina-mapuche",
+          "name": "Cocina Mapuche Mapu Lyagl",
+          "nameEs": "Cocina Mapuche Mapu Lyagl",
+          "category": "restaurant",
+          "coordinates": [
+            -39.365,
+            -71.585
+          ],
+          "description": "Höhepunkt von Curarrehue! Berühmte Mapuche-Köchin Anita Epulef kocht: geröstete Piñones (Araukarienkerne), geröstetes Maisbrot, Quinoa-Kreationen.",
+          "address": "Camino Internacional, Curarrehue",
+          "priceRange": "$$",
+          "tags": [
+            "mapuche",
+            "indigenous",
+            "pinones",
+            "authentic",
+            "must-visit"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "pucon-curarrehue-museum",
+          "name": "Aldea Intercultural Trawupeyüm",
+          "nameEs": "Aldea Intercultural Trawupeyüm",
+          "category": "museum",
+          "coordinates": [
+            -39.365,
+            -71.583
+          ],
+          "description": "Museum in traditioneller Mapuche-Ruca (Rundhaus). Begeisterter Guide erklärt traditionelle Musikinstrumente und Kultur. In der Mapuche-Stadt Curarrehue.",
+          "address": "Plaza, Curarrehue",
+          "priceRange": "$",
+          "tags": [
+            "mapuche",
+            "museum",
+            "ruca",
+            "culture",
+            "instruments"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "pucon-hotel-antumalal",
+          "name": "Hotel Antumalal",
+          "nameEs": "Hotel Antumalal",
+          "category": "unique",
+          "coordinates": [
+            -39.29,
+            -71.97
+          ],
+          "description": "Architektonisches Juwel von Frank Lloyd Wright-Schüler, in den Hang gebaut. Queen Elizabeth II und Buzz Aldrin waren Gäste. Panoramafenster, Kamine, organische Küche.",
+          "address": "Camino a Villarica Km 2, Pucón",
+          "website": "http://antumalal.com",
+          "priceRange": "$$$$",
+          "tags": [
+            "luxury",
+            "architecture",
+            "historic",
+            "views",
+            "celebrity"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "pucon-chili-kiwi",
+          "name": "Chili Kiwi Hostel",
+          "nameEs": "Chili Kiwi Hostel",
+          "category": "unique",
+          "coordinates": [
+            -39.272,
+            -71.972
+          ],
+          "description": "Pucóns BESTES Backpacker-Hostel am Seeufer. Schlafen in Schlafsälen, Harry-Potter-Zimmer, Baumhäusern oder umgebauten Vans! Craft-Beer-Bar, eigene Bergführer.",
+          "address": "O Higgins 20, Pucón",
+          "website": "http://chilikiwihostel.wixsite.com/chilikiwi",
+          "priceRange": "$",
+          "tags": [
+            "hostel",
+            "lakefront",
+            "craft-beer",
+            "treehouse",
+            "backpacker"
+          ],
+          "source": "Rough Guide 2023"
         }
       ]
     },
@@ -3555,6 +4155,177 @@
             "nature-sanctuary"
           ],
           "source": "brave-search"
+        },
+        {
+          "id": "valdivia-ultima-frontera",
+          "name": "Café La Última Frontera",
+          "nameEs": "Café La Última Frontera",
+          "category": "restaurant",
+          "coordinates": [
+            -39.8142,
+            -73.2459
+          ],
+          "description": "Bohemisches Café mit Reggae-Musik, Sandwiches benannt nach Etta James und Chairman Mao, lokale Craft-Biere. Perfekt für kreative Seelen.",
+          "address": "Pérez Rosales 787, Valdivia",
+          "priceRange": "$",
+          "tags": [
+            "cafe",
+            "bohemian",
+            "craft-beer",
+            "creative",
+            "local"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "valdivia-parrilla-thor",
+          "name": "Parrilla de Thor",
+          "nameEs": "Parrilla de Thor",
+          "category": "restaurant",
+          "coordinates": [
+            -39.8155,
+            -73.246
+          ],
+          "description": "Argentinisches Steakhouse mit Ski-Lodge-Atmosphäre, Blick auf den Fluss. Große saftige Fleischstücke, Beilagen extra. Perfekt für Fleischliebhaber.",
+          "address": "Prat 653, Valdivia",
+          "priceRange": "$$",
+          "tags": [
+            "steakhouse",
+            "argentinian",
+            "meat",
+            "river-view",
+            "grill"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "valdivia-sombun",
+          "name": "Sombun Thai Restaurant",
+          "nameEs": "Sombun Thai",
+          "category": "restaurant",
+          "coordinates": [
+            -39.8145,
+            -73.247
+          ],
+          "description": "Erstes Thai-Restaurant im Lake District! Authentisches Tom Yum, Pad Prik, Kokosmilch-Curry. Schärfe auf Wunsch angepasst.",
+          "address": "Anwandter 288, Valdivia",
+          "priceRange": "$$",
+          "tags": [
+            "thai",
+            "asian",
+            "spicy",
+            "unique",
+            "authentic"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "valdivia-tilo-restobar",
+          "name": "Tilo Restobar",
+          "nameEs": "Tilo Restobar",
+          "category": "bar",
+          "coordinates": [
+            -39.814,
+            -73.245
+          ],
+          "description": "Große Flussterrasse ideal für nachmittägliche Biere und Cocktails. Exzellentes Ceviche, Pizza, Lamm-Salbei-Ravioli. Entspannte Atmosphäre.",
+          "address": "Yungay 745, Valdivia",
+          "priceRange": "$$",
+          "tags": [
+            "bar",
+            "cocktails",
+            "terrace",
+            "ceviche",
+            "river-view"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "valdivia-growler",
+          "name": "Growler Craft Beer",
+          "nameEs": "Growler Craft Beer",
+          "category": "bar",
+          "coordinates": [
+            -39.8138,
+            -73.2445
+          ],
+          "description": "Valdivias Premier-Craft-Brauerei: 6 eigene Biere plus Gastbiere. Der Oregonische Besitzer serviert auch fantastische Fish Tacos und Carpaccios. DER Treffpunkt!",
+          "address": "Saelzer 1, Valdivia",
+          "website": "http://elgrowler.cl",
+          "priceRange": "$$",
+          "tags": [
+            "craft-beer",
+            "brewery",
+            "fish-tacos",
+            "nightlife",
+            "must-visit"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "valdivia-cosas-ricas",
+          "name": "Cosas Ricas",
+          "nameEs": "Cosas Ricas",
+          "category": "restaurant",
+          "coordinates": [
+            -39.814,
+            -73.246
+          ],
+          "description": "Großes zweistöckiges Café mit lokal geröstetem Kaffee, Valdivianische Craft-Biere, kreative Frühstücke und Holzofen-Pizza.",
+          "address": "Pérez Rosales 644, Valdivia",
+          "priceRange": "$$",
+          "tags": [
+            "cafe",
+            "pizza",
+            "breakfast",
+            "craft-beer",
+            "coffee"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "valdivia-museo-philippi",
+          "name": "R.A. Philippi Exploration Museum",
+          "nameEs": "Museo de la Exploración R.A. Philippi",
+          "category": "museum",
+          "coordinates": [
+            -39.807,
+            -73.257
+          ],
+          "description": "Museum gewidmet dem deutschen Naturforscher Rudolph Philippi. Jugendstil-Gebäude mit Studierzimmer, Käfer- und Schmetterlingssammlungen, Mapuche-Handwerk.",
+          "address": "Isla Teja, Valdivia",
+          "website": "http://museosaustral.cl",
+          "priceRange": "$",
+          "tags": [
+            "museum",
+            "natural-history",
+            "butterflies",
+            "science",
+            "german"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "valdivia-mac",
+          "name": "Contemporary Art Museum (MAC)",
+          "nameEs": "Museo de Arte Contemporáneo (MAC)",
+          "category": "museum",
+          "coordinates": [
+            -39.808,
+            -73.258
+          ],
+          "description": "Untergebracht in Valdivias alter Kunstmann-Brauerei. Wechselnde Ausstellungen zeitgenössischer Kunst, Installationen, Fotografie. Craft-Messen mit Schmuck und Holzarbeiten.",
+          "address": "Isla Teja, Valdivia",
+          "website": "http://mac.uchile.cl",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "museum",
+            "contemporary-art",
+            "photography",
+            "exhibitions",
+            "free"
+          ],
+          "source": "Rough Guide 2023"
         }
       ]
     },
@@ -3914,6 +4685,135 @@
             "local"
           ],
           "source": "brave-search"
+        },
+        {
+          "id": "osorno-panca-peru",
+          "name": "Panca Sabor Peruano",
+          "nameEs": "Panca Sabor Peruano",
+          "category": "restaurant",
+          "coordinates": [
+            -40.567,
+            -73.133
+          ],
+          "description": "Echte peruanische Küche in modernem Setting! Super-frisches Ceviche, Jalea del Mar (panierter Fisch), Arroz con Mariscos, Ají de Gallina. Unverfälschte Aromen.",
+          "address": "Rodríguez 1905, Osorno",
+          "website": "http://panca.cl",
+          "priceRange": "$$",
+          "tags": [
+            "peruvian",
+            "ceviche",
+            "authentic",
+            "fresh",
+            "seafood"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "osorno-galpon",
+          "name": "Parrilla El Galpón",
+          "nameEs": "Parrilla El Galpón",
+          "category": "restaurant",
+          "coordinates": [
+            -40.566,
+            -73.134
+          ],
+          "description": "Osornos bestes Steakhaus! Signature Tomahawk-Steak plus Filet Mignon, Sirloin, Skirt Steak. Rustikale Scheune trifft elegantes Bistro. Gute Weinkarte.",
+          "address": "Cochrane 816, Osorno",
+          "website": "http://hotelwaeger.cl",
+          "priceRange": "$$$",
+          "tags": [
+            "steakhouse",
+            "tomahawk",
+            "grill",
+            "wine",
+            "upscale"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "osorno-antillanca",
+          "name": "Antillanca Ski Center",
+          "nameEs": "Centro de Ski Antillanca",
+          "category": "unique",
+          "coordinates": [
+            -40.78,
+            -72.19
+          ],
+          "description": "Skigebiet am Fuß des Volcán Casablanca im Parque Nacional Puyehue. 3 T-Bar Lifte, 1 Sessellift, 24+ Pisten inkl. 8 Off-Piste. Im Sommer: Mountainbiking und Kraterwanderung.",
+          "address": "18km von Aguas Calientes, Puyehue",
+          "website": "http://skiantillanca.cl",
+          "priceRange": "$$",
+          "tags": [
+            "skiing",
+            "volcano",
+            "mountainbiking",
+            "crater",
+            "summer"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "osorno-lago-paraiso",
+          "name": "Lago Paraíso Trail",
+          "nameEs": "Sendero Lago Paraíso",
+          "category": "hiking",
+          "coordinates": [
+            -40.75,
+            -72.2
+          ],
+          "description": "Wenig begangener 5km Trail (2h einfach) zu einem hübschen gleichnamigen See mit Schutzhütte und einfachem Campingplatz. Von dort 4,6km weiter zum abgelegenen Lago El Palmar.",
+          "address": "Zwischen Aguas Calientes und Antillanca",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "hiking",
+            "lake",
+            "camping",
+            "quiet",
+            "off-beaten-path"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "osorno-aguas-calientes-trails",
+          "name": "Aguas Calientes Trails",
+          "nameEs": "Senderos Aguas Calientes",
+          "category": "hiking",
+          "coordinates": [
+            -40.72,
+            -72.27
+          ],
+          "description": "Kurze Naturlehrpfade im Parque Nacional Puyehue. Sendero Rápidos del Chanleufú (1.250m) entlang der Stromschnellen. Längere Trails nach Antillanca und Lago Paraíso.",
+          "address": "Conaf Centro, Aguas Calientes",
+          "priceRange": "$",
+          "tags": [
+            "hiking",
+            "nature-trails",
+            "rapids",
+            "easy",
+            "family"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "osorno-volcán-casablanca-hike",
+          "name": "Volcán Casablanca Crater Hike",
+          "nameEs": "Sendero Cráter Volcán Casablanca",
+          "category": "hiking",
+          "coordinates": [
+            -40.78,
+            -72.18
+          ],
+          "description": "3,7km Wanderung zum Krater des Volcán Casablanca (auch Antillanca genannt). 2h einfach, Blick in den Krater. Start am Skizentrum Antillanca.",
+          "address": "Ab Centro de Ski Antillanca",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "hiking",
+            "volcano",
+            "crater",
+            "challenging",
+            "views"
+          ],
+          "source": "Rough Guide 2023"
         }
       ]
     },
@@ -4276,6 +5176,159 @@
             "family"
           ],
           "source": "brave-search"
+        },
+        {
+          "id": "frutillar-frau-holle",
+          "name": "Hotel Boutique Frau Holle",
+          "nameEs": "Hotel Boutique Frau Holle",
+          "category": "unique",
+          "coordinates": [
+            -41.127,
+            -73.065
+          ],
+          "description": "Historisches Haus als Boutique-Hotel. Erstklassiger Service, raffinierte Zimmer mit modernen Bädern. Restaurant jeden Penny wert!",
+          "address": "Varas 54, Frutillar",
+          "website": "http://frauholle-frutillar.cl",
+          "priceRange": "$$$",
+          "tags": [
+            "boutique-hotel",
+            "german",
+            "historic",
+            "restaurant",
+            "elegant"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "frutillar-se-cocina",
+          "name": "Se Cocina Restaurant",
+          "nameEs": "Se Cocina",
+          "category": "restaurant",
+          "coordinates": [
+            -41.14,
+            -73.07
+          ],
+          "description": "Holzschindel-Restaurant 2km südlich von Frutillar. Saisonal wechselnde Karte mit lokalen Produkten: Krabben-Grieß-Ravioli, Schokoladencrêpes flambiert in Rum! Eigenes Bier.",
+          "address": "2km südlich von Frutillar",
+          "website": "http://secocina.cl",
+          "priceRange": "$$$",
+          "tags": [
+            "farm-to-table",
+            "seasonal",
+            "craft-beer",
+            "gourmet",
+            "creative"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "puerto-varas-puelche",
+          "name": "Puelche Burger Restaurant",
+          "nameEs": "Puelche Imperial",
+          "category": "restaurant",
+          "coordinates": [
+            -41.32,
+            -72.985
+          ],
+          "description": "Casual Bistro im Hotel Puelche. DER Ort in Puerto Varas für riesige amerikanische Burger - mit Speck, BBQ-Sauce, panierten Zwiebelringen! Riesige Minz-Limonaden.",
+          "address": "Imperial 695, Puerto Varas",
+          "website": "http://hotelpuelche.cl",
+          "priceRange": "$$",
+          "tags": [
+            "burgers",
+            "american",
+            "casual",
+            "huge-portions",
+            "lemonade"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "puerto-octay-espantapajaros",
+          "name": "Rancho Espantapájaros",
+          "nameEs": "Rancho Espantapájaros",
+          "category": "restaurant",
+          "coordinates": [
+            -40.94,
+            -72.89
+          ],
+          "description": "Familienbetriebenes Restaurant 6km von Puerto Octay. All-you-can-eat BBQ Buffet! Spit-gebratene Ziege und Wildschwein (Jabalí) sind ausgezeichnet.",
+          "address": "6km von Puerto Octay Richtung Frutillar",
+          "website": "http://espantapajaros.cl",
+          "priceRange": "$$",
+          "tags": [
+            "bbq",
+            "buffet",
+            "goat",
+            "wild-boar",
+            "all-you-can-eat"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "puerto-octay-town",
+          "name": "Puerto Octay",
+          "nameEs": "Puerto Octay",
+          "category": "unique",
+          "coordinates": [
+            -40.97,
+            -72.88
+          ],
+          "description": "Erste deutsche Siedlung am Lago Llanquihue von 1852. Freundlicher kleiner Ort mit Nadelspitz-Kirche und Häusern mit verzierten Balkonen. Pittoresk bayerisch.",
+          "address": "Puerto Octay, Los Lagos",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "german",
+            "colonial",
+            "church",
+            "bavarian",
+            "historic"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "frutillar-semanas-musicales",
+          "name": "Semanas Musicales Festival",
+          "nameEs": "Semanas Musicales de Frutillar",
+          "category": "event",
+          "coordinates": [
+            -41.12,
+            -73.065
+          ],
+          "description": "Klassisches Musikfestival Ende Januar/Anfang Februar. International renommiertes Event im Teatro del Lago. Reservierungen weit im Voraus nötig.",
+          "address": "Teatro del Lago, Frutillar",
+          "website": "http://semanasmusicales.cl",
+          "priceRange": "$$$",
+          "tags": [
+            "classical-music",
+            "festival",
+            "international",
+            "cultural",
+            "january"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "puerto-varas-al-sur",
+          "name": "Al Sur Expeditions",
+          "nameEs": "Al Sur Expediciones",
+          "category": "unique",
+          "coordinates": [
+            -41.32,
+            -72.99
+          ],
+          "description": "Einer der führenden Abenteuer-Tourveranstalter im Seengebiet. Erste, die Seekajak in den Fjorden südlich von Puerto Montt einführten. Multi-Tages-Expeditionen.",
+          "address": "Aconcagua 8, Puerto Varas",
+          "website": "http://alsurexpeditions.com",
+          "priceRange": "$$$",
+          "tags": [
+            "kayaking",
+            "expeditions",
+            "fjords",
+            "adventure",
+            "pioneer"
+          ],
+          "source": "Rough Guide 2023"
         }
       ]
     },
@@ -4640,6 +5693,284 @@
             "nature"
           ],
           "source": "brave-search"
+        },
+        {
+          "id": "chiloe-kuranton",
+          "name": "Kurantón Restaurant",
+          "nameEs": "Kurantón",
+          "category": "restaurant",
+          "coordinates": [
+            -41.8667,
+            -73.8333
+          ],
+          "description": "\"Curanto: hilft Menschen seit 1826 besseren Sex zu haben\" - so die Legende! Berg von Muscheln und Kartoffelknödeln, Schnitzereien mythischer Chilote-Figuren, Nautik-Deko.",
+          "address": "Prat 94, Ancud",
+          "priceRange": "$$",
+          "tags": [
+            "curanto",
+            "seafood",
+            "traditional",
+            "quirky",
+            "ancud"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "chiloe-pincoya",
+          "name": "La Pincoya Restaurant",
+          "nameEs": "Restaurante La Pincoya",
+          "category": "restaurant",
+          "coordinates": [
+            -41.867,
+            -73.833
+          ],
+          "description": "Traditionelles Restaurant mit Blick auf den Hafen, altmodischer Kellner mit Fliege. Curanto en Olla, Salmon Cancato. Benannt nach der mythischen Fruchtbarkeitsgöttin.",
+          "address": "Prat 61, Ancud",
+          "priceRange": "$$",
+          "tags": [
+            "seafood",
+            "traditional",
+            "harbor-view",
+            "curanto",
+            "classic"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "chiloe-ostras-caulin",
+          "name": "Ostras Caulín",
+          "nameEs": "Ostras Caulín",
+          "category": "restaurant",
+          "coordinates": [
+            -41.8,
+            -73.65
+          ],
+          "description": "Berühmtes Austernrestaurant in Caulín mit kleinen süßen Austern, die es nur hier und in Neuseeland gibt. Gebraten, als Cocktail, als Suppe oder auf der Halbschale.",
+          "address": "Seafront, Caulín (9km von Chacao)",
+          "website": "http://ostrascaulin.cl",
+          "priceRange": "$$",
+          "tags": [
+            "oysters",
+            "seafood",
+            "unique",
+            "must-visit",
+            "rare"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "chiloe-al-norte-del-sur",
+          "name": "Al Norte del Sur",
+          "nameEs": "Al Norte del Sur",
+          "category": "restaurant",
+          "coordinates": [
+            -41.85,
+            -73.95
+          ],
+          "description": "Agroturismo-Stern! Kein Menü - was auch immer an dem Tag gekocht wurde. Curanto en Hoyo (im Erdboden) und Lamm-Asado sind Spezialitäten mit Bio-Gemüse.",
+          "address": "300m Richtung Guabún, Península Lacuy",
+          "website": "http://alnortedelsur.cl",
+          "priceRange": "$$",
+          "tags": [
+            "curanto-en-hoyo",
+            "agroturismo",
+            "lamb",
+            "organic",
+            "farm-to-table"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "chiloe-cocineras-dalcahue",
+          "name": "Las Cocineras Dalcahue",
+          "nameEs": "Las Cocineras de Dalcahue",
+          "category": "restaurant",
+          "coordinates": [
+            -42.38,
+            -73.66
+          ],
+          "description": "Bootförmiges Gebäude mit Essständen für günstige Chilote-Spezialitäten. Doña Lula (Puesto 8) für Empanadas, Tenchita (Puesto 2) für Cancato, La Nenita (Puesto 4) für Lachs-Ceviche.",
+          "address": "Neben der Feria Artesanal, Dalcahue",
+          "priceRange": "$",
+          "tags": [
+            "food-stalls",
+            "empanadas",
+            "ceviche",
+            "cheap",
+            "authentic"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "chiloe-refugio-navegantes",
+          "name": "Refugio de Navegantes",
+          "nameEs": "Refugio de Navegantes",
+          "category": "restaurant",
+          "coordinates": [
+            -42.38,
+            -73.658
+          ],
+          "description": "Boutique-Hotel/Restaurant/Souvenirshop mit großem Schieferkamin und Plazablick. Gemütliche Sessel, leichte Snacks, leckere Getränke. Übernachtung auch möglich.",
+          "address": "San Martín 165, Dalcahue",
+          "website": "http://refugiodenavegantes.cl",
+          "priceRange": "$$",
+          "tags": [
+            "restaurant",
+            "boutique-hotel",
+            "fireplace",
+            "cozy",
+            "dalcahue"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "chiloe-13-lunas",
+          "name": "13 Lunas Hostel",
+          "nameEs": "13 Lunas Hostel",
+          "category": "unique",
+          "coordinates": [
+            -41.867,
+            -73.831
+          ],
+          "description": "Leuchtend lime-gelbes Hostel gegenüber dem Busbahnhof. Wunderschön restauriertes altes Holzhaus mit Gemeinschaftsräumen, Gitarren, Tischfußball, BBQ-Bereich.",
+          "address": "Los Carrera 855, Ancud",
+          "website": "http://13lunas.cl",
+          "priceRange": "$",
+          "tags": [
+            "hostel",
+            "backpacker",
+            "historic",
+            "social",
+            "ancud"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "chiloe-quemchi",
+          "name": "Quemchi Village",
+          "nameEs": "Pueblo de Quemchi",
+          "category": "unique",
+          "coordinates": [
+            -42.15,
+            -73.5
+          ],
+          "description": "Attraktive kleine Fischerstadt mit engen Straßen zum Wasser. An sonnigen Tagen schneebedeckte Vulkane in der Ferne. Isla Aucar mit kleiner Kirche über 500m Fußbrücke erreichbar.",
+          "address": "Quemchi, Chiloé",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "fishing-village",
+            "scenic",
+            "isla-aucar",
+            "footbridge",
+            "quiet"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "chiloe-achao-iglesia",
+          "name": "Iglesia Santa María de Loreto",
+          "nameEs": "Iglesia Santa María de Loreto",
+          "category": "historical",
+          "coordinates": [
+            -42.47,
+            -73.49
+          ],
+          "description": "Älteste Chilote-Kirche von 1764! Unesco-Welterbe. Gebaut aus Ciprés und Mañío-Holz. Alle Verbindungen mit Holzdübeln, keine Nägel. Wunderschöner Innenraum.",
+          "address": "Plaza de Armas, Achao",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "church",
+            "unesco",
+            "1764",
+            "wooden",
+            "oldest"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "chiloe-chepu-valley",
+          "name": "Chepu Valley Birdwatching",
+          "nameEs": "Valle de Chepu",
+          "category": "nature",
+          "coordinates": [
+            -42.05,
+            -73.98
+          ],
+          "description": "Nach dem Tsunami 1960 überschwemmte Wälder. Versunkener Wald bietet Lebensraum für über 100 Vogelarten. Kajak und Angeln möglich.",
+          "address": "Chepu Valley, südlich von Ancud",
+          "priceRange": "$",
+          "tags": [
+            "birdwatching",
+            "wetland",
+            "kayaking",
+            "sunken-forest",
+            "nature"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "chiloe-tierra-hotel",
+          "name": "Tierra Chiloé Hotel",
+          "nameEs": "Hotel Tierra Chiloé",
+          "category": "unique",
+          "coordinates": [
+            -42.45,
+            -73.75
+          ],
+          "description": "Preisgekröntes Luxushotel mit Blick auf eine wunderschöne Bucht. Mix aus Holz und Beton, fügt sich perfekt in die Landschaft. Exzellentes Restaurant, Spa, Ausflüge inklusive.",
+          "address": "San José Playa, Rilán Peninsula",
+          "website": "http://tierrahotels.com",
+          "priceRange": "$$$$",
+          "tags": [
+            "luxury",
+            "award-winning",
+            "spa",
+            "all-inclusive",
+            "architecture"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "chiloe-rucalaf-putemun",
+          "name": "Rucalaf Putemún",
+          "nameEs": "Rucalaf Putemún",
+          "category": "restaurant",
+          "coordinates": [
+            -42.45,
+            -73.78
+          ],
+          "description": "Ausgezeichnete Fusionsküche auf dem Weg zur Rilán-Halbinsel. Lachs-Carpaccio, Spanferkel, Limetten-Käsekuchen mit Rhabarber-Kompott. Moderne Kunst.",
+          "address": "Camino de Rilán Km 3.6",
+          "priceRange": "$$$",
+          "tags": [
+            "fusion",
+            "award-winning",
+            "gourmet",
+            "creative",
+            "modern"
+          ],
+          "source": "Rough Guide 2023"
+        },
+        {
+          "id": "chiloe-cafe-blanco",
+          "name": "Café Blanco",
+          "nameEs": "Café Blanco",
+          "category": "restaurant",
+          "coordinates": [
+            -41.867,
+            -73.832
+          ],
+          "description": "Mini-Kette mit dem besten Kaffee in Ancud und Castro. Verschiedene Tees, Kuchen und Snacks. Hafen des Friedens an regnerischen Tagen.",
+          "address": "Ramirez 359 & Libertad 669, Ancud",
+          "priceRange": "$",
+          "tags": [
+            "cafe",
+            "coffee",
+            "cakes",
+            "cozy",
+            "chain"
+          ],
+          "source": "Rough Guide 2023"
         }
       ]
     }
