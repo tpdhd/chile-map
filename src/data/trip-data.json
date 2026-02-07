@@ -2604,6 +2604,52 @@
             "resort"
           ],
           "source": "Rough Guide 2023"
+        },
+        {
+          "id": "chillan-cueva-pincheira",
+          "name": "Cueva de los Pincheira",
+          "nameEs": "Cueva de los Pincheira",
+          "category": "historical",
+          "coordinates": [
+            -36.87,
+            -71.45
+          ],
+          "description": "Riesige natürliche Höhle, die als Versteck der Pincheira-Brüder diente - royalistische Straßenräuber, die während der Unabhängigkeitskriege die Gegend plünderten. 2km vom Hotel Termas de Chillán.",
+          "descriptionEs": "Enorme caverna natural que sirvió como escondite de los hermanos Pincheira - bandidos realistas que saquearon la zona durante las guerras de independencia. A 2km del Hotel Termas de Chillán.",
+          "address": "Nähe Termas de Chillán",
+          "googleMapsLink": "https://maps.google.com/?q=-36.8700,-71.4500",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "cave",
+            "historical",
+            "bandits",
+            "independence-war",
+            "nature"
+          ],
+          "source": "Insight Guides 2024"
+        },
+        {
+          "id": "chillan-piedras-comadres",
+          "name": "Piedras Comadres",
+          "nameEs": "Piedras Comadres",
+          "category": "viewpoint",
+          "coordinates": [
+            -36.86,
+            -71.46
+          ],
+          "description": "Spektakuläre Felswände, die steil aus ihren waldbedeckten Höhen hinabstürzen. Von der Straße bei der Rückfahrt von Termas de Chillán sichtbar. Beeindruckendes geologisches Feature.",
+          "descriptionEs": "Espectaculares paredes rocosas que caen verticalmente desde sus alturas cubiertas de bosque. Visibles desde el camino de regreso de Termas de Chillán. Impresionante formación geológica.",
+          "address": "Camino a Termas de Chillán",
+          "googleMapsLink": "https://maps.google.com/?q=-36.8600,-71.4600",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "viewpoint",
+            "rock-formations",
+            "geological",
+            "scenic",
+            "roadside"
+          ],
+          "source": "Insight Guides 2024"
         }
       ]
     },
@@ -3751,6 +3797,29 @@
             "backpacker"
           ],
           "source": "Rough Guide 2023"
+        },
+        {
+          "id": "pucon-villarrica-climb",
+          "name": "Volcán Villarrica Ascent",
+          "nameEs": "Ascenso al Volcán Villarrica",
+          "category": "hiking",
+          "coordinates": [
+            -39.42,
+            -71.93
+          ],
+          "description": "Einer der aktivsten Vulkane der Welt besteigen! 4h Aufstieg, 3h Abstieg über die Westflanke mit Skilift-Unterstützung. Blick in den 100m tiefen Krater mit brodelnder Lava - unvergesslich! Schwefelgeruch fast überwältigend. Guide und Ausrüstung obligatorisch.",
+          "descriptionEs": "¡Escala uno de los volcanes más activos del mundo! 4h subida, 3h bajada por la cara oeste con ayuda de andarivel. Vista al cráter de 100m con lava hirviente - ¡inolvidable! Olor a azufre casi abrumador. Guía y equipo obligatorios.",
+          "address": "Volcán Villarrica, ab Pucón",
+          "googleMapsLink": "https://maps.google.com/?q=-39.4200,-71.9300",
+          "priceRange": "$$$",
+          "tags": [
+            "volcano",
+            "climbing",
+            "active-lava",
+            "bucket-list",
+            "adventure"
+          ],
+          "source": "Insight Guides 2024"
         }
       ]
     },
@@ -5973,6 +6042,121 @@
             "chain"
           ],
           "source": "Rough Guide 2023"
+        },
+        {
+          "id": "chiloe-mirador-huaihen",
+          "name": "Mirador Cerro Huaihuén",
+          "nameEs": "Mirador Cerro Huaihuén",
+          "category": "viewpoint",
+          "coordinates": [
+            -41.86,
+            -73.83
+          ],
+          "description": "Atemberaubender Aussichtspunkt in Ancud mit Blick über die Stadt und den Chacao-Kanal zum Festland. Bei klarem Wetter Vulkane sichtbar. Vom Cerro folge Bellavista und San Antonio nordwärts.",
+          "descriptionEs": "Impresionante mirador en Ancud con vistas sobre la ciudad y el Canal de Chacao hacia el continente. Con clima despejado se ven los volcanes. Desde el cerro sigue Bellavista y San Antonio hacia el norte.",
+          "address": "Cerro Huaihuén, Ancud",
+          "googleMapsLink": "https://maps.google.com/?q=-41.8600,-73.8300",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "viewpoint",
+            "panoramic",
+            "volcano-view",
+            "ancud",
+            "photography"
+          ],
+          "source": "Insight Guides 2024"
+        },
+        {
+          "id": "chiloe-caulin-oysters",
+          "name": "Caulín Oyster Beds",
+          "nameEs": "Ostras de Caulín",
+          "category": "restaurant",
+          "coordinates": [
+            -41.82,
+            -73.65
+          ],
+          "description": "Berühmte Austernbetten bei Caulín, erreichbar über Abzweigung bei Km 24 auf dem Weg nach Chacao. Frische Austern zu günstigen Preisen, danach Nachmittag am Strand oder zurück nach Ancud.",
+          "descriptionEs": "Famosos bancos de ostras en Caulín, accesibles por desvío en Km 24 camino a Chacao. Ostras frescas a precios razonables, luego tarde en la playa o regreso a Ancud.",
+          "address": "Caulín, Km 24 von Chacao",
+          "googleMapsLink": "https://maps.google.com/?q=-41.8200,-73.6500",
+          "priceRange": "$",
+          "tags": [
+            "oysters",
+            "seafood",
+            "fresh",
+            "beach",
+            "local"
+          ],
+          "source": "Insight Guides 2024"
+        },
+        {
+          "id": "chiloe-licor-oro",
+          "name": "Licor de Oro",
+          "nameEs": "Licor de Oro de Chonchi",
+          "category": "unique",
+          "coordinates": [
+            -42.62,
+            -73.77
+          ],
+          "description": "Berühmter Safran-Likör aus Chonchi - lokale Spezialität seit Generationen. In lokalen Geschäften und Restaurants erhältlich. Perfektes Souvenir von Chiloé.",
+          "descriptionEs": "Famoso licor de azafrán de Chonchi - especialidad local por generaciones. Disponible en tiendas y restaurantes locales. Perfecto recuerdo de Chiloé.",
+          "address": "Chonchi, Chiloé",
+          "googleMapsLink": "https://maps.google.com/?q=-42.6200,-73.7700",
+          "priceRange": "$",
+          "tags": [
+            "liqueur",
+            "saffron",
+            "traditional",
+            "souvenir",
+            "chonchi"
+          ],
+          "source": "Insight Guides 2024"
+        },
+        {
+          "id": "chiloe-curaco-velez",
+          "name": "Curaco de Vélez Oysters",
+          "nameEs": "Ostras de Curaco de Vélez",
+          "category": "restaurant",
+          "coordinates": [
+            -42.44,
+            -73.59
+          ],
+          "description": "Kleine Stadt auf Isla Quinchao, berühmt für ihre Austernbetten. Frische Austern direkt vom Erzeuger. Stopp auf dem Weg nach Achao. Schau dir auch die Steinmühlen am Bach Los Molinos an.",
+          "descriptionEs": "Pequeño pueblo en Isla Quinchao famoso por sus bancos de ostras. Ostras frescas directamente del productor. Parada camino a Achao. Mira también los molinos de piedra en el arroyo Los Molinos.",
+          "address": "Curaco de Vélez, Isla Quinchao",
+          "googleMapsLink": "https://maps.google.com/?q=-42.4400,-73.5900",
+          "priceRange": "$",
+          "tags": [
+            "oysters",
+            "fishing-village",
+            "stone-mills",
+            "quinchao",
+            "authentic"
+          ],
+          "source": "Insight Guides 2024"
+        },
+        {
+          "id": "chiloe-festival-costumbrista",
+          "name": "Festival Costumbrista",
+          "nameEs": "Festival Costumbrista Chilote",
+          "category": "event",
+          "coordinates": [
+            -42.47,
+            -73.77
+          ],
+          "description": "⚠️ NICHT WÄHREND DER REISE (Februar): Jährliches Festival zur Feier von Chilote-Traditionen, Essen und Handwerk. Curanto, Musik, Tanz. In Castro und anderen Städten. Für zukünftige Reisen vormerken!",
+          "descriptionEs": "⚠️ NO DURANTE EL VIAJE (febrero): Festival anual celebrando tradiciones, comida y artesanías chilotas. Curanto, música, baile. En Castro y otros pueblos. ¡Marcar para futuros viajes!",
+          "address": "Castro und andere Orte, Chiloé",
+          "googleMapsLink": "https://maps.google.com/?q=-42.4700,-73.7700",
+          "priceRange": "$",
+          "tags": [
+            "festival",
+            "traditional",
+            "curanto",
+            "february",
+            "not-during-trip"
+          ],
+          "source": "Insight Guides 2024"
         }
       ]
     }
