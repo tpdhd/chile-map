@@ -208,8 +208,111 @@
       "text": "Der Parque Nacional Vicente Pérez Rosales wurde 1926 gegründet — er war der erste Nationalpark Chiles und ist vom Vulkan Osorno dominiert.",
       "category": "nature",
       "location": "osorno"
+    },
+    {
+      "id": 36,
+      "text": "Chiloés Palafitos sind Fischerhäuser auf Stelzen über dem Wasser — die letzten ihrer Art in ganz Chile, heute ein Wahrzeichen von Castro.",
+      "category": "culture",
+      "location": "chiloe",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 37,
+      "text": "Die Maquí-Beere aus Chiles Valdivianischem Regenwald hat mehr Antioxidantien als Açaí, Heidelbeeren und Brombeeren zusammen.",
+      "category": "food",
+      "location": "chiloe",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 38,
+      "text": "Pucón ist Chiles Abenteuer-Hauptstadt: Fallschirmspringen, Mountainbiken, Snowboarden und Hundeschlittenfahren — alles an einem Ort.",
+      "category": "unique",
+      "location": "pucon",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 39,
+      "text": "Ancud war 1826 der letzte spanische Stützpunkt in ganz Südamerika — die Garnison floh in den Wald, als chilenische Truppen angriffen.",
+      "category": "history",
+      "location": "chiloe",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 40,
+      "text": "Fußball kam durch britische Einwanderer nach Chile — der erste Club hieß 'Santiago Wanderers' (heute noch aus Valparaíso).",
+      "category": "culture",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 41,
+      "text": "Die Carretera Austral ist 1.240 km lang und führt durch unberührte Wildnis — Pinochet ließ sie ab 1976 als strategische Route bauen.",
+      "category": "unique",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 42,
+      "text": "Chiloés 'magische Steine' (piedras cupucas) werden angeblich von Hexen auf dem Cerro Chepu versteckt — Kartoffelblüten werden darauf verbrannt.",
+      "category": "culture",
+      "location": "chiloe",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 43,
+      "text": "In Chiloé gibt es den Trauco — einen hässlichen Waldgeist, der Frauen verführt. Ungewollte Schwangerschaften wurden ihm zugeschrieben.",
+      "category": "culture",
+      "location": "chiloe",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 44,
+      "text": "Der Cristo de Mayo in Santiago soll 1647 beim Erdbeben Tränen geweint haben, als man versuchte, seine Dornenkrone zu richten.",
+      "category": "history",
+      "location": "santiago",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 45,
+      "text": "Iquique ist einer der besten Orte der Welt zum Paragliding — konstant wolkenloser Himmel und Aufwinde von den Küstendünen.",
+      "category": "unique",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 46,
+      "text": "Die Semana Santa in Santiago hat einen Umzug von Büßern in schwarzen Kutten, die Kreuze durch die Straßen tragen.",
+      "category": "culture",
+      "location": "santiago",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 47,
+      "text": "Die Virgen del Carmen ist Schutzpatronin der chilenischen Streitkräfte — am 16. Juli gibt es landesweite Militärparaden.",
+      "category": "culture",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 48,
+      "text": "Chiloé wurde nach der letzten Eiszeit zu einer Insel, als die Berge im Meer versanken — daher die einzigartige Flora und Fauna.",
+      "category": "nature",
+      "location": "chiloe",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 49,
+      "text": "Der Mercado Central in Santiago wurde 1872 eröffnet und von National Geographic zum 5. besten Lebensmittelmarkt der Welt gewählt.",
+      "category": "food",
+      "location": "santiago",
+      "coordinates": [-33.4335, -70.6510],
+      "source": "Brave Search"
+    },
+    {
+      "id": 50,
+      "text": "Villa Baviera (ehem. Colonia Dignidad) war eine deutsche Enklave mit dunkler Geschichte — heute ein kontroverses touristisches Ziel.",
+      "category": "history",
+      "location": "san-carlos",
+      "coordinates": [-36.5833, -71.6833],
+      "source": "trip-data"
     }
   ],
   "lastUpdated": "2026-02-07",
-  "totalFacts": 35
+  "totalFacts": 50
 }
