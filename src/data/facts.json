@@ -1114,8 +1114,210 @@
       "category": "food",
       "location": "wine-resort",
       "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 159,
+      "text": "Isla Negra, nahe Algarrobo, war Pablo Nerudas Lieblingshaus — hier verbrachte er 40 Jahre und schrieb viele seiner nobelpreisgekrönten Gedichte.",
+      "category": "culture",
+      "location": "algarrobo",
+      "coordinates": [
+        -33.435,
+        -71.693
+      ],
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 160,
+      "text": "Das Casa Museo Isla Negra ist vollgestopft mit Nerudas Sammlungen: Galionsfiguren, Hindu-Schnitzereien, afrikanischen Masken, Schiffen in Flaschen und Muscheln.",
+      "category": "culture",
+      "location": "algarrobo",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 161,
+      "text": "Pablo Neruda und seine Frau Matilde Urrutia sind im Garten des Isla Negra Museums begraben — hierher wurden sie 1992 vom Friedhof in Santiago überführt.",
+      "category": "culture",
+      "location": "algarrobo",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 162,
+      "text": "Neruda nannte sich einen 'spontanen Architekten' — sein Haus in Isla Negra wuchs über 40 Jahre, mit gewundenen Gängen und seltsam geformten Räumen.",
+      "category": "unique",
+      "location": "algarrobo",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 163,
+      "text": "Die raue Küste bei Isla Negra inspirierte Neruda: 'In Isla Negra blüht alles. Das Meer blüht das ganze Jahr. Seine Rose ist weiß. Seine Blütenblätter sind Salzsterne.'",
+      "category": "culture",
+      "location": "algarrobo",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "text": "Lonquimay bedeutet 'ohne Kopf' auf Mapudungun — der Vulkan hat keine Spitze, sondern ein flaches Plateau.",
+      "category": "geography",
+      "location": "conguillio",
+      "source": "Insight Guides Chile 2024",
+      "id": 164
+    },
+    {
+      "text": "Der Túnel Las Raíces auf dem Weg nach Lonquimay war ursprünglich ein Eisenbahntunnel der 1930er — Teil eines aufgegebenen Plans, Atlantik und Pazifik per Bahn zu verbinden.",
+      "category": "history",
+      "location": "conguillio",
+      "source": "Insight Guides Chile 2024",
+      "id": 165
+    },
+    {
+      "text": "Drei kleine Seen im Parque Nacional Conguillío (Verde, Captrén, Arco Iris) sind erst wenige Jahrzehnte alt — Lavaströme blockierten Flüsse, und man sieht noch die Bäume unter Wasser.",
+      "category": "nature",
+      "location": "conguillio",
+      "source": "Insight Guides Chile 2024",
+      "id": 166
+    },
+    {
+      "text": "Die Araucaria Madre im Conguillío-Park ist schätzungsweise 1.500 Jahre alt — sie überlebte unzählige Vulkanausbrüche des Llaima.",
+      "category": "nature",
+      "location": "conguillio",
+      "source": "Rough Guides Chile 2023",
+      "id": 167
+    },
+    {
+      "text": "Pucón hat einen eigenen Fallschirmsprung-Anbieter — man springt mit Blick auf den rauchenden Volcán Villarrica und den See.",
+      "category": "unique",
+      "location": "pucon",
+      "source": "Rough Guides Chile 2023",
+      "id": 168
+    },
+    {
+      "text": "Das Hotel Antumalal in Pucón wurde von einem Schüler Frank Lloyd Wrights entworfen — Queen Elizabeth II und Buzz Aldrin haben dort übernachtet.",
+      "category": "unique",
+      "location": "pucon",
+      "source": "Rough Guides Chile 2023",
+      "id": 169
+    },
+    {
+      "text": "Am 3. März 2015 hatte der Volcán Villarrica seinen größten Ausbruch seit über 20 Jahren — nur einen Monat später brach auch der Calbuco aus.",
+      "category": "nature",
+      "location": "pucon",
+      "source": "Rough Guides Chile 2023",
+      "id": 170
+    },
+    {
+      "text": "Puerto Varas ist neben Pucón die zweite Abenteuer-Hauptstadt Chiles — hier startet man Vulkanbesteigungen, Rafting, Reiten und Kajakfahren.",
+      "category": "unique",
+      "location": "frutillar-puerto-varas",
+      "source": "Rough Guides Chile 2023",
+      "id": 171
+    },
+    {
+      "text": "Die Fähre über den Lago Todos Los Santos von Petrohué nach Peulla zeigt die Vulkane Osorno, Puntiagudo und Tronador gleichzeitig — eine der schönsten Bootfahrten Chiles.",
+      "category": "nature",
+      "location": "frutillar-puerto-varas",
+      "source": "Rough Guides Chile 2023",
+      "id": 172
+    },
+    {
+      "text": "Se Cocina bei Frutillar braut sein eigenes Bier und serviert saisonale Gerichte mit lokalen Zutaten — darunter Krabben-Grieß-Ravioli und Rum-Crêpes.",
+      "category": "food",
+      "location": "frutillar-puerto-varas",
+      "source": "Rough Guides Chile 2023",
+      "id": 173
+    },
+    {
+      "text": "Der Rancho Espantapájaros bei Puerto Octay serviert Spit-Roasted Zicklein und Wildschwein als All-you-can-eat Barbecue — mit Seeblick auf den Llanquihue.",
+      "category": "food",
+      "location": "frutillar-puerto-varas",
+      "source": "Rough Guides Chile 2023",
+      "id": 174
+    },
+    {
+      "text": "Chilenische Reben wachsen ungepfropft auf originalem europäischem Wurzelstock — sie produzieren 3-4x länger als gepfropfte Reben.",
+      "category": "food",
+      "location": "wine-resort",
+      "source": "Insight Guides Chile 2024",
+      "id": 176
+    },
+    {
+      "text": "San Sebastián (20. Januar) ist ein wichtiges Mapuche-Fest in Lonquimay — mit Pferderennen, Festessen und Trinken zu Ehren des spanischen Heiligenbildes.",
+      "category": "culture",
+      "location": "conguillio",
+      "source": "Rough Guides Chile 2023",
+      "id": 177
+    },
+    {
+      "text": "Die Feria Libre in Temuco ist der Ort, wo man Piñones kaufen kann — die Samen der Araukarie, traditionell von den Mapuche gekocht und gegessen.",
+      "category": "food",
+      "location": "conguillio",
+      "source": "Rough Guides Chile 2023",
+      "id": 178
+    },
+    {
+      "text": "Valdivia nannte Chile 'ein Land, in dem das Leben unvergleichlich ist' — er schwärmte dem König von Spanien vom Klima, den Wiesen und dem fruchtbaren Boden vor.",
+      "category": "history",
+      "source": "Insight Guides Chile 2024",
+      "id": 179
+    },
+    {
+      "text": "Die Reblaus-Plage hat Chile nie erreicht — geschützt durch Pazifik, Atacama-Wüste und Anden wachsen die Reben bis heute auf originalem Wurzelstock.",
+      "category": "food",
+      "location": "wine-resort",
+      "source": "Insight Guides Chile 2024",
+      "id": 180
+    },
+    {
+      "text": "Chicha ist leicht fermentierter Traubensaft — das traditionelle Getränk bei Fiestas Patrias, wo es in Fondas (improvisierten Tanzhallen) ausgeschenkt wird.",
+      "category": "food",
+      "source": "Insight Guides Chile 2024",
+      "id": 181
+    },
+    {
+      "text": "Der Parque Nacional Huerquehue bei Pucón beherbergt über 80 Vogelarten — darunter den Magellan-Specht und den winzigen Darwin-Frosch.",
+      "category": "nature",
+      "location": "pucon",
+      "source": "Rough Guides Chile 2023",
+      "id": 182
+    },
+    {
+      "text": "Es gibt männliche und weibliche Araukarien-Bäume — Biologen können ihr Geschlecht anhand der Rinde bestimmen.",
+      "category": "nature",
+      "location": "conguillio",
+      "source": "Insight Guides Chile 2024",
+      "id": 183
+    },
+    {
+      "text": "Die Corralco Skistation bei Malalcahuello hat 28,5 km Pisten an der Seite des Vulkans Lonquimay — im Sommer wird dort gewandert.",
+      "category": "unique",
+      "location": "conguillio",
+      "source": "Rough Guides Chile 2023",
+      "id": 184
+    },
+    {
+      "text": "Isabel Allende beschreibt Chile als 'Insel' — abgeschnitten durch Pazifik, Wüste und Anden, was den stolzen Nationalcharakter erklärt.",
+      "category": "culture",
+      "source": "Insight Guides Chile 2024",
+      "id": 185
+    },
+    {
+      "text": "Das Asado ist Chiles wichtigstes soziales Event — die Männer vergleichen Rezepte am Grill, die Frauen machen Salate, alle trinken Rotwein.",
+      "category": "food",
+      "source": "Insight Guides Chile 2024",
+      "id": 186
+    },
+    {
+      "text": "Der Pudú (Zwerghinsch) ist das kleinste Reh der Welt — es lebt in Chiles Süden und steht auf dem chilenischen 100-Peso-Stück.",
+      "category": "nature",
+      "source": "Rough Guides Chile 2023",
+      "id": 187
+    },
+    {
+      "text": "San Carlos war der letzte Ort, an dem die Feria de Chillán samstags aus allen Nähten platzt — der größte und traditionellste Markt ganz Chiles.",
+      "category": "culture",
+      "location": "san-carlos",
+      "source": "Rough Guides Chile 2023",
+      "id": 188
     }
   ],
   "lastUpdated": "2026-02-07",
-  "totalFacts": 158
+  "totalFacts": 187
 }
