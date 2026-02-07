@@ -537,8 +537,74 @@
       "text": "Das Casablanca-Tal auf dem Weg nach Valparaíso profitiert von Meeresbrisen — es produziert einige der besten Weißweine Chiles.",
       "category": "food",
       "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 86,
+      "text": "Das Lake District erstreckt sich über 339 km von Temuco im Norden bis Puerto Montt im Süden — eine Region aus Vulkanen, Wäldern und kristallklaren Seen.",
+      "category": "geography",
+      "location": "frutillar-puerto-varas",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 87,
+      "text": "Die Mapuche widerstanden 350 Jahre lang der spanischen Kolonisation — erst 1880 fielen sie der chilenischen Armee.",
+      "category": "history",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 88,
+      "text": "Mindestens 500.000 Bewohner des Lake District beanspruchen heute Mapuche-Abstammung — viele leben auf Reservaten (reducciones).",
+      "category": "culture",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 89,
+      "text": "Die Mapuche lernten die Silberschmiedekunst von den Spaniern — schwere Silberketten (collares) werden von Mutter zu Tochter vererbt.",
+      "category": "culture",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 90,
+      "text": "Piñones, die Samen der Araukarie, werden traditionell von den Mapuche gekocht gegessen — sie sind auf der Feria Libre in Temuco erhältlich.",
+      "category": "food",
+      "location": "conguillio",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 91,
+      "text": "Die Chonos und Huilliche (südliche Mapuche) sind die ursprünglichen Bewohner Chiloés — sie fischten und lebten hier lange vor den Spaniern.",
+      "category": "culture",
+      "location": "chiloe",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 92,
+      "text": "Chiloé wurde 1567 von den Spaniern kolonisiert — und blieb über 300 Jahre isoliert vom chilenischen Festland wegen des Mapuche-Widerstands.",
+      "category": "history",
+      "location": "chiloe",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 93,
+      "text": "Das Chepu-Tal in Chiloé hat einen 'versunkenen Wald' — Bäume, die vom Tsunami 1960 unter Wasser gesetzt wurden und heute per Kajak erkundet werden können.",
+      "category": "nature",
+      "location": "chiloe",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 94,
+      "text": "Die Eisenbahn kam 1851 nach Chile — Pablo Nerudas Vater war Eisenbahner, was sein Werk stark beeinflusste.",
+      "category": "history",
+      "location": "pucon",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 95,
+      "text": "Merkén ist ein traditionelles Mapuche-Gewürz aus geräuchertem Chili — es wird auf der Feria Libre in Temuco verkauft und gibt Gerichten eine rauchige Schärfe.",
+      "category": "food",
+      "source": "Rough Guides Chile 2023"
     }
   ],
   "lastUpdated": "2026-02-07",
-  "totalFacts": 85
+  "totalFacts": 95
 }
