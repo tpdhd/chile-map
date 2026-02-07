@@ -197,28 +197,21 @@ export default function Map({
       attributionControl={false}
       zoomControl={true}
     >
-      {/* Dark mode tile layer - heavily optimized for smooth zooming */}
+      {/* Dark mode tile layer - Stadia Alidade Smooth Dark */}
       <TileLayer
-        url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-        maxZoom={19}
-        keepBuffer={2048}
-        updateWhenZooming={false}
-        updateWhenIdle={true}
+        url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://stadiamaps.com/">Stadia Maps</a>'
+        maxZoom={20}
+        keepBuffer={4}
+        updateWhenZooming={true}
+        updateWhenIdle={false}
         tileSize={256}
         crossOrigin="anonymous"
-        subdomains="abcd"
-        detectRetina={false}
+        detectRetina={true}
         className="smooth-tiles"
         // @ts-ignore - Extended Leaflet options
         errorTileUrl=""
-        maxNativeZoom={18}
-        // Additional performance optimizations
-        // @ts-ignore
-        fadeAnimation={true}
-        zoomAnimation={true}
-        // @ts-ignore - Preload more tiles
-        loadingBackground="#0f0f14"
+        maxNativeZoom={20}
       />
 
       {/* Route line */}
