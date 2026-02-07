@@ -250,14 +250,14 @@ function App() {
 
       {/* FLOATING MENU - Top Right with Search */}
       <div className="absolute top-4 right-4 z-[600] flex items-center gap-2">
-        {/* Omni-Search */}
+        {/* Omni-Search - Compact to avoid overlap */}
         <div className="relative">
           <input
             type="text"
-            placeholder="🔍 Suchen..."
+            placeholder="🔍"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-32 focus:w-48 transition-all px-3 py-2 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg text-sm placeholder:text-chile-text-muted focus:outline-none border border-white/10"
+            className="w-10 focus:w-36 transition-all px-2 py-2 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg text-sm placeholder:text-chile-text-muted focus:outline-none border border-white/10 focus:placeholder:opacity-0"
           />
         </div>
         
