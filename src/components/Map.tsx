@@ -114,11 +114,12 @@ export default function Map({
         <div class="custom-marker location-marker ${selectedClass}" style="
           background: ${isSelected ? '#e63946' : '#2a9d8f'};
           color: white;
+          ${isSelected ? 'z-index: 10000 !important;' : ''}
         ">
           ${locationNumber}
         </div>
       `,
-      className: 'custom-div-icon',
+      className: `custom-div-icon ${isSelected ? 'marker-selected' : ''}`,
       iconSize: [32, 32],
       iconAnchor: [16, 16],
       popupAnchor: [0, -16]
@@ -136,13 +137,14 @@ export default function Map({
         <div class="custom-marker recommendation-marker ${selectedClass}" style="
           background: ${isSelected ? '#e63946' : color};
           color: white;
+          ${isSelected ? 'z-index: 10000 !important;' : ''}
         ">
           ${icon}
         </div>
       `,
-      className: 'custom-div-icon',
-      iconSize: [24, 24],
-      iconAnchor: [12, 12],
+      className: `custom-div-icon ${isSelected ? 'marker-selected' : ''}`,
+      iconSize: isSelected ? [32, 32] : [24, 24],
+      iconAnchor: isSelected ? [16, 16] : [12, 12],
       popupAnchor: [0, -12]
     })
   }
@@ -158,16 +160,18 @@ export default function Map({
       attributionControl={false}
       zoomControl={true}
     >
-      {/* Dark mode tile layer - optimized for smooth zooming */}
+      {/* Dark mode tile layer - heavily optimized for smooth zooming */}
       <TileLayer
         url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
         maxZoom={19}
-        keepBuffer={16}
+        keepBuffer={32}
         updateWhenZooming={false}
         updateWhenIdle={true}
         tileSize={256}
         crossOrigin="anonymous"
+        subdomains="abcd"
+        detectRetina={true}
       />
 
       {/* Route line */}

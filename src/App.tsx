@@ -126,6 +126,11 @@ function App() {
   const handleRecommendationSelect = (recommendation: Recommendation) => {
     setSelectedRecommendation(recommendation)
     setSheetExpanded(true)
+    // Auto-scroll to recommendation in list
+    setTimeout(() => {
+      const element = document.getElementById(`rec-${recommendation.id}`)
+      element?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    }, 100)
   }
 
   const toggleFavorite = (id: string) => {
@@ -306,7 +311,7 @@ function App() {
               <div className="flex-1 min-w-0">
                 <div className="font-medium truncate">{loc.name}</div>
                 <div className="text-xs text-chile-text-muted">
-                  {loc.recommendations.length} Empfehlungen • {loc.days} {loc.days === 1 ? 'Tag' : 'Tage'}
+                  {loc.recommendations.length} Empfehlungen • {loc.durationDays} {loc.durationDays === 1 ? 'Tag' : 'Tage'}
                 </div>
               </div>
             </button>
@@ -383,9 +388,10 @@ function App() {
               {filteredRecommendations.map(rec => (
                 <div 
                   key={rec.id}
+                  id={`rec-${rec.id}`}
                   className={`
                     p-2.5 rounded-lg transition-all
-                    ${selectedRecommendation?.id === rec.id ? 'bg-chile-accent-red/20 ring-1 ring-chile-accent-red' : 'bg-white/5'}
+                    ${selectedRecommendation?.id === rec.id ? 'recommendation-highlighted ring-1 ring-chile-accent-red' : 'bg-white/5'}
                     ${visited.has(rec.id) ? 'border-l-2 border-green-500' : ''}
                   `}
                   onClick={() => handleRecommendationSelect(rec)}

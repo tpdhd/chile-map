@@ -205,7 +205,7 @@ export default function LocationPanel({
 
   const formatDate = (dateStr: string) => {
     const date = new Date(dateStr)
-    return date.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })
+    return date.toLocaleDateString('de-DE', { weekday: 'short', day: 'numeric', month: 'short' })
   }
 
   return (
@@ -222,14 +222,14 @@ export default function LocationPanel({
               {formatDate(location.startDate)} - {formatDate(location.endDate)}
             </div>
             <div className="text-sm text-chile-text-secondary">
-              {location.durationDays} days • {location.type}
+              {location.durationDays} {location.durationDays === 1 ? 'Tag' : 'Tage'} • {location.type}
             </div>
           </div>
         </div>
         <p className="mt-2 text-chile-text-secondary">{location.description}</p>
         <div className="mt-3 flex items-center flex-wrap gap-2">
           <span className="px-3 py-1 text-sm rounded-full bg-chile-bg-card">
-            {location.recommendations.length} recommendations
+            {location.recommendations.length} Empfehlungen
           </span>
           <WeatherWidget 
             locationName={location.name}
@@ -246,7 +246,7 @@ export default function LocationPanel({
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search recommendations..."
+            placeholder="Empfehlungen suchen..."
             className="w-full px-4 py-2 pl-10 rounded-lg bg-chile-bg-card border border-chile-bg-secondary focus:border-chile-accent-teal focus:ring-1 focus:ring-chile-accent-teal outline-none transition-colors text-sm"
           />
           <span className="absolute left-3 top-1/2 -translate-y-1/2 text-chile-text-muted">
@@ -270,14 +270,14 @@ export default function LocationPanel({
             onClick={() => onCategoryChange(null)}
             className={`px-3 py-1.5 text-sm rounded-lg transition-colors ${!activeCategory && !showFavoritesOnly ? 'bg-chile-accent-red' : 'bg-chile-bg-card hover:bg-chile-bg-secondary'}`}
           >
-            All
+            Alle
           </button>
           <button
             onClick={() => setShowFavoritesOnly(!showFavoritesOnly)}
             className={`px-3 py-1.5 text-sm rounded-lg transition-colors flex items-center gap-1.5 ${showFavoritesOnly ? 'bg-red-500 bg-opacity-20 text-red-400' : 'bg-chile-bg-card hover:bg-chile-bg-secondary'}`}
           >
             <span>{showFavoritesOnly ? '❤️' : '🤍'}</span>
-            <span>Favorites</span>
+            <span>Favoriten</span>
             {locationFavoritesCount > 0 && (
               <span className="text-xs opacity-70">({locationFavoritesCount})</span>
             )}
@@ -302,10 +302,10 @@ export default function LocationPanel({
               hideVisited ? 'bg-chile-accent-purple bg-opacity-20 text-chile-accent-purple' :
               'bg-chile-bg-card hover:bg-chile-bg-secondary'
             }`}
-            title="Click: show visited only | Right-click: hide visited"
+            title="Klick: nur besuchte zeigen | Rechtsklick: besuchte verstecken"
           >
             <span>{showVisitedOnly ? '✅' : hideVisited ? '🙈' : '☑️'}</span>
-            <span>{hideVisited ? 'Hidden' : 'Visited'}</span>
+            <span>{hideVisited ? 'Versteckt' : 'Besucht'}</span>
             {locationVisitedCount > 0 && (
               <span className="text-xs opacity-70">({locationVisitedCount})</span>
             )}
@@ -334,19 +334,19 @@ export default function LocationPanel({
       <div className="flex-1 overflow-y-auto p-4">
         <div className="flex items-center justify-between mb-3">
           <h3 className="font-semibold text-lg">
-            {searchQuery ? 'Search Results' : 'Recommendations'}
+            {searchQuery ? 'Suchergebnisse' : 'Empfehlungen'}
             {activeCategory && ` • ${activeCategory}`}
           </h3>
           <span className="text-sm text-chile-text-secondary">
-            {filteredRecommendations.length} of {location.recommendations.length}
+            {filteredRecommendations.length} von {location.recommendations.length}
           </span>
         </div>
         
         {filteredRecommendations.length === 0 ? (
           <div className="text-center py-8 text-chile-text-secondary">
             {searchQuery 
-              ? `No results for "${searchQuery}"` 
-              : 'No recommendations in this category'}
+              ? `Keine Ergebnisse für "${searchQuery}"` 
+              : 'Keine Empfehlungen in dieser Kategorie'}
           </div>
         ) : (
           <div className="space-y-3">
@@ -394,14 +394,14 @@ export default function LocationPanel({
                         <button
                           onClick={(e) => toggleVisited(recommendation.id, e)}
                           className="text-lg hover:scale-110 transition-transform"
-                          title={visited.has(recommendation.id) ? 'Mark as not visited' : 'Mark as visited'}
+                          title={visited.has(recommendation.id) ? 'Als nicht besucht markieren' : 'Als besucht markieren'}
                         >
                           {visited.has(recommendation.id) ? '✅' : '☑️'}
                         </button>
                         <button
                           onClick={(e) => toggleFavorite(recommendation.id, e)}
                           className="text-lg hover:scale-110 transition-transform"
-                          title={favorites.has(recommendation.id) ? 'Remove from favorites' : 'Add to favorites'}
+                          title={favorites.has(recommendation.id) ? 'Aus Favoriten entfernen' : 'Zu Favoriten hinzufügen'}
                         >
                           {favorites.has(recommendation.id) ? '❤️' : '🤍'}
                         </button>
@@ -440,21 +440,21 @@ export default function LocationPanel({
             <div className="flex items-center gap-2">
               <h3 className="font-semibold text-lg">{selectedRecommendation.name}</h3>
               {visited.has(selectedRecommendation.id) && (
-                <span className="text-xs px-2 py-0.5 rounded-full bg-green-600/20 text-green-400">✓ Visited</span>
+                <span className="text-xs px-2 py-0.5 rounded-full bg-green-600/20 text-green-400">✓ Besucht</span>
               )}
             </div>
             <div className="flex items-center gap-2">
               <button
                 onClick={(e) => toggleVisited(selectedRecommendation.id, e)}
                 className="text-xl hover:scale-110 transition-transform"
-                title={visited.has(selectedRecommendation.id) ? 'Mark as not visited' : 'Mark as visited'}
+                title={visited.has(selectedRecommendation.id) ? 'Als nicht besucht markieren' : 'Als besucht markieren'}
               >
                 {visited.has(selectedRecommendation.id) ? '✅' : '☑️'}
               </button>
               <button
                 onClick={(e) => toggleFavorite(selectedRecommendation.id, e)}
                 className="text-xl hover:scale-110 transition-transform"
-                title={favorites.has(selectedRecommendation.id) ? 'Remove from favorites' : 'Add to favorites'}
+                title={favorites.has(selectedRecommendation.id) ? 'Aus Favoriten entfernen' : 'Zu Favoriten hinzufügen'}
               >
                 {favorites.has(selectedRecommendation.id) ? '❤️' : '🤍'}
               </button>
@@ -491,7 +491,7 @@ export default function LocationPanel({
             )}
             {selectedRecommendation.address && (
               <div className="text-sm">
-                <span className="font-medium">Address:</span> {selectedRecommendation.address}
+                <span className="font-medium">Adresse:</span> {selectedRecommendation.address}
               </div>
             )}
             <div className="flex flex-wrap gap-2">
@@ -506,14 +506,14 @@ export default function LocationPanel({
             <div className="pt-2 border-t border-chile-bg-secondary">
               <div className="flex items-center justify-between mb-2">
                 <span className="text-sm font-medium flex items-center gap-1">
-                  📝 Personal Note
+                  📝 Persönliche Notiz
                 </span>
                 {!editingNote && (
                   <button
                     onClick={() => startEditingNote(selectedRecommendation.id)}
                     className="text-xs px-2 py-1 rounded bg-chile-bg-card hover:bg-chile-bg-secondary transition-colors"
                   >
-                    {notes[selectedRecommendation.id] ? 'Edit' : 'Add note'}
+                    {notes[selectedRecommendation.id] ? 'Bearbeiten' : 'Notiz hinzufügen'}
                   </button>
                 )}
               </div>
@@ -524,7 +524,7 @@ export default function LocationPanel({
                     ref={noteInputRef}
                     value={noteText}
                     onChange={(e) => setNoteText(e.target.value)}
-                    placeholder="Add your personal notes here... (reservations, tips, what to order, etc.)"
+                    placeholder="Füge hier deine persönlichen Notizen hinzu... (Reservierungen, Tipps, was bestellen, etc.)"
                     className="w-full px-3 py-2 text-sm rounded-lg bg-chile-bg-card border border-chile-bg-secondary focus:border-chile-accent-teal focus:ring-1 focus:ring-chile-accent-teal outline-none transition-colors resize-none"
                     rows={3}
                     onKeyDown={(e) => {
@@ -537,13 +537,13 @@ export default function LocationPanel({
                       onClick={cancelNote}
                       className="text-xs px-3 py-1.5 rounded bg-chile-bg-card hover:bg-chile-bg-secondary transition-colors"
                     >
-                      Cancel
+                      Abbrechen
                     </button>
                     <button
                       onClick={() => saveNote(selectedRecommendation.id)}
                       className="text-xs px-3 py-1.5 rounded bg-chile-accent-teal hover:bg-opacity-90 transition-colors"
                     >
-                      Save
+                      Speichern
                     </button>
                   </div>
                 </div>
@@ -557,7 +557,7 @@ export default function LocationPanel({
                 </div>
               ) : (
                 <p className="text-xs text-chile-text-muted italic">
-                  No notes yet. Add reservations, tips, or reminders!
+                  Noch keine Notizen. Füge Reservierungen, Tipps oder Erinnerungen hinzu!
                 </p>
               )}
             </div>
@@ -570,7 +570,7 @@ export default function LocationPanel({
                   rel="noopener noreferrer"
                   className="px-3 py-1.5 text-sm rounded-lg bg-chile-bg-card hover:bg-chile-bg-secondary transition-colors"
                 >
-                  🔗 Website
+                  🔗 Webseite
                 </a>
               )}
               <a 
@@ -588,12 +588,12 @@ export default function LocationPanel({
                   // Brief visual feedback
                   const btn = document.activeElement as HTMLButtonElement
                   const originalText = btn.innerText
-                  btn.innerText = '✓ Copied!'
+                  btn.innerText = '✓ Kopiert!'
                   setTimeout(() => { btn.innerText = originalText }, 1500)
                 }}
                 className="px-3 py-1.5 text-sm rounded-lg bg-chile-bg-card hover:bg-chile-bg-secondary transition-colors"
               >
-                📋 Copy Link
+                📋 Link kopieren
               </button>
               {typeof navigator !== 'undefined' && navigator.share && (
                 <button
@@ -612,7 +612,7 @@ export default function LocationPanel({
                   }}
                   className="px-3 py-1.5 text-sm rounded-lg bg-chile-accent-teal hover:bg-opacity-90 transition-colors"
                 >
-                  📤 Share
+                  📤 Teilen
                 </button>
               )}
             </div>
