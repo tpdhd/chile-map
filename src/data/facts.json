@@ -1577,8 +1577,204 @@
       "category": "beach",
       "location": "san-carlos",
       "source": "Rough Guides Chile 2023"
+    },
+    {
+      "text": "\"Pichi\" bedeutet \"klein\" in der Mapuche-Sprache. Die Küstenorte Pichicuy und Pichidangui tragen diesen Namen und bieten weiße Sandstrände mit starker Brandung.",
+      "category": "culture",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024",
+      "id": 227
+    },
+    {
+      "text": "In Pichicuy steht eine Kirche, die auf einem Felsvorsprung über dem Meer errichtet wurde – ein spektakulärer Anblick bei Sonnenuntergang.",
+      "category": "unique",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024",
+      "id": 228
+    },
+    {
+      "text": "Die Felsengärten von Los Molles haben unterirdische Höhlen, die ein donnerndes Grollen erzeugen. Zwischen ihnen liegt ein Vogelschutzgebiet mit reichem Meeresleben.",
+      "category": "nature",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024",
+      "id": 229
+    },
+    {
+      "text": "Der Sillón del Gobernador (Gouverneursstuhl) bei Los Molles ist mit 695 Metern die höchste Seeklippe Chiles und bei gutem Wetter von Valparaíso aus sichtbar.",
+      "category": "geography",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024",
+      "id": 230
+    },
+    {
+      "text": "La Ligua ist berühmt für seine Dulces – traditionelle Kuchen aus Biskuit oder Baiser, gefüllt mit Manjar (chilenisches Karamell). Ein Abstecher von der Panamericana lohnt sich.",
+      "category": "food",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024",
+      "id": 231
+    },
+    {
+      "text": "La Ligua war Heimat von La Quintrala (Catalina de los Ríos, geb. 1604), einer der dunkelsten Figuren Chiles: Sie ermordete über 40 Menschen, darunter ihren eigenen Vater, und entging trotzdem der Justiz.",
+      "category": "history",
+      "location": "quillimari",
+      "source": "Rough Guides Chile 2023",
+      "id": 232
+    },
+    {
+      "text": "Isla Negra hat eine besondere Ausstrahlung. Pablo Nerudas Lieblingshaus dort überblickt einen rauen Strandabschnitt, wo Wellen gegen bucklige Felsen krachen, die wie Kinderburgen aus dem weißen Sand ragen.",
+      "category": "culture",
+      "location": "algarrobo",
+      "source": "Insight Guides Chile 2024",
+      "id": 233
+    },
+    {
+      "text": "Cartagena an der Zentralküste wurde im frühen 19. Jahrhundert mit der Ankunft der Eisenbahn aus Santiago zu einem beliebten Badeort.",
+      "category": "history",
+      "location": "algarrobo",
+      "source": "Insight Guides Chile 2024",
+      "id": 234
+    },
+    {
+      "text": "Das Casablanca-Tal zwischen Santiago und Valparaíso produziert Chiles beste Weißweine. Meeresbrise schafft perfekte Bedingungen für die Trauben.",
+      "category": "food",
+      "location": "algarrobo",
+      "source": "Insight Guides Chile 2024",
+      "id": 235
+    },
+    {
+      "text": "San Antonio ist ein Arbeitshafen mit Picadas (einfachen Restaurants) direkt am Hafen, wo die Fischer selbst essen – riesige Teller Meeresfrüchte zu sehr günstigen Preisen.",
+      "category": "food",
+      "location": "algarrobo",
+      "source": "Insight Guides Chile 2024",
+      "id": 236
+    },
+    {
+      "text": "Las Rocas de Santo Domingo südlich von San Antonio ist ein beliebter Ort für Sommerhäuser wohlhabender Chilenen, die großen Stolz auf ihre wunderschönen Gärten nehmen – trotz des notorisch windigen Strandes.",
+      "category": "unique",
+      "location": "algarrobo",
+      "source": "Insight Guides Chile 2024",
+      "id": 237
+    },
+    {
+      "text": "Die Viña Indómita im Casablanca-Tal ist ein markantes weißes Gebäude auf einem Hügel mit Blick auf die Autobahn – das Restaurant bietet ein exzellentes Menü und Weintouren.",
+      "category": "food",
+      "location": "algarrobo",
+      "source": "Insight Guides Chile 2024",
+      "id": 238
+    },
+    {
+      "text": "Das Itata-Tal erstreckt sich von Chillán nordwestlich zu einer Reihe ruhiger Küstenstädte, darunter das idyllische Surferdorf Buchupureo mit Wellen bis zu 6 Metern Höhe.",
+      "category": "nature",
+      "location": "san-carlos",
+      "source": "Rough Guides Chile 2023",
+      "id": 239
+    },
+    {
+      "text": "In Ninhue (Region Ñuble) steht das Santuario Cuna de Prat – Geburtsort des Marinehelden Arturo Prat (1848) in einer wunderschönen kolonialen Hacienda mit Museum.",
+      "category": "history",
+      "location": "san-carlos",
+      "source": "Rough Guides Chile 2023",
+      "id": 240
+    },
+    {
+      "text": "Ñuble ist Chiles jüngste Verwaltungsregion, 2018 von der Region Biobío abgetrennt. Es ist das ländliche Herzland Chiles, wo der Kult des Huaso (Cowboy) noch lebt.",
+      "category": "culture",
+      "location": "san-carlos",
+      "source": "Rough Guides Chile 2023",
+      "id": 241
+    },
+    {
+      "text": "In der Region um San Carlos finden regelmäßig Rodeos in Medialunas (halbmondförmigen Stadien) statt – eine der ältesten chilenischen Traditionen seit der Kolonialzeit.",
+      "category": "culture",
+      "location": "san-carlos",
+      "source": "Rough Guides Chile 2023",
+      "id": 242
+    },
+    {
+      "text": "Die Iglesia de Piedra (Steinkirche) bei Cobquecura ist eine Reihe hoher Meereshöhlen mit Gängen, die zum Ozean hinabführen – ein spektakuläres Naturwunder an der Küste von Ñuble.",
+      "category": "nature",
+      "location": "san-carlos",
+      "source": "Rough Guides Chile 2023",
+      "id": 243
+    },
+    {
+      "text": "Chillán wurde 1550 gegründet und seitdem wegen Erdbeben und Mapuche-Angriffen wiederholt zerstört und neu aufgebaut. Die heutige Architektur stammt größtenteils von nach dem Erdbeben 1939.",
+      "category": "history",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023",
+      "id": 244
+    },
+    {
+      "text": "Ein 36 Meter hohes Betonkreuz auf der Plaza Bernardo O'Higgins in Chillán erinnert an die 30.000 Einwohner, die beim Erdbeben von 1939 starben.",
+      "category": "history",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023",
+      "id": 245
+    },
+    {
+      "text": "Die Escuela México in Chillán wurde mit mexikanischen Spenden nach der Erdbebenkatastrophe 1939 gebaut. Auf Pablo Nerudas Initiative malten David Alfaro Siqueiros und Xavier Guerrero dort bedeutende Wandgemälde.",
+      "category": "culture",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023",
+      "id": 246
+    },
+    {
+      "text": "Die Feria de Chillán ist der größte und lebendigste Markt Chiles. Samstags quillt er über die Plaza de la Merced hinaus – mit Huaso-Hüten, Ponchos, Lederstiefeln und geschnitzten Holzsteigbügeln.",
+      "category": "food",
+      "location": "chillan",
+      "source": "Insight Guides Chile 2024",
+      "id": 247
+    },
+    {
+      "text": "Violeta Parra wurde 1917 in Chillán geboren. Ihre Familie war künstlerisch hochbegabt: Bruder Nicanor wurde Chiles berühmter 'Anti-Poet', Roberto schuf einen neuen Cueca-Stil.",
+      "category": "culture",
+      "location": "chillan",
+      "source": "Insight Guides Chile 2024",
+      "id": 248
+    },
+    {
+      "text": "Der Pudú, ein winziges rötliches Reh und endemisch in Chile, lebt in den dichten Wäldern zwischen Chillán und Chiloé – er ist fast unmöglich zu entdecken.",
+      "category": "nature",
+      "location": "chillan",
+      "source": "Insight Guides Chile 2024",
+      "id": 249
+    },
+    {
+      "text": "Chile führte 1853 Briefmarken ein – nur 13 Jahre nach Großbritannien. Die erste Eisenbahn von Copiapó nach Caldera wurde 1851 eingeweiht.",
+      "category": "history",
+      "location": null,
+      "source": "Insight Guides Chile 2024",
+      "id": 250
+    },
+    {
+      "text": "Valparaíso wurde 1536 von Juan de Saavedra benannt, der voller Heimweh nach seinem Geburtsort in Spanien war und den Hafen 'Paradiestal' (Valle del Paraíso) nannte.",
+      "category": "history",
+      "location": null,
+      "source": "Insight Guides Chile 2024",
+      "id": 251
+    },
+    {
+      "text": "Valparaísos Ascensor Polanco, gebaut 1915, ist ein Ingenieurskunstwerk: Er steigt vertikal durch das Innere eines Hügels und mündet auf einem Turm, der durch einen Hängesteg mit dem Hügel verbunden ist.",
+      "category": "unique",
+      "location": null,
+      "source": "Insight Guides Chile 2024",
+      "id": 252
+    },
+    {
+      "text": "1834 bestieg Charles Darwin den Cerro La Campana östlich von Valparaíso – heute ein Nationalpark. Der angrenzende Parque Nacional Ocoa beherbergt eines der letzten Reservate der chilenischen Palme.",
+      "category": "nature",
+      "location": null,
+      "source": "Insight Guides Chile 2024",
+      "id": 253
+    },
+    {
+      "text": "Die Nevados de Chillán haben mit fast 13 km die längste Skipiste Südamerikas. Im Sommer kann man in natürlichen Thermalbecken baden und zu dampfenden Geysir-ähnlichen Quellen wandern.",
+      "category": "unique",
+      "location": "chillan",
+      "source": "Insight Guides Chile 2024",
+      "id": 254
     }
   ],
   "lastUpdated": "2026-02-08",
-  "totalFacts": 225
+  "totalFacts": 253
 }
