@@ -107,12 +107,18 @@ function MapController({
   useEffect(() => {
     if (selectedRecommendation) {
       // Fly to recommendation with higher zoom
-      map.flyTo(selectedRecommendation.coordinates as [number, number], 14, {
+      // Offset the center to account for bottom sheet (move marker to upper portion)
+      const coords = selectedRecommendation.coordinates as [number, number]
+      const offsetLat = coords[0] + 0.015 // Shift center down so marker appears in upper part
+      map.flyTo([offsetLat, coords[1]], 13, {
         duration: 1
       })
     } else if (selectedLocation) {
-      // Fly to location
-      map.flyTo(selectedLocation.coordinates as [number, number], 10, {
+      // Fly to location with lower zoom so nearby locations are visible
+      // Offset the center to account for bottom sheet (move marker to upper portion)
+      const coords = selectedLocation.coordinates as [number, number]
+      const offsetLat = coords[0] + 0.3 // Shift center down so marker appears in upper part
+      map.flyTo([offsetLat, coords[1]], 8, {
         duration: 1.5
       })
     }

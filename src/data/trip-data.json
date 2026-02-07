@@ -107,7 +107,7 @@
           "address": "Av. Libertador Bernardo O'Higgins 227, Santiago",
           "website": "https://www.gam.cl/",
           "googleMapsLink": "https://maps.google.com/?q=-33.4395,-70.6404",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "culture",
             "free",
@@ -130,7 +130,7 @@
           "descriptionEs": "Cerro histórico donde se fundó Santiago en 1541. Hermosos jardines, terrazas con vistas, Fuente Neptuno. Entrada libre.",
           "address": "Santa Lucía, Santiago Centro",
           "googleMapsLink": "https://maps.google.com/?q=-33.4405,-70.6440",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "viewpoint",
             "historic",
@@ -154,7 +154,7 @@
           "address": "José Miguel de la Barra 650, Santiago",
           "website": "https://www.mnba.gob.cl/",
           "googleMapsLink": "https://maps.google.com/?q=-33.4370,-70.6427",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "art",
             "museum",
@@ -341,7 +341,7 @@
           "descriptionEs": "Corazón histórico de Santiago desde 1541. Catedral Metropolitana, Correo Central, Museo de Historia Nacional. Artistas callejeros, ajedrecistas y vida urbana.",
           "address": "Plaza de Armas, Santiago Centro",
           "googleMapsLink": "https://maps.google.com/?q=-33.4378,-70.6504",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "plaza",
             "cathedral",
@@ -365,7 +365,7 @@
           "address": "Moneda 1141, Santiago Centro",
           "website": "https://www.ccplm.gob.cl/",
           "googleMapsLink": "https://maps.google.com/?q=-33.4430,-70.6537",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "palace",
             "history",
@@ -404,7 +404,7 @@
           "descriptionEs": "Playa tranquila en pequeño pueblo de pescadores. Menos concurrida que Los Vilos. Ideal para caminatas y mariscos frescos.",
           "address": "Quilimarí, Los Vilos",
           "googleMapsLink": "https://maps.google.com/?q=-32.1167,-71.5000",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "beach",
             "quiet",
@@ -426,7 +426,7 @@
           "descriptionEs": "Hermosa playa cercana con aguas tranquilas. Buena para SUP y kayak. Pueblo pequeño con restaurantes y servicios.",
           "address": "Pichidangui, Los Vilos",
           "googleMapsLink": "https://maps.google.com/?q=-32.1333,-71.5167",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "beach",
             "watersports",
@@ -492,7 +492,7 @@
           "descriptionEs": "Quilimarí y Caimanes tienen ejemplos preservados de arquitectura colonial que vale la pena explorar a pie.",
           "address": "Quilimarí & Caimanes, Los Vilos",
           "googleMapsLink": "https://maps.google.com/?q=-32.1167,-71.5000",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "architecture",
             "colonial",
@@ -514,7 +514,7 @@
           "descriptionEs": "Humedal Ramsar a 7km al norte de Los Vilos. Excelente observación de aves: cisnes coscoroba, bandurrias, tenca chilena. Senderos, áreas de picnic y hermosa playa al final.",
           "address": "7km norte de Los Vilos, Ruta 5",
           "googleMapsLink": "https://maps.google.com/?q=-31.8833,-71.5000",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "nature",
             "birdwatching",
@@ -537,7 +537,7 @@
           "descriptionEs": "Icónica formación rocosa en la bahía de Los Vilos con un santuario a la Virgen María. Hermoso lugar para atardeceres y símbolo del pueblo. Fácilmente accesible desde la costanera.",
           "address": "Costanera Los Vilos",
           "googleMapsLink": "https://maps.google.com/?q=-31.9150,-71.5180",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "landmark",
             "viewpoint",
@@ -560,7 +560,7 @@
           "descriptionEs": "Agradable paseo costero a lo largo de la bahía de Los Vilos. Restaurantes, muelle de pescadores, vistas a Piedra de la Virgen. Bueno para paseos de atardecer.",
           "address": "Costanera, Los Vilos",
           "googleMapsLink": "https://maps.google.com/?q=-31.9167,-71.5167",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "promenade",
             "waterfront",
@@ -675,7 +675,7 @@
           "descriptionEs": "Los acantilados sobre la playa de Quilimarí ofrecen espectaculares vistas del atardecer sobre el Pacífico. Trae un picnic y mira el cielo cambiar de colores.",
           "address": "Quilimarí",
           "googleMapsLink": "https://maps.google.com/?q=-32.1150,-71.5050",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "sunset",
             "viewpoint",
@@ -698,7 +698,7 @@
           "descriptionEs": "Pequeño pueblo interior con arquitectura colonial preservada y artesanos locales. Conocido por su historia minera y artesanías tradicionales. Chile rural auténtico.",
           "address": "Caimanes, Ruta D-71",
           "googleMapsLink": "https://maps.google.com/?q=-32.0500,-71.4000",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "village",
             "colonial",
@@ -721,7 +721,7 @@
           "descriptionEs": "Hermosa playa escondida entre Los Vilos y Quilimarí. Aguas claras, costa rocosa, excelente para snorkel. Menos concurrida que las playas principales.",
           "address": "Totoralillo Norte",
           "googleMapsLink": "https://maps.google.com/?q=-32.0000,-71.5000",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "beach",
             "hidden-gem",
@@ -744,7 +744,7 @@
           "descriptionEs": "Playa larga de arena al norte de Los Vilos, popular con locales. Buenas olas para bodyboard. Restaurantes simples sirviendo mariscos frescos.",
           "address": "Chigualoco",
           "googleMapsLink": "https://maps.google.com/?q=-31.7833,-71.5333",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "beach",
             "local",
@@ -790,7 +790,7 @@
           "descriptionEs": "Muelle de pesca activo donde los botes descargan su pesca diaria. Mira trabajar a los pescadores, compra mariscos frescos o disfruta restaurantes cercanos.",
           "address": "Muelle, Los Vilos",
           "googleMapsLink": "https://maps.google.com/?q=-31.9170,-71.5200",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "fishing",
             "pier",
@@ -813,7 +813,7 @@
           "descriptionEs": "Caminata larga por la playa desde Quilimarí hacia caletas vecinas. Terreno fácil y plano, mejor con marea baja. Trae agua y protección solar.",
           "address": "Playa Quilimarí",
           "googleMapsLink": "https://maps.google.com/?q=-32.1100,-71.5100",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "hiking",
             "beach",
@@ -875,7 +875,7 @@
           "descriptionEs": "Santuario de la naturaleza con 2000+ pingüinos de Humboldt y Magallanes. Vista desde playas Canelo-Canelillo. No se puede desembarcar pero excelente avistamiento.",
           "address": "Frente a Playas Canelo-Canelillo, Algarrobo",
           "googleMapsLink": "https://maps.google.com/?q=-33.3550,-71.6900",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "penguins",
             "nature",
@@ -897,7 +897,7 @@
           "descriptionEs": "Hermosas playas de arena blanca frente a la isla de pingüinos. Canelillo es más pequeña y protegida, perfecta para nadar o almorzar.",
           "address": "Canelo y Canelillo, Algarrobo",
           "googleMapsLink": "https://maps.google.com/?q=-33.3560,-71.6850",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "beach",
             "swimming",
@@ -919,7 +919,7 @@
           "descriptionEs": "Legendaria cueva marina accesible con marea baja. La leyenda local dice que los piratas escondieron tesoros aquí.",
           "address": "Costanera, Algarrobo",
           "googleMapsLink": "https://maps.google.com/?q=-33.3600,-71.6750",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "cave",
             "unique",
@@ -963,7 +963,7 @@
           "descriptionEs": "Pintoresca zona del club de yates con botes coloridos. Bueno para fotos y ver la actividad náutica.",
           "address": "Club de Yates, Algarrobo",
           "googleMapsLink": "https://maps.google.com/?q=-33.3630,-71.6700",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "yacht",
             "scenic",
@@ -1148,7 +1148,7 @@
           "descriptionEs": "Playa principal de Algarrobo con buenas condiciones para nadar en verano. Salvavidas de turno en temporada. Restaurantes y servicios cercanos.",
           "address": "Playa Grande, Algarrobo",
           "googleMapsLink": "https://maps.google.com/?q=-33.3620,-71.6680",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "beach",
             "swimming",
@@ -1171,7 +1171,7 @@
           "descriptionEs": "Mirador costero escénico con formaciones rocosas dramáticas. Popular para ver atardeceres y tomar fotos. Corto trayecto al sur de Algarrobo.",
           "address": "Punta de Tralca, El Quisco",
           "googleMapsLink": "https://maps.google.com/?q=-33.4150,-71.7050",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "viewpoint",
             "sunset",
@@ -1263,7 +1263,7 @@
           "descriptionEs": "Camina por la costa rocosa desde playa Canelo hasta Canelillo. Caminata fácil con vistas a la isla de pingüinos, pozas de marea y aves marinas. Mejor con marea baja.",
           "address": "Playas Canelo-Canelillo, Algarrobo",
           "googleMapsLink": "https://maps.google.com/?q=-33.3580,-71.6820",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "hiking",
             "coastal",
@@ -1370,7 +1370,7 @@
           "descriptionEs": "El Valle del Maipo ofrece impresionantes vistas de los Andes nevados. Toma momentos para apreciar el paisaje durante las festividades.",
           "address": "Valle del Maipo",
           "googleMapsLink": "https://maps.google.com/?q=-33.8500,-70.5500",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "viewpoint",
             "andes",
@@ -1578,7 +1578,7 @@
           "descriptionEs": "La hora dorada sobre los viñedos del Valle del Maipo con los Andes de fondo es espectacular. Pregunta a tu anfitrión de la viña por los mejores puntos de vista.",
           "address": "Valle del Maipo",
           "googleMapsLink": "https://maps.google.com/?q=-33.8400,-70.5800",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "sunset",
             "vineyard",
@@ -1753,7 +1753,7 @@
           "descriptionEs": "El camino de montaña hacia Termas de Chillán ofrece hermosas vistas de los Andes. Considera un viaje de un día o parada camino a tu próximo destino.",
           "address": "Camino a Termas de Chillán",
           "googleMapsLink": "https://maps.google.com/?q=-36.8000,-71.4000",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "scenic-drive",
             "mountains",
@@ -1798,7 +1798,7 @@
           "descriptionEs": "Violeta Parra nació en 1917 en San Carlos cercano. Visita sitios que conmemoran a la legendaria cantante folclórica chilena que escribió 'Gracias a la Vida'.",
           "address": "San Carlos, Ñuble",
           "googleMapsLink": "https://maps.google.com/?q=-36.4000,-71.9500",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "museum",
             "violeta-parra",
@@ -1867,7 +1867,7 @@
           "descriptionEs": "Lugar de nacimiento de Pablo Neruda. Visita el museo de la estación de tren dedicado al poeta. Puerta de entrada a Villa Baviera (30km). Chile rural auténtico.",
           "address": "Parral, Ñuble",
           "googleMapsLink": "https://maps.google.com/?q=-36.1333,-71.8333",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "neruda",
             "poetry",
@@ -2046,7 +2046,7 @@
           "descriptionEs": "Murales del famoso artista mexicano David Alfaro Siqueiros en la Escuela México, pintados después del terremoto de 1939. Arte latinoamericano importante.",
           "address": "Escuela México, Av. O'Higgins, Chillán",
           "googleMapsLink": "https://maps.google.com/?q=-36.6100,-72.1000",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "art",
             "murals",
@@ -2092,7 +2092,7 @@
           "descriptionEs": "Múltiples senderos a través del bosque nativo con vistas al volcán Chillán. Opciones para todos los niveles: desde caminatas fáciles hasta treks de 3-4 horas.",
           "address": "Valle Las Trancas, Pinto",
           "googleMapsLink": "https://maps.google.com/?q=-36.8600,-71.4400",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "hiking",
             "forest",
@@ -2161,7 +2161,7 @@
           "address": "Valle Hermoso, Chillán",
           "website": "https://trancas.cl/valle-hermoso-chillan/",
           "googleMapsLink": "https://maps.google.com/?q=-36.8300,-71.4800",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "valley",
             "hiking",
@@ -2184,7 +2184,7 @@
           "descriptionEs": "Memorial a la querida cantante folclórica de Chile que escribió 'Gracias a la Vida'. Pequeño museo sobre su vida y legado. Peregrinaje cultural importante.",
           "address": "Centro, Chillán",
           "googleMapsLink": "https://maps.google.com/?q=-36.6050,-72.1020",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "museum",
             "violeta-parra",
@@ -2207,7 +2207,7 @@
           "descriptionEs": "Catedral modernista construida después del terremoto de 1939 con llamativa arquitectura de cruz de concreto. Diseño inusual que vale la pena ver. En la plaza principal.",
           "address": "Plaza de Armas, Chillán",
           "googleMapsLink": "https://maps.google.com/?q=-36.6066,-72.1034",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "cathedral",
             "modernist",
@@ -2253,7 +2253,7 @@
           "descriptionEs": "Museo en honor al pianista de fama mundial Claudio Arrau, nacido en Chillán. Objetos personales, premios e historia de uno de los mejores pianistas del siglo XX.",
           "address": "Centro, Chillán",
           "googleMapsLink": "https://maps.google.com/?q=-36.6070,-72.1030",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "museum",
             "pianist",
@@ -2656,7 +2656,7 @@
           "descriptionEs": "Lago de aguas cristalinas con playas de arena blanca, menos concurrido que Villarrica. Bueno para nadar en marzo (verano). Playa Blanca es la más linda.",
           "address": "Lago Caburgua",
           "googleMapsLink": "https://maps.google.com/?q=-39.1333,-71.7500",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "lake",
             "beach",
@@ -2679,7 +2679,7 @@
           "descriptionEs": "Múltiples miradores del volcán más activo de Chile. Desde la costanera de Pucón o varios miradores en el camino al volcán. Las vistas nocturnas del cráter brillante son espectaculares.",
           "address": "Various locations around Pucón",
           "googleMapsLink": "https://maps.google.com/?q=-39.3500,-71.9333",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "volcano",
             "viewpoint",
@@ -2928,7 +2928,7 @@
           "descriptionEs": "Playa principal en Lago Villarrica con vistas al volcán. Arena negra, natación en verano, arriendo de kayaks. Corazón de la escena playera de verano de Pucón.",
           "address": "Playa Grande, Pucón",
           "googleMapsLink": "https://maps.google.com/?q=-39.2800,-71.9600",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "beach",
             "lake",
@@ -2990,7 +2990,7 @@
           "descriptionEs": "Colonia de lobos marinos que viven a lo largo de la Costanera, viniendo de la costa por sobras de pescado en el mercado. Experiencia única de vida silvestre urbana.",
           "address": "Costanera Valdivia",
           "googleMapsLink": "https://maps.google.com/?q=-39.8150,-73.2450",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "wildlife",
             "sea-lions",
@@ -3037,7 +3037,7 @@
           "descriptionEs": "Pintoresco paseo junto al río a lo largo de los ríos Calle Calle y Valdivia. Food trucks en verano, Péndulo de Foucault, museo submarino. Genial para caminatas al atardecer.",
           "address": "Costanera, Valdivia",
           "googleMapsLink": "https://maps.google.com/?q=-39.8142,-73.2459",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "waterfront",
             "walking",
@@ -3059,7 +3059,7 @@
           "descriptionEs": "Distrito isleño con campus universitario, restaurantes, Parque Saval con laguna de lotos y jardín botánico. Conectado por puente, caminable desde el centro.",
           "address": "Isla Teja, Valdivia",
           "googleMapsLink": "https://maps.google.com/?q=-39.8083,-73.2583",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "island",
             "park",
@@ -3240,7 +3240,7 @@
           "descriptionEs": "Hermoso parque en Isla Teja con laguna de lotos, senderos y áreas de picnic. Popular para festivales de verano y eventos. Escape pacífico del centro de la ciudad.",
           "address": "Parque Saval, Isla Teja, Valdivia",
           "googleMapsLink": "https://maps.google.com/?q=-39.8050,-73.2600",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "park",
             "nature",
@@ -3263,7 +3263,7 @@
           "descriptionEs": "Jardín botánico universitario con especies nativas chilenas, incluyendo árboles antiguos y plantas del bosque templado valdiviano. Senderos educativos y atmósfera tranquila.",
           "address": "Universidad Austral, Isla Teja, Valdivia",
           "googleMapsLink": "https://maps.google.com/?q=-39.8040,-73.2550",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "botanical",
             "garden",
@@ -3530,7 +3530,7 @@
           "descriptionEs": "Museo en el centro que cubre la historia antigua, indígena y colonial de Osorno. Entrada gratuita. Abierto solo entre semana, con siesta de 12:30-14:30.",
           "address": "Centro, Osorno",
           "googleMapsLink": "https://maps.google.com/?q=-40.5670,-73.1340",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "museum",
             "history",
@@ -3553,7 +3553,7 @@
           "descriptionEs": "Impresionante iglesia neogótica con diseño inusual que destaca sobre el pueblo. Ubicada en la Plaza de Armas. Curiosidad arquitectónica que vale la pena ver.",
           "address": "Plaza de Armas, Osorno",
           "googleMapsLink": "https://maps.google.com/?q=-40.5667,-73.1333",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "church",
             "neo-gothic",
@@ -3576,7 +3576,7 @@
           "descriptionEs": "Parque urbano con modelos a tamaño real de animales prehistóricos (mamuts, tigres dientes de sable), skatepark y eventos comunitarios. Divertido para familias y atracción única.",
           "address": "Parque Chuyaca, Osorno",
           "googleMapsLink": "https://maps.google.com/?q=-40.5600,-73.1400",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "park",
             "prehistoric",
@@ -3622,7 +3622,7 @@
           "descriptionEs": "Plaza central con excelente fuente de agua, bancas y atmósfera comunitaria. Puestos de mercado y presentaciones en vivo los fines de semana. Corazón de la vida local.",
           "address": "Plaza de Armas, Osorno",
           "googleMapsLink": "https://maps.google.com/?q=-40.5667,-73.1333",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "plaza",
             "center",
@@ -3645,7 +3645,7 @@
           "descriptionEs": "Hermoso lago glaciar a 60km de Osorno con vistas al volcán. Menos visitado que otros lagos de la región. Bueno para excursión de medio día con natación y picnic.",
           "address": "Lago Rupanco, Los Lagos",
           "googleMapsLink": "https://maps.google.com/?q=-40.8333,-72.4667",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "lake",
             "nature",
@@ -3754,7 +3754,7 @@
           "descriptionEs": "Paseo costero de postal con vistas al volcán, casas coloniales alemanas, jardines cuidados. El pueblo más fotogénico del distrito de los lagos de Chile.",
           "address": "Costanera, Frutillar Bajo",
           "googleMapsLink": "https://maps.google.com/?q=-41.1167,-73.0500",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "waterfront",
             "german",
@@ -3846,7 +3846,7 @@
           "descriptionEs": "Icónica iglesia de madera en la colina con vista al lago y volcán. Construida 1915-1918. Uno de los edificios más fotografiados del sur de Chile.",
           "address": "San Francisco 521, Puerto Varas",
           "googleMapsLink": "https://maps.google.com/?q=-41.3200,-72.9850",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "church",
             "historic",
@@ -3869,7 +3869,7 @@
           "descriptionEs": "El segundo lago más grande de Chile. Recorre en auto para diferentes perspectivas del volcán. Playas, kayak y tours en barco disponibles desde Puerto Varas.",
           "address": "Lago Llanquihue",
           "googleMapsLink": "https://maps.google.com/?q=-41.2000,-72.8500",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "lake",
             "scenic-drive",
@@ -3892,7 +3892,7 @@
           "descriptionEs": "Marzo es verano - ¡nada en el Lago Llanquihue! El agua es fría pero refrescante. Pequeñas playas a lo largo de las costas de Frutillar y Puerto Varas.",
           "address": "Playas del Lago Llanquihue",
           "googleMapsLink": "https://maps.google.com/?q=-41.1167,-73.0500",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "swimming",
             "lake",
@@ -4053,7 +4053,7 @@
           "descriptionEs": "Sendero corto cerca de Puerto Varas con pequeñas cascadas y bosque nativo. Recorrido fácil de 2 horas ida y vuelta. Bueno para familias y los con tiempo limitado.",
           "address": "Camino a Ensenada, Puerto Varas",
           "googleMapsLink": "https://maps.google.com/?q=-41.3300,-72.9700",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "hiking",
             "waterfalls",
@@ -4093,7 +4093,7 @@
           "address": "Various locations, Chiloé",
           "website": "https://chiloepatrimoniomundial.gob.cl/",
           "googleMapsLink": "https://maps.google.com/?q=-42.4667,-73.7667",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "churches",
             "unesco",
@@ -4116,7 +4116,7 @@
           "descriptionEs": "Icónicas casas coloridas sobre pilotes en el agua en los barrios Gamboa y Pedro Montt. Imagen más fotografiada de Chiloé. Algunas convertidas en hoteles/restaurantes.",
           "address": "Barrio Gamboa, Castro",
           "googleMapsLink": "https://maps.google.com/?q=-42.4800,-73.7700",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "palafitos",
             "photography",
@@ -4139,7 +4139,7 @@
           "descriptionEs": "Iglesia amarilla y morada brillante en la plaza principal de Castro. Patrimonio UNESCO, construida 1906-1912. Arquitectura neo-gótica de madera, la más grande de Chiloé.",
           "address": "Plaza de Armas, Castro",
           "googleMapsLink": "https://maps.google.com/?q=-42.4667,-73.7667",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "church",
             "unesco",
@@ -4371,7 +4371,7 @@
           "descriptionEs": "Muelle en Castro con esculturas de criaturas mitológicas. Nombrado por el barco fantasma Caleuche. Bueno para fotos y vistas del atardecer.",
           "address": "Muelle del Caleuche, Castro",
           "googleMapsLink": "https://maps.google.com/?q=-42.4700,-73.7650",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "pier",
             "mythology",
@@ -4417,7 +4417,7 @@
           "descriptionEs": "Playa salvaje del Pacífico en la entrada al Parque Nacional Chiloé. Largos tramos de arena, olas rompientes. No se recomienda nadar pero espectacular para caminatas.",
           "address": "Cucao, Chiloé",
           "googleMapsLink": "https://maps.google.com/?q=-42.6333,-74.1000",
-          "priceRange": "Free",
+          "priceRange": "Kostenlos",
           "tags": [
             "beach",
             "wild",

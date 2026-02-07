@@ -139,23 +139,12 @@ function App() {
     setSelectedRecommendation(null)
     setSheetExpanded(true)
     
-    // If selected from map, briefly show location picker to highlight selection
-    if (fromMap) {
-      setShowLocationPicker(true)
-      // Scroll the location into view after a brief delay
-      setTimeout(() => {
-        const element = document.getElementById(`loc-${location.id}`)
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth', block: 'center' })
-          element.classList.add('flash-highlight')
-          setTimeout(() => element.classList.remove('flash-highlight'), 2000)
-        }
-      }, 100)
-      // Auto-close after showing the highlight
-      setTimeout(() => setShowLocationPicker(false), 3000)
-    } else {
+    // If selected from map, do NOT open the location picker automatically
+    // The picker should only open when user explicitly clicks the button
+    if (!fromMap) {
       setShowLocationPicker(false)
     }
+    // Note: fromMap=true just updates the location, no picker auto-open
   }
 
   const handleRecommendationSelect = (recommendation: Recommendation) => {
@@ -406,8 +395,8 @@ function App() {
           <div className="w-6 h-0.5 bg-white/20 rounded-full mt-1" />
         </div>
 
-        {/* Sheet Header - Compact */}
-        <div className="px-4 pb-2">
+        {/* Sheet Header - Compact, with extra left padding for screen corners */}
+        <div className="px-6 pb-2 pl-8">
           <div 
             className="flex items-center justify-between cursor-pointer"
             onClick={() => setSheetExpanded(!sheetExpanded)}
