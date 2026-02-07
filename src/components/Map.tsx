@@ -110,18 +110,31 @@ function MapController({
       // Offset center SOUTH so marker appears in TOP HALF of screen (above bottom sheet)
       const coords = selectedRecommendation.coordinates as [number, number]
       const offsetLat = coords[0] - 0.003 // Offset for top-half positioning
-      map.flyTo([offsetLat, coords[1]], 11, {
+      map.flyTo([offsetLat, coords[1]], 14, {
         duration: 1
       })
-    } else if (selectedLocation) {
-      // Fly to location with lower zoom so nearby locations are visible
-      // Offset center SOUTH so marker appears in TOP HALF of screen (above bottom sheet)
-      // At zoom 8, need larger offset in degrees
-      const coords = selectedLocation.coordinates as [number, number]
-      const offsetLat = coords[0] - 0.5 // Subtract = center moves south = marker appears higher
-      map.flyTo([offsetLat, coords[1]], 8, {
-        duration: 1.5
+    } else if (selectedLocation && selectedLocation.recommendations.length > 0) {
+      // Fit bounds to show all recommendations for this location
+      const allCoords = selectedLocation.recommendations.map(
+        rec => rec.coordinates as [number, number]
+      )
+      // Include location marker itself
+      allCoords.push(selectedLocation.coordinates as [number, number])
+      
+      // Create bounds from all coordinates
+      const bounds = L.latLngBounds(allCoords)
+      
+      // Fit bounds with padding (bottom padding larger for bottom sheet)
+      map.flyToBounds(bounds, {
+        padding: [50, 50],
+        paddingBottomRight: [50, 200], // Extra bottom padding for bottom sheet
+        maxZoom: 14,
+        duration: 1.2
       })
+    } else if (selectedLocation) {
+      // Fallback if no recommendations
+      const coords = selectedLocation.coordinates as [number, number]
+      map.flyTo(coords, 12, { duration: 1 })
     }
   }, [selectedLocation, selectedRecommendation, map])
 
