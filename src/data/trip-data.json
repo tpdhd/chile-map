@@ -1751,6 +1751,56 @@
             "romantic"
           ],
           "source": "trip-data"
+        },
+        {
+          "id": "wine-resort-vendimia-colchagua",
+          "name": "Vendimia Colchagua Festival 2025",
+          "nameEs": "Fiesta de la Vendimia Colchagua 2025",
+          "category": "event",
+          "coordinates": [
+            -34.6333,
+            -71.3667
+          ],
+          "description": "Das größte Weinernte-Festival Chiles findet vom 7-9. März 2025 in Santa Cruz statt! Weinverkostungen, Live-Musik, Folkloretänze und Traubenstampfen. Die 26. Ausgabe feiert die Colchagua-Weinregion. Ca. 2h südlich - perfekter Tagesausflug!",
+          "descriptionEs": "¡El festival de vendimia más grande de Chile del 7-9 de marzo 2025 en Santa Cruz! Catas de vino, música en vivo, bailes folklóricos y pisado de uvas. La 26ª edición celebra la región vinícola de Colchagua. A 2h al sur - ¡perfecto viaje de un día!",
+          "address": "Plaza de Armas, Santa Cruz, Colchagua",
+          "website": "https://rutadelvino.cl/",
+          "googleMapsLink": "https://maps.google.com/?q=-34.6333,-71.3667",
+          "eventDate": "2025-03-07",
+          "priceRange": "$$",
+          "tags": [
+            "event",
+            "wine",
+            "festival",
+            "harvest",
+            "folklore",
+            "march-2025"
+          ],
+          "source": "Brave Search 2025"
+        },
+        {
+          "id": "wine-resort-colchagua-valley",
+          "name": "Colchagua Valley Wine Route",
+          "nameEs": "Ruta del Vino de Colchagua",
+          "category": "winery",
+          "coordinates": [
+            -34.6,
+            -71.3
+          ],
+          "description": "Chiles berühmteste Weinregion für kräftige Rotweine. Weltklasse-Weingüter wie Montes, Casa Lapostolle, Viu Manent und Clos Apalta. Das Weinmuseum in Santa Cruz ist sehenswert.",
+          "descriptionEs": "La región vinícola más famosa de Chile para tintos robustos. Viñas de clase mundial como Montes, Casa Lapostolle, Viu Manent y Clos Apalta. El museo del vino en Santa Cruz vale la pena.",
+          "address": "Valle de Colchagua, Región O'Higgins",
+          "website": "https://rutadelvino.cl/",
+          "googleMapsLink": "https://maps.google.com/?q=-34.6000,-71.3000",
+          "priceRange": "$$$",
+          "tags": [
+            "wine",
+            "valley",
+            "tour",
+            "premium",
+            "daytrip"
+          ],
+          "source": "Rough Guide 2023"
         }
       ]
     },
