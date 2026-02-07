@@ -134,11 +134,28 @@ function App() {
     }
   }, [])
 
-  const handleLocationSelect = (location: Location) => {
+  const handleLocationSelect = (location: Location, fromMap: boolean = false) => {
     setSelectedLocation(location)
     setSelectedRecommendation(null)
     setSheetExpanded(true)
-    setShowLocationPicker(false)
+    
+    // If selected from map, briefly show location picker to highlight selection
+    if (fromMap) {
+      setShowLocationPicker(true)
+      // Scroll the location into view after a brief delay
+      setTimeout(() => {
+        const element = document.getElementById(`loc-${location.id}`)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'center' })
+          element.classList.add('flash-highlight')
+          setTimeout(() => element.classList.remove('flash-highlight'), 2000)
+        }
+      }, 100)
+      // Auto-close after showing the highlight
+      setTimeout(() => setShowLocationPicker(false), 3000)
+    } else {
+      setShowLocationPicker(false)
+    }
   }
 
   const handleRecommendationSelect = (recommendation: Recommendation) => {
@@ -208,7 +225,7 @@ function App() {
             locations={tripData.locations}
             selectedLocation={selectedLocation}
             selectedRecommendation={selectedRecommendation}
-            onLocationSelect={handleLocationSelect}
+            onLocationSelect={(loc) => handleLocationSelect(loc, true)}
             onRecommendationSelect={handleRecommendationSelect}
             activeCategory={activeCategory}
           />
@@ -344,7 +361,8 @@ function App() {
             return (
               <button
                 key={loc.id}
-                onClick={() => handleLocationSelect(loc)}
+                id={`loc-${loc.id}`}
+                onClick={() => handleLocationSelect(loc, false)}
                 className={`
                   w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3 transition-all
                   ${isSelected ? 'bg-chile-accent-red/30 border-l-4 border-chile-accent-red animate-pulse-glow' : ''}

@@ -195,7 +195,7 @@ export default function Map({
         url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
         maxZoom={19}
-        keepBuffer={512}
+        keepBuffer={2048}
         updateWhenZooming={false}
         updateWhenIdle={true}
         tileSize={256}
