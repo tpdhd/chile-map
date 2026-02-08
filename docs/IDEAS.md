@@ -108,12 +108,11 @@
 
 ## 📊 Fakten-Feature
 
-### Status: 278 Fakten ✓ (2026-02-08, erweitert mit Rough Guide)
+### Status: 295 Fakten ✓ (2026-02-08, 3 Bücher extrahiert)
 - Geographie, Kultur, Geschichte, Natur, Essen, Unique, Beach
 - Mit Location-Referenzen wo relevant
-- Quellen aus Insight Guides, Rough Guides, und Recherche
-- 19 neue Fakten aus Rough Guide (Valdivia, Pucón, Osorno, Chillán, Santiago, Chiloé, Frutillar/PV)
-- General 63, Santiago 22, Frutillar/PV 22, Chiloé 22, Valdivia 19, Pucón 18, Osorno 18, Wine Resort 18, Chillán 17, Algarrobo 16, San Carlos 16, Conguillío 15, Quillimari 12
+- Quellen: Insight Guides 2024, Rough Guides 2023, Bradt Carretera Austral 2022
+- Alle Locations 17+ Fakten ✓
 
 ### UI für Fakten (ERLEDIGT ✓ 2026-02-07)
 - ✓ 📖 Icon im Burger-Menu
@@ -145,11 +144,15 @@
 - Osorno: 21 | Frutillar/PV: 22 | Puerto Montt/Chiloé: 38
 - **Total: 280 Empfehlungen**
 
-### Status Fakten (2026-02-08)
-- **Total: 278 Fakten** (erweitert mit Rough Guide)
-- 19 neue Fakten aus Rough Guide hinzugefügt
-- Santiago: 22, Frutillar/PV: 22, Chiloé: 22, Valdivia: 19, Pucón: 18, Osorno: 18
-- Alle Locations 12+ Fakten ✓
+### Status Fakten (2026-02-08, letzte Erweiterung)
+- **Total: 295 Fakten** (erweitert mit Rough Guide + Carretera Austral + Insight Guides)
+- 19 neue Fakten aus Rough Guide (2026-02-08)
+- 17 neue Fakten aus allen 3 Büchern (2026-02-08 Nacht)
+- Neue Quelle: Bradt Carretera Austral Guide 2022
+- General: 62, Chiloé/PM: 27, Santiago: 22, Frutillar/PV: 22, Valdivia: 19
+- Pucón: 18, Osorno: 18, Algarrobo: 18, Wine Resort: 18, Chillán: 18
+- Conguillío: 17, San Carlos: 17, Quillimari: 17
+- **Alle Locations 17+ Fakten ✓**
 
 ### TypeScript
 - [x] Alle TS-Fehler behoben ✓ (2026-02-08)
@@ -157,4 +160,4 @@
 - Optional properties (openingHours, mustTry) korrekt gecastet
 - LocationPanel unused import gefixt
 
-*Letzte Aktualisierung: 2026-02-08 22:00*
+*Letzte Aktualisierung: 2026-02-08 22:35*
