@@ -1,1 +1,0 @@
-if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/chile-map/sw.js', { scope: '/chile-map/' })})}
