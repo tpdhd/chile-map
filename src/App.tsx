@@ -655,16 +655,18 @@ function App() {
                           {rec.address}
                         </div>
                       )}
-                      {rec.openingHours && (
+                      {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+                      {(rec as any).openingHours && (
                         <div>
                           <span className="text-chile-text-muted">🕐 </span>
-                          {rec.openingHours}
+                          {(rec as any).openingHours}
                         </div>
                       )}
-                      {rec.mustTry && rec.mustTry.length > 0 && (
+                      {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+                      {(rec as any).mustTry?.length > 0 && (
                         <div>
                           <span className="text-chile-text-muted">⭐ </span>
-                          {rec.mustTry.join(', ')}
+                          {(rec as any).mustTry.join(', ')}
                         </div>
                       )}
                       {rec.source && (
