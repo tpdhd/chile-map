@@ -63,7 +63,7 @@
 ### Bessere Infos pro Location
 - [ ] Beste Reisezeit / Wetter
 - [ ] Typische Preise
-- [ ] Sprach-Tipps (Spanisch-Phrasen)
+- [x] Sprach-Tipps (Spanisch-Phrasen) ✓ (2026-02-08, Sprachführer mit 100+ Phrasen)
 - [ ] Sicherheitshinweise
 
 ---
@@ -160,4 +160,12 @@
 - Optional properties (openingHours, mustTry) korrekt gecastet
 - LocationPanel unused import gefixt
 
-*Letzte Aktualisierung: 2026-02-08 22:35*
+### Sprachführer (2026-02-08, Nacht-Session)
+- ✓ 10 Kategorien: Grundlagen, Restaurant, Unterwegs, Einkaufen, Notfall, Unterkunft, Chilenisch, Essen, Natur, Zahlen
+- ✓ 100+ Phrasen mit deutscher phonetischer Aussprache
+- ✓ Chilenischer Slang (Weón, Bacán, Luca, Gamba, etc.)
+- ✓ Kultur-Notizen bei Chile-spezifischem Vokabular
+- ✓ Suchfunktion über alle Kategorien
+- ✓ Aufklappbare Karten mit Aussprache + Tipps
+
+*Letzte Aktualisierung: 2026-02-09 00:00*
