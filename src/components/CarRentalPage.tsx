@@ -10,9 +10,10 @@ export default function CarRentalPage({ onClose }: CarRentalPageProps) {
 
   const sections = [
     { id: 'trip', icon: '✈️', label: 'Unser Trip' },
+    { id: 'senior', icon: '👴', label: 'Fahrer 65+' },
     { id: 'cost', icon: '💰', label: 'Kosten' },
     { id: 'vehicle', icon: '🚙', label: 'Fahrzeug' },
-    { id: 'ripio', icon: '🪨', label: 'Ripio/Gravel' },
+    { id: 'ripio', icon: '🪨', label: 'Ripio/Schotter' },
     { id: 'companies', icon: '🏢', label: 'Anbieter' },
     { id: 'routes', icon: '📍', label: 'One-Way' },
     { id: 'documents', icon: '📋', label: 'Dokumente' },
@@ -55,7 +56,7 @@ export default function CarRentalPage({ onClose }: CarRentalPageProps) {
             <div className="text-chile-text-muted">📍 Abgabe</div>
             <div className="font-medium">Puerto Montt (PMC)</div>
             <div className="text-chile-text-muted">👥 Personen</div>
-            <div className="font-medium">3 Erwachsene</div>
+            <div className="font-medium">3 Erwachsene <span className="text-amber-400 text-xs">(1 Fahrer 65+)</span></div>
             <div className="text-chile-text-muted">🧳 Gepäck</div>
             <div className="font-medium">3 kleine Koffer + Taschen</div>
             <div className="text-chile-text-muted">⚙️ Getriebe</div>
@@ -79,8 +80,20 @@ export default function CarRentalPage({ onClose }: CarRentalPageProps) {
             </div>
             <div className="text-right">
               <div className="text-xl font-bold text-amber-400">~$1.875–2.840</div>
-              <div className="text-[10px] text-chile-text-muted">USD total • ~$625–945/Person</div>
+              <div className="text-[10px] text-chile-text-muted">USD gesamt • ~$625–945/Person</div>
             </div>
+          </div>
+        </div>
+
+        {/* Senior Driver Alert Banner */}
+        <div className="mx-4 mt-3 p-3 rounded-xl bg-purple-500/10 border border-purple-500/30 cursor-pointer"
+             onClick={() => setActiveSection(activeSection === 'senior' ? null : 'senior')}>
+          <div className="flex items-center justify-between">
+            <div>
+              <div className="text-xs text-purple-400 font-bold">👴 Fahrer 65+ im Team</div>
+              <div className="text-xs text-chile-text-muted mt-0.5">Tipps zur Strategie: Hauptfahrer vs. Zusatzfahrer</div>
+            </div>
+            <div className="text-purple-400 text-sm">→</div>
           </div>
         </div>
 
@@ -115,7 +128,7 @@ export default function CarRentalPage({ onClose }: CarRentalPageProps) {
                   <li>Vergleiche auf <a href="https://www.discovercars.com/chile" target="_blank" rel="noopener noreferrer" className="text-chile-accent-teal underline">DiscoverCars</a> + <a href="https://www.kayak.com/Chile-Car-Rentals.48.crc.html" target="_blank" rel="noopener noreferrer" className="text-chile-accent-teal underline">KAYAK</a></li>
                   <li>Direktangebot von <a href="https://www.lys.cl" target="_blank" rel="noopener noreferrer" className="text-chile-accent-teal underline">LYS</a> einholen (bester Broker, Ripio-freundlich)</li>
                   <li><strong className="text-white">Midsize SUV mit Schaltung</strong> buchen — Ripio-tauglich!</li>
-                  <li>Alle <strong className="text-white">3 Fahrer</strong> bei Buchung anmelden</li>
+                  <li>Alle <strong className="text-white">3 Fahrer</strong> bei Buchung anmelden — <strong className="text-purple-400">jüngeren Fahrer als Hauptmieter!</strong></li>
                   <li>Schriftlich bestätigen lassen: <strong className="text-amber-400">Versicherung deckt Ripio/Schotter</strong></li>
                   <li>Abgabe Flughafen Puerto Montt (PMC)</li>
                   <li>Rückflug PMC → SCL mit JetSmart/SKY (~$30-50/Person)</li>
@@ -138,6 +151,112 @@ export default function CarRentalPage({ onClose }: CarRentalPageProps) {
                 <div className="text-chile-text-secondary">
                   März ist Hochsaison-Ende. Manuelle SUVs sind selten — sie werden zuerst ausgebucht.
                   Am besten <strong className="text-white">9-12 Monate vorher</strong> buchen, also spätestens Mai/Juni 2025.
+                </div>
+              </div>
+            </section>
+          )}
+
+          {/* ==================== SENIOR DRIVER (65+) ==================== */}
+          {(!activeSection || activeSection === 'senior') && (
+            <section>
+              <h2 className="font-bold text-base mb-3 flex items-center gap-2">
+                <span>👴</span> Fahrer 65+ — Alterszuschläge & Strategie
+              </h2>
+
+              {/* Key Finding */}
+              <div className="p-3 rounded-xl bg-green-500/10 border-l-4 border-green-500 text-sm mb-3">
+                <div className="font-bold text-green-400 mb-1">✅ Gute Nachricht!</div>
+                <div className="text-xs text-chile-text-secondary">
+                  Die meisten chilenischen Vermieter haben <strong className="text-white">KEIN generelles Höchstalter</strong> oder verlangen erst ab 70-75 Aufschläge.
+                  Mit 65 sollte es bei den meisten Anbietern <strong className="text-green-400">problemlos</strong> gehen.
+                  Lokale Anbieter (LYS, Chilean Rent-A-Car, Rosselot) sind tendenziell flexibler als internationale Ketten.
+                </div>
+              </div>
+
+              {/* Strategy — Most Important */}
+              <div className="p-3 rounded-xl bg-purple-500/10 border-l-4 border-purple-500 text-sm mb-3">
+                <div className="font-bold text-purple-400 mb-1.5">💡 Empfohlene Strategie: Jüngeren als Hauptfahrer!</div>
+                <div className="text-xs text-chile-text-secondary space-y-1.5">
+                  <div>Der 65+ Fahrer muss <strong className="text-white">NICHT</strong> zwingend der Hauptmieter (Vertragspartner) sein!</div>
+                  <div className="pt-1 font-bold text-purple-300">✅ Vorteile: Jüngeren als Hauptmieter eintragen</div>
+                  <div>→ Kein möglicher Senioren-Zuschlag auf den Grundtarif</div>
+                  <div>→ Keine potentiellen Probleme mit Alters-Obergrenzen</div>
+                  <div>→ Versicherungsbedingungen könnten günstiger sein</div>
+                  <div>→ Kein ärztliches Attest nötig</div>
+                  <div className="pt-1 font-bold text-amber-300">⚠️ Zu beachten</div>
+                  <div>→ Kreditkarte muss auf den Namen des Hauptfahrers lauten</div>
+                  <div>→ Der jüngere Hauptfahrer trägt die vertragliche Verantwortung</div>
+                  <div>→ Zusatzfahrer-Gebühr ($5-8/Tag) fällt trotzdem an</div>
+                  <div className="pt-1.5 p-2 rounded-lg bg-purple-500/15 border border-purple-500/20">
+                    <strong className="text-purple-300">EMPFEHLUNG:</strong> <span className="text-white">Einen der jüngeren Fahrer als Hauptmieter eintragen.</span> Den 65+ Fahrer als Zusatzfahrer anmelden.
+                    Die Zusatzfahrer-Gebühr ($5-8/Tag) fällt ohnehin für 2 der 3 Fahrer an — ob der Ältere Haupt- oder Zusatzfahrer ist, ändert daran nichts.
+                  </div>
+                  <div className="pt-1 text-chile-text-muted">
+                    <strong>Wichtig:</strong> Alle 3 Fahrer müssen trotzdem bei Abholung persönlich erscheinen mit Führerschein + Reisepass.
+                    Der 65+ Fahrer darf das Auto genauso fahren wie die anderen — er ist nur nicht der Vertragspartner.
+                  </div>
+                </div>
+              </div>
+
+              {/* Company Policies */}
+              <div className="text-xs font-bold text-chile-text-muted uppercase tracking-wide mb-2">Anbieter-Regeln für 65+ Fahrer</div>
+              <div className="space-y-1.5 mb-3">
+                {carRentalData.seniorDriverInfo.companySeniorPolicies.map((company) => (
+                  <div key={company.name} className={`p-2.5 rounded-xl border text-sm ${
+                    company.recommended ? 'bg-green-500/10 border-green-500/30' : 'bg-white/5 border-white/5'
+                  }`}>
+                    <div className="flex items-center justify-between mb-1">
+                      <span className="font-medium text-xs">{company.name}</span>
+                      <span className={`px-2 py-0.5 rounded text-[10px] font-bold ${
+                        company.recommended ? 'bg-green-500/20 text-green-400' : 'bg-amber-500/20 text-amber-400'
+                      }`}>
+                        {company.recommended ? '65+ OK' : 'Prüfen'}
+                      </span>
+                    </div>
+                    <div className="grid grid-cols-2 gap-1 text-xs text-chile-text-secondary">
+                      <div>Höchstalter: <span className="text-white">{company.maxAge}</span></div>
+                      <div>Zuschlag: <span className="text-white">{company.seniorSurcharge}</span></div>
+                    </div>
+                    <div className="text-[10px] text-chile-text-muted mt-1">{company.notes}</div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Insurance for Seniors */}
+              <div className="p-3 rounded-xl bg-amber-500/10 border-l-4 border-amber-500 text-sm mb-3">
+                <div className="font-bold text-amber-400 mb-1.5">🛡️ Versicherung & 65+ Fahrer</div>
+                <div className="space-y-1 text-xs text-chile-text-secondary">
+                  {carRentalData.seniorDriverInfo.insuranceImplications.map((item, i) => (
+                    <div key={i} className="flex gap-1.5"><span className="text-amber-400 flex-shrink-0">→</span> {item}</div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Possible Extra Costs */}
+              <div className="p-3 rounded-xl bg-white/5 border border-white/5 text-sm mb-3">
+                <div className="font-bold text-xs mb-1.5">💰 Mögliche Zusatzkosten durch 65+ (Worst Case)</div>
+                <div className="grid grid-cols-2 gap-x-3 gap-y-1 text-xs text-chile-text-secondary">
+                  <div>Senioren-Zuschlag</div>
+                  <div className="text-amber-400 font-medium">{carRentalData.seniorDriverInfo.typicalCosts.seniorSurcharge}</div>
+                  <div>Extraversicherung</div>
+                  <div className="text-amber-400 font-medium">{carRentalData.seniorDriverInfo.typicalCosts.extraInsurance}</div>
+                  <div>Ärztliches Attest</div>
+                  <div className="text-amber-400 font-medium">{carRentalData.seniorDriverInfo.typicalCosts.medicalCertificate}</div>
+                  <div className="font-bold text-white">Worst Case 23 Tage</div>
+                  <div className="text-red-400 font-bold">{carRentalData.seniorDriverInfo.typicalCosts.total23Days}</div>
+                </div>
+                <div className="text-[10px] text-chile-text-muted mt-2">
+                  💡 Mit der Strategie „Jüngerer = Hauptmieter" können die meisten dieser Kosten vermieden werden!
+                </div>
+              </div>
+
+              {/* Action Items */}
+              <div className="p-3 rounded-xl bg-chile-accent-teal/10 border-l-4 border-chile-accent-teal text-sm">
+                <div className="font-bold text-chile-accent-teal mb-1.5">📝 To-Do-Liste für 65+ Fahrer</div>
+                <div className="space-y-1 text-xs text-chile-text-secondary">
+                  {carRentalData.seniorDriverInfo.actionItems.map((item, i) => (
+                    <div key={i} className="flex gap-1.5"><span className="text-chile-accent-teal flex-shrink-0">→</span> {item}</div>
+                  ))}
                 </div>
               </div>
             </section>
@@ -180,6 +299,7 @@ export default function CarRentalPage({ onClose }: CarRentalPageProps) {
                   <div>→ <strong className="text-white">Transfercar.cl prüfen</strong>: März = Umzugszeit, evtl. kostenlose Deals</div>
                   <div>→ <strong className="text-white">LYS direkt anfragen</strong>: Broker-Preis oft besser als Aggregator</div>
                   <div>→ <strong className="text-white">JetSmart Gepäck</strong>: Nur Handgepäck buchen für Rückflug, Koffer separat</div>
+                  <div>→ <strong className="text-purple-400">Jüngeren als Hauptmieter</strong>: Vermeidet mögliche 65+ Zuschläge</div>
                 </div>
               </div>
             </section>
@@ -197,7 +317,7 @@ export default function CarRentalPage({ onClose }: CarRentalPageProps) {
                 <div className="text-chile-text-secondary space-y-1">
                   <div><strong className="text-white">Top-Wahl:</strong> Suzuki Vitara, Hyundai Tucson, Kia Sportage</div>
                   <div><strong className="text-white">Alternative:</strong> MG ZS, Toyota Raize, VW T-Cross</div>
-                  <div><strong className="text-white">Getriebe:</strong> Manual — alle können Schaltung, spart $10-15/Tag</div>
+                  <div><strong className="text-white">Getriebe:</strong> Schaltung — alle können es, spart $10-15/Tag</div>
                   <div><strong className="text-white">Grund:</strong> Bodenfreiheit für Ripio + Platz für 3 + Gepäck</div>
                 </div>
               </div>
@@ -324,6 +444,7 @@ export default function CarRentalPage({ onClose }: CarRentalPageProps) {
                         <div className="text-xs text-chile-text-muted mt-0.5">
                           {company.type === 'international' ? '🌍 International' : company.type === 'local-broker' ? '🤝 Broker' : '🇨🇱 Lokal'}
                           {(company as any).allowsRipio && <span className="ml-2 text-chile-accent-teal">🪨 Ripio OK</span>}
+                          {(company as any).seniorPolicy && <span className="ml-2 text-purple-400">👴 {(company as any).seniorPolicy}</span>}
                         </div>
                       </div>
                       <span className={`px-2 py-0.5 rounded text-xs font-bold ${
@@ -367,12 +488,12 @@ export default function CarRentalPage({ onClose }: CarRentalPageProps) {
           {(!activeSection || activeSection === 'routes') && (
             <section>
               <h2 className="font-bold text-base mb-3 flex items-center gap-2">
-                <span>📍</span> One-Way Routen & Drop-Off Gebühren
+                <span>📍</span> One-Way Routen & Abgabegebühren
               </h2>
               <div className="p-3 rounded-xl bg-red-500/10 border-l-4 border-red-500 text-sm mb-3">
-                <div className="font-bold text-red-400">⚠️ One-Way Gebühren sind teuer</div>
+                <div className="font-bold text-red-400">⚠️ One-Way-Gebühren sind teuer</div>
                 <div className="text-chile-text-secondary text-xs mt-1">
-                  Standard: ~$0.45/km. Alle Anbieter berechnen ähnliche Preise. Unsere Route: $350–450.
+                  Standard: ~$0,45/km. Alle Anbieter berechnen ähnliche Preise. Unsere Route: $350–450.
                 </div>
               </div>
               <div className="space-y-2">
@@ -390,8 +511,8 @@ export default function CarRentalPage({ onClose }: CarRentalPageProps) {
                       <div className="grid grid-cols-2 gap-x-3 gap-y-0.5 text-xs text-chile-text-secondary">
                         <div>📏 {route.distance}</div>
                         <div>⏱️ {route.driveTime}</div>
-                        <div className="text-amber-400 font-medium">💰 Drop-Off: {route.estimatedDropOffFee}</div>
-                        <div>⛽ Fuel: {route.fuelCost}</div>
+                        <div className="text-amber-400 font-medium">💰 Abgabe: {route.estimatedDropOffFee}</div>
+                        <div>⛽ Benzin: {route.fuelCost}</div>
                         <div>🏗️ Maut: {route.tollCosts}</div>
                       </div>
                     </div>
@@ -401,7 +522,7 @@ export default function CarRentalPage({ onClose }: CarRentalPageProps) {
               <div className="mt-3 p-3 rounded-xl bg-amber-500/10 border-l-4 border-amber-500 text-sm">
                 <div className="font-bold text-amber-400">💰 Unsere Route: Santiago → Puerto Montt</div>
                 <div className="text-xs text-chile-text-secondary mt-1">
-                  SUV $45/Tag × 23 = $1.035 + $400 Drop-Off + $60 Maut + $130 Benzin + $290 Versicherung + $300 Zusatzfahrer = <strong className="text-white">~$2.215 USD</strong>
+                  SUV $45/Tag × 23 = $1.035 + $400 Abgabe + $60 Maut + $130 Benzin + $290 Versicherung + $300 Zusatzfahrer = <strong className="text-white">~$2.215 USD</strong>
                 </div>
               </div>
             </section>
@@ -443,7 +564,7 @@ export default function CarRentalPage({ onClose }: CarRentalPageProps) {
               <div className="p-3 rounded-xl bg-blue-500/10 border-l-4 border-blue-500 text-sm">
                 <div className="font-bold text-blue-400 mb-1">🇩🇪 Deutsche Führerscheine</div>
                 <div className="text-xs text-chile-text-secondary">
-                  EU-Führerschein wird in Chile bis zu 90 Tage akzeptiert. Internationaler Führerschein empfohlen aber nicht pflicht.
+                  EU-Führerschein wird in Chile bis zu 90 Tage akzeptiert. Internationaler Führerschein empfohlen aber nicht Pflicht.
                   Kreditkarte muss ausreichendes Limit für Kaution haben (CLP 500.000–2.000.000, also €490–€1.960).
                 </div>
               </div>
@@ -480,7 +601,7 @@ export default function CarRentalPage({ onClose }: CarRentalPageProps) {
                 </div>
 
                 <div className="p-3 rounded-xl bg-chile-accent-teal/10 border border-chile-accent-teal/30 text-sm">
-                  <div className="font-bold text-xs mb-1.5 text-chile-accent-teal">✅ Empfohlen: Full CDW (Zero Deductible)</div>
+                  <div className="font-bold text-xs mb-1.5 text-chile-accent-teal">✅ Empfohlen: Full CDW (Keine Selbstbeteiligung)</div>
                   <div className="text-xs text-chile-text-secondary space-y-1">
                     <div>→ Keine Selbstbeteiligung bei Schäden</div>
                     <div>→ ~$10-15/Tag extra × 23 Tage = $230-345</div>
@@ -523,7 +644,7 @@ export default function CarRentalPage({ onClose }: CarRentalPageProps) {
                 <div className="font-bold text-xs mb-1.5">⛽ Tankstellen auf unserer Route</div>
                 <div className="space-y-1 text-xs text-chile-text-secondary">
                   <div>→ <strong className="text-white">Ruta 5</strong>: Copec alle 50-80km — kein Problem</div>
-                  <div>→ <strong className="text-white">Seengebiet</strong>: In allen Städten (Pucón, Villarrica, Osorno, etc.)</div>
+                  <div>→ <strong className="text-white">Seengebiet</strong>: In allen Städten (Pucón, Villarrica, Osorno, usw.)</div>
                   <div>→ <strong className="text-amber-400">Nationalpark-Straßen</strong>: KEINE Tankstellen! Vorher volltanken!</div>
                   <div>→ <strong className="text-white">SUV-Verbrauch</strong>: ~9-11L/100km statt ~7L/100km bei Compact</div>
                   <div>→ Auf Ripio: Mehr Verbrauch durch niedrige Geschwindigkeit + hohes Drehmoment</div>
@@ -565,7 +686,7 @@ export default function CarRentalPage({ onClose }: CarRentalPageProps) {
                   <div className="text-[10px] text-chile-text-muted">km/h Stadt</div>
                 </div>
                 <div className="p-2.5 rounded-xl bg-white/5 text-center">
-                  <div className="text-xl font-bold text-chile-accent-red">0.3 g/L</div>
+                  <div className="text-xl font-bold text-chile-accent-red">0,3 g/L</div>
                   <div className="text-[10px] text-chile-text-muted">Promillegrenze</div>
                 </div>
                 <div className="p-2.5 rounded-xl bg-white/5 text-center">
@@ -578,7 +699,7 @@ export default function CarRentalPage({ onClose }: CarRentalPageProps) {
                 <div className="flex gap-1.5"><span>🚫</span> Kein Rechtsabbiegen bei Rot</div>
                 <div className="flex gap-1.5"><span>📱</span> Handy nur mit Freisprechanlage</div>
                 <div className="flex gap-1.5"><span>🚭</span> Rauchen am Steuer verboten</div>
-                <div className="flex gap-1.5"><span>🍺</span> Null-Toleranz empfohlen (0.3 g/L ≈ 1 kleines Bier)</div>
+                <div className="flex gap-1.5"><span>🍺</span> Null-Toleranz empfohlen (0,3 g/L ≈ 1 kleines Bier)</div>
                 <div className="flex gap-1.5"><span>👮</span> Carabineros sind ehrlich – niemals Geld anbieten</div>
                 <div className="flex gap-1.5"><span>🚗</span> Auf Ripio: RECHTS fahren, langsam, Abstand halten</div>
               </div>
@@ -642,7 +763,7 @@ export default function CarRentalPage({ onClose }: CarRentalPageProps) {
           {(!activeSection || activeSection === 'prices') && (
             <section>
               <h2 className="font-bold text-base mb-3 flex items-center gap-2">
-                <span>💵</span> Tagespreise (Feb/Mar 2026)
+                <span>💵</span> Tagespreise (Feb/Mär 2026)
               </h2>
               <div className="space-y-2">
                 {carRentalData.dailyRates.categories.map(cat => (
@@ -771,6 +892,7 @@ export default function CarRentalPage({ onClose }: CarRentalPageProps) {
                     <div>→ <strong className="text-amber-400">Ripio-Versicherung schriftlich bestätigen lassen</strong></div>
                     <div>→ Zusatzfahrer-Gebühr verhandeln (23 Tage = Verhandlungsbasis)</div>
                     <div>→ Internationalen Führerschein beantragen (für alle 3)</div>
+                    <div>→ <strong className="text-purple-400">Jüngeren als Hauptmieter eintragen (65+ als Zusatzfahrer)</strong></div>
                   </div>
                 </div>
                 <div className="p-3 rounded-xl bg-white/5 border border-white/5 text-sm">

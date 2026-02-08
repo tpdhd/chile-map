@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-02-07",
+  "lastUpdated": "2026-02-08",
   "currency": {
     "CLP_to_USD": 0.00105,
     "CLP_to_EUR": 0.00098,
-    "note": "Approximate rates as of early 2026"
+    "note": "Ungefähre Kurse Stand Anfang 2026"
   },
   "tripDetails": {
     "dates": {
@@ -15,113 +15,206 @@
       "flightBack": "~2026-03-28"
     },
     "pickup": "Santiago SCL Airport",
-    "dropoff": "Puerto Montt (PMC Airport or city)",
+    "dropoff": "Puerto Montt (PMC Airport oder Stadt)",
     "travelers": {
       "adults": 3,
-      "luggage": "3 small suitcases + small bags, possibly 1 large suitcase on return"
+      "luggage": "3 kleine Koffer + Taschen, evtl. 1 großer Koffer auf dem Rückweg"
     },
-    "transmission": "Manual (all drivers can drive stick)",
-    "terrain": "Will drive on gravel/ripio roads — need SUV with ground clearance",
+    "transmission": "Schaltung (alle Fahrer können Schaltgetriebe)",
+    "terrain": "Schotter-/Ripio-Straßen — SUV mit Bodenfreiheit erforderlich",
     "argentinaCrossing": false,
-    "flightReturn": "Puerto Montt (PMC) → Santiago (SCL), ~$30-50 with JetSmart/SKY"
+    "flightReturn": "Puerto Montt (PMC) → Santiago (SCL), ~$30-50 mit JetSmart/SKY"
+  },
+  "seniorDriverInfo": {
+    "title": "Fahrer 65+ — Alterszuschläge & Strategie",
+    "summary": "Einer der 3 Fahrer ist über 65 und wäre als Hauptfahrer (Vertragspartner) eingetragen. In Chile gibt es KEINE einheitliche gesetzliche Altersobergrenze für Mietwagen — die Regeln variieren stark je nach Anbieter.",
+    "keyFinding": "Die meisten chilenischen Vermieter haben KEIN generelles Höchstalter oder verlangen erst ab 70-75 Aufschläge. Mit 65 sollte es bei den meisten Anbietern problemlos gehen.",
+    "companySeniorPolicies": [
+      {
+        "name": "LYS Rent a Car",
+        "maxAge": "Keine bekannte Obergrenze",
+        "seniorSurcharge": "Keine bekannten Zuschläge ab 65",
+        "notes": "Lokaler Broker, keine Alters-Beschränkungen auf der Website. Direkt anfragen und bestätigen lassen.",
+        "recommended": true
+      },
+      {
+        "name": "Europcar",
+        "maxAge": "70-80 (je nach Land/Standort)",
+        "seniorSurcharge": "~€25 pro Miete ab 70 (europäische Erfahrungswerte)",
+        "notes": "International üblich: Zuschlag ab 70, Obergrenze bei 80. In Chile evtl. lockerer. Vor Buchung AGB prüfen.",
+        "recommended": true
+      },
+      {
+        "name": "Hertz",
+        "maxAge": "75+ (mit ärztlichem Attest möglich)",
+        "seniorSurcharge": "~€7/Tag ab 71 (max. €70 pro Miete, europ. Tarife)",
+        "notes": "International: Zuschlag ab 71. In Chile möglicherweise andere Regeln. Unbedingt bei Buchung nachfragen.",
+        "recommended": false
+      },
+      {
+        "name": "Budget / Avis",
+        "maxAge": "70-75 (Luxusklasse strenger)",
+        "seniorSurcharge": "Kein Zuschlag bekannt in Südamerika",
+        "notes": "International streng (75+ braucht Arztbrief + Extraversicherung). In Chile tendenziell lockerer.",
+        "recommended": false
+      },
+      {
+        "name": "Chilean Rent-A-Car",
+        "maxAge": "Keine Obergrenze auf Website genannt",
+        "seniorSurcharge": "Kein Zuschlag bekannt",
+        "notes": "Nur Mindest-Alter (23) erwähnt. Kein Höchstalter in den AGB. Gute Option für 65+ Fahrer.",
+        "recommended": true
+      },
+      {
+        "name": "Rosselot Rent-A-Car",
+        "maxAge": "Keine bekannte Obergrenze",
+        "seniorSurcharge": "Nicht bekannt",
+        "notes": "Lokaler Anbieter, tendenziell flexibler. Direkt anfragen.",
+        "recommended": true
+      },
+      {
+        "name": "Mitta Rent a Car",
+        "maxAge": "Keine bekannte Obergrenze",
+        "seniorSurcharge": "Nicht bekannt",
+        "notes": "Lokaler Anbieter. Vor Buchung bestätigen lassen.",
+        "recommended": true
+      }
+    ],
+    "insuranceImplications": [
+      "Manche Versicherer erhöhen die Selbstbeteiligung für Fahrer 65+",
+      "Full CDW (Zero Deductible) wird DRINGEND empfohlen — schützt vor erhöhter SB",
+      "Reiseversicherung von zu Hause prüfen: Deckt sie Mietwagen für 65+ in Südamerika?",
+      "Ärztliches Attest mitnehmen (Fitness-to-drive) — kann verlangt werden, besonders ab 70"
+    ],
+    "strategy": {
+      "title": "💡 Strategie: Muss der 65+ Fahrer Hauptfahrer sein?",
+      "explanation": "NEIN! Der 65+ Fahrer muss NICHT zwingend der Hauptfahrer (Vertragspartner) sein. Es kann sinnvoll sein, einen jüngeren Fahrer als Hauptmieter einzutragen und den 65+ Fahrer als Zusatzfahrer hinzuzufügen.",
+      "advantages": [
+        "Kein möglicher Senioren-Zuschlag auf den Grundtarif",
+        "Keine potentiellen Probleme mit Alters-Obergrenzen",
+        "Versicherungsbedingungen könnten günstiger sein",
+        "Kein ärztliches Attest nötig"
+      ],
+      "disadvantages": [
+        "Kreditkarte muss auf den Namen des Hauptfahrers lauten",
+        "Der jüngere Hauptfahrer trägt die vertragliche Verantwortung",
+        "Zusatzfahrer-Gebühr fällt trotzdem an ($5-10/Tag)"
+      ],
+      "recommendation": "EMPFEHLUNG: Einen der jüngeren Fahrer als Hauptmieter eintragen. Den 65+ Fahrer als Zusatzfahrer anmelden. Das vermeidet potentielle Alterszuschläge und Versicherungskomplikationen. Die Zusatzfahrer-Gebühr ($5-8/Tag) fällt ohnehin für 2 der 3 Fahrer an.",
+      "importantNote": "WICHTIG: Alle 3 Fahrer müssen trotzdem bei Abholung persönlich erscheinen mit Führerschein + Reisepass. Der 65+ Fahrer darf das Auto genauso fahren wie die anderen — er ist nur nicht der Vertragspartner."
+    },
+    "typicalCosts": {
+      "seniorSurcharge": "$0-15/Tag (je nach Anbieter, ab 65-75)",
+      "extraInsurance": "$5-15/Tag (wenn erhöhte SB oder Pflichtversicherung)",
+      "medicalCertificate": "€20-50 (Arztbrief als Vorbereitung, empfohlen)",
+      "total23Days": "$0-690 zusätzlich (im schlimmsten Fall)"
+    },
+    "actionItems": [
+      "Bei LYS und Chilean Rent-A-Car direkt nach 65+ Konditionen fragen",
+      "Einen jüngeren Fahrer als Hauptmieter in Betracht ziehen",
+      "Full CDW buchen — unabhängig vom Alter sinnvoll bei Ripio",
+      "Ärztliches Attest (Fahrtauglichkeit) vorsorglich mitnehmen",
+      "AGB des gewählten Anbieters VOR Buchung auf Altersgrenzen prüfen",
+      "Schriftliche Bestätigung einholen: Kein Alterszuschlag / welche Konditionen"
+    ]
   },
   "vehicleRecommendation": {
-    "type": "Midsize SUV / Compact SUV",
-    "transmission": "Manual",
+    "type": "Midsize SUV / Kompakt-SUV",
+    "transmission": "Schaltung",
     "examples": ["Suzuki Vitara", "Hyundai Tucson", "Kia Sportage", "MG ZS", "Toyota Raize", "VW T-Cross"],
-    "whySUV": "Ground clearance needed for ripio/gravel roads in Lake District and Carretera Austral",
-    "trunkSpace": "Adequate for 3 adults + small suitcases. Tucson/Sportage best for space.",
-    "note": "Manual transmission SUVs are less common — book EARLY!"
+    "whySUV": "Bodenfreiheit nötig für Ripio/Schotter im Seengebiet und Carretera Austral",
+    "trunkSpace": "Ausreichend für 3 Erwachsene + kleine Koffer. Tucson/Sportage bieten am meisten Platz.",
+    "note": "Manuelle SUVs sind selten — FRÜH buchen!"
   },
   "costEstimate": {
     "duration": 23,
     "breakdown": [
-      { "item": "Midsize SUV Manual (~$35-55/day × 23 days)", "low": 805, "high": 1265, "currency": "USD" },
-      { "item": "One-way fee Santiago → Puerto Montt", "low": 350, "high": 450, "currency": "USD" },
-      { "item": "Full CDW Insurance (~$10-15/day × 23 days)", "low": 230, "high": 345, "currency": "USD" },
-      { "item": "Additional driver fee (2 extra × ~$5-8/day × 23 days)", "low": 230, "high": 368, "currency": "USD" },
-      { "item": "Fuel (Ruta 5 + detours, ~1500km total)", "low": 120, "high": 180, "currency": "USD" },
-      { "item": "Tolls (Ruta 5 + urban TAG)", "low": 50, "high": 80, "currency": "USD" },
-      { "item": "Flight PMC → SCL (JetSmart/SKY × 3 persons)", "low": 90, "high": 150, "currency": "USD" }
+      { "item": "Midsize SUV Schaltung (~$35-55/Tag × 23 Tage)", "low": 805, "high": 1265, "currency": "USD" },
+      { "item": "One-Way-Gebühr Santiago → Puerto Montt", "low": 350, "high": 450, "currency": "USD" },
+      { "item": "Vollkasko CDW (~$10-15/Tag × 23 Tage)", "low": 230, "high": 345, "currency": "USD" },
+      { "item": "Zusatzfahrer-Gebühr (2 extra × ~$5-8/Tag × 23 Tage)", "low": 230, "high": 368, "currency": "USD" },
+      { "item": "Benzin (Ruta 5 + Abstecher, ~1.500 km gesamt)", "low": 120, "high": 180, "currency": "USD" },
+      { "item": "Maut (Ruta 5 + TAG Santiago)", "low": 50, "high": 80, "currency": "USD" },
+      { "item": "Flug PMC → SCL (JetSmart/SKY × 3 Personen)", "low": 90, "high": 150, "currency": "USD" }
     ],
     "totalLow": 1875,
     "totalHigh": 2838,
     "perPersonLow": 625,
     "perPersonHigh": 946,
-    "note": "Total estimate for 23-day trip, 3 adults. Per person ~$625-946 USD for all transport."
+    "note": "Gesamtschätzung für 23 Tage, 3 Erwachsene. Pro Person ~$625-946 USD für alles Transport."
   },
   "ripioInfo": {
-    "whatIsRipio": "Gravel/dirt roads common in southern Chile, especially Lake District side roads, national parks, and Carretera Austral",
+    "whatIsRipio": "Schotter-/Erdstraßen, verbreitet im Süden Chiles, besonders Seengebiet-Nebenstraßen, Nationalparks und Carretera Austral",
     "companiesThatAllowRipio": [
       {
         "name": "LYS Rent a Car",
-        "policy": "Allows gravel roads with appropriate vehicle (SUV/crossover). Insurance covers if vehicle matches road type.",
+        "policy": "Erlaubt Schotterstraßen mit passendem Fahrzeug (SUV/Crossover). Versicherung greift wenn Fahrzeug zum Straßentyp passt.",
         "recommended": true
       },
       {
         "name": "Europcar",
-        "policy": "SUV/4x4 categories permitted on unpaved roads. Standard CDW applies. Clarify at booking.",
+        "policy": "SUV/4x4-Kategorien auf unbefestigten Straßen erlaubt. Standard-CDW gilt. Bei Buchung klären.",
         "recommended": true
       },
       {
         "name": "Chilean Rent-A-Car",
-        "policy": "Allows unpaved roads with SUV category. Check specific terms at booking.",
+        "policy": "Erlaubt unbefestigte Straßen mit SUV-Kategorie. Genaue Bedingungen bei Buchung prüfen.",
         "recommended": true
       },
       {
         "name": "Hertz",
-        "policy": "SUV/pickup categories generally permitted on maintained gravel roads. Confirm at pickup.",
+        "policy": "SUV/Pickup-Kategorien auf instandgehaltenen Schotterstraßen generell erlaubt. Bei Abholung bestätigen.",
         "recommended": false
       },
       {
         "name": "Budget/Avis",
-        "policy": "Mixed reports. Some vehicles restricted to paved roads only. Must confirm at booking.",
+        "policy": "Gemischte Berichte. Manche Fahrzeuge auf befestigte Straßen beschränkt. Unbedingt bei Buchung bestätigen!",
         "recommended": false
       },
       {
         "name": "Econorent",
-        "policy": "Low ratings, unclear gravel road policy. Not recommended.",
+        "policy": "Schlechte Bewertungen, unklare Ripio-Policy. Nicht empfohlen.",
         "recommended": false
       }
     ],
-    "insuranceWarning": "CRITICAL: Many companies void insurance on gravel roads if vehicle is NOT an SUV/4x4 category. Always get written confirmation that your specific vehicle + insurance covers ripio.",
+    "insuranceWarning": "KRITISCH: Viele Anbieter schließen Versicherung auf Schotterstraßen aus, wenn das Fahrzeug NICHT als SUV/4x4 kategorisiert ist. Immer schriftliche Bestätigung einholen, dass Fahrzeug + Versicherung Ripio abdecken.",
     "tipsForRipio": [
-      "Reduce speed to 40-60 km/h on gravel — stones chip windshields and undercarriage",
-      "Increase following distance — dust clouds reduce visibility",
-      "Check tire pressure daily — lower slightly (28-30 PSI) for better grip on gravel",
-      "Carry a spare tire and know how to change it",
-      "Avoid sudden braking or sharp turns — loose gravel = less traction",
-      "Watch for washboard sections (corrugations) — find the 'sweet spot' speed",
-      "Pull over for oncoming trucks — they throw rocks",
-      "Park facing downhill on steep gravel — easier to start"
+      "Geschwindigkeit auf 40-60 km/h reduzieren — Steine beschädigen Windschutzscheibe und Unterboden",
+      "Mehr Abstand halten — Staubwolken reduzieren die Sicht",
+      "Reifendruck täglich prüfen — leicht reduzieren (28-30 PSI) für besseren Grip auf Schotter",
+      "Reserverad mitnehmen und Reifenwechsel beherrschen",
+      "Plötzliches Bremsen und scharfe Kurven vermeiden — loser Schotter = weniger Traktion",
+      "Auf Wellblech-Abschnitte achten — die optimale Geschwindigkeit finden",
+      "Für entgegenkommende LKW ausweichen — sie schleudern Steine hoch",
+      "Auf steilen Schotterstraßen bergab parken — leichter zum Anfahren"
     ]
   },
   "breakdownOnRipio": {
     "steps": [
-      "Pull safely off the road. Turn on hazard lights.",
-      "Call rental company's 24/7 roadside assistance number (on your contract)",
-      "If no cell signal: flag down passing vehicles — Chileans are incredibly helpful",
-      "Emergency: call 133 (Carabineros) — they coordinate rescues even in remote areas",
-      "If you have a flat: change to spare tire, drive slowly to nearest town",
-      "Document everything with photos for insurance claim"
+      "Sicher am Straßenrand anhalten. Warnblinkanlage einschalten.",
+      "Pannenhilfe des Vermieters anrufen (24/7-Nummer steht im Vertrag)",
+      "Wenn kein Empfang: Vorbeifahrende Autos anhalten — Chilenen sind unglaublich hilfsbereit",
+      "Notfall: 133 anrufen (Carabineros) — koordinieren Rettung auch in abgelegenen Gebieten",
+      "Bei Reifenpanne: Reserverad aufziehen, langsam zum nächsten Ort fahren",
+      "Alles mit Fotos dokumentieren für den Versicherungsanspruch"
     ],
     "emergencyKit": [
-      "Spare tire + jack + wrench (verify at pickup!)",
-      "Flashlight / headlamp",
-      "First aid kit",
-      "Water (2L per person minimum)",
-      "Snacks / energy bars",
-      "Warm clothing layers (weather changes fast in the south)",
-      "Portable phone charger / car charger",
-      "Physical map as backup to offline maps"
+      "Reserverad + Wagenheber + Radschlüssel (bei Abholung prüfen!)",
+      "Taschenlampe / Stirnlampe",
+      "Erste-Hilfe-Set",
+      "Wasser (mindestens 2L pro Person)",
+      "Snacks / Energieriegel",
+      "Warme Kleidungsschichten (Wetter wechselt schnell im Süden)",
+      "Tragbare Powerbank / Auto-Ladegerät",
+      "Physische Karte als Backup zu Offline-Karten"
     ]
   },
   "additionalDriverInfo": {
-    "howItWorks": "All additional drivers MUST be registered on the rental contract at pickup",
-    "typicalFee": "$5-10 USD per additional driver per day",
-    "requirements": "Each driver needs: valid license + passport + must be present at pickup to sign",
-    "tip": "Some companies include 1 additional driver free. LYS and Chilean Rent-A-Car sometimes negotiate this for longer rentals (23 days = leverage!)",
-    "forThreeDrivers": "Primary driver: free. 2 additional drivers × $5-8/day × 23 days = $230-368 USD extra. Ask for a discount!"
+    "howItWorks": "Alle Zusatzfahrer MÜSSEN bei Abholung im Mietvertrag eingetragen werden",
+    "typicalFee": "$5-10 USD pro Zusatzfahrer pro Tag",
+    "requirements": "Jeder Fahrer braucht: gültigen Führerschein + Reisepass + muss bei Abholung persönlich anwesend sein",
+    "tip": "Manche Anbieter inkludieren 1 Zusatzfahrer kostenlos. LYS und Chilean Rent-A-Car verhandeln dies bei längeren Mieten (23 Tage = Verhandlungsbasis!)",
+    "forThreeDrivers": "Hauptfahrer: kostenlos. 2 Zusatzfahrer × $5-8/Tag × 23 Tage = $230-368 USD extra. Rabatt verhandeln!"
   },
   "rentalCompanies": [
     {
@@ -131,36 +224,40 @@
       "website": "https://www.lys.cl",
       "locations": ["Santiago", "Calama", "Puerto Montt", "Punta Arenas"],
       "allowsOneWay": true,
-      "oneWayFeeNote": "Santiago→Puerto Montt: USD 390. Transparent pricing.",
+      "oneWayFeeNote": "Santiago→Puerto Montt: USD 390. Transparente Preise.",
       "allowsRipio": true,
-      "ripioNote": "SUV/crossover categories covered on gravel roads",
+      "ripioNote": "SUV/Crossover-Kategorien auf Schotterstraßen abgedeckt",
       "minAge": 21,
+      "maxAge": "Keine bekannte Obergrenze",
+      "seniorPolicy": "Keine bekannten 65+ Zuschläge",
       "insurance": {
         "cdwIncluded": true,
-        "deductible": "USD 500–1500 per event",
+        "deductible": "USD 500–1500 pro Ereignis",
         "fullCoverageAvailable": true,
         "ripioCovers": true
       },
-      "features": ["Broker with best deals", "English support 24/7", "Excellent reviews", "Since 1997", "Ripio OK with SUV"]
+      "features": ["Broker mit besten Deals", "Englisch-Support 24/7", "Hervorragende Bewertungen", "Seit 1997", "Ripio OK mit SUV"]
     },
     {
       "name": "Europcar",
       "type": "international",
       "rating": 9.2,
       "website": "https://www.europcar.com/en-us/places/car-rental-chile",
-      "locations": ["Santiago SCL", "Temuco", "Puerto Montt", "Punta Arenas", "Calama", "30+ locations"],
+      "locations": ["Santiago SCL", "Temuco", "Puerto Montt", "Punta Arenas", "Calama", "30+ Standorte"],
       "allowsOneWay": true,
-      "oneWayFeeNote": "Available between all Chilean offices, fee based on distance",
+      "oneWayFeeNote": "Zwischen allen chilenischen Büros möglich, Gebühr nach Entfernung",
       "allowsRipio": true,
-      "ripioNote": "SUV/4x4 categories permitted on unpaved roads",
+      "ripioNote": "SUV/4x4-Kategorien auf unbefestigten Straßen erlaubt",
       "minAge": 21,
+      "maxAge": "70-80 (je nach Standort)",
+      "seniorPolicy": "Möglicher Zuschlag ab 70. Bei Buchung prüfen.",
       "insurance": {
         "cdwIncluded": true,
-        "deductible": "USD 500–1500 depending on category",
+        "deductible": "USD 500–1500 je nach Kategorie",
         "fullCoverageAvailable": true,
         "ripioCovers": true
       },
-      "features": ["Wide network", "Transfercar relocation partner", "Ripio OK with SUV", "30+ offices"]
+      "features": ["Großes Netzwerk", "Transfercar-Partner", "Ripio OK mit SUV", "30+ Büros"]
     },
     {
       "name": "Hertz",
@@ -169,16 +266,18 @@
       "website": "https://www.hertz.com/rentacar/reservation/",
       "locations": ["Santiago SCL", "Puerto Montt", "Temuco", "Punta Arenas", "Calama"],
       "allowsOneWay": true,
-      "oneWayFeeNote": "One-way fees apply, must book in advance",
+      "oneWayFeeNote": "One-Way-Gebühren, Vorausbuchung nötig",
       "allowsRipio": true,
-      "ripioNote": "Confirm gravel road policy at booking for your specific vehicle",
+      "ripioNote": "Ripio-Policy bei Buchung für das spezifische Fahrzeug bestätigen",
       "minAge": 21,
+      "maxAge": "75+ (mit Attest möglich)",
+      "seniorPolicy": "Möglicher Zuschlag ab 71 (~€7/Tag, max. €70/Miete)",
       "averageDailyRate": "USD 54",
       "insurance": {
         "cdwIncluded": true,
         "fullCoverageAvailable": true
       },
-      "features": ["Transfercar relocation partner", "Large fleet", "International standards"]
+      "features": ["Transfercar-Partner", "Große Flotte", "Internationale Standards"]
     },
     {
       "name": "Budget / Avis",
@@ -187,15 +286,17 @@
       "website": "https://www.budget.com",
       "locations": ["Santiago SCL", "Puerto Montt", "Temuco", "Punta Arenas"],
       "allowsOneWay": true,
-      "oneWayFeeNote": "Must book in advance, fees payable at pickup",
+      "oneWayFeeNote": "Vorausbuchung nötig, Gebühr bei Abholung",
       "allowsRipio": false,
-      "ripioNote": "Mixed reports — some vehicles restricted to paved roads. Confirm at booking!",
+      "ripioNote": "Gemischte Berichte — manche Fahrzeuge nur für befestigte Straßen. Bei Buchung bestätigen!",
       "minAge": 21,
+      "maxAge": "70-75 (je nach Fahrzeugkategorie)",
+      "seniorPolicy": "Kein Zuschlag bekannt in Chile. Ab 75 evtl. Arztbrief nötig.",
       "insurance": {
         "cdwIncluded": true,
         "fullCoverageAvailable": true
       },
-      "features": ["Good availability", "Reliable fleet"]
+      "features": ["Gute Verfügbarkeit", "Zuverlässige Flotte"]
     },
     {
       "name": "Chilean Rent-A-Car",
@@ -204,17 +305,19 @@
       "website": "https://www.chileanrentacar.cl",
       "locations": ["Santiago SCL", "Antofagasta", "Calama", "Concepción", "Temuco", "Puerto Montt"],
       "allowsOneWay": true,
-      "oneWayFeeNote": "Varies by distance, ~CLP 0.45/km",
+      "oneWayFeeNote": "Nach Entfernung gestaffelt, ~CLP 0,45/km",
       "allowsRipio": true,
-      "ripioNote": "SUV category allowed on unpaved roads",
+      "ripioNote": "SUV-Kategorie auf unbefestigten Straßen erlaubt",
       "minAge": 23,
-      "underage": { "minAge": 20, "surchargePerDay": "CLP 12,900" },
+      "maxAge": "Keine Obergrenze in AGB genannt",
+      "seniorPolicy": "Kein Alterszuschlag bekannt. Nur Mindest-Alter (23) in AGB.",
+      "underage": { "minAge": 20, "surchargePerDay": "CLP 12.900" },
       "insurance": {
         "cdwIncluded": true,
-        "deductible": { "economy": "CLP 500,000", "midsize": "CLP 700,000", "suv": "CLP 900,000" },
+        "deductible": { "economy": "CLP 500.000", "midsize": "CLP 700.000", "suv": "CLP 900.000" },
         "fullCoverageAvailable": true
       },
-      "features": ["Unlimited mileage", "TAG included", "Airport pickup", "Ripio OK with SUV"]
+      "features": ["Unbegrenzte Kilometer", "TAG inklusive", "Flughafen-Abholung", "Ripio OK mit SUV"]
     },
     {
       "name": "Rosselot Rent-A-Car",
@@ -223,13 +326,15 @@
       "website": "https://www.rosselot.cl",
       "locations": ["Santiago SCL", "Viña del Mar", "Concepción", "Temuco", "Puerto Montt"],
       "allowsOneWay": true,
-      "oneWayFeeNote": "Available between major cities",
+      "oneWayFeeNote": "Zwischen Großstädten verfügbar",
       "minAge": 21,
+      "maxAge": "Keine bekannte Obergrenze",
+      "seniorPolicy": "Keine bekannten 65+ Einschränkungen",
       "insurance": {
         "cdwIncluded": true,
         "fullCoverageAvailable": true
       },
-      "features": ["Local expertise", "Good fleet variety"]
+      "features": ["Lokale Expertise", "Gute Fahrzeugauswahl"]
     },
     {
       "name": "Mitta Rent a Car",
@@ -238,29 +343,33 @@
       "website": "https://www.mitta.cl",
       "locations": ["Santiago", "Temuco", "Puerto Montt", "Punta Arenas"],
       "allowsOneWay": true,
-      "oneWayFeeNote": "Transfercar relocation partner",
+      "oneWayFeeNote": "Transfercar-Partner",
       "minAge": 21,
+      "maxAge": "Keine bekannte Obergrenze",
+      "seniorPolicy": "Keine bekannten 65+ Einschränkungen",
       "insurance": {
         "cdwIncluded": true,
         "fullCoverageAvailable": true
       },
-      "features": ["Transfercar partner", "Good local coverage"]
+      "features": ["Transfercar-Partner", "Gute lokale Abdeckung"]
     },
     {
       "name": "Econorent",
       "type": "local",
       "rating": 2.0,
-      "ratingNote": "Low ratings on aggregator sites — use with caution",
+      "ratingNote": "Schlechte Bewertungen auf Vergleichsportalen — mit Vorsicht verwenden",
       "website": "https://www.econorent.cl",
       "locations": ["Santiago SCL", "Temuco", "Puerto Montt", "Concepción"],
       "allowsOneWay": true,
-      "oneWayFeeNote": "Available, fees vary",
+      "oneWayFeeNote": "Verfügbar, Gebühren variieren",
       "minAge": 22,
+      "maxAge": "Unbekannt",
+      "seniorPolicy": "Unbekannt — schlechter Service generell",
       "insurance": {
         "cdwIncluded": true,
         "fullCoverageAvailable": true
       },
-      "features": ["Budget option", "Coverage in Chile and Argentina"]
+      "features": ["Budget-Option", "Abdeckung in Chile und Argentinien"]
     }
   ],
   "oneWayRoutes": [
@@ -268,9 +377,9 @@
       "from": "Santiago (SCL Airport)",
       "to": "Temuco (ZCO Airport)",
       "distance": "680 km",
-      "driveTime": "7–8 hours",
+      "driveTime": "7–8 Stunden",
       "estimatedDropOffFee": "USD 200–300",
-      "estimatedDropOffFeeCLP": "CLP 190,000–285,000",
+      "estimatedDropOffFeeCLP": "CLP 190.000–285.000",
       "tollCosts": "USD 20–30",
       "fuelCost": "USD 55–70"
     },
@@ -278,220 +387,221 @@
       "from": "Santiago (SCL Airport)",
       "to": "Osorno",
       "distance": "920 km",
-      "driveTime": "10–11 hours",
+      "driveTime": "10–11 Stunden",
       "estimatedDropOffFee": "USD 300–380",
-      "estimatedDropOffFeeCLP": "CLP 285,000–360,000",
+      "estimatedDropOffFeeCLP": "CLP 285.000–360.000",
       "tollCosts": "USD 30–45",
       "fuelCost": "USD 75–95"
     },
     {
       "from": "Santiago (SCL Airport)",
       "to": "Puerto Montt (PMO Airport)",
-      "distance": "1,020 km",
-      "driveTime": "11–12 hours",
+      "distance": "1.020 km",
+      "driveTime": "11–12 Stunden",
       "estimatedDropOffFee": "USD 350–450",
-      "estimatedDropOffFeeCLP": "CLP 300,000–430,000",
+      "estimatedDropOffFeeCLP": "CLP 300.000–430.000",
       "tollCosts": "USD 40–60",
       "fuelCost": "USD 85–105"
     },
     {
       "from": "Santiago (SCL Airport)",
       "to": "Punta Arenas",
-      "distance": "3,100 km",
-      "driveTime": "36+ hours (multi-day)",
-      "estimatedDropOffFee": "USD 1,200–1,400",
-      "estimatedDropOffFeeCLP": "CLP 1,140,000–1,330,000",
+      "distance": "3.100 km",
+      "driveTime": "36+ Stunden (Mehrtagesfahrt)",
+      "estimatedDropOffFee": "USD 1.200–1.400",
+      "estimatedDropOffFeeCLP": "CLP 1.140.000–1.330.000",
       "tollCosts": "USD 40–60",
       "fuelCost": "USD 250–320"
     },
     {
       "from": "Puerto Montt",
       "to": "Punta Arenas / Puerto Natales",
-      "distance": "1,900 km",
-      "driveTime": "24+ hours (multi-day, ferries needed)",
+      "distance": "1.900 km",
+      "driveTime": "24+ Stunden (Mehrtagesfahrt, Fähren nötig)",
       "estimatedDropOffFee": "USD 700–900",
-      "estimatedDropOffFeeCLP": "CLP 665,000–855,000",
-      "tollCosts": "Minimal (Carretera Austral mostly free)",
+      "estimatedDropOffFeeCLP": "CLP 665.000–855.000",
+      "tollCosts": "Minimal (Carretera Austral weitgehend mautfrei)",
       "fuelCost": "USD 150–200"
     }
   ],
   "dailyRates": {
-    "period": "February/March 2026 (high season)",
-    "note": "Prices from aggregator sites, actual may vary",
+    "period": "Februar/März 2026 (Hochsaison)",
+    "note": "Preise von Vergleichsportalen, tatsächlich möglicherweise abweichend",
     "categories": [
       {
         "category": "Economy",
         "examples": "Hyundai i10, Suzuki Alto, Kia Picanto",
         "dailyRate": { "low": 15, "high": 35, "currency": "USD" },
-        "transmission": "Manual (mostly)"
+        "transmission": "Schaltung (meistens)"
       },
       {
-        "category": "Compact",
+        "category": "Kompakt",
         "examples": "Kia Rio, Hyundai Accent, Chevrolet Onix",
         "dailyRate": { "low": 22, "high": 45, "currency": "USD" },
-        "transmission": "Manual or Automatic"
+        "transmission": "Schaltung oder Automatik"
       },
       {
-        "category": "Midsize / Sedan",
+        "category": "Mittelklasse / Limousine",
         "examples": "Nissan Versa, VW Voyage, Citroen C-Elysee",
         "dailyRate": { "low": 30, "high": 55, "currency": "USD" },
-        "transmission": "Automatic available"
+        "transmission": "Automatik verfügbar"
       },
       {
-        "category": "Compact SUV / Crossover",
+        "category": "Kompakt-SUV / Crossover",
         "examples": "MG ZS, Chery Tiggo, Toyota Raize, VW T-Cross, Suzuki Vitara",
         "dailyRate": { "low": 35, "high": 65, "currency": "USD" },
-        "transmission": "Manual or Automatic",
+        "transmission": "Schaltung oder Automatik",
         "recommended": true,
-        "recommendedNote": "Best value for ripio roads + 3 adults"
+        "recommendedNote": "Bestes Preis-Leistungs-Verhältnis für Ripio + 3 Erwachsene"
       },
       {
         "category": "Midsize SUV",
         "examples": "Hyundai Tucson, Kia Sportage, Subaru Forester",
         "dailyRate": { "low": 45, "high": 80, "currency": "USD" },
-        "transmission": "Often Automatic only",
+        "transmission": "Oft nur Automatik",
         "recommended": true,
-        "recommendedNote": "Best trunk space for 3 adults + luggage"
+        "recommendedNote": "Bester Kofferraum für 3 Erwachsene + Gepäck"
       },
       {
         "category": "Full SUV",
         "examples": "VW Taos, Toyota Corolla Cross",
         "dailyRate": { "low": 50, "high": 90, "currency": "USD" },
-        "transmission": "Automatic"
+        "transmission": "Automatik"
       },
       {
         "category": "Pickup 4x4",
         "examples": "Toyota Hilux, Nissan Navara, Mitsubishi L200",
         "dailyRate": { "low": 70, "high": 130, "currency": "USD" },
-        "transmission": "Manual or Automatic"
+        "transmission": "Schaltung oder Automatik"
       }
     ]
   },
   "fuelInfo": {
     "pricePerLiter": { "CLP": 1230, "USD": 1.35, "EUR": 1.25 },
-    "fuelType": "Bencina 95 (Unleaded gasoline)",
+    "fuelType": "Bencina 95 (Bleifrei-Benzin)",
     "dieselAvailable": true,
     "dieselPricePerLiter": { "CLP": 1050, "USD": 1.15, "EUR": 1.07 },
-    "stationBrand": "Copec (most common), Shell, Petrobras, Terpel",
-    "availability": "Frequent on Ruta 5, scarcer on Carretera Austral and rural Lake District",
-    "ruta5Stations": "Copec stations every 50-80km on Ruta 5. Always available.",
-    "lakedistrict": "Fuel in all towns (Pucón, Villarrica, Osorno, etc.) but some national park roads have NO stations for 100+ km",
+    "stationBrand": "Copec (häufigste), Shell, Petrobras, Terpel",
+    "availability": "Häufig auf Ruta 5, seltener auf Carretera Austral und ländlichem Seengebiet",
+    "ruta5Stations": "Copec-Tankstellen alle 50-80km auf Ruta 5. Immer verfügbar.",
+    "lakedistrict": "Kraftstoff in allen Orten (Pucón, Villarrica, Osorno, usw.) aber manche Nationalpark-Straßen haben über 100 km KEINE Tankstelle",
     "tips": [
-      "Full-service stations (attendants pump gas for you)",
-      "Cash (Chilean pesos) widely accepted",
-      "Credit cards accepted at most stations",
-      "Copec 'Pronto' stores have good food, coffee, clean bathrooms",
-      "Always fill up before leaving main highway",
-      "On ripio roads: fill up at EVERY opportunity — detours burn more fuel",
-      "SUV uses more fuel (~9-11L/100km) than compact (~7L/100km)"
+      "Vollservice-Tankstellen (Mitarbeiter tanken für dich)",
+      "Bargeld (Chilenische Pesos) überall akzeptiert",
+      "Kreditkarten an den meisten Tankstellen akzeptiert",
+      "Copec 'Pronto'-Shops haben gutes Essen, Kaffee, saubere WCs",
+      "Immer volltanken bevor du die Hauptstraße verlässt",
+      "Auf Ripio-Straßen: Bei JEDER Gelegenheit tanken — Umwege verbrauchen mehr",
+      "SUV verbraucht mehr (~9-11L/100km) als Kompaktwagen (~7L/100km)"
     ]
   },
   "tollInfo": {
     "santiagoUrban": {
-      "system": "TAG (electronic, mandatory)",
-      "note": "Rental cars include TAG transponder",
-      "costPerTrip": "CLP 2,000–5,000 per highway section"
+      "system": "TAG (elektronisch, pflicht)",
+      "note": "Mietwagen haben TAG-Transponder inklusive",
+      "costPerTrip": "CLP 2.000–5.000 pro Autobahnabschnitt"
     },
     "intercityRuta5": {
-      "system": "Manual toll booths (cash/card)",
-      "costPerPlaza": "CLP 800–4,500",
-      "santiagoToPuertoMontt": "CLP 40,000–60,000 total (USD 40–60)"
+      "system": "Manuelle Mautstellen (Bar/Karte)",
+      "costPerPlaza": "CLP 800–4.500",
+      "santiagoToPuertoMontt": "CLP 40.000–60.000 gesamt (USD 40–60)"
     }
   },
   "drivingRules": {
-    "side": "Right",
+    "side": "Rechts",
     "speedLimits": {
       "urban": "50–60 km/h",
       "rural": "100 km/h",
       "highway": "120 km/h",
-      "ripio": "40–60 km/h (self-limit for safety)"
+      "ripio": "40–60 km/h (Eigenverantwortung)"
     },
-    "alcoholLimit": "0.3 g/L blood (very strict, ~1 small beer)",
-    "seatbelts": "Mandatory for all occupants",
-    "headlights": "Must be ON at all times, even during day",
-    "rightOnRed": "NOT allowed (unless specifically signed)",
-    "mobilePhone": "Prohibited without hands-free",
-    "smoking": "Prohibited while driving",
+    "alcoholLimit": "0,3 g/L Blutalkohol (sehr streng, ~1 kleines Bier)",
+    "seatbelts": "Pflicht für alle Insassen",
+    "headlights": "IMMER an, auch tagsüber",
+    "rightOnRed": "NICHT erlaubt (außer ausdrücklich beschildert)",
+    "mobilePhone": "Verboten ohne Freisprechanlage",
+    "smoking": "Verboten beim Fahren",
     "emergencyNumbers": {
       "police": "133",
       "ambulance": "131",
       "fire": "132",
-      "roadAssistance": "From your rental contract"
+      "roadAssistance": "Aus dem Mietvertrag"
     }
   },
   "documents": {
     "required": [
-      "Valid passport (all 3 travelers)",
-      "Valid driver's license from home country — Latin alphabet readable (ALL 3 drivers)",
-      "Credit card in primary renter's name (not debit/prepaid)",
-      "Rental agreement / booking confirmation"
+      "Gültiger Reisepass (alle 3 Reisenden)",
+      "Gültiger Führerschein aus dem Heimatland — lateinische Schrift lesbar (ALLE 3 Fahrer)",
+      "Kreditkarte auf den Namen des Hauptmieters (keine Debit-/Prepaid-Karte)",
+      "Mietvertrag / Buchungsbestätigung"
     ],
     "recommended": [
-      "International Driving Permit (IDP) — not strictly required for German/EU licenses, but recommended for all 3 drivers",
-      "Second credit card as backup for guarantee deposit",
-      "Print of travel insurance policy",
-      "Copy of rental terms showing ripio/gravel is covered"
+      "Internationaler Führerschein (IDP) — nicht streng erforderlich für deutsche/EU-Führerscheine, aber empfohlen für alle 3 Fahrer",
+      "Zweite Kreditkarte als Backup für Kaution",
+      "Ausdruck der Reiseversicherung",
+      "Kopie der Mietbedingungen mit Ripio-/Schotter-Abdeckung",
+      "Ärztliches Attest (Fahrtauglichkeit) für den 65+ Fahrer — zur Sicherheit"
     ],
     "additionalDrivers": [
-      "ALL 3 drivers MUST be registered on the rental contract",
-      "Each additional driver must be present at pickup with license + passport",
-      "Additional driver fee: typically $5-10/day per extra driver",
-      "Ask for discount on 23-day rental — some companies waive or reduce additional driver fees for longer rentals",
-      "Some brokers (LYS) may include 1 free additional driver"
+      "ALLE 3 Fahrer MÜSSEN im Mietvertrag eingetragen werden",
+      "Jeder Zusatzfahrer muss bei Abholung mit Führerschein + Reisepass anwesend sein",
+      "Zusatzfahrer-Gebühr: typisch $5-10/Tag pro Extrafahrer",
+      "Bei 23 Tagen Rabatt verlangen — manche Anbieter erlassen oder reduzieren Zusatzfahrer-Gebühren bei längeren Mieten",
+      "Manche Broker (LYS) inkludieren ggf. 1 kostenlosen Zusatzfahrer"
     ],
     "notes": [
-      "Foreign tourists can drive with home country license for up to 90 days",
-      "IDP is required if license uses non-Latin characters (Chinese, Arabic, etc.)",
-      "German/EU licenses are accepted without IDP",
-      "Credit card must have sufficient limit for guarantee deposit (CLP 500,000–2,000,000)"
+      "Ausländische Touristen dürfen mit Heimatführerschein bis zu 90 Tage in Chile fahren",
+      "IDP erforderlich wenn Führerschein nicht-lateinische Zeichen hat (Chinesisch, Arabisch, etc.)",
+      "Deutsche/EU-Führerscheine werden ohne IDP akzeptiert",
+      "Kreditkarte muss ausreichendes Limit für Kaution haben (CLP 500.000–2.000.000)"
     ]
   },
   "bookingPlatforms": [
-    { "name": "DiscoverCars", "url": "https://www.discovercars.com/chile", "note": "Best aggregator, 7M+ users, free cancellation" },
-    { "name": "KAYAK", "url": "https://www.kayak.com/Chile-Car-Rentals.48.crc.html", "note": "Good comparison tool" },
-    { "name": "Skyscanner Cars", "url": "https://www.skyscanner.com/car-rental-in/chile/29475429.html", "note": "From $33/day" },
-    { "name": "Momondo", "url": "https://www.momondo.com/car-rental/Chile-48-crc.ksp", "note": "From $22/day" },
-    { "name": "Booking.com Cars", "url": "https://www.booking.com/cars/country/cl.html", "note": "Convenient if already using Booking" },
-    { "name": "AutoEurope", "url": "https://www.autoeurope.com", "note": "Good for European travelers" },
-    { "name": "LYS Rent a Car (direct)", "url": "https://www.lys.cl", "note": "Best local broker, transparent pricing, ripio-friendly" },
-    { "name": "Chilean Rent-A-Car (direct)", "url": "https://www.chileanrentacar.cl", "note": "Major local company" },
-    { "name": "Transfercar Chile", "url": "https://www.transfercar.cl", "note": "FREE relocation deals!" }
+    { "name": "DiscoverCars", "url": "https://www.discovercars.com/chile", "note": "Bester Aggregator, 7 Mio.+ Nutzer, kostenlose Stornierung" },
+    { "name": "KAYAK", "url": "https://www.kayak.com/Chile-Car-Rentals.48.crc.html", "note": "Gutes Vergleichstool" },
+    { "name": "Skyscanner Cars", "url": "https://www.skyscanner.com/car-rental-in/chile/29475429.html", "note": "Ab $33/Tag" },
+    { "name": "Momondo", "url": "https://www.momondo.com/car-rental/Chile-48-crc.ksp", "note": "Ab $22/Tag" },
+    { "name": "Booking.com Cars", "url": "https://www.booking.com/cars/country/cl.html", "note": "Praktisch wenn man schon Booking nutzt" },
+    { "name": "AutoEurope", "url": "https://www.autoeurope.com", "note": "Gut für europäische Reisende" },
+    { "name": "LYS Rent a Car (direkt)", "url": "https://www.lys.cl", "note": "Bester lokaler Broker, transparente Preise, Ripio-freundlich" },
+    { "name": "Chilean Rent-A-Car (direkt)", "url": "https://www.chileanrentacar.cl", "note": "Großer lokaler Anbieter" },
+    { "name": "Transfercar Chile", "url": "https://www.transfercar.cl", "note": "KOSTENLOSE Relocation-Deals!" }
   ],
   "relocationDeals": {
     "available": true,
     "platform": "Transfercar Chile",
     "website": "https://www.transfercar.cl",
     "partners": ["Hertz", "Europcar", "Mitta"],
-    "howItWorks": "Rental companies need cars moved between cities. You drive them for FREE (0 or very low daily cost), sometimes with fuel and TAG included.",
+    "howItWorks": "Mietwagenfirmen müssen Autos zwischen Städten umsetzen. Du fährst sie KOSTENLOS (0 oder sehr geringer Tagespreis), manchmal mit Benzin und TAG inklusive.",
     "limitations": [
-      "Limited availability — check frequently",
-      "Fixed routes and timeframes",
-      "Usually 2-5 day windows to complete the drive",
-      "Seasonal: more deals during/after peak season",
-      "Vehicle type is whatever they need moved — may not be SUV"
+      "Begrenzte Verfügbarkeit — regelmäßig prüfen",
+      "Feste Routen und Zeitfenster",
+      "Normalerweise 2-5 Tage Zeit für die Fahrt",
+      "Saisonal: Mehr Deals während/nach der Hochsaison",
+      "Fahrzeugtyp ist vorgegeben — möglicherweise kein SUV"
     ],
-    "tip": "March is PERFECT timing — end of summer, companies need cars moved back north. Check regularly for Santiago→Puerto Montt relocations!"
+    "tip": "März ist PERFEKTES Timing — Sommer-Ende, Firmen müssen Autos nach Norden bringen. Regelmäßig nach Santiago→Puerto Montt-Deals schauen!"
   },
   "roadConditions": {
     "ruta5_santiago_to_puerto_montt": {
-      "quality": "Excellent",
-      "lanes": "4-lane divided highway",
-      "surface": "Fully paved, well-maintained",
-      "services": "Regular rest stops, Copec stations, restaurants",
-      "tolls": "Multiple toll plazas (manual, cash/card)"
+      "quality": "Hervorragend",
+      "lanes": "4-spurige Schnellstraße",
+      "surface": "Komplett asphaltiert, gut instandgehalten",
+      "services": "Regelmäßige Raststätten, Copec-Tankstellen, Restaurants",
+      "tolls": "Mehrere Mautstellen (manuell, Bar/Karte)"
     },
     "lake_district_side_roads": {
-      "quality": "Mixed — paved main roads + gravel/ripio side roads",
-      "surface": "Asphalt on main routes, gravel on roads to volcanoes, hot springs, national parks",
-      "services": "Available in towns, sparse in parks",
-      "recommendation": "Compact SUV minimum for side roads and national park access"
+      "quality": "Gemischt — asphaltierte Hauptstraßen + Schotter-/Ripio-Nebenstraßen",
+      "surface": "Asphalt auf Hauptrouten, Schotter auf Wegen zu Vulkanen, Thermalquellen, Nationalparks",
+      "services": "In Orten verfügbar, in Parks spärlich",
+      "recommendation": "Mindestens Kompakt-SUV für Nebenstraßen und Nationalpark-Zufahrten"
     },
     "carretera_austral": {
-      "quality": "Mixed — paved sections + gravel/dirt",
-      "lanes": "2-lane, narrow in places",
-      "surface": "Asphalt, gravel, dirt, volcanic ash",
-      "services": "Sparse — plan fuel stops carefully",
-      "recommendation": "SUV or pickup truck strongly recommended"
+      "quality": "Gemischt — asphaltierte Abschnitte + Schotter/Erde",
+      "lanes": "2-spurig, stellenweise eng",
+      "surface": "Asphalt, Schotter, Erde, Vulkanasche",
+      "services": "Spärlich — Tankstopps sorgfältig planen",
+      "recommendation": "SUV oder Pickup dringend empfohlen"
     }
   }
 }
