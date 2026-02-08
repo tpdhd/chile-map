@@ -522,19 +522,20 @@ function App() {
               <button
                 onClick={() => {
                   setShowMenu(false)
+                  const reload = () => globalThis.location.reload()
                   if ('caches' in window) {
                     caches.keys().then(names => Promise.all(names.map(n => caches.delete(n)))).then(() => {
                       if (navigator.serviceWorker) {
                         navigator.serviceWorker.getRegistrations().then(regs => {
                           regs.forEach(r => r.unregister())
-                          window.location.reload()
+                          reload()
                         })
                       } else {
-                        window.location.reload()
+                        reload()
                       }
                     })
                   } else {
-                    window.location.reload()
+                    reload()
                   }
                 }}
                 className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
