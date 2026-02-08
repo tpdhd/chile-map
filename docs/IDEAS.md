@@ -125,9 +125,10 @@
 
 ## 🚧 Noch zu tun
 
-### Git Push
+### Git Push / Deploy
 - [x] Git credentials konfigurieren ✓ (gh auth via keyring)
 - [x] Git push erfolgreich ✓ (2026-02-08)
+- [ ] Cloudflare Pages deploy braucht CLOUDFLARE_API_TOKEN env var
 
 ### Weitere Erweiterungen  
 - [x] Mehr Empfehlungen aus Büchern für Wine Resort ✓ (14→22 recs, 2026-02-07)
