@@ -508,6 +508,28 @@ function App() {
               <span>📋</span> Favoriten kopieren
             </button>
             <div className="border-t border-white/10">
+              <button
+                onClick={() => {
+                  setShowMenu(false)
+                  if ('caches' in window) {
+                    caches.keys().then(names => Promise.all(names.map(n => caches.delete(n)))).then(() => {
+                      if (navigator.serviceWorker) {
+                        navigator.serviceWorker.getRegistrations().then(regs => {
+                          regs.forEach(r => r.unregister())
+                          window.location.reload()
+                        })
+                      } else {
+                        window.location.reload()
+                      }
+                    })
+                  } else {
+                    window.location.reload()
+                  }
+                }}
+                className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
+              >
+                <span>🔄</span> App aktualisieren
+              </button>
               <a
                 href="https://tpdhd.github.io/chile-map/"
                 target="_blank"
