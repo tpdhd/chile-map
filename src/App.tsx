@@ -484,6 +484,15 @@ function App() {
               <span>📋</span> Favoriten kopieren
             </button>
             <div className="border-t border-white/10">
+              <a
+                href="https://tpdhd.github.io/chile-map/"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setShowMenu(false)}
+                className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3 block"
+              >
+                <span>🔗</span> Web-Version öffnen
+              </a>
               <button
                 onClick={() => {
                   alert('ℹ️ Chile Trip Map\n\nKartendaten:\n© OpenStreetMap contributors\n© CARTO\n\nPowered by Leaflet\n\nMade with ❤️ for our Chile adventure')
