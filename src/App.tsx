@@ -12,6 +12,8 @@ const TripStats = lazy(() => import('./components/TripStats'))
 const Phrasebook = lazy(() => import('./components/Phrasebook'))
 const WeatherWidget = lazy(() => import('./components/WeatherWidget'))
 const Checklist = lazy(() => import('./components/Checklist'))
+const EmergencyInfo = lazy(() => import('./components/EmergencyInfo'))
+const DailyPlan = lazy(() => import('./components/DailyPlan'))
 
 export type Location = typeof tripData.locations[0]
 export type Recommendation = typeof tripData.locations[0]['recommendations'][0]
@@ -118,6 +120,8 @@ function App() {
   const [showStats, setShowStats] = useState(false)
   const [showPhrasebook, setShowPhrasebook] = useState(false)
   const [showChecklist, setShowChecklist] = useState(false)
+  const [showEmergency, setShowEmergency] = useState(false)
+  const [showDailyPlan, setShowDailyPlan] = useState(false)
 
   // Get facts for current location or random
   const locationFacts = useMemo(() => {
@@ -499,6 +503,24 @@ function App() {
               className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
             >
               <span>🧳</span> Packliste
+            </button>
+            <button
+              onClick={() => {
+                setShowDailyPlan(true)
+                setShowMenu(false)
+              }}
+              className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
+            >
+              <span>📅</span> Tagesplan
+            </button>
+            <button
+              onClick={() => {
+                setShowEmergency(true)
+                setShowMenu(false)
+              }}
+              className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
+            >
+              <span>🆘</span> Notfall-Info
             </button>
             <button
               onClick={() => {
@@ -979,6 +1001,20 @@ function App() {
       {showChecklist && (
         <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">🧳</div></div>}>
           <Checklist onClose={() => setShowChecklist(false)} />
+        </Suspense>
+      )}
+
+      {/* DAILY PLAN */}
+      {showDailyPlan && (
+        <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">📅</div></div>}>
+          <DailyPlan onClose={() => setShowDailyPlan(false)} favorites={favorites} />
+        </Suspense>
+      )}
+
+      {/* EMERGENCY INFO */}
+      {showEmergency && (
+        <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">🆘</div></div>}>
+          <EmergencyInfo onClose={() => setShowEmergency(false)} />
         </Suspense>
       )}
 

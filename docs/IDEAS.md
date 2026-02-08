@@ -181,4 +181,21 @@
 - ✓ Suchfunktion über alle Kategorien
 - ✓ Aufklappbare Karten mit Aussprache + Tipps
 
-*Letzte Aktualisierung: 2026-02-09 00:30*
+### Notfall-Info (2026-02-09)
+- ✓ 🆘 Notfall-Seite mit allen wichtigen Nummern
+- ✓ Quick-Call Bar: Polizei (133), Ambulanz (131), Feuerwehr (132), Notruf (112)
+- ✓ Deutsche Botschaft Santiago + Notfall-Bereitschaft
+- ✓ Medizinische Hilfe: Kliniken, Apotheken, Zahnarzt
+- ✓ Reiseversicherung Hinweise
+- ✓ Praktische Tipps: Karten gesperrt, Pass verloren, Autopanne, Erdbeben/Tsunami, Vulkan
+- ✓ Aufklappbare Sektionen, direkte Anruf-Buttons
+
+### Tagesplan (2026-02-09)
+- ✓ 📅 Automatische Tagesplanung pro Location
+- ✓ Empfehlungen nach Tageszeit aufgeteilt (Vormittag/Mittag/Nachmittag/Abend)
+- ✓ Intelligente Zuordnung nach Kategorie
+- ✓ Favoriten werden bevorzugt eingeplant
+- ✓ Horizontal scrollbare Location-Tabs
+- ✓ Datum + Wochentag pro Tag angezeigt
+
+*Letzte Aktualisierung: 2026-02-09 00:45*
