@@ -30,15 +30,24 @@
 
 ## 🧮 Utilities (Burger Menu)
 
-### Chilean Peso ↔ Euro Rechner
-- Aktueller Wechselkurs (API oder manuell)
-- Einfaches Input-Feld
-- Schnelle Umrechnung für unterwegs
+### Chilean Peso ↔ Euro Rechner ✓ (2026-02-08)
+- ✓ Aktueller Wechselkurs via exchangerate-api.com (6h Cache)
+- ✓ Bidirektionale Umrechnung (CLP ↔ EUR)
+- ✓ Schnellreferenz-Tabellen für gängige Beträge
+- ✓ Trinkgeld-Guide Chile
+- ✓ Typische Preise Referenztabelle
 
-### Offline-Modus
-- Karten-Tiles cachen
-- Daten lokal speichern
-- Funktioniert ohne Internet
+### Trip Statistik Dashboard ✓ (2026-02-08)
+- ✓ Fortschritts-Ring (% besucht)
+- ✓ Favoriten, Besucht, Notizen, Fakten Zähler
+- ✓ Fortschritt pro Ort mit Balken
+- ✓ Kategorie-Breakdown
+- ✓ Trip Countdown / Status
+
+### Offline-Modus ✓
+- ✓ Karten-Tiles cachen (PWA Service Worker)
+- ✓ Daten lokal speichern (localStorage)
+- ✓ Manuelles Tile-Prefetching in Einstellungen
 
 ---
 
@@ -62,6 +71,8 @@
 ## 🎨 UI Verbesserungen
 
 - [ ] Dark/Light Mode Toggle
+- [x] Trip Statistik Dashboard ✓ (2026-02-08)
+- [x] Währungsrechner CLP ↔ EUR ✓ (2026-02-08)
 - [ ] Größere Touch-Targets
 - [ ] Swipe-Gesten für Navigation
 - [ ] Foto-Galerie pro Location
@@ -143,4 +154,4 @@
 - Optional properties (openingHours, mustTry) korrekt gecastet
 - LocationPanel unused import gefixt
 
-*Letzte Aktualisierung: 2026-02-08 01:00*
+*Letzte Aktualisierung: 2026-02-08 02:00*
