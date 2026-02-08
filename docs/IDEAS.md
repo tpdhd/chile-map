@@ -115,8 +115,8 @@
 ## 🚧 Noch zu tun
 
 ### Git Push
-- [ ] Git credentials konfigurieren (gh auth login oder .git-credentials)
-- [ ] Pending commits: Fakten-Expansion (187 total)
+- [x] Git credentials konfigurieren ✓ (gh auth via keyring)
+- [x] Git push erfolgreich ✓ (2026-02-08)
 
 ### Weitere Erweiterungen  
 - [x] Mehr Empfehlungen aus Büchern für Wine Resort ✓ (14→22 recs, 2026-02-07)
@@ -137,4 +137,10 @@
 - Santiago: 12→20, Valdivia: 12→16
 - Alle Locations 12+ Fakten ✓
 
-*Letzte Aktualisierung: 2026-02-08*
+### TypeScript
+- [x] Alle TS-Fehler behoben ✓ (2026-02-08)
+- vite-env.d.ts für Leaflet image imports
+- Optional properties (openingHours, mustTry) korrekt gecastet
+- LocationPanel unused import gefixt
+
+*Letzte Aktualisierung: 2026-02-08 01:00*
