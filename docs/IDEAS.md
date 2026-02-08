@@ -95,9 +95,11 @@
 - ✓ Wine regions
 
 ### Rough Guide Chile (2023)  
-- Lake District hiking trails
-- Chiloé mythology details
-- Restaurant recommendations
+- ✓ Lake District details (Pucón, Valdivia, Puerto Varas, Frutillar)
+- ✓ Chiloé mythology & traditions
+- ✓ Restaurant recommendations (Pucón, Valdivia, Puerto Varas)
+- ✓ Historical details (Osorno, Chillán, Santiago)
+- ✓ 19 neue Fakten extrahiert (2026-02-08)
 
 ### Carretera Austral Guide (2022)
 - (nicht auf dieser Route)
@@ -106,12 +108,12 @@
 
 ## 📊 Fakten-Feature
 
-### Status: 259 Fakten ✓ (2026-02-08, dedupliziert + erweitert)
+### Status: 278 Fakten ✓ (2026-02-08, erweitert mit Rough Guide)
 - Geographie, Kultur, Geschichte, Natur, Essen, Unique, Beach
 - Mit Location-Referenzen wo relevant
 - Quellen aus Insight Guides, Rough Guides, und Recherche
-- 25 Duplikate entfernt, 12 neue Santiago/Valdivia-Fakten
-- General 63, Chiloé 21, Santiago 20, Frutillar/PV 19, Wine Resort 18, Valdivia 16, Algarrobo 16, San Carlos 16, Conguillío 15, Pucón 15, Osorno 14, Chillán 14, Quillimari 12
+- 19 neue Fakten aus Rough Guide (Valdivia, Pucón, Osorno, Chillán, Santiago, Chiloé, Frutillar/PV)
+- General 63, Santiago 22, Frutillar/PV 22, Chiloé 22, Valdivia 19, Pucón 18, Osorno 18, Wine Resort 18, Chillán 17, Algarrobo 16, San Carlos 16, Conguillío 15, Quillimari 12
 
 ### UI für Fakten (ERLEDIGT ✓ 2026-02-07)
 - ✓ 📖 Icon im Burger-Menu
@@ -144,9 +146,9 @@
 - **Total: 280 Empfehlungen**
 
 ### Status Fakten (2026-02-08)
-- **Total: 259 Fakten** (dedupliziert + erweitert)
-- 25 Duplikate entfernt, 12 neue Santiago/Valdivia-Fakten hinzugefügt
-- Santiago: 12→20, Valdivia: 12→16
+- **Total: 278 Fakten** (erweitert mit Rough Guide)
+- 19 neue Fakten aus Rough Guide hinzugefügt
+- Santiago: 22, Frutillar/PV: 22, Chiloé: 22, Valdivia: 19, Pucón: 18, Osorno: 18
 - Alle Locations 12+ Fakten ✓
 
 ### TypeScript
@@ -155,4 +157,4 @@
 - Optional properties (openingHours, mustTry) korrekt gecastet
 - LocationPanel unused import gefixt
 
-*Letzte Aktualisierung: 2026-02-08 02:00*
+*Letzte Aktualisierung: 2026-02-08 22:00*

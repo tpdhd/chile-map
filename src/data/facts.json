@@ -1800,8 +1800,141 @@
       "location": "valdivia",
       "source": "Rough Guides Chile 2023",
       "id": 259
+    },
+    {
+      "text": "Das Museo Histórico auf der Isla Teja in Valdivia war einst das Haus von Karl Anwandter, dem Gründer der ersten Brauerei Chiles — es enthält noch die originale rote Marmorkamin-Einrichtung und eine Laterna Magica.",
+      "category": "culture",
+      "location": "valdivia",
+      "source": "Rough Guides Chile 2023",
+      "id": 260
+    },
+    {
+      "text": "In Valdivias Mercado Fluvial werfen Fischer ihre Abfälle an riesige Seelöwen, die direkt hinter den Ständen warten und den Markt als ihr persönliches Restaurant behandeln.",
+      "category": "unique",
+      "location": "valdivia",
+      "source": "Rough Guides Chile 2023",
+      "id": 261
+    },
+    {
+      "text": "Lord Cochrane, ein britischer Abenteurer, spielte eine entscheidende Rolle bei der chilenischen Unabhängigkeit — er stürmte die spanischen Festungen bei Valdivia 1820 und zerstörte dabei die Kanonen des Fuerte de Niebla.",
+      "category": "history",
+      "location": "valdivia",
+      "source": "Rough Guides Chile 2023",
+      "id": 262
+    },
+    {
+      "text": "Pucón hat so viele Thermalquellen wie kaum eine andere Stadt Chiles — von den naturbelassenen Steinbecken der Termas Los Pozones bis zu den luxuriösen Termas Peumayen mit französisch-Mapuche Fusionsküche.",
+      "category": "unique",
+      "location": "pucon",
+      "source": "Rough Guides Chile 2023",
+      "id": 263
+    },
+    {
+      "text": "Die 'Ojos del Caburgua' (Augen des Caburgua) entstanden, als ein Vulkanausbruch das Tal blockierte — das Wasser des Lago Caburgua fließt unterirdisch und tritt als drei spektakuläre Wasserfälle wieder hervor.",
+      "category": "nature",
+      "location": "pucon",
+      "source": "Rough Guides Chile 2023",
+      "id": 264
+    },
+    {
+      "text": "Das Santuario El Cañi bei Pucón wurde 1991 gerettet, als eine kleine Stiftung namens 'Fundación Lahuen' sich erfolgreich gegen die Holzindustrie wehrte und 400 Hektar Araukarienwald bewahrte.",
+      "category": "nature",
+      "location": "pucon",
+      "source": "Rough Guides Chile 2023",
+      "id": 265
+    },
+    {
+      "text": "Puerto Varas wurde von deutschen Siedlern geprägt — bemerkenswerte Kolonialbauten sind die Casa Kuschel (1910), Casona Alemana (1914) und Casa Ángulo (1910), alle noch erhalten.",
+      "category": "culture",
+      "location": "frutillar-puerto-varas",
+      "source": "Rough Guides Chile 2023",
+      "id": 266
+    },
+    {
+      "text": "Im Museo Colonial Alemán in Frutillar steht ein 'Campanario' — ein runder Stall, in dem Pferde im Kreis liefen und mit ihren Hufen Getreide droschen.",
+      "category": "culture",
+      "location": "frutillar-puerto-varas",
+      "source": "Rough Guides Chile 2023",
+      "id": 267
+    },
+    {
+      "text": "Osorno wurde so oft von Mapuche angegriffen (1553-1796), dass es fast 250 Jahre brauchte, bis die Stadt sich dauerhaft etablieren konnte.",
+      "category": "history",
+      "location": "osorno",
+      "source": "Rough Guides Chile 2023",
+      "id": 268
+    },
+    {
+      "text": "Die beiden modernen Kirchen in Osorno — die Catedral San Mateo und die Iglesia San Francisco — sind kontroverse Beton-Gitter-Konstruktionen, die bis heute die Meinungen spalten.",
+      "category": "culture",
+      "location": "osorno",
+      "source": "Rough Guides Chile 2023",
+      "id": 269
+    },
+    {
+      "text": "Im Winter kann man den Volcán Osorno mit Ski und Snowboard befahren — im Sommer verwandeln sich die Pisten in einen Downhill-Bikepark mit Sessellift bis zum Gletscher.",
+      "category": "unique",
+      "location": "osorno",
+      "source": "Rough Guides Chile 2023",
+      "id": 270
+    },
+    {
+      "text": "Die Auffahrt zum Gipfel des Volcán Osorno ist die anspruchsvollste Vulkan-Besteigung der Region — mit 5 Stunden Aufstieg, Eis-/Schnee-Ausrüstung und maximal 2 Wanderern pro Bergführer.",
+      "category": "nature",
+      "location": "osorno",
+      "source": "Rough Guides Chile 2023",
+      "id": 271
+    },
+    {
+      "text": "Chillán wurde seit seiner Gründung 1550 so oft durch Erdbeben und Mapuche-Angriffe zerstört, dass die meiste heutige Architektur erst nach dem verheerenden Erdbeben von 1939 stammt.",
+      "category": "history",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023",
+      "id": 272
+    },
+    {
+      "text": "Die Escuela México in Chillán enthält Wandmalereien von David Alfaro Siqueiros — einem der berühmtesten mexikanischen Muralisten. Die Schule wurde nach dem Erdbeben 1939 von Mexiko finanziert, auf Initiative von Pablo Neruda.",
+      "category": "culture",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023",
+      "id": 273
+    },
+    {
+      "text": "Die Skipiste Nevados de Chillán hat mit fast 13 km die längste Abfahrt Südamerikas — und man kann Skifahren mit heißen Thermalquellen am Fuße des Vulkans kombinieren.",
+      "category": "unique",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023",
+      "id": 274
+    },
+    {
+      "text": "Beim Bestellen eines 'Eistees' (té helado) in der Feria La Vega in Santiago bekommt man keinen Tee — sondern Weißwein in einer Sprite-Flasche oder Rotwein in einer Coca-Cola-Flasche.",
+      "category": "food",
+      "location": "santiago",
+      "source": "Rough Guides Chile 2023",
+      "id": 275
+    },
+    {
+      "text": "Die Iglesia San Francisco in Santiago ist das älteste Gebäude der Stadt (1586-1628) — in ihrem Inneren befindet sich eine kleine Marienfigur, die Pedro de Valdivia 1540 auf seinem Sattel nach Chile brachte.",
+      "category": "history",
+      "location": "santiago",
+      "source": "Rough Guides Chile 2023",
+      "id": 276
+    },
+    {
+      "text": "Auf Chiloé werden Kartoffeln nach dem Mondkalender gepflanzt — bei abnehmendem Mond für normale Ernte, bei Vollmond für besonders große 'Macho'-Saatkartoffeln.",
+      "category": "culture",
+      "location": "chiloe",
+      "source": "Rough Guides Chile 2023",
+      "id": 277
+    },
+    {
+      "text": "Die Land-und-See-Überfahrt von Puerto Varas nach Bariloche (Argentinien) führt über drei Seen und ist eine der schönsten Grenzüberquerungen der Welt — mit Blick auf die Vulkane Osorno, Puntiagudo und Tronador.",
+      "category": "unique",
+      "location": "frutillar-puerto-varas",
+      "source": "Rough Guides Chile 2023",
+      "id": 278
     }
   ],
   "lastUpdated": "2026-02-08",
-  "totalFacts": 259
+  "totalFacts": 278
 }
