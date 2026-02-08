@@ -10,17 +10,31 @@ const updateSW = registerSW({
     // Show update banner
     const banner = document.createElement('div')
     banner.id = 'sw-update-banner'
-    banner.innerHTML = `
-      <div style="position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:99999;
-        background:#22c55e;color:#000;padding:12px 20px;border-radius:12px;font-weight:600;
-        font-size:14px;display:flex;align-items:center;gap:12px;box-shadow:0 4px 20px rgba(0,0,0,0.5);
-        font-family:system-ui,sans-serif;">
-        <span>🔄 Neues Update verfügbar!</span>
-        <button onclick="document.getElementById('sw-update-banner').remove();(${updateSW.toString()})();"
-          style="background:#000;color:#22c55e;border:none;padding:6px 14px;border-radius:8px;
-          font-weight:700;cursor:pointer;font-size:13px;">Jetzt aktualisieren</button>
-      </div>
-    `
+    Object.assign(banner.style, {
+      position: 'fixed', bottom: '20px', left: '50%', transform: 'translateX(-50%)',
+      zIndex: '99999', background: '#22c55e', color: '#000', padding: '12px 20px',
+      borderRadius: '12px', fontWeight: '600', fontSize: '14px', display: 'flex',
+      alignItems: 'center', gap: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.5)',
+      fontFamily: 'system-ui, sans-serif', maxWidth: '90vw',
+    })
+    
+    const text = document.createElement('span')
+    text.textContent = '🔄 Neues Update verfügbar!'
+    
+    const btn = document.createElement('button')
+    btn.textContent = 'Aktualisieren'
+    Object.assign(btn.style, {
+      background: '#000', color: '#22c55e', border: 'none', padding: '6px 14px',
+      borderRadius: '8px', fontWeight: '700', cursor: 'pointer', fontSize: '13px',
+      whiteSpace: 'nowrap',
+    })
+    btn.onclick = () => {
+      banner.remove()
+      updateSW(true)
+    }
+    
+    banner.appendChild(text)
+    banner.appendChild(btn)
     document.body.appendChild(banner)
   },
   onOfflineReady() {
