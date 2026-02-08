@@ -105,36 +105,45 @@ function MapController({
   const map = useMap()
 
   useEffect(() => {
+    // Calculate offset: bottom sheet takes ~40% of screen, so offset by ~20% of viewport height
+    // Convert pixel offset to lat degrees based on current zoom
+    const getLatOffset = (zoom: number) => {
+      const viewportHeight = map.getSize().y
+      const offsetPixels = viewportHeight * 0.20 // 20% of viewport height
+      // At the target point, convert pixel offset to lat degrees
+      const point = map.project(map.getCenter(), zoom)
+      const offsetPoint = L.point(point.x, point.y + offsetPixels)
+      const offsetLatLng = map.unproject(offsetPoint, zoom)
+      return map.getCenter().lat - offsetLatLng.lat
+    }
+
     if (selectedRecommendation) {
-      // Fly to recommendation with moderate zoom
-      // Offset center SOUTH so marker appears in TOP HALF of screen (above bottom sheet)
       const coords = selectedRecommendation.coordinates as [number, number]
-      const offsetLat = coords[0] - 0.003 // Offset for top-half positioning
-      map.flyTo([offsetLat, coords[1]], 14, {
+      const targetZoom = 14
+      const latOffset = getLatOffset(targetZoom)
+      map.flyTo([coords[0] - latOffset, coords[1]], targetZoom, {
         duration: 1
       })
     } else if (selectedLocation && selectedLocation.recommendations.length > 0) {
-      // Fit bounds to show all recommendations for this location
       const allCoords = selectedLocation.recommendations.map(
         rec => rec.coordinates as [number, number]
       )
-      // Include location marker itself
       allCoords.push(selectedLocation.coordinates as [number, number])
-      
-      // Create bounds from all coordinates
       const bounds = L.latLngBounds(allCoords)
       
-      // Fit bounds with padding (bottom padding larger for bottom sheet)
+      // Use large bottom padding to push content into top half
+      const viewportHeight = map.getSize().y
       map.flyToBounds(bounds, {
         padding: [50, 50],
-        paddingBottomRight: [50, 200], // Extra bottom padding for bottom sheet
+        paddingBottomRight: [50, Math.round(viewportHeight * 0.40)],
         maxZoom: 14,
         duration: 1.2
       })
     } else if (selectedLocation) {
-      // Fallback if no recommendations
       const coords = selectedLocation.coordinates as [number, number]
-      map.flyTo(coords, 12, { duration: 1 })
+      const targetZoom = 12
+      const latOffset = getLatOffset(targetZoom)
+      map.flyTo([coords[0] - latOffset, coords[1]], targetZoom, { duration: 1 })
     }
   }, [selectedLocation, selectedRecommendation, map])
 
@@ -163,7 +172,7 @@ export default function Map({
     return L.divIcon({
       html: `
         <div class="custom-marker location-marker ${selectedClass}" style="
-          background: ${isSelected ? '#e63946' : '#2a9d8f'};
+          background: ${isSelected ? '#22c55e' : '#2a9d8f'};
           color: white;
           ${isSelected ? 'z-index: 10000 !important;' : ''}
         ">
@@ -186,7 +195,7 @@ export default function Map({
     return L.divIcon({
       html: `
         <div class="custom-marker recommendation-marker ${selectedClass}" style="
-          background: ${isSelected ? '#e63946' : color};
+          background: ${isSelected ? '#22c55e' : color};
           color: white;
           ${isSelected ? 'z-index: 10000 !important;' : ''}
         ">

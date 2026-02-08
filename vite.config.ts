@@ -80,7 +80,7 @@ export default defineConfig({
         description: 'Interactive map for our Chile adventure',
         theme_color: '#0f0f14',
         background_color: '#0f0f14',
-        display: 'fullscreen',
+        display: 'standalone',
         orientation: 'any',
         start_url: '/chile-map/',
         scope: '/chile-map/',

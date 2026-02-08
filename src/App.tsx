@@ -123,6 +123,14 @@ function App() {
     return locFacts.length > 0 ? locFacts : factsData.facts
   }, [selectedLocation])
 
+  // Clear search state helper
+  const clearSearch = useCallback(() => {
+    setGlobalSearchResults([])
+    setShowSearchResults(false)
+    setSearchQuery('')
+    searchInputRef.current?.blur()
+  }, [])
+
   // Global search across ALL locations and recommendations
   const performGlobalSearch = useCallback((query: string) => {
     if (!query.trim()) {
@@ -149,19 +157,20 @@ function App() {
     }
     setGlobalSearchResults(results)
     setShowSearchResults(true)
+    // Push a history state so the back button can close search
+    window.history.pushState({ search: true }, '')
   }, [])
 
   const handleSearchKeyDown = useCallback((e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') {
       e.preventDefault()
+      ;(e.target as HTMLInputElement).blur() // dismiss mobile keyboard
       performGlobalSearch(searchQuery)
     }
     if (e.key === 'Escape') {
-      setShowSearchResults(false)
-      setSearchQuery('')
-      searchInputRef.current?.blur()
+      clearSearch()
     }
-  }, [searchQuery, performGlobalSearch])
+  }, [searchQuery, performGlobalSearch, clearSearch])
 
   const handleSearchResultClick = useCallback((result: { location: Location; recommendation: Recommendation }) => {
     // Select the location
@@ -170,9 +179,11 @@ function App() {
     setSelectedRecommendation(result.recommendation)
     // Expand the bottom sheet
     setSheetExpanded(true)
-    // Clear search state
+    // Clear search state and pop the history entry we pushed
     setShowSearchResults(false)
     setSearchQuery('')
+    // Go back to remove the search history entry
+    window.history.back()
     // Clear category filter so the recommendation is visible
     setActiveCategory(null)
     // Scroll to the recommendation in the bottom sheet after render
@@ -207,6 +218,18 @@ function App() {
     localStorage.setItem(VISITED_KEY, JSON.stringify([...visited]))
   }, [favorites, notes, visited])
 
+  // Handle browser back button to close search
+  useEffect(() => {
+    const handlePopState = (e: PopStateEvent) => {
+      if (showSearchResults) {
+        e.preventDefault()
+        clearSearch()
+      }
+    }
+    window.addEventListener('popstate', handlePopState)
+    return () => window.removeEventListener('popstate', handlePopState)
+  }, [showSearchResults, clearSearch])
+
   // Select first location by default
   useEffect(() => {
     if (tripData.locations.length > 0 && !selectedLocation) {
@@ -219,23 +242,11 @@ function App() {
     setSelectedRecommendation(null)
     setSheetExpanded(true)
     
-    if (fromMap) {
-      // When clicked on map: open location picker briefly to show which location is highlighted
-      setShowLocationPicker(true)
-      // Auto-scroll to the location in the picker
-      setTimeout(() => {
-        const locEl = document.getElementById(`loc-${location.id}`)
-        if (locEl) {
-          locEl.scrollIntoView({ behavior: 'smooth', block: 'center' })
-          locEl.classList.add('location-flash')
-          setTimeout(() => locEl.classList.remove('location-flash'), 2000)
-        }
-      }, 100)
-      // Auto-close picker after 2.5s so user sees it then it gets out of the way
-      setTimeout(() => setShowLocationPicker(false), 2500)
-    } else {
+    if (!fromMap) {
+      // Only close picker when selecting from the picker itself
       setShowLocationPicker(false)
     }
+    // When clicked on map: do NOT auto-open the location picker dropdown
   }
 
   const handleRecommendationSelect = (recommendation: Recommendation) => {
@@ -345,15 +356,14 @@ function App() {
         <div className="relative">
           <input
             ref={searchInputRef}
-            type="text"
+            type="search"
+            enterKeyHint="search"
             placeholder="🔍"
             value={searchQuery}
             onChange={(e) => {
               setSearchQuery(e.target.value)
-              // Live search as user types
-              if (e.target.value.trim().length >= 2) {
-                performGlobalSearch(e.target.value)
-              } else if (e.target.value.trim().length === 0) {
+              // Clear results if input is emptied
+              if (e.target.value.trim().length === 0) {
                 setGlobalSearchResults([])
                 setShowSearchResults(false)
               }
@@ -364,8 +374,16 @@ function App() {
           {/* Global Search Results Dropdown */}
           {showSearchResults && globalSearchResults.length > 0 && (
             <div className="absolute top-12 right-0 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg border border-white/10 max-h-[60vh] overflow-y-auto w-72 animate-slide-up">
-              <div className="px-3 py-2 border-b border-white/10 text-xs text-chile-text-muted">
-                {globalSearchResults.length} Ergebnis{globalSearchResults.length !== 1 ? 'se' : ''} gefunden
+              <div className="px-3 py-2 border-b border-white/10 flex items-center justify-between">
+                <span className="text-xs text-chile-text-muted">
+                  {globalSearchResults.length} Ergebnis{globalSearchResults.length !== 1 ? 'se' : ''} für "{searchQuery}"
+                </span>
+                <button
+                  onClick={() => { clearSearch(); window.history.back() }}
+                  className="text-xs text-chile-accent-red hover:text-chile-accent-red/80 font-medium flex items-center gap-1"
+                >
+                  ← Zurück
+                </button>
               </div>
               {globalSearchResults.map((result, idx) => (
                 <button
@@ -384,11 +402,17 @@ function App() {
               ))}
             </div>
           )}
-          {showSearchResults && globalSearchResults.length === 0 && searchQuery.trim().length >= 2 && (
+          {showSearchResults && globalSearchResults.length === 0 && searchQuery.trim().length >= 1 && (
             <div className="absolute top-12 right-0 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg border border-white/10 w-60 animate-slide-up">
               <div className="px-4 py-3 text-sm text-chile-text-muted text-center">
                 Keine Ergebnisse für "{searchQuery}"
               </div>
+              <button
+                onClick={() => { clearSearch(); window.history.back() }}
+                className="w-full px-4 py-2 text-xs text-chile-accent-red border-t border-white/10 hover:bg-white/5"
+              >
+                ← Zurück
+              </button>
             </div>
           )}
         </div>
@@ -522,22 +546,22 @@ function App() {
                 onClick={() => handleLocationSelect(loc, false)}
                 className={`
                   w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3 transition-all
-                  ${isSelected ? 'bg-chile-accent-red/30 border-l-4 border-chile-accent-red animate-pulse-glow' : ''}
+                  ${isSelected ? 'bg-green-500/20 border-l-4 border-green-500 selected-location-glow' : ''}
                 `}
               >
                 <span className={`
                   w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold transition-all
-                  ${isSelected ? 'bg-chile-accent-red text-white scale-110' : 'bg-chile-accent-red/30'}
+                  ${isSelected ? 'bg-green-500 text-white scale-110' : 'bg-chile-accent-red/30'}
                 `}>
                   {index + 1}
                 </span>
                 <div className="flex-1 min-w-0">
-                  <div className={`font-medium truncate ${isSelected ? 'text-chile-accent-red' : ''}`}>{loc.name}</div>
+                  <div className={`font-medium truncate ${isSelected ? 'text-green-400' : ''}`}>{loc.name}</div>
                   <div className="text-xs text-chile-text-muted">
                     {loc.recommendations.length} Empfehlungen • {loc.durationDays} {loc.durationDays === 1 ? 'Tag' : 'Tage'}
                   </div>
                 </div>
-                {isSelected && <span className="text-chile-accent-red text-lg">◉</span>}
+                {isSelected && <span className="text-green-400 text-lg">◉</span>}
               </button>
             )
           })}
@@ -616,7 +640,7 @@ function App() {
                   id={`rec-${rec.id}`}
                   className={`
                     p-2.5 rounded-lg transition-all
-                    ${selectedRecommendation?.id === rec.id ? 'recommendation-highlighted ring-1 ring-chile-accent-red' : 'bg-white/5'}
+                    ${selectedRecommendation?.id === rec.id ? 'recommendation-highlighted ring-2 ring-green-500' : 'bg-white/5'}
                     ${visited.has(rec.id) ? 'border-l-2 border-green-500' : ''}
                   `}
                   onClick={() => handleRecommendationSelect(rec)}
@@ -894,7 +918,10 @@ function App() {
           onClick={() => {
             setShowLocationPicker(false)
             setShowMenu(false)
-            setShowSearchResults(false)
+            if (showSearchResults) {
+              clearSearch()
+              window.history.back()
+            }
           }}
         />
       )}
