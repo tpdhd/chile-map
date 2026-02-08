@@ -1933,8 +1933,126 @@
       "location": "frutillar-puerto-varas",
       "source": "Rough Guides Chile 2023",
       "id": 278
+    },
+    {
+      "id": 279,
+      "text": "Bei Pichicuy steht eine Kirche auf einer Landzunge direkt über dem Meer — ein seltenes Beispiel von Küstenarchitektur in Chile.",
+      "category": "culture",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 280,
+      "text": "Die 'Silla del Gobernador' (Gouverneursstuhl) bei Los Molles ist mit 695m die höchste Meeresklippe Chiles — bei gutem Wetter von Valparaíso aus sichtbar.",
+      "category": "nature",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 281,
+      "text": "In Los Vilos schnitzen Kunsthandwerker Guayacán-Holz — eines der härtesten und haltbarsten Hölzer Chiles, das hier einst reichlich wuchs.",
+      "category": "culture",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 282,
+      "text": "Der Bodegón Cultural in Los Vilos ist ein restauriertes Zollgebäude aus dem 19. Jahrhundert — heute Kunstgalerie mit wechselnden Ausstellungen im Sommer.",
+      "category": "culture",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 283,
+      "text": "Zwischen Pichidangui und Los Vilos gibt es einen Skulpturenpark auf den Klippen — geschaffen von einem lokalen Architekten, frei zugänglich.",
+      "category": "unique",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 284,
+      "text": "Die Laguna Verde im Parque Nacional Conguillío verdankt ihre smaragdgrüne Farbe vulkanischen Mineralien — unter der Oberfläche sind noch Bäume sichtbar, die von Lava überfluteten Flüssen ertränkt wurden.",
+      "category": "nature",
+      "location": "conguillio",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 285,
+      "text": "Die Piñones (Araukarien-Samen) waren jahrhundertelang das Grundnahrungsmittel der Pehuenche-Mapuche — sie wurden geröstet, gekocht oder zu Mehl gemahlen.",
+      "category": "food",
+      "location": "conguillio",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 286,
+      "text": "Chillán wurde dreimal durch Erdbeben zerstört (1751, 1835, 1939) — Charles Darwin erlebte das Beben von 1835 und beschrieb es in seinem Reisetagebuch.",
+      "category": "history",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 287,
+      "text": "El Quisco und El Tabo neben Algarrobo sind beliebte Wochenendausflüge der Santiaguinos — Pablo Neruda beschrieb die Küste hier als 'wo das Meer das ganze Jahr blüht'.",
+      "category": "culture",
+      "location": "algarrobo",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 288,
+      "text": "Im San Antonio Hafen neben Algarrobo essen die Fischer in 'Picadas' — einfache Hafenrestaurants mit riesigen Meeresfrüchte-Tellern zu günstigsten Preisen.",
+      "category": "food",
+      "location": "algarrobo",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 289,
+      "text": "Die Huaso-Kultur lebt besonders in der Region um San Carlos — mit häufigen Rodeos in 'Medialunas' (halbmondförmigen Stadien), wo Cowboys Stiere an die Wand reiten.",
+      "category": "culture",
+      "location": "san-carlos",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 290,
+      "text": "Puerto Montts Stadtviertel Angelmó ist legendär für seine Fischmarkt-Restaurants — die Qualität ist konstant, aber die Öffnungszeiten hängen davon ab, ob genug Gäste kommen und die Besitzer Lust haben.",
+      "category": "food",
+      "location": "chiloe",
+      "source": "Bradt Carretera Austral 2022"
+    },
+    {
+      "id": 291,
+      "text": "Das Fogón Cotelé in Pelluco bei Puerto Montt bringt rohes Fleisch an den Tisch — man wählt den Schnitt, der Parrillero grillt ihn über offenem Feuer. Eines der besten Steakhäuser der Region.",
+      "category": "food",
+      "location": "chiloe",
+      "source": "Bradt Carretera Austral 2022"
+    },
+    {
+      "id": 292,
+      "text": "Der Cirus Bar in Puerto Montt gilt als eine der authentischsten chilenischen Bars der gesamten Carretera Austral — versteckt in der Straße Miradores mit Blick über den Reloncaví-Sund.",
+      "category": "unique",
+      "location": "chiloe",
+      "source": "Bradt Carretera Austral 2022"
+    },
+    {
+      "id": 293,
+      "text": "Die Alerce-Bäume (Patagonische Zypresse) im Süden Chiles können über 3.600 Jahre alt werden — sie sind nach den Bristlecone Pines die zweitältesten Bäume der Welt.",
+      "category": "nature",
+      "source": "Bradt Carretera Austral 2022"
+    },
+    {
+      "id": 294,
+      "text": "Alerce-Holz war in Chiloé so wertvoll, dass es als Quasi-Währung fungierte — das Fällen ist seit 1976 verboten, nur totes Holz darf mit CONAF-Genehmigung geborgen werden.",
+      "category": "history",
+      "location": "chiloe",
+      "source": "Bradt Carretera Austral 2022"
+    },
+    {
+      "id": 295,
+      "text": "Cancato ist ein typisches Gericht aus Puerto Montt: gegrillter Lachs mit geschmolzenem Käse und Tomate — in fast jedem Restaurant in Angelmó erhältlich.",
+      "category": "food",
+      "location": "chiloe",
+      "source": "Bradt Carretera Austral 2022"
     }
   ],
   "lastUpdated": "2026-02-08",
-  "totalFacts": 278
+  "totalFacts": 295
 }
