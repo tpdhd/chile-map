@@ -9,6 +9,7 @@ const CarRentalPage = lazy(() => import('./components/CarRentalPage'))
 const SettingsPage = lazy(() => import('./components/SettingsPage'))
 const CurrencyConverter = lazy(() => import('./components/CurrencyConverter'))
 const TripStats = lazy(() => import('./components/TripStats'))
+const Phrasebook = lazy(() => import('./components/Phrasebook'))
 
 export type Location = typeof tripData.locations[0]
 export type Recommendation = typeof tripData.locations[0]['recommendations'][0]
@@ -113,6 +114,7 @@ function App() {
   const [showSettings, setShowSettings] = useState(false)
   const [showCurrency, setShowCurrency] = useState(false)
   const [showStats, setShowStats] = useState(false)
+  const [showPhrasebook, setShowPhrasebook] = useState(false)
 
   // Get facts for current location or random
   const locationFacts = useMemo(() => {
@@ -465,6 +467,15 @@ function App() {
               className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
             >
               <span>📖</span> Chile Fakten ({factsData.totalFacts})
+            </button>
+            <button
+              onClick={() => {
+                setShowPhrasebook(true)
+                setShowMenu(false)
+              }}
+              className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
+            >
+              <span>🗣️</span> Sprachführer
             </button>
             <button
               onClick={() => {
@@ -930,6 +941,13 @@ function App() {
       {showSettings && (
         <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">⚙️</div></div>}>
           <SettingsPage onClose={() => setShowSettings(false)} />
+        </Suspense>
+      )}
+
+      {/* PHRASEBOOK */}
+      {showPhrasebook && (
+        <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">🗣️</div></div>}>
+          <Phrasebook onClose={() => setShowPhrasebook(false)} />
         </Suspense>
       )}
 
