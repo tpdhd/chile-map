@@ -157,17 +157,16 @@ export default function WeatherWidget({ locationName, coordinates, dates }: Weat
       {/* Compact weather display */}
       <button
         onClick={() => setExpanded(!expanded)}
-        className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-chile-bg-card hover:bg-chile-bg-secondary transition-colors"
-        title="Click for forecast"
+        className="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-chile-bg-card/95 backdrop-blur-sm shadow-lg hover:bg-chile-bg-secondary transition-colors border border-white/10"
+        title="Wettervorhersage"
       >
         <span className="text-lg">{weather.current.icon}</span>
-        <span className="font-medium">{weather.current.temp_c}°C</span>
-        <span className="text-xs text-chile-text-muted">▼</span>
+        <span className="font-medium">{weather.current.temp_c}°</span>
       </button>
       
       {/* Expanded forecast dropdown */}
       {expanded && (
-        <div className="absolute top-full left-0 mt-2 z-50 min-w-[280px] p-4 rounded-xl bg-chile-bg-card border border-chile-bg-secondary shadow-xl">
+        <div className="absolute top-full left-0 mt-2 z-[650] min-w-[280px] p-4 rounded-xl bg-chile-bg-card/95 backdrop-blur-sm border border-white/10 shadow-xl">
           {/* Current conditions */}
           <div className="flex items-center gap-4 mb-4 pb-4 border-b border-chile-bg-secondary">
             <span className="text-4xl">{weather.current.icon}</span>
@@ -184,16 +183,16 @@ export default function WeatherWidget({ locationName, coordinates, dates }: Weat
           {/* Future trip notice */}
           {isFuture && (
             <div className="mb-3 p-2 rounded bg-chile-accent-teal bg-opacity-10 text-xs text-chile-accent-teal">
-              📅 Trip starts {tripStart.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })} — weather may change!
+              📅 Trip startet {tripStart.toLocaleDateString('de-DE', { day: 'numeric', month: 'short' })} — Wetter kann sich ändern!
             </div>
           )}
           
           {/* 3-day forecast */}
           <div className="space-y-2">
-            <div className="text-xs font-medium text-chile-text-muted mb-2">3-Day Forecast</div>
+            <div className="text-xs font-medium text-chile-text-muted mb-2">3-Tage-Vorhersage</div>
             {weather.forecast.map((day, idx) => {
               const date = new Date(day.date)
-              const dayName = idx === 0 ? 'Today' : date.toLocaleDateString('en-US', { weekday: 'short' })
+              const dayName = idx === 0 ? 'Heute' : date.toLocaleDateString('de-DE', { weekday: 'short' })
               return (
                 <div key={day.date} className="flex items-center gap-3 text-sm">
                   <span className="w-12 text-chile-text-muted">{dayName}</span>
@@ -208,7 +207,7 @@ export default function WeatherWidget({ locationName, coordinates, dates }: Weat
           
           {/* Close hint */}
           <div className="mt-3 pt-3 border-t border-chile-bg-secondary text-center">
-            <span className="text-xs text-chile-text-muted">Click anywhere to close</span>
+            <span className="text-xs text-chile-text-muted">Tippe irgendwo zum Schließen</span>
           </div>
         </div>
       )}
@@ -216,7 +215,7 @@ export default function WeatherWidget({ locationName, coordinates, dates }: Weat
       {/* Click outside to close */}
       {expanded && (
         <div 
-          className="fixed inset-0 z-40" 
+          className="fixed inset-0 z-[640]" 
           onClick={() => setExpanded(false)}
         />
       )}

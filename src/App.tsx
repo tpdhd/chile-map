@@ -10,6 +10,8 @@ const SettingsPage = lazy(() => import('./components/SettingsPage'))
 const CurrencyConverter = lazy(() => import('./components/CurrencyConverter'))
 const TripStats = lazy(() => import('./components/TripStats'))
 const Phrasebook = lazy(() => import('./components/Phrasebook'))
+const WeatherWidget = lazy(() => import('./components/WeatherWidget'))
+const Checklist = lazy(() => import('./components/Checklist'))
 
 export type Location = typeof tripData.locations[0]
 export type Recommendation = typeof tripData.locations[0]['recommendations'][0]
@@ -115,6 +117,7 @@ function App() {
   const [showCurrency, setShowCurrency] = useState(false)
   const [showStats, setShowStats] = useState(false)
   const [showPhrasebook, setShowPhrasebook] = useState(false)
+  const [showChecklist, setShowChecklist] = useState(false)
 
   // Get facts for current location or random
   const locationFacts = useMemo(() => {
@@ -350,6 +353,17 @@ function App() {
             <span className="text-xs ml-1">Tage</span>
           </div>
         )}
+
+        {/* Weather for selected location */}
+        {selectedLocation && (
+          <Suspense fallback={null}>
+            <WeatherWidget
+              locationName={selectedLocation.name}
+              coordinates={selectedLocation.coordinates as [number, number]}
+              dates={{ start: selectedLocation.startDate, end: selectedLocation.endDate }}
+            />
+          </Suspense>
+        )}
       </div>
 
       {/* FLOATING MENU - Top Right with Search */}
@@ -476,6 +490,15 @@ function App() {
               className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
             >
               <span>🗣️</span> Sprachführer
+            </button>
+            <button
+              onClick={() => {
+                setShowChecklist(true)
+                setShowMenu(false)
+              }}
+              className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
+            >
+              <span>🧳</span> Packliste
             </button>
             <button
               onClick={() => {
@@ -949,6 +972,13 @@ function App() {
       {showPhrasebook && (
         <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">🗣️</div></div>}>
           <Phrasebook onClose={() => setShowPhrasebook(false)} />
+        </Suspense>
+      )}
+
+      {/* CHECKLIST / PACKLISTE */}
+      {showChecklist && (
+        <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">🧳</div></div>}>
+          <Checklist onClose={() => setShowChecklist(false)} />
         </Suspense>
       )}
 
