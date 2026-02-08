@@ -137,6 +137,19 @@
 - [ ] Dark/Light Mode Toggle
 - [ ] Foto-Galerie pro Location
 
+### Wetter-Widget integriert (2026-02-09)
+- ✓ WeatherWidget in Header eingebaut (zeigt aktuelle Temperatur)
+- ✓ Widget auf Deutsch übersetzt (Vorhersage, Heute, etc.)
+- ✓ Z-Index und Styling an Dark-Theme angepasst
+
+### Packliste / Checklist (2026-02-09)
+- ✓ 🧳 Packliste mit 50+ Items in 6 Kategorien
+- ✓ Dokumente, Technik, Kleidung, Toilettenartikel, Reise-Essentials, Vor Abreise
+- ✓ Eigene Items hinzufügen möglich
+- ✓ Fortschrittsbalken mit Prozentanzeige
+- ✓ localStorage-Persistenz
+- ✓ Aufklappbare Kategorien mit Zähler
+
 ### Status Empfehlungen (2026-02-08)
 - Santiago: 22 | Quillimari: 20 | Algarrobo: 19
 - Wine Resort: 22 | San Carlos: 20 ✓ | Chillán: 20
@@ -168,4 +181,4 @@
 - ✓ Suchfunktion über alle Kategorien
 - ✓ Aufklappbare Karten mit Aussprache + Tipps
 
-*Letzte Aktualisierung: 2026-02-09 00:00*
+*Letzte Aktualisierung: 2026-02-09 00:30*
