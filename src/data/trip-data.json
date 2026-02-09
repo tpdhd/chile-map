@@ -3098,7 +3098,7 @@
             -38.64,
             -71.65
           ],
-          "description": "10km langer Weg mit hervorragenden Ausblicken auf den Lago Conguillío, Volcán Llaima und verschiedene Waldtypen in unterschiedlichen Höhenlagen. Moderat bis anspruchsvoll, 4-5 Stunden.",
+          "description": "Spektakulärer 7-10km Trail (2,5-5h) durch Araukarienwald mit atemberaubenden Ausblicken auf den Lago Conguillío, Volcán Llaima und die Sierra Nevada. Start bei Playa Linda am Ostende des Sees. Moderat bis anspruchsvoll, verschiedene Höhenlagen mit unterschiedlichen Waldtypen.",
           "descriptionEs": "Sendero de 10km con excelentes vistas del Lago Conguillío, Volcán Llaima y diversos tipos de bosque. Moderado a desafiante, 4-5 horas.",
           "address": "Parque Nacional Conguillío",
           "website": "https://sendasconguillio.cl/parque-nacional-conguillio/atractivos/",
@@ -3109,9 +3109,11 @@
             "challenging",
             "views",
             "volcano",
+            "araucaria",
+            "scenic",
             "all-day"
           ],
-          "source": "brave-search"
+          "source": "Rough Guide 2023 + brave-search"
         },
         {
           "id": "conguillio-laguna-captren",
@@ -3359,27 +3361,6 @@
             "araucaria",
             "1500-years",
             "iconic"
-          ],
-          "source": "Rough Guide 2023"
-        },
-        {
-          "id": "conguillio-sierra-nevada-trail",
-          "name": "Sierra Nevada Trail",
-          "nameEs": "Sendero Sierra Nevada",
-          "category": "hiking",
-          "coordinates": [
-            -38.67,
-            -71.59
-          ],
-          "description": "Spektakulärer 7km Trail (2,5h) von Playa Linda am Ostende des Lago Conguillío. Unglaubliche Aussichten auf die Sierra Nevada durch Araukarienwald.",
-          "address": "Playa Linda, Lago Conguillío",
-          "priceRange": "Kostenlos",
-          "tags": [
-            "hiking",
-            "sierra-nevada",
-            "araucaria",
-            "scenic",
-            "moderate"
           ],
           "source": "Rough Guide 2023"
         },
@@ -5711,7 +5692,7 @@
           "id": "frutillar-semanas-musicales",
           "name": "Semanas Musicales Festival (Not during trip)",
           "nameEs": "Semanas Musicales de Frutillar (No durante el viaje)",
-          "category": "info",
+          "category": "event",
           "coordinates": [
             -41.12,
             -73.065
@@ -6051,7 +6032,7 @@
           "id": "puerto-montt-cicloaustral",
           "name": "CicloAustral Bike Rental",
           "nameEs": "CicloAustral Arriendo de Bicicletas",
-          "category": "service",
+          "category": "activity",
           "coordinates": [
             -41.4689,
             -72.9411
@@ -6075,7 +6056,7 @@
           "id": "puerto-montt-safety-tip",
           "name": "Puerto Montt Safety Tip",
           "nameEs": "Consejo de Seguridad Puerto Montt",
-          "category": "tip",
+          "category": "unique",
           "coordinates": [
             -41.4689,
             -72.9411
