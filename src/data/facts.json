@@ -2051,8 +2051,76 @@
       "category": "food",
       "location": "chiloe",
       "source": "Bradt Carretera Austral 2022"
+    },
+    {
+      "text": "Bernardo O'Higgins, Chiles Unabhängigkeitsheld, war der uneheliche Sohn eines irischen Einwanderers und einer Frau aus Chillán — er wurde zur Ausbildung nach Lima und England geschickt.",
+      "category": "history",
+      "location": "chillan",
+      "source": "Insight Guides Chile 2024",
+      "id": 296
+    },
+    {
+      "text": "Der Sendero de Chile ist ein geplanter 8.500 km langer Wanderweg von der Atacama bis Patagonien — wenn fertig, wäre er der längste Wanderweg der Welt.",
+      "category": "unique",
+      "source": "Insight Guides Chile 2024",
+      "id": 297
+    },
+    {
+      "text": "Santiago hat über 6,3 Millionen Einwohner, aber das kompakte Zentrum fühlt sich klein an — die meisten Sehenswürdigkeiten liegen wenige Blocks voneinander entfernt.",
+      "category": "geography",
+      "location": "santiago",
+      "source": "Insight Guides Chile 2024",
+      "id": 298
+    },
+    {
+      "text": "La Moneda wurde zwischen 1788 und 1805 als Münzprägeanstalt gebaut — absichtlich niedrig gegen Erdbeben. Präsidenten lebten dort erst ab 1846.",
+      "category": "history",
+      "location": "santiago",
+      "source": "Insight Guides Chile 2024",
+      "id": 299
+    },
+    {
+      "text": "Die chilenische Rodeo-Saison läuft von September bis Mai — die Meisterschaft in Rancagua Ende März zeigt Reiter, die Stiere seitwärts galoppierend an die Wand treiben. Kein Lasso, keine Wildtierritte.",
+      "category": "culture",
+      "location": "san-carlos",
+      "source": "Insight Guides Chile 2024",
+      "id": 300
+    },
+    {
+      "text": "In Pucón kann man Rafting auf dem Trancura-Fluss machen — die oberen Abschnitte haben Vulkanpanorama, der untere Teil wird ruhiger aber 'hüpfig'.",
+      "category": "nature",
+      "location": "pucon",
+      "source": "Insight Guides Chile 2024",
+      "id": 301
+    },
+    {
+      "text": "Beim Camping in Chiloé muss man auf die Gezeiten achten — grasbedeckte Flussinseln können bei Vollmond-Flut komplett verschwinden und Ausrüstung durchnässen.",
+      "category": "unique",
+      "location": "chiloe",
+      "source": "Insight Guides Chile 2024",
+      "id": 302
+    },
+    {
+      "text": "Die Calafate-Beere und die Murtilla-Beere wachsen wild in den Wäldern des Lake District — sie sind essbar und schmecken hervorragend in Marmeladen und Likören.",
+      "category": "food",
+      "location": "frutillar-puerto-varas",
+      "source": "Insight Guides Chile 2024",
+      "id": 303
+    },
+    {
+      "text": "Inés de Suárez, Pedro de Valdivias Geliebte, kämpfte am 11. September 1541 in einem Kettenhemd gegen die Mapuche, als diese das frisch gegründete Santiago überfielen.",
+      "category": "history",
+      "location": "santiago",
+      "source": "Insight Guides Chile 2024",
+      "id": 304
+    },
+    {
+      "text": "Lachse sind nicht in Chile heimisch — sie stammen aus Nordamerika. Die Zuchtfarmen verursachen Umweltprobleme, aber wilde Lachse zu fangen entfernt eine invasive Art.",
+      "category": "nature",
+      "source": "Insight Guides Chile 2024",
+      "id": 305
     }
   ],
-  "lastUpdated": "2026-02-08",
-  "totalFacts": 295
+  "lastUpdated": "2026-02-09",
+  "totalFacts": 305
 }
