@@ -152,12 +152,12 @@
 - ✓ localStorage-Persistenz
 - ✓ Aufklappbare Kategorien mit Zähler
 
-### Status Empfehlungen (2026-02-08)
-- Santiago: 22 | Quillimari: 20 | Algarrobo: 19
+### Status Empfehlungen (2026-02-09)
+- Santiago: 22 | Quillimari: 20 | Algarrobo: 22
 - Wine Resort: 22 | San Carlos: 20 ✓ | Chillán: 20
 - Conguillío: 23 | Pucón: 28 | Valdivia: 25
 - Osorno: 21 | Frutillar/PV: 22 | Puerto Montt/Chiloé: 38
-- **Total: 280 Empfehlungen**
+- **Total: 283 Empfehlungen** ✓ (Alle Locations 20+ Recs)
 
 ### Status Fakten (2026-02-09, Duplikat-Cleanup + Balance)
 - **Total: 315 Fakten** (10 Duplikate entfernt, 10 neue Fakten hinzugefügt)
@@ -237,4 +237,8 @@
 - ✓ Kompakteres Menu (py-2.5 statt py-3)
 - ✓ Info Credits korrigiert (CARTO → Mapbox)
 
-*Letzte Aktualisierung: 2026-02-09 04:30*
+### Git Push (2026-02-09, 06:00)
+- ✓ Dist rebuild + push to GitHub
+- ✓ Clean working tree, all changes committed
+
+*Letzte Aktualisierung: 2026-02-09 06:00*
