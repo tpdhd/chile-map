@@ -129,6 +129,44 @@ function App() {
   const [showNearby, setShowNearby] = useState(false)
   const [showQuotes, setShowQuotes] = useState(false)
 
+  // Bottom sheet swipe gesture handling
+  const sheetRef = useRef<HTMLDivElement>(null)
+  const touchStartY = useRef<number>(0)
+  const touchStartTime = useRef<number>(0)
+  const isDragging = useRef<boolean>(false)
+
+  const handleSheetTouchStart = useCallback((e: React.TouchEvent) => {
+    // Only start drag from the handle area (first ~50px of sheet)
+    const target = e.target as HTMLElement
+    const isHandle = target.closest('.sheet-handle')
+    if (!isHandle) return
+    
+    touchStartY.current = e.touches[0].clientY
+    touchStartTime.current = Date.now()
+    isDragging.current = true
+  }, [])
+
+  const handleSheetTouchEnd = useCallback((e: React.TouchEvent) => {
+    if (!isDragging.current) return
+    isDragging.current = false
+    
+    const touchEndY = e.changedTouches[0].clientY
+    const deltaY = touchEndY - touchStartY.current
+    const elapsed = Date.now() - touchStartTime.current
+    const velocity = Math.abs(deltaY) / elapsed // px/ms
+    
+    // Fast swipe or significant distance
+    if (velocity > 0.5 || Math.abs(deltaY) > 60) {
+      if (deltaY < 0) {
+        // Swipe up → expand
+        setSheetExpanded(true)
+      } else {
+        // Swipe down → collapse
+        setSheetExpanded(false)
+      }
+    }
+  }, [])
+
   // Get facts for current location or random
   const locationFacts = useMemo(() => {
     if (!selectedLocation) return factsData.facts
@@ -453,114 +491,82 @@ function App() {
 
         {/* Menu Dropdown */}
         {showMenu && (
-          <div className="absolute top-12 right-0 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg border border-white/10 min-w-[200px] overflow-hidden">
+          <div className="absolute top-12 right-0 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg border border-white/10 min-w-[220px] overflow-hidden max-h-[70vh] overflow-y-auto">
+            {/* Section: Planung */}
+            <div className="px-3 pt-2.5 pb-1">
+              <span className="text-[10px] font-semibold text-chile-text-muted uppercase tracking-wider">Planung</span>
+            </div>
             <button
-              onClick={() => {
-                setShowCurrency(true)
-                setShowMenu(false)
-              }}
-              className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
-            >
-              <span>💱</span> Währungsrechner
-            </button>
-            <button
-              onClick={() => {
-                setShowCarRental(true)
-                setShowMenu(false)
-              }}
-              className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
-            >
-              <span>🚗</span> Mietwagen Guide
-            </button>
-            <button
-              onClick={() => {
-                setShowSettings(true)
-                setShowMenu(false)
-              }}
-              className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
-            >
-              <span>⚙️</span> Einstellungen
-            </button>
-            <button
-              onClick={() => {
-                setShowFacts(true)
-                setShowMenu(false)
-                // Random fact to start
-                setCurrentFactIndex(Math.floor(Math.random() * locationFacts.length))
-              }}
-              className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
-            >
-              <span>📖</span> Chile Fakten ({factsData.totalFacts})
-            </button>
-            <button
-              onClick={() => {
-                setShowQuotes(true)
-                setShowMenu(false)
-              }}
-              className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
-            >
-              <span>✨</span> Reisezitate
-            </button>
-            <button
-              onClick={() => {
-                setShowPhrasebook(true)
-                setShowMenu(false)
-              }}
-              className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
-            >
-              <span>🗣️</span> Sprachführer
-            </button>
-            <button
-              onClick={() => {
-                setShowChecklist(true)
-                setShowMenu(false)
-              }}
-              className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
-            >
-              <span>🧳</span> Packliste
-            </button>
-            <button
-              onClick={() => {
-                setShowDailyPlan(true)
-                setShowMenu(false)
-              }}
-              className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
-            >
-              <span>📅</span> Tagesplan
-            </button>
-            <button
-              onClick={() => {
-                setShowTripRoute(true)
-                setShowMenu(false)
-              }}
-              className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
+              onClick={() => { setShowTripRoute(true); setShowMenu(false) }}
+              className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm"
             >
               <span>🗺️</span> Reiseroute
             </button>
             <button
-              onClick={() => {
-                setShowNearby(true)
-                setShowMenu(false)
-              }}
-              className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
+              onClick={() => { setShowDailyPlan(true); setShowMenu(false) }}
+              className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm"
+            >
+              <span>📅</span> Tagesplan
+            </button>
+            <button
+              onClick={() => { setShowChecklist(true); setShowMenu(false) }}
+              className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm"
+            >
+              <span>🧳</span> Packliste
+            </button>
+            <button
+              onClick={() => { setShowNearby(true); setShowMenu(false) }}
+              className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm"
             >
               <span>📍</span> In der Nähe
             </button>
+
+            {/* Section: Wissen */}
+            <div className="border-t border-white/10 px-3 pt-2.5 pb-1">
+              <span className="text-[10px] font-semibold text-chile-text-muted uppercase tracking-wider">Wissen</span>
+            </div>
             <button
               onClick={() => {
-                setShowEmergency(true)
+                setShowFacts(true)
                 setShowMenu(false)
+                setCurrentFactIndex(Math.floor(Math.random() * locationFacts.length))
               }}
-              className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
+              className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm"
             >
-              <span>🆘</span> Notfall-Info
+              <span>📖</span> Chile Fakten <span className="text-chile-text-muted text-xs ml-auto">{factsData.totalFacts}</span>
             </button>
             <button
-              onClick={() => {
-                setShowStats(true)
-                setShowMenu(false)
-              }}
-              className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
+              onClick={() => { setShowPhrasebook(true); setShowMenu(false) }}
+              className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm"
+            >
+              <span>🗣️</span> Sprachführer
+            </button>
+            <button
+              onClick={() => { setShowQuotes(true); setShowMenu(false) }}
+              className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm"
+            >
+              <span>✨</span> Reisezitate
+            </button>
+
+            {/* Section: Tools */}
+            <div className="border-t border-white/10 px-3 pt-2.5 pb-1">
+              <span className="text-[10px] font-semibold text-chile-text-muted uppercase tracking-wider">Tools</span>
+            </div>
+            <button
+              onClick={() => { setShowCurrency(true); setShowMenu(false) }}
+              className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm"
+            >
+              <span>💱</span> Währungsrechner
+            </button>
+            <button
+              onClick={() => { setShowCarRental(true); setShowMenu(false) }}
+              className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm"
+            >
+              <span>🚗</span> Mietwagen Guide
+            </button>
+            <button
+              onClick={() => { setShowStats(true); setShowMenu(false) }}
+              className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm"
             >
               <span>📊</span> Statistik
             </button>
@@ -579,11 +585,25 @@ function App() {
                 }
                 setShowMenu(false)
               }}
-              className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
+              className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm"
             >
               <span>📋</span> Favoriten kopieren
             </button>
+            <button
+              onClick={() => { setShowEmergency(true); setShowMenu(false) }}
+              className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm text-red-400"
+            >
+              <span>🆘</span> Notfall-Info
+            </button>
+
+            {/* Section: System */}
             <div className="border-t border-white/10">
+              <button
+                onClick={() => { setShowSettings(true); setShowMenu(false) }}
+                className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm"
+              >
+                <span>⚙️</span> Einstellungen
+              </button>
               <button
                 onClick={() => {
                   setShowMenu(false)
@@ -603,7 +623,7 @@ function App() {
                     reload()
                   }
                 }}
-                className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
+                className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm"
               >
                 <span>🔄</span> App aktualisieren
               </button>
@@ -612,21 +632,21 @@ function App() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setShowMenu(false)}
-                className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3 block"
+                className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm block"
               >
                 <span>🔗</span> Web-Version öffnen
               </a>
               <button
                 onClick={() => {
-                  alert('ℹ️ Chile Trip Map\n\nKartendaten:\n© OpenStreetMap contributors\n© CARTO\n\nPowered by Leaflet\n\nMade with ❤️ for our Chile adventure')
+                  alert('ℹ️ Chile Trip Map\n\nKartendaten:\n© OpenStreetMap contributors\n© Mapbox\n\nPowered by Leaflet\n\nMade with ❤️ for our Chile adventure')
                   setShowMenu(false)
                 }}
-                className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3 text-chile-text-muted"
+                className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm text-chile-text-muted"
               >
                 <span>ℹ️</span> Info & Credits
               </button>
-              <div className="px-4 py-2 text-xs text-chile-text-muted">
-                {tripData.trip.totalDays} Tage • {tripData.locations.length} Orte
+              <div className="px-4 py-2 text-[10px] text-chile-text-muted">
+                {tripData.trip.totalDays} Tage • {tripData.locations.length} Orte • 🇨🇱
               </div>
             </div>
           </div>
@@ -669,6 +689,7 @@ function App() {
 
       {/* BOTTOM SHEET */}
       <div 
+        ref={sheetRef}
         className={`
           absolute bottom-0 left-0 right-0 z-[500]
           bg-chile-bg-card/95 backdrop-blur-sm rounded-t-3xl shadow-lg
@@ -676,10 +697,12 @@ function App() {
           ${sheetExpanded ? 'translate-y-0' : 'translate-y-[calc(100%-64px)]'}
         `}
         style={{ maxHeight: '50vh', paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}
+        onTouchStart={handleSheetTouchStart}
+        onTouchEnd={handleSheetTouchEnd}
       >
-        {/* Sheet Handle - Clear drag indicator */}
+        {/* Sheet Handle - Swipeable drag indicator */}
         <div 
-          className="flex flex-col items-center pt-2 pb-1 cursor-pointer group"
+          className="sheet-handle flex flex-col items-center pt-2 pb-1 cursor-pointer group touch-none"
           onClick={() => setSheetExpanded(!sheetExpanded)}
         >
           <div className="w-10 h-1 bg-white/40 rounded-full group-hover:bg-white/60 transition-colors" />
