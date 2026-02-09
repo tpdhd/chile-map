@@ -1254,86 +1254,79 @@
     },
     {
       "id": 180,
-      "text": "Das Casablanca-Tal zwischen Santiago und Valparaíso produziert Chiles beste Weißweine — Meeresbrisen schaffen perfekte Bedingungen für Sauvignon Blanc und Chardonnay.",
-      "category": "food",
-      "location": "algarrobo",
-      "source": "Rough Guides Chile 2023"
-    },
-    {
-      "id": 181,
       "text": "Viña Undurraga bei Melipilla lässt sich ideal mit einem Besuch in Algarrobo oder Las Cruces verbinden — Weinkultur trifft Küstengenuss.",
       "category": "food",
       "location": "algarrobo",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 182,
+      "id": 181,
       "text": "San Antonio ist ein Arbeitshafen mit Picadas (einfachen Restaurants) direkt am Hafen, wo Fischer essen — riesige Teller Meeresfrüchte zu sehr günstigen Preisen.",
       "category": "food",
       "location": "algarrobo",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 183,
+      "id": 182,
       "text": "Die Hacienda des Prat-Museums ist ein Musterbeispiel kolonialer Landarchitektur mit großem Innenhof und eleganten Veranden.",
       "category": "history",
       "location": "san-carlos",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 184,
+      "id": 183,
       "text": "Die Region Ñuble ist Chiles jüngste Verwaltungsregion — erst kürzlich von Biobío abgetrennt, mit San Carlos als einer ihrer Hauptstädte.",
       "category": "geography",
       "location": "san-carlos",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 185,
+      "id": 184,
       "text": "Die Gegend um San Carlos ist Chiles ländliches Kernland, wo der Kult des Huaso (Cowboy) lebt — mit häufigen Rodeos in Stadien namens Medialunas.",
       "category": "culture",
       "location": "san-carlos",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 186,
+      "id": 185,
       "text": "Die Escuela México in Chillán wurde mit mexikanischen Spenden nach der Erdbebenkatastrophe 1939 gebaut. David Alfaro Siqueiros und Xavier Guerrero schufen dort auf Initiative Pablo Nerudas Wandgemälde.",
       "category": "culture",
       "location": "chillan",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 187,
+      "id": 186,
       "text": "Der Pudú, ein winziger rötlicher Hirsch, der nur in Chile vorkommt, lebt in Dickichten dicht bewaldeter Gebiete zwischen Chillán und Chiloé — fast unmöglich zu entdecken.",
       "category": "nature",
       "location": "chillan",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 188,
+      "id": 187,
       "text": "Chile führte 1853 Briefmarken ein — nur 13 Jahre nach Großbritannien, dem Erfinder der Briefmarke.",
       "category": "history",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 189,
+      "id": 188,
       "text": "Valparaíso wurde 1536 von Juan de Saavedra benannt, der von Heimweh nach seinem spanischen Heimatort überwältigt wurde und es 'Paradies-Tal' (Valle del Paraíso) nannte.",
       "category": "history",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 190,
+      "id": 189,
       "text": "Der Ascensor Polanco in Valparaíso (1915) steigt senkrecht durch das Innere eines Hügels empor und tritt oben aus einem Turm hervor, der über einen Hängesteg mit der Hügelspitze verbunden ist.",
       "category": "unique",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 191,
+      "id": 190,
       "text": "1834 bestieg Charles Darwin den Cerro La Campana östlich von Valparaíso — heute ein Nationalpark, in dem man seinen Spuren folgen kann.",
       "category": "history",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 192,
+      "id": 191,
       "text": "Buchupureo, 120 km nordwestlich von Chillán, ist ein unberührtes Surferparadies mit Left-Point-Break-Wellen von bis zu 6 Metern.",
       "category": "beach",
       "location": "san-carlos",
@@ -1344,374 +1337,346 @@
       "category": "culture",
       "location": "quillimari",
       "source": "Insight Guides Chile 2024",
-      "id": 193
+      "id": 192
     },
     {
       "text": "In Pichicuy steht eine Kirche, die auf einem Felsvorsprung über dem Meer errichtet wurde – ein spektakulärer Anblick bei Sonnenuntergang.",
       "category": "unique",
       "location": "quillimari",
       "source": "Insight Guides Chile 2024",
-      "id": 194
+      "id": 193
     },
     {
       "text": "Die Felsengärten von Los Molles haben unterirdische Höhlen, die ein donnerndes Grollen erzeugen. Zwischen ihnen liegt ein Vogelschutzgebiet mit reichem Meeresleben.",
       "category": "nature",
       "location": "quillimari",
       "source": "Insight Guides Chile 2024",
-      "id": 195
+      "id": 194
     },
     {
       "text": "Der Sillón del Gobernador (Gouverneursstuhl) bei Los Molles ist mit 695 Metern die höchste Seeklippe Chiles und bei gutem Wetter von Valparaíso aus sichtbar.",
       "category": "geography",
       "location": "quillimari",
       "source": "Insight Guides Chile 2024",
-      "id": 196
+      "id": 195
     },
     {
       "text": "La Ligua ist berühmt für seine Dulces – traditionelle Kuchen aus Biskuit oder Baiser, gefüllt mit Manjar (chilenisches Karamell). Ein Abstecher von der Panamericana lohnt sich.",
       "category": "food",
       "location": "quillimari",
       "source": "Insight Guides Chile 2024",
-      "id": 197
+      "id": 196
     },
     {
       "text": "La Ligua war Heimat von La Quintrala (Catalina de los Ríos, geb. 1604), einer der dunkelsten Figuren Chiles: Sie ermordete über 40 Menschen, darunter ihren eigenen Vater, und entging trotzdem der Justiz.",
       "category": "history",
       "location": "quillimari",
       "source": "Rough Guides Chile 2023",
-      "id": 198
+      "id": 197
     },
     {
       "text": "Isla Negra hat eine besondere Ausstrahlung. Pablo Nerudas Lieblingshaus dort überblickt einen rauen Strandabschnitt, wo Wellen gegen bucklige Felsen krachen, die wie Kinderburgen aus dem weißen Sand ragen.",
       "category": "culture",
       "location": "algarrobo",
       "source": "Insight Guides Chile 2024",
-      "id": 199
+      "id": 198
     },
     {
       "text": "Cartagena an der Zentralküste wurde im frühen 19. Jahrhundert mit der Ankunft der Eisenbahn aus Santiago zu einem beliebten Badeort.",
       "category": "history",
       "location": "algarrobo",
       "source": "Insight Guides Chile 2024",
-      "id": 200
+      "id": 199
     },
     {
       "text": "Las Rocas de Santo Domingo südlich von San Antonio ist ein beliebter Ort für Sommerhäuser wohlhabender Chilenen, die großen Stolz auf ihre wunderschönen Gärten nehmen – trotz des notorisch windigen Strandes.",
       "category": "unique",
       "location": "algarrobo",
       "source": "Insight Guides Chile 2024",
-      "id": 201
+      "id": 200
     },
     {
       "text": "Die Viña Indómita im Casablanca-Tal ist ein markantes weißes Gebäude auf einem Hügel mit Blick auf die Autobahn – das Restaurant bietet ein exzellentes Menü und Weintouren.",
       "category": "food",
       "location": "algarrobo",
       "source": "Insight Guides Chile 2024",
-      "id": 202
+      "id": 201
     },
     {
       "text": "Das Itata-Tal erstreckt sich von Chillán nordwestlich zu einer Reihe ruhiger Küstenstädte, darunter das idyllische Surferdorf Buchupureo mit Wellen bis zu 6 Metern Höhe.",
       "category": "nature",
       "location": "san-carlos",
       "source": "Rough Guides Chile 2023",
-      "id": 203
+      "id": 202
     },
     {
       "text": "In Ninhue (Region Ñuble) steht das Santuario Cuna de Prat – Geburtsort des Marinehelden Arturo Prat (1848) in einer wunderschönen kolonialen Hacienda mit Museum.",
       "category": "history",
       "location": "san-carlos",
       "source": "Rough Guides Chile 2023",
-      "id": 204
+      "id": 203
     },
     {
       "text": "Ñuble ist Chiles jüngste Verwaltungsregion, 2018 von der Region Biobío abgetrennt. Es ist das ländliche Herzland Chiles, wo der Kult des Huaso (Cowboy) noch lebt.",
       "category": "culture",
       "location": "san-carlos",
       "source": "Rough Guides Chile 2023",
-      "id": 205
+      "id": 204
     },
     {
       "text": "In der Region um San Carlos finden regelmäßig Rodeos in Medialunas (halbmondförmigen Stadien) statt – eine der ältesten chilenischen Traditionen seit der Kolonialzeit.",
       "category": "culture",
       "location": "san-carlos",
       "source": "Rough Guides Chile 2023",
-      "id": 206
+      "id": 205
     },
     {
       "text": "Die Iglesia de Piedra (Steinkirche) bei Cobquecura ist eine Reihe hoher Meereshöhlen mit Gängen, die zum Ozean hinabführen – ein spektakuläres Naturwunder an der Küste von Ñuble.",
       "category": "nature",
       "location": "san-carlos",
       "source": "Rough Guides Chile 2023",
-      "id": 207
+      "id": 206
     },
     {
       "text": "Chillán wurde 1550 gegründet und seitdem wegen Erdbeben und Mapuche-Angriffen wiederholt zerstört und neu aufgebaut. Die heutige Architektur stammt größtenteils von nach dem Erdbeben 1939.",
       "category": "history",
       "location": "chillan",
       "source": "Rough Guides Chile 2023",
-      "id": 208
+      "id": 207
     },
     {
       "text": "Ein 36 Meter hohes Betonkreuz auf der Plaza Bernardo O'Higgins in Chillán erinnert an die 30.000 Einwohner, die beim Erdbeben von 1939 starben.",
       "category": "history",
       "location": "chillan",
       "source": "Rough Guides Chile 2023",
-      "id": 209
+      "id": 208
     },
     {
       "text": "Die Feria de Chillán ist der größte und lebendigste Markt Chiles. Samstags quillt er über die Plaza de la Merced hinaus – mit Huaso-Hüten, Ponchos, Lederstiefeln und geschnitzten Holzsteigbügeln.",
       "category": "food",
       "location": "chillan",
       "source": "Insight Guides Chile 2024",
-      "id": 210
+      "id": 209
     },
     {
       "text": "Violeta Parra wurde 1917 in Chillán geboren. Ihre Familie war künstlerisch hochbegabt: Bruder Nicanor wurde Chiles berühmter 'Anti-Poet', Roberto schuf einen neuen Cueca-Stil.",
       "category": "culture",
       "location": "chillan",
       "source": "Insight Guides Chile 2024",
-      "id": 211
-    },
-    {
-      "text": "Der Pudú, ein winziges rötliches Reh und endemisch in Chile, lebt in den dichten Wäldern zwischen Chillán und Chiloé – er ist fast unmöglich zu entdecken.",
-      "category": "nature",
-      "location": "chillan",
-      "source": "Insight Guides Chile 2024",
-      "id": 212
-    },
-    {
-      "text": "Chile führte 1853 Briefmarken ein – nur 13 Jahre nach Großbritannien. Die erste Eisenbahn von Copiapó nach Caldera wurde 1851 eingeweiht.",
-      "category": "history",
-      "location": null,
-      "source": "Insight Guides Chile 2024",
-      "id": 213
-    },
-    {
-      "text": "Valparaísos Ascensor Polanco, gebaut 1915, ist ein Ingenieurskunstwerk: Er steigt vertikal durch das Innere eines Hügels und mündet auf einem Turm, der durch einen Hängesteg mit dem Hügel verbunden ist.",
-      "category": "unique",
-      "location": null,
-      "source": "Insight Guides Chile 2024",
-      "id": 214
-    },
-    {
-      "text": "Die Nevados de Chillán haben mit fast 13 km die längste Skipiste Südamerikas. Im Sommer kann man in natürlichen Thermalbecken baden und zu dampfenden Geysir-ähnlichen Quellen wandern.",
-      "category": "unique",
-      "location": "chillan",
-      "source": "Insight Guides Chile 2024",
-      "id": 215
+      "id": 210
     },
     {
       "text": "Das Santuario de la Naturaleza Río Cruces nördlich von Valdivia ist Heimat einer erstaunlichen Vielfalt an Flussvögeln. Das Gebiet wurde beim Erdbeben 1960 unter Wasser gesetzt und bildete ein einzigartiges Feuchtbiotop.",
       "category": "nature",
       "location": "valdivia",
       "source": "Insight Guides Chile 2024",
-      "id": 216
+      "id": 211
     },
     {
       "text": "Die Stadt Valdivia wurde 1552 von Pedro de Valdivia gegründet. 1599 wurde sie nach einem Mapuche-Aufstand zerstört und erst 1645 von den Spaniern zurückerobert, die ein massives Festungssystem errichteten.",
       "category": "history",
       "location": "valdivia",
       "source": "Insight Guides Chile 2024",
-      "id": 217
+      "id": 212
     },
     {
       "text": "Die Sieben-Seen-Region (Siete Lagos) bei Valdivia gehört zu den am wenigsten besuchten Gebieten der Seenregion — spektakuläre Landschaften, aber schwierige Straßen durch die Berge.",
       "category": "nature",
       "location": "valdivia",
       "source": "Insight Guides Chile 2024",
-      "id": 218
+      "id": 213
     },
     {
       "text": "Am Río Cruces bei Valdivia kann man Bootstouren zum indigenen Huilliche-Dorf Punucapa machen und dabei Schwarzhalsschwäne beobachten — eine seltene südamerikanische Art.",
       "category": "nature",
       "location": "valdivia",
       "source": "Insight Guides Chile 2024",
-      "id": 219
+      "id": 214
     },
     {
       "text": "1819 eroberte die neue chilenische Marine unter Lord Cochrane, einem Schotten, Valdivia — eine der letzten royalistischen Festungen in Chile und ein entscheidender Moment für die Unabhängigkeit.",
       "category": "history",
       "location": "valdivia",
       "source": "Insight Guides Chile 2024",
-      "id": 220
+      "id": 215
     },
     {
       "text": "Osorno wurde nach dem großen Mapuche-Aufstand von 1598 aufgegeben — die Einwohner flohen zu geschützten Außenposten an der Küste. Die Stadt wurde erst 200 Jahre später wiedergegründet.",
       "category": "history",
       "location": "osorno",
       "source": "Insight Guides Chile 2024",
-      "id": 221
+      "id": 216
     },
     {
       "text": "Der Volcán Osorno (2.652m) ist ein perfekter, schneebedeckter Kegel, der die Aussicht vom Lago Llanquihue dominiert. Erfahrene Bergsteiger können den Krater in etwa 6 Stunden erreichen.",
       "category": "nature",
       "location": "osorno",
       "source": "Insight Guides Chile 2024",
-      "id": 222
+      "id": 217
     },
     {
       "text": "Der Darwin-Fuchs (Chiloé-Fuchs) ist Chiles kleinster und seltenster Fuchs. Er lebt auf der Isla Grande de Chiloé und in den Wäldern nördlich von Osorno und ist vom Aussterben bedroht.",
       "category": "nature",
       "location": "osorno",
       "source": "Insight Guides Chile 2024",
-      "id": 223
+      "id": 218
     },
     {
       "text": "Die Copihue, Chiles Nationalblume, wächst in Wäldern von Valparaíso bis Osorno. Ihre glockenförmigen Blüten — geliebt von Kolibris — sind meist rot, es gibt aber auch eine weiße Variante.",
       "category": "nature",
       "location": "osorno",
       "source": "Insight Guides Chile 2024",
-      "id": 224
+      "id": 219
     },
     {
       "text": "Die Straße vom Volcán Osorno wurde ursprünglich pro Kilometer bezahlt — die Einheimischen sorgten dafür, dass sie so lang und kurvenreich wie möglich wurde.",
       "category": "unique",
       "location": "osorno",
       "source": "Insight Guides Chile 2024",
-      "id": 225
+      "id": 220
     },
     {
       "text": "Santiago wurde am 12. Februar 1541 von Pedro de Valdivia gegründet. Am 11. September desselben Jahres griff der Mapuche-Häuptling Michimalongo die Siedlung an — Valdivias Geliebte Inés de Suárez kämpfte in einem Kettenhemd Seite an Seite mit den Männern.",
       "category": "history",
       "location": "santiago",
       "source": "Insight Guides Chile 2024",
-      "id": 226
+      "id": 221
     },
     {
       "text": "Pedro de Valdivia schrieb an den König: 'Dieses Land ist so, dass das Leben hier nicht zu übertreffen ist. Es hat nur vier Monate Winter, und der Sommer ist so mild, dass man den ganzen Tag in der Sonne gehen kann.'",
       "category": "history",
       "location": "santiago",
       "source": "Insight Guides Chile 2024",
-      "id": 227
+      "id": 222
     },
     {
-      "id": 228,
+      "id": 223,
       "text": "Der Pisco Sour ist Chiles Nationalcocktail: 3 Teile Pisco, 1 Teil Limettensaft, Zucker, Eiweiß und Eis — kräftig schütteln!",
       "category": "food",
       "source": "Insight Guides Chile 2024"
     },
     {
-      "id": 229,
+      "id": 224,
       "text": "Ein 'Completo' ist Chiles Version des Hot Dogs — beladen mit Avocado, Tomate und Mayo. Ein 'Italiano' hat die Farben der italienischen Flagge: grüne Avocado, weiße Mayo, rote Tomate.",
       "category": "food",
       "source": "Insight Guides Chile 2024"
     },
     {
-      "id": 230,
+      "id": 225,
       "text": "Sopaipillas sind frittierte Kürbis-Teigfladen — bei Regen werden sie auf der Straße verkauft. Mit Senf oder Pebre (scharfer Salsa) sind sie der ultimative Snack.",
       "category": "food",
       "source": "Insight Guides Chile 2024"
     },
     {
-      "id": 231,
+      "id": 226,
       "text": "Die Empanada de Pino ist Chiles Nationalgebäck: gefüllt mit Hackfleisch, Zwiebeln, Ei, Oliven und Rosinen. An der Küste gibt es Empanadas de Mariscos mit Muscheln.",
       "category": "food",
       "source": "Insight Guides Chile 2024"
     },
     {
-      "id": 232,
+      "id": 227,
       "text": "Cochamó-Tal südlich von Puerto Montt wird 'Yosemite des Südens' genannt — Granitfelsen, Regenwälder mit 1.000 Jahre alten Alerzen und Kletterrouten von Weltklasse.",
       "category": "nature",
       "location": "frutillar-puerto-varas",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 233,
+      "id": 228,
       "text": "Das Teatro del Lago in Frutillar ist ein hochmoderner Konzertsaal mit Kupferdach direkt am See — weltbekannte Orchester spielen vor der Kulisse von Vulkanen.",
       "category": "culture",
       "location": "frutillar-puerto-varas",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 234,
+      "id": 229,
       "text": "Der Lago Todos Los Santos heißt auch 'Lago Esmeralda' wegen seines intensiv smaragdgrünen Wassers — einer der schönsten Seen des Lake District.",
       "category": "nature",
       "location": "frutillar-puerto-varas",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 235,
+      "id": 230,
       "text": "Puerto Octay war die erste deutsche Siedlung am Llanquihue (1852). Im Museum 'El Colono' stehen noch die Destillierapparate für Chicha — einen fermentierten Apfelmost.",
       "category": "history",
       "location": "frutillar-puerto-varas",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 236,
+      "id": 231,
       "text": "Die Fiestas Patrias am 18. September sind Chiles größtes Fest: Fondas (Tanzpavillons mit Eukalyptus-Dach), Cueca-Tänze, Empanadas, Chicha und Rodeos überall im Land.",
       "category": "culture",
       "source": "Insight Guides Chile 2024"
     },
     {
-      "id": 237,
+      "id": 232,
       "text": "Im Cajón del Maipo zeigen weiße Fahnen am Straßenrand, dass Anwohner selbstgemachte Spezialitäten verkaufen: Ofenbrot, Honig, Marmeladen und Empanadas.",
       "category": "food",
       "location": "wine-resort",
       "source": "Insight Guides Chile 2024"
     },
     {
-      "id": 238,
+      "id": 233,
       "text": "Ein Vulkanausbruch des Osorno im Jahr 1850 leitete den Río Petrohué um — statt in den Lago Llanquihue fließt er seitdem in den Lago Todos Los Santos. Die alten Lavaströme sind noch sichtbar.",
       "category": "nature",
       "location": "frutillar-puerto-varas",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 239,
+      "id": 234,
       "text": "Die Besteigung des Volcán Osorno ist die schwierigste Vulkan-Herausforderung der Region — fünf Stunden zum Gipfel, Eis- und Schneeausrüstung nötig, maximal 2 Wanderer pro Guide.",
       "category": "nature",
       "location": "osorno",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 240,
+      "id": 235,
       "text": "Das Refugio Teski am Volcán Osorno hat Outdoor-Whirlpools — Pisco Sour in der Hand, Blick über den Lago Llanquihue, umgeben von blauen Eishöhlen.",
       "category": "unique",
       "location": "osorno",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 241,
+      "id": 236,
       "text": "Der Sendero Termas de Callao im Parque Vicente Pérez Rosales führt zu kostenlosen heißen Quellen mitten in der Wildnis — erreichbar nur per Boot und Wanderung.",
       "category": "nature",
       "location": "frutillar-puerto-varas",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 242,
+      "id": 237,
       "text": "Am Dalcahue-Markt auf Chiloé werden sonntags traditionelle Curanto-Mahlzeiten zubereitet: Meeresfrüchte, Fleisch und Milcao (Kartoffelbrot) — gekocht über heißen Steinen in einem Erdloch.",
       "category": "food",
       "location": "chiloe",
       "source": "Insight Guides Chile 2024"
     },
     {
-      "id": 243,
+      "id": 238,
       "text": "Pumas leben in den Bergen des Lake District und können bis zu 1,5 Meter lang werden. Sie greifen selten Menschen an, aber Guanako-Skelette mit gebrochenen Hälsen verraten ihre Anwesenheit.",
       "category": "nature",
       "location": "pucon",
       "source": "Insight Guides Chile 2024"
     },
     {
-      "id": 244,
+      "id": 239,
       "text": "Die Llaca ist das einzige verbliebene Beuteltier der südlichen Anden — es lebt in den Bäumen, ernährt sich von Früchten und Insekten und hält im Winter einen Halbwinterschlaf.",
       "category": "nature",
       "source": "Insight Guides Chile 2024"
     },
     {
-      "id": 245,
+      "id": 240,
       "text": "Chiles Hirschkäfer (stag beetle) wird bis zu 9 cm lang — er lebt in den Eichen- und Coigüe-Wäldern des Lake District und ist einer der größten Käfer der Welt.",
       "category": "nature",
       "source": "Insight Guides Chile 2024"
     },
     {
-      "id": 246,
+      "id": 241,
       "text": "In Puerto Varas kann man im Januar und Februar Mountainbike-Downhill auf den Skipisten des Volcán Osorno fahren — die Sessellifte laufen ganzjährig.",
       "category": "unique",
       "location": "frutillar-puerto-varas",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 247,
+      "id": 242,
       "text": "Der Parque Nacional Vicente Pérez Rosales ist mit über 2.510 km² der meistbesuchte Nationalpark Chiles — gegründet 1926 als erster Nationalpark des Landes.",
       "category": "nature",
       "location": "frutillar-puerto-varas",
@@ -1722,331 +1687,296 @@
       "category": "history",
       "location": "santiago",
       "source": "Rough Guides Chile 2023",
-      "id": 248
+      "id": 243
     },
     {
       "text": "Londres 38 in Santiago war eines der vier Folterzentren unter Pinochet — das einzige, das nicht zerstört wurde. Zwischen 1973 und 1974 wurden dort 96 Menschen ermordet.",
       "category": "history",
       "location": "santiago",
       "source": "Rough Guides Chile 2023",
-      "id": 249
+      "id": 244
     },
     {
       "text": "La Chimba, der alte Quechua-Name für Barrio Bellavista, bedeutet \"die andere Seite des Flusses\" — das Viertel entstand, als Santiago über den Mapocho hinauswuchs.",
       "category": "culture",
       "location": "santiago",
       "source": "Rough Guides Chile 2023",
-      "id": 250
+      "id": 245
     },
     {
       "text": "Der Gran Torre Santiago (300m) ist der höchste Wolkenkratzer Lateinamerikas — entworfen vom argentinischen Architekten César Pelli, mit Aussichtsplattform Sky Costanera.",
       "category": "unique",
       "location": "santiago",
       "source": "Rough Guides Chile 2023",
-      "id": 251
+      "id": 246
     },
     {
       "text": "Die Estación Central hat ein kolossales Metalldach, das 1896 in der französischen Schneider-Creusot-Gießerei gegossen und nach Santiago verschifft wurde.",
       "category": "history",
       "location": "santiago",
       "source": "Rough Guides Chile 2023",
-      "id": 252
+      "id": 247
     },
     {
       "text": "Im Museo de Historia Natural im Parque Quinta Normal steht ein komplettes Blauwal-Skelett — und ein Moai von der Osterinsel mit dem mysteriösen, unentschlüsselten Rongorongo-Schrift.",
       "category": "culture",
       "location": "santiago",
       "source": "Rough Guides Chile 2023",
-      "id": 253
+      "id": 248
     },
     {
       "text": "Das Teatro Municipal in Santiago wurde 1857 eingeweiht — eine prächtige französisch-neoklassizistische Bühne für Oper, Ballett und Konzerte mit roten Samtpolstern und Kristallleuchtern.",
       "category": "culture",
       "location": "santiago",
       "source": "Rough Guides Chile 2023",
-      "id": 254
+      "id": 249
     },
     {
       "text": "Die Basílica de la Merced in Santiago beherbergt eine Rongorongo-Tafel von der Osterinsel — eine von nur 29 weltweit erhaltenen, in einer noch nicht entschlüsselten Schrift.",
       "category": "culture",
       "location": "santiago",
       "source": "Rough Guides Chile 2023",
-      "id": 255
+      "id": 250
     },
     {
       "text": "Die Feria Fluvial in Valdivia ist ein Flussmarkt, an dem sich Seelöwen unter den Verkaufsständen tummeln und auf Fischabfälle warten — ein einzigartiges Schauspiel.",
       "category": "unique",
       "location": "valdivia",
       "source": "Rough Guides Chile 2023",
-      "id": 256
+      "id": 251
     },
     {
       "text": "Valdivias Festungssystem an der Mündung des Río Valdivia war das größte der spanischen Krone in Südamerika — 17 Forts schützten den Zugang zum Fluss.",
       "category": "history",
       "location": "valdivia",
       "source": "Rough Guides Chile 2023",
-      "id": 257
+      "id": 252
     },
     {
       "text": "Die Cervecería Kunstmann bei Valdivia braut seit 1960 deutsches Bier in Chile — ihr jährliches Bierfest im Januar ist eines der größten in Südamerika.",
       "category": "food",
       "location": "valdivia",
       "source": "Rough Guides Chile 2023",
-      "id": 258
+      "id": 253
     },
     {
       "text": "Das Erdbeben von 1960 hob in Valdivia den Meeresboden und senkte das Flussufer — ganze Stadtteile versanken, und ein neues Feuchtgebiet (Río Cruces) entstand aus dem Nichts.",
       "category": "nature",
       "location": "valdivia",
       "source": "Rough Guides Chile 2023",
-      "id": 259
+      "id": 254
     },
     {
       "text": "Das Museo Histórico auf der Isla Teja in Valdivia war einst das Haus von Karl Anwandter, dem Gründer der ersten Brauerei Chiles — es enthält noch die originale rote Marmorkamin-Einrichtung und eine Laterna Magica.",
       "category": "culture",
       "location": "valdivia",
       "source": "Rough Guides Chile 2023",
-      "id": 260
+      "id": 255
     },
     {
       "text": "In Valdivias Mercado Fluvial werfen Fischer ihre Abfälle an riesige Seelöwen, die direkt hinter den Ständen warten und den Markt als ihr persönliches Restaurant behandeln.",
       "category": "unique",
       "location": "valdivia",
       "source": "Rough Guides Chile 2023",
-      "id": 261
+      "id": 256
     },
     {
       "text": "Lord Cochrane, ein britischer Abenteurer, spielte eine entscheidende Rolle bei der chilenischen Unabhängigkeit — er stürmte die spanischen Festungen bei Valdivia 1820 und zerstörte dabei die Kanonen des Fuerte de Niebla.",
       "category": "history",
       "location": "valdivia",
       "source": "Rough Guides Chile 2023",
-      "id": 262
+      "id": 257
     },
     {
       "text": "Pucón hat so viele Thermalquellen wie kaum eine andere Stadt Chiles — von den naturbelassenen Steinbecken der Termas Los Pozones bis zu den luxuriösen Termas Peumayen mit französisch-Mapuche Fusionsküche.",
       "category": "unique",
       "location": "pucon",
       "source": "Rough Guides Chile 2023",
-      "id": 263
+      "id": 258
     },
     {
       "text": "Die 'Ojos del Caburgua' (Augen des Caburgua) entstanden, als ein Vulkanausbruch das Tal blockierte — das Wasser des Lago Caburgua fließt unterirdisch und tritt als drei spektakuläre Wasserfälle wieder hervor.",
       "category": "nature",
       "location": "pucon",
       "source": "Rough Guides Chile 2023",
-      "id": 264
+      "id": 259
     },
     {
       "text": "Das Santuario El Cañi bei Pucón wurde 1991 gerettet, als eine kleine Stiftung namens 'Fundación Lahuen' sich erfolgreich gegen die Holzindustrie wehrte und 400 Hektar Araukarienwald bewahrte.",
       "category": "nature",
       "location": "pucon",
       "source": "Rough Guides Chile 2023",
-      "id": 265
+      "id": 260
     },
     {
       "text": "Puerto Varas wurde von deutschen Siedlern geprägt — bemerkenswerte Kolonialbauten sind die Casa Kuschel (1910), Casona Alemana (1914) und Casa Ángulo (1910), alle noch erhalten.",
       "category": "culture",
       "location": "frutillar-puerto-varas",
       "source": "Rough Guides Chile 2023",
-      "id": 266
+      "id": 261
     },
     {
       "text": "Im Museo Colonial Alemán in Frutillar steht ein 'Campanario' — ein runder Stall, in dem Pferde im Kreis liefen und mit ihren Hufen Getreide droschen.",
       "category": "culture",
       "location": "frutillar-puerto-varas",
       "source": "Rough Guides Chile 2023",
-      "id": 267
+      "id": 262
     },
     {
       "text": "Osorno wurde so oft von Mapuche angegriffen (1553-1796), dass es fast 250 Jahre brauchte, bis die Stadt sich dauerhaft etablieren konnte.",
       "category": "history",
       "location": "osorno",
       "source": "Rough Guides Chile 2023",
-      "id": 268
+      "id": 263
     },
     {
       "text": "Die beiden modernen Kirchen in Osorno — die Catedral San Mateo und die Iglesia San Francisco — sind kontroverse Beton-Gitter-Konstruktionen, die bis heute die Meinungen spalten.",
       "category": "culture",
       "location": "osorno",
       "source": "Rough Guides Chile 2023",
-      "id": 269
+      "id": 264
     },
     {
       "text": "Im Winter kann man den Volcán Osorno mit Ski und Snowboard befahren — im Sommer verwandeln sich die Pisten in einen Downhill-Bikepark mit Sessellift bis zum Gletscher.",
       "category": "unique",
       "location": "osorno",
       "source": "Rough Guides Chile 2023",
-      "id": 270
-    },
-    {
-      "text": "Die Auffahrt zum Gipfel des Volcán Osorno ist die anspruchsvollste Vulkan-Besteigung der Region — mit 5 Stunden Aufstieg, Eis-/Schnee-Ausrüstung und maximal 2 Wanderern pro Bergführer.",
-      "category": "nature",
-      "location": "osorno",
-      "source": "Rough Guides Chile 2023",
-      "id": 271
-    },
-    {
-      "text": "Chillán wurde seit seiner Gründung 1550 so oft durch Erdbeben und Mapuche-Angriffe zerstört, dass die meiste heutige Architektur erst nach dem verheerenden Erdbeben von 1939 stammt.",
-      "category": "history",
-      "location": "chillan",
-      "source": "Rough Guides Chile 2023",
-      "id": 272
-    },
-    {
-      "text": "Die Escuela México in Chillán enthält Wandmalereien von David Alfaro Siqueiros — einem der berühmtesten mexikanischen Muralisten. Die Schule wurde nach dem Erdbeben 1939 von Mexiko finanziert, auf Initiative von Pablo Neruda.",
-      "category": "culture",
-      "location": "chillan",
-      "source": "Rough Guides Chile 2023",
-      "id": 273
-    },
-    {
-      "text": "Die Skipiste Nevados de Chillán hat mit fast 13 km die längste Abfahrt Südamerikas — und man kann Skifahren mit heißen Thermalquellen am Fuße des Vulkans kombinieren.",
-      "category": "unique",
-      "location": "chillan",
-      "source": "Rough Guides Chile 2023",
-      "id": 274
+      "id": 265
     },
     {
       "text": "Beim Bestellen eines 'Eistees' (té helado) in der Feria La Vega in Santiago bekommt man keinen Tee — sondern Weißwein in einer Sprite-Flasche oder Rotwein in einer Coca-Cola-Flasche.",
       "category": "food",
       "location": "santiago",
       "source": "Rough Guides Chile 2023",
-      "id": 275
+      "id": 266
     },
     {
       "text": "Die Iglesia San Francisco in Santiago ist das älteste Gebäude der Stadt (1586-1628) — in ihrem Inneren befindet sich eine kleine Marienfigur, die Pedro de Valdivia 1540 auf seinem Sattel nach Chile brachte.",
       "category": "history",
       "location": "santiago",
       "source": "Rough Guides Chile 2023",
-      "id": 276
+      "id": 267
     },
     {
       "text": "Auf Chiloé werden Kartoffeln nach dem Mondkalender gepflanzt — bei abnehmendem Mond für normale Ernte, bei Vollmond für besonders große 'Macho'-Saatkartoffeln.",
       "category": "culture",
       "location": "chiloe",
       "source": "Rough Guides Chile 2023",
-      "id": 277
+      "id": 268
     },
     {
       "text": "Die Land-und-See-Überfahrt von Puerto Varas nach Bariloche (Argentinien) führt über drei Seen und ist eine der schönsten Grenzüberquerungen der Welt — mit Blick auf die Vulkane Osorno, Puntiagudo und Tronador.",
       "category": "unique",
       "location": "frutillar-puerto-varas",
       "source": "Rough Guides Chile 2023",
-      "id": 278
+      "id": 269
     },
     {
-      "id": 279,
+      "id": 270,
       "text": "Bei Pichicuy steht eine Kirche auf einer Landzunge direkt über dem Meer — ein seltenes Beispiel von Küstenarchitektur in Chile.",
       "category": "culture",
       "location": "quillimari",
       "source": "Insight Guides Chile 2024"
     },
     {
-      "id": 280,
-      "text": "Die 'Silla del Gobernador' (Gouverneursstuhl) bei Los Molles ist mit 695m die höchste Meeresklippe Chiles — bei gutem Wetter von Valparaíso aus sichtbar.",
-      "category": "nature",
-      "location": "quillimari",
-      "source": "Insight Guides Chile 2024"
-    },
-    {
-      "id": 281,
+      "id": 271,
       "text": "In Los Vilos schnitzen Kunsthandwerker Guayacán-Holz — eines der härtesten und haltbarsten Hölzer Chiles, das hier einst reichlich wuchs.",
       "category": "culture",
       "location": "quillimari",
       "source": "Insight Guides Chile 2024"
     },
     {
-      "id": 282,
+      "id": 272,
       "text": "Der Bodegón Cultural in Los Vilos ist ein restauriertes Zollgebäude aus dem 19. Jahrhundert — heute Kunstgalerie mit wechselnden Ausstellungen im Sommer.",
       "category": "culture",
       "location": "quillimari",
       "source": "Insight Guides Chile 2024"
     },
     {
-      "id": 283,
+      "id": 273,
       "text": "Zwischen Pichidangui und Los Vilos gibt es einen Skulpturenpark auf den Klippen — geschaffen von einem lokalen Architekten, frei zugänglich.",
       "category": "unique",
       "location": "quillimari",
       "source": "Insight Guides Chile 2024"
     },
     {
-      "id": 284,
+      "id": 274,
       "text": "Die Laguna Verde im Parque Nacional Conguillío verdankt ihre smaragdgrüne Farbe vulkanischen Mineralien — unter der Oberfläche sind noch Bäume sichtbar, die von Lava überfluteten Flüssen ertränkt wurden.",
       "category": "nature",
       "location": "conguillio",
       "source": "Insight Guides Chile 2024"
     },
     {
-      "id": 285,
+      "id": 275,
       "text": "Die Piñones (Araukarien-Samen) waren jahrhundertelang das Grundnahrungsmittel der Pehuenche-Mapuche — sie wurden geröstet, gekocht oder zu Mehl gemahlen.",
       "category": "food",
       "location": "conguillio",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 286,
+      "id": 276,
       "text": "Chillán wurde dreimal durch Erdbeben zerstört (1751, 1835, 1939) — Charles Darwin erlebte das Beben von 1835 und beschrieb es in seinem Reisetagebuch.",
       "category": "history",
       "location": "chillan",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 287,
+      "id": 277,
       "text": "El Quisco und El Tabo neben Algarrobo sind beliebte Wochenendausflüge der Santiaguinos — Pablo Neruda beschrieb die Küste hier als 'wo das Meer das ganze Jahr blüht'.",
       "category": "culture",
       "location": "algarrobo",
       "source": "Insight Guides Chile 2024"
     },
     {
-      "id": 288,
+      "id": 278,
       "text": "Im San Antonio Hafen neben Algarrobo essen die Fischer in 'Picadas' — einfache Hafenrestaurants mit riesigen Meeresfrüchte-Tellern zu günstigsten Preisen.",
       "category": "food",
       "location": "algarrobo",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 289,
+      "id": 279,
       "text": "Die Huaso-Kultur lebt besonders in der Region um San Carlos — mit häufigen Rodeos in 'Medialunas' (halbmondförmigen Stadien), wo Cowboys Stiere an die Wand reiten.",
       "category": "culture",
       "location": "san-carlos",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 290,
+      "id": 280,
       "text": "Puerto Montts Stadtviertel Angelmó ist legendär für seine Fischmarkt-Restaurants — die Qualität ist konstant, aber die Öffnungszeiten hängen davon ab, ob genug Gäste kommen und die Besitzer Lust haben.",
       "category": "food",
       "location": "chiloe",
       "source": "Bradt Carretera Austral 2022"
     },
     {
-      "id": 291,
+      "id": 281,
       "text": "Das Fogón Cotelé in Pelluco bei Puerto Montt bringt rohes Fleisch an den Tisch — man wählt den Schnitt, der Parrillero grillt ihn über offenem Feuer. Eines der besten Steakhäuser der Region.",
       "category": "food",
       "location": "chiloe",
       "source": "Bradt Carretera Austral 2022"
     },
     {
-      "id": 292,
+      "id": 282,
       "text": "Der Cirus Bar in Puerto Montt gilt als eine der authentischsten chilenischen Bars der gesamten Carretera Austral — versteckt in der Straße Miradores mit Blick über den Reloncaví-Sund.",
       "category": "unique",
       "location": "chiloe",
       "source": "Bradt Carretera Austral 2022"
     },
     {
-      "id": 293,
+      "id": 283,
       "text": "Die Alerce-Bäume (Patagonische Zypresse) im Süden Chiles können über 3.600 Jahre alt werden — sie sind nach den Bristlecone Pines die zweitältesten Bäume der Welt.",
       "category": "nature",
       "source": "Bradt Carretera Austral 2022"
     },
     {
-      "id": 294,
+      "id": 284,
       "text": "Alerce-Holz war in Chiloé so wertvoll, dass es als Quasi-Währung fungierte — das Fällen ist seit 1976 verboten, nur totes Holz darf mit CONAF-Genehmigung geborgen werden.",
       "category": "history",
       "location": "chiloe",
       "source": "Bradt Carretera Austral 2022"
     },
     {
-      "id": 295,
+      "id": 285,
       "text": "Cancato ist ein typisches Gericht aus Puerto Montt: gegrillter Lachs mit geschmolzenem Käse und Tomate — in fast jedem Restaurant in Angelmó erhältlich.",
       "category": "food",
       "location": "chiloe",
@@ -2057,138 +1987,208 @@
       "category": "history",
       "location": "chillan",
       "source": "Insight Guides Chile 2024",
-      "id": 296
+      "id": 286
     },
     {
       "text": "Der Sendero de Chile ist ein geplanter 8.500 km langer Wanderweg von der Atacama bis Patagonien — wenn fertig, wäre er der längste Wanderweg der Welt.",
       "category": "unique",
       "source": "Insight Guides Chile 2024",
-      "id": 297
+      "id": 287
     },
     {
       "text": "Santiago hat über 6,3 Millionen Einwohner, aber das kompakte Zentrum fühlt sich klein an — die meisten Sehenswürdigkeiten liegen wenige Blocks voneinander entfernt.",
       "category": "geography",
       "location": "santiago",
       "source": "Insight Guides Chile 2024",
-      "id": 298
+      "id": 288
     },
     {
       "text": "La Moneda wurde zwischen 1788 und 1805 als Münzprägeanstalt gebaut — absichtlich niedrig gegen Erdbeben. Präsidenten lebten dort erst ab 1846.",
       "category": "history",
       "location": "santiago",
       "source": "Insight Guides Chile 2024",
-      "id": 299
+      "id": 289
     },
     {
       "text": "Die chilenische Rodeo-Saison läuft von September bis Mai — die Meisterschaft in Rancagua Ende März zeigt Reiter, die Stiere seitwärts galoppierend an die Wand treiben. Kein Lasso, keine Wildtierritte.",
       "category": "culture",
       "location": "san-carlos",
       "source": "Insight Guides Chile 2024",
-      "id": 300
+      "id": 290
     },
     {
       "text": "In Pucón kann man Rafting auf dem Trancura-Fluss machen — die oberen Abschnitte haben Vulkanpanorama, der untere Teil wird ruhiger aber 'hüpfig'.",
       "category": "nature",
       "location": "pucon",
       "source": "Insight Guides Chile 2024",
-      "id": 301
+      "id": 291
     },
     {
       "text": "Beim Camping in Chiloé muss man auf die Gezeiten achten — grasbedeckte Flussinseln können bei Vollmond-Flut komplett verschwinden und Ausrüstung durchnässen.",
       "category": "unique",
       "location": "chiloe",
       "source": "Insight Guides Chile 2024",
-      "id": 302
+      "id": 292
     },
     {
       "text": "Die Calafate-Beere und die Murtilla-Beere wachsen wild in den Wäldern des Lake District — sie sind essbar und schmecken hervorragend in Marmeladen und Likören.",
       "category": "food",
       "location": "frutillar-puerto-varas",
       "source": "Insight Guides Chile 2024",
-      "id": 303
+      "id": 293
     },
     {
       "text": "Inés de Suárez, Pedro de Valdivias Geliebte, kämpfte am 11. September 1541 in einem Kettenhemd gegen die Mapuche, als diese das frisch gegründete Santiago überfielen.",
       "category": "history",
       "location": "santiago",
       "source": "Insight Guides Chile 2024",
-      "id": 304
+      "id": 294
     },
     {
       "text": "Lachse sind nicht in Chile heimisch — sie stammen aus Nordamerika. Die Zuchtfarmen verursachen Umweltprobleme, aber wilde Lachse zu fangen entfernt eine invasive Art.",
       "category": "nature",
       "source": "Insight Guides Chile 2024",
-      "id": 305
+      "id": 295
     },
     {
-      "id": 306,
+      "id": 296,
       "text": "Chiles einheimische Papageien (Choroy und Tricahue) leben in den Bergen rund um Conguillío — sie wecken Camper mit lautem Kreischen vor Sonnenaufgang.",
       "category": "nature",
       "location": "conguillio",
       "source": "Insight Guides Chile 2024"
     },
     {
-      "id": 307,
+      "id": 297,
       "text": "Der Parque Nacional Conguillío umfasst 608 km² — der Volcán Llaima in seiner Mitte versucht seit Jahrhunderten, den Park mit schwarzer Lava zu zerstören.",
       "category": "nature",
       "location": "conguillio",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 308,
+      "id": 298,
       "text": "Die Besteigung des Volcán Llaima (3.125m) dauert 7 Stunden, erfordert Eispickel und Steigeisen — und man muss mit Spalten, Fumarolen und Schwefeldämpfen am Gipfel rechnen.",
       "category": "nature",
       "location": "conguillio",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 309,
+      "id": 299,
       "text": "Der Volcán Llaima hat ein kleines Skigebiet an seinen Hängen — 'Araucarias', wo man im Winter zwischen uralten Araukarienbäumen Ski fahren kann.",
       "category": "unique",
       "location": "conguillio",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 310,
+      "id": 300,
       "text": "Die Saltos del Petrohué verdanken ihre bizarre Formgebung kristallisiertem vulkanischem Gestein, das besonders widerstandsfähig gegen Erosion ist — dasselbe Gestein gibt dem Vulkan Puntiagudo seine spitze Form.",
       "category": "nature",
       "location": "osorno",
       "source": "Insight Guides Chile 2024"
     },
     {
-      "id": 311,
+      "id": 301,
       "text": "Das Wasser des Río Petrohué ist leuchtend grün durch Algen — ein Phänomen, das sich im Lago Todos los Santos fortsetzt, weshalb er auch 'Lago Esmeralda' heißt.",
       "category": "nature",
       "location": "osorno",
       "source": "Insight Guides Chile 2024"
     },
     {
-      "id": 312,
+      "id": 302,
       "text": "In Petrohué plagen im Hochsommer zwei Arten beißender Fliegen — die Colihuacho und die Petro. 'Petrohué' ist Mapudungun für 'Ort der Petros'.",
       "category": "unique",
       "location": "osorno",
       "source": "Insight Guides Chile 2024"
     },
     {
-      "id": 313,
+      "id": 303,
       "text": "Pablo Neruda veröffentlichte mit nur 20 Jahren 'Veinte Poemas de Amor y una Canción Desesperada' — und hatte damit auf einen Schlag eine der größten Leserschaften des Kontinents.",
       "category": "culture",
       "location": "algarrobo",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 314,
+      "id": 304,
       "text": "In Nerudas Haus in Isla Negra hängt ein einbalsamierter venezolanischer Coro-Coro-Vogel von der Decke des Esszimmers — eines von vielen bizarren Objekten seiner Sammlungen.",
       "category": "unique",
       "location": "algarrobo",
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 315,
+      "id": 305,
       "text": "Pablo Morandé 'entdeckte' das Casablanca-Tal für den Weinbau — er suchte einen kühleren Ort für Weißweintrauben und fand ihn zwischen Santiago und Valparaíso.",
       "category": "food",
       "location": "wine-resort",
       "source": "Insight Guides Chile 2024"
+    },
+    {
+      "text": "Bernardo O'Higgins, Gründervater Chiles, war der uneheliche Sohn eines irischen Gouverneurs und einer Dame aus Chillán — Doña Isabel Riquelme.",
+      "category": "history",
+      "location": "chillan",
+      "source": "Insight Guides Chile 2024",
+      "id": 306
+    },
+    {
+      "text": "Der Parque Monumental Bernardo O'Higgins in Chillán hat eine 60m lange Mosaik-Wand über das Leben des Freiheitshelden — seine Mutter und Schwester sind in der Kapelle nebenan begraben.",
+      "category": "history",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023",
+      "id": 307
+    },
+    {
+      "text": "Violeta Parras Tapisserie-Werke wurden im Louvre in Paris ausgestellt — trotzdem erhielt sie zu Lebzeiten kaum Anerkennung in Chile.",
+      "category": "culture",
+      "location": "chillan",
+      "source": "Insight Guides Chile 2024",
+      "id": 308
+    },
+    {
+      "text": "Im Valle de Aguas Calientes bei Nevados de Chillán gibt es keinen Geldautomaten — man muss in Chillán genug Bargeld abheben, bevor man in die Berge fährt.",
+      "category": "unique",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023",
+      "id": 309
+    },
+    {
+      "text": "Das Ecobox Andino bei Valle Las Trancas besteht aus recycelten Schiffscontainern im Ñirres-Wald — mit Panoramafenstern auf schneebedeckte Vulkane und einem Zen-Pool.",
+      "category": "unique",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023",
+      "id": 310
+    },
+    {
+      "text": "In Los Vilos schnitzen Kunsthandwerker Figuren aus Guayacán-Holz — einem extrem harten, einst reichlich vorhandenen Holz der Region.",
+      "category": "culture",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024",
+      "id": 311
+    },
+    {
+      "text": "Dulces de La Ligua sind traditionelle Kuchen aus Biskuit oder Baiser, gefüllt mit Manjar — sie sind den Umweg von der Panamericana absolut wert.",
+      "category": "food",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024",
+      "id": 312
+    },
+    {
+      "text": "Zwischen Pichicuy und Pichidangui liegt ein Vogelschutzgebiet mit reichem Meeresleben — eine Oase zwischen den Felsengärten von Los Molles.",
+      "category": "nature",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024",
+      "id": 313
+    },
+    {
+      "text": "Los Vilos hat einen Skulpturenpark auf den Klippen, geschaffen von einem lokalen Architekten — und ein Kulturzentrum im restaurierten Zollgebäude aus dem 19. Jahrhundert.",
+      "category": "culture",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024",
+      "id": 314
+    },
+    {
+      "text": "Das Erdbeben von 1939 in Chillán tötete 15.000 Menschen nachts im Schlaf und zerstörte 90% der Stadt — Mexiko spendete daraufhin eine Schule mit den berühmten Siqueiros-Murales.",
+      "category": "history",
+      "location": "chillan",
+      "source": "Insight Guides Chile 2024",
+      "id": 315
     }
   ],
   "lastUpdated": "2026-02-09",

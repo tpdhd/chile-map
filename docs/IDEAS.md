@@ -157,18 +157,16 @@
 - Osorno: 21 | Frutillar/PV: 22 | Puerto Montt/Chiloé: 38
 - **Total: 280 Empfehlungen**
 
-### Status Fakten (2026-02-09, letzte Erweiterung)
-- **Total: 315 Fakten** (erweitert mit Rough Guide + Carretera Austral + Insight Guides)
-- 10 neue Fakten (2026-02-09 Nacht, Balance-Update)
-- 10 neue Fakten aus Insight Guides (2026-02-09 Nacht)
-- 19 neue Fakten aus Rough Guide (2026-02-08)
-- 17 neue Fakten aus allen 3 Büchern (2026-02-08 Nacht)
-- Neue Quelle: Bradt Carretera Austral Guide 2022
-- General: 66, Chiloé/PM: 28, Santiago: 25, Frutillar/PV: 23
-- Conguillío: 21, Osorno: 21, Algarrobo: 20
-- Pucón: 19, Chillán: 19, Valdivia: 19, Wine Resort: 19
-- San Carlos: 18, Quillimari: 17
-- **Alle Locations 17+ Fakten ✓**
+### Status Fakten (2026-02-09, Duplikat-Cleanup + Balance)
+- **Total: 315 Fakten** (10 Duplikate entfernt, 10 neue Fakten hinzugefügt)
+- Duplikat-Bereinigung: 10 Near-Duplicates entfernt (2026-02-09 02:30)
+- 10 neue Fakten für Chillán (6) + Quillimari (4) als Balance-Update
+- Quellen: Insight Guides 2024, Rough Guides 2023, Bradt Carretera Austral 2022
+- General: 64, Chiloé/PM: 28, Santiago: 25, Frutillar/PV: 23
+- Conguillío: 21, Osorno: 20, Quillimari: 20, Chillán: 20
+- Valdivia: 19, Pucón: 19, Algarrobo: 19, Wine Resort: 19
+- San Carlos: 18
+- **Alle Locations 18+ Fakten ✓**
 
 ### TypeScript
 - [x] Alle TS-Fehler behoben ✓ (2026-02-08)
@@ -210,4 +208,4 @@
 - ✓ Horizontal scrollbare Location-Tabs
 - ✓ Datum + Wochentag pro Tag angezeigt
 
-*Letzte Aktualisierung: 2026-02-09 01:30*
+*Letzte Aktualisierung: 2026-02-09 02:30*
