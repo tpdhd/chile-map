@@ -16,6 +16,7 @@ const EmergencyInfo = lazy(() => import('./components/EmergencyInfo'))
 const DailyPlan = lazy(() => import('./components/DailyPlan'))
 const TripRoute = lazy(() => import('./components/TripRoute'))
 const NearbyFinder = lazy(() => import('./components/NearbyFinder'))
+const QuoteCarousel = lazy(() => import('./components/QuoteCarousel'))
 
 export type Location = typeof tripData.locations[0]
 export type Recommendation = typeof tripData.locations[0]['recommendations'][0]
@@ -126,6 +127,7 @@ function App() {
   const [showDailyPlan, setShowDailyPlan] = useState(false)
   const [showTripRoute, setShowTripRoute] = useState(false)
   const [showNearby, setShowNearby] = useState(false)
+  const [showQuotes, setShowQuotes] = useState(false)
 
   // Get facts for current location or random
   const locationFacts = useMemo(() => {
@@ -489,6 +491,15 @@ function App() {
               className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
             >
               <span>📖</span> Chile Fakten ({factsData.totalFacts})
+            </button>
+            <button
+              onClick={() => {
+                setShowQuotes(true)
+                setShowMenu(false)
+              }}
+              className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
+            >
+              <span>✨</span> Reisezitate
             </button>
             <button
               onClick={() => {
@@ -1024,6 +1035,13 @@ function App() {
       {showTripRoute && (
         <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">🗺️</div></div>}>
           <TripRoute onClose={() => setShowTripRoute(false)} favorites={favorites} visited={visited} />
+        </Suspense>
+      )}
+
+      {/* QUOTE CAROUSEL */}
+      {showQuotes && (
+        <Suspense fallback={<div className="absolute inset-0 z-[700] bg-black/50 flex items-center justify-center"><div className="animate-spin text-3xl">✨</div></div>}>
+          <QuoteCarousel onClose={() => setShowQuotes(false)} currentLocationId={selectedLocation?.id} />
         </Suspense>
       )}
 

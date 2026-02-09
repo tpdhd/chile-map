@@ -208,4 +208,24 @@
 - ✓ Horizontal scrollbare Location-Tabs
 - ✓ Datum + Wochentag pro Tag angezeigt
 
-*Letzte Aktualisierung: 2026-02-09 02:30*
+### In der Nähe / GPS (2026-02-09)
+- ✓ 📍 GPS-basierte Nearby-Suche
+- ✓ Haversine-Distanzberechnung
+- ✓ Lauf-/Fahrzeit-Schätzungen
+- ✓ Filter: Kategorie, Umkreis (1-100km), Favoriten
+- ✓ Direkte Google Maps Navigation
+- ✓ Hinweis wenn nicht in Chile
+
+### Reisezitate (2026-02-09)
+- ✓ ✨ 24 Zitate über Chile
+- ✓ Neruda, Allende, Darwin, Mistral, Violeta Parra, Sprichwörter
+- ✓ Spanische Originalversionen wo verfügbar
+- ✓ Location-Filter (📍 Button zeigt Zitate zum aktuellen Ort)
+- ✓ Karussell mit Vor/Zurück/Zufall Navigation
+
+### Map Performance Upgrade (2026-02-09)
+- ✓ 512px Mapbox tiles (statt 256px) = 75% weniger Tile-Requests
+- ✓ Bessere Retina-Qualität auf Mobilgeräten
+- ✓ zoomOffset: -1 für korrekte 512px Zuordnung
+
+*Letzte Aktualisierung: 2026-02-09 03:00*

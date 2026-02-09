@@ -1,0 +1,143 @@
+{
+  "quotes": [
+    {
+      "text": "Es gibt kein Land, in dem das Leben so unvergleichlich ist.",
+      "textEs": "No hay tierra que iguale a esta.",
+      "author": "Pedro de Valdivia",
+      "context": "Brief an König Karl V. von Spanien, 1545",
+      "location": "santiago"
+    },
+    {
+      "text": "Ich gestehe, dass ich gelebt habe.",
+      "textEs": "Confieso que he vivido.",
+      "author": "Pablo Neruda",
+      "context": "Titel seiner Autobiografie (1974)"
+    },
+    {
+      "text": "In Isla Negra blüht alles. Das Meer blüht das ganze Jahr. Seine Rose ist weiß. Seine Blütenblätter sind Salzsterne.",
+      "textEs": "En Isla Negra todo florecía. El mar florece todo el año. Su rosa es blanca. Sus pétalos son estrellas de sal.",
+      "author": "Pablo Neruda",
+      "context": "Über sein Haus in Isla Negra",
+      "location": "algarrobo"
+    },
+    {
+      "text": "Poesie ist ein Akt des Friedens. Frieden geht in den Dichter ein wie Mehl in den Bäcker.",
+      "textEs": "La poesía es un acto de paz. La paz entra en el poeta como la harina en el panadero.",
+      "author": "Pablo Neruda",
+      "context": "Nobelpreisrede, 1971"
+    },
+    {
+      "text": "Chile ist eine Insel — abgeschnitten durch Pazifik, Wüste und Anden — und das erklärt den stolzen Nationalcharakter.",
+      "author": "Isabel Allende",
+      "context": "Über ihr Heimatland"
+    },
+    {
+      "text": "Chile ist wie ein langer Flur in einem Haus. Es ist schmal und lang, und am Ende eines jeden Flurs wartet eine Überraschung.",
+      "author": "Isabel Allende",
+      "context": "Aus einem Interview"
+    },
+    {
+      "text": "Es ist der Mühe wert, in diesem Land geboren zu werden.",
+      "textEs": "Vale la pena haber nacido en esta tierra.",
+      "author": "Gabriela Mistral",
+      "context": "Nobelpreisträgerin für Literatur, 1945"
+    },
+    {
+      "text": "Wer den Sonnenuntergang am Pazifik nicht mit eigenen Augen gesehen hat, kennt die Farbe Orange nicht.",
+      "author": "Reisesprichwort",
+      "context": "Über die chilenische Küste"
+    },
+    {
+      "text": "Das Erdbeben veränderte die Küste Chiles so vollständig, dass kaum ein Stein am selben Platz blieb.",
+      "author": "Charles Darwin",
+      "context": "Tagebuch der Beagle-Reise, 1835",
+      "location": "chillan"
+    },
+    {
+      "text": "Gracias a la Vida, die mir so viel gegeben hat.",
+      "textEs": "Gracias a la vida que me ha dado tanto.",
+      "author": "Violeta Parra",
+      "context": "Das berühmteste chilenische Lied (1966)",
+      "location": "chillan"
+    },
+    {
+      "text": "Wer reist, kehrt als ein anderer zurück.",
+      "textEs": "Quien viaja, vuelve siendo otro.",
+      "author": "Chilenisches Sprichwort"
+    },
+    {
+      "text": "Es gibt keine Stille, die so tief ist wie die der Atacama. Selbst die Sterne scheinen hier lauter.",
+      "author": "Claudio Iturra",
+      "context": "Chilenischer Abenteurer und TV-Moderator"
+    },
+    {
+      "text": "Heute will ich nicht sterben, ich habe noch keine Empanada gegessen.",
+      "textEs": "Hoy no quiero morir, aún no he comido empanada.",
+      "author": "Chilenisches Volkssprichwort",
+      "context": "Chilenischer Humor über die Nationaldelikatesse"
+    },
+    {
+      "text": "Der Wein ist der Gesang der Erde an den Himmel.",
+      "textEs": "El vino es el canto de la tierra al cielo.",
+      "author": "Chilenisches Sprichwort",
+      "location": "wine-resort"
+    },
+    {
+      "text": "In Chile schlägt das Herz der Erde noch so laut, dass man die Vulkane nachts atmen hört.",
+      "author": "Anonymer Reisender",
+      "context": "Über das Seengebiet"
+    },
+    {
+      "text": "Was hat sich geändert? Die Sternbilder sind anders. Orion steht Kopf. Das Kreuz des Südens leuchtet. Selbst der Himmel erinnert dich: Du bist weit von zu Hause.",
+      "author": "Anonymer Reisender",
+      "context": "Über die südliche Hemisphäre"
+    },
+    {
+      "text": "Pisco gehört Chile. Das ist keine Diskussion, das ist Wissenschaft.",
+      "textEs": "El pisco es chileno. Esto no es discusión, es ciencia.",
+      "author": "Chilenischer Volksglaube",
+      "context": "Über den ewigen Streit mit Peru"
+    },
+    {
+      "text": "In einem Land, das sich vom Feuer der Wüste bis zum Eis Patagoniens erstreckt, lernt man, dass Extreme eine Form der Schönheit sind.",
+      "author": "Luis Sepúlveda",
+      "context": "Chilenischer Schriftsteller"
+    },
+    {
+      "text": "Die Araukarie ist der Baum, der die Zeit überlebt hat. Tausend Jahre alt, und sie steht noch — trotz Vulkanen, Stürmen und Menschen.",
+      "author": "Chilenischer Nationalpark-Ranger",
+      "context": "Über die Monkey Puzzle Trees im Conguillío",
+      "location": "conguillio"
+    },
+    {
+      "text": "In Chiloé regnet es nicht — Chiloé weint vor Schönheit.",
+      "textEs": "En Chiloé no llueve — Chiloé llora de belleza.",
+      "author": "Chilenisches Sprichwort",
+      "context": "Über das regnerische Chiloé",
+      "location": "chiloe"
+    },
+    {
+      "text": "Die Mapuche haben 350 Jahre lang der Kolonisation widerstanden. Kein anderes Volk der Welt kann das von sich behaupten.",
+      "author": "Historische Reflexion",
+      "context": "Über den Arauco-Krieg (1536–1883)"
+    },
+    {
+      "text": "Kommen Sie nach Chile, bevor es Chile egal wird, dass Sie kommen.",
+      "textEs": "Ven a Chile, antes de que a Chile le dé lo mismo que vengas.",
+      "author": "Chilenischer Tourismus-Witz",
+      "context": "Über die chilenische Gelassenheit"
+    },
+    {
+      "text": "Es regnete und regnete wie in Valdivia.",
+      "textEs": "Llovía y llovía como en Valdivia.",
+      "author": "Pablo Neruda",
+      "context": "Aus seinen Kindheitserinnerungen in Temuco",
+      "location": "valdivia"
+    },
+    {
+      "text": "Wenn du Chile verstehen willst, musst du den Pisco Sour trinken, den Cueca tanzen und eine Empanada mit beiden Händen essen.",
+      "author": "Unbekannt",
+      "context": "Kulturelle Weisheit"
+    }
+  ]
+}
