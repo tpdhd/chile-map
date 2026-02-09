@@ -17,7 +17,7 @@ export function LoadingSkeleton() {
             <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-chile-bg-card animate-spin-slow" style={{
               background: 'conic-gradient(from 0deg, transparent, #e63946)'
             }} />
-            <p className="text-chile-text-secondary">Loading map...</p>
+            <p className="text-chile-text-secondary">Karte wird geladen...</p>
           </div>
         </div>
         
@@ -67,8 +67,8 @@ export function MapLoading() {
           <div className="absolute inset-2 rounded-full border-4 border-t-chile-accent-teal animate-spin-reverse" />
           <div className="absolute inset-0 flex items-center justify-center text-2xl">🇨🇱</div>
         </div>
-        <p className="text-chile-text-secondary font-medium">Loading Chile Map...</p>
-        <p className="text-chile-text-muted text-sm mt-1">97 recommendations across 12 destinations</p>
+        <p className="text-chile-text-secondary font-medium">Chile-Karte wird geladen...</p>
+        <p className="text-chile-text-muted text-sm mt-1">280 Empfehlungen an 12 Reisezielen</p>
       </div>
     </div>
   )
@@ -79,14 +79,14 @@ export function ErrorState({ message, onRetry }: { message: string; onRetry?: ()
     <div className="h-screen flex items-center justify-center bg-chile-bg-primary">
       <div className="text-center p-8">
         <div className="text-6xl mb-4">🌋</div>
-        <h2 className="text-xl font-bold text-chile-text-primary mb-2">Something went wrong</h2>
+        <h2 className="text-xl font-bold text-chile-text-primary mb-2">Etwas ist schiefgelaufen</h2>
         <p className="text-chile-text-secondary mb-4">{message}</p>
         {onRetry && (
           <button 
             onClick={onRetry}
             className="px-4 py-2 bg-chile-accent-red rounded-lg hover:bg-opacity-90 transition-colors"
           >
-            Try Again
+            Erneut versuchen
           </button>
         )}
       </div>

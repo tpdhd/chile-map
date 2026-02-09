@@ -83,6 +83,9 @@ const categoryIcons: Record<string, string> = {
   food: '🥘',
   dessert: '🍰',
   seafood: '🦐',
+  tip: '💡',
+  service: '🔧',
+  info: 'ℹ️',
 }
 
 interface MapProps {

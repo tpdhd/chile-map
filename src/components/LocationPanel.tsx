@@ -53,6 +53,11 @@ const categoryIcons: Record<string, string> = {
   historical: '🏰',
   viewpoint: '👁️',
   shopping: '🛍️',
+  bar: '🍺',
+  cafe: '☕',
+  tip: '💡',
+  service: '🔧',
+  info: 'ℹ️',
 }
 
 interface LocationPanelProps {
@@ -565,7 +570,7 @@ export default function LocationPanel({
                 <div 
                   className="text-sm p-2 rounded bg-chile-bg-card border-l-2 border-chile-accent-teal cursor-pointer hover:bg-chile-bg-secondary transition-colors"
                   onClick={() => startEditingNote(selectedRecommendation.id)}
-                  title="Click to edit"
+                  title="Zum Bearbeiten klicken"
                 >
                   {notes[selectedRecommendation.id]}
                 </div>
