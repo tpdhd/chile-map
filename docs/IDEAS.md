@@ -181,6 +181,15 @@
 - ✓ Suchfunktion über alle Kategorien
 - ✓ Aufklappbare Karten mit Aussprache + Tipps
 
+### Reiseroute (2026-02-09)
+- ✓ 🗺️ Vollständige Reiseroute-Übersicht
+- ✓ Fahrzeiten & Distanzen zwischen allen Orten
+- ✓ Trip-Zusammenfassung (Gesamtkilometer, Fahrzeit, Empfehlungen, Favoriten)
+- ✓ Fortschrittsbalken (Besucht-Status)
+- ✓ Aufklappbare Orte mit Top-Empfehlungen
+- ✓ Google Maps Navigation (pro Ort + komplette Route)
+- ✓ Visueller Timeline-Stil mit Verbindungslinien
+
 ### Notfall-Info (2026-02-09)
 - ✓ 🆘 Notfall-Seite mit allen wichtigen Nummern
 - ✓ Quick-Call Bar: Polizei (133), Ambulanz (131), Feuerwehr (132), Notruf (112)
@@ -198,4 +207,4 @@
 - ✓ Horizontal scrollbare Location-Tabs
 - ✓ Datum + Wochentag pro Tag angezeigt
 
-*Letzte Aktualisierung: 2026-02-09 00:45*
+*Letzte Aktualisierung: 2026-02-09 01:15*
