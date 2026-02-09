@@ -1,0 +1,308 @@
+{
+  "sections": [
+    {
+      "id": "fabrics",
+      "title": "Stoff-Guide",
+      "icon": "🧵",
+      "items": [
+        {
+          "heading": "Warum Stretch wichtig ist",
+          "content": [
+            "Hochzeiten dauern LANGE (8+ Stunden Tragen)",
+            "Viel Bewegung: Tanzen, Sitzen, Aufstehen, Umarmen",
+            "Chile im März = Spätsommer, kann warm werden (20-25°C)",
+            "Flug & Reise = Komfort ist König",
+            "Stretch = Elastan-Anteil (2-5%) macht Anzug beweglich"
+          ],
+          "type": "success"
+        },
+        {
+          "heading": "Stoffvergleich",
+          "content": "Hier siehst du die wichtigsten Unterschiede:",
+          "table": {
+            "headers": ["Eigenschaft", "100% Wolle", "Wolle-Polyester", "Stretch (Elastan)"],
+            "rows": [
+              ["Atmungsaktivität", "⭐⭐⭐⭐⭐", "⭐⭐⭐", "⭐⭐⭐⭐"],
+              ["Bewegungsfreiheit", "⭐⭐", "⭐⭐⭐", "⭐⭐⭐⭐⭐"],
+              ["Knitteranfällig", "⭐⭐⭐⭐", "⭐⭐", "⭐⭐"],
+              ["Pflegeleicht", "⭐⭐", "⭐⭐⭐⭐", "⭐⭐⭐⭐"],
+              ["Reise-tauglich", "⭐⭐", "⭐⭐⭐⭐", "⭐⭐⭐⭐⭐"],
+              ["Preis", "€€€€", "€€", "€€€"]
+            ]
+          }
+        },
+        {
+          "heading": "Elastan-Guide",
+          "content": [
+            "2% Elastan = Leichter Stretch, kaum spürbar, aber hilft gegen Knittern",
+            "3-5% Elastan = Deutlicher Stretch, sehr bequem, ideal für lange Events",
+            "5%+ Elastan = Sehr elastisch, fast wie Sportkleidung - evtl. zu leger",
+            "OPTIMAL für Hochzeit: 3-4% Elastan"
+          ],
+          "type": "tip"
+        },
+        {
+          "heading": "Reise-taugliche Stoffe",
+          "content": [
+            "Wolle-Polyester-Mischgewebe (60/40 oder 70/30) knittert am wenigsten",
+            "Stretch-Anzüge kann man im Koffer zusammenrollen (!)",
+            "Bei Ankunft: Anzug aufhängen + Dampf im Bad = Falten weg",
+            "TIPP: Anzug im Handgepäck transportieren, in Kleidersack"
+          ],
+          "type": "tip"
+        },
+        {
+          "heading": "Was du vermeiden solltest",
+          "content": [
+            "100% Polyester = schwitzig, sieht billig aus",
+            "100% Leinen = knittert extrem (außer gewollt lässig)",
+            "Sehr dunkle Stoffe bei Hitze = Wärme-Speicher",
+            "Sehr dicke Winter-Wolle = zu warm für Chile im März"
+          ],
+          "type": "warning"
+        }
+      ]
+    },
+    {
+      "id": "etiquette",
+      "title": "Hochzeitsetikette",
+      "icon": "🎩",
+      "items": [
+        {
+          "heading": "Dresscode-Guide",
+          "content": [
+            "Chilenische Hochzeiten = meist Formal bis Semi-Formal",
+            "Dunkler Anzug (Dunkelblau, Anthrazit, Grau) ist Standard",
+            "Schwarz nur bei explizitem Black-Tie-Dresscode",
+            "Krawatte oder Fliege - frag die Brautleute!",
+            "Einstecktuch (Pochette) zeigt Stil"
+          ],
+          "type": "info"
+        },
+        {
+          "heading": "Chilenische Hochzeits-Traditionen",
+          "content": [
+            "Hochzeiten dauern LANGE - von Kirche (18 Uhr) bis morgens (4-6 Uhr)",
+            "Viel getanzt wird zu Cumbia, Reggaeton, Latino-Hits",
+            "Essen kommt spät (22-23 Uhr), davor viele Drinks",
+            "Cueca (Nationaltanz) wird oft getanzt - mitmachen ist erwünscht!",
+            "Sehr familiär - viele Umarmungen ('abrazos'), sei offen"
+          ],
+          "type": "success"
+        },
+        {
+          "heading": "Do's - Das solltest du tun",
+          "content": [
+            "✅ Rechtzeitig kommen (Unpünktlichkeit = respektlos)",
+            "✅ Mit ALLEN anstoßen ('¡Salud!')",
+            "✅ Tanzen! Auch wenn du nicht kannst - Stimmung zählt",
+            "✅ Komplimente machen ('¡Qué linda la novia!')",
+            "✅ Beim Essen warten bis alle bedient sind"
+          ],
+          "type": "success"
+        },
+        {
+          "heading": "Don'ts - Das solltest du vermeiden",
+          "content": [
+            "❌ Weißen Anzug tragen (nur Bräutigam!)",
+            "❌ Zu leger kommen (Jeans, T-Shirt = No-Go)",
+            "❌ Übermäßig betrinken (Latino-Kultur = gesellig, nicht Saufen)",
+            "❌ Beim Essen auf dem Handy sein",
+            "❌ Die Braut upstagen (keine auffälligen Outfits)"
+          ],
+          "type": "warning"
+        },
+        {
+          "heading": "Farbwahl für Chile-Hochzeit",
+          "content": [
+            "SICHER: Dunkelblau (Navy) - immer passend, nicht zu formal",
+            "SICHER: Anthrazit - moderner, junger Look",
+            "OK: Hellgrau - nur bei Semi-Formal, nicht bei Abend-Hochzeit",
+            "OK: Schwarz - nur bei Black-Tie oder wenn explizit gewünscht",
+            "VORSICHT: Beige/Creme - kann zu leger wirken",
+            "NO-GO: Weiß/Off-White - das ist die Farbe des Bräutigams!"
+          ],
+          "type": "info"
+        }
+      ]
+    }
+  ],
+  "quickTips": [
+    {
+      "icon": "🧘",
+      "tip": "STRETCH IST PFLICHT! 3-5% Elastan = Komfort für 8+ Stunden Hochzeit. Du wirst tanzen, sitzen, essen - dein Anzug muss mitmachen."
+    },
+    {
+      "icon": "🎨",
+      "tip": "Dunkelblau (Navy) ist die sichere Wahl. Passt immer, sieht gut aus, nicht zu formal, nicht zu leger. Anthrazit ist die moderne Alternative."
+    },
+    {
+      "icon": "✈️",
+      "tip": "Reise-tauglich kaufen! Wolle-Polyester-Mix mit Stretch kannst du im Koffer rollen. Bei Ankunft aufhängen + Dampf = perfekt."
+    },
+    {
+      "icon": "💰",
+      "tip": "Budget: €200-400 für gute Qualität. Suitsupply (€300-400) oder Olymp (€200-300) bieten bestes Preis-Leistungs-Verhältnis mit Stretch."
+    },
+    {
+      "icon": "📏",
+      "tip": "ANPROBIEREN ist Pflicht! Online nur wenn du deine Maße kennst. Nimm dir 2-3 Stunden Zeit, probiere verschiedene Marken. Die Passform ist wichtiger als die Marke!"
+    },
+    {
+      "icon": "⏰",
+      "tip": "FEHLER: Zu spät kaufen. Anzüge brauchen Änderungen (Hosenlänge, Ärmel) = 1-2 Wochen Vorlauf. Kaufe spätestens 3-4 Wochen vor der Reise!"
+    },
+    {
+      "icon": "🧵",
+      "tip": "FEHLER: 100% Polyester kaufen. Sieht billig aus, du schwitzt wie verrückt. Mindestens 50% Wolle oder Wolle-Mix mit Elastan."
+    },
+    {
+      "icon": "🎯",
+      "tip": "FEHLER: Falsche Größe nehmen. 'Passt fast' = passt nicht. Ein zu enger Anzug sieht peinlich aus, ein zu weiter schlampig. Professionelle Beratung nutzen!"
+    },
+    {
+      "icon": "👔",
+      "tip": "FEHLER: Krawatte vergessen. Auch bei 'Semi-Formal' ist eine Krawatte oder Fliege Standard bei chilenischen Hochzeiten. Lieber overdressed als underdressed."
+    }
+  ],
+  "checklist": [
+    {
+      "item": "Anzug (Jacket + Hose)",
+      "category": "Kleidung",
+      "priority": 10
+    },
+    {
+      "item": "Weißes Hemd (am besten 2 Stück)",
+      "category": "Kleidung",
+      "priority": 10
+    },
+    {
+      "item": "Krawatte oder Fliege",
+      "category": "Kleidung",
+      "priority": 9
+    },
+    {
+      "item": "Einstecktuch (Pochette)",
+      "category": "Accessoires",
+      "priority": 7
+    },
+    {
+      "item": "Schwarze Lederschuhe",
+      "category": "Kleidung",
+      "priority": 10
+    },
+    {
+      "item": "Schwarze Socken (mehrere Paare)",
+      "category": "Kleidung",
+      "priority": 8
+    },
+    {
+      "item": "Gürtel (passend zu Schuhen)",
+      "category": "Accessoires",
+      "priority": 9
+    },
+    {
+      "item": "Manschettenknöpfe (falls Hemd mit Doppelmanschette)",
+      "category": "Accessoires",
+      "priority": 5
+    },
+    {
+      "item": "Uhr (dezent, klassisch)",
+      "category": "Accessoires",
+      "priority": 6
+    },
+    {
+      "item": "Kleidersack für Transport",
+      "category": "Vorbereitung",
+      "priority": 8
+    },
+    {
+      "item": "Reise-Bügeleisen oder Steamer",
+      "category": "Pflege",
+      "priority": 7
+    },
+    {
+      "item": "Fleckenentferner-Stift",
+      "category": "Pflege",
+      "priority": 6
+    },
+    {
+      "item": "Fusselrolle",
+      "category": "Pflege",
+      "priority": 5
+    },
+    {
+      "item": "Ersatz-Hemd (für den Fall der Fälle)",
+      "category": "Kleidung",
+      "priority": 8
+    },
+    {
+      "item": "Anzug beim Schneider anpassen lassen",
+      "category": "Vorbereitung",
+      "priority": 10
+    },
+    {
+      "item": "Schuhe einlaufen (nicht neue Schuhe bei Hochzeit!)",
+      "category": "Vorbereitung",
+      "priority": 9
+    },
+    {
+      "item": "Schuhcreme & Poliertuch",
+      "category": "Pflege",
+      "priority": 6
+    },
+    {
+      "item": "Deodorant (Antitranspirant)",
+      "category": "Pflege",
+      "priority": 8
+    },
+    {
+      "item": "Parfum (dezent)",
+      "category": "Accessoires",
+      "priority": 4
+    },
+    {
+      "item": "Bargeld für Geschenk (in Chile: Geldumschlag üblich)",
+      "category": "Vorbereitung",
+      "priority": 7
+    }
+  ],
+  "budgetBreakdown": {
+    "tiers": [
+      {
+        "name": "Budget (€150-300)",
+        "range": "€150-300",
+        "description": "Solide Qualität für Gelegenheitsträger. Oft Polyester-Mix, aber mit Stretch verfügbar. Änderungen extern nötig.",
+        "shops": [
+          "C&A",
+          "H&M Premium",
+          "WE Fashion",
+          "Peek & Cloppenburg (Einstiegsmodelle)"
+        ]
+      },
+      {
+        "name": "Mittelklasse (€300-600)",
+        "range": "€300-600",
+        "description": "Beste Preis-Leistung! Gute Stoffe mit Stretch, kostenlose Änderungen, professionelle Beratung. EMPFOHLEN für die Hochzeit.",
+        "shops": [
+          "Suitsupply",
+          "Olymp",
+          "Peek & Cloppenburg Premium",
+          "Boss (Sale)",
+          "Massanzug24"
+        ]
+      },
+      {
+        "name": "Premium (€600-1500+)",
+        "range": "€600-1500+",
+        "description": "Top-Qualität, perfekte Verarbeitung, exklusive Stoffe. Für höchste Ansprüche oder wenn Budget keine Rolle spielt.",
+        "shops": [
+          "Engelhorn",
+          "Breuninger",
+          "Boss Store",
+          "Maßschneider Krol"
+        ]
+      }
+    ]
+  }
+}
