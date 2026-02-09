@@ -64,7 +64,7 @@
 - [ ] Beste Reisezeit / Wetter
 - [ ] Typische Preise
 - [x] Sprach-Tipps (Spanisch-Phrasen) ✓ (2026-02-08, Sprachführer mit 100+ Phrasen)
-- [ ] Sicherheitshinweise
+- [x] Sicherheitshinweise / Reisetipps ✓ (2026-02-10) — 43 praktische Tips für alle 12 Orte
 
 ---
 
@@ -73,7 +73,7 @@
 - [ ] Dark/Light Mode Toggle
 - [x] Trip Statistik Dashboard ✓ (2026-02-08)
 - [x] Währungsrechner CLP ↔ EUR ✓ (2026-02-08)
-- [ ] Größere Touch-Targets
+- [x] Größere Touch-Targets ✓ (2026-02-10) — Favorit/Maps-Buttons 28→36px, Close-Buttons 32→40px
 - [x] Swipe-Gesten für Bottom Sheet ✓ (2026-02-09) — Handle-Swipe auf/zu
 - [ ] Foto-Galerie pro Location
 - [x] 📖 Icon für Fakten-Liste ✓
@@ -157,7 +157,7 @@
 - Wine Resort: 22 | San Carlos: 20 ✓ | Chillán: 20
 - Conguillío: 23 | Pucón: 28 | Valdivia: 25
 - Osorno: 21 | Frutillar/PV: 22 | Puerto Montt/Chiloé: 38
-- **Total: 283 Empfehlungen** ✓ (Alle Locations 20+ Recs)
+- **Total: 282 Empfehlungen** ✓ (Alle Locations 20+ Recs, Sierra Nevada duplicate merged)
 
 ### Status Fakten (2026-02-09, Duplikat-Cleanup + Balance)
 - **Total: 315 Fakten** (10 Duplikate entfernt, 10 neue Fakten hinzugefügt)
@@ -241,4 +241,17 @@
 - ✓ Dist rebuild + push to GitHub
 - ✓ Clean working tree, all changes committed
 
-*Letzte Aktualisierung: 2026-02-09 06:00*
+### Reisetipps pro Ort (2026-02-10)
+- ✓ 43 praktische Reisetipps für alle 12 Locations
+- ✓ Aufklappbare "💡 Reisetipps" Sektion im Bottom Sheet
+- ✓ Nur sichtbar ohne Filter/Suche (ungestörtes Browsen)
+- ✓ Infos zu: Transport, Essen, Sicherheit, Wetter, Must-Dos
+
+### Data Cleanup (2026-02-10)
+- ✓ Doppelter Sierra Nevada Trail zusammengeführt (283→282 Recs)
+- ✓ Falsche Kategorien korrigiert (info→event, service→activity, tip→unique)
+- ✓ AccommodationsPage + SuitGuide entfernt (-6000 Zeilen)
+- ✓ Stale Category-Icons bereinigt (Map.tsx)
+- ✓ Touch-Targets vergrößert (w-7→w-9, w-8→w-10)
+
+*Letzte Aktualisierung: 2026-02-10 00:30*

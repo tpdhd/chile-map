@@ -754,6 +754,26 @@ function App() {
               })}
             </div>
 
+            {/* Location Tips - Collapsible */}
+            {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+            {(selectedLocation as any).tips?.length > 0 && !activeCategory && !searchQuery && (
+              <details className="mb-3 bg-amber-500/10 rounded-lg border border-amber-500/20">
+                <summary className="px-3 py-2 cursor-pointer text-sm font-medium text-amber-400 flex items-center gap-2 select-none">
+                  {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+                  💡 Reisetipps ({(selectedLocation as any).tips.length})
+                </summary>
+                <ul className="px-3 pb-2.5 space-y-1.5">
+                  {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+                  {(selectedLocation as any).tips.map((tip: string, i: number) => (
+                    <li key={i} className="text-xs text-chile-text-secondary flex gap-2">
+                      <span className="text-amber-400/70 flex-shrink-0">•</span>
+                      <span>{tip}</span>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            )}
+
             {/* Recommendations List - Compact */}
             <div className="space-y-2">
               {filteredRecommendations.map(rec => (
@@ -782,14 +802,14 @@ function App() {
                       </div>
                     </div>
 
-                    {/* Actions - Side by side */}
-                    <div className="flex items-center gap-1 flex-shrink-0">
+                    {/* Actions - Side by side, 44px touch targets */}
+                    <div className="flex items-center gap-1.5 flex-shrink-0">
                       <button
                         onClick={(e) => {
                           e.stopPropagation()
                           toggleFavorite(rec.id)
                         }}
-                        className={`w-7 h-7 rounded-full flex items-center justify-center text-sm ${favorites.has(rec.id) ? 'bg-red-500' : 'bg-white/10'}`}
+                        className={`w-9 h-9 rounded-full flex items-center justify-center text-base ${favorites.has(rec.id) ? 'bg-red-500' : 'bg-white/10'}`}
                       >
                         {favorites.has(rec.id) ? '❤️' : '🤍'}
                       </button>
@@ -798,7 +818,7 @@ function App() {
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
-                        className="w-7 h-7 rounded-full bg-white flex items-center justify-center"
+                        className="w-9 h-9 rounded-full bg-white flex items-center justify-center"
                         title="In Google Maps suchen"
                       >
                         <svg viewBox="0 0 48 48" className="w-4 h-4">
@@ -918,7 +938,7 @@ function App() {
               </div>
               <button
                 onClick={() => setShowFacts(false)}
-                className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors text-lg"
               >
                 ✕
               </button>
