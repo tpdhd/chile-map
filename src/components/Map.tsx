@@ -225,11 +225,11 @@ export default function Map({
     >
       {/* Dark mode tile layer - Mapbox Dark */}
       <TileLayer
-        url={`https://api.mapbox.com/styles/v1/mapbox/dark-v11/tiles/256/{z}/{x}/{y}@2x?access_token=${atob('cGsuZXlKMUlqb2liWE53WkROMklpd2lZU0k2SW1OdGJHTTNaalZ3Y2pCMk0zUXphM05uZEdsMmFIcDFiV1FpZlEuWnZaWWQ5UlRVczdUcmw0WFZ6RWRlQQ==')}`}
+        url={`https://api.mapbox.com/styles/v1/mapbox/dark-v11/tiles/512/{z}/{x}/{y}@2x?access_token=${atob('cGsuZXlKMUlqb2liWE53WkROMklpd2lZU0k2SW1OdGJHTTNaalZ3Y2pCMk0zUXphM05uZEdsMmFIcDFiV1FpZlEuWnZaWWQ5UlRVczdUcmw0WFZ6RWRlQQ==')}`}
         attribution='&copy; <a href="https://www.mapbox.com/">Mapbox</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         maxZoom={22}
-        tileSize={256}
-        zoomOffset={0}
+        tileSize={512}
+        zoomOffset={-1}
         crossOrigin="anonymous"
         className="smooth-tiles"
         maxNativeZoom={22}

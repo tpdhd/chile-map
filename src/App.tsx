@@ -15,6 +15,7 @@ const Checklist = lazy(() => import('./components/Checklist'))
 const EmergencyInfo = lazy(() => import('./components/EmergencyInfo'))
 const DailyPlan = lazy(() => import('./components/DailyPlan'))
 const TripRoute = lazy(() => import('./components/TripRoute'))
+const NearbyFinder = lazy(() => import('./components/NearbyFinder'))
 
 export type Location = typeof tripData.locations[0]
 export type Recommendation = typeof tripData.locations[0]['recommendations'][0]
@@ -124,6 +125,7 @@ function App() {
   const [showEmergency, setShowEmergency] = useState(false)
   const [showDailyPlan, setShowDailyPlan] = useState(false)
   const [showTripRoute, setShowTripRoute] = useState(false)
+  const [showNearby, setShowNearby] = useState(false)
 
   // Get facts for current location or random
   const locationFacts = useMemo(() => {
@@ -523,6 +525,15 @@ function App() {
               className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
             >
               <span>🗺️</span> Reiseroute
+            </button>
+            <button
+              onClick={() => {
+                setShowNearby(true)
+                setShowMenu(false)
+              }}
+              className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
+            >
+              <span>📍</span> In der Nähe
             </button>
             <button
               onClick={() => {
@@ -1013,6 +1024,13 @@ function App() {
       {showTripRoute && (
         <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">🗺️</div></div>}>
           <TripRoute onClose={() => setShowTripRoute(false)} favorites={favorites} visited={visited} />
+        </Suspense>
+      )}
+
+      {/* NEARBY FINDER */}
+      {showNearby && (
+        <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">📍</div></div>}>
+          <NearbyFinder onClose={() => setShowNearby(false)} favorites={favorites} />
         </Suspense>
       )}
 
