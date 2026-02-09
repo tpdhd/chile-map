@@ -78,6 +78,8 @@
 - [ ] Foto-Galerie pro Location
 - [x] 📖 Icon für Fakten-Liste ✓
 - [x] Location Highlighting (Map ↔ Menu Sync) ✓ (2026-02-07)
+- [x] Kategorie-Icons vollständig ✓ (2026-02-09) — 18 Kategorien mit Icons
+- [x] Deutsche Übersetzung vollständig ✓ (2026-02-09) — LoadingState, Tooltips, lang="de"
   - Map-Klick → öffnet Picker, scrollt zur Location, Flash-Effekt
   - Menu-Klick → Map fliegt hin, Marker pulst rot
   - Empfehlung-Klick → Bottom Sheet scrollt + highlightet
