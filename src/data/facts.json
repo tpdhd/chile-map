@@ -2119,8 +2119,78 @@
       "category": "nature",
       "source": "Insight Guides Chile 2024",
       "id": 305
+    },
+    {
+      "id": 306,
+      "text": "Chiles einheimische Papageien (Choroy und Tricahue) leben in den Bergen rund um Conguillío — sie wecken Camper mit lautem Kreischen vor Sonnenaufgang.",
+      "category": "nature",
+      "location": "conguillio",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 307,
+      "text": "Der Parque Nacional Conguillío umfasst 608 km² — der Volcán Llaima in seiner Mitte versucht seit Jahrhunderten, den Park mit schwarzer Lava zu zerstören.",
+      "category": "nature",
+      "location": "conguillio",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 308,
+      "text": "Die Besteigung des Volcán Llaima (3.125m) dauert 7 Stunden, erfordert Eispickel und Steigeisen — und man muss mit Spalten, Fumarolen und Schwefeldämpfen am Gipfel rechnen.",
+      "category": "nature",
+      "location": "conguillio",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 309,
+      "text": "Der Volcán Llaima hat ein kleines Skigebiet an seinen Hängen — 'Araucarias', wo man im Winter zwischen uralten Araukarienbäumen Ski fahren kann.",
+      "category": "unique",
+      "location": "conguillio",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 310,
+      "text": "Die Saltos del Petrohué verdanken ihre bizarre Formgebung kristallisiertem vulkanischem Gestein, das besonders widerstandsfähig gegen Erosion ist — dasselbe Gestein gibt dem Vulkan Puntiagudo seine spitze Form.",
+      "category": "nature",
+      "location": "osorno",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 311,
+      "text": "Das Wasser des Río Petrohué ist leuchtend grün durch Algen — ein Phänomen, das sich im Lago Todos los Santos fortsetzt, weshalb er auch 'Lago Esmeralda' heißt.",
+      "category": "nature",
+      "location": "osorno",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 312,
+      "text": "In Petrohué plagen im Hochsommer zwei Arten beißender Fliegen — die Colihuacho und die Petro. 'Petrohué' ist Mapudungun für 'Ort der Petros'.",
+      "category": "unique",
+      "location": "osorno",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 313,
+      "text": "Pablo Neruda veröffentlichte mit nur 20 Jahren 'Veinte Poemas de Amor y una Canción Desesperada' — und hatte damit auf einen Schlag eine der größten Leserschaften des Kontinents.",
+      "category": "culture",
+      "location": "algarrobo",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 314,
+      "text": "In Nerudas Haus in Isla Negra hängt ein einbalsamierter venezolanischer Coro-Coro-Vogel von der Decke des Esszimmers — eines von vielen bizarren Objekten seiner Sammlungen.",
+      "category": "unique",
+      "location": "algarrobo",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 315,
+      "text": "Pablo Morandé 'entdeckte' das Casablanca-Tal für den Weinbau — er suchte einen kühleren Ort für Weißweintrauben und fand ihn zwischen Santiago und Valparaíso.",
+      "category": "food",
+      "location": "wine-resort",
+      "source": "Insight Guides Chile 2024"
     }
   ],
   "lastUpdated": "2026-02-09",
-  "totalFacts": 305
+  "totalFacts": 315
 }

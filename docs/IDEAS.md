@@ -108,7 +108,7 @@
 
 ## 📊 Fakten-Feature
 
-### Status: 295 Fakten ✓ (2026-02-08, 3 Bücher extrahiert)
+### Status: 315 Fakten ✓ (2026-02-09, 3 Bücher extrahiert)
 - Geographie, Kultur, Geschichte, Natur, Essen, Unique, Beach
 - Mit Location-Referenzen wo relevant
 - Quellen: Insight Guides 2024, Rough Guides 2023, Bradt Carretera Austral 2022
@@ -158,14 +158,16 @@
 - **Total: 280 Empfehlungen**
 
 ### Status Fakten (2026-02-09, letzte Erweiterung)
-- **Total: 305 Fakten** (erweitert mit Rough Guide + Carretera Austral + Insight Guides)
+- **Total: 315 Fakten** (erweitert mit Rough Guide + Carretera Austral + Insight Guides)
+- 10 neue Fakten (2026-02-09 Nacht, Balance-Update)
 - 10 neue Fakten aus Insight Guides (2026-02-09 Nacht)
 - 19 neue Fakten aus Rough Guide (2026-02-08)
 - 17 neue Fakten aus allen 3 Büchern (2026-02-08 Nacht)
 - Neue Quelle: Bradt Carretera Austral Guide 2022
 - General: 66, Chiloé/PM: 28, Santiago: 25, Frutillar/PV: 23
-- Pucón: 19, Chillán: 19, Valdivia: 19, Osorno: 18, Algarrobo: 18
-- San Carlos: 18, Wine Resort: 18, Conguillío: 17, Quillimari: 17
+- Conguillío: 21, Osorno: 21, Algarrobo: 20
+- Pucón: 19, Chillán: 19, Valdivia: 19, Wine Resort: 19
+- San Carlos: 18, Quillimari: 17
 - **Alle Locations 17+ Fakten ✓**
 
 ### TypeScript
