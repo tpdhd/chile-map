@@ -1459,6 +1459,78 @@
             "penguins"
           ],
           "source": "brave-search"
+        },
+        {
+          "id": "algarrobo-los-patitos",
+          "name": "Restaurant Los Patitos",
+          "nameEs": "Restaurant Los Patitos",
+          "category": "restaurant",
+          "coordinates": [
+            -33.3622,
+            -71.6688
+          ],
+          "description": "Legendäres Meeresfrüchte-Restaurant direkt an der Costanera mit über 40 Jahren Tradition. Bekannt für riesige Portionen frischer Mariscos, Paila Marina und Reineta a la Plancha. Eines der ältesten und beliebtesten Lokale in Algarrobo – ein Muss für Fischliebhaber.",
+          "descriptionEs": "Legendario restaurante de mariscos en la costanera con más de 40 años de tradición. Conocido por porciones enormes de mariscos frescos, paila marina y reineta a la plancha. Uno de los locales más antiguos y queridos de Algarrobo.",
+          "address": "Av. Carlos Alessandri 278, Algarrobo",
+          "googleMapsLink": "https://maps.google.com/?q=-33.3622,-71.6688",
+          "priceRange": "$$",
+          "tags": [
+            "seafood",
+            "restaurant",
+            "traditional",
+            "iconic",
+            "paila-marina"
+          ],
+          "source": "brave-search"
+        },
+        {
+          "id": "algarrobo-punta-fraile",
+          "name": "Punta Fraile Peninsula",
+          "nameEs": "Península Punta de Fraile",
+          "category": "viewpoint",
+          "coordinates": [
+            -33.3535,
+            -71.6885
+          ],
+          "description": "Geschützte Halbinsel und Naturdenkmal mit atemberaubendem 360°-Panoramablick auf die Bucht von Algarrobo, die Pinguininsel und bei klarem Wetter sogar die Anden. Heilige Stätte der Chango-Ureinwohner (Pillan Wechun). Einer der letzten unbebauten Küstenabschnitte – perfekt für einen kurzen Spaziergang mit spektakulärer Aussicht.",
+          "descriptionEs": "Península protegida y monumento natural con impresionantes vistas panorámicas 360° de la bahía de Algarrobo, la isla de pingüinos y en días claros hasta la cordillera de los Andes. Sitio sagrado de la comunidad Chango (Pillan Wechun). Uno de los últimos espacios no urbanizados de la costa.",
+          "address": "Punta de Fraile, Algarrobo",
+          "googleMapsLink": "https://maps.google.com/?q=-33.3535,-71.6885",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "viewpoint",
+            "nature",
+            "panorama",
+            "heritage",
+            "sacred-site",
+            "coastal-walk"
+          ],
+          "source": "brave-search"
+        },
+        {
+          "id": "algarrobo-cinco-oceanos",
+          "name": "Cinco Océanos Sunset Restaurant",
+          "nameEs": "Cinco Océanos Sunset Restaurant",
+          "category": "restaurant",
+          "coordinates": [
+            -33.3578,
+            -71.6632
+          ],
+          "description": "Top-bewertetes Restaurant (4.6/5 auf TripAdvisor) mit spektakulärer Sonnenuntergangsterrasse. Nachhaltige Küche mit lokalen Meeresfrüchten von Tauchfischern. Kreative chilenisch-polynesische Fusionsküche, hervorragende Ceviches und Cocktails. Dachterrasse mit Meerblick – unbedingt zum Sunset reservieren!",
+          "descriptionEs": "Restaurante top (4.6/5 en TripAdvisor) con espectacular terraza para atardeceres. Cocina sustentable con mariscos locales de buzos artesanales. Fusión creativa chileno-polinesia, excelentes ceviches y cócteles. Rooftop con vista al mar – ¡reservar para el atardecer!",
+          "address": "Av. Algarrobo 2353, Algarrobo",
+          "website": "https://www.sunsetalgarrobo.cl/",
+          "googleMapsLink": "https://maps.google.com/?q=-33.3578,-71.6632",
+          "priceRange": "$$$",
+          "tags": [
+            "restaurant",
+            "sunset",
+            "seafood",
+            "sustainable",
+            "rooftop",
+            "top-rated"
+          ],
+          "source": "brave-search"
         }
       ]
     },
