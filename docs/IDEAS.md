@@ -74,7 +74,7 @@
 - [x] Trip Statistik Dashboard ✓ (2026-02-08)
 - [x] Währungsrechner CLP ↔ EUR ✓ (2026-02-08)
 - [ ] Größere Touch-Targets
-- [ ] Swipe-Gesten für Navigation
+- [x] Swipe-Gesten für Bottom Sheet ✓ (2026-02-09) — Handle-Swipe auf/zu
 - [ ] Foto-Galerie pro Location
 - [x] 📖 Icon für Fakten-Liste ✓
 - [x] Location Highlighting (Map ↔ Menu Sync) ✓ (2026-02-07)
@@ -230,4 +230,11 @@
 - ✓ Bessere Retina-Qualität auf Mobilgeräten
 - ✓ zoomOffset: -1 für korrekte 512px Zuordnung
 
-*Letzte Aktualisierung: 2026-02-09 03:00*
+### UX Cleanup (2026-02-09, 04:30)
+- ✓ Burger Menu in Sektionen gruppiert (Planung, Wissen, Tools, System)
+- ✓ Swipe-Gesten für Bottom Sheet Handle
+- ✓ Ungenutzte Komponenten entfernt (Timeline.tsx, LocationPanel.tsx → -894 Zeilen)
+- ✓ Kompakteres Menu (py-2.5 statt py-3)
+- ✓ Info Credits korrigiert (CARTO → Mapbox)
+
+*Letzte Aktualisierung: 2026-02-09 04:30*
