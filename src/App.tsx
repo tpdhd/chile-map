@@ -14,6 +14,7 @@ const WeatherWidget = lazy(() => import('./components/WeatherWidget'))
 const Checklist = lazy(() => import('./components/Checklist'))
 const EmergencyInfo = lazy(() => import('./components/EmergencyInfo'))
 const DailyPlan = lazy(() => import('./components/DailyPlan'))
+const TripRoute = lazy(() => import('./components/TripRoute'))
 
 export type Location = typeof tripData.locations[0]
 export type Recommendation = typeof tripData.locations[0]['recommendations'][0]
@@ -122,6 +123,7 @@ function App() {
   const [showChecklist, setShowChecklist] = useState(false)
   const [showEmergency, setShowEmergency] = useState(false)
   const [showDailyPlan, setShowDailyPlan] = useState(false)
+  const [showTripRoute, setShowTripRoute] = useState(false)
 
   // Get facts for current location or random
   const locationFacts = useMemo(() => {
@@ -515,25 +517,21 @@ function App() {
             </button>
             <button
               onClick={() => {
+                setShowTripRoute(true)
+                setShowMenu(false)
+              }}
+              className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
+            >
+              <span>🗺️</span> Reiseroute
+            </button>
+            <button
+              onClick={() => {
                 setShowEmergency(true)
                 setShowMenu(false)
               }}
               className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
             >
               <span>🆘</span> Notfall-Info
-            </button>
-            <button
-              onClick={() => {
-                const coords = tripData.locations.map(loc => `${loc.coordinates[0]},${loc.coordinates[1]}`)
-                const origin = coords[0]
-                const destination = coords[coords.length - 1]
-                const waypoints = coords.slice(1, -1).join('|')
-                window.open(`https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&waypoints=${waypoints}&travelmode=driving`, '_blank')
-                setShowMenu(false)
-              }}
-              className="w-full px-4 py-3 text-left hover:bg-white/5 flex items-center gap-3"
-            >
-              <span>🗺️</span> Komplette Route
             </button>
             <button
               onClick={() => {
@@ -1008,6 +1006,13 @@ function App() {
       {showDailyPlan && (
         <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">📅</div></div>}>
           <DailyPlan onClose={() => setShowDailyPlan(false)} favorites={favorites} />
+        </Suspense>
+      )}
+
+      {/* TRIP ROUTE */}
+      {showTripRoute && (
+        <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">🗺️</div></div>}>
+          <TripRoute onClose={() => setShowTripRoute(false)} favorites={favorites} visited={visited} />
         </Suspense>
       )}
 
