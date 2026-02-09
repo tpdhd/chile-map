@@ -9,7 +9,8 @@ interface Shop {
   category: string
   address: string
   district: string
-  website: string
+  website: string | null
+  mapsUrl?: string
   priceRange: string
   rating: number
   ratingSource: string
@@ -57,10 +58,17 @@ interface BudgetTier {
   shops: string[]
 }
 
+interface ShoppingChecklistItem {
+  item: string
+  reason: string
+  priority: 'must' | 'should' | 'nice'
+}
+
 interface ContentData {
   sections: ContentSection[]
   quickTips: QuickTip[]
   checklist: ChecklistItem[]
+  shoppingChecklist?: ShoppingChecklistItem[]
   budgetBreakdown: {
     tiers: BudgetTier[]
   }
@@ -281,19 +289,21 @@ export default function SuitGuide({ onClose }: SuitGuideProps) {
 
                   {/* Links */}
                   <div className="flex gap-2">
+                    {shop.website && (
+                      <a
+                        href={shop.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 px-3 py-2 rounded-lg bg-chile-accent-teal/20 text-chile-accent-teal text-xs font-medium text-center hover:bg-chile-accent-teal/30 transition-colors"
+                      >
+                        🌐 Website
+                      </a>
+                    )}
                     <a
-                      href={shop.website}
+                      href={shop.mapsUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(shop.name + ' Hamburg')}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 px-3 py-2 rounded-lg bg-chile-accent-teal/20 text-chile-accent-teal text-xs font-medium text-center hover:bg-chile-accent-teal/30 transition-colors"
-                    >
-                      🌐 Website
-                    </a>
-                    <a
-                      href={`https://www.google.com/maps?q=${shop.coordinates[0]},${shop.coordinates[1]}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 px-3 py-2 rounded-lg bg-chile-accent-red/20 text-chile-accent-red text-xs font-medium text-center hover:bg-chile-accent-red/30 transition-colors"
+                      className={`${shop.website ? 'flex-1' : 'w-full'} px-3 py-2 rounded-lg bg-chile-accent-red/20 text-chile-accent-red text-xs font-medium text-center hover:bg-chile-accent-red/30 transition-colors`}
                     >
                       📍 Maps
                     </a>
@@ -385,7 +395,7 @@ export default function SuitGuide({ onClose }: SuitGuideProps) {
         {activeTab === 'etiquette' && (
           <div className="space-y-4 mt-4">
             {content.sections
-              .filter(section => section.id === 'etiquette')
+              .filter(section => ['etiquette', 'transport', 'gifts', 'emergency'].includes(section.id))
               .map(section => (
                 <div key={section.id}>
                   <h2 className="font-bold text-lg mb-3 flex items-center gap-2">
@@ -434,6 +444,32 @@ export default function SuitGuide({ onClose }: SuitGuideProps) {
         {/* ==================== CHECKLIST TAB ==================== */}
         {activeTab === 'checklist' && (
           <div className="space-y-4 mt-4">
+            {/* Shopping Checklist - Was zum Laden mitnehmen */}
+            {content.shoppingChecklist && content.shoppingChecklist.length > 0 && (
+              <div className="p-4 rounded-xl bg-gradient-to-br from-amber-500/10 to-orange-500/10 border border-amber-500/30">
+                <h3 className="font-bold text-sm text-amber-400 mb-3 flex items-center gap-2">
+                  🛍️ Was du zum Anzugkauf mitnehmen solltest
+                </h3>
+                <div className="space-y-2">
+                  {content.shoppingChecklist.map((item, i) => (
+                    <div key={i} className="flex items-start gap-2.5 p-2 rounded-lg bg-white/5">
+                      <span className={`text-xs px-1.5 py-0.5 rounded font-bold mt-0.5 ${
+                        item.priority === 'must' ? 'bg-red-500/20 text-red-400' :
+                        item.priority === 'should' ? 'bg-amber-500/20 text-amber-400' :
+                        'bg-white/10 text-chile-text-muted'
+                      }`}>
+                        {item.priority === 'must' ? '!!!' : item.priority === 'should' ? '!!' : '!'}
+                      </span>
+                      <div className="flex-1">
+                        <span className="text-sm font-medium text-chile-text-primary">{item.item}</span>
+                        <p className="text-xs text-chile-text-muted mt-0.5">{item.reason}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Progress Bar */}
             <div className="p-4 rounded-xl bg-gradient-to-br from-chile-accent-teal/20 to-chile-accent-red/10 border border-chile-accent-teal/30">
               <div className="flex items-center justify-between mb-2">

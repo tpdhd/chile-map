@@ -6,6 +6,7 @@ import factsData from './data/facts.json'
 // Lazy load the map for faster initial render
 const Map = lazy(() => import('./components/Map'))
 const CarRentalPage = lazy(() => import('./components/CarRentalPage'))
+const AccommodationsPage = lazy(() => import('./components/AccommodationsPage'))
 const SettingsPage = lazy(() => import('./components/SettingsPage'))
 const CurrencyConverter = lazy(() => import('./components/CurrencyConverter'))
 const TripStats = lazy(() => import('./components/TripStats'))
@@ -119,6 +120,7 @@ function App() {
   const [showFacts, setShowFacts] = useState(false)
   const [currentFactIndex, setCurrentFactIndex] = useState(0)
   const [showCarRental, setShowCarRental] = useState(false)
+  const [showAccommodations, setShowAccommodations] = useState(false)
   const [showSettings, setShowSettings] = useState(false)
   const [showCurrency, setShowCurrency] = useState(false)
   const [showStats, setShowStats] = useState(false)
@@ -527,6 +529,12 @@ function App() {
               className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm"
             >
               <span>👔</span> Anzug-Guide
+            </button>
+            <button
+              onClick={() => { setShowAccommodations(true); setShowMenu(false) }}
+              className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm"
+            >
+              <span>🏠</span> Unterkünfte
             </button>
 
             {/* Section: Wissen */}
@@ -1031,6 +1039,13 @@ function App() {
       {showCarRental && (
         <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">🚗</div></div>}>
           <CarRentalPage onClose={() => setShowCarRental(false)} />
+        </Suspense>
+      )}
+
+      {/* ACCOMMODATIONS PAGE */}
+      {showAccommodations && (
+        <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">🏠</div></div>}>
+          <AccommodationsPage onClose={() => setShowAccommodations(false)} />
         </Suspense>
       )}
 

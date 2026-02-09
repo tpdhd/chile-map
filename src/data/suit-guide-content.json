@@ -125,6 +125,214 @@
           "type": "info"
         }
       ]
+    },
+    {
+      "id": "transport",
+      "title": "Transport & Pflege",
+      "icon": "✈️",
+      "items": [
+        {
+          "heading": "Anzug fürs Kofferpacken rollen - Schritt für Schritt",
+          "content": [
+            "1. Jacket auf den Rücken legen, Knöpfe schließen",
+            "2. Schultern nach innen klappen (linke auf rechte Schulter)",
+            "3. Ärmel gerade nach unten legen",
+            "4. Von unten aufrollen (nicht falten!) bis zum Kragen",
+            "5. Hose der Länge nach falten, dann 2x falten",
+            "6. In Kleidersack oder separates Fach legen"
+          ],
+          "type": "tip"
+        },
+        {
+          "heading": "Garment Bag vs Koffer",
+          "content": [
+            "GARMENT BAG (Kleidersack): Beste Wahl für Anzüge - hängend transportieren, keine Falten. Passt oft als Handgepäck.",
+            "KOFFER: Nur mit Roll-Technik! Stretch-Anzüge verkraften das besser. Bei Ankunft sofort aufhängen.",
+            "HANDGEPÄCK: Immer besser als Aufgabegepäck - du behältst Kontrolle, kein Verlustrisiko."
+          ],
+          "type": "info"
+        },
+        {
+          "heading": "Dampf-Trick im Hotel",
+          "content": [
+            "1. Anzug auf Bügel hängen",
+            "2. Heißes Wasser in Badewanne laufen lassen (fast kochend)",
+            "3. Anzug ins Badezimmer hängen (nicht zu nah am Wasser!)",
+            "4. Tür schließen, 15-20 Minuten Dampf wirken lassen",
+            "5. Anzug rausholen, an der Luft trocknen lassen",
+            "WICHTIG: Nicht übertreiben - zu viel Feuchtigkeit schadet!"
+          ],
+          "type": "success"
+        },
+        {
+          "heading": "Notfall: Bügeleisen mit feuchtem Tuch",
+          "content": [
+            "Wenn Dampf nicht reicht:",
+            "1. Bügeleisen auf mittlere Hitze (Wolle-Einstellung)",
+            "2. Sauberes, feuchtes Baumwolltuch auf den Anzug legen",
+            "3. Durch das Tuch bügeln (NIEMALS direkt auf den Stoff!)",
+            "4. Sanfter Druck, keine kreisenden Bewegungen",
+            "5. Anzug danach 30 Min. auslüften lassen"
+          ],
+          "type": "warning"
+        },
+        {
+          "heading": "Schuhpflege auf Reisen",
+          "content": [
+            "Mini-Schuhcreme in Reisegröße mitnehmen",
+            "Poliertuch (altes T-Shirt tut's auch)",
+            "Schuhspanner aus Plastik (leicht, nehmen Feuchtigkeit)",
+            "Ersatz-Schnürsenkel (schwarz)",
+            "Schmutz mit feuchtem Tuch entfernen vor dem Polieren",
+            "Am Abend vor der Hochzeit polieren - nicht morgens!"
+          ],
+          "type": "tip"
+        }
+      ]
+    },
+    {
+      "id": "gifts",
+      "title": "Geschenk & Geld",
+      "icon": "💝",
+      "items": [
+        {
+          "heading": "Chilenische Tradition: Geldgeschenk im Umschlag",
+          "content": [
+            "In Chile ist ein Geldgeschenk ('Regalo en Efectivo') völlig normal und erwartet",
+            "Das Geld wird in einem schönen Umschlag ('sobre') überreicht",
+            "Oft gibt es bei der Hochzeit eine Box oder Schatulle für die Umschläge",
+            "Der Umschlag sollte beschriftet sein: 'Para [Namen des Brautpaars]'",
+            "Eine kleine handgeschriebene Karte mit Glückwünschen gehört dazu"
+          ],
+          "type": "info"
+        },
+        {
+          "heading": "Wie viel schenkt man?",
+          "content": [
+            "Als Gast aus dem Ausland: 50.000-100.000 CLP (ca. 50-100€)",
+            "Enge Freunde/Familie: 100.000-200.000 CLP (100-200€)",
+            "Als Paar: doppelter Betrag",
+            "Faustregel: Kosten pro Gast decken + etwas extra (ca. 50.000 CLP pro Person)",
+            "US-Dollar oder Euro sind auch OK - am besten vorher wechseln"
+          ],
+          "type": "success"
+        },
+        {
+          "heading": "Persönliches Geschenk zusätzlich möglich",
+          "content": [
+            "Geld ist Standard, aber ein kleines persönliches Geschenk ist ein Extra",
+            "Ideen: Fotoalbum, personalisierte Deko, etwas aus deiner Heimat",
+            "ACHTUNG: Nicht zu groß/schwer (du musst es transportieren!)",
+            "Bei Unsicherheit: Nur Geld ist völlig ausreichend und angemessen"
+          ],
+          "type": "tip"
+        },
+        {
+          "heading": "Karte auf Spanisch schreiben - Vorlagen",
+          "content": [
+            "KLASSISCH: 'Queridos [Namen], les deseamos muchísima felicidad en esta nueva etapa. ¡Felicidades! - [Dein Name]'",
+            "PERSÖNLICH: 'Para [Namen], que su amor crezca cada día. ¡Feliz matrimonio! - [Dein Name]'",
+            "KURZ & SÜSS: '¡Felicidades a los novios! Les deseamos todo lo mejor. - [Dein Name]'",
+            "MIT HUMOR: 'Que la suerte los acompañe... ¡y la paciencia también! Felicidades. - [Dein Name]'"
+          ],
+          "type": "tip"
+        }
+      ]
+    },
+    {
+      "id": "emergency",
+      "title": "Notfall-Kit",
+      "icon": "🚨",
+      "items": [
+        {
+          "heading": "Das gehört ins Notfall-Kit",
+          "content": [
+            "Kleine Tasche oder Kulturbeutel, den du am Hochzeitstag dabei hast",
+            "Im Hotel lassen geht auch - aber Zugriff muss möglich sein",
+            "Am besten einer vertrauenswürdigen Person mitgeben"
+          ],
+          "type": "info"
+        },
+        {
+          "heading": "Nähset (Knopf ab? Naht offen?)",
+          "content": [
+            "Mini-Nähset mit schwarzem und dunkelblauen Faden",
+            "Nadel, Schere, Sicherheitsnadeln",
+            "Ersatzknopf (oft am Anzug dabei - innen eingenäht!)",
+            "Sekundenkleber für echte Notfälle (hält Stoff temporär)"
+          ],
+          "type": "success"
+        },
+        {
+          "heading": "Fleckenentferner-Stift",
+          "content": [
+            "Dr. Beckmann Fleckenstift oder ähnlich",
+            "Funktioniert bei: Wein, Soßen, Fett, Make-up",
+            "SOFORT anwenden - je frischer der Fleck, desto besser",
+            "Tupfen, nicht reiben! Von außen nach innen arbeiten"
+          ],
+          "type": "warning"
+        },
+        {
+          "heading": "Sicherheitsnadeln",
+          "content": [
+            "3-5 Sicherheitsnadeln in verschiedenen Größen",
+            "Retten bei: gerissener Naht, abgerissenem Knopf, zu weiter Hose",
+            "Auch nützlich für andere Gäste - macht dich zum Held!"
+          ],
+          "type": "tip"
+        },
+        {
+          "heading": "Ersatz-Kragen-Stays",
+          "content": [
+            "Kleine Plastik- oder Metallstäbchen, die den Hemdkragen steif halten",
+            "Gehen gerne verloren oder brechen",
+            "2-3 Ersatz-Stays mitnehmen",
+            "Notfall-Hack: Zugeschnittene Kreditkarte funktioniert auch"
+          ],
+          "type": "tip"
+        },
+        {
+          "heading": "Mini-Deo",
+          "content": [
+            "Deo-Roller oder Mini-Spray (50ml)",
+            "Nach dem Tanzen auffrischen",
+            "Antitranspirant besser als normales Deo",
+            "Nicht zu stark parfümiert - dezent bleiben!"
+          ],
+          "type": "success"
+        },
+        {
+          "heading": "Schuhanzieher",
+          "content": [
+            "Kleiner, faltbarer Schuhanzieher",
+            "Schont die Schuhe (vor allem die Fersenkappe)",
+            "Erleichtert das An- und Ausziehen nach langem Tragen",
+            "Bei neuen Schuhen besonders wichtig"
+          ],
+          "type": "tip"
+        },
+        {
+          "heading": "Pflaster (neue Schuhe!)",
+          "content": [
+            "Blasenpflaster (z.B. Compeed) - LEBENSRETTER!",
+            "Normale Pflaster für kleine Schnitte",
+            "An Fersen, Zehen und Knöcheln anbringen (präventiv!)",
+            "Besser zu viele als zu wenige - du wirst tanzen!"
+          ],
+          "type": "warning"
+        },
+        {
+          "heading": "Haargummi / Kamm",
+          "content": [
+            "Kamm oder kleine Bürste",
+            "Haargel/Wachs für Touch-ups",
+            "Haargummi falls du längere Haare hast",
+            "Taschenspiegel für Quick-Checks"
+          ],
+          "type": "tip"
+        }
+      ]
     }
   ],
   "quickTips": [
@@ -265,6 +473,58 @@
       "item": "Bargeld für Geschenk (in Chile: Geldumschlag üblich)",
       "category": "Vorbereitung",
       "priority": 7
+    }
+  ],
+  "shoppingChecklist": [
+    {
+      "item": "Schuhe, die man zur Hochzeit tragen will",
+      "reason": "Hosenlänge muss auf die exakten Schuhe angepasst werden! Zu lang = Stolpergefahr, zu kurz = sieht billig aus.",
+      "priority": "must"
+    },
+    {
+      "item": "Weißes Hemd oder Hemd in der gewünschten Farbe",
+      "reason": "Kragen-Check! Der Anzugkragen muss perfekt zum Hemdkragen passen. Unterschiedliche Hemden = unterschiedliche Kragenweiten.",
+      "priority": "must"
+    },
+    {
+      "item": "Gürtel (falls man einen tragen will)",
+      "reason": "Hosenbund muss mit Gürtel passen - manche Hosen brauchen keinen, andere schon. Lieber direkt testen.",
+      "priority": "should"
+    },
+    {
+      "item": "Handy mit Referenzbildern",
+      "reason": "Zeig dem Verkäufer Inspiration-Bilder! 'Ich will so was in der Art' ist viel klarer als lange Erklärungen.",
+      "priority": "should"
+    },
+    {
+      "item": "Budget-Vorstellung im Kopf haben",
+      "reason": "Sag dem Verkäufer dein Budget - spart Zeit und verhindert peinliche Momente. 'Ich suche was bis €400' ist völlig OK.",
+      "priority": "must"
+    },
+    {
+      "item": "Bequeme Unterwäsche",
+      "reason": "Du wirst 5-10 Anzüge anprobieren. Unbequeme Unterwäsche macht das zur Qual. Boxershorts > String.",
+      "priority": "should"
+    },
+    {
+      "item": "Genug Zeit einplanen (mind. 2 Stunden)",
+      "reason": "Anzugkauf ist kein Sprint. Anprobieren, Beratung, Maßnehmen, Stoff-Auswahl - das braucht Zeit. Stress = schlechte Entscheidungen.",
+      "priority": "must"
+    },
+    {
+      "item": "Nicht zu voll essen vorher",
+      "reason": "Ein voller Bauch verfälscht die Passform! Der Anzug muss auch nach dem Hochzeits-Essen noch passen. Lieber vorher nur Snack.",
+      "priority": "should"
+    },
+    {
+      "item": "Eine Vertrauensperson mitnehmen",
+      "reason": "Zweite Meinung ist Gold wert! Du siehst dich im Spiegel anders als andere dich sehen. Ehrlicher Freund > Verkäufer.",
+      "priority": "should"
+    },
+    {
+      "item": "Deodorant",
+      "reason": "Du wirst schwitzen beim An- und Ausziehen. Frisch bleiben macht das Erlebnis angenehmer - für dich UND den Verkäufer.",
+      "priority": "nice"
     }
   ],
   "budgetBreakdown": {
