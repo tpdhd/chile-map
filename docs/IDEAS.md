@@ -68,7 +68,7 @@
 
 ## 🎨 UI Verbesserungen
 
-- [ ] Dark/Light Mode Toggle
+- [x] Dark/Light Mode Toggle ✓ (2026-02-10) — ☀️/🌙 Button, CSS-Variablen, Mapbox Outdoors für Light
 - [x] Trip Statistik Dashboard ✓ (2026-02-08)
 - [x] Währungsrechner CLP ↔ EUR ✓ (2026-02-08)
 - [x] Größere Touch-Targets ✓ (2026-02-10) — Favorit/Maps-Buttons 28→36px, Close-Buttons 32→40px
@@ -134,7 +134,7 @@
 ### Weitere Erweiterungen  
 - [x] Mehr Empfehlungen aus Büchern für Wine Resort ✓ (14→22 recs, 2026-02-07)
 - [ ] PWA Service Worker für Offline-Tiles
-- [ ] Dark/Light Mode Toggle
+- [x] Dark/Light Mode Toggle ✓ (2026-02-10)
 - [ ] Foto-Galerie pro Location
 
 ### Wetter-Widget integriert (2026-02-09)
