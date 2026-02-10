@@ -2,58 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* CSS Variables for Theme Switching */
-:root {
-  --bg-primary: #f8f9fa;
-  --bg-secondary: #e9ecef;
-  --bg-card: #ffffff;
-  --text-primary: #1a1a2e;
-  --text-secondary: #495057;
-  --text-muted: #868e96;
-  --accent-red: #e63946;
-  --accent-teal: #2a9d8f;
-}
-
-.dark {
-  --bg-primary: #0f0f14;
-  --bg-secondary: #1a1a24;
-  --bg-card: #242432;
-  --text-primary: #f1f1f1;
-  --text-secondary: #a0a0b0;
-  --text-muted: #6b6b7b;
-  --accent-red: #e63946;
-  --accent-teal: #2a9d8f;
-}
-
-/* Light mode adjustments for bg-white opacity classes */
-.light .bg-white\/5 {
-  background: rgba(0, 0, 0, 0.05) !important;
-}
-
-.light .bg-white\/10 {
-  background: rgba(0, 0, 0, 0.1) !important;
-}
-
-.light .bg-white\/20 {
-  background: rgba(0, 0, 0, 0.08) !important;
-}
-
-.light .hover\:bg-white\/5:hover {
-  background: rgba(0, 0, 0, 0.05) !important;
-}
-
-.light .hover\:bg-white\/20:hover {
-  background: rgba(0, 0, 0, 0.15) !important;
-}
-
-.light .border-white\/10 {
-  border-color: rgba(0, 0, 0, 0.1) !important;
-}
-
-.light .border-white\/5 {
-  border-color: rgba(0, 0, 0, 0.05) !important;
-}
-
 /* Safe area insets for notched phones / fullscreen PWA */
 html {
   height: 100%;
@@ -61,7 +9,7 @@ html {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: var(--bg-primary);
+  background-color: #0f0f14;
 }
 
 body {
@@ -71,7 +19,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: var(--bg-primary);
+  background-color: #0f0f14;
 }
 
 #root {
@@ -81,7 +29,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: var(--bg-primary);
+  background-color: #0f0f14;
 }
 
 /* Custom animations */
@@ -193,9 +141,9 @@ body {
   }
 }
 
-/* Leaflet theme overrides */
+/* Leaflet dark mode overrides */
 .leaflet-container {
-  background: var(--bg-primary);
+  background: #0f0f14;
 }
 
 /* Smooth tile loading - optimized for performance */
@@ -234,19 +182,18 @@ body {
 }
 
 .leaflet-control-zoom a {
-  background-color: var(--bg-card) !important;
-  color: var(--text-primary) !important;
-  border-color: rgba(0, 0, 0, 0.2) !important;
+  background-color: #242432 !important;
+  color: #f1f1f1 !important;
+  border-color: #3a3a4a !important;
 }
 
 .leaflet-control-zoom a:hover {
-  opacity: 0.8;
+  background-color: #3a3a4a !important;
 }
 
 .leaflet-control-attribution {
-  background: var(--bg-card) !important;
-  opacity: 0.8;
-  color: var(--text-muted) !important;
+  background: rgba(15, 15, 20, 0.8) !important;
+  color: #6b6b7b !important;
 }
 
 .leaflet-control-attribution a {
@@ -400,16 +347,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bg-secondary);
+  background: #1a1a24;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--text-muted);
+  background: #3a3a4a;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--text-secondary);
+  background: #4a4a5a;
 }
 
 /* Timeline */
@@ -448,8 +395,8 @@ body {
     max-height: 60vh;
     border-radius: 20px 20px 0 0;
     overflow-y: auto;
-    background: var(--bg-primary);
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+    background: #0f0f14;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5);
     z-index: 1000;
     transition: transform 0.3s ease-out;
   }
@@ -486,24 +433,24 @@ body {
   }
 }
 
-/* Leaflet popup theme-aware */
+/* Leaflet popup dark mode */
 .leaflet-popup-content-wrapper {
-  background: var(--bg-card) !important;
-  color: var(--text-primary) !important;
+  background: #242432 !important;
+  color: #f1f1f1 !important;
   border-radius: 12px !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
 }
 
 .leaflet-popup-tip {
-  background: var(--bg-card) !important;
+  background: #242432 !important;
 }
 
 .leaflet-popup-close-button {
-  color: var(--text-secondary) !important;
+  color: #a0a0b0 !important;
 }
 
 .leaflet-popup-close-button:hover {
-  color: var(--text-primary) !important;
+  color: #f1f1f1 !important;
 }
 
 /* Smooth transitions for map controls */

@@ -24,7 +24,7 @@
   },
   {
     "name": "Suitsupply",
-    "category": "Oberes Budget",
+    "category": "Premium",
     "address": "Neuer Wall 13",
     "district": "Innenstadt",
     "website": "https://suitsupply.com/de-de",
@@ -42,7 +42,7 @@
       "Kostenlose Änderungen",
       "Italienische Qualität"
     ],
-    "bestFor": "Moderne, slim-fit Anzüge mit Stretch für junge Männer - perfekt für Hochzeiten (oberes Budget)",
+    "bestFor": "Moderne, slim-fit Anzüge mit Stretch für junge Männer - perfekt für Hochzeiten",
     "coordinates": [53.5510, 9.9926]
   },
   {
@@ -92,8 +92,31 @@
     "coordinates": [53.5506, 10.0063]
   },
   {
+    "name": "Maßschneider Krol",
+    "category": "Schneider",
+    "address": "Eppendorfer Weg 85",
+    "district": "Eppendorf",
+    "website": null,
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Massschneider+Krol+Hamburg+Eppendorf",
+    "priceRange": "800-2500€",
+    "rating": 4.9,
+    "ratingSource": "Google Reviews",
+    "hasStretchSuits": true,
+    "stretchNote": "Maßanzüge mit Stretch-Stoffen auf Wunsch - perfekte Passform garantiert",
+    "alteration": "Inklusive (Maß)",
+    "consultation": "Ausführlich, persönlich",
+    "highlights": [
+      "Maßanfertigung",
+      "Perfekte Passform",
+      "Hochwertigste Stoffe",
+      "Traditionelles Handwerk"
+    ],
+    "bestFor": "Perfekt sitzender Maßanzug - die beste Option für wichtige Anlässe",
+    "coordinates": [53.5852, 9.9900]
+  },
+  {
     "name": "Massanzug24",
-    "category": "Oberes Budget",
+    "category": "Online",
     "address": "Online + Hamburg Showroom nach Termin",
     "district": "Rotherbaum",
     "website": "https://www.massanzug24.de",
@@ -111,7 +134,7 @@
       "Große Stoffauswahl",
       "Videoberatung"
     ],
-    "bestFor": "Maßanzug zum fairen Preis - erfordert genaues Maßnehmen (oberes Budget)",
+    "bestFor": "Maßanzug zum fairen Preis - erfordert genaues Maßnehmen",
     "coordinates": [53.5687, 9.9858]
   },
   {
@@ -158,5 +181,51 @@
     ],
     "bestFor": "Solide Budget-Anzüge mit modernem Look",
     "coordinates": [53.5529, 9.9933]
+  },
+  {
+    "name": "Breuninger",
+    "category": "Premium",
+    "address": "Jungfernstieg 16-20",
+    "district": "Innenstadt",
+    "website": "https://www.breuninger.com",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Breuninger+Hamburg",
+    "priceRange": "500-2000€",
+    "rating": 4.5,
+    "ratingSource": "Google Reviews",
+    "hasStretchSuits": true,
+    "stretchNote": "Luxury Stretch-Anzüge von Ermenegildo Zegna, Canali, Tom Ford",
+    "alteration": "Ja, Premium-Service",
+    "consultation": "Personal Shopping verfügbar",
+    "highlights": [
+      "Luxus-Marken",
+      "Exzellenter Service",
+      "Personal Shopping",
+      "Exklusive Stoffe"
+    ],
+    "bestFor": "Absolute Top-Qualität für besondere Anlässe - höchstes Niveau",
+    "coordinates": [53.5532, 9.9927]
+  },
+  {
+    "name": "Boss Store",
+    "category": "Premium",
+    "address": "Neuer Wall 35",
+    "district": "Innenstadt",
+    "website": "https://www.hugoboss.com",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Boss+Store+Hamburg",
+    "priceRange": "399-899€",
+    "rating": 4.4,
+    "ratingSource": "Google Reviews",
+    "hasStretchSuits": true,
+    "stretchNote": "Boss Modern Fit mit Stretch-Technologie - perfekt für Reisen",
+    "alteration": "Ja, kostenlos bei Kauf über €300",
+    "consultation": "Professionell",
+    "highlights": [
+      "Markenanzüge",
+      "Stretch-Technologie",
+      "Modern Fit",
+      "Reise-tauglich"
+    ],
+    "bestFor": "Deutsche Premium-Marke mit perfekter Verarbeitung und Stretch-Komfort",
+    "coordinates": [53.5509, 9.9929]
   }
 ]

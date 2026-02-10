@@ -16,6 +16,11 @@
       ]
     },
     {
+      "id": 3,
+      "text": "Die Copihue, Chiles Nationalblume, wächst von Valparaíso bis Osorno. Sie braucht 500 Jahre zum Reifen und kann über 1.000 Jahre alt werden.",
+      "category": "nature"
+    },
+    {
       "id": 4,
       "text": "Über 80% der chilenischen Weinexporte sind nachhaltig zertifiziert — einer der höchsten Anteile weltweit.",
       "category": "food"
@@ -677,6 +682,13 @@
       "source": "Insight Guides Chile 2024"
     },
     {
+      "id": 101,
+      "text": "Chiloés Palafitos sind die letzten Stelzenhäuser Chiles — sie stehen über dem Wasser, damit Fischer bei Flut und Ebbe arbeiten können.",
+      "category": "culture",
+      "location": "chiloe",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
       "id": 102,
       "text": "Pomaire, das Töpferdorf nahe Santiago, ist seit vorspanischer Zeit für seine schwarze Keramik bekannt — die Tradition ist über 500 Jahre alt.",
       "category": "culture",
@@ -695,6 +707,13 @@
       "text": "Chiles älteste durchgehend produzierende Weingüter liegen im Maipo-Tal — einige seit 1850 in Familienbesitz.",
       "category": "food",
       "location": "wine-resort",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 105,
+      "text": "Villa Baviera (Ex-Colonia Dignidad) war eine geschlossene deutsche Enklave, die von 1961-2005 unter Paul Schäfer existierte — heute ein kontroverses Tourismusziel.",
+      "category": "history",
+      "location": "san-carlos",
       "source": "Insight Guides Chile 2024"
     },
     {
@@ -760,6 +779,13 @@
         -72.1
       ],
       "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 114,
+      "text": "Die Feria de Chillán ist der größte und lebhafteste Markt Chiles — samstags platzt er aus dem Platz und breitet sich in die umliegenden Straßen aus.",
+      "category": "culture",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023"
     },
     {
       "id": 115,
@@ -914,6 +940,13 @@
       "source": "Rough Guides Chile 2023"
     },
     {
+      "id": 135,
+      "text": "Puerto Octay war die erste deutsche Siedlung am Lago Llanquihue (1852) — ein freundlicher Ort mit nadelspitzer Kirche und Häusern mit verzierten Dachvorsprüngen.",
+      "category": "history",
+      "location": "frutillar-puerto-varas",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
       "id": 136,
       "text": "Das Casablanca-Tal zwischen Santiago und Valparaíso profitiert von Meeresbrisen — es produziert einige der besten Weißweine Chiles.",
       "category": "food",
@@ -923,6 +956,13 @@
     {
       "id": 137,
       "text": "Don Silvestre Ochagavía brachte 1850 Cabernet Sauvignon-Reben aus Frankreich — kurz bevor die Reblaus-Plage die europäischen Weinstöcke zerstörte.",
+      "category": "history",
+      "location": "wine-resort",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 138,
+      "text": "Viña Cousiño Macul befindet sich seit 1856 in Familienbesitz — Doña Isidora Goyenechea ließ die Keller bauen und einen Önologen aus Bordeaux holen.",
       "category": "history",
       "location": "wine-resort",
       "source": "Insight Guides Chile 2024"
@@ -1130,6 +1170,13 @@
       "id": 167
     },
     {
+      "text": "San Carlos war der letzte Ort, an dem die Feria de Chillán samstags aus allen Nähten platzt — der größte und traditionellste Markt ganz Chiles.",
+      "category": "culture",
+      "location": "san-carlos",
+      "source": "Rough Guides Chile 2023",
+      "id": 168
+    },
+    {
       "text": "Die Viña Cousiño Macul ist seit 1856 ununterbrochen in Familienbesitz — das älteste durchgehend produzierende Weingut Chiles.",
       "category": "food",
       "location": "wine-resort",
@@ -1199,6 +1246,13 @@
       "id": 178
     },
     {
+      "id": 179,
+      "text": "Pichidangui bedeutet auf Mapudungun 'klein'. Der Ort hat weiße Sandstrände mit starker Brandung — perfekt zum Surfen.",
+      "category": "beach",
+      "location": "quillimari",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
       "id": 180,
       "text": "Viña Undurraga bei Melipilla lässt sich ideal mit einem Besuch in Algarrobo oder Las Cruces verbinden — Weinkultur trifft Küstengenuss.",
       "category": "food",
@@ -1216,6 +1270,20 @@
       "id": 182,
       "text": "Die Hacienda des Prat-Museums ist ein Musterbeispiel kolonialer Landarchitektur mit großem Innenhof und eleganten Veranden.",
       "category": "history",
+      "location": "san-carlos",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 183,
+      "text": "Die Region Ñuble ist Chiles jüngste Verwaltungsregion — erst kürzlich von Biobío abgetrennt, mit San Carlos als einer ihrer Hauptstädte.",
+      "category": "geography",
+      "location": "san-carlos",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 184,
+      "text": "Die Gegend um San Carlos ist Chiles ländliches Kernland, wo der Kult des Huaso (Cowboy) lebt — mit häufigen Rodeos in Stadien namens Medialunas.",
+      "category": "culture",
       "location": "san-carlos",
       "source": "Rough Guides Chile 2023"
     },
@@ -1265,11 +1333,25 @@
       "source": "Rough Guides Chile 2023"
     },
     {
+      "text": "\"Pichi\" bedeutet \"klein\" in der Mapuche-Sprache. Die Küstenorte Pichicuy und Pichidangui tragen diesen Namen und bieten weiße Sandstrände mit starker Brandung.",
+      "category": "culture",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024",
+      "id": 192
+    },
+    {
       "text": "In Pichicuy steht eine Kirche, die auf einem Felsvorsprung über dem Meer errichtet wurde – ein spektakulärer Anblick bei Sonnenuntergang.",
       "category": "unique",
       "location": "quillimari",
       "source": "Insight Guides Chile 2024",
       "id": 193
+    },
+    {
+      "text": "Die Felsengärten von Los Molles haben unterirdische Höhlen, die ein donnerndes Grollen erzeugen. Zwischen ihnen liegt ein Vogelschutzgebiet mit reichem Meeresleben.",
+      "category": "nature",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024",
+      "id": 194
     },
     {
       "text": "Der Sillón del Gobernador (Gouverneursstuhl) bei Los Molles ist mit 695 Metern die höchste Seeklippe Chiles und bei gutem Wetter von Valparaíso aus sichtbar.",
@@ -1340,6 +1422,13 @@
       "location": "san-carlos",
       "source": "Rough Guides Chile 2023",
       "id": 204
+    },
+    {
+      "text": "In der Region um San Carlos finden regelmäßig Rodeos in Medialunas (halbmondförmigen Stadien) statt – eine der ältesten chilenischen Traditionen seit der Kolonialzeit.",
+      "category": "culture",
+      "location": "san-carlos",
+      "source": "Rough Guides Chile 2023",
+      "id": 205
     },
     {
       "text": "Die Iglesia de Piedra (Steinkirche) bei Cobquecura ist eine Reihe hoher Meereshöhlen mit Gängen, die zum Ozean hinabführen – ein spektakuläres Naturwunder an der Küste von Ñuble.",
@@ -1685,6 +1774,13 @@
       "id": 255
     },
     {
+      "text": "In Valdivias Mercado Fluvial werfen Fischer ihre Abfälle an riesige Seelöwen, die direkt hinter den Ständen warten und den Markt als ihr persönliches Restaurant behandeln.",
+      "category": "unique",
+      "location": "valdivia",
+      "source": "Rough Guides Chile 2023",
+      "id": 256
+    },
+    {
       "text": "Lord Cochrane, ein britischer Abenteurer, spielte eine entscheidende Rolle bei der chilenischen Unabhängigkeit — er stürmte die spanischen Festungen bei Valdivia 1820 und zerstörte dabei die Kanonen des Fuerte de Niebla.",
       "category": "history",
       "location": "valdivia",
@@ -1755,6 +1851,13 @@
       "id": 266
     },
     {
+      "text": "Die Iglesia San Francisco in Santiago ist das älteste Gebäude der Stadt (1586-1628) — in ihrem Inneren befindet sich eine kleine Marienfigur, die Pedro de Valdivia 1540 auf seinem Sattel nach Chile brachte.",
+      "category": "history",
+      "location": "santiago",
+      "source": "Rough Guides Chile 2023",
+      "id": 267
+    },
+    {
       "text": "Auf Chiloé werden Kartoffeln nach dem Mondkalender gepflanzt — bei abnehmendem Mond für normale Ernte, bei Vollmond für besonders große 'Macho'-Saatkartoffeln.",
       "category": "culture",
       "location": "chiloe",
@@ -1767,6 +1870,13 @@
       "location": "frutillar-puerto-varas",
       "source": "Rough Guides Chile 2023",
       "id": 269
+    },
+    {
+      "id": 270,
+      "text": "Bei Pichicuy steht eine Kirche auf einer Landzunge direkt über dem Meer — ein seltenes Beispiel von Küstenarchitektur in Chile.",
+      "category": "culture",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024"
     },
     {
       "id": 271,
@@ -1928,6 +2038,13 @@
       "id": 293
     },
     {
+      "text": "Inés de Suárez, Pedro de Valdivias Geliebte, kämpfte am 11. September 1541 in einem Kettenhemd gegen die Mapuche, als diese das frisch gegründete Santiago überfielen.",
+      "category": "history",
+      "location": "santiago",
+      "source": "Insight Guides Chile 2024",
+      "id": 294
+    },
+    {
       "text": "Lachse sind nicht in Chile heimisch — sie stammen aus Nordamerika. Die Zuchtfarmen verursachen Umweltprobleme, aber wilde Lachse zu fangen entfernt eine invasive Art.",
       "category": "nature",
       "source": "Insight Guides Chile 2024",
@@ -2004,6 +2121,13 @@
       "source": "Insight Guides Chile 2024"
     },
     {
+      "text": "Bernardo O'Higgins, Gründervater Chiles, war der uneheliche Sohn eines irischen Gouverneurs und einer Dame aus Chillán — Doña Isabel Riquelme.",
+      "category": "history",
+      "location": "chillan",
+      "source": "Insight Guides Chile 2024",
+      "id": 306
+    },
+    {
       "text": "Der Parque Monumental Bernardo O'Higgins in Chillán hat eine 60m lange Mosaik-Wand über das Leben des Freiheitshelden — seine Mutter und Schwester sind in der Kapelle nebenan begraben.",
       "category": "history",
       "location": "chillan",
@@ -2032,195 +2156,41 @@
       "id": 310
     },
     {
+      "text": "In Los Vilos schnitzen Kunsthandwerker Figuren aus Guayacán-Holz — einem extrem harten, einst reichlich vorhandenen Holz der Region.",
+      "category": "culture",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024",
+      "id": 311
+    },
+    {
+      "text": "Dulces de La Ligua sind traditionelle Kuchen aus Biskuit oder Baiser, gefüllt mit Manjar — sie sind den Umweg von der Panamericana absolut wert.",
+      "category": "food",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024",
+      "id": 312
+    },
+    {
+      "text": "Zwischen Pichicuy und Pichidangui liegt ein Vogelschutzgebiet mit reichem Meeresleben — eine Oase zwischen den Felsengärten von Los Molles.",
+      "category": "nature",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024",
+      "id": 313
+    },
+    {
+      "text": "Los Vilos hat einen Skulpturenpark auf den Klippen, geschaffen von einem lokalen Architekten — und ein Kulturzentrum im restaurierten Zollgebäude aus dem 19. Jahrhundert.",
+      "category": "culture",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024",
+      "id": 314
+    },
+    {
       "text": "Das Erdbeben von 1939 in Chillán tötete 15.000 Menschen nachts im Schlaf und zerstörte 90% der Stadt — Mexiko spendete daraufhin eine Schule mit den berühmten Siqueiros-Murales.",
       "category": "history",
       "location": "chillan",
       "source": "Insight Guides Chile 2024",
       "id": 315
-    },
-    {
-      "text": "Arturo Prat, Chiles größter Marineheld, wurde 1848 in einer kolonialen Hacienda in Ninhue geboren — 50 km nordwestlich von San Carlos. Sein Geburtshaus ist heute ein Nationaldenkmal.",
-      "category": "history",
-      "location": "san-carlos",
-      "source": "Rough Guides Chile 2023",
-      "id": 316
-    },
-    {
-      "text": "Die País-Traube, Chiles älteste Rebsorte, wurde im 16. Jahrhundert von Missionaren gebracht. Die Region Ñuble um San Carlos produziert noch heute exzellenten Pipeño daraus.",
-      "category": "food",
-      "location": "san-carlos",
-      "source": "Insight Guides Chile 2024",
-      "id": 317
-    },
-    {
-      "text": "Cobquecura, 13 km nördlich von Buchupureo, hat eine eigene Seelöwen-Kolonie auf vorgelagerten Felsen — und das spektakuläre Naturwunder 'Iglesia de Piedra' mit donnernden Meerhöhlen.",
-      "category": "nature",
-      "location": "san-carlos",
-      "source": "Rough Guides Chile 2023",
-      "id": 318
-    },
-    {
-      "text": "In Buchupureo wachsen dank eines Mikroklimas sogar Papayas — mitten an der chilenischen Küste, wo man sie nie erwarten würde.",
-      "category": "nature",
-      "location": "san-carlos",
-      "source": "Rough Guides Chile 2023",
-      "id": 319
-    },
-    {
-      "text": "Zapallar, 100 km südlich von Quilimarí, ist Chiles exklusivster Badeort — Villen mit manikürten Gärten, eine hübsche Steinkirche und ein legendäres Meeresfrüchte-Restaurant 'El Chiringuito'.",
-      "category": "unique",
-      "location": "quillimari",
-      "source": "Rough Guides Chile 2023",
-      "id": 320
-    },
-    {
-      "text": "Los Vilos war einst berüchtigt für Straßenräuberei — heute ist die Stadt ein entspannter Küstenort mit einem langen goldenen Strand und einem lebhaften Fischmarkt.",
-      "category": "history",
-      "location": "quillimari",
-      "source": "Rough Guides Chile 2023",
-      "id": 322
-    },
-    {
-      "text": "Karl Anwandter, der Gründer der ersten Brauerei Chiles, kam 1850 als deutscher Siedler nach Valdivia — sein Haus auf der Isla Teja mit rotem Marmorkamin und Laterna Magica ist heute ein Museum.",
-      "category": "culture",
-      "location": "valdivia",
-      "source": "Rough Guides Chile 2023",
-      "id": 323
-    },
-    {
-      "text": "Das Festungssystem an der Mündung des Río Valdivia umfasste 17 Forts — es war die aufwendigste Verteidigungsanlage der gesamten spanischen Krone in Südamerika.",
-      "category": "history",
-      "location": "valdivia",
-      "source": "Rough Guides Chile 2023",
-      "id": 324
-    },
-    {
-      "text": "Am Sendero de Chile kann man bei Santiago 8 km entlang der Anden-Ausläufer wandern — mit einem spektakulären Panorama über die gesamte Stadt bis zum Pazifik.",
-      "category": "nature",
-      "location": "wine-resort",
-      "source": "Insight Guides Chile 2024",
-      "id": 326
-    },
-    {
-      "id": 331,
-      "text": "La Ligua, nahe der Küstenstraße, ist berühmt für seine \"dulces de La Ligua\" — Kuchen aus Biskuit oder Baiser gefüllt mit Manjar (chilenischem Karamell). Ein lohnender Stopp!",
-      "category": "food",
-      "location": "quillimari",
-      "source": "Insight Guides Chile 2024"
-    },
-    {
-      "id": 333,
-      "text": "Colonia Dignidad (heute Villa Baviera) wurde 1961 von dem deutschen Prediger Paul Schäfer gegründet. Die Kolonie hatte ein eigenes Krankenhaus, Schule und Kraftwerk — ein Staat im Staat.",
-      "category": "history",
-      "location": "san-carlos",
-      "source": "Rough Guides Chile 2023"
-    },
-    {
-      "id": 334,
-      "text": "Villa Baviera versucht heute, sich als touristisches Ziel mit bayerischem Flair zu positionieren — inklusive Biergarten, Kuchen und deutschem Restaurant. Die dunkle Geschichte bleibt spürbar.",
-      "category": "culture",
-      "location": "san-carlos",
-      "source": "Rough Guides Chile 2023"
-    },
-    {
-      "id": 335,
-      "text": "Die Region Ñuble um Chillán und San Carlos ist eine der jüngsten Regionen Chiles — sie wurde erst 2018 von der Region Bío-Bío abgetrennt und erhielt eigene Verwaltung.",
-      "category": "geography",
-      "location": "san-carlos",
-      "source": "Rough Guides Chile 2023"
-    },
-    {
-      "id": 336,
-      "text": "Parral, südlich von San Carlos, ist der Geburtsort des Dichters Pablo Neruda und des Schriftstellers Luis Sepúlveda — zwei literarische Giganten aus derselben Region.",
-      "category": "culture",
-      "location": "san-carlos",
-      "source": "Insight Guides Chile 2024"
-    },
-    {
-      "id": 339,
-      "text": "Der Litoral Central — die 250 km Küste zwischen Rocas de Santo Domingo und Los Vilos — ist Chiles meistbesuchter Küstenabschnitt. Algarrobo liegt mittendrin in diesem beliebten Strandparadies.",
-      "category": "geography",
-      "location": "algarrobo",
-      "source": "Rough Guides Chile 2023"
-    },
-    {
-      "id": 340,
-      "text": "Pablo Nerudas Haus in Isla Negra, nur wenige Kilometer von Algarrobo, ist vollgestopft mit seinen Sammlungen: afrikanische Schnitzereien, viktorianische Puppen, Spieluhren und Briefbeschwerer — ein Universum der Obsessionen.",
-      "category": "culture",
-      "location": "algarrobo",
-      "source": "Rough Guides Chile 2023"
-    },
-    {
-      "id": 341,
-      "text": "Pucón ist Chiles Adrenalin-Hauptstadt: Vulkanbesteigung, Wildwasser-Rafting auf dem Río Trancura, Fallschirmspringen, Mountainbiking, Hundeschlitten und sogar Snowboarden — alles an einem Ort.",
-      "category": "unique",
-      "location": "pucon",
-      "source": "Rough Guides Chile 2023"
-    },
-    {
-      "id": 342,
-      "text": "Der Volcán Villarrica (2.840m) über Pucón ist einer der aktivsten Vulkane Chiles — und einer der wenigen weltweit, die man als Anfänger besteigen kann. Der Blick in den glühenden Krater ist unvergesslich.",
-      "category": "nature",
-      "location": "pucon",
-      "source": "Rough Guides Chile 2023"
-    },
-    {
-      "id": 343,
-      "text": "Zapallar nördlich von Quilimarí ist Chiles exklusivster Badeort — die Luxusvillen zwischen Pinien sind eingerahmt von einer hufeisenförmigen Bucht mit kristallklarem Wasser.",
-      "category": "unique",
-      "location": "quillimari",
-      "source": "Rough Guides Chile 2023"
-    },
-    {
-      "id": 344,
-      "text": "Papudo, 10 km südlich von Zapallar, wird dramatisch von steilen Hügeln eingerahmt — trotz einiger hässlicher Betonbauten am Meer hat der Ort eine herzliche, lokale Atmosphäre.",
-      "category": "unique",
-      "location": "quillimari",
-      "source": "Rough Guides Chile 2023"
-    },
-    {
-      "id": 345,
-      "text": "Cachagua bei Zapallar ist ein Synonym für Chiles Oberschicht — am Strand gibt es statt Ferienhäusern einen Golfplatz und eine versteckte Treppe zur oft menschenleeren Playa Las Cujas.",
-      "category": "unique",
-      "location": "quillimari",
-      "source": "Rough Guides Chile 2023"
-    },
-    {
-      "id": 346,
-      "text": "Nördlich von La Ligua folgt die Panamericana 200 km lang der Küste — eine Abfolge traumhafter weißer Sandstrände mit kleinen Dörfern, fast ohne Bebauung direkt am Wasser.",
-      "category": "geography",
-      "location": "quillimari",
-      "source": "Rough Guides Chile 2023"
-    },
-    {
-      "id": 347,
-      "text": "La Ligua feiert zu Ostern eine einzigartige Prozession: berittene Huasos in voller Tracht, gefolgt von einem riesigen Pinguin — eine der kuriosesten Traditionen Chiles.",
-      "category": "culture",
-      "location": "quillimari",
-      "source": "Rough Guides Chile 2023"
-    },
-    {
-      "id": 348,
-      "text": "Valle Las Trancas, 8 km unterhalb des Skiresorts Nevados de Chillán, hat sich zur Après-Ski-Meile entwickelt — der Snow Pub ist legendär für laute Musik, billiges Bier und eine volle Tanzfläche ab 2 Uhr nachts.",
-      "category": "unique",
-      "location": "chillan",
-      "source": "Rough Guides Chile 2023"
-    },
-    {
-      "id": 349,
-      "text": "Eine ideale Tageswanderung von Nevados de Chillán führt ins Valle de Aguas Calientes — natürliche heiße Quellen am Zusammenfluss dreier Flüsse, umgeben von alpiner Berglandschaft.",
-      "category": "nature",
-      "location": "chillan",
-      "source": "Rough Guides Chile 2023"
-    },
-    {
-      "id": 350,
-      "text": "Im Zentraltal zwischen Santiago und Chillán sieht man noch Pferdegespanne auf der Panamericana — die einzige Region Chiles, wo ländliche Traditionen den Alltag so stark prägen.",
-      "category": "culture",
-      "location": "wine-resort",
-      "source": "Rough Guides Chile 2023"
     }
   ],
-  "lastUpdated": "2026-02-10",
-  "totalFacts": 319
+  "lastUpdated": "2026-02-09",
+  "totalFacts": 315
 }

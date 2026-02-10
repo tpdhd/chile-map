@@ -8,11 +8,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Chilean-inspired palette with CSS variables for theme switching
+        // Chilean-inspired dark mode palette
         'chile-bg': {
-          primary: 'var(--bg-primary)',
-          secondary: 'var(--bg-secondary)',
-          card: 'var(--bg-card)',
+          primary: '#0f0f14',
+          secondary: '#1a1a24',
+          card: '#242432',
         },
         'chile-accent': {
           red: '#e63946',      // Chilean flag red
@@ -21,9 +21,9 @@ export default {
           purple: '#9b5de5',   // Mountains at dusk
         },
         'chile-text': {
-          primary: 'var(--text-primary)',
-          secondary: 'var(--text-secondary)',
-          muted: 'var(--text-muted)',
+          primary: '#f1f1f1',
+          secondary: '#a0a0b0',
+          muted: '#6b6b7b',
         },
         // Category colors
         'cat': {

@@ -8,6 +8,7 @@ import accommodationsPart2 from './data/accommodations-part2.json'
 // Lazy load the map for faster initial render
 const Map = lazy(() => import('./components/Map'))
 const CarRentalPage = lazy(() => import('./components/CarRentalPage'))
+const AccommodationsPage = lazy(() => import('./components/AccommodationsPage'))
 const SettingsPage = lazy(() => import('./components/SettingsPage'))
 const CurrencyConverter = lazy(() => import('./components/CurrencyConverter'))
 const TripStats = lazy(() => import('./components/TripStats'))
@@ -20,17 +21,34 @@ const TripRoute = lazy(() => import('./components/TripRoute'))
 const NearbyFinder = lazy(() => import('./components/NearbyFinder'))
 const QuoteCarousel = lazy(() => import('./components/QuoteCarousel'))
 const SuitGuide = lazy(() => import('./components/SuitGuide'))
-const AccommodationsPage = lazy(() => import('./components/AccommodationsPage'))
 
 export type Location = typeof tripData.locations[0]
 export type Recommendation = typeof tripData.locations[0]['recommendations'][0]
 
+export interface Accommodation {
+  id: string
+  name: string
+  type: string
+  coordinates: [number, number]
+  description: string
+  priceRange: string
+  priceEstimate: string
+  rating: number
+  ratingSource: string
+  amenities: string[]
+  googleMapsLink: string
+  bookingLink: string
+  airbnbLink: string
+  website: string
+  phone: string
+  imageUrl: string
+  source: string
+  sourceNote: string
+}
+
 const FAVORITES_KEY = 'chile-trip-favorites'
 const NOTES_KEY = 'chile-trip-notes'
 const VISITED_KEY = 'chile-trip-visited'
-const THEME_KEY = 'chile-trip-theme'
-
-type Theme = 'dark' | 'light' | 'auto'
 
 // Category icons for quick visual reference
 const CATEGORY_ICONS: Record<string, string> = {
@@ -109,10 +127,6 @@ const getGoogleMapsSearchUrl = (name: string, locationName?: string) => {
 }
 
 function App() {
-  const [theme, setTheme] = useState<Theme>(() => {
-    const saved = localStorage.getItem(THEME_KEY)
-    return (saved === 'dark' || saved === 'light' || saved === 'auto') ? saved : 'dark'
-  })
   const [selectedLocation, setSelectedLocation] = useState<Location | null>(null)
   const [selectedRecommendation, setSelectedRecommendation] = useState<Recommendation | null>(null)
   const [activeCategory, setActiveCategory] = useState<string | null>(null)
@@ -129,6 +143,7 @@ function App() {
   const [showFacts, setShowFacts] = useState(false)
   const [currentFactIndex, setCurrentFactIndex] = useState(0)
   const [showCarRental, setShowCarRental] = useState(false)
+  const [showAccommodations, setShowAccommodations] = useState(false)
   const [showSettings, setShowSettings] = useState(false)
   const [showCurrency, setShowCurrency] = useState(false)
   const [showStats, setShowStats] = useState(false)
@@ -140,8 +155,28 @@ function App() {
   const [showNearby, setShowNearby] = useState(false)
   const [showQuotes, setShowQuotes] = useState(false)
   const [showSuitGuide, setShowSuitGuide] = useState(false)
-  const [showAccommodations, setShowAccommodations] = useState(false)
-  const [mapMode, setMapMode] = useState<'recommendations' | 'accommodations'>('recommendations')
+  const [showAccommodationsOnMap, setShowAccommodationsOnMap] = useState(false)
+  const [selectedAccommodation, setSelectedAccommodation] = useState<Accommodation | null>(null)
+
+  // Merge accommodation data
+  const allAccommodations = useMemo(() => {
+    const part1 = accommodationsPart1 as unknown as { accommodations: Record<string, Accommodation[]> }
+    const part2 = accommodationsPart2 as unknown as { accommodations: Record<string, Accommodation[]> }
+    
+    const merged: Accommodation[] = []
+    const locations = new Set([...Object.keys(part1.accommodations), ...Object.keys(part2.accommodations)])
+    
+    locations.forEach(loc => {
+      if (part1.accommodations[loc]) {
+        merged.push(...part1.accommodations[loc])
+      }
+      if (part2.accommodations[loc]) {
+        merged.push(...part2.accommodations[loc])
+      }
+    })
+    
+    return merged
+  }, [])
 
   // Bottom sheet swipe gesture handling
   const sheetRef = useRef<HTMLDivElement>(null)
@@ -189,17 +224,6 @@ function App() {
     )
     return locFacts.length > 0 ? locFacts : factsData.facts
   }, [selectedLocation])
-
-  // Merge and flatten accommodations data
-  const allAccommodations = useMemo(() => {
-    const merged = {
-      ...accommodationsPart1.accommodations,
-      ...(accommodationsPart2 as any).accommodations,
-    }
-    return Object.entries(merged).flatMap(([locationKey, items]: [string, any[]]) =>
-      items.map(item => ({ ...item, locationKey }))
-    )
-  }, [])
 
   // Clear search state helper
   const clearSearch = useCallback(() => {
@@ -275,26 +299,6 @@ function App() {
     }, 400)
   }, [])
 
-  // Apply theme to HTML element and persist to localStorage
-  useEffect(() => {
-    let effectiveTheme = theme
-    if (theme === 'auto') {
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-      effectiveTheme = prefersDark ? 'dark' : 'light'
-    }
-    
-    const html = document.documentElement
-    if (effectiveTheme === 'dark') {
-      html.classList.add('dark')
-      html.classList.remove('light')
-    } else {
-      html.classList.add('light')
-      html.classList.remove('dark')
-    }
-    
-    localStorage.setItem(THEME_KEY, theme)
-  }, [theme])
-
   // Load saved data from localStorage
   useEffect(() => {
     try {
@@ -362,6 +366,25 @@ function App() {
     }, 200)
   }
 
+  const handleAccommodationSelect = (accommodation: Accommodation) => {
+    setSelectedAccommodation(accommodation)
+    setSelectedRecommendation(null)
+    setSheetExpanded(true)
+  }
+
+  const toggleAccommodationsOnMap = () => {
+    setShowAccommodationsOnMap(prev => !prev)
+    if (!showAccommodationsOnMap) {
+      // When enabling accommodations layer: hide recommendations
+      setSelectedRecommendation(null)
+      setActiveCategory(null)
+    } else {
+      // When disabling: clear selected accommodation
+      setSelectedAccommodation(null)
+    }
+    setShowMenu(false)
+  }
+
   const toggleFavorite = (id: string) => {
     const newFavorites = new Set(favorites)
     if (newFavorites.has(id)) {
@@ -417,9 +440,10 @@ function App() {
             onLocationSelect={(loc) => handleLocationSelect(loc, true)}
             onRecommendationSelect={handleRecommendationSelect}
             activeCategory={activeCategory}
-            theme={theme}
-            mapMode={mapMode}
             accommodations={allAccommodations}
+            showAccommodationsOnMap={showAccommodationsOnMap}
+            selectedAccommodation={selectedAccommodation}
+            onAccommodationSelect={handleAccommodationSelect}
           />
         </Suspense>
       </div>
@@ -430,7 +454,7 @@ function App() {
         <button
           onClick={() => setShowLocationPicker(!showLocationPicker)}
           className={`
-            px-4 py-2 bg-chile-bg-card rounded-xl shadow-lg flex items-center gap-2 
+            px-4 py-2 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg flex items-center gap-2 
             border transition-all duration-300
             ${selectedLocation ? 'border-chile-accent-red/50 location-selected-btn' : 'border-white/10'}
           `}
@@ -444,7 +468,7 @@ function App() {
 
         {/* Days Counter - Only show before trip */}
         {daysUntil > 0 && (
-          <div className="px-3 py-2 bg-chile-accent-red rounded-xl shadow-lg text-white">
+          <div className="px-3 py-2 bg-chile-accent-red/90 backdrop-blur-sm rounded-xl shadow-lg text-white">
             <span className="font-bold">{daysUntil}</span>
             <span className="text-xs ml-1">Tage</span>
           </div>
@@ -481,11 +505,11 @@ function App() {
               }
             }}
             onKeyDown={handleSearchKeyDown}
-            className="w-10 focus:w-48 transition-all px-2 py-2 bg-chile-bg-card rounded-xl shadow-lg text-sm placeholder:text-chile-text-muted focus:outline-none border border-white/10 focus:border-chile-accent-red/50 focus:placeholder:opacity-0"
+            className="w-10 focus:w-48 transition-all px-2 py-2 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg text-sm placeholder:text-chile-text-muted focus:outline-none border border-white/10 focus:border-chile-accent-red/50 focus:placeholder:opacity-0"
           />
           {/* Global Search Results Dropdown */}
           {showSearchResults && globalSearchResults.length > 0 && (
-            <div className="absolute top-12 right-0 bg-chile-bg-card rounded-xl shadow-lg border border-white/10 max-h-[60vh] overflow-y-auto w-72 animate-slide-up">
+            <div className="absolute top-12 right-0 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg border border-white/10 max-h-[60vh] overflow-y-auto w-72 animate-slide-up">
               <div className="px-3 py-2 border-b border-white/10 flex items-center justify-between">
                 <span className="text-xs text-chile-text-muted">
                   {globalSearchResults.length} Ergebnis{globalSearchResults.length !== 1 ? 'se' : ''} für "{searchQuery}"
@@ -515,7 +539,7 @@ function App() {
             </div>
           )}
           {showSearchResults && globalSearchResults.length === 0 && searchQuery.trim().length >= 1 && (
-            <div className="absolute top-12 right-0 bg-chile-bg-card rounded-xl shadow-lg border border-white/10 w-60 animate-slide-up">
+            <div className="absolute top-12 right-0 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg border border-white/10 w-60 animate-slide-up">
               <div className="px-4 py-3 text-sm text-chile-text-muted text-center">
                 Keine Ergebnisse für "{searchQuery}"
               </div>
@@ -529,30 +553,17 @@ function App() {
           )}
         </div>
         
-        {/* Map Mode Toggle - Unterkünfte/Empfehlungen */}
-        <button
-          onClick={() => setMapMode(mapMode === 'recommendations' ? 'accommodations' : 'recommendations')}
-          className={`w-10 h-10 rounded-xl shadow-lg flex items-center justify-center border ${
-            mapMode === 'accommodations' 
-              ? 'bg-chile-accent-teal border-chile-accent-teal/50' 
-              : 'bg-chile-bg-card border-white/10'
-          }`}
-          title={mapMode === 'recommendations' ? 'Unterkünfte anzeigen' : 'Empfehlungen anzeigen'}
-        >
-          {mapMode === 'accommodations' ? '🏠' : '📍'}
-        </button>
-
         {/* Burger Menu */}
         <button
           onClick={() => setShowMenu(!showMenu)}
-          className="w-10 h-10 bg-chile-bg-card rounded-xl shadow-lg flex items-center justify-center border border-white/10"
+          className="w-10 h-10 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg flex items-center justify-center border border-white/10"
         >
           <span className="text-lg">☰</span>
         </button>
 
         {/* Menu Dropdown */}
         {showMenu && (
-          <div className="absolute top-12 right-0 bg-chile-bg-card rounded-xl shadow-lg border border-white/10 min-w-[220px] overflow-hidden max-h-[70vh] overflow-y-auto">
+          <div className="absolute top-12 right-0 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg border border-white/10 min-w-[220px] overflow-hidden max-h-[70vh] overflow-y-auto">
             {/* Section: Planung */}
             <div className="px-3 pt-2.5 pb-1">
               <span className="text-[10px] font-semibold text-chile-text-muted uppercase tracking-wider">Planung</span>
@@ -588,10 +599,12 @@ function App() {
               <span>👔</span> Anzug-Guide
             </button>
             <button
-              onClick={() => { setShowAccommodations(true); setShowMenu(false) }}
-              className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm"
+              onClick={toggleAccommodationsOnMap}
+              className={`w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm ${
+                showAccommodationsOnMap ? 'bg-green-500/20 text-green-400' : ''
+              }`}
             >
-              <span>🏠</span> Unterkünfte
+              <span>🏠</span> Unterkünfte {showAccommodationsOnMap && '✓'}
             </button>
 
             {/* Section: Wissen */}
@@ -679,16 +692,6 @@ function App() {
               </button>
               <button
                 onClick={() => {
-                  const next = theme === 'dark' ? 'light' : 'dark'
-                  setTheme(next)
-                  setShowMenu(false)
-                }}
-                className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm"
-              >
-                <span>{theme === 'dark' ? '☀️' : '🌙'}</span> {theme === 'dark' ? 'Heller Modus' : 'Dunkler Modus'}
-              </button>
-              <button
-                onClick={() => {
                   setShowMenu(false)
                   const reload = () => globalThis.location.reload()
                   if ('caches' in window) {
@@ -738,7 +741,7 @@ function App() {
 
       {/* LOCATION PICKER DROPDOWN */}
       {showLocationPicker && (
-        <div className="absolute left-4 z-[600] bg-chile-bg-card rounded-xl shadow-lg border border-white/10 max-h-[60vh] overflow-y-auto w-72" style={{ top: 'calc(env(safe-area-inset-top, 0px) + 4rem)' }}>
+        <div className="absolute left-4 z-[600] bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg border border-white/10 max-h-[60vh] overflow-y-auto w-72" style={{ top: 'calc(env(safe-area-inset-top, 0px) + 4rem)' }}>
           {tripData.locations.map((loc, index) => {
             const isSelected = selectedLocation?.id === loc.id
             return (
@@ -775,7 +778,7 @@ function App() {
         ref={sheetRef}
         className={`
           absolute bottom-0 left-0 right-0 z-[500]
-          bg-chile-bg-card rounded-t-3xl shadow-lg
+          bg-chile-bg-card/95 backdrop-blur-sm rounded-t-3xl shadow-lg
           transition-transform duration-300 ease-out
           ${sheetExpanded ? 'translate-y-0' : 'translate-y-[calc(100%-64px)]'}
         `}
@@ -799,8 +802,14 @@ function App() {
             onClick={() => setSheetExpanded(!sheetExpanded)}
           >
             <div className="flex-1 min-w-0">
-              <h2 className="font-bold text-base truncate">{selectedLocation?.name || 'Wähle einen Ort'}</h2>
-              {selectedLocation && (
+              <h2 className="font-bold text-base truncate">
+                {showAccommodationsOnMap ? '🏠 Unterkünfte' : (selectedLocation?.name || 'Wähle einen Ort')}
+              </h2>
+              {showAccommodationsOnMap ? (
+                <p className="text-xs text-chile-text-muted">
+                  {selectedAccommodation ? selectedAccommodation.name : `${allAccommodations.length} Unterkünfte`}
+                </p>
+              ) : selectedLocation && (
                 <p className="text-xs text-chile-text-muted">
                   {selectedLocation.recommendations.length} Empfehlungen
                 </p>
@@ -809,8 +818,125 @@ function App() {
           </div>
         </div>
 
-        {/* Sheet Content - Only when expanded */}
-        {sheetExpanded && selectedLocation && (
+        {/* Sheet Content - Accommodations Mode */}
+        {sheetExpanded && showAccommodationsOnMap && selectedAccommodation && (
+          <div className="overflow-y-auto px-4 pb-4" style={{ maxHeight: 'calc(50vh - 70px)' }}>
+            <div className="space-y-3">
+              {/* Accommodation Details */}
+              <div className="p-3 rounded-lg bg-white/5">
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="font-bold text-base">{selectedAccommodation.name}</h3>
+                  <button
+                    onClick={() => setSelectedAccommodation(null)}
+                    className="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center"
+                  >
+                    ✕
+                  </button>
+                </div>
+                
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="px-2 py-0.5 bg-chile-accent-teal/20 text-chile-accent-teal text-xs rounded-full">
+                    {selectedAccommodation.type === 'apartment' ? 'Apartment' :
+                     selectedAccommodation.type === 'hotel' ? 'Hotel' :
+                     selectedAccommodation.type === 'hostel' ? 'Hostel' :
+                     selectedAccommodation.type === 'cabana' ? 'Cabaña' : selectedAccommodation.type}
+                  </span>
+                  <span className={`px-2 py-0.5 text-xs rounded-full ${
+                    selectedAccommodation.priceRange === '$' ? 'bg-green-500/20 text-green-400' :
+                    selectedAccommodation.priceRange === '$$' ? 'bg-amber-500/20 text-amber-400' :
+                    'bg-purple-500/20 text-purple-400'
+                  }`}>
+                    {selectedAccommodation.priceRange}
+                  </span>
+                </div>
+
+                <p className="text-xs text-chile-text-secondary mb-3">{selectedAccommodation.description}</p>
+
+                <div className="grid grid-cols-2 gap-2 mb-3">
+                  <div className="p-2 rounded-lg bg-white/5">
+                    <div className="text-xs text-chile-text-muted mb-0.5">Preis</div>
+                    <div className="text-sm font-bold text-amber-400">{selectedAccommodation.priceEstimate}</div>
+                  </div>
+                  <div className="p-2 rounded-lg bg-white/5">
+                    <div className="text-xs text-chile-text-muted mb-0.5">Rating</div>
+                    <div className="text-sm font-bold text-green-400">
+                      {'⭐'.repeat(Math.round(selectedAccommodation.rating))} {selectedAccommodation.rating}
+                    </div>
+                    <div className="text-[9px] text-chile-text-muted">{selectedAccommodation.ratingSource}</div>
+                  </div>
+                </div>
+
+                {selectedAccommodation.amenities.length > 0 && (
+                  <div className="mb-3">
+                    <div className="text-xs font-bold text-chile-text-muted mb-1.5">Ausstattung</div>
+                    <div className="flex flex-wrap gap-1">
+                      {selectedAccommodation.amenities.slice(0, 6).map(amenity => (
+                        <span key={amenity} className="px-2 py-0.5 bg-white/5 text-[10px] text-chile-text-muted rounded-full">
+                          {amenity}
+                        </span>
+                      ))}
+                      {selectedAccommodation.amenities.length > 6 && (
+                        <span className="px-2 py-0.5 bg-white/5 text-[10px] text-chile-text-muted rounded-full">
+                          +{selectedAccommodation.amenities.length - 6} mehr
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                )}
+
+                <div className="flex flex-wrap gap-2">
+                  <a
+                    href={selectedAccommodation.googleMapsLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 px-3 py-2 rounded-lg bg-red-500/20 text-red-400 border border-red-500/30 text-xs font-medium text-center hover:bg-red-500/30 transition-colors"
+                  >
+                    🗺️ Maps
+                  </a>
+                  {selectedAccommodation.bookingLink && (
+                    <a
+                      href={selectedAccommodation.bookingLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 px-3 py-2 rounded-lg bg-blue-500/20 text-blue-400 border border-blue-500/30 text-xs font-medium text-center hover:bg-blue-500/30 transition-colors"
+                    >
+                      🏨 Booking
+                    </a>
+                  )}
+                  {selectedAccommodation.airbnbLink && (
+                    <a
+                      href={selectedAccommodation.airbnbLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 px-3 py-2 rounded-lg bg-pink-500/20 text-pink-400 border border-pink-500/30 text-xs font-medium text-center hover:bg-pink-500/30 transition-colors"
+                    >
+                      🏠 Airbnb
+                    </a>
+                  )}
+                  {selectedAccommodation.phone && (
+                    <a
+                      href={`https://wa.me/${selectedAccommodation.phone.replace(/[^0-9]/g, '')}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 px-3 py-2 rounded-lg bg-green-500/20 text-green-400 border border-green-500/30 text-xs font-medium text-center hover:bg-green-500/30 transition-colors"
+                    >
+                      💬 WhatsApp
+                    </a>
+                  )}
+                </div>
+
+                {selectedAccommodation.sourceNote && (
+                  <div className="mt-2 pt-2 border-t border-white/10 text-[10px] text-chile-text-muted">
+                    💡 {selectedAccommodation.sourceNote}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Sheet Content - Recommendations Mode */}
+        {sheetExpanded && selectedLocation && !showAccommodationsOnMap && (
           <div className="overflow-y-auto px-4 pb-4" style={{ maxHeight: 'calc(50vh - 70px)' }}>
             {/* Category Filter - Compact */}
             <div className="flex gap-1.5 overflow-x-auto pb-2 mb-2 scrollbar-hide">
@@ -836,26 +962,6 @@ function App() {
                 )
               })}
             </div>
-
-            {/* Location Tips - Collapsible */}
-            {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-            {(selectedLocation as any).tips?.length > 0 && !activeCategory && !searchQuery && (
-              <details className="mb-3 bg-amber-500/10 rounded-lg border border-amber-500/20">
-                <summary className="px-3 py-2 cursor-pointer text-sm font-medium text-amber-400 flex items-center gap-2 select-none">
-                  {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-                  💡 Reisetipps ({(selectedLocation as any).tips.length})
-                </summary>
-                <ul className="px-3 pb-2.5 space-y-1.5">
-                  {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-                  {(selectedLocation as any).tips.map((tip: string, i: number) => (
-                    <li key={i} className="text-xs text-chile-text-secondary flex gap-2">
-                      <span className="text-amber-400/70 flex-shrink-0">•</span>
-                      <span>{tip}</span>
-                    </li>
-                  ))}
-                </ul>
-              </details>
-            )}
 
             {/* Recommendations List - Compact */}
             <div className="space-y-2">
@@ -885,14 +991,14 @@ function App() {
                       </div>
                     </div>
 
-                    {/* Actions - Side by side, 44px touch targets */}
-                    <div className="flex items-center gap-1.5 flex-shrink-0">
+                    {/* Actions - Side by side */}
+                    <div className="flex items-center gap-1 flex-shrink-0">
                       <button
                         onClick={(e) => {
                           e.stopPropagation()
                           toggleFavorite(rec.id)
                         }}
-                        className={`w-9 h-9 rounded-full flex items-center justify-center text-base ${favorites.has(rec.id) ? 'bg-red-500' : 'bg-white/10'}`}
+                        className={`w-7 h-7 rounded-full flex items-center justify-center text-sm ${favorites.has(rec.id) ? 'bg-red-500' : 'bg-white/10'}`}
                       >
                         {favorites.has(rec.id) ? '❤️' : '🤍'}
                       </button>
@@ -901,7 +1007,7 @@ function App() {
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
-                        className="w-9 h-9 rounded-full bg-white flex items-center justify-center"
+                        className="w-7 h-7 rounded-full bg-white flex items-center justify-center"
                         title="In Google Maps suchen"
                       >
                         <svg viewBox="0 0 48 48" className="w-4 h-4">
@@ -1002,12 +1108,12 @@ function App() {
         <div className="absolute inset-0 z-[700] flex items-center justify-center p-4">
           {/* Backdrop */}
           <div 
-            className="absolute inset-0 bg-black/70"
+            className="absolute inset-0 bg-black/70 backdrop-blur-sm"
             onClick={() => setShowFacts(false)}
           />
           
           {/* Facts Card */}
-          <div className="relative bg-chile-bg-card rounded-2xl shadow-2xl border border-white/10 max-w-md w-full max-h-[80vh] overflow-hidden animate-slide-up">
+          <div className="relative bg-chile-bg-card/95 backdrop-blur-sm rounded-2xl shadow-2xl border border-white/10 max-w-md w-full max-h-[80vh] overflow-hidden animate-slide-up">
             {/* Header */}
             <div className="px-4 py-3 border-b border-white/10 flex items-center justify-between">
               <div className="flex items-center gap-2">
@@ -1021,7 +1127,7 @@ function App() {
               </div>
               <button
                 onClick={() => setShowFacts(false)}
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors text-lg"
+                className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
               >
                 ✕
               </button>
@@ -1129,6 +1235,13 @@ function App() {
         </Suspense>
       )}
 
+      {/* ACCOMMODATIONS PAGE */}
+      {showAccommodations && (
+        <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">🏠</div></div>}>
+          <AccommodationsPage onClose={() => setShowAccommodations(false)} />
+        </Suspense>
+      )}
+
       {/* SETTINGS PAGE */}
       {showSettings && (
         <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">⚙️</div></div>}>
@@ -1171,6 +1284,13 @@ function App() {
         </Suspense>
       )}
 
+      {/* SUIT GUIDE */}
+      {showSuitGuide && (
+        <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">👔</div></div>}>
+          <SuitGuide onClose={() => setShowSuitGuide(false)} />
+        </Suspense>
+      )}
+
       {/* NEARBY FINDER */}
       {showNearby && (
         <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">📍</div></div>}>
@@ -1182,20 +1302,6 @@ function App() {
       {showEmergency && (
         <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">🆘</div></div>}>
           <EmergencyInfo onClose={() => setShowEmergency(false)} />
-        </Suspense>
-      )}
-
-      {/* SUIT GUIDE */}
-      {showSuitGuide && (
-        <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">👔</div></div>}>
-          <SuitGuide onClose={() => setShowSuitGuide(false)} />
-        </Suspense>
-      )}
-
-      {/* ACCOMMODATIONS */}
-      {showAccommodations && (
-        <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">🏠</div></div>}>
-          <AccommodationsPage onClose={() => setShowAccommodations(false)} />
         </Suspense>
       )}
 

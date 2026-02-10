@@ -350,7 +350,7 @@
     },
     {
       "icon": "💰",
-      "tip": "Budget: €200-400 für gute Qualität. Peek & Cloppenburg (€150-350) oder Suitsupply (ab €399) bieten bestes Preis-Leistungs-Verhältnis mit Stretch."
+      "tip": "Budget: €200-400 für gute Qualität. Suitsupply (€300-400) oder Olymp (€200-300) bieten bestes Preis-Leistungs-Verhältnis mit Stretch."
     },
     {
       "icon": "📏",
@@ -530,33 +530,37 @@
   "budgetBreakdown": {
     "tiers": [
       {
-        "name": "Budget (€70-200)",
-        "range": "€70-200",
+        "name": "Budget (€150-300)",
+        "range": "€150-300",
         "description": "Solide Qualität für Gelegenheitsträger. Oft Polyester-Mix, aber mit Stretch verfügbar. Änderungen extern nötig.",
         "shops": [
           "C&A",
           "H&M Premium",
           "WE Fashion",
-          "Kleidermarkt Hamburg (Second-Hand)"
+          "Peek & Cloppenburg (Einstiegsmodelle)"
         ]
       },
       {
-        "name": "Mittelklasse (€200-400)",
-        "range": "€200-400",
-        "description": "Beste Preis-Leistung! Gute Stoffe mit Stretch, kostenlose oder günstige Änderungen, professionelle Beratung. EMPFOHLEN für die Hochzeit.",
-        "shops": [
-          "Peek & Cloppenburg",
-          "Massanzug24 (Einstiegsmodelle)",
-          "Suitsupply (Einstiegsmodelle)"
-        ]
-      },
-      {
-        "name": "Falls Budget es erlaubt (€400-800)",
-        "range": "€400-800",
-        "description": "Premium-Qualität mit perfekter Verarbeitung, exklusiven Stoffen und kostenloser Änderungsservice. Ideal für höchste Ansprüche.",
+        "name": "Mittelklasse (€300-600)",
+        "range": "€300-600",
+        "description": "Beste Preis-Leistung! Gute Stoffe mit Stretch, kostenlose Änderungen, professionelle Beratung. EMPFOHLEN für die Hochzeit.",
         "shops": [
           "Suitsupply",
-          "Massanzug24 (Maßanfertigung)"
+          "Olymp",
+          "Peek & Cloppenburg Premium",
+          "Boss (Sale)",
+          "Massanzug24"
+        ]
+      },
+      {
+        "name": "Premium (€600-1500+)",
+        "range": "€600-1500+",
+        "description": "Top-Qualität, perfekte Verarbeitung, exklusive Stoffe. Für höchste Ansprüche oder wenn Budget keine Rolle spielt.",
+        "shops": [
+          "Engelhorn",
+          "Breuninger",
+          "Boss Store",
+          "Maßschneider Krol"
         ]
       }
     ]

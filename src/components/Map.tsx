@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react'
-import { MapContainer, TileLayer, Marker, Polyline, Popup, useMap } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Polyline, useMap } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
-import { Location, Recommendation } from '../App'
+import { Location, Recommendation, Accommodation } from '../App'
 
 // Fix for default Leaflet icons in Vite
 import icon from 'leaflet/dist/images/marker-icon.png'
@@ -20,16 +20,6 @@ const DefaultIcon = L.icon({
   shadowSize: [41, 41]
 })
 L.Marker.prototype.options.icon = DefaultIcon
-
-// Accommodation type colors
-const accommodationColors: Record<string, string> = {
-  'hotel': '#3b82f6',      // blue
-  'apartment': '#22c55e',   // green
-  'cabaña': '#f97316',     // orange
-  'cabana': '#f97316',     // orange (alternative spelling)
-  'hostel': '#a855f7',     // purple
-  'default': '#6b7280'     // gray
-}
 
 // Category colors mapping - vibrant and distinct
 const categoryColors: Record<string, string> = {
@@ -63,6 +53,16 @@ const categoryColors: Record<string, string> = {
   seafood: '#22d3d8',
 }
 
+// Accommodation type colors
+const accommodationColors: Record<string, string> = {
+  apartment: '#3b82f6',
+  hotel: '#8b5cf6',
+  hostel: '#10b981',
+  cabana: '#f59e0b',
+  house: '#ec4899',
+  cabin: '#f97316',
+}
+
 // Category icons mapping - comprehensive
 const categoryIcons: Record<string, string> = {
   restaurant: '🍽️',
@@ -93,48 +93,19 @@ const categoryIcons: Record<string, string> = {
   food: '🥘',
   dessert: '🍰',
   seafood: '🦐',
+  tip: '💡',
+  service: '🔧',
+  info: 'ℹ️',
 }
 
-// Preload tiles around a coordinate to warm the browser cache
-function preloadTilesAround(lat: number, lon: number, style: string = 'dark-v11', zoomLevels: number[] = [10, 12, 14], radius: number = 2) {
-  const token = atob('cGsuZXlKMUlqb2liWE53WkROMklpd2lZU0k2SW1OdGJHTTNaalZ3Y2pCMk0zUXphM05uZEdsMmFIcDFiV1FpZlEuWnZaWWQ5UlRVczdUcmw0WFZ6RWRlQQ==')
-  const urls: string[] = []
-  
-  for (const zoom of zoomLevels) {
-    const n = Math.pow(2, zoom)
-    const cx = Math.floor(((lon + 180) / 360) * n)
-    const latRad = (lat * Math.PI) / 180
-    const cy = Math.floor((1 - Math.log(Math.tan(latRad) + 1 / Math.cos(latRad)) / Math.PI) / 2 * n)
-    
-    for (let dx = -radius; dx <= radius; dx++) {
-      for (let dy = -radius; dy <= radius; dy++) {
-        const x = cx + dx
-        const y = cy + dy
-        if (x < 0 || y < 0 || x >= n || y >= n) continue
-        urls.push(
-          `https://api.mapbox.com/styles/v1/mapbox/${style}/tiles/512/${zoom}/${x}/${y}@2x?access_token=${token}`
-        )
-      }
-    }
-  }
-  
-  // Use <link rel="prefetch"> for low-priority background loading
-  const fragment = document.createDocumentFragment()
-  for (const url of urls) {
-    // Skip if already in DOM
-    if (document.querySelector(`link[href="${url}"]`)) continue
-    const link = document.createElement('link')
-    link.rel = 'prefetch'
-    link.as = 'image'
-    link.href = url
-    fragment.appendChild(link)
-  }
-  document.head.appendChild(fragment)
-  
-  // Clean up old prefetch links after 30s to keep DOM clean
-  setTimeout(() => {
-    document.querySelectorAll('link[rel="prefetch"][as="image"]').forEach(el => el.remove())
-  }, 30000)
+// Accommodation type icons
+const accommodationIcons: Record<string, string> = {
+  apartment: '🏢',
+  hotel: '🏨',
+  hostel: '🏠',
+  cabana: '🏘️',
+  house: '🏡',
+  cabin: '🛖',
 }
 
 interface MapProps {
@@ -144,30 +115,23 @@ interface MapProps {
   onLocationSelect: (location: Location) => void
   onRecommendationSelect: (recommendation: Recommendation) => void
   activeCategory: string | null
-  theme: 'dark' | 'light' | 'auto'
-  mapMode: 'recommendations' | 'accommodations'
-  accommodations?: any[]
+  accommodations: Accommodation[]
+  showAccommodationsOnMap: boolean
+  selectedAccommodation: Accommodation | null
+  onAccommodationSelect: (accommodation: Accommodation) => void
 }
 
 // Component to handle map view changes
 function MapController({ 
   selectedLocation, 
   selectedRecommendation,
-  mapStyle
+  selectedAccommodation 
 }: { 
   selectedLocation: Location | null
-  selectedRecommendation: Recommendation | null
-  mapStyle: string
+  selectedRecommendation: Recommendation | null 
+  selectedAccommodation: Accommodation | null
 }) {
   const map = useMap()
-
-  // Preload tiles when location changes
-  useEffect(() => {
-    if (selectedLocation) {
-      const [lat, lon] = selectedLocation.coordinates as [number, number]
-      preloadTilesAround(lat, lon, mapStyle)
-    }
-  }, [selectedLocation, mapStyle])
 
   useEffect(() => {
     // Calculate offset: bottom sheet takes ~40% of screen, so offset by ~20% of viewport height
@@ -182,7 +146,14 @@ function MapController({
       return map.getCenter().lat - offsetLatLng.lat
     }
 
-    if (selectedRecommendation) {
+    if (selectedAccommodation) {
+      const coords = selectedAccommodation.coordinates as [number, number]
+      const targetZoom = 14
+      const latOffset = getLatOffset(targetZoom)
+      map.flyTo([coords[0] - latOffset, coords[1]], targetZoom, {
+        duration: 1
+      })
+    } else if (selectedRecommendation) {
       const coords = selectedRecommendation.coordinates as [number, number]
       const targetZoom = 14
       const latOffset = getLatOffset(targetZoom)
@@ -210,24 +181,9 @@ function MapController({
       const latOffset = getLatOffset(targetZoom)
       map.flyTo([coords[0] - latOffset, coords[1]], targetZoom, { duration: 1 })
     }
-  }, [selectedLocation, selectedRecommendation, map])
+  }, [selectedLocation, selectedRecommendation, selectedAccommodation, map])
 
   return null
-}
-
-// Create popup content for accommodations
-const createAccommodationPopup = (accommodation: any) => {
-  const { name, type, priceEstimate, rating, amenities, description } = accommodation
-  return `
-    <div style="min-width: 220px; max-width: 300px;">
-      <h3 style="font-weight: bold; margin-bottom: 8px; font-size: 16px;">${name}</h3>
-      ${description ? `<p style="margin: 4px 0; font-size: 12px; color: #666;">${description}</p>` : ''}
-      ${type ? `<p style="margin: 4px 0; font-size: 13px;"><strong>Typ:</strong> ${type.charAt(0).toUpperCase() + type.slice(1)}</p>` : ''}
-      ${priceEstimate ? `<p style="margin: 4px 0; font-size: 13px;"><strong>Preis:</strong> ${priceEstimate}</p>` : ''}
-      ${rating ? `<p style="margin: 4px 0; font-size: 13px;"><strong>Rating:</strong> ⭐ ${rating}/10</p>` : ''}
-      ${amenities && amenities.length > 0 ? `<p style="margin: 4px 0; font-size: 12px;"><strong>Ausstattung:</strong> ${amenities.join(', ')}</p>` : ''}
-    </div>
-  `
 }
 
 export default function Map({
@@ -237,19 +193,12 @@ export default function Map({
   onLocationSelect,
   onRecommendationSelect,
   activeCategory,
-  theme,
-  mapMode,
-  accommodations = []
+  accommodations,
+  showAccommodationsOnMap,
+  selectedAccommodation,
+  onAccommodationSelect
 }: MapProps) {
   const mapRef = useRef<L.Map>(null)
-
-  // Determine effective theme and map style
-  const effectiveTheme = theme === 'auto' 
-    ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
-    : theme
-  
-  const mapStyle = effectiveTheme === 'dark' ? 'dark-v11' : 'outdoors-v12'
-  const mapboxToken = atob('cGsuZXlKMUlqb2liWE53WkROMklpd2lZU0k2SW1OdGJHTTNaalZ3Y2pCMk0zUXphM05uZEdsMmFIcDFiV1FpZlEuWnZaWWQ5UlRVczdUcmw0WFZ6RWRlQQ==')
 
   // Create route line coordinates
   const routeCoordinates = locations.map(loc => loc.coordinates as [number, number])
@@ -301,23 +250,25 @@ export default function Map({
   }
 
   // Create custom markers for accommodations
-  const createAccommodationIcon = (accommodation: any) => {
-    const type = accommodation.type?.toLowerCase() || 'default'
-    const color = accommodationColors[type] || accommodationColors.default
+  const createAccommodationIcon = (accommodation: Accommodation, isSelected: boolean) => {
+    const color = accommodationColors[accommodation.type] || '#6b7280'
+    const icon = accommodationIcons[accommodation.type] || '🏠'
+    const selectedClass = isSelected ? 'selected' : ''
     
     return L.divIcon({
       html: `
-        <div class="custom-marker accommodation-marker" style="
-          background: ${color};
+        <div class="custom-marker accommodation-marker ${selectedClass}" style="
+          background: ${isSelected ? '#22c55e' : color};
           color: white;
+          ${isSelected ? 'z-index: 10000 !important;' : ''}
         ">
-          🏠
+          ${icon}
         </div>
       `,
-      className: 'custom-div-icon',
-      iconSize: [28, 28],
-      iconAnchor: [14, 14],
-      popupAnchor: [0, -14]
+      className: `custom-div-icon ${isSelected ? 'marker-selected' : ''}`,
+      iconSize: isSelected ? [32, 32] : [26, 26],
+      iconAnchor: isSelected ? [16, 16] : [13, 13],
+      popupAnchor: [0, -13]
     })
   }
 
@@ -335,10 +286,9 @@ export default function Map({
       attributionControl={false}
       zoomControl={false}
     >
-      {/* Theme-aware tile layer - Mapbox Dark or Outdoors */}
+      {/* Dark mode tile layer - Mapbox Dark */}
       <TileLayer
-        key={mapStyle}
-        url={`https://api.mapbox.com/styles/v1/mapbox/${mapStyle}/tiles/512/{z}/{x}/{y}@2x?access_token=${mapboxToken}`}
+        url={`https://api.mapbox.com/styles/v1/mapbox/dark-v11/tiles/512/{z}/{x}/{y}@2x?access_token=${atob('cGsuZXlKMUlqb2liWE53WkROMklpd2lZU0k2SW1OdGJHTTNaalZ3Y2pCMk0zUXphM05uZEdsMmFIcDFiV1FpZlEuWnZaWWQ5UlRVczdUcmw0WFZ6RWRlQQ==')}`}
         attribution='&copy; <a href="https://www.mapbox.com/">Mapbox</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         maxZoom={22}
         tileSize={512}
@@ -363,57 +313,49 @@ export default function Map({
         positions={routeCoordinates}
       />
 
-      {/* Conditional rendering based on mapMode */}
-      {mapMode === 'recommendations' ? (
-        <>
-          {/* Location markers - No popup, opens bottom sheet directly */}
-          {locations.map((location) => (
-            <Marker
-              key={location.id}
-              position={location.coordinates as [number, number]}
-              icon={createLocationIcon(location, selectedLocation?.id === location.id)}
-              eventHandlers={{
-                click: () => onLocationSelect(location),
-              }}
-            />
-          ))}
+      {/* Location markers - No popup, opens bottom sheet directly */}
+      {locations.map((location) => (
+        <Marker
+          key={location.id}
+          position={location.coordinates as [number, number]}
+          icon={createLocationIcon(location, selectedLocation?.id === location.id)}
+          eventHandlers={{
+            click: () => onLocationSelect(location),
+          }}
+        />
+      ))}
 
-          {/* Recommendation markers for selected location - No popup, updates bottom sheet */}
-          {selectedLocation && selectedLocation.recommendations
-            .filter(rec => !activeCategory || rec.category === activeCategory)
-            .map((recommendation) => (
-              <Marker
-                key={recommendation.id}
-                position={recommendation.coordinates as [number, number]}
-                icon={createRecommendationIcon(recommendation, selectedRecommendation?.id === recommendation.id)}
-                eventHandlers={{
-                  click: () => onRecommendationSelect(recommendation),
-                }}
-              />
-            ))}
-        </>
-      ) : (
-        /* Accommodation markers */
-        accommodations
-          .filter(acc => acc.coordinates && acc.coordinates.length === 2)
-          .map((accommodation, idx) => (
-            <Marker
-              key={`acc-${idx}`}
-              position={accommodation.coordinates as [number, number]}
-              icon={createAccommodationIcon(accommodation)}
-            >
-              <Popup>
-                <div dangerouslySetInnerHTML={{ __html: createAccommodationPopup(accommodation) }} />
-              </Popup>
-            </Marker>
-          ))
-      )}
+      {/* Recommendation markers for selected location - No popup, updates bottom sheet */}
+      {!showAccommodationsOnMap && selectedLocation && selectedLocation.recommendations
+        .filter(rec => !activeCategory || rec.category === activeCategory)
+        .map((recommendation) => (
+          <Marker
+            key={recommendation.id}
+            position={recommendation.coordinates as [number, number]}
+            icon={createRecommendationIcon(recommendation, selectedRecommendation?.id === recommendation.id)}
+            eventHandlers={{
+              click: () => onRecommendationSelect(recommendation),
+            }}
+          />
+        ))}
+
+      {/* Accommodation markers - Show when accommodations layer is active */}
+      {showAccommodationsOnMap && accommodations.map((accommodation) => (
+        <Marker
+          key={accommodation.id}
+          position={accommodation.coordinates as [number, number]}
+          icon={createAccommodationIcon(accommodation, selectedAccommodation?.id === accommodation.id)}
+          eventHandlers={{
+            click: () => onAccommodationSelect(accommodation),
+          }}
+        />
+      ))}
 
       {/* Map controller for view changes */}
       <MapController 
         selectedLocation={selectedLocation} 
         selectedRecommendation={selectedRecommendation}
-        mapStyle={mapStyle}
+        selectedAccommodation={selectedAccommodation}
       />
     </MapContainer>
   )
