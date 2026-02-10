@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import { MapContainer, TileLayer, Marker, Polyline, useMap } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Polyline, Popup, useMap } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import { Location, Recommendation } from '../App'
@@ -20,6 +20,16 @@ const DefaultIcon = L.icon({
   shadowSize: [41, 41]
 })
 L.Marker.prototype.options.icon = DefaultIcon
+
+// Accommodation type colors
+const accommodationColors: Record<string, string> = {
+  'hotel': '#3b82f6',      // blue
+  'apartment': '#22c55e',   // green
+  'cabaña': '#f97316',     // orange
+  'cabana': '#f97316',     // orange (alternative spelling)
+  'hostel': '#a855f7',     // purple
+  'default': '#6b7280'     // gray
+}
 
 // Category colors mapping - vibrant and distinct
 const categoryColors: Record<string, string> = {
@@ -135,6 +145,8 @@ interface MapProps {
   onRecommendationSelect: (recommendation: Recommendation) => void
   activeCategory: string | null
   theme: 'dark' | 'light' | 'auto'
+  mapMode: 'recommendations' | 'accommodations'
+  accommodations?: any[]
 }
 
 // Component to handle map view changes
@@ -203,6 +215,21 @@ function MapController({
   return null
 }
 
+// Create popup content for accommodations
+const createAccommodationPopup = (accommodation: any) => {
+  const { name, type, priceEstimate, rating, amenities, description } = accommodation
+  return `
+    <div style="min-width: 220px; max-width: 300px;">
+      <h3 style="font-weight: bold; margin-bottom: 8px; font-size: 16px;">${name}</h3>
+      ${description ? `<p style="margin: 4px 0; font-size: 12px; color: #666;">${description}</p>` : ''}
+      ${type ? `<p style="margin: 4px 0; font-size: 13px;"><strong>Typ:</strong> ${type.charAt(0).toUpperCase() + type.slice(1)}</p>` : ''}
+      ${priceEstimate ? `<p style="margin: 4px 0; font-size: 13px;"><strong>Preis:</strong> ${priceEstimate}</p>` : ''}
+      ${rating ? `<p style="margin: 4px 0; font-size: 13px;"><strong>Rating:</strong> ⭐ ${rating}/10</p>` : ''}
+      ${amenities && amenities.length > 0 ? `<p style="margin: 4px 0; font-size: 12px;"><strong>Ausstattung:</strong> ${amenities.join(', ')}</p>` : ''}
+    </div>
+  `
+}
+
 export default function Map({
   locations,
   selectedLocation,
@@ -210,7 +237,9 @@ export default function Map({
   onLocationSelect,
   onRecommendationSelect,
   activeCategory,
-  theme
+  theme,
+  mapMode,
+  accommodations = []
 }: MapProps) {
   const mapRef = useRef<L.Map>(null)
 
@@ -271,6 +300,27 @@ export default function Map({
     })
   }
 
+  // Create custom markers for accommodations
+  const createAccommodationIcon = (accommodation: any) => {
+    const type = accommodation.type?.toLowerCase() || 'default'
+    const color = accommodationColors[type] || accommodationColors.default
+    
+    return L.divIcon({
+      html: `
+        <div class="custom-marker accommodation-marker" style="
+          background: ${color};
+          color: white;
+        ">
+          🏠
+        </div>
+      `,
+      className: 'custom-div-icon',
+      iconSize: [28, 28],
+      iconAnchor: [14, 14],
+      popupAnchor: [0, -14]
+    })
+  }
+
   return (
     <MapContainer
       ref={mapRef}
@@ -313,31 +363,51 @@ export default function Map({
         positions={routeCoordinates}
       />
 
-      {/* Location markers - No popup, opens bottom sheet directly */}
-      {locations.map((location) => (
-        <Marker
-          key={location.id}
-          position={location.coordinates as [number, number]}
-          icon={createLocationIcon(location, selectedLocation?.id === location.id)}
-          eventHandlers={{
-            click: () => onLocationSelect(location),
-          }}
-        />
-      ))}
+      {/* Conditional rendering based on mapMode */}
+      {mapMode === 'recommendations' ? (
+        <>
+          {/* Location markers - No popup, opens bottom sheet directly */}
+          {locations.map((location) => (
+            <Marker
+              key={location.id}
+              position={location.coordinates as [number, number]}
+              icon={createLocationIcon(location, selectedLocation?.id === location.id)}
+              eventHandlers={{
+                click: () => onLocationSelect(location),
+              }}
+            />
+          ))}
 
-      {/* Recommendation markers for selected location - No popup, updates bottom sheet */}
-      {selectedLocation && selectedLocation.recommendations
-        .filter(rec => !activeCategory || rec.category === activeCategory)
-        .map((recommendation) => (
-          <Marker
-            key={recommendation.id}
-            position={recommendation.coordinates as [number, number]}
-            icon={createRecommendationIcon(recommendation, selectedRecommendation?.id === recommendation.id)}
-            eventHandlers={{
-              click: () => onRecommendationSelect(recommendation),
-            }}
-          />
-        ))}
+          {/* Recommendation markers for selected location - No popup, updates bottom sheet */}
+          {selectedLocation && selectedLocation.recommendations
+            .filter(rec => !activeCategory || rec.category === activeCategory)
+            .map((recommendation) => (
+              <Marker
+                key={recommendation.id}
+                position={recommendation.coordinates as [number, number]}
+                icon={createRecommendationIcon(recommendation, selectedRecommendation?.id === recommendation.id)}
+                eventHandlers={{
+                  click: () => onRecommendationSelect(recommendation),
+                }}
+              />
+            ))}
+        </>
+      ) : (
+        /* Accommodation markers */
+        accommodations
+          .filter(acc => acc.coordinates && acc.coordinates.length === 2)
+          .map((accommodation, idx) => (
+            <Marker
+              key={`acc-${idx}`}
+              position={accommodation.coordinates as [number, number]}
+              icon={createAccommodationIcon(accommodation)}
+            >
+              <Popup>
+                <div dangerouslySetInnerHTML={{ __html: createAccommodationPopup(accommodation) }} />
+              </Popup>
+            </Marker>
+          ))
+      )}
 
       {/* Map controller for view changes */}
       <MapController 

@@ -2,6 +2,8 @@ import { useState, useEffect, useRef, useCallback, Suspense, lazy, useMemo } fro
 import { MapLoading } from './components/LoadingState'
 import tripData from './data/trip-data.json'
 import factsData from './data/facts.json'
+import accommodationsPart1 from './data/accommodations-part1.json'
+import accommodationsPart2 from './data/accommodations-part2.json'
 
 // Lazy load the map for faster initial render
 const Map = lazy(() => import('./components/Map'))
@@ -139,6 +141,7 @@ function App() {
   const [showQuotes, setShowQuotes] = useState(false)
   const [showSuitGuide, setShowSuitGuide] = useState(false)
   const [showAccommodations, setShowAccommodations] = useState(false)
+  const [mapMode, setMapMode] = useState<'recommendations' | 'accommodations'>('recommendations')
 
   // Bottom sheet swipe gesture handling
   const sheetRef = useRef<HTMLDivElement>(null)
@@ -186,6 +189,17 @@ function App() {
     )
     return locFacts.length > 0 ? locFacts : factsData.facts
   }, [selectedLocation])
+
+  // Merge and flatten accommodations data
+  const allAccommodations = useMemo(() => {
+    const merged = {
+      ...accommodationsPart1.accommodations,
+      ...(accommodationsPart2 as any).accommodations,
+    }
+    return Object.entries(merged).flatMap(([locationKey, items]: [string, any[]]) =>
+      items.map(item => ({ ...item, locationKey }))
+    )
+  }, [])
 
   // Clear search state helper
   const clearSearch = useCallback(() => {
@@ -404,6 +418,8 @@ function App() {
             onRecommendationSelect={handleRecommendationSelect}
             activeCategory={activeCategory}
             theme={theme}
+            mapMode={mapMode}
+            accommodations={allAccommodations}
           />
         </Suspense>
       </div>
@@ -513,16 +529,17 @@ function App() {
           )}
         </div>
         
-        {/* Theme Toggle */}
+        {/* Map Mode Toggle - Unterkünfte/Empfehlungen */}
         <button
-          onClick={() => {
-            const next = theme === 'dark' ? 'light' : 'dark'
-            setTheme(next)
-          }}
-          className="w-10 h-10 bg-chile-bg-card rounded-xl shadow-lg flex items-center justify-center border border-white/10"
-          title={theme === 'dark' ? 'Heller Modus' : 'Dunkler Modus'}
+          onClick={() => setMapMode(mapMode === 'recommendations' ? 'accommodations' : 'recommendations')}
+          className={`w-10 h-10 rounded-xl shadow-lg flex items-center justify-center border ${
+            mapMode === 'accommodations' 
+              ? 'bg-chile-accent-teal border-chile-accent-teal/50' 
+              : 'bg-chile-bg-card border-white/10'
+          }`}
+          title={mapMode === 'recommendations' ? 'Unterkünfte anzeigen' : 'Empfehlungen anzeigen'}
         >
-          {theme === 'dark' ? '☀️' : '🌙'}
+          {mapMode === 'accommodations' ? '🏠' : '📍'}
         </button>
 
         {/* Burger Menu */}
@@ -659,6 +676,16 @@ function App() {
                 className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm"
               >
                 <span>⚙️</span> Einstellungen
+              </button>
+              <button
+                onClick={() => {
+                  const next = theme === 'dark' ? 'light' : 'dark'
+                  setTheme(next)
+                  setShowMenu(false)
+                }}
+                className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm"
+              >
+                <span>{theme === 'dark' ? '☀️' : '🌙'}</span> {theme === 'dark' ? 'Heller Modus' : 'Dunkler Modus'}
               </button>
               <button
                 onClick={() => {
