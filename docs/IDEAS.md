@@ -157,12 +157,13 @@
 - Osorno: 21 | Frutillar/PV: 22 | Puerto Montt/Chiloé: 38
 - **Total: 282 Empfehlungen** ✓ (Alle Locations 20+ Recs, Sierra Nevada duplicate merged)
 
-### Status Fakten (2026-02-10, Final Balance)
-- **Total: 325 Fakten** ✓ (16 neue Fakten aus Reiseführern)
+### Status Fakten (2026-02-10, Deduplicated)
+- **Total: 319 Fakten** ✓ (14 Duplikate entfernt, 8 neue unique Fakten)
 - Quellen: Insight Guides 2024, Rough Guides 2023, Bradt Carretera Austral 2022
-- Quillimari: 24, Chiloé/PM: 27, Santiago: 23, Frutillar/PV: 22
-- San Carlos: 22, Conguillío: 21, Chillán: 21, Algarrobo: 21, Pucón: 21
-- Osorno: 20, Valdivia: 20, Wine Resort: 20, General: 63
+- Chiloé/PM: 27, Santiago: 23, Frutillar/PV: 22
+- San Carlos: 21, Conguillío: 21, Pucón: 21, Algarrobo: 21
+- Quillimari: 20, Valdivia: 20, Osorno: 20, Wine Resort: 20, Chillán: 20
+- General: 63
 - **Alle Locations 20+ Fakten ✓**
 
 ### TypeScript
@@ -256,4 +257,9 @@
 - ✓ Auto-Cleanup nach 30 Sekunden
 - ✓ PWA Service Worker cached die Tiles dann dauerhaft
 
-*Letzte Aktualisierung: 2026-02-10 01:30*
+### Fakten Deduplizierung (2026-02-10, 02:00)
+- ✓ 14 echte Duplikate entfernt (Pichi/Pichidangui 3x, Los Molles 2x, La Quintrala, Isla de los Lobos, Casablanca Morandé, Colonia Dignidad, Chillán zerstört, O'Higgins, Feria Chillán, Los Vilos Lord Willow)
+- ✓ 8 neue unique Fakten aus Rough Guide (Zapallar, Papudo, Cachagua, Panamericana Küste, La Ligua Ostern, Valle Las Trancas, Aguas Calientes, Zentraltal Pferdegespanne)
+- ✓ Alle Locations weiterhin 20+ Fakten
+
+*Letzte Aktualisierung: 2026-02-10 02:00*
