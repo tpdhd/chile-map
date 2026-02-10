@@ -157,16 +157,13 @@
 - Osorno: 21 | Frutillar/PV: 22 | Puerto Montt/Chiloé: 38
 - **Total: 282 Empfehlungen** ✓ (Alle Locations 20+ Recs, Sierra Nevada duplicate merged)
 
-### Status Fakten (2026-02-10, Deep Cleanup + Balance)
-- **Total: 309 Fakten** (17 Duplikate entfernt, 11 neue Fakten hinzugefügt)
-- Duplikat-Bereinigung: 17 Near-Duplicates entfernt (2026-02-10 01:00)
-- 11 neue Fakten für San Carlos (4), Quillimari (3), Valdivia (2), Wine Resort (2)
+### Status Fakten (2026-02-10, Final Balance)
+- **Total: 325 Fakten** ✓ (16 neue Fakten aus Reiseführern)
 - Quellen: Insight Guides 2024, Rough Guides 2023, Bradt Carretera Austral 2022
-- General: 63, Chiloé/PM: 27, Santiago: 23, Frutillar/PV: 22
-- Conguillío: 21, Osorno: 20, Valdivia: 20, Wine Resort: 20
-- Chillan: 19, Pucón: 19, Algarrobo: 19
-- San Carlos: 18, Quillimari: 18
-- **Alle Locations 18+ Fakten ✓**
+- Quillimari: 24, Chiloé/PM: 27, Santiago: 23, Frutillar/PV: 22
+- San Carlos: 22, Conguillío: 21, Chillán: 21, Algarrobo: 21, Pucón: 21
+- Osorno: 20, Valdivia: 20, Wine Resort: 20, General: 63
+- **Alle Locations 20+ Fakten ✓**
 
 ### TypeScript
 - [x] Alle TS-Fehler behoben ✓ (2026-02-08)
