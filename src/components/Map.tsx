@@ -85,6 +85,48 @@ const categoryIcons: Record<string, string> = {
   seafood: '🦐',
 }
 
+// Preload tiles around a coordinate to warm the browser cache
+function preloadTilesAround(lat: number, lon: number, zoomLevels: number[] = [10, 12, 14], radius: number = 2) {
+  const token = atob('cGsuZXlKMUlqb2liWE53WkROMklpd2lZU0k2SW1OdGJHTTNaalZ3Y2pCMk0zUXphM05uZEdsMmFIcDFiV1FpZlEuWnZaWWQ5UlRVczdUcmw0WFZ6RWRlQQ==')
+  const urls: string[] = []
+  
+  for (const zoom of zoomLevels) {
+    const n = Math.pow(2, zoom)
+    const cx = Math.floor(((lon + 180) / 360) * n)
+    const latRad = (lat * Math.PI) / 180
+    const cy = Math.floor((1 - Math.log(Math.tan(latRad) + 1 / Math.cos(latRad)) / Math.PI) / 2 * n)
+    
+    for (let dx = -radius; dx <= radius; dx++) {
+      for (let dy = -radius; dy <= radius; dy++) {
+        const x = cx + dx
+        const y = cy + dy
+        if (x < 0 || y < 0 || x >= n || y >= n) continue
+        urls.push(
+          `https://api.mapbox.com/styles/v1/mapbox/dark-v11/tiles/512/${zoom}/${x}/${y}@2x?access_token=${token}`
+        )
+      }
+    }
+  }
+  
+  // Use <link rel="prefetch"> for low-priority background loading
+  const fragment = document.createDocumentFragment()
+  for (const url of urls) {
+    // Skip if already in DOM
+    if (document.querySelector(`link[href="${url}"]`)) continue
+    const link = document.createElement('link')
+    link.rel = 'prefetch'
+    link.as = 'image'
+    link.href = url
+    fragment.appendChild(link)
+  }
+  document.head.appendChild(fragment)
+  
+  // Clean up old prefetch links after 30s to keep DOM clean
+  setTimeout(() => {
+    document.querySelectorAll('link[rel="prefetch"][as="image"]').forEach(el => el.remove())
+  }, 30000)
+}
+
 interface MapProps {
   locations: Location[]
   selectedLocation: Location | null
@@ -103,6 +145,14 @@ function MapController({
   selectedRecommendation: Recommendation | null 
 }) {
   const map = useMap()
+
+  // Preload tiles when location changes
+  useEffect(() => {
+    if (selectedLocation) {
+      const [lat, lon] = selectedLocation.coordinates as [number, number]
+      preloadTilesAround(lat, lon)
+    }
+  }, [selectedLocation])
 
   useEffect(() => {
     // Calculate offset: bottom sheet takes ~40% of screen, so offset by ~20% of viewport height

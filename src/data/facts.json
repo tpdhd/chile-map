@@ -16,11 +16,6 @@
       ]
     },
     {
-      "id": 3,
-      "text": "Die Copihue, Chiles Nationalblume, wächst von Valparaíso bis Osorno. Sie braucht 500 Jahre zum Reifen und kann über 1.000 Jahre alt werden.",
-      "category": "nature"
-    },
-    {
       "id": 4,
       "text": "Über 80% der chilenischen Weinexporte sind nachhaltig zertifiziert — einer der höchsten Anteile weltweit.",
       "category": "food"
@@ -682,13 +677,6 @@
       "source": "Insight Guides Chile 2024"
     },
     {
-      "id": 101,
-      "text": "Chiloés Palafitos sind die letzten Stelzenhäuser Chiles — sie stehen über dem Wasser, damit Fischer bei Flut und Ebbe arbeiten können.",
-      "category": "culture",
-      "location": "chiloe",
-      "source": "Insight Guides Chile 2024"
-    },
-    {
       "id": 102,
       "text": "Pomaire, das Töpferdorf nahe Santiago, ist seit vorspanischer Zeit für seine schwarze Keramik bekannt — die Tradition ist über 500 Jahre alt.",
       "category": "culture",
@@ -779,13 +767,6 @@
         -72.1
       ],
       "source": "Insight Guides Chile 2024"
-    },
-    {
-      "id": 114,
-      "text": "Die Feria de Chillán ist der größte und lebhafteste Markt Chiles — samstags platzt er aus dem Platz und breitet sich in die umliegenden Straßen aus.",
-      "category": "culture",
-      "location": "chillan",
-      "source": "Rough Guides Chile 2023"
     },
     {
       "id": 115,
@@ -940,13 +921,6 @@
       "source": "Rough Guides Chile 2023"
     },
     {
-      "id": 135,
-      "text": "Puerto Octay war die erste deutsche Siedlung am Lago Llanquihue (1852) — ein freundlicher Ort mit nadelspitzer Kirche und Häusern mit verzierten Dachvorsprüngen.",
-      "category": "history",
-      "location": "frutillar-puerto-varas",
-      "source": "Rough Guides Chile 2023"
-    },
-    {
       "id": 136,
       "text": "Das Casablanca-Tal zwischen Santiago und Valparaíso profitiert von Meeresbrisen — es produziert einige der besten Weißweine Chiles.",
       "category": "food",
@@ -956,13 +930,6 @@
     {
       "id": 137,
       "text": "Don Silvestre Ochagavía brachte 1850 Cabernet Sauvignon-Reben aus Frankreich — kurz bevor die Reblaus-Plage die europäischen Weinstöcke zerstörte.",
-      "category": "history",
-      "location": "wine-resort",
-      "source": "Insight Guides Chile 2024"
-    },
-    {
-      "id": 138,
-      "text": "Viña Cousiño Macul befindet sich seit 1856 in Familienbesitz — Doña Isidora Goyenechea ließ die Keller bauen und einen Önologen aus Bordeaux holen.",
       "category": "history",
       "location": "wine-resort",
       "source": "Insight Guides Chile 2024"
@@ -1170,13 +1137,6 @@
       "id": 167
     },
     {
-      "text": "San Carlos war der letzte Ort, an dem die Feria de Chillán samstags aus allen Nähten platzt — der größte und traditionellste Markt ganz Chiles.",
-      "category": "culture",
-      "location": "san-carlos",
-      "source": "Rough Guides Chile 2023",
-      "id": 168
-    },
-    {
       "text": "Die Viña Cousiño Macul ist seit 1856 ununterbrochen in Familienbesitz — das älteste durchgehend produzierende Weingut Chiles.",
       "category": "food",
       "location": "wine-resort",
@@ -1270,20 +1230,6 @@
       "id": 182,
       "text": "Die Hacienda des Prat-Museums ist ein Musterbeispiel kolonialer Landarchitektur mit großem Innenhof und eleganten Veranden.",
       "category": "history",
-      "location": "san-carlos",
-      "source": "Rough Guides Chile 2023"
-    },
-    {
-      "id": 183,
-      "text": "Die Region Ñuble ist Chiles jüngste Verwaltungsregion — erst kürzlich von Biobío abgetrennt, mit San Carlos als einer ihrer Hauptstädte.",
-      "category": "geography",
-      "location": "san-carlos",
-      "source": "Rough Guides Chile 2023"
-    },
-    {
-      "id": 184,
-      "text": "Die Gegend um San Carlos ist Chiles ländliches Kernland, wo der Kult des Huaso (Cowboy) lebt — mit häufigen Rodeos in Stadien namens Medialunas.",
-      "category": "culture",
       "location": "san-carlos",
       "source": "Rough Guides Chile 2023"
     },
@@ -1422,13 +1368,6 @@
       "location": "san-carlos",
       "source": "Rough Guides Chile 2023",
       "id": 204
-    },
-    {
-      "text": "In der Region um San Carlos finden regelmäßig Rodeos in Medialunas (halbmondförmigen Stadien) statt – eine der ältesten chilenischen Traditionen seit der Kolonialzeit.",
-      "category": "culture",
-      "location": "san-carlos",
-      "source": "Rough Guides Chile 2023",
-      "id": 205
     },
     {
       "text": "Die Iglesia de Piedra (Steinkirche) bei Cobquecura ist eine Reihe hoher Meereshöhlen mit Gängen, die zum Ozean hinabführen – ein spektakuläres Naturwunder an der Küste von Ñuble.",
@@ -1774,13 +1713,6 @@
       "id": 255
     },
     {
-      "text": "In Valdivias Mercado Fluvial werfen Fischer ihre Abfälle an riesige Seelöwen, die direkt hinter den Ständen warten und den Markt als ihr persönliches Restaurant behandeln.",
-      "category": "unique",
-      "location": "valdivia",
-      "source": "Rough Guides Chile 2023",
-      "id": 256
-    },
-    {
       "text": "Lord Cochrane, ein britischer Abenteurer, spielte eine entscheidende Rolle bei der chilenischen Unabhängigkeit — er stürmte die spanischen Festungen bei Valdivia 1820 und zerstörte dabei die Kanonen des Fuerte de Niebla.",
       "category": "history",
       "location": "valdivia",
@@ -1851,13 +1783,6 @@
       "id": 266
     },
     {
-      "text": "Die Iglesia San Francisco in Santiago ist das älteste Gebäude der Stadt (1586-1628) — in ihrem Inneren befindet sich eine kleine Marienfigur, die Pedro de Valdivia 1540 auf seinem Sattel nach Chile brachte.",
-      "category": "history",
-      "location": "santiago",
-      "source": "Rough Guides Chile 2023",
-      "id": 267
-    },
-    {
       "text": "Auf Chiloé werden Kartoffeln nach dem Mondkalender gepflanzt — bei abnehmendem Mond für normale Ernte, bei Vollmond für besonders große 'Macho'-Saatkartoffeln.",
       "category": "culture",
       "location": "chiloe",
@@ -1870,13 +1795,6 @@
       "location": "frutillar-puerto-varas",
       "source": "Rough Guides Chile 2023",
       "id": 269
-    },
-    {
-      "id": 270,
-      "text": "Bei Pichicuy steht eine Kirche auf einer Landzunge direkt über dem Meer — ein seltenes Beispiel von Küstenarchitektur in Chile.",
-      "category": "culture",
-      "location": "quillimari",
-      "source": "Insight Guides Chile 2024"
     },
     {
       "id": 271,
@@ -2038,13 +1956,6 @@
       "id": 293
     },
     {
-      "text": "Inés de Suárez, Pedro de Valdivias Geliebte, kämpfte am 11. September 1541 in einem Kettenhemd gegen die Mapuche, als diese das frisch gegründete Santiago überfielen.",
-      "category": "history",
-      "location": "santiago",
-      "source": "Insight Guides Chile 2024",
-      "id": 294
-    },
-    {
       "text": "Lachse sind nicht in Chile heimisch — sie stammen aus Nordamerika. Die Zuchtfarmen verursachen Umweltprobleme, aber wilde Lachse zu fangen entfernt eine invasive Art.",
       "category": "nature",
       "source": "Insight Guides Chile 2024",
@@ -2156,41 +2067,90 @@
       "id": 310
     },
     {
-      "text": "In Los Vilos schnitzen Kunsthandwerker Figuren aus Guayacán-Holz — einem extrem harten, einst reichlich vorhandenen Holz der Region.",
-      "category": "culture",
-      "location": "quillimari",
-      "source": "Insight Guides Chile 2024",
-      "id": 311
-    },
-    {
-      "text": "Dulces de La Ligua sind traditionelle Kuchen aus Biskuit oder Baiser, gefüllt mit Manjar — sie sind den Umweg von der Panamericana absolut wert.",
-      "category": "food",
-      "location": "quillimari",
-      "source": "Insight Guides Chile 2024",
-      "id": 312
-    },
-    {
-      "text": "Zwischen Pichicuy und Pichidangui liegt ein Vogelschutzgebiet mit reichem Meeresleben — eine Oase zwischen den Felsengärten von Los Molles.",
-      "category": "nature",
-      "location": "quillimari",
-      "source": "Insight Guides Chile 2024",
-      "id": 313
-    },
-    {
-      "text": "Los Vilos hat einen Skulpturenpark auf den Klippen, geschaffen von einem lokalen Architekten — und ein Kulturzentrum im restaurierten Zollgebäude aus dem 19. Jahrhundert.",
-      "category": "culture",
-      "location": "quillimari",
-      "source": "Insight Guides Chile 2024",
-      "id": 314
-    },
-    {
       "text": "Das Erdbeben von 1939 in Chillán tötete 15.000 Menschen nachts im Schlaf und zerstörte 90% der Stadt — Mexiko spendete daraufhin eine Schule mit den berühmten Siqueiros-Murales.",
       "category": "history",
       "location": "chillan",
       "source": "Insight Guides Chile 2024",
       "id": 315
+    },
+    {
+      "text": "Arturo Prat, Chiles größter Marineheld, wurde 1848 in einer kolonialen Hacienda in Ninhue geboren — 50 km nordwestlich von San Carlos. Sein Geburtshaus ist heute ein Nationaldenkmal.",
+      "category": "history",
+      "location": "san-carlos",
+      "source": "Rough Guides Chile 2023",
+      "id": 316
+    },
+    {
+      "text": "Die País-Traube, Chiles älteste Rebsorte, wurde im 16. Jahrhundert von Missionaren gebracht. Die Region Ñuble um San Carlos produziert noch heute exzellenten Pipeño daraus.",
+      "category": "food",
+      "location": "san-carlos",
+      "source": "Insight Guides Chile 2024",
+      "id": 317
+    },
+    {
+      "text": "Cobquecura, 13 km nördlich von Buchupureo, hat eine eigene Seelöwen-Kolonie auf vorgelagerten Felsen — und das spektakuläre Naturwunder 'Iglesia de Piedra' mit donnernden Meerhöhlen.",
+      "category": "nature",
+      "location": "san-carlos",
+      "source": "Rough Guides Chile 2023",
+      "id": 318
+    },
+    {
+      "text": "In Buchupureo wachsen dank eines Mikroklimas sogar Papayas — mitten an der chilenischen Küste, wo man sie nie erwarten würde.",
+      "category": "nature",
+      "location": "san-carlos",
+      "source": "Rough Guides Chile 2023",
+      "id": 319
+    },
+    {
+      "text": "Zapallar, 100 km südlich von Quilimarí, ist Chiles exklusivster Badeort — Villen mit manikürten Gärten, eine hübsche Steinkirche und ein legendäres Meeresfrüchte-Restaurant 'El Chiringuito'.",
+      "category": "unique",
+      "location": "quillimari",
+      "source": "Rough Guides Chile 2023",
+      "id": 320
+    },
+    {
+      "text": "Die Isla de los Lobos, 5 km südlich von Los Vilos, beherbergt eine große Seelöwen-Kolonie — man kann sie vom Ufer aus beobachten oder mit einem Fischerboot näher heranfahren.",
+      "category": "nature",
+      "location": "quillimari",
+      "source": "Rough Guides Chile 2023",
+      "id": 321
+    },
+    {
+      "text": "Los Vilos war einst berüchtigt für Straßenräuberei — heute ist die Stadt ein entspannter Küstenort mit einem langen goldenen Strand und einem lebhaften Fischmarkt.",
+      "category": "history",
+      "location": "quillimari",
+      "source": "Rough Guides Chile 2023",
+      "id": 322
+    },
+    {
+      "text": "Karl Anwandter, der Gründer der ersten Brauerei Chiles, kam 1850 als deutscher Siedler nach Valdivia — sein Haus auf der Isla Teja mit rotem Marmorkamin und Laterna Magica ist heute ein Museum.",
+      "category": "culture",
+      "location": "valdivia",
+      "source": "Rough Guides Chile 2023",
+      "id": 323
+    },
+    {
+      "text": "Das Festungssystem an der Mündung des Río Valdivia umfasste 17 Forts — es war die aufwendigste Verteidigungsanlage der gesamten spanischen Krone in Südamerika.",
+      "category": "history",
+      "location": "valdivia",
+      "source": "Rough Guides Chile 2023",
+      "id": 324
+    },
+    {
+      "text": "Pablo Morandé 'entdeckte' das Casablanca-Tal für den Weinbau in den 1980ern — er suchte einen kühleren Ort für Weißweintrauben und revolutionierte damit Chiles Weinindustrie.",
+      "category": "food",
+      "location": "wine-resort",
+      "source": "Insight Guides Chile 2024",
+      "id": 325
+    },
+    {
+      "text": "Am Sendero de Chile kann man bei Santiago 8 km entlang der Anden-Ausläufer wandern — mit einem spektakulären Panorama über die gesamte Stadt bis zum Pazifik.",
+      "category": "nature",
+      "location": "wine-resort",
+      "source": "Insight Guides Chile 2024",
+      "id": 326
     }
   ],
-  "lastUpdated": "2026-02-09",
-  "totalFacts": 315
+  "lastUpdated": "2026-02-10",
+  "totalFacts": 309
 }
