@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Peek & Cloppenburg",
+    "category": "Mittelklasse",
+    "address": "Mönckebergstraße 1",
+    "district": "Innenstadt",
+    "website": "https://www.peek-cloppenburg.de",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Peek+Cloppenburg+Hamburg",
+    "priceRange": "150-350€",
+    "rating": 4.2,
+    "ratingSource": "Google Reviews",
+    "hasStretchSuits": true,
+    "stretchNote": "Große Auswahl an Stretch-Anzügen von Marken wie Strellson, Boss, Tommy Hilfiger",
+    "alteration": "Ja, im Haus",
+    "consultation": "Kostenlos",
+    "highlights": [
+      "Große Auswahl",
+      "Zentrale Lage",
+      "Schnelle Änderungen (3-5 Tage)",
+      "Viele Marken"
+    ],
+    "bestFor": "Gute Mittelklasse-Anzüge mit modernem Schnitt und Stretch-Optionen",
+    "coordinates": [53.5511, 10.0066]
+  },
+  {
+    "name": "Suitsupply",
+    "category": "Oberes Budget",
+    "address": "Neuer Wall 13",
+    "district": "Innenstadt",
+    "website": "https://suitsupply.com/de-de",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Suitsupply+Hamburg",
+    "priceRange": "399-799€",
+    "rating": 4.7,
+    "ratingSource": "Google Reviews",
+    "hasStretchSuits": true,
+    "stretchNote": "Alle Anzüge haben leichten Stretch-Anteil (2-5% Elastan) für Bewegungsfreiheit",
+    "alteration": "Ja, kostenlos bei Kauf",
+    "consultation": "Sehr gut, spezialisiert",
+    "highlights": [
+      "Modern geschnitten",
+      "Stretch-Stoffe Standard",
+      "Kostenlose Änderungen",
+      "Italienische Qualität"
+    ],
+    "bestFor": "Moderne, slim-fit Anzüge mit Stretch für junge Männer - perfekt für Hochzeiten (oberes Budget)",
+    "coordinates": [53.5510, 9.9926]
+  },
+  {
+    "name": "C&A",
+    "category": "Budget",
+    "address": "Mönckebergstraße 2-4",
+    "district": "Innenstadt",
+    "website": "https://www.c-and-a.com",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=C%26A+Hamburg",
+    "priceRange": "79-199€",
+    "rating": 3.8,
+    "ratingSource": "Google Reviews",
+    "hasStretchSuits": true,
+    "stretchNote": "Angelo Litrico Linie mit Stretch-Anzügen ab €99",
+    "alteration": "Nein, extern möglich",
+    "consultation": "Basis",
+    "highlights": [
+      "Sehr günstig",
+      "Stretch verfügbar",
+      "Schnell verfügbar",
+      "Zentral gelegen"
+    ],
+    "bestFor": "Budget-Option für Gelegenheitsträger - funktioniert, aber keine Premium-Qualität",
+    "coordinates": [53.5511, 10.0070]
+  },
+  {
+    "name": "H&M Premium",
+    "category": "Budget",
+    "address": "Spitalerstraße 12",
+    "district": "Innenstadt",
+    "website": "https://www2.hm.com",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=H%26M+Hamburg+Spitalerstrasse",
+    "priceRange": "69-149€",
+    "rating": 3.9,
+    "ratingSource": "Google Reviews",
+    "hasStretchSuits": true,
+    "stretchNote": "Premium Linie mit Stretch-Anzügen, oft aus Woll-Polyester-Mix",
+    "alteration": "Nein, extern möglich",
+    "consultation": "Basis",
+    "highlights": [
+      "Günstig",
+      "Moderne Schnitte",
+      "Stretch oft Standard",
+      "Viele Farben"
+    ],
+    "bestFor": "Budget-freundlich für junge Leute mit schlanker Figur",
+    "coordinates": [53.5506, 10.0063]
+  },
+  {
+    "name": "Massanzug24",
+    "category": "Oberes Budget",
+    "address": "Online + Hamburg Showroom nach Termin",
+    "district": "Rotherbaum",
+    "website": "https://www.massanzug24.de",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Massanzug24+Hamburg",
+    "priceRange": "299-699€",
+    "rating": 4.5,
+    "ratingSource": "Trustpilot",
+    "hasStretchSuits": true,
+    "stretchNote": "Online-Maßanfertigung mit Stretch-Stoffen - gutes Preis-Leistungs-Verhältnis",
+    "alteration": "Nachbesserung kostenlos",
+    "consultation": "Video + vor Ort möglich",
+    "highlights": [
+      "Online-Maßanfertigung",
+      "Günstiger als Schneider",
+      "Große Stoffauswahl",
+      "Videoberatung"
+    ],
+    "bestFor": "Maßanzug zum fairen Preis - erfordert genaues Maßnehmen (oberes Budget)",
+    "coordinates": [53.5687, 9.9858]
+  },
+  {
+    "name": "Kleidermarkt Hamburg",
+    "category": "Second-Hand",
+    "address": "Schulterblatt 1",
+    "district": "Sternschanze",
+    "website": null,
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kleidermarkt+Hamburg+Schulterblatt",
+    "priceRange": "29-149€",
+    "rating": 4.3,
+    "ratingSource": "Google Reviews",
+    "hasStretchSuits": false,
+    "alteration": "Nein, extern empfohlen",
+    "consultation": "Selbstbedienung",
+    "highlights": [
+      "Sehr günstig",
+      "Vintage-Funde",
+      "Nachhaltig",
+      "Oft Markenware"
+    ],
+    "bestFor": "Nachhaltige Budget-Option - mit Glück Designerstücke finden",
+    "coordinates": [53.5634, 9.9638]
+  },
+  {
+    "name": "WE Fashion",
+    "category": "Budget",
+    "address": "Europa Passage, Ballindamm 40",
+    "district": "Innenstadt",
+    "website": "https://www.wefashion.de",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=WE+Fashion+Hamburg+Europa+Passage",
+    "priceRange": "89-179€",
+    "rating": 4.0,
+    "ratingSource": "Google Reviews",
+    "hasStretchSuits": true,
+    "stretchNote": "Moderne Anzüge mit leichtem Stretch, gutes Preis-Leistungs-Verhältnis",
+    "alteration": "Nein",
+    "consultation": "Basis",
+    "highlights": [
+      "Modern",
+      "Stretch-Optionen",
+      "Gutes Preis-Leistungs-Verhältnis",
+      "Europa Passage"
+    ],
+    "bestFor": "Solide Budget-Anzüge mit modernem Look",
+    "coordinates": [53.5529, 9.9933]
+  }
+]

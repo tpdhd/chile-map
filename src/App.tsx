@@ -17,6 +17,8 @@ const DailyPlan = lazy(() => import('./components/DailyPlan'))
 const TripRoute = lazy(() => import('./components/TripRoute'))
 const NearbyFinder = lazy(() => import('./components/NearbyFinder'))
 const QuoteCarousel = lazy(() => import('./components/QuoteCarousel'))
+const SuitGuide = lazy(() => import('./components/SuitGuide'))
+const AccommodationsPage = lazy(() => import('./components/AccommodationsPage'))
 
 export type Location = typeof tripData.locations[0]
 export type Recommendation = typeof tripData.locations[0]['recommendations'][0]
@@ -135,6 +137,8 @@ function App() {
   const [showTripRoute, setShowTripRoute] = useState(false)
   const [showNearby, setShowNearby] = useState(false)
   const [showQuotes, setShowQuotes] = useState(false)
+  const [showSuitGuide, setShowSuitGuide] = useState(false)
+  const [showAccommodations, setShowAccommodations] = useState(false)
 
   // Bottom sheet swipe gesture handling
   const sheetRef = useRef<HTMLDivElement>(null)
@@ -410,7 +414,7 @@ function App() {
         <button
           onClick={() => setShowLocationPicker(!showLocationPicker)}
           className={`
-            px-4 py-2 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg flex items-center gap-2 
+            px-4 py-2 bg-chile-bg-card rounded-xl shadow-lg flex items-center gap-2 
             border transition-all duration-300
             ${selectedLocation ? 'border-chile-accent-red/50 location-selected-btn' : 'border-white/10'}
           `}
@@ -424,7 +428,7 @@ function App() {
 
         {/* Days Counter - Only show before trip */}
         {daysUntil > 0 && (
-          <div className="px-3 py-2 bg-chile-accent-red/90 backdrop-blur-sm rounded-xl shadow-lg text-white">
+          <div className="px-3 py-2 bg-chile-accent-red rounded-xl shadow-lg text-white">
             <span className="font-bold">{daysUntil}</span>
             <span className="text-xs ml-1">Tage</span>
           </div>
@@ -461,11 +465,11 @@ function App() {
               }
             }}
             onKeyDown={handleSearchKeyDown}
-            className="w-10 focus:w-48 transition-all px-2 py-2 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg text-sm placeholder:text-chile-text-muted focus:outline-none border border-white/10 focus:border-chile-accent-red/50 focus:placeholder:opacity-0"
+            className="w-10 focus:w-48 transition-all px-2 py-2 bg-chile-bg-card rounded-xl shadow-lg text-sm placeholder:text-chile-text-muted focus:outline-none border border-white/10 focus:border-chile-accent-red/50 focus:placeholder:opacity-0"
           />
           {/* Global Search Results Dropdown */}
           {showSearchResults && globalSearchResults.length > 0 && (
-            <div className="absolute top-12 right-0 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg border border-white/10 max-h-[60vh] overflow-y-auto w-72 animate-slide-up">
+            <div className="absolute top-12 right-0 bg-chile-bg-card rounded-xl shadow-lg border border-white/10 max-h-[60vh] overflow-y-auto w-72 animate-slide-up">
               <div className="px-3 py-2 border-b border-white/10 flex items-center justify-between">
                 <span className="text-xs text-chile-text-muted">
                   {globalSearchResults.length} Ergebnis{globalSearchResults.length !== 1 ? 'se' : ''} für "{searchQuery}"
@@ -495,7 +499,7 @@ function App() {
             </div>
           )}
           {showSearchResults && globalSearchResults.length === 0 && searchQuery.trim().length >= 1 && (
-            <div className="absolute top-12 right-0 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg border border-white/10 w-60 animate-slide-up">
+            <div className="absolute top-12 right-0 bg-chile-bg-card rounded-xl shadow-lg border border-white/10 w-60 animate-slide-up">
               <div className="px-4 py-3 text-sm text-chile-text-muted text-center">
                 Keine Ergebnisse für "{searchQuery}"
               </div>
@@ -515,7 +519,7 @@ function App() {
             const next = theme === 'dark' ? 'light' : 'dark'
             setTheme(next)
           }}
-          className="w-10 h-10 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg flex items-center justify-center border border-white/10"
+          className="w-10 h-10 bg-chile-bg-card rounded-xl shadow-lg flex items-center justify-center border border-white/10"
           title={theme === 'dark' ? 'Heller Modus' : 'Dunkler Modus'}
         >
           {theme === 'dark' ? '☀️' : '🌙'}
@@ -524,14 +528,14 @@ function App() {
         {/* Burger Menu */}
         <button
           onClick={() => setShowMenu(!showMenu)}
-          className="w-10 h-10 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg flex items-center justify-center border border-white/10"
+          className="w-10 h-10 bg-chile-bg-card rounded-xl shadow-lg flex items-center justify-center border border-white/10"
         >
           <span className="text-lg">☰</span>
         </button>
 
         {/* Menu Dropdown */}
         {showMenu && (
-          <div className="absolute top-12 right-0 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg border border-white/10 min-w-[220px] overflow-hidden max-h-[70vh] overflow-y-auto">
+          <div className="absolute top-12 right-0 bg-chile-bg-card rounded-xl shadow-lg border border-white/10 min-w-[220px] overflow-hidden max-h-[70vh] overflow-y-auto">
             {/* Section: Planung */}
             <div className="px-3 pt-2.5 pb-1">
               <span className="text-[10px] font-semibold text-chile-text-muted uppercase tracking-wider">Planung</span>
@@ -559,6 +563,18 @@ function App() {
               className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm"
             >
               <span>📍</span> In der Nähe
+            </button>
+            <button
+              onClick={() => { setShowSuitGuide(true); setShowMenu(false) }}
+              className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm"
+            >
+              <span>👔</span> Anzug-Guide
+            </button>
+            <button
+              onClick={() => { setShowAccommodations(true); setShowMenu(false) }}
+              className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm"
+            >
+              <span>🏠</span> Unterkünfte
             </button>
 
             {/* Section: Wissen */}
@@ -695,7 +711,7 @@ function App() {
 
       {/* LOCATION PICKER DROPDOWN */}
       {showLocationPicker && (
-        <div className="absolute left-4 z-[600] bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg border border-white/10 max-h-[60vh] overflow-y-auto w-72" style={{ top: 'calc(env(safe-area-inset-top, 0px) + 4rem)' }}>
+        <div className="absolute left-4 z-[600] bg-chile-bg-card rounded-xl shadow-lg border border-white/10 max-h-[60vh] overflow-y-auto w-72" style={{ top: 'calc(env(safe-area-inset-top, 0px) + 4rem)' }}>
           {tripData.locations.map((loc, index) => {
             const isSelected = selectedLocation?.id === loc.id
             return (
@@ -732,7 +748,7 @@ function App() {
         ref={sheetRef}
         className={`
           absolute bottom-0 left-0 right-0 z-[500]
-          bg-chile-bg-card/95 backdrop-blur-sm rounded-t-3xl shadow-lg
+          bg-chile-bg-card rounded-t-3xl shadow-lg
           transition-transform duration-300 ease-out
           ${sheetExpanded ? 'translate-y-0' : 'translate-y-[calc(100%-64px)]'}
         `}
@@ -959,12 +975,12 @@ function App() {
         <div className="absolute inset-0 z-[700] flex items-center justify-center p-4">
           {/* Backdrop */}
           <div 
-            className="absolute inset-0 bg-black/70 backdrop-blur-sm"
+            className="absolute inset-0 bg-black/70"
             onClick={() => setShowFacts(false)}
           />
           
           {/* Facts Card */}
-          <div className="relative bg-chile-bg-card/95 backdrop-blur-sm rounded-2xl shadow-2xl border border-white/10 max-w-md w-full max-h-[80vh] overflow-hidden animate-slide-up">
+          <div className="relative bg-chile-bg-card rounded-2xl shadow-2xl border border-white/10 max-w-md w-full max-h-[80vh] overflow-hidden animate-slide-up">
             {/* Header */}
             <div className="px-4 py-3 border-b border-white/10 flex items-center justify-between">
               <div className="flex items-center gap-2">
@@ -1139,6 +1155,20 @@ function App() {
       {showEmergency && (
         <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">🆘</div></div>}>
           <EmergencyInfo onClose={() => setShowEmergency(false)} />
+        </Suspense>
+      )}
+
+      {/* SUIT GUIDE */}
+      {showSuitGuide && (
+        <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">👔</div></div>}>
+          <SuitGuide onClose={() => setShowSuitGuide(false)} />
+        </Suspense>
+      )}
+
+      {/* ACCOMMODATIONS */}
+      {showAccommodations && (
+        <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">🏠</div></div>}>
+          <AccommodationsPage onClose={() => setShowAccommodations(false)} />
         </Suspense>
       )}
 
