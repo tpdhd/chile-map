@@ -15,16 +15,14 @@
   - `updateWhenIdle: true` - Tiles nur laden wenn Map still steht
 
 ### Weitere Optionen (TODO)
-- [ ] **PWA Service Worker** für Tile-Caching
-  - Tiles für Chile-Region (-55° bis -17° Lat) vorladen
-  - Zoom-Level 5-12 cachen (ca. 50MB)
-  - Workbox für intelligentes Caching
 - [ ] **Vector Tiles** statt Raster (MapLibre GL)
   - Kleinere Downloads
   - Bessere Qualität bei allen Zoom-Leveln
   - Protomaps als Alternative
-- [ ] **Tile Preloading** bei Location-Wechsel
-  - Nächste Location-Tiles im Hintergrund laden
+- [x] **Tile Preloading** bei Location-Wechsel ✓ (2026-02-10)
+  - `<link rel="prefetch">` für Tiles um die ausgewählte Location
+  - Zoom-Level 10, 12, 14 mit Radius 2 vorgeladen
+  - Auto-Cleanup nach 30s um DOM sauber zu halten
 
 ---
 
@@ -159,15 +157,15 @@
 - Osorno: 21 | Frutillar/PV: 22 | Puerto Montt/Chiloé: 38
 - **Total: 282 Empfehlungen** ✓ (Alle Locations 20+ Recs, Sierra Nevada duplicate merged)
 
-### Status Fakten (2026-02-09, Duplikat-Cleanup + Balance)
-- **Total: 315 Fakten** (10 Duplikate entfernt, 10 neue Fakten hinzugefügt)
-- Duplikat-Bereinigung: 10 Near-Duplicates entfernt (2026-02-09 02:30)
-- 10 neue Fakten für Chillán (6) + Quillimari (4) als Balance-Update
+### Status Fakten (2026-02-10, Deep Cleanup + Balance)
+- **Total: 309 Fakten** (17 Duplikate entfernt, 11 neue Fakten hinzugefügt)
+- Duplikat-Bereinigung: 17 Near-Duplicates entfernt (2026-02-10 01:00)
+- 11 neue Fakten für San Carlos (4), Quillimari (3), Valdivia (2), Wine Resort (2)
 - Quellen: Insight Guides 2024, Rough Guides 2023, Bradt Carretera Austral 2022
-- General: 64, Chiloé/PM: 28, Santiago: 25, Frutillar/PV: 23
-- Conguillío: 21, Osorno: 20, Quillimari: 20, Chillán: 20
-- Valdivia: 19, Pucón: 19, Algarrobo: 19, Wine Resort: 19
-- San Carlos: 18
+- General: 63, Chiloé/PM: 27, Santiago: 23, Frutillar/PV: 22
+- Conguillío: 21, Osorno: 20, Valdivia: 20, Wine Resort: 20
+- Chillan: 19, Pucón: 19, Algarrobo: 19
+- San Carlos: 18, Quillimari: 18
 - **Alle Locations 18+ Fakten ✓**
 
 ### TypeScript
@@ -254,4 +252,11 @@
 - ✓ Stale Category-Icons bereinigt (Map.tsx)
 - ✓ Touch-Targets vergrößert (w-7→w-9, w-8→w-10)
 
-*Letzte Aktualisierung: 2026-02-10 00:30*
+### Tile Preloading (2026-02-10)
+- ✓ Automatisches Tile-Prefetching bei Location-Wechsel
+- ✓ `<link rel="prefetch" as="image">` für Low-Priority Background Loading
+- ✓ Zoom-Level 10, 12, 14 mit Radius 2 Tiles
+- ✓ Auto-Cleanup nach 30 Sekunden
+- ✓ PWA Service Worker cached die Tiles dann dauerhaft
+
+*Letzte Aktualisierung: 2026-02-10 01:30*
