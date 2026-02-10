@@ -13,13 +13,13 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html,ico,png,svg,json}'],
         runtimeCaching: [
           {
-            // Mapbox dark tile images (current map provider) - cache-first for instant revisits
-            urlPattern: /^https:\/\/api\.mapbox\.com\/styles\/v1\/mapbox\/dark-v11\/tiles\/.*/i,
+            // Mapbox tile images (dark-v11 for dark mode, outdoors-v12 for light mode) - cache-first for instant revisits
+            urlPattern: /^https:\/\/api\.mapbox\.com\/styles\/v1\/mapbox\/(dark-v11|outdoors-v12)\/tiles\/.*/i,
             handler: 'CacheFirst',
             options: {
-              cacheName: 'mapbox-tiles-v1',
+              cacheName: 'mapbox-tiles-v2',
               expiration: {
-                maxEntries: 8000,
+                maxEntries: 16000,
                 maxAgeSeconds: 60 * 60 * 24 * 90, // 90 days (covers the trip)
               },
               cacheableResponse: {

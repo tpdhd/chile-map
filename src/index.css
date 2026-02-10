@@ -2,6 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
+/* CSS Variables for Theme Switching */
+:root {
+  --bg-primary: #f8f9fa;
+  --bg-secondary: #e9ecef;
+  --bg-card: #ffffff;
+  --text-primary: #1a1a2e;
+  --text-secondary: #495057;
+  --text-muted: #868e96;
+  --accent-red: #e63946;
+  --accent-teal: #2a9d8f;
+}
+
+.dark {
+  --bg-primary: #0f0f14;
+  --bg-secondary: #1a1a24;
+  --bg-card: #242432;
+  --text-primary: #f1f1f1;
+  --text-secondary: #a0a0b0;
+  --text-muted: #6b6b7b;
+  --accent-red: #e63946;
+  --accent-teal: #2a9d8f;
+}
+
+/* Light mode adjustments for bg-white opacity classes */
+.light .bg-white\/5 {
+  background: rgba(0, 0, 0, 0.05) !important;
+}
+
+.light .bg-white\/10 {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+
+.light .bg-white\/20 {
+  background: rgba(0, 0, 0, 0.08) !important;
+}
+
+.light .hover\:bg-white\/5:hover {
+  background: rgba(0, 0, 0, 0.05) !important;
+}
+
+.light .hover\:bg-white\/20:hover {
+  background: rgba(0, 0, 0, 0.15) !important;
+}
+
+.light .border-white\/10 {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.light .border-white\/5 {
+  border-color: rgba(0, 0, 0, 0.05) !important;
+}
+
 /* Safe area insets for notched phones / fullscreen PWA */
 html {
   height: 100%;
@@ -9,7 +61,7 @@ html {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #0f0f14;
+  background-color: var(--bg-primary);
 }
 
 body {
@@ -19,7 +71,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #0f0f14;
+  background-color: var(--bg-primary);
 }
 
 #root {
@@ -29,7 +81,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #0f0f14;
+  background-color: var(--bg-primary);
 }
 
 /* Custom animations */
@@ -141,9 +193,9 @@ body {
   }
 }
 
-/* Leaflet dark mode overrides */
+/* Leaflet theme overrides */
 .leaflet-container {
-  background: #0f0f14;
+  background: var(--bg-primary);
 }
 
 /* Smooth tile loading - optimized for performance */
@@ -182,18 +234,19 @@ body {
 }
 
 .leaflet-control-zoom a {
-  background-color: #242432 !important;
-  color: #f1f1f1 !important;
-  border-color: #3a3a4a !important;
+  background-color: var(--bg-card) !important;
+  color: var(--text-primary) !important;
+  border-color: rgba(0, 0, 0, 0.2) !important;
 }
 
 .leaflet-control-zoom a:hover {
-  background-color: #3a3a4a !important;
+  opacity: 0.8;
 }
 
 .leaflet-control-attribution {
-  background: rgba(15, 15, 20, 0.8) !important;
-  color: #6b6b7b !important;
+  background: var(--bg-card) !important;
+  opacity: 0.8;
+  color: var(--text-muted) !important;
 }
 
 .leaflet-control-attribution a {
@@ -347,16 +400,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a24;
+  background: var(--bg-secondary);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3a3a4a;
+  background: var(--text-muted);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #4a4a5a;
+  background: var(--text-secondary);
 }
 
 /* Timeline */
@@ -395,8 +448,8 @@ body {
     max-height: 60vh;
     border-radius: 20px 20px 0 0;
     overflow-y: auto;
-    background: #0f0f14;
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5);
+    background: var(--bg-primary);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
     z-index: 1000;
     transition: transform 0.3s ease-out;
   }
@@ -433,24 +486,24 @@ body {
   }
 }
 
-/* Leaflet popup dark mode */
+/* Leaflet popup theme-aware */
 .leaflet-popup-content-wrapper {
-  background: #242432 !important;
-  color: #f1f1f1 !important;
+  background: var(--bg-card) !important;
+  color: var(--text-primary) !important;
   border-radius: 12px !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
 }
 
 .leaflet-popup-tip {
-  background: #242432 !important;
+  background: var(--bg-card) !important;
 }
 
 .leaflet-popup-close-button {
-  color: #a0a0b0 !important;
+  color: var(--text-secondary) !important;
 }
 
 .leaflet-popup-close-button:hover {
-  color: #f1f1f1 !important;
+  color: var(--text-primary) !important;
 }
 
 /* Smooth transitions for map controls */

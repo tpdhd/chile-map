@@ -24,6 +24,9 @@ export type Recommendation = typeof tripData.locations[0]['recommendations'][0]
 const FAVORITES_KEY = 'chile-trip-favorites'
 const NOTES_KEY = 'chile-trip-notes'
 const VISITED_KEY = 'chile-trip-visited'
+const THEME_KEY = 'chile-trip-theme'
+
+type Theme = 'dark' | 'light' | 'auto'
 
 // Category icons for quick visual reference
 const CATEGORY_ICONS: Record<string, string> = {
@@ -102,6 +105,10 @@ const getGoogleMapsSearchUrl = (name: string, locationName?: string) => {
 }
 
 function App() {
+  const [theme, setTheme] = useState<Theme>(() => {
+    const saved = localStorage.getItem(THEME_KEY)
+    return (saved === 'dark' || saved === 'light' || saved === 'auto') ? saved : 'dark'
+  })
   const [selectedLocation, setSelectedLocation] = useState<Location | null>(null)
   const [selectedRecommendation, setSelectedRecommendation] = useState<Recommendation | null>(null)
   const [activeCategory, setActiveCategory] = useState<string | null>(null)
@@ -250,6 +257,26 @@ function App() {
     }, 400)
   }, [])
 
+  // Apply theme to HTML element and persist to localStorage
+  useEffect(() => {
+    let effectiveTheme = theme
+    if (theme === 'auto') {
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+      effectiveTheme = prefersDark ? 'dark' : 'light'
+    }
+    
+    const html = document.documentElement
+    if (effectiveTheme === 'dark') {
+      html.classList.add('dark')
+      html.classList.remove('light')
+    } else {
+      html.classList.add('light')
+      html.classList.remove('dark')
+    }
+    
+    localStorage.setItem(THEME_KEY, theme)
+  }, [theme])
+
   // Load saved data from localStorage
   useEffect(() => {
     try {
@@ -372,6 +399,7 @@ function App() {
             onLocationSelect={(loc) => handleLocationSelect(loc, true)}
             onRecommendationSelect={handleRecommendationSelect}
             activeCategory={activeCategory}
+            theme={theme}
           />
         </Suspense>
       </div>
@@ -481,6 +509,18 @@ function App() {
           )}
         </div>
         
+        {/* Theme Toggle */}
+        <button
+          onClick={() => {
+            const next = theme === 'dark' ? 'light' : 'dark'
+            setTheme(next)
+          }}
+          className="w-10 h-10 bg-chile-bg-card/95 backdrop-blur-sm rounded-xl shadow-lg flex items-center justify-center border border-white/10"
+          title={theme === 'dark' ? 'Heller Modus' : 'Dunkler Modus'}
+        >
+          {theme === 'dark' ? '☀️' : '🌙'}
+        </button>
+
         {/* Burger Menu */}
         <button
           onClick={() => setShowMenu(!showMenu)}

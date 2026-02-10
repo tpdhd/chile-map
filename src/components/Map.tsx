@@ -86,7 +86,7 @@ const categoryIcons: Record<string, string> = {
 }
 
 // Preload tiles around a coordinate to warm the browser cache
-function preloadTilesAround(lat: number, lon: number, zoomLevels: number[] = [10, 12, 14], radius: number = 2) {
+function preloadTilesAround(lat: number, lon: number, style: string = 'dark-v11', zoomLevels: number[] = [10, 12, 14], radius: number = 2) {
   const token = atob('cGsuZXlKMUlqb2liWE53WkROMklpd2lZU0k2SW1OdGJHTTNaalZ3Y2pCMk0zUXphM05uZEdsMmFIcDFiV1FpZlEuWnZaWWQ5UlRVczdUcmw0WFZ6RWRlQQ==')
   const urls: string[] = []
   
@@ -102,7 +102,7 @@ function preloadTilesAround(lat: number, lon: number, zoomLevels: number[] = [10
         const y = cy + dy
         if (x < 0 || y < 0 || x >= n || y >= n) continue
         urls.push(
-          `https://api.mapbox.com/styles/v1/mapbox/dark-v11/tiles/512/${zoom}/${x}/${y}@2x?access_token=${token}`
+          `https://api.mapbox.com/styles/v1/mapbox/${style}/tiles/512/${zoom}/${x}/${y}@2x?access_token=${token}`
         )
       }
     }
@@ -134,15 +134,18 @@ interface MapProps {
   onLocationSelect: (location: Location) => void
   onRecommendationSelect: (recommendation: Recommendation) => void
   activeCategory: string | null
+  theme: 'dark' | 'light' | 'auto'
 }
 
 // Component to handle map view changes
 function MapController({ 
   selectedLocation, 
-  selectedRecommendation 
+  selectedRecommendation,
+  mapStyle
 }: { 
   selectedLocation: Location | null
-  selectedRecommendation: Recommendation | null 
+  selectedRecommendation: Recommendation | null
+  mapStyle: string
 }) {
   const map = useMap()
 
@@ -150,9 +153,9 @@ function MapController({
   useEffect(() => {
     if (selectedLocation) {
       const [lat, lon] = selectedLocation.coordinates as [number, number]
-      preloadTilesAround(lat, lon)
+      preloadTilesAround(lat, lon, mapStyle)
     }
-  }, [selectedLocation])
+  }, [selectedLocation, mapStyle])
 
   useEffect(() => {
     // Calculate offset: bottom sheet takes ~40% of screen, so offset by ~20% of viewport height
@@ -206,9 +209,18 @@ export default function Map({
   selectedRecommendation,
   onLocationSelect,
   onRecommendationSelect,
-  activeCategory
+  activeCategory,
+  theme
 }: MapProps) {
   const mapRef = useRef<L.Map>(null)
+
+  // Determine effective theme and map style
+  const effectiveTheme = theme === 'auto' 
+    ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+    : theme
+  
+  const mapStyle = effectiveTheme === 'dark' ? 'dark-v11' : 'outdoors-v12'
+  const mapboxToken = atob('cGsuZXlKMUlqb2liWE53WkROMklpd2lZU0k2SW1OdGJHTTNaalZ3Y2pCMk0zUXphM05uZEdsMmFIcDFiV1FpZlEuWnZaWWQ5UlRVczdUcmw0WFZ6RWRlQQ==')
 
   // Create route line coordinates
   const routeCoordinates = locations.map(loc => loc.coordinates as [number, number])
@@ -273,9 +285,10 @@ export default function Map({
       attributionControl={false}
       zoomControl={false}
     >
-      {/* Dark mode tile layer - Mapbox Dark */}
+      {/* Theme-aware tile layer - Mapbox Dark or Outdoors */}
       <TileLayer
-        url={`https://api.mapbox.com/styles/v1/mapbox/dark-v11/tiles/512/{z}/{x}/{y}@2x?access_token=${atob('cGsuZXlKMUlqb2liWE53WkROMklpd2lZU0k2SW1OdGJHTTNaalZ3Y2pCMk0zUXphM05uZEdsMmFIcDFiV1FpZlEuWnZaWWQ5UlRVczdUcmw0WFZ6RWRlQQ==')}`}
+        key={mapStyle}
+        url={`https://api.mapbox.com/styles/v1/mapbox/${mapStyle}/tiles/512/{z}/{x}/{y}@2x?access_token=${mapboxToken}`}
         attribution='&copy; <a href="https://www.mapbox.com/">Mapbox</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         maxZoom={22}
         tileSize={512}
@@ -330,6 +343,7 @@ export default function Map({
       <MapController 
         selectedLocation={selectedLocation} 
         selectedRecommendation={selectedRecommendation}
+        mapStyle={mapStyle}
       />
     </MapContainer>
   )
