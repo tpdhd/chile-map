@@ -698,13 +698,6 @@
       "source": "Insight Guides Chile 2024"
     },
     {
-      "id": 105,
-      "text": "Villa Baviera (Ex-Colonia Dignidad) war eine geschlossene deutsche Enklave, die von 1961-2005 unter Paul Schäfer existierte — heute ein kontroverses Tourismusziel.",
-      "category": "history",
-      "location": "san-carlos",
-      "source": "Insight Guides Chile 2024"
-    },
-    {
       "id": 106,
       "text": "Pablo Neruda wurde 1904 in Parral geboren, 30km von Villa Baviera — sein Vater war Eisenbahner.",
       "category": "culture",
@@ -1206,13 +1199,6 @@
       "id": 178
     },
     {
-      "id": 179,
-      "text": "Pichidangui bedeutet auf Mapudungun 'klein'. Der Ort hat weiße Sandstrände mit starker Brandung — perfekt zum Surfen.",
-      "category": "beach",
-      "location": "quillimari",
-      "source": "Rough Guides Chile 2023"
-    },
-    {
       "id": 180,
       "text": "Viña Undurraga bei Melipilla lässt sich ideal mit einem Besuch in Algarrobo oder Las Cruces verbinden — Weinkultur trifft Küstengenuss.",
       "category": "food",
@@ -1279,25 +1265,11 @@
       "source": "Rough Guides Chile 2023"
     },
     {
-      "text": "\"Pichi\" bedeutet \"klein\" in der Mapuche-Sprache. Die Küstenorte Pichicuy und Pichidangui tragen diesen Namen und bieten weiße Sandstrände mit starker Brandung.",
-      "category": "culture",
-      "location": "quillimari",
-      "source": "Insight Guides Chile 2024",
-      "id": 192
-    },
-    {
       "text": "In Pichicuy steht eine Kirche, die auf einem Felsvorsprung über dem Meer errichtet wurde – ein spektakulärer Anblick bei Sonnenuntergang.",
       "category": "unique",
       "location": "quillimari",
       "source": "Insight Guides Chile 2024",
       "id": 193
-    },
-    {
-      "text": "Die Felsengärten von Los Molles haben unterirdische Höhlen, die ein donnerndes Grollen erzeugen. Zwischen ihnen liegt ein Vogelschutzgebiet mit reichem Meeresleben.",
-      "category": "nature",
-      "location": "quillimari",
-      "source": "Insight Guides Chile 2024",
-      "id": 194
     },
     {
       "text": "Der Sillón del Gobernador (Gouverneursstuhl) bei Los Molles ist mit 695 Metern die höchste Seeklippe Chiles und bei gutem Wetter von Valparaíso aus sichtbar.",
@@ -2032,13 +2004,6 @@
       "source": "Insight Guides Chile 2024"
     },
     {
-      "text": "Bernardo O'Higgins, Gründervater Chiles, war der uneheliche Sohn eines irischen Gouverneurs und einer Dame aus Chillán — Doña Isabel Riquelme.",
-      "category": "history",
-      "location": "chillan",
-      "source": "Insight Guides Chile 2024",
-      "id": 306
-    },
-    {
       "text": "Der Parque Monumental Bernardo O'Higgins in Chillán hat eine 60m lange Mosaik-Wand über das Leben des Freiheitshelden — seine Mutter und Schwester sind in der Kapelle nebenan begraben.",
       "category": "history",
       "location": "chillan",
@@ -2109,13 +2074,6 @@
       "id": 320
     },
     {
-      "text": "Die Isla de los Lobos, 5 km südlich von Los Vilos, beherbergt eine große Seelöwen-Kolonie — man kann sie vom Ufer aus beobachten oder mit einem Fischerboot näher heranfahren.",
-      "category": "nature",
-      "location": "quillimari",
-      "source": "Rough Guides Chile 2023",
-      "id": 321
-    },
-    {
       "text": "Los Vilos war einst berüchtigt für Straßenräuberei — heute ist die Stadt ein entspannter Küstenort mit einem langen goldenen Strand und einem lebhaften Fischmarkt.",
       "category": "history",
       "location": "quillimari",
@@ -2137,13 +2095,6 @@
       "id": 324
     },
     {
-      "text": "Pablo Morandé 'entdeckte' das Casablanca-Tal für den Weinbau in den 1980ern — er suchte einen kühleren Ort für Weißweintrauben und revolutionierte damit Chiles Weinindustrie.",
-      "category": "food",
-      "location": "wine-resort",
-      "source": "Insight Guides Chile 2024",
-      "id": 325
-    },
-    {
       "text": "Am Sendero de Chile kann man bei Santiago 8 km entlang der Anden-Ausläufer wandern — mit einem spektakulären Panorama über die gesamte Stadt bis zum Pazifik.",
       "category": "nature",
       "location": "wine-resort",
@@ -2151,46 +2102,11 @@
       "id": 326
     },
     {
-      "id": 327,
-      "text": "Pichidangui und Pichicuy bedeuten \"klein\" — \"pichi\" ist Mapudungun (Mapuche-Sprache) für \"klein\". Die weißen Sandstrände dort haben starke Brandung.",
-      "category": "culture",
-      "location": "quillimari",
-      "source": "Insight Guides Chile 2024"
-    },
-    {
-      "id": 328,
-      "text": "Bei Los Molles nahe Quillimari gibt es unterirdische Höhlen, die bei Wellengang ein donnerndes Brausen erzeugen. Dort befindet sich auch ein Vogelschutzgebiet mit reichem Meeresleben.",
-      "category": "nature",
-      "location": "quillimari",
-      "source": "Insight Guides Chile 2024"
-    },
-    {
-      "id": 329,
-      "text": "Der \"Silla del Gobernador\" (Gouverneursstuhl) bei Los Molles ist mit 695 Metern die höchste Seeklippe Chiles — bei guter Sicht kann man sie sogar von Valparaíso aus sehen.",
-      "category": "geography",
-      "location": "quillimari",
-      "source": "Insight Guides Chile 2024"
-    },
-    {
-      "id": 330,
-      "text": "Los Vilos, nördlich von Quillimari, verdankt seinen Namen angeblich dem britischen Piraten \"Lord Willow\", der nach einem Schiffbruch beschloss, einfach dort zu bleiben.",
-      "category": "history",
-      "location": "quillimari",
-      "source": "Rough Guides Chile 2023"
-    },
-    {
       "id": 331,
       "text": "La Ligua, nahe der Küstenstraße, ist berühmt für seine \"dulces de La Ligua\" — Kuchen aus Biskuit oder Baiser gefüllt mit Manjar (chilenischem Karamell). Ein lohnender Stopp!",
       "category": "food",
       "location": "quillimari",
       "source": "Insight Guides Chile 2024"
-    },
-    {
-      "id": 332,
-      "text": "La Ligua war die Heimat einer der berüchtigtsten Figuren Chiles: Catalina de los Ríos (\"La Quintrala\"), geboren 1604, die über 40 Menschen ermordete — darunter ihren eigenen Vater.",
-      "category": "history",
-      "location": "quillimari",
-      "source": "Rough Guides Chile 2023"
     },
     {
       "id": 333,
@@ -2221,20 +2137,6 @@
       "source": "Insight Guides Chile 2024"
     },
     {
-      "id": 337,
-      "text": "Chillán wurde seit seiner Gründung 1550 immer wieder zerstört und neu aufgebaut — durch Mapuche-Angriffe und Erdbeben. Die heutige Architektur stammt größtenteils vom Wiederaufbau nach dem verheerenden Erdbeben von 1939.",
-      "category": "history",
-      "location": "chillan",
-      "source": "Rough Guides Chile 2023"
-    },
-    {
-      "id": 338,
-      "text": "Die Feria de Chillán auf der Plaza de la Merced ist einer der lebendigsten Märkte Chiles — samstags quillt er über den Platz hinaus in die umliegenden Straßen. Von Strickwaren über Lederwaren bis zu Büchern gibt es alles.",
-      "category": "culture",
-      "location": "chillan",
-      "source": "Rough Guides Chile 2023"
-    },
-    {
       "id": 339,
       "text": "Der Litoral Central — die 250 km Küste zwischen Rocas de Santo Domingo und Los Vilos — ist Chiles meistbesuchter Küstenabschnitt. Algarrobo liegt mittendrin in diesem beliebten Strandparadies.",
       "category": "geography",
@@ -2261,8 +2163,64 @@
       "category": "nature",
       "location": "pucon",
       "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 343,
+      "text": "Zapallar nördlich von Quilimarí ist Chiles exklusivster Badeort — die Luxusvillen zwischen Pinien sind eingerahmt von einer hufeisenförmigen Bucht mit kristallklarem Wasser.",
+      "category": "unique",
+      "location": "quillimari",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 344,
+      "text": "Papudo, 10 km südlich von Zapallar, wird dramatisch von steilen Hügeln eingerahmt — trotz einiger hässlicher Betonbauten am Meer hat der Ort eine herzliche, lokale Atmosphäre.",
+      "category": "unique",
+      "location": "quillimari",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 345,
+      "text": "Cachagua bei Zapallar ist ein Synonym für Chiles Oberschicht — am Strand gibt es statt Ferienhäusern einen Golfplatz und eine versteckte Treppe zur oft menschenleeren Playa Las Cujas.",
+      "category": "unique",
+      "location": "quillimari",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 346,
+      "text": "Nördlich von La Ligua folgt die Panamericana 200 km lang der Küste — eine Abfolge traumhafter weißer Sandstrände mit kleinen Dörfern, fast ohne Bebauung direkt am Wasser.",
+      "category": "geography",
+      "location": "quillimari",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 347,
+      "text": "La Ligua feiert zu Ostern eine einzigartige Prozession: berittene Huasos in voller Tracht, gefolgt von einem riesigen Pinguin — eine der kuriosesten Traditionen Chiles.",
+      "category": "culture",
+      "location": "quillimari",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 348,
+      "text": "Valle Las Trancas, 8 km unterhalb des Skiresorts Nevados de Chillán, hat sich zur Après-Ski-Meile entwickelt — der Snow Pub ist legendär für laute Musik, billiges Bier und eine volle Tanzfläche ab 2 Uhr nachts.",
+      "category": "unique",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 349,
+      "text": "Eine ideale Tageswanderung von Nevados de Chillán führt ins Valle de Aguas Calientes — natürliche heiße Quellen am Zusammenfluss dreier Flüsse, umgeben von alpiner Berglandschaft.",
+      "category": "nature",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 350,
+      "text": "Im Zentraltal zwischen Santiago und Chillán sieht man noch Pferdegespanne auf der Panamericana — die einzige Region Chiles, wo ländliche Traditionen den Alltag so stark prägen.",
+      "category": "culture",
+      "location": "wine-resort",
+      "source": "Rough Guides Chile 2023"
     }
   ],
   "lastUpdated": "2026-02-10",
-  "totalFacts": 325
+  "totalFacts": 319
 }
