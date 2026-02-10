@@ -2149,8 +2149,120 @@
       "location": "wine-resort",
       "source": "Insight Guides Chile 2024",
       "id": 326
+    },
+    {
+      "id": 327,
+      "text": "Pichidangui und Pichicuy bedeuten \"klein\" — \"pichi\" ist Mapudungun (Mapuche-Sprache) für \"klein\". Die weißen Sandstrände dort haben starke Brandung.",
+      "category": "culture",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 328,
+      "text": "Bei Los Molles nahe Quillimari gibt es unterirdische Höhlen, die bei Wellengang ein donnerndes Brausen erzeugen. Dort befindet sich auch ein Vogelschutzgebiet mit reichem Meeresleben.",
+      "category": "nature",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 329,
+      "text": "Der \"Silla del Gobernador\" (Gouverneursstuhl) bei Los Molles ist mit 695 Metern die höchste Seeklippe Chiles — bei guter Sicht kann man sie sogar von Valparaíso aus sehen.",
+      "category": "geography",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 330,
+      "text": "Los Vilos, nördlich von Quillimari, verdankt seinen Namen angeblich dem britischen Piraten \"Lord Willow\", der nach einem Schiffbruch beschloss, einfach dort zu bleiben.",
+      "category": "history",
+      "location": "quillimari",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 331,
+      "text": "La Ligua, nahe der Küstenstraße, ist berühmt für seine \"dulces de La Ligua\" — Kuchen aus Biskuit oder Baiser gefüllt mit Manjar (chilenischem Karamell). Ein lohnender Stopp!",
+      "category": "food",
+      "location": "quillimari",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 332,
+      "text": "La Ligua war die Heimat einer der berüchtigtsten Figuren Chiles: Catalina de los Ríos (\"La Quintrala\"), geboren 1604, die über 40 Menschen ermordete — darunter ihren eigenen Vater.",
+      "category": "history",
+      "location": "quillimari",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 333,
+      "text": "Colonia Dignidad (heute Villa Baviera) wurde 1961 von dem deutschen Prediger Paul Schäfer gegründet. Die Kolonie hatte ein eigenes Krankenhaus, Schule und Kraftwerk — ein Staat im Staat.",
+      "category": "history",
+      "location": "san-carlos",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 334,
+      "text": "Villa Baviera versucht heute, sich als touristisches Ziel mit bayerischem Flair zu positionieren — inklusive Biergarten, Kuchen und deutschem Restaurant. Die dunkle Geschichte bleibt spürbar.",
+      "category": "culture",
+      "location": "san-carlos",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 335,
+      "text": "Die Region Ñuble um Chillán und San Carlos ist eine der jüngsten Regionen Chiles — sie wurde erst 2018 von der Region Bío-Bío abgetrennt und erhielt eigene Verwaltung.",
+      "category": "geography",
+      "location": "san-carlos",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 336,
+      "text": "Parral, südlich von San Carlos, ist der Geburtsort des Dichters Pablo Neruda und des Schriftstellers Luis Sepúlveda — zwei literarische Giganten aus derselben Region.",
+      "category": "culture",
+      "location": "san-carlos",
+      "source": "Insight Guides Chile 2024"
+    },
+    {
+      "id": 337,
+      "text": "Chillán wurde seit seiner Gründung 1550 immer wieder zerstört und neu aufgebaut — durch Mapuche-Angriffe und Erdbeben. Die heutige Architektur stammt größtenteils vom Wiederaufbau nach dem verheerenden Erdbeben von 1939.",
+      "category": "history",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 338,
+      "text": "Die Feria de Chillán auf der Plaza de la Merced ist einer der lebendigsten Märkte Chiles — samstags quillt er über den Platz hinaus in die umliegenden Straßen. Von Strickwaren über Lederwaren bis zu Büchern gibt es alles.",
+      "category": "culture",
+      "location": "chillan",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 339,
+      "text": "Der Litoral Central — die 250 km Küste zwischen Rocas de Santo Domingo und Los Vilos — ist Chiles meistbesuchter Küstenabschnitt. Algarrobo liegt mittendrin in diesem beliebten Strandparadies.",
+      "category": "geography",
+      "location": "algarrobo",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 340,
+      "text": "Pablo Nerudas Haus in Isla Negra, nur wenige Kilometer von Algarrobo, ist vollgestopft mit seinen Sammlungen: afrikanische Schnitzereien, viktorianische Puppen, Spieluhren und Briefbeschwerer — ein Universum der Obsessionen.",
+      "category": "culture",
+      "location": "algarrobo",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 341,
+      "text": "Pucón ist Chiles Adrenalin-Hauptstadt: Vulkanbesteigung, Wildwasser-Rafting auf dem Río Trancura, Fallschirmspringen, Mountainbiking, Hundeschlitten und sogar Snowboarden — alles an einem Ort.",
+      "category": "unique",
+      "location": "pucon",
+      "source": "Rough Guides Chile 2023"
+    },
+    {
+      "id": 342,
+      "text": "Der Volcán Villarrica (2.840m) über Pucón ist einer der aktivsten Vulkane Chiles — und einer der wenigen weltweit, die man als Anfänger besteigen kann. Der Blick in den glühenden Krater ist unvergesslich.",
+      "category": "nature",
+      "location": "pucon",
+      "source": "Rough Guides Chile 2023"
     }
   ],
   "lastUpdated": "2026-02-10",
-  "totalFacts": 309
+  "totalFacts": 325
 }
