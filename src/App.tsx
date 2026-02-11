@@ -818,119 +818,133 @@ function App() {
           </div>
         </div>
 
-        {/* Sheet Content - Accommodations Mode */}
-        {sheetExpanded && showAccommodationsOnMap && selectedAccommodation && (
+        {/* Sheet Content - Accommodations Mode (same style as Recommendations) */}
+        {sheetExpanded && showAccommodationsOnMap && (
           <div className="overflow-y-auto px-4 pb-4" style={{ maxHeight: 'calc(50vh - 70px)' }}>
-            <div className="space-y-3">
-              {/* Accommodation Details */}
-              <div className="p-3 rounded-lg bg-white/5">
-                <div className="flex items-center justify-between mb-2">
-                  <h3 className="font-bold text-base">{selectedAccommodation.name}</h3>
-                  <button
-                    onClick={() => setSelectedAccommodation(null)}
-                    className="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center"
-                  >
-                    ✕
-                  </button>
-                </div>
-                
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="px-2 py-0.5 bg-chile-accent-teal/20 text-chile-accent-teal text-xs rounded-full">
-                    {selectedAccommodation.type === 'apartment' ? 'Apartment' :
-                     selectedAccommodation.type === 'hotel' ? 'Hotel' :
-                     selectedAccommodation.type === 'hostel' ? 'Hostel' :
-                     selectedAccommodation.type === 'cabana' ? 'Cabaña' : selectedAccommodation.type}
-                  </span>
-                  <span className={`px-2 py-0.5 text-xs rounded-full ${
-                    selectedAccommodation.priceRange === '$' ? 'bg-green-500/20 text-green-400' :
-                    selectedAccommodation.priceRange === '$$' ? 'bg-amber-500/20 text-amber-400' :
-                    'bg-purple-500/20 text-purple-400'
-                  }`}>
-                    {selectedAccommodation.priceRange}
-                  </span>
-                </div>
-
-                <p className="text-xs text-chile-text-secondary mb-3">{selectedAccommodation.description}</p>
-
-                <div className="grid grid-cols-2 gap-2 mb-3">
-                  <div className="p-2 rounded-lg bg-white/5">
-                    <div className="text-xs text-chile-text-muted mb-0.5">Preis</div>
-                    <div className="text-sm font-bold text-amber-400">{selectedAccommodation.priceEstimate}</div>
-                  </div>
-                  <div className="p-2 rounded-lg bg-white/5">
-                    <div className="text-xs text-chile-text-muted mb-0.5">Rating</div>
-                    <div className="text-sm font-bold text-green-400">
-                      {'⭐'.repeat(Math.round(selectedAccommodation.rating))} {selectedAccommodation.rating}
+            <div className="space-y-2">
+              {allAccommodations.map(acc => (
+                <div 
+                  key={acc.id}
+                  id={`acc-${acc.id}`}
+                  className={`
+                    p-2.5 rounded-lg transition-all cursor-pointer
+                    ${selectedAccommodation?.id === acc.id ? 'recommendation-highlighted ring-2 ring-green-500' : 'bg-white/5'}
+                  `}
+                  onClick={() => handleAccommodationSelect(acc)}
+                >
+                  <div className="flex items-center gap-2">
+                    {/* Icon */}
+                    <span className="text-lg flex-shrink-0">🏠</span>
+                    
+                    {/* Content */}
+                    <div className="flex-1 min-w-0">
+                      <div className="font-medium text-sm truncate">{acc.name}</div>
+                      <div className="text-xs text-chile-text-muted truncate">
+                        {acc.type === 'apartment' ? 'Apartment' :
+                         acc.type === 'hotel' ? 'Hotel' :
+                         acc.type === 'hostel' ? 'Hostel' :
+                         acc.type === 'cabana' ? 'Cabaña' : acc.type}
+                        {' • '}{acc.priceRange}
+                        {' • ⭐ '}{acc.rating}
+                      </div>
                     </div>
-                    <div className="text-[9px] text-chile-text-muted">{selectedAccommodation.ratingSource}</div>
-                  </div>
-                </div>
 
-                {selectedAccommodation.amenities.length > 0 && (
-                  <div className="mb-3">
-                    <div className="text-xs font-bold text-chile-text-muted mb-1.5">Ausstattung</div>
-                    <div className="flex flex-wrap gap-1">
-                      {selectedAccommodation.amenities.slice(0, 6).map(amenity => (
-                        <span key={amenity} className="px-2 py-0.5 bg-white/5 text-[10px] text-chile-text-muted rounded-full">
-                          {amenity}
-                        </span>
-                      ))}
-                      {selectedAccommodation.amenities.length > 6 && (
-                        <span className="px-2 py-0.5 bg-white/5 text-[10px] text-chile-text-muted rounded-full">
-                          +{selectedAccommodation.amenities.length - 6} mehr
-                        </span>
+                    {/* Google Maps Button */}
+                    <a
+                      href={acc.googleMapsLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="w-7 h-7 rounded-full bg-white flex items-center justify-center flex-shrink-0"
+                      title="In Google Maps öffnen"
+                    >
+                      <svg viewBox="0 0 48 48" className="w-4 h-4">
+                        <path fill="#48b564" d="M35.76,26.36h0.01c0,0-3.77,5.53-6.94,9.64c-2.74,3.55-3.54,6.59-3.77,8.06c-0.21,1.36-0.66,3.94-1.02,3.94c-0.36,0-0.81-2.59-1.02-3.94c-0.23-1.47-1.03-4.51-3.77-8.06c-3.17-4.11-6.95-9.64-6.95-9.64S8,20.45,8,16c0-7.73,6.27-14,14-14s14,6.27,14,14C36,20.45,35.76,26.36,35.76,26.36z"/>
+                        <circle cx="22" cy="16" r="5" fill="#fff"/>
+                      </svg>
+                    </a>
+                  </div>
+
+                  {/* Expanded detail when selected */}
+                  {selectedAccommodation?.id === acc.id && (
+                    <div className="mt-2 pt-2 border-t border-white/10 space-y-2 text-xs">
+                      <p className="text-chile-text-secondary">{acc.description}</p>
+                      
+                      <div className="flex items-center gap-3">
+                        <span className="text-amber-400 font-bold">{acc.priceEstimate}</span>
+                        <span className="text-chile-text-muted">⭐ {acc.rating} ({acc.ratingSource})</span>
+                      </div>
+
+                      {acc.amenities.length > 0 && (
+                        <div className="flex flex-wrap gap-1">
+                          {acc.amenities.slice(0, 6).map(amenity => (
+                            <span key={amenity} className="px-2 py-0.5 bg-white/5 text-[10px] text-chile-text-muted rounded-full">
+                              {amenity}
+                            </span>
+                          ))}
+                          {acc.amenities.length > 6 && (
+                            <span className="px-2 py-0.5 bg-white/5 text-[10px] text-chile-text-muted rounded-full">
+                              +{acc.amenities.length - 6}
+                            </span>
+                          )}
+                        </div>
+                      )}
+
+                      {/* Clickable action links */}
+                      <div className="flex flex-wrap gap-2 pt-1">
+                        <a
+                          href={acc.googleMapsLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="flex-1 py-1.5 rounded text-xs bg-red-500/20 text-red-400 text-center font-medium"
+                        >
+                          🗺️ Maps
+                        </a>
+                        {acc.bookingLink && (
+                          <a
+                            href={acc.bookingLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="flex-1 py-1.5 rounded text-xs bg-blue-500/20 text-blue-400 text-center font-medium"
+                          >
+                            🏨 Booking
+                          </a>
+                        )}
+                        {acc.airbnbLink && (
+                          <a
+                            href={acc.airbnbLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="flex-1 py-1.5 rounded text-xs bg-pink-500/20 text-pink-400 text-center font-medium"
+                          >
+                            🏠 Airbnb
+                          </a>
+                        )}
+                        {acc.phone && (
+                          <a
+                            href={`https://wa.me/${acc.phone.replace(/[^0-9]/g, '')}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="flex-1 py-1.5 rounded text-xs bg-green-500/20 text-green-400 text-center font-medium"
+                          >
+                            💬 WhatsApp
+                          </a>
+                        )}
+                      </div>
+
+                      {acc.sourceNote && (
+                        <div className="text-[10px] text-chile-text-muted italic">
+                          💡 {acc.sourceNote}
+                        </div>
                       )}
                     </div>
-                  </div>
-                )}
-
-                <div className="flex flex-wrap gap-2">
-                  <a
-                    href={selectedAccommodation.googleMapsLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 px-3 py-2 rounded-lg bg-red-500/20 text-red-400 border border-red-500/30 text-xs font-medium text-center hover:bg-red-500/30 transition-colors"
-                  >
-                    🗺️ Maps
-                  </a>
-                  {selectedAccommodation.bookingLink && (
-                    <a
-                      href={selectedAccommodation.bookingLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 px-3 py-2 rounded-lg bg-blue-500/20 text-blue-400 border border-blue-500/30 text-xs font-medium text-center hover:bg-blue-500/30 transition-colors"
-                    >
-                      🏨 Booking
-                    </a>
-                  )}
-                  {selectedAccommodation.airbnbLink && (
-                    <a
-                      href={selectedAccommodation.airbnbLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 px-3 py-2 rounded-lg bg-pink-500/20 text-pink-400 border border-pink-500/30 text-xs font-medium text-center hover:bg-pink-500/30 transition-colors"
-                    >
-                      🏠 Airbnb
-                    </a>
-                  )}
-                  {selectedAccommodation.phone && (
-                    <a
-                      href={`https://wa.me/${selectedAccommodation.phone.replace(/[^0-9]/g, '')}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 px-3 py-2 rounded-lg bg-green-500/20 text-green-400 border border-green-500/30 text-xs font-medium text-center hover:bg-green-500/30 transition-colors"
-                    >
-                      💬 WhatsApp
-                    </a>
                   )}
                 </div>
-
-                {selectedAccommodation.sourceNote && (
-                  <div className="mt-2 pt-2 border-t border-white/10 text-[10px] text-chile-text-muted">
-                    💡 {selectedAccommodation.sourceNote}
-                  </div>
-                )}
-              </div>
+              ))}
             </div>
           </div>
         )}

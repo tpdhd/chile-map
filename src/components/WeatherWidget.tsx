@@ -137,16 +137,16 @@ export default function WeatherWidget({ locationName, coordinates, dates }: Weat
 
   if (loading) {
     return (
-      <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-chile-bg-card animate-pulse">
+      <div className="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-chile-bg-card/95 backdrop-blur-sm shadow-lg border border-white/10 w-[72px] h-[40px] animate-pulse">
         <div className="w-4 h-4 bg-chile-bg-secondary rounded" />
-        <div className="w-16 h-4 bg-chile-bg-secondary rounded" />
+        <div className="w-8 h-4 bg-chile-bg-secondary rounded" />
       </div>
     )
   }
 
   if (error || !weather) {
     return (
-      <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-chile-bg-card text-chile-text-muted text-sm">
+      <div className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-chile-bg-card/95 backdrop-blur-sm shadow-lg border border-white/10 text-chile-text-muted text-sm w-[72px] h-[40px] justify-center">
         🌡️ --
       </div>
     )

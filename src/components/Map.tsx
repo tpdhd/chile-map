@@ -98,15 +98,8 @@ const categoryIcons: Record<string, string> = {
   info: 'ℹ️',
 }
 
-// Accommodation type icons
-const accommodationIcons: Record<string, string> = {
-  apartment: '🏢',
-  hotel: '🏨',
-  hostel: '🏠',
-  cabana: '🏘️',
-  house: '🏡',
-  cabin: '🛖',
-}
+// Accommodation type icons - clean SVG house icon
+const accommodationSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="14" height="14"><path d="M12 3L4 9v12h5v-7h6v7h5V9L12 3z"/></svg>`
 
 interface MapProps {
   locations: Location[]
@@ -249,26 +242,33 @@ export default function Map({
     })
   }
 
-  // Create custom markers for accommodations
+  // Create custom markers for accommodations - clean SVG house icons
   const createAccommodationIcon = (accommodation: Accommodation, isSelected: boolean) => {
     const color = accommodationColors[accommodation.type] || '#6b7280'
-    const icon = accommodationIcons[accommodation.type] || '🏠'
     const selectedClass = isSelected ? 'selected' : ''
+    const size = isSelected ? 34 : 28
     
     return L.divIcon({
       html: `
         <div class="custom-marker accommodation-marker ${selectedClass}" style="
           background: ${isSelected ? '#22c55e' : color};
-          color: white;
-          ${isSelected ? 'z-index: 10000 !important;' : ''}
+          width: ${size}px;
+          height: ${size}px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 2px solid rgba(255,255,255,0.8);
+          box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+          ${isSelected ? 'z-index: 10000 !important; border-color: #22c55e; box-shadow: 0 0 12px rgba(34,197,94,0.5);' : ''}
         ">
-          ${icon}
+          ${accommodationSvg}
         </div>
       `,
       className: `custom-div-icon ${isSelected ? 'marker-selected' : ''}`,
-      iconSize: isSelected ? [32, 32] : [26, 26],
-      iconAnchor: isSelected ? [16, 16] : [13, 13],
-      popupAnchor: [0, -13]
+      iconSize: [size, size],
+      iconAnchor: [size/2, size/2],
+      popupAnchor: [0, -size/2]
     })
   }
 
