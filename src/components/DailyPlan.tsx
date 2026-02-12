@@ -4,9 +4,37 @@ import tripData from '../data/trip-data.json'
 interface DailyPlanProps {
   onClose: () => void
   favorites: Set<string>
+  visited: Set<string>
+  toggleVisited: (id: string) => void
 }
 
 type Rec = (typeof tripData.locations)[0]['recommendations'][0]
+
+// Haversine formula to calculate distance between two coordinates in km
+function calculateDistance(coord1: [number, number], coord2: [number, number]): number {
+  const [lat1, lon1] = coord1
+  const [lat2, lon2] = coord2
+  const R = 6371 // Earth's radius in km
+  const dLat = (lat2 - lat1) * Math.PI / 180
+  const dLon = (lon2 - lon1) * Math.PI / 180
+  const a = 
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+    Math.sin(dLon / 2) * Math.sin(dLon / 2)
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
+  return R * c
+}
+
+// Calculate drive time assuming average 60 km/h
+function calculateDriveTime(distanceKm: number): string {
+  const hours = distanceKm / 60
+  if (hours < 1) {
+    return `${Math.round(hours * 60)} Min`
+  }
+  const h = Math.floor(hours)
+  const m = Math.round((hours - h) * 60)
+  return m > 0 ? `${h}h ${m}min` : `${h}h`
+}
 
 // Time slots for organizing activities
 const TIME_SLOTS = [
@@ -60,7 +88,7 @@ function formatDate(dateStr: string): string {
   return `${weekdays[d.getDay()]}, ${d.getDate()}. ${months[d.getMonth()]}`
 }
 
-export default function DailyPlan({ onClose, favorites }: DailyPlanProps) {
+export default function DailyPlan({ onClose, favorites, visited, toggleVisited }: DailyPlanProps) {
   const [selectedLocIdx, setSelectedLocIdx] = useState(0)
 
   const locations = tripData.locations
@@ -82,7 +110,15 @@ export default function DailyPlan({ onClose, favorites }: DailyPlanProps) {
 
     // Distribute recs across days
     const recsPerDay = Math.ceil(allRecs.length / days)
-    const plans: Array<{ day: number; date: string; recs: Rec[]; slots: Record<string, Rec[]> }> = []
+    const plans: Array<{ 
+      day: number
+      date: string
+      recs: Rec[]
+      slots: Record<string, Rec[]>
+      totalDistance: number
+      estimatedDriveTime: string
+      categoryMix: Record<string, number>
+    }> = []
 
     for (let d = 0; d < days; d++) {
       const dayRecs = allRecs.slice(d * recsPerDay, (d + 1) * recsPerDay)
@@ -90,11 +126,33 @@ export default function DailyPlan({ onClose, favorites }: DailyPlanProps) {
       dateObj.setDate(dateObj.getDate() + d)
       const dateStr = dateObj.toISOString().split('T')[0]
 
+      // Calculate total distance and category mix for the day
+      let totalDistance = 0
+      const categoryMix: Record<string, number> = {}
+      
+      for (let i = 0; i < dayRecs.length - 1; i++) {
+        const curr = dayRecs[i]
+        const next = dayRecs[i + 1]
+        if (curr.coordinates && next.coordinates) {
+          totalDistance += calculateDistance(
+            curr.coordinates as [number, number],
+            next.coordinates as [number, number]
+          )
+        }
+      }
+
+      dayRecs.forEach(rec => {
+        categoryMix[rec.category] = (categoryMix[rec.category] || 0) + 1
+      })
+
       plans.push({
         day: d + 1,
         date: dateStr,
         recs: dayRecs,
         slots: assignRecsToSlots(dayRecs),
+        totalDistance,
+        estimatedDriveTime: calculateDriveTime(totalDistance),
+        categoryMix,
       })
     }
 
@@ -158,17 +216,39 @@ export default function DailyPlan({ onClose, favorites }: DailyPlanProps) {
         </div>
 
         {/* Day Cards */}
-        {dayPlans.map((plan) => (
+        {dayPlans.map((plan) => {
+          // Get top 3 categories for this day
+          const topCategories = Object.entries(plan.categoryMix)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 3)
+          
+          return (
           <div key={plan.day} className="rounded-xl bg-white/5 border border-white/5 overflow-hidden">
             {/* Day Header */}
-            <div className="px-4 py-2.5 bg-white/5 border-b border-white/5 flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <span className="w-7 h-7 rounded-full bg-chile-accent-teal/20 text-chile-accent-teal flex items-center justify-center text-xs font-bold">
-                  {plan.day}
-                </span>
-                <span className="font-medium text-sm">{formatDate(plan.date)}</span>
+            <div className="px-4 py-2.5 bg-white/5 border-b border-white/5">
+              <div className="flex items-center justify-between mb-1.5">
+                <div className="flex items-center gap-2">
+                  <span className="w-7 h-7 rounded-full bg-chile-accent-teal/20 text-chile-accent-teal flex items-center justify-center text-xs font-bold">
+                    {plan.day}
+                  </span>
+                  <span className="font-medium text-sm">{formatDate(plan.date)}</span>
+                </div>
+                <span className="text-xs text-chile-text-muted">{plan.recs.length} Aktivitäten</span>
               </div>
-              <span className="text-xs text-chile-text-muted">{plan.recs.length} Aktivitäten</span>
+              {/* Day Summary Stats */}
+              <div className="flex items-center gap-3 text-[11px] text-chile-text-muted ml-9">
+                <span className="flex items-center gap-1">
+                  <span>🚗</span>
+                  <span>~{Math.round(plan.totalDistance)} km</span>
+                </span>
+                <span className="flex items-center gap-1">
+                  <span>⏱️</span>
+                  <span>{plan.estimatedDriveTime} Fahrzeit</span>
+                </span>
+                <span className="flex items-center gap-1">
+                  {topCategories.map(([cat]) => CATEGORY_ICONS[cat.toLowerCase()] || '📍').join(' ')}
+                </span>
+              </div>
             </div>
 
             {/* Time Slots */}
@@ -184,30 +264,69 @@ export default function DailyPlan({ onClose, favorites }: DailyPlanProps) {
                       <span className="text-[10px] text-chile-text-muted">{slot.time}</span>
                     </div>
                     <div className="space-y-1.5 ml-6">
-                      {slotRecs.map((rec) => (
-                        <div
-                          key={rec.id}
-                          className="flex items-center gap-2 text-sm"
-                        >
-                          <span className="text-base flex-shrink-0">
-                            {CATEGORY_ICONS[rec.category.toLowerCase()] || '📍'}
-                          </span>
-                          <span className="truncate flex-1">{rec.name}</span>
-                          {favorites.has(rec.id) && (
-                            <span className="text-xs flex-shrink-0">❤️</span>
-                          )}
-                          {rec.priceRange && (
-                            <span className="text-[10px] text-chile-text-muted flex-shrink-0">{rec.priceRange}</span>
-                          )}
-                        </div>
-                      ))}
+                      {slotRecs.map((rec, idx) => {
+                        // Calculate drive time to next location within slot
+                        const nextRec = slotRecs[idx + 1]
+                        let driveInfo = null
+                        if (nextRec && rec.coordinates && nextRec.coordinates) {
+                          const distance = calculateDistance(
+                            rec.coordinates as [number, number],
+                            nextRec.coordinates as [number, number]
+                          )
+                          if (distance > 0.5) { // Only show if > 500m
+                            driveInfo = { distance: Math.round(distance), time: calculateDriveTime(distance) }
+                          }
+                        }
+
+                        return (
+                          <div key={rec.id}>
+                            <div className="flex items-center gap-2 text-sm group">
+                              {/* Visited Checkbox */}
+                              <button
+                                onClick={() => toggleVisited(rec.id)}
+                                className={`w-4 h-4 rounded border flex-shrink-0 flex items-center justify-center transition-all ${
+                                  visited.has(rec.id) 
+                                    ? 'bg-green-500 border-green-500' 
+                                    : 'border-white/30 hover:border-white/60'
+                                }`}
+                                title={visited.has(rec.id) ? 'Als nicht besucht markieren' : 'Als besucht markieren'}
+                              >
+                                {visited.has(rec.id) && <span className="text-white text-[10px]">✓</span>}
+                              </button>
+                              
+                              <span className="text-base flex-shrink-0">
+                                {CATEGORY_ICONS[rec.category.toLowerCase()] || '📍'}
+                              </span>
+                              <span className={`truncate flex-1 ${visited.has(rec.id) ? 'line-through opacity-60' : ''}`}>
+                                {rec.name}
+                              </span>
+                              {favorites.has(rec.id) && (
+                                <span className="text-xs flex-shrink-0">❤️</span>
+                              )}
+                              {rec.priceRange && (
+                                <span className="text-[10px] text-chile-text-muted flex-shrink-0">{rec.priceRange}</span>
+                              )}
+                            </div>
+                            
+                            {/* Drive Info to Next Location */}
+                            {driveInfo && (
+                              <div className="flex items-center gap-1.5 ml-6 mt-1 text-[10px] text-chile-text-muted">
+                                <span className="text-xs">↓</span>
+                                <span>🚗 {driveInfo.distance} km</span>
+                                <span>•</span>
+                                <span>⏱️ {driveInfo.time}</span>
+                              </div>
+                            )}
+                          </div>
+                        )
+                      })}
                     </div>
                   </div>
                 )
               })}
             </div>
           </div>
-        ))}
+        )})}
 
         {/* Footer hint */}
         <div className="text-[10px] text-chile-text-muted text-center pb-4 leading-relaxed">

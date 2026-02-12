@@ -1280,7 +1280,12 @@ function App() {
       {/* DAILY PLAN */}
       {showDailyPlan && (
         <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">📅</div></div>}>
-          <DailyPlan onClose={() => setShowDailyPlan(false)} favorites={favorites} />
+          <DailyPlan 
+            onClose={() => setShowDailyPlan(false)} 
+            favorites={favorites}
+            visited={visited}
+            toggleVisited={toggleVisited}
+          />
         </Suspense>
       )}
 
