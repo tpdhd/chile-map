@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f0f14">
+  <title>Offline - Chile Map</title>
+  <link rel="icon" type="image/svg+xml" href="/chile-map/favicon.svg">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+      background: linear-gradient(135deg, #0f0f14 0%, #1a1a2e 100%);
+      color: #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .container {
+      max-width: 450px;
+      animation: fadeIn 0.5s ease-in;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .icon {
+      font-size: 80px;
+      margin-bottom: 24px;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.7; transform: scale(0.95); }
+    }
+    
+    h1 {
+      font-size: 2em;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #fff;
+    }
+    
+    p {
+      color: #94a3b8;
+      line-height: 1.7;
+      margin-bottom: 12px;
+      font-size: 1.05em;
+    }
+    
+    .highlight {
+      color: #22d3ee;
+      font-weight: 600;
+    }
+    
+    button {
+      margin-top: 32px;
+      padding: 14px 32px;
+      background: linear-gradient(135deg, #e11d48 0%, #be123c 100%);
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(225, 29, 72, 0.3);
+    }
+    
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 30px rgba(225, 29, 72, 0.4);
+    }
+    
+    button:active {
+      transform: translateY(0);
+    }
+    
+    .status {
+      margin-top: 40px;
+      padding: 16px 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      font-size: 0.9em;
+    }
+    
+    .status-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin: 8px 0;
+      color: #cbd5e1;
+    }
+    
+    .status-icon {
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon">📡</div>
+    <h1>Du bist offline</h1>
+    <p>Diese Seite ist nicht im Cache gespeichert.</p>
+    <p>Die <span class="highlight">Hauptseite und Karte</span> funktionieren offline!</p>
+    <p>Kehre zur Startseite zurück, um gecachte Inhalte zu sehen.</p>
+    
+    <button onclick="window.location.href='/chile-map/'">
+      🏠 Zur Startseite
+    </button>
+    
+    <div class="status">
+      <div class="status-item">
+        <span class="status-icon">🗺️</span>
+        <span>Karten-Tiles gecached</span>
+      </div>
+      <div class="status-item">
+        <span class="status-icon">📱</span>
+        <span>App Shell verfügbar</span>
+      </div>
+      <div class="status-item">
+        <span class="status-icon">✈️</span>
+        <span>Offline-Modus aktiv</span>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    // Auto-reload when back online
+    window.addEventListener('online', () => {
+      window.location.reload();
+    });
+    
+    // Show connection status
+    if (navigator.onLine) {
+      // User is online but page isn't cached - show different message
+      document.querySelector('h1').textContent = 'Seite nicht verfügbar';
+      document.querySelector('.icon').textContent = '🔍';
+      document.querySelector('.status').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
