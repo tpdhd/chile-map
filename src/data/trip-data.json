@@ -1225,6 +1225,78 @@
             "local"
           ],
           "source": "brave-search"
+        },
+        {
+          "id": "quillimari-ruta-cuarzo",
+          "name": "Ruta del Cuarzo",
+          "nameEs": "Ruta del Cuarzo del Valle del Quilimarí",
+          "category": "unique",
+          "coordinates": [
+            -32.15,
+            -71.4
+          ],
+          "description": "Mystische Quarzkristall-Route mit Meditation, Yoga und regenerativem Tourismus. Wunderschöne Landschaften voller Quarz im Quilimarí-Tal.",
+          "descriptionEs": "Ruta mística de cristales de cuarzo con meditación, yoga y turismo regenerativo. Hermosos paisajes llenos de cuarzo en el Valle del Quilimarí.",
+          "address": "Valle del Quilimarí, Región de Coquimbo",
+          "website": "https://chile.travel/en/uncategorized/regenerative-tourism-places-and-people-that-renew-energies/",
+          "googleMapsLink": "https://maps.google.com/?q=-32.15,-71.4",
+          "priceRange": "$$",
+          "tags": [
+            "meditation",
+            "yoga",
+            "quartz",
+            "mystical",
+            "regenerative-tourism"
+          ],
+          "source": "chile.travel"
+        },
+        {
+          "id": "quillimari-capilla-santa-teresa",
+          "name": "Capilla Santa Teresa de Jesús",
+          "nameEs": "Capilla Santa Teresa de Jesús",
+          "category": "culture",
+          "coordinates": [
+            -32.135,
+            -71.515
+          ],
+          "description": "Kleine architektonische Perle auf einem Felsen an der Küste von Pichidangui erbaut. Historisches Wahrzeichen mit malerischem Meerblick.",
+          "descriptionEs": "Pequeña joya arquitectónica edificada sobre un roquerío en la costa de Pichidangui. Hito histórico con vista panorámica al mar.",
+          "address": "Pichidangui, Los Vilos",
+          "website": "https://chile.travel/blog/conoce-las-paradisiacas-playas-de-la-region-de-coquimbo/",
+          "googleMapsLink": "https://maps.google.com/?q=-32.135,-71.515",
+          "priceRange": "free",
+          "tags": [
+            "chapel",
+            "architecture",
+            "historic",
+            "coastal",
+            "pichidangui"
+          ],
+          "source": "chile.travel"
+        },
+        {
+          "id": "quillimari-parque-rupestre-monte-aranda",
+          "name": "Parque Rupestre Monte Aranda",
+          "nameEs": "Parque Rupestre Monte Aranda",
+          "category": "culture",
+          "coordinates": [
+            -31.92,
+            -71.5
+          ],
+          "description": "Archäologischer Park mit präkolumbianischen Felsmalereien nahe Los Vilos. Verbindung mit der Archäologie und Geschichte der Küstenvölker.",
+          "descriptionEs": "Parque arqueológico con arte rupestre precolombino cerca de Los Vilos. Conexión con la arqueología e historia de los pueblos costeros.",
+          "address": "Los Vilos, Región de Coquimbo",
+          "website": "https://chile.travel/blog/conoce-las-paradisiacas-playas-de-la-region-de-coquimbo/",
+          "googleMapsLink": "https://maps.google.com/?q=-31.92,-71.50",
+          "priceRange": "$",
+          "tags": [
+            "archaeology",
+            "rock-art",
+            "pre-columbian",
+            "history",
+            "nature"
+          ],
+          "source": "chile.travel"
         }
       ]
     },
@@ -1747,6 +1819,54 @@
             "top-rated"
           ],
           "source": "brave-search"
+        },
+        {
+          "id": "algarrobo-humedal-mirasol",
+          "name": "Humedal Mirasol",
+          "nameEs": "Humedal Mirasol",
+          "category": "nature",
+          "coordinates": [
+            -33.33,
+            -71.69
+          ],
+          "description": "Geschütztes Feuchtgebiet mit vielfältigen Vogelarten und einheimischer Flora. Exzellenter Ort für Vogelbeobachtung und ruhige Naturbeobachtung.",
+          "descriptionEs": "Humedal protegido con diversas especies de aves y flora nativa. Excelente lugar para observación de aves y contemplación de la naturaleza.",
+          "address": "Sector Mirasol, Algarrobo",
+          "website": "https://chile.travel/blog/cueva-del-pirata-hermosas-playas-y-pinguinos-el-balneario-chileno-que-te-sorprendera/",
+          "googleMapsLink": "https://maps.google.com/?q=-33.33,-71.69",
+          "priceRange": "free",
+          "tags": [
+            "wetland",
+            "birdwatching",
+            "nature",
+            "wildlife",
+            "protected"
+          ],
+          "source": "chile.travel"
+        },
+        {
+          "id": "algarrobo-zona-tipica-canelo",
+          "name": "Zona Típica Canelo-Canelillo",
+          "nameEs": "Zona Típica Playas Canelo-Canelillo",
+          "category": "nature",
+          "coordinates": [
+            -33.355,
+            -71.685
+          ],
+          "description": "Als Zona Típica geschütztes Gebiet mit weißen Sandstränden, türkisfarbenem Wasser und Waldumgebung. Pasarelas zum Erkunden der geschützten Naturlandschaft.",
+          "descriptionEs": "Área protegida como Zona Típica con playas de arena blanca, agua turquesa y entorno de bosques. Pasarelas para recorrer el paisaje natural protegido.",
+          "address": "Playas Canelo-Canelillo, Algarrobo",
+          "website": "https://chile.travel/blog/cueva-del-pirata-hermosas-playas-y-pinguinos-el-balneario-chileno-que-te-sorprendera/",
+          "googleMapsLink": "https://maps.google.com/?q=-33.355,-71.685",
+          "priceRange": "free",
+          "tags": [
+            "zona-tipica",
+            "protected",
+            "beach",
+            "scenic",
+            "nature"
+          ],
+          "source": "chile.travel"
         }
       ]
     },
@@ -2278,6 +2398,102 @@
             "guesthouse"
           ],
           "source": "Insight Guides 2024"
+        },
+        {
+          "id": "wine-resort-vik",
+          "name": "VIK Vineyard & Retreat",
+          "nameEs": "Viña VIK",
+          "category": "wine",
+          "coordinates": [
+            -34.55,
+            -71.25
+          ],
+          "description": "Luxus-Weingut im Millahue-Tal mit ikonischer Architektur, Titandecke von Frank Gehry, 360°-Blick auf Weinberge. Hotel, Spa, Reitausflüge und Weltklasse-Weine.",
+          "descriptionEs": "Viñedo de lujo en el Valle de Millahue con arquitectura icónica, techo de titanio de Frank Gehry, vistas 360° de viñedos. Hotel, spa, cabalgatas y vinos de clase mundial.",
+          "address": "Valle de Millahue, Colchagua",
+          "website": "https://www.vikwine.com/",
+          "googleMapsLink": "https://maps.google.com/?q=-34.55,-71.25",
+          "priceRange": "$$$",
+          "tags": [
+            "wine",
+            "luxury",
+            "architecture",
+            "hotel",
+            "spa"
+          ],
+          "source": "chile.travel"
+        },
+        {
+          "id": "wine-resort-clos-apalta",
+          "name": "Residencia Clos Apalta",
+          "nameEs": "Residencia Clos Apalta",
+          "category": "wine",
+          "coordinates": [
+            -34.6,
+            -71.28
+          ],
+          "description": "Exklusive Residenz im natürlichen Amphitheater von Apalta. Relais & Châteaux Mitglied mit biodynamischer Weinherstellung, Gourmet-Restaurant und Verkostungsraum.",
+          "descriptionEs": "Residencia exclusiva en el anfiteatro natural de Apalta. Miembro de Relais & Châteaux con viticultura biodinámica, restaurante gourmet y sala de cata.",
+          "address": "Clos Apalta, Colchagua Valley",
+          "website": "https://closapaltaresidence.com/",
+          "googleMapsLink": "https://maps.google.com/?q=-34.6,-71.28",
+          "priceRange": "$$$",
+          "tags": [
+            "wine",
+            "luxury",
+            "biodynamic",
+            "gourmet",
+            "relais-chateaux"
+          ],
+          "source": "chile.travel"
+        },
+        {
+          "id": "wine-resort-viu-manent",
+          "name": "Viu Manent / Vibo Wine Lodge",
+          "nameEs": "Viña Viu Manent",
+          "category": "wine",
+          "coordinates": [
+            -34.58,
+            -71.3
+          ],
+          "description": "Familienweingut mit über 80 Jahren Geschichte. Boutique-Hotel inmitten von Malbec-Weinbergen, Kutschfahrten, Verkostungen und traditionelle Rodeo-Demonstrationen.",
+          "descriptionEs": "Viñedo familiar con más de 80 años de historia. Hotel boutique entre viñedos de Malbec, paseos en carruaje, degustaciones y demostraciones de rodeo tradicional.",
+          "address": "Carretera del Vino, Colchagua",
+          "website": "https://vibowinelodge.cl/",
+          "googleMapsLink": "https://maps.google.com/?q=-34.58,-71.3",
+          "priceRange": "$$",
+          "tags": [
+            "wine",
+            "family",
+            "hotel",
+            "rodeo",
+            "tradition"
+          ],
+          "source": "chile.travel"
+        },
+        {
+          "id": "wine-resort-cerro-chaman",
+          "name": "Cerro Chamán Observatorium",
+          "nameEs": "Observatorio Cerro Chamán",
+          "category": "unique",
+          "coordinates": [
+            -34.63,
+            -71.37
+          ],
+          "description": "Astronomisches Observatorium in Santa Cruz inmitten von Weinbergen. Sternenbeobachtung im Herzen des Colchagua-Tals mit klarem Himmel und professionellen Teleskopen.",
+          "descriptionEs": "Observatorio astronómico en Santa Cruz entre viñedos. Observación de estrellas en el corazón del Valle de Colchagua con cielos despejados y telescopios profesionales.",
+          "address": "Santa Cruz, Colchagua Valley",
+          "website": "https://chile.travel/en/attractions/colchagua-valley-and-santa-cruz/",
+          "googleMapsLink": "https://maps.google.com/?q=-34.63,-71.37",
+          "priceRange": "$$",
+          "tags": [
+            "astrotourism",
+            "observatory",
+            "wine-region",
+            "stargazing",
+            "science"
+          ],
+          "source": "chile.travel"
         }
       ]
     },
@@ -2750,6 +2966,54 @@
             "rural"
           ],
           "source": "Rough Guides Chile 2023"
+        },
+        {
+          "id": "san-carlos-radal-siete-tazas",
+          "name": "Radal Siete Tazas Nationalpark",
+          "nameEs": "Parque Nacional Radal Siete Tazas",
+          "category": "nature",
+          "coordinates": [
+            -35.47,
+            -71.05
+          ],
+          "description": "Nationalpark mit spektakulären natürlichen Pools und Wasserfällen am Río Claro. Wanderungen zu Velo de la Novia, Salto de la Leona und El Bolsón mit Panoramablicken. Pumas, Güiñas und Pudús.",
+          "descriptionEs": "Parque nacional con espectaculares pozas naturales y cascadas del Río Claro. Senderos al Velo de la Novia, Salto de la Leona y El Bolsón con vistas panorámicas. Pumas, güiñas y pudús.",
+          "address": "55 km northeast of Molina, Región del Maule",
+          "website": "https://chile.travel/en/destinations/radal-siete-tazas-national-park/",
+          "googleMapsLink": "https://maps.google.com/?q=-35.47,-71.05",
+          "priceRange": "$",
+          "tags": [
+            "national-park",
+            "waterfalls",
+            "hiking",
+            "wildlife",
+            "nature"
+          ],
+          "source": "chile.travel"
+        },
+        {
+          "id": "san-carlos-lago-colbun",
+          "name": "Lago Colbún",
+          "nameEs": "Lago Colbún",
+          "category": "nature",
+          "coordinates": [
+            -35.7,
+            -71.4
+          ],
+          "description": "Großer Stausee in der Maule-Region, ideal für Rudern, Segeln und Wassersport. Umgeben von Bergen mit ruhigen Gewässern und malerischen Ufern.",
+          "descriptionEs": "Gran lago artificial en la Región del Maule, ideal para remo, vela y deportes acuáticos. Rodeado de montañas con aguas tranquilas y riberas pintorescas.",
+          "address": "Lago Colbún, Región del Maule",
+          "website": "https://chile.travel/en/attractions/maule-and-curico-valleys/",
+          "googleMapsLink": "https://maps.google.com/?q=-35.7,-71.4",
+          "priceRange": "free",
+          "tags": [
+            "lake",
+            "rowing",
+            "sailing",
+            "watersports",
+            "scenic"
+          ],
+          "source": "chile.travel"
         }
       ]
     },
@@ -3218,6 +3482,52 @@
             "roadside"
           ],
           "source": "Insight Guides 2024"
+        },
+        {
+          "id": "chillan-laguna-huemul",
+          "name": "Laguna del Huemul",
+          "nameEs": "Laguna del Huemul",
+          "category": "nature",
+          "coordinates": [
+            -36.85,
+            -71.45
+          ],
+          "description": "Hochgelegene Bergseelagune auf 1950m Höhe, erreichbar durch Wanderungen oder Reitausflüge. Wunderschöner Ort mit türkisblauem Wasser umgeben von Bergen.",
+          "address": "Valle Las Trancas, Región de Ñuble",
+          "website": "https://chile.travel/blog/lugares-de-chile-que-debes-conocer-y-fotografiar-en-otono-2/",
+          "googleMapsLink": "https://maps.google.com/?q=-36.85,-71.45",
+          "priceRange": "free",
+          "tags": [
+            "hiking",
+            "nature",
+            "mountain-lake",
+            "scenic",
+            "trekking"
+          ],
+          "source": "chile.travel"
+        },
+        {
+          "id": "chillan-reserva-nacional-nuble",
+          "name": "Reserva Nacional Ñuble",
+          "nameEs": "Reserva Nacional Ñuble",
+          "category": "nature",
+          "coordinates": [
+            -36.88,
+            -71.42
+          ],
+          "description": "Naturreservat mit alten Araukarienwäldern, Wasserfällen und Wanderwegen. Ideal für Raquetas de Nieve (Schneeschuhwandern) im Winter und Fotografie im Herbst.",
+          "address": "Valle Las Trancas, Región de Ñuble",
+          "website": "https://chile.travel/blog/lugares-de-chile-que-debes-conocer-y-fotografiar-en-otono-2/",
+          "googleMapsLink": "https://maps.google.com/?q=-36.88,-71.42",
+          "priceRange": "$",
+          "tags": [
+            "nature-reserve",
+            "araucaria",
+            "hiking",
+            "winter",
+            "photography"
+          ],
+          "source": "chile.travel"
         }
       ]
     },
@@ -3750,6 +4060,98 @@
             "navidad"
           ],
           "source": "Rough Guide 2023"
+        },
+        {
+          "id": "conguillio-saltos-indio-princesa",
+          "name": "Saltos del Indio y de la Princesa",
+          "nameEs": "Saltos del Indio y de la Princesa",
+          "category": "nature",
+          "coordinates": [
+            -38.42,
+            -71.65
+          ],
+          "description": "Beeindruckende Wasserfälle in der Nähe von Curacautín und Lonquimay. Wunderschöne Wanderung durch Araukarienwälder zu diesen spektakulären Naturschauspielen.",
+          "address": "Curacautín, Región de La Araucanía",
+          "website": "https://chile.travel/en/destinations/andean-araucania/",
+          "googleMapsLink": "https://maps.google.com/?q=-38.42,-71.65",
+          "priceRange": "free",
+          "tags": [
+            "waterfall",
+            "hiking",
+            "araucania",
+            "scenic",
+            "nature"
+          ],
+          "source": "chile.travel"
+        },
+        {
+          "id": "conguillio-termas-huife",
+          "name": "Termas de Huife",
+          "nameEs": "Termas de Huife",
+          "category": "hotspring",
+          "coordinates": [
+            -39.2,
+            -71.7
+          ],
+          "description": "Erstklassige Thermalanlage am Río Liucura mit Temperaturen zwischen 35-40°C. Hydrotherapie, Sprudelbecken, Zervikal-Massagen und umfassende Wellness-Einrichtungen.",
+          "address": "Camino Internacional km 33, Pucón, Región de La Araucanía",
+          "website": "https://chile.travel/blog/panoramas-imperdibles-de-la-araucania-chile-en-invierno/",
+          "googleMapsLink": "https://maps.google.com/?q=-39.2,-71.7",
+          "priceRange": "$$$",
+          "tags": [
+            "hotspring",
+            "wellness",
+            "spa",
+            "relaxation",
+            "luxury"
+          ],
+          "source": "chile.travel"
+        },
+        {
+          "id": "conguillio-termas-quimey-co",
+          "name": "Termas de Quimey-Co",
+          "nameEs": "Termas de Quimey-Co",
+          "category": "hotspring",
+          "coordinates": [
+            -39.25,
+            -71.75
+          ],
+          "description": "Heilende Thermalbäder und Spa-Services inmitten uralter Wälder. Perfekter Ort zur Entspannung nach Wanderungen mit erstklassigen Wellness-Angeboten.",
+          "address": "Camino a Quimey-Co, Pucón, Región de La Araucanía",
+          "website": "https://chile.travel/blog/panoramas-imperdibles-de-la-araucania-chile-en-invierno/",
+          "googleMapsLink": "https://maps.google.com/?q=-39.25,-71.75",
+          "priceRange": "$$",
+          "tags": [
+            "hotspring",
+            "spa",
+            "relaxation",
+            "forest",
+            "healing"
+          ],
+          "source": "chile.travel"
+        },
+        {
+          "id": "conguillio-termas-san-luis",
+          "name": "Termas de San Luis",
+          "nameEs": "Termas de San Luis",
+          "category": "hotspring",
+          "coordinates": [
+            -39.22,
+            -71.72
+          ],
+          "description": "Traditionelle Thermalbäder mit Holzbadewannen, Hotels und vielfältigen Entspannungs-Services. Authentisches Erlebnis in natürlicher Umgebung.",
+          "address": "Coñaripe, Región de La Araucanía",
+          "website": "https://chile.travel/blog/panoramas-imperdibles-de-la-araucania-chile-en-invierno/",
+          "googleMapsLink": "https://maps.google.com/?q=-39.22,-71.72",
+          "priceRange": "$$",
+          "tags": [
+            "hotspring",
+            "traditional",
+            "hotel",
+            "relaxation",
+            "nature"
+          ],
+          "source": "chile.travel"
         }
       ]
     },
@@ -4388,6 +4790,52 @@
             "adventure"
           ],
           "source": "Insight Guides 2024"
+        },
+        {
+          "id": "pucon-curarrehue",
+          "name": "Curarrehue Mapuche Kultur",
+          "nameEs": "Curarrehue",
+          "category": "culture",
+          "coordinates": [
+            -39.35,
+            -71.6
+          ],
+          "description": "Authentisches Mapuche-Dorf 40km von Pucón. Erlebe indigene Kultur, höre faszinierende Geschichten, lerne die Mapuche-Weltanschauung kennen und genieße traditionelle Gastronomie.",
+          "address": "Curarrehue, Región de La Araucanía",
+          "website": "https://chile.travel/blog/panoramas-imperdibles-de-la-araucania-chile-en-invierno/",
+          "googleMapsLink": "https://maps.google.com/?q=-39.35,-71.6",
+          "priceRange": "$$",
+          "tags": [
+            "mapuche",
+            "indigenous",
+            "culture",
+            "gastronomy",
+            "rural-tourism"
+          ],
+          "source": "chile.travel"
+        },
+        {
+          "id": "pucon-volcan-sollipulli",
+          "name": "Volcán Sollipulli",
+          "nameEs": "Volcán Sollipulli",
+          "category": "hiking",
+          "coordinates": [
+            -38.97,
+            -71.51
+          ],
+          "description": "Beeindruckender Vulkan mit Gletscherkaldera auf 2282m Höhe. Trekking-Aufstieg mit spektakulären Ausblicken auf den inneren Gletscher. Nur mit zertifizierten Guides.",
+          "address": "Melipeuco, Región de La Araucanía",
+          "website": "https://chile.travel/blog/panoramas-imperdibles-de-la-araucania-chile-en-invierno/",
+          "googleMapsLink": "https://maps.google.com/?q=-38.97,-71.51",
+          "priceRange": "$$$",
+          "tags": [
+            "volcano",
+            "trekking",
+            "glacier",
+            "adventure",
+            "guided-tour"
+          ],
+          "source": "chile.travel"
         }
       ]
     },
@@ -4963,6 +5411,75 @@
             "free"
           ],
           "source": "Rough Guide 2023"
+        },
+        {
+          "id": "valdivia-parque-oncol",
+          "name": "Parque Oncol",
+          "nameEs": "Parque Oncol",
+          "category": "nature",
+          "coordinates": [
+            -39.7,
+            -73.3
+          ],
+          "description": "Privates Naturreservat mit valdivianischem Küstenregenwald. 30m hohe Aussichtstürme bieten 360°-Panorama von Anden-Vulkanen bis Pazifik. Wanderweg zum Cerro Oncol.",
+          "address": "Ruta T-350, Corral, Región de Los Ríos",
+          "website": "https://chile.travel/en/itineraries/itinerary-in-niebla-history-and-valdivian-rainforest/",
+          "googleMapsLink": "https://maps.google.com/?q=-39.7,-73.3",
+          "priceRange": "$$",
+          "tags": [
+            "rainforest",
+            "viewpoint",
+            "hiking",
+            "nature-reserve",
+            "panoramic"
+          ],
+          "source": "chile.travel"
+        },
+        {
+          "id": "valdivia-curinanco-beach",
+          "name": "Curiñanco Beach",
+          "nameEs": "Playa Curiñanco",
+          "category": "beach",
+          "coordinates": [
+            -39.8,
+            -73.4
+          ],
+          "description": "Wilder Strand mit dunklem Sand und starken Wellen an der valdivianischen Küste. Perfekt für Strandspaziergänge und Sonnenuntergänge mit ungezähmter Pazifik-Schönheit.",
+          "address": "Curiñanco, Región de Los Ríos",
+          "website": "https://chile.travel/en/itineraries/itinerary-in-niebla-history-and-valdivian-rainforest/",
+          "googleMapsLink": "https://maps.google.com/?q=-39.8,-73.4",
+          "priceRange": "free",
+          "tags": [
+            "beach",
+            "wild",
+            "pacific",
+            "sunset",
+            "nature"
+          ],
+          "source": "chile.travel"
+        },
+        {
+          "id": "valdivia-parque-prochelle",
+          "name": "Parque Prochelle",
+          "nameEs": "Parque Prochelle",
+          "category": "nature",
+          "coordinates": [
+            -39.82,
+            -73.23
+          ],
+          "description": "Grüner Park auf der Isla Teja, perfekt für morgendliche Spaziergänge. Ruhiger Ort mit Bäumen und Flussblick, ideal zum Entspannen vor Museumsbesuchen.",
+          "address": "Isla Teja, Valdivia, Región de Los Ríos",
+          "website": "https://chile.travel/itinerarios/conoce-los-imperdibles-de-valdivia-en-2-dias/",
+          "googleMapsLink": "https://maps.google.com/?q=-39.82,-73.23",
+          "priceRange": "free",
+          "tags": [
+            "park",
+            "walking",
+            "isla-teja",
+            "relaxation",
+            "nature"
+          ],
+          "source": "chile.travel"
         }
       ]
     },
@@ -5451,6 +5968,54 @@
             "views"
           ],
           "source": "Rough Guide 2023"
+        },
+        {
+          "id": "osorno-casa-folclore",
+          "name": "Casa del Folclore",
+          "nameEs": "Casa del Folclore",
+          "category": "culture",
+          "coordinates": [
+            -40.5667,
+            -73.1333
+          ],
+          "description": "Kulturzentrum mit chilenischer Musik und traditionellen Tänzen. Erlebe Live-Aufführungen der chilenischen Folklore und lerne mehr über die musikalischen Traditionen der Region Los Lagos.",
+          "descriptionEs": "Centro cultural con música chilena y danzas tradicionales. Disfruta presentaciones en vivo de folklore chileno y aprende sobre las tradiciones musicales de la Región de Los Lagos.",
+          "address": "Centro, Osorno",
+          "googleMapsLink": "https://maps.google.com/?q=-40.5667,-73.1333",
+          "priceRange": "$",
+          "tags": [
+            "culture",
+            "music",
+            "folklore",
+            "dance",
+            "traditional"
+          ],
+          "source": "chile.travel",
+          "website": "https://chile.travel/en/destinations/osorno/"
+        },
+        {
+          "id": "osorno-museo-interactivo",
+          "name": "Interaktives Museum Osorno",
+          "nameEs": "Museo Interactivo de Osorno",
+          "category": "museum",
+          "coordinates": [
+            -40.567,
+            -73.132
+          ],
+          "description": "Modernes interaktives Museum mit Ausstellungen zur Geschichte und Kultur Osornos. Perfekt für Familien und Regentage. Hands-on Exponate zur Natur und Wissenschaft der Region.",
+          "descriptionEs": "Museo interactivo moderno con exhibiciones sobre historia y cultura de Osorno. Perfecto para familias y días lluviosos. Exhibiciones prácticas sobre naturaleza y ciencia de la región.",
+          "address": "Los Carrera 816, Osorno",
+          "googleMapsLink": "https://maps.google.com/?q=-40.5670,-73.1320",
+          "priceRange": "$",
+          "tags": [
+            "museum",
+            "interactive",
+            "family",
+            "science",
+            "culture"
+          ],
+          "source": "chile.travel",
+          "website": "https://chile.travel/en/destinations/osorno/"
         }
       ]
     },
@@ -5968,6 +6533,79 @@
             "pioneer"
           ],
           "source": "Rough Guide 2023"
+        },
+        {
+          "id": "puerto-varas-cerro-phillippi",
+          "name": "Cerro Phillippi",
+          "nameEs": "Cerro Phillippi",
+          "category": "viewpoint",
+          "coordinates": [
+            -41.3167,
+            -72.9833
+          ],
+          "description": "Aussichtspunkt auf einem Hügel mit 360°-Panoramablick über Puerto Varas, Llanquihue-See, Vulkan Osorno und Vulkan Calbuco. Kurzer Spaziergang oder Fahrt hinauf. Spektakulär bei Sonnenuntergang.",
+          "descriptionEs": "Mirador en cerro con vista panorámica 360° de Puerto Varas, Lago Llanquihue, Volcán Osorno y Volcán Calbuco. Corta caminata o manejo hasta arriba. Espectacular al atardecer.",
+          "address": "Cerro Phillippi, Puerto Varas",
+          "googleMapsLink": "https://maps.google.com/?q=-41.3167,-72.9833",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "viewpoint",
+            "panoramic",
+            "volcano-view",
+            "sunset",
+            "photography"
+          ],
+          "source": "chile.travel",
+          "website": "https://chile.travel/en/blog/visit-osorno-volcano-and-discover-the-magical-surroundings-of-southern-chile/"
+        },
+        {
+          "id": "puerto-varas-museo-felmer",
+          "name": "Museo Antonio Felmer",
+          "nameEs": "Museo Antonio Felmer",
+          "category": "museum",
+          "coordinates": [
+            -41.31,
+            -73.0
+          ],
+          "description": "Museum in Nueva Braunau mit umfangreicher Sammlung von Antiquitäten aus der deutschen Kolonialzeit. Möbel, Werkzeuge, Fotos und Gegenstände der ersten deutschen Siedler am Llanquihue-See.",
+          "descriptionEs": "Museo en Nueva Braunau con extensa colección de antigüedades del período de colonización alemana. Muebles, herramientas, fotos y objetos de los primeros colonos alemanes del Lago Llanquihue.",
+          "address": "Ruta V-50, Nueva Braunau, Puerto Varas",
+          "googleMapsLink": "https://maps.google.com/?q=-41.3100,-73.0000",
+          "priceRange": "$",
+          "tags": [
+            "museum",
+            "german",
+            "colonial",
+            "antiques",
+            "heritage"
+          ],
+          "source": "chile.travel",
+          "website": "https://chile.travel/en/blog/visit-osorno-volcano-and-discover-the-magical-surroundings-of-southern-chile/"
+        },
+        {
+          "id": "petrohue-peulla",
+          "name": "Peulla",
+          "nameEs": "Peulla",
+          "category": "nature",
+          "coordinates": [
+            -41.0333,
+            -72.0167
+          ],
+          "description": "Abgelegenes ökologisches Bergdorf am Ende des Lago Todos los Santos. Erreichbar nur per Boot. Hotels, Restaurants, Canopy, Reiten, Sportfischen und Wanderung zum Wasserfall Velo de la Novia (Brautschleier).",
+          "descriptionEs": "Remoto pueblo ecológico de montaña al final del Lago Todos los Santos. Accesible solo por barco. Hoteles, restaurantes, canopy, cabalgatas, pesca deportiva y caminata a la cascada Velo de la Novia.",
+          "address": "Peulla, Puerto Varas",
+          "googleMapsLink": "https://maps.google.com/?q=-41.0333,-72.0167",
+          "priceRange": "1015687",
+          "tags": [
+            "nature",
+            "village",
+            "boat",
+            "waterfall",
+            "adventure",
+            "remote"
+          ],
+          "source": "chile.travel",
+          "website": "https://chile.travel/en/blog/visit-osorno-volcano-and-discover-the-magical-surroundings-of-southern-chile/"
         }
       ]
     },
@@ -6841,6 +7479,106 @@
             "not-during-trip"
           ],
           "source": "Insight Guides 2024"
+        },
+        {
+          "id": "chiloe-cascada-tocoihue",
+          "name": "Cascada Tocoihue",
+          "nameEs": "Cascada Tocoihue",
+          "category": "nature",
+          "coordinates": [
+            -42.37,
+            -73.67
+          ],
+          "description": "Magischer Wasserfall nahe Dalcahue, umgeben von dichtem Wald. Nach der Legende tauften sich Brujos (Hexer) hier, um ihre geheimen Fähigkeiten zu erlangen. Mystischer Ort voller chiloter Mythologie.",
+          "descriptionEs": "Mágica cascada cerca de Dalcahue rodeada de bosque denso. Según la leyenda, los brujos se bautizaban aquí para iniciarse en las ciencias ocultas. Lugar místico lleno de mitología chilota.",
+          "address": "Cerca de Dalcahue, Chiloé",
+          "googleMapsLink": "https://maps.google.com/?q=-42.3700,-73.6700",
+          "priceRange": "$",
+          "tags": [
+            "waterfall",
+            "nature",
+            "mythology",
+            "legend",
+            "forest",
+            "mystical"
+          ],
+          "source": "chile.travel",
+          "website": "https://chile.travel/itinerarios/imperdibles-de-chiloe-que-ver-y-hacer-durante-tres-dias/"
+        },
+        {
+          "id": "chiloe-humedal-putemun",
+          "name": "Humedal de Putemún",
+          "nameEs": "Humedal de Putemún",
+          "category": "nature",
+          "coordinates": [
+            -42.45,
+            -73.77
+          ],
+          "description": "Feuchtgebiet mit chilenischen Flamingos! Diese rosa Zugvögel beziehen ihre Farbe von ihrer Diät aus Algen und Krebstieren. Perfekt für Vogelbeobachtung und Kajaktouren. Unerwartetes Naturjuwel auf Chiloé.",
+          "descriptionEs": "Humedal con flamencos chilenos! Estas aves migratorias rosadas obtienen su color de su dieta de algas y crustáceos. Perfecto para observación de aves y kayak. Joya natural inesperada en Chiloé.",
+          "address": "Putemún, Castro, Chiloé",
+          "googleMapsLink": "https://maps.google.com/?q=-42.4500,-73.7700",
+          "priceRange": "$",
+          "tags": [
+            "nature",
+            "birdwatching",
+            "flamingos",
+            "wetland",
+            "kayak",
+            "unique"
+          ],
+          "source": "chile.travel",
+          "website": "https://chile.travel/itinerarios/imperdibles-de-chiloe-que-ver-y-hacer-durante-tres-dias/"
+        },
+        {
+          "id": "chiloe-muelle-luz",
+          "name": "Muelle de la Luz",
+          "nameEs": "Muelle de la Luz",
+          "category": "unique",
+          "coordinates": [
+            -42.1,
+            -73.65
+          ],
+          "description": "Mystischer Steg nahe Chepu. Die Legende besagt: Paare, die Hand in Hand über den Steg gehen, bleiben für immer zusammen. Romantischer Ort mit Blick auf Meer und Mythos.",
+          "descriptionEs": "Muelle místico cerca de Chepu. La leyenda dice: las parejas que entren de la mano permanecerán juntas para siempre. Lugar romántico con vistas al mar y mitología.",
+          "address": "Cerca de Chepu, Chiloé",
+          "googleMapsLink": "https://maps.google.com/?q=-42.1000,-73.6500",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "viewpoint",
+            "legend",
+            "romantic",
+            "mythology",
+            "pier",
+            "unique"
+          ],
+          "source": "chile.travel",
+          "website": "https://chile.travel/itinerarios/imperdibles-de-chiloe-que-ver-y-hacer-durante-tres-dias/"
+        },
+        {
+          "id": "puerto-montt-tenglo",
+          "name": "Isla Tenglo",
+          "nameEs": "Isla Tenglo",
+          "category": "nature",
+          "coordinates": [
+            -41.4833,
+            -72.9667
+          ],
+          "description": "Kleine Insel vor Puerto Montt, erreichbar mit kurzer Bootsfahrt. Wanderwege, frische Meeresfrüchte in einfachen Restaurants, ruhige Strände und tolle Aussicht auf die Stadt. Perfekter Halbtagesausflug.",
+          "descriptionEs": "Pequeña isla frente a Puerto Montt, accesible con corto viaje en bote. Senderos, mariscos frescos en restaurantes sencillos, playas tranquilas y excelentes vistas de la ciudad. Excursión perfecta de medio día.",
+          "address": "Isla Tenglo, Puerto Montt",
+          "googleMapsLink": "https://maps.google.com/?q=-41.4833,-72.9667",
+          "priceRange": "1015687",
+          "tags": [
+            "island",
+            "nature",
+            "boat",
+            "seafood",
+            "hiking",
+            "views"
+          ],
+          "source": "chile.travel",
+          "website": "https://chile.travel/en/destinations/puerto-montt/"
         }
       ]
     }
