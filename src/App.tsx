@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback, Suspense, lazy, useMemo } from 'react'
 import { MapLoading } from './components/LoadingState'
+import { useDeepLink } from './hooks/useDeepLink'
 import tripData from './data/trip-data.json'
 import factsData from './data/facts.json'
 import accommodationsPart1 from './data/accommodations-part1.json'
@@ -332,9 +333,21 @@ function App() {
     return () => window.removeEventListener('popstate', handlePopState)
   }, [showSearchResults, clearSearch])
 
-  // Select first location by default
+  // Deep-link hook (handles URL params and browser history)
+  const { getShareUrl } = useDeepLink({
+    locations: tripData.locations,
+    selectedLocation,
+    selectedRecommendation,
+    onLocationSelect: handleLocationSelect,
+    onRecommendationSelect: handleRecommendationSelect
+  })
+
+  // Select first location by default (only if no deep-link present)
   useEffect(() => {
-    if (tripData.locations.length > 0 && !selectedLocation) {
+    const params = new URLSearchParams(window.location.search)
+    const hasDeepLink = params.has('loc') || params.has('rec')
+    
+    if (tripData.locations.length > 0 && !selectedLocation && !hasDeepLink) {
       setSelectedLocation(tripData.locations[0])
     }
   }, [])
@@ -1015,6 +1028,37 @@ function App() {
                         className={`w-7 h-7 rounded-full flex items-center justify-center text-sm ${favorites.has(rec.id) ? 'bg-red-500' : 'bg-white/10'}`}
                       >
                         {favorites.has(rec.id) ? '❤️' : '🤍'}
+                      </button>
+                      <button
+                        onClick={async (e) => {
+                          e.stopPropagation()
+                          const shareUrl = getShareUrl(selectedLocation!.id, rec.id)
+                          
+                          // Try Web Share API first
+                          if (navigator.share) {
+                            try {
+                              await navigator.share({
+                                title: `${rec.name} - Chile Trip`,
+                                text: rec.description || '',
+                                url: shareUrl
+                              })
+                            } catch (err) {
+                              // User cancelled or error - fallback to clipboard
+                              if (err instanceof Error && err.name !== 'AbortError') {
+                                await navigator.clipboard.writeText(shareUrl)
+                                alert('📋 Link kopiert!')
+                              }
+                            }
+                          } else {
+                            // Fallback to clipboard
+                            await navigator.clipboard.writeText(shareUrl)
+                            alert('📋 Link kopiert!')
+                          }
+                        }}
+                        className="w-7 h-7 rounded-full bg-chile-accent-teal/30 hover:bg-chile-accent-teal/50 flex items-center justify-center text-sm transition-colors"
+                        title="Teilen"
+                      >
+                        📤
                       </button>
                       <a
                         href={getGoogleMapsSearchUrl(rec.name, selectedLocation?.name)}

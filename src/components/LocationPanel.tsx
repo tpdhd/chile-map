@@ -60,6 +60,7 @@ interface LocationPanelProps {
   onRecommendationSelect: (recommendation: Recommendation) => void
   activeCategory: string | null
   onCategoryChange: (category: string | null) => void
+  getShareUrl?: (locationId: string, recommendationId: string) => string
 }
 
 export default function LocationPanel({
@@ -67,7 +68,8 @@ export default function LocationPanel({
   selectedRecommendation,
   onRecommendationSelect,
   activeCategory,
-  onCategoryChange
+  onCategoryChange,
+  getShareUrl
 }: LocationPanelProps) {
   // Favorites state (persisted to localStorage)
   const [favorites, setFavorites] = useState<Set<string>>(() => {
@@ -404,6 +406,43 @@ export default function LocationPanel({
                             {recommendation.priceRange}
                           </span>
                         )}
+                        <button
+                          onClick={async (e) => {
+                            e.stopPropagation()
+                            const shareUrl = getShareUrl ? getShareUrl(location.id, recommendation.id) : window.location.origin
+                            
+                            // Try Web Share API first
+                            if (navigator.share) {
+                              try {
+                                await navigator.share({
+                                  title: `${recommendation.name} - Chile Trip`,
+                                  text: `${recommendation.description}`,
+                                  url: shareUrl
+                                })
+                              } catch (err) {
+                                // User cancelled or share failed - fallback to clipboard
+                                if (err instanceof Error && err.name !== 'AbortError') {
+                                  navigator.clipboard.writeText(shareUrl)
+                                  const btn = e.currentTarget
+                                  const originalText = btn.innerHTML
+                                  btn.innerHTML = '✓'
+                                  setTimeout(() => { btn.innerHTML = originalText }, 1500)
+                                }
+                              }
+                            } else {
+                              // Fallback to clipboard
+                              navigator.clipboard.writeText(shareUrl)
+                              const btn = e.currentTarget
+                              const originalText = btn.innerHTML
+                              btn.innerHTML = '✓'
+                              setTimeout(() => { btn.innerHTML = originalText }, 1500)
+                            }
+                          }}
+                          className="text-sm hover:scale-110 transition-transform"
+                          title="Teilen"
+                        >
+                          📤
+                        </button>
                         <button
                           onClick={(e) => toggleVisited(recommendation.id, e)}
                           className="text-lg hover:scale-110 transition-transform"
