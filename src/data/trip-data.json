@@ -538,6 +538,222 @@
             "architecture"
           ],
           "source": "Rough Guide 2023"
+        },
+        {
+          "id": "santiago-paseo-la-villa",
+          "name": "Paseo La Villa",
+          "nameEs": "Paseo La Villa",
+          "category": "unique",
+          "coordinates": [
+            -33.4167,
+            -70.5833
+          ],
+          "description": "Verstecktes Juwel in Providencia: Ensemble von klassischen Villen, romantische Brunnen und Kopfsteinpflaster. Schöne Cafés und Boutiquen. Ein ruhiger Zufluchtsort nahe dem Costanera Center.",
+          "descriptionEs": "Joya escondida en Providencia: conjunto de casonas clásicas, fuentes románticas y adoquines. Bonitos cafés y boutiques. Un refugio tranquilo cerca del Costanera Center.",
+          "address": "General Holley 50, Providencia",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4167,-70.5833",
+          "priceRange": "$",
+          "tags": [
+            "hidden-gem",
+            "architecture",
+            "cafes",
+            "romantic",
+            "providencia"
+          ],
+          "source": "chile.travel",
+          "website": "https://chile.travel/blog/santiago-magico-los-cinco-rincones-mas-hermosos-de-la-capital-chilena/"
+        },
+        {
+          "id": "santiago-paseo-metropolitano",
+          "name": "Paseo Metropolitano",
+          "nameEs": "Paseo Metropolitano",
+          "category": "viewpoint",
+          "coordinates": [
+            -33.425,
+            -70.63
+          ],
+          "description": "Erhöhter Wanderweg mit Panoramablick über Santiago, der vier Comunas durchquert (Recoleta bis Vitacura). Kostenlos und spektakulär bei Sonnenuntergang mit der Cordillera im Hintergrund.",
+          "descriptionEs": "Sendero elevado con vistas panorámicas de Santiago que atraviesa cuatro comunas (Recoleta a Vitacura). Gratuito y espectacular al atardecer con la cordillera de fondo.",
+          "address": "Paseo Metropolitano, Santiago",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4250,-70.6300",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "walking",
+            "viewpoint",
+            "panoramic",
+            "sunset",
+            "free"
+          ],
+          "source": "chile.travel",
+          "website": "https://chile.travel/blog/santiago-magico-los-cinco-rincones-mas-hermosos-de-la-capital-chilena/"
+        },
+        {
+          "id": "santiago-barrio-paris-londres",
+          "name": "Barrio París-Londres",
+          "nameEs": "Barrio París-Londres",
+          "category": "unique",
+          "coordinates": [
+            -33.44,
+            -70.64
+          ],
+          "description": "Verstecktes europäisches Viertel im Zentrum Santiagos mit Kopfsteinpflaster, neoklassischer Architektur und intimen Cafés. Zona Típica - historisches Schutzgebiet. Perfekt für ruhige Spaziergänge abseits der Massen.",
+          "descriptionEs": "Barrio europeo escondido en el centro de Santiago con calles empedradas, arquitectura neoclásica y cafés íntimos. Zona Típica - área protegida. Perfecto para paseos tranquilos lejos de las multitudes.",
+          "address": "Calle París y Londres, Santiago Centro",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4400,-70.6400",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "architecture",
+            "european",
+            "historic",
+            "zona-tipica",
+            "cafes"
+          ],
+          "source": "chile.travel",
+          "website": "https://chile.travel/blog/santiago-magico-los-cinco-rincones-mas-hermosos-de-la-capital-chilena/"
+        },
+        {
+          "id": "santiago-templo-bahai",
+          "name": "Templo Bahá'í",
+          "nameEs": "Templo Bahá'í",
+          "category": "unique",
+          "coordinates": [
+            -33.4395,
+            -70.5404
+          ],
+          "description": "Atemberaubender moderner Tempel in den Anden-Vorbergen mit neun transluzenten Blütenblättern aus Glas. Panoramablick über Santiago. Spiritueller Ort offen für alle Glaubensrichtungen. Kann im Winter schneebedeckt sein.",
+          "descriptionEs": "Impresionante templo moderno en las estribaciones andinas con nueve pétalos traslúcidos de vidrio. Vistas panorámicas de Santiago. Lugar espiritual abierto a todas las creencias. Puede cubrirse de nieve en invierno.",
+          "address": "Av. Pedro de Valdivia Norte 12250, Peñalolén",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4395,-70.5404",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "temple",
+            "architecture",
+            "spiritual",
+            "panoramic",
+            "modern"
+          ],
+          "source": "chile.travel",
+          "website": "https://chile.travel/blog/santiago-magico-los-cinco-rincones-mas-hermosos-de-la-capital-chilena/"
+        },
+        {
+          "id": "santiago-biblioteca-nacional",
+          "name": "Biblioteca Nacional",
+          "nameEs": "Biblioteca Nacional de Chile",
+          "category": "museum",
+          "coordinates": [
+            -33.4395,
+            -70.6404
+          ],
+          "description": "Monumentale Nationalbibliothek mit über 3,5 Millionen Stücken. Historische Sammlungen, Kartothek, Archive. Wechselnde Ausstellungen. Neben dem Cerro Santa Lucía gelegen. Mo-Fr geöffnet.",
+          "descriptionEs": "Biblioteca Nacional monumental con más de 3.5 millones de piezas. Colecciones históricas, mapoteca, archivos. Exposiciones temporales. Junto al Cerro Santa Lucía. Abierto lun-vie.",
+          "address": "Av. Libertador Bernardo O'Higgins 651, Santiago",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4395,-70.6404",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "library",
+            "historic",
+            "collections",
+            "free",
+            "culture"
+          ],
+          "source": "chile.travel",
+          "website": "https://chile.travel/blog/santiago-patrimonial-7-lugares-historicos-que-puedes-visitar-todo-el-ano/"
+        },
+        {
+          "id": "santiago-barrio-yungay",
+          "name": "Barrio Yungay",
+          "nameEs": "Barrio Yungay",
+          "category": "unique",
+          "coordinates": [
+            -33.4417,
+            -70.6633
+          ],
+          "description": "Wiederbelebtes Bohème-Viertel mit erhaltenen Pasajes (Gassen): Hurtado Rodríguez, Adriana Cousiño, Lucrecia Valdés. Altvilla-Architektur, Museen, Cafés und Parque Quinta Normal in der Nähe.",
+          "descriptionEs": "Barrio bohemio revitalizado con pasajes preservados: Hurtado Rodríguez, Adriana Cousiño, Lucrecia Valdés. Arquitectura de casas antiguas, museos, cafés y Parque Quinta Normal cerca.",
+          "address": "Barrio Yungay, Santiago",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4417,-70.6633",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "neighborhood",
+            "pasajes",
+            "architecture",
+            "bohemian",
+            "museums"
+          ],
+          "source": "chile.travel",
+          "website": "https://chile.travel/blog/santiago-patrimonial-7-lugares-historicos-que-puedes-visitar-todo-el-ano/"
+        },
+        {
+          "id": "santiago-palacio-pereira",
+          "name": "Palacio Pereira",
+          "nameEs": "Palacio Pereira",
+          "category": "museum",
+          "coordinates": [
+            -33.443,
+            -70.6537
+          ],
+          "description": "Restauriertes historisches Palais von 1874, 2021 für die Öffentlichkeit geöffnet. Temporäre Ausstellungen, Bibliothek, Cafeteria. Führungen Do-Sa verfügbar. Wunderschöne Architektur und kultureller Raum.",
+          "descriptionEs": "Palacio histórico restaurado de 1874, abierto al público en 2021. Exposiciones temporales, biblioteca, cafetería. Tours guiados jue-sáb. Hermosa arquitectura y espacio cultural.",
+          "address": "Huérfanos 1515, Santiago",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4430,-70.6537",
+          "priceRange": "$",
+          "tags": [
+            "palace",
+            "historic",
+            "museum",
+            "architecture",
+            "tours"
+          ],
+          "source": "chile.travel",
+          "website": "https://chile.travel/blog/santiago-patrimonial-7-lugares-historicos-que-puedes-visitar-todo-el-ano/"
+        },
+        {
+          "id": "santiago-mac-quinta-normal",
+          "name": "MAC Quinta Normal",
+          "nameEs": "MAC Quinta Normal",
+          "category": "museum",
+          "coordinates": [
+            -33.4375,
+            -70.6642
+          ],
+          "description": "Museo de Arte Contemporáneo der Universidad de Chile im Parque Quinta Normal. Zeitgenössische Kunst, experimentelle Ausstellungen. Eintritt frei. Zweiter Standort im Parque Forestal.",
+          "descriptionEs": "Museo de Arte Contemporáneo de la Universidad de Chile en Parque Quinta Normal. Arte contemporáneo, exposiciones experimentales. Entrada gratuita. Segundo sitio en Parque Forestal.",
+          "address": "Av. Matucana 464, Santiago",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4375,-70.6642",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "art",
+            "contemporary",
+            "museum",
+            "free",
+            "university"
+          ],
+          "source": "chile.travel",
+          "website": "https://chile.travel/blog/museos-de-santiago-y-alrededores-que-debes-conocer/"
+        },
+        {
+          "id": "santiago-museo-artequin",
+          "name": "Museo Artequín",
+          "nameEs": "Museo Artequín",
+          "category": "museum",
+          "coordinates": [
+            -33.4395,
+            -70.6642
+          ],
+          "description": "Interaktives Kunstmuseum im historischen Pabellón París. Kunstschätzung für alle Altersgruppen mit Reproduktionen westlicher Meisterwerke. Bildungsraum für Kinder und Familien. Erschwinglich.",
+          "descriptionEs": "Museo de arte interactivo en el histórico Pabellón París. Apreciación artística para todas las edades con reproducciones de obras maestras occidentales. Espacio educativo para niños y familias. Asequible.",
+          "address": "Av. Portales 3530, Estación Central",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4395,-70.6642",
+          "priceRange": "$",
+          "tags": [
+            "art",
+            "museum",
+            "interactive",
+            "family",
+            "education"
+          ],
+          "source": "chile.travel",
+          "website": "https://chile.travel/blog/museos-de-santiago-y-alrededores-que-debes-conocer/"
         }
       ]
     },
