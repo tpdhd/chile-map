@@ -10,16 +10,6 @@ export default defineConfig({
     setupFiles: './src/test/setup.ts',
   },
   base: '/chile-map/',
-  build: {
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          'leaflet': ['leaflet', 'react-leaflet'],
-          'trip-data': ['./src/data/trip-data.json', './src/data/facts.json'],
-        },
-      },
-    },
-  },
   plugins: [
     react(),
     VitePWA({
@@ -33,14 +23,44 @@ export default defineConfig({
         navigateFallbackDenylist: [/^\/api/, /^\/chile-map\/offline\.html$/],
         runtimeCaching: [
           {
-            // CARTO Dark Matter tiles — primary map provider (free, no API key)
+            // Mapbox dark tile images (current map provider) - cache-first for instant revisits
+            urlPattern: /^https:\/\/api\.mapbox\.com\/styles\/v1\/mapbox\/dark-v11\/tiles\/.*/i,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'mapbox-tiles-v1',
+              expiration: {
+                maxEntries: 8000,
+                maxAgeSeconds: 60 * 60 * 24 * 90, // 90 days (covers the trip)
+              },
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
+            },
+          },
+          {
+            // Mapbox other resources (fonts, sprites, glyphs)
+            urlPattern: /^https:\/\/api\.mapbox\.com\/.*/i,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'mapbox-resources',
+              expiration: {
+                maxEntries: 500,
+                maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
+              },
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
+            },
+          },
+          {
+            // CARTO tiles (fallback/legacy)
             urlPattern: /^https:\/\/.*\.basemaps\.cartocdn\.com\/.*/i,
             handler: 'CacheFirst',
             options: {
-              cacheName: 'carto-tiles-v2',
+              cacheName: 'carto-tiles',
               expiration: {
-                maxEntries: 10000,               // ~250 MB at 25KB/tile — covers z5-14 for route
-                maxAgeSeconds: 60 * 60 * 24 * 90, // 90 days (covers the entire trip)
+                maxEntries: 3000,
+                maxAgeSeconds: 60 * 60 * 24 * 30,
               },
               cacheableResponse: {
                 statuses: [0, 200],

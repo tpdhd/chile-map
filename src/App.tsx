@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef, useCallback, Suspense, lazy, useMemo } from 'react'
 import { MapLoading } from './components/LoadingState'
 import { useDeepLink } from './hooks/useDeepLink'
-import { prefetchTilesForLocations } from './utils/tilePrefetcher'
 import tripData from './data/trip-data.json'
 import factsData from './data/facts.json'
 import accommodationsPart1 from './data/accommodations-part1.json'
@@ -321,21 +320,6 @@ function App() {
     localStorage.setItem(NOTES_KEY, JSON.stringify(notes))
     localStorage.setItem(VISITED_KEY, JSON.stringify([...visited]))
   }, [favorites, notes, visited])
-
-  // Pre-fetch map tiles for all trip locations (background, after first paint)
-  useEffect(() => {
-    if (!('caches' in window)) return
-
-    // Delay to not compete with initial page load
-    const timer = setTimeout(() => {
-      const locations = tripData.locations.map(loc => ({
-        coordinates: loc.coordinates as [number, number],
-      }))
-      prefetchTilesForLocations(locations).catch(console.error)
-    }, 5000) // Start 5 seconds after mount
-
-    return () => clearTimeout(timer)
-  }, [])
 
   // Handle browser back button to close search
   useEffect(() => {
