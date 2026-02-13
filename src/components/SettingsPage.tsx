@@ -56,7 +56,7 @@ export default function SettingsPage({ onClose }: SettingsPageProps) {
     setTotalMB(0)
 
     try {
-      const pmtilesUrl = import.meta.env.BASE_URL + 'chile-route.pmtiles'
+      const pmtilesUrl = 'https://pub-650d73f8a742451c95375c89cda8af2b.r2.dev/chile-route.pmtiles'
       
       // First, get the file size with a HEAD request
       let fileSizeBytes = 0
