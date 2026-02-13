@@ -286,16 +286,15 @@ export default function Map({
       attributionControl={false}
       zoomControl={false}
     >
-      {/* Dark mode tile layer - Mapbox Dark */}
+      {/* Dark mode tile layer - Carto Dark Matter (free, no API key, offline-cacheable) */}
       <TileLayer
-        url={`https://api.mapbox.com/styles/v1/mapbox/dark-v11/tiles/512/{z}/{x}/{y}@2x?access_token=${atob('cGsuZXlKMUlqb2liWE53WkROMklpd2lZU0k2SW1OdGJHTTNaalZ3Y2pCMk0zUXphM05uZEdsMmFIcDFiV1FpZlEuWnZaWWQ5UlRVczdUcmw0WFZ6RWRlQQ==')}`}
-        attribution='&copy; <a href="https://www.mapbox.com/">Mapbox</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        maxZoom={22}
-        tileSize={512}
-        zoomOffset={-1}
+        url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png"
+        attribution='&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>'
+        subdomains={['a', 'b', 'c', 'd']}
+        maxZoom={20}
+        tileSize={256}
         crossOrigin="anonymous"
         className="smooth-tiles"
-        maxNativeZoom={22}
         keepBuffer={16}
         updateWhenZooming={false}
         updateWhenIdle={true}
