@@ -124,6 +124,7 @@ function ProtomapsLayer() {
       url: 'https://pub-650d73f8a742451c95375c89cda8af2b.r2.dev/chile-route.pmtiles',
       flavor: 'dark',
       lang: 'es',
+      maxDataZoom: 15,
     })
     layer.addTo(map)
 
