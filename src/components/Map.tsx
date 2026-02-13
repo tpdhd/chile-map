@@ -1,8 +1,7 @@
 import { useEffect, useRef } from 'react'
-import { MapContainer, Marker, Polyline, useMap } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Polyline, useMap } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
-import { leafletLayer } from 'protomaps-leaflet'
 import { Location, Recommendation, Accommodation } from '../App'
 
 // Fix for default Leaflet icons in Vite
@@ -113,27 +112,6 @@ interface MapProps {
   showAccommodationsOnMap: boolean
   selectedAccommodation: Accommodation | null
   onAccommodationSelect: (accommodation: Accommodation) => void
-}
-
-// Component to add protomaps-leaflet dark vector tile layer
-function ProtomapsLayer() {
-  const map = useMap()
-
-  useEffect(() => {
-    const layer = leafletLayer({
-      url: 'https://pub-650d73f8a742451c95375c89cda8af2b.r2.dev/chile-route.pmtiles',
-      flavor: 'dark',
-      lang: 'es',
-      maxDataZoom: 15,
-    })
-    layer.addTo(map)
-
-    return () => {
-      map.removeLayer(layer)
-    }
-  }, [map])
-
-  return null
 }
 
 // Component to handle map view changes
@@ -308,8 +286,20 @@ export default function Map({
       attributionControl={false}
       zoomControl={false}
     >
-      {/* Dark mode vector tile layer - PMTiles + protomaps-leaflet */}
-      <ProtomapsLayer />
+      {/* Dark mode tile layer - Mapbox Dark */}
+      <TileLayer
+        url={`https://api.mapbox.com/styles/v1/mapbox/dark-v11/tiles/512/{z}/{x}/{y}@2x?access_token=${atob('cGsuZXlKMUlqb2liWE53WkROMklpd2lZU0k2SW1OdGJHTTNaalZ3Y2pCMk0zUXphM05uZEdsMmFIcDFiV1FpZlEuWnZaWWQ5UlRVczdUcmw0WFZ6RWRlQQ==')}`}
+        attribution='&copy; <a href="https://www.mapbox.com/">Mapbox</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        maxZoom={22}
+        tileSize={512}
+        zoomOffset={-1}
+        crossOrigin="anonymous"
+        className="smooth-tiles"
+        maxNativeZoom={22}
+        keepBuffer={16}
+        updateWhenZooming={false}
+        updateWhenIdle={true}
+      />
 
       {/* Route line */}
       <Polyline

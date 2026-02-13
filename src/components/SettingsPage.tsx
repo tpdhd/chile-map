@@ -5,21 +5,81 @@ interface SettingsPageProps {
   onClose: () => void
 }
 
+// Convert lat/lon to tile x/y at given zoom
+function lonLatToTile(lon: number, lat: number, zoom: number): [number, number] {
+  const n = Math.pow(2, zoom)
+  const x = Math.floor(((lon + 180) / 360) * n)
+  const latRad = (lat * Math.PI) / 180
+  const y = Math.floor((1 - Math.log(Math.tan(latRad) + 1 / Math.cos(latRad)) / Math.PI) / 2 * n)
+  return [x, y]
+}
+
+// Generate tile URLs for all locations
+function generateTileUrls(
+  locations: Array<{ coordinates: [number, number] }>,
+  zoomLevels: number[],
+  radiusTiles: number = 3
+): string[] {
+  const urls: string[] = []
+  const seen = new Set<string>()
+  const token = atob('cGsuZXlKMUlqb2liWE53WkROMklpd2lZU0k2SW1OdGJHTTNaalZ3Y2pCMk0zUXphM05uZEdsMmFIcDFiV1FpZlEuWnZaWWQ5UlRVczdUcmw0WFZ6RWRlQQ==')
+
+  for (const loc of locations) {
+    for (const zoom of zoomLevels) {
+      const [cx, cy] = lonLatToTile(loc.coordinates[1], loc.coordinates[0], zoom)
+      // Scale radius with zoom - at low zoom fewer tiles needed
+      const r = Math.min(radiusTiles, Math.max(1, Math.floor(radiusTiles * (zoom - 7) / 7)))
+
+      for (let dx = -r; dx <= r; dx++) {
+        for (let dy = -r; dy <= r; dy++) {
+          const x = cx + dx
+          const y = cy + dy
+          const key = `${zoom}/${x}/${y}`
+          if (seen.has(key)) continue
+          seen.add(key)
+          urls.push(
+            `https://api.mapbox.com/styles/v1/mapbox/dark-v11/tiles/256/${zoom}/${x}/${y}@2x?access_token=${token}`
+          )
+        }
+      }
+    }
+  }
+  return urls
+}
+
+// Estimate total tiles for display
+function estimateTileCount(
+  locationCount: number,
+  zoomLevels: number[],
+  radiusTiles: number = 3
+): number {
+  let total = 0
+  for (const zoom of zoomLevels) {
+    const r = Math.min(radiusTiles, Math.max(1, Math.floor(radiusTiles * (zoom - 7) / 7)))
+    const side = 2 * r + 1
+    total += locationCount * side * side
+  }
+  // Reduce for overlap
+  return Math.floor(total * 0.75)
+}
+
 export default function SettingsPage({ onClose }: SettingsPageProps) {
   const [cacheStatus, setCacheStatus] = useState<'idle' | 'downloading' | 'done' | 'error'>('idle')
   const [progress, setProgress] = useState(0)
-  const [downloadedMB, setDownloadedMB] = useState(0)
-  const [totalMB, setTotalMB] = useState(0)
+  const [totalTiles, setTotalTiles] = useState(0)
+  const [downloadedTiles, setDownloadedTiles] = useState(0)
   const [cacheSize, setCacheSize] = useState<string | null>(null)
-  const [pmtilesCached, setPmtilesCached] = useState(false)
   const [showRoute, setShowRoute] = useState(() => {
     return localStorage.getItem('chile-show-route') !== 'false'
   })
 
-  // Check cache size and PMTiles cache status on mount
+  const ZOOM_LEVELS = [8, 9, 10, 11, 12, 13, 14]
+  const estimatedTiles = estimateTileCount(tripData.locations.length, ZOOM_LEVELS)
+  const estimatedSizeMB = Math.round(estimatedTiles * 25 / 1024) // ~25KB per @2x tile
+
+  // Check cache size on mount
   useEffect(() => {
     checkCacheSize()
-    checkPmtilesCache()
   }, [])
 
   const checkCacheSize = async () => {
@@ -34,17 +94,7 @@ export default function SettingsPage({ onClose }: SettingsPageProps) {
     }
   }
 
-  const checkPmtilesCache = async () => {
-    try {
-      const cache = await caches.open('pmtiles-offline-v1')
-      const keys = await cache.keys()
-      setPmtilesCached(keys.some(req => req.url.includes('chile-route.pmtiles')))
-    } catch {
-      setPmtilesCached(false)
-    }
-  }
-
-  const cacheOfflineMap = useCallback(async () => {
+  const prefetchTiles = useCallback(async () => {
     if (!('caches' in window)) {
       alert('Cache API nicht verfügbar. Bitte nutze einen modernen Browser.')
       return
@@ -52,104 +102,80 @@ export default function SettingsPage({ onClose }: SettingsPageProps) {
 
     setCacheStatus('downloading')
     setProgress(0)
-    setDownloadedMB(0)
-    setTotalMB(0)
+    setDownloadedTiles(0)
 
     try {
-      const pmtilesUrl = 'https://pub-650d73f8a742451c95375c89cda8af2b.r2.dev/chile-route.pmtiles'
+      const cache = await caches.open('mapbox-tiles-v1')
+      const locations = tripData.locations.map(l => ({
+        coordinates: l.coordinates as [number, number]
+      }))
+      const urls = generateTileUrls(locations, ZOOM_LEVELS)
+      setTotalTiles(urls.length)
+
+      let fetched = 0
+      let errors = 0
+      const BATCH_SIZE = 6
       
-      // First, get the file size with a HEAD request
-      let fileSizeBytes = 0
-      try {
-        const headResp = await fetch(pmtilesUrl, { method: 'HEAD' })
-        const contentLength = headResp.headers.get('content-length')
-        if (contentLength) {
-          fileSizeBytes = parseInt(contentLength)
-          setTotalMB(Math.round(fileSizeBytes / (1024 * 1024)))
-        }
-      } catch {
-        // HEAD might not work, continue anyway
-      }
-
-      // Fetch the full PMTiles file with progress tracking
-      const response = await fetch(pmtilesUrl)
-      
-      if (!response.ok) {
-        throw new Error(`HTTP ${response.status}`)
-      }
-
-      // If we didn't get size from HEAD, try content-length from GET
-      if (!fileSizeBytes) {
-        const contentLength = response.headers.get('content-length')
-        if (contentLength) {
-          fileSizeBytes = parseInt(contentLength)
-          setTotalMB(Math.round(fileSizeBytes / (1024 * 1024)))
-        }
-      }
-
-      // Read the response as a stream to track progress
-      const reader = response.body?.getReader()
-      if (!reader) {
-        throw new Error('ReadableStream not supported')
-      }
-
-      const chunks: Uint8Array[] = []
-      let receivedBytes = 0
-
-      while (true) {
-        const { done, value } = await reader.read()
-        if (done) break
+      for (let i = 0; i < urls.length; i += BATCH_SIZE) {
+        const batch = urls.slice(i, i + BATCH_SIZE)
+        const promises = batch.map(async (url) => {
+          try {
+            // Check if already cached
+            const existing = await cache.match(url)
+            if (existing) {
+              fetched++
+              return
+            }
+            const response = await fetch(url)
+            if (response.ok) {
+              await cache.put(url, response)
+            }
+            fetched++
+          } catch {
+            errors++
+            fetched++
+          }
+        })
+        await Promise.all(promises)
         
-        chunks.push(value)
-        receivedBytes += value.length
+        setDownloadedTiles(fetched)
+        setProgress(Math.round((fetched / urls.length) * 100))
         
-        const mb = Math.round(receivedBytes / (1024 * 1024))
-        setDownloadedMB(mb)
-        
-        if (fileSizeBytes > 0) {
-          setProgress(Math.round((receivedBytes / fileSizeBytes) * 100))
+        // Brief pause to avoid hammering
+        if (i + BATCH_SIZE < urls.length) {
+          await new Promise(r => setTimeout(r, 50))
         }
       }
-
-      // Combine chunks into a single blob
-      const blob = new Blob(chunks, { type: 'application/octet-stream' })
-      const cacheResponse = new Response(blob, {
-        status: 200,
-        headers: {
-          'Content-Type': 'application/octet-stream',
-          'Content-Length': String(receivedBytes),
-        }
-      })
-
-      // Store in Cache API
-      const cache = await caches.open('pmtiles-offline-v1')
-      await cache.put(pmtilesUrl, cacheResponse)
 
       setCacheStatus('done')
-      setPmtilesCached(true)
-      setProgress(100)
       await checkCacheSize()
+      
+      if (errors > 0) {
+        console.warn(`[TilePrefetch] ${errors} tiles failed to download`)
+      }
     } catch (err) {
-      console.error('[PMTiles Cache] Error:', err)
+      console.error('[TilePrefetch] Error:', err)
       setCacheStatus('error')
     }
   }, [])
 
   const clearCache = useCallback(async () => {
-    if (!confirm('Alle gecachten Kartendaten löschen?')) return
+    if (!confirm('Alle gecachten Kartenkacheln löschen?')) return
     
     try {
-      await caches.delete('pmtiles-offline-v1')
-      // Also clear old mapbox caches if they exist
-      await caches.delete('mapbox-tiles-v1')
+      const deleted = await caches.delete('mapbox-tiles-v1')
+      // Also clear workbox caches
       await caches.delete('mapbox-tiles')
       
-      setCacheStatus('idle')
-      setProgress(0)
-      setDownloadedMB(0)
-      setPmtilesCached(false)
-      await checkCacheSize()
-      alert('✅ Cache gelöscht')
+      if (deleted) {
+        setCacheStatus('idle')
+        setProgress(0)
+        setDownloadedTiles(0)
+        await checkCacheSize()
+        alert('✅ Cache gelöscht')
+      } else {
+        alert('Kein Cache zum Löschen gefunden')
+      }
     } catch (err) {
       console.error('Cache clear error:', err)
       alert('Fehler beim Löschen')
@@ -192,34 +218,30 @@ export default function SettingsPage({ onClose }: SettingsPageProps) {
           </h2>
           
           <div className="text-xs text-chile-text-secondary mb-3">
-            Lädt die gesamte Vektorkarte (Chile-Route) herunter. 
-            Damit funktioniert die Karte auch ohne Internet — inklusive aller Straßennamen und Details.
+            Lädt Kartenkacheln für alle {tripData.locations.length} Reiseziele herunter (Zoom {ZOOM_LEVELS[0]}–{ZOOM_LEVELS[ZOOM_LEVELS.length-1]}). 
+            Damit funktioniert die Karte auch ohne Internet.
           </div>
 
-          {pmtilesCached && cacheStatus !== 'downloading' && (
-            <div className="mb-3 p-2 rounded-lg bg-green-500/10 border border-green-500/20 text-xs text-green-400 flex items-center gap-2">
-              <span>✅</span> Karte ist offline verfügbar!
-            </div>
-          )}
+          <div className="flex items-center gap-2 text-xs text-chile-text-muted mb-3">
+            <span>📊</span>
+            <span>~{estimatedTiles.toLocaleString()} Kacheln • ~{estimatedSizeMB} MB geschätzt</span>
+          </div>
 
           {/* Progress Bar */}
           {cacheStatus === 'downloading' && (
             <div className="mb-3">
               <div className="flex justify-between text-xs text-chile-text-muted mb-1">
                 <span>Herunterladen...</span>
-                <span>
-                  {downloadedMB} MB{totalMB > 0 ? ` / ${totalMB} MB` : ''} 
-                  {progress > 0 ? ` (${progress}%)` : ''}
-                </span>
+                <span>{downloadedTiles}/{totalTiles} ({progress}%)</span>
               </div>
               <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden">
                 <div 
                   className="h-full bg-chile-accent-teal rounded-full transition-all duration-300"
-                  style={{ width: progress > 0 ? `${progress}%` : '10%' }}
+                  style={{ width: `${progress}%` }}
                 />
               </div>
               <div className="text-[10px] text-chile-text-muted mt-1">
-                ⚠️ Bitte die App nicht schließen. Die Datei ist groß — das kann einige Minuten dauern.
+                Bitte die App nicht schließen...
               </div>
             </div>
           )}
@@ -238,7 +260,7 @@ export default function SettingsPage({ onClose }: SettingsPageProps) {
 
           <div className="flex gap-2">
             <button
-              onClick={cacheOfflineMap}
+              onClick={prefetchTiles}
               disabled={cacheStatus === 'downloading'}
               className={`flex-1 py-2.5 rounded-lg text-sm font-medium flex items-center justify-center gap-2 transition-all ${
                 cacheStatus === 'downloading' 
@@ -247,7 +269,7 @@ export default function SettingsPage({ onClose }: SettingsPageProps) {
               }`}
             >
               <span>{cacheStatus === 'downloading' ? '⏳' : '🗺️'}</span>
-              {cacheStatus === 'downloading' ? 'Lädt...' : pmtilesCached ? 'Erneut laden' : 'Karte offline speichern'}
+              {cacheStatus === 'downloading' ? 'Lädt...' : cacheStatus === 'done' ? 'Erneut laden' : 'Karte offline speichern'}
             </button>
           </div>
         </section>
@@ -305,7 +327,7 @@ export default function SettingsPage({ onClose }: SettingsPageProps) {
           </h2>
           <div className="space-y-1.5 text-xs text-chile-text-secondary">
             <div className="flex justify-between">
-              <span>Version</span><span className="text-chile-text-muted">2.0.0</span>
+              <span>Version</span><span className="text-chile-text-muted">1.0.0</span>
             </div>
             <div className="flex justify-between">
               <span>Reiseziele</span><span className="text-chile-text-muted">{tripData.locations.length}</span>
@@ -313,14 +335,14 @@ export default function SettingsPage({ onClose }: SettingsPageProps) {
             <div className="flex justify-between">
               <span>Empfehlungen</span>
               <span className="text-chile-text-muted">
-                {tripData.locations.reduce((acc: number, loc: { recommendations: unknown[] }) => acc + loc.recommendations.length, 0)}
+                {tripData.locations.reduce((acc, loc) => acc + loc.recommendations.length, 0)}
               </span>
             </div>
             <div className="flex justify-between">
               <span>Reisedauer</span><span className="text-chile-text-muted">{tripData.trip.totalDays} Tage</span>
             </div>
             <div className="flex justify-between">
-              <span>Karte</span><span className="text-chile-text-muted">OpenStreetMap (Vektor, Offline)</span>
+              <span>Karte</span><span className="text-chile-text-muted">Mapbox Dark v11</span>
             </div>
           </div>
         </section>

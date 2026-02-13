@@ -5,9 +5,6 @@ node_modules/
 .DS_Store
 docs/
 
-# PMTiles files (too large for Git, deployed separately)
-*.pmtiles
-
 # Build artifacts
 VERIFICATION_REPORT.md
 DEEPLINK_IMPLEMENTATION.md
@@ -15,4 +12,3 @@ PWA_CACHING_RESEARCH.md
 PWA_IMPROVEMENTS_SUMMARY.md
 TILE_CACHING_REPORT.md
 PROGRESS.md
-.wrangler/
