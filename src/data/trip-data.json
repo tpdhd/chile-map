@@ -24,6 +24,168 @@
       "description": "Chiles lebendige Hauptstadt mit Weltklasse-Gastronomie, historischen Vierteln und atemberaubender Anden-Aussicht",
       "recommendations": [
         {
+          "id": "santiago-entel-centro",
+          "name": "Entel Centro",
+          "nameEs": "Entel Centro",
+          "category": "service",
+          "coordinates": [
+            -33.4372,
+            -70.6484
+          ],
+          "description": "Hauptgeschäft von Entel im Stadtzentrum. Perfekt für SIM-Karten direkt nach Ankunft. Plan Fácil 40GB Prepaid = 8.000 CLP (~8€). Bestes Mobilfunknetz für ländliche Gebiete und Chiloé. Bringe Reisepass und Bargeld/Karte mit.",
+          "descriptionEs": "Tienda principal de Entel en el centro. Perfecto para tarjetas SIM después de llegar. Plan Fácil 40GB Prepago = 8.000 CLP (~8€). La mejor red móvil para áreas rurales y Chiloé. Trae pasaporte y efectivo/tarjeta.",
+          "address": "Huérfanos 1160, Santiago Centro",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4372,-70.6484",
+          "hours": "Mo-Fr 9:00-19:00, Sa 10:00-14:00",
+          "priceRange": "$",
+          "tags": [
+            "sim-card",
+            "mobile",
+            "essential",
+            "entel",
+            "prepaid",
+            "gringo-priority"
+          ],
+          "gringoTips": [
+            "Sage 'Quiero Plan Fácil 40GB prepago'",
+            "40GB + 600 Min für 8.000 CLP (8€)",
+            "Reisepass nötig zur Aktivierung",
+            "Besser als Movistar fürs Netz, aber 3€ teurer",
+            "15-20 Min vom Flughafen mit Uber"
+          ],
+          "source": "user-request-2026-03-02"
+        },
+        {
+          "id": "santiago-entel-costanera",
+          "name": "Entel Costanera Center",
+          "nameEs": "Entel Costanera Center",
+          "category": "service",
+          "coordinates": [
+            -33.4178,
+            -70.6063
+          ],
+          "description": "Entel-Shop in Chiles größter Mall (Costanera Center). Bequemer als Centro - klimatisiert, mehr Zeit, bessere Atmosphäre. Gleiche Preise: Plan Fácil 40GB = 8.000 CLP. Auch So geöffnet. Kombinierbar mit Mall-Besuch.",
+          "descriptionEs": "Tienda Entel en el mall más grande de Chile. Más cómodo que el centro - aire acondicionado, más tiempo. Mismos precios: Plan Fácil 40GB = 8.000 CLP. Abierto domingos. Se puede combinar con visita al mall.",
+          "address": "Av. Andrés Bello 2425, Providencia (Costanera Center)",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4178,-70.6063",
+          "hours": "Mo-So 10:00-21:00",
+          "priceRange": "$",
+          "tags": [
+            "sim-card",
+            "mobile",
+            "essential",
+            "entel",
+            "mall",
+            "sunday-open",
+            "gringo-priority"
+          ],
+          "gringoTips": [
+            "Im größten Mall Südamerikas - 300m hoher Turm",
+            "Entspannter als Centro-Shop, keine Hektik",
+            "Kombiniere mit Essen/Shopping in der Mall",
+            "Auch sonntags geöffnet (Centro ist zu)",
+            "Food Court im 4. Stock hat gute Optionen"
+          ],
+          "source": "user-request-2026-03-02"
+        },
+        {
+          "id": "santiago-movistar-centro",
+          "name": "Movistar Centro",
+          "nameEs": "Movistar Centro",
+          "category": "service",
+          "coordinates": [
+            -33.4378,
+            -70.6505
+          ],
+          "description": "Movistar-Hauptgeschäft als günstigere Alternative zu Entel. 40GB + 500 Min = 5.000 CLP (~5€), 3€ billiger als Entel. Schlechteres Netz in ländlichen Gebieten, aber OK für Städte. Backup falls Entel ausverkauft.",
+          "descriptionEs": "Tienda principal Movistar como alternativa más barata a Entel. 40GB + 500 Min = 5.000 CLP (~5€), 3€ más barato que Entel. Red peor en zonas rurales, pero OK para ciudades.",
+          "address": "Huérfanos 623, Santiago Centro",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4378,-70.6505",
+          "hours": "Mo-Fr 9:00-19:00, Sa Geschlossen",
+          "priceRange": "$",
+          "tags": [
+            "sim-card",
+            "mobile",
+            "backup",
+            "movistar",
+            "cheaper",
+            "gringo-option"
+          ],
+          "gringoTips": [
+            "3€ günstiger als Entel (5€ vs 8€)",
+            "Schlechteres Netz auf dem Land / Chiloé",
+            "Für reine Stadt-Nutzung völlig OK",
+            "Nur Mo-Fr geöffnet (Sa geschlossen)",
+            "Näher am Zentrum als Entel (Huérfanos 623)"
+          ],
+          "source": "user-request-2026-03-02"
+        },
+        {
+          "id": "santiago-lider-express-centro",
+          "name": "Lider Express Centro",
+          "nameEs": "Lider Express Centro",
+          "category": "shopping",
+          "coordinates": [
+            -33.4425,
+            -70.654
+          ],
+          "description": "Walmart-Kette von Chile, günstigste Supermarkt-Option. Perfekt für Snacks, Wasser, Basics vor Abfahrt. Preise ~30% günstiger als Tankstellen. Eigenmarke 'Líder' ist sehr günstig und OK. Akzeptiert Kreditkarten.",
+          "descriptionEs": "Cadena chilena de Walmart, la opción más económica. Perfecto para snacks, agua, básicos antes de salir. Precios ~30% más baratos que gasolineras. Marca propia 'Líder' es muy barata y OK. Acepta tarjetas.",
+          "address": "Ahumada 131, Santiago Centro",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4425,-70.6540",
+          "hours": "Mo-So 8:00-22:00",
+          "priceRange": "$",
+          "tags": [
+            "supermarket",
+            "groceries",
+            "cheap",
+            "basics",
+            "water",
+            "snacks",
+            "gringo-essential"
+          ],
+          "gringoTips": [
+            "Günstigster Supermarkt (Walmart von Chile)",
+            "Wasser: 6er Pack ~2€ (Tankstelle: ~5€)",
+            "Eigenmarke 'Líder' = billig & gut genug",
+            "Kreditkarten funktionieren problemlos",
+            "Vor Roadtrip hier statt unterwegs tanken"
+          ],
+          "source": "user-request-2026-03-02"
+        },
+        {
+          "id": "santiago-banco-chile-atm",
+          "name": "Banco de Chile ATM",
+          "nameEs": "Cajero Banco de Chile",
+          "category": "service",
+          "coordinates": [
+            -33.4372,
+            -70.65
+          ],
+          "description": "Geldautomat mit fairen Wechselkursen. Banco de Chile/BCI = beste Kurse, niedrigste Gebühren in Chile. Meide ATMs an Touristen-Hotspots (Airport, Hotels). Max 200.000 CLP (~200€) pro Abhebung. Visa/Mastercard funktionieren.",
+          "descriptionEs": "Cajero con tipos de cambio justos. Banco de Chile/BCI = mejores tasas, comisiones más bajas en Chile. Evita cajeros en zonas turísticas (aeropuerto, hoteles). Máx 200.000 CLP (~200€) por retiro. Visa/Mastercard funcionan.",
+          "address": "Paseo Huérfanos 1134, Santiago Centro",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4372,-70.6500",
+          "hours": "24/7",
+          "priceRange": "$",
+          "tags": [
+            "atm",
+            "cash",
+            "exchange",
+            "banco-chile",
+            "fair-rate",
+            "gringo-tip"
+          ],
+          "gringoTips": [
+            "Banco de Chile/BCI = beste ATM-Kurse",
+            "Airport-ATMs haben schlechtere Kurse",
+            "Max 200.000 CLP pro Abhebung",
+            "Frag deine Bank nach Auslandsgebühren",
+            "Kreditkarten sind überall akzeptiert"
+          ],
+          "source": "user-request-2026-03-02"
+        },
+        {
           "id": "santiago-mercado-central",
           "name": "Central Market",
           "nameEs": "Mercado Central",
@@ -7177,7 +7339,7 @@
           "category": "museum",
           "coordinates": [
             -41.31,
-            -73.0
+            -73
           ],
           "description": "Museum in Nueva Braunau mit umfangreicher Sammlung von Antiquitäten aus der deutschen Kolonialzeit. Möbel, Werkzeuge, Fotos und Gegenstände der ersten deutschen Siedler am Llanquihue-See.",
           "descriptionEs": "Museo en Nueva Braunau con extensa colección de antigüedades del período de colonización alemana. Muebles, herramientas, fotos y objetos de los primeros colonos alemanes del Lago Llanquihue.",
