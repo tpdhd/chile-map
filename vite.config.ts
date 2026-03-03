@@ -14,6 +14,8 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+      injectRegister: false, // DISABLE PWA FOR NOW
+      disable: true, // NUCLEAR OPTION
       includeAssets: ['favicon.svg', 'apple-touch-icon.png', 'offline.html'],
       workbox: {
         // Precache all static assets including offline page
