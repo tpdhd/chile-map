@@ -1,9 +1,8 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Auto-deploy deaktiviert — nur noch manuell
-  # push:
-  #   branches: [master]
+  push:
+    branches: [master]
   workflow_dispatch:
 
 permissions:
