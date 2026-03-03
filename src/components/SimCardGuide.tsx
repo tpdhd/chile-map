@@ -1,4 +1,16 @@
-import { X, Phone, CreditCard, Info, CheckCircle, AlertCircle, MapPin, ExternalLink } from 'lucide-react'
+// Inline icon components (no external dependency)
+const Icon = ({ children, className = '' }: { children: React.ReactNode; className?: string }) => (
+  <span className={`inline-flex items-center justify-center ${className}`}>{children}</span>
+)
+const X_Icon = ({ className = '' }: { className?: string }) => (
+  <svg className={className} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+)
+const MapPinIcon = ({ className = '' }: { className?: string }) => (
+  <svg className={className} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+)
+const ExternalLinkIcon = ({ className = '' }: { className?: string }) => (
+  <svg className={className} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+)
 
 interface SimCardGuideProps {
   onClose: () => void
@@ -78,7 +90,7 @@ export default function SimCardGuide({ onClose }: SimCardGuideProps) {
       <div className="sticky top-0 z-10 bg-gradient-to-r from-purple-600 to-pink-600 text-white p-4 shadow-lg">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Phone className="w-6 h-6" />
+            📱
             <div>
               <h1 className="text-xl font-bold">SIM-Karten Guide</h1>
               <p className="text-sm text-white/80">Entel in Santiago</p>
@@ -88,7 +100,7 @@ export default function SimCardGuide({ onClose }: SimCardGuideProps) {
             onClick={onClose}
             className="p-2 hover:bg-white/20 rounded-lg transition-colors"
           >
-            <X className="w-6 h-6" />
+            <X_Icon className="w-6 h-6" />
           </button>
         </div>
       </div>
@@ -97,7 +109,7 @@ export default function SimCardGuide({ onClose }: SimCardGuideProps) {
         {/* Quick Action Alert */}
         <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white p-4 rounded-lg shadow-lg">
           <div className="flex items-start gap-3">
-            <AlertCircle className="w-6 h-6 flex-shrink-0 mt-0.5" />
+            ⚠️
             <div>
               <h3 className="font-bold text-lg mb-1">🛫 Am Flughafen?</h3>
               <p className="text-sm mb-2">Die nächsten Entel-Shops sind im Stadtzentrum (~20 Min Uber)</p>
@@ -116,7 +128,7 @@ export default function SimCardGuide({ onClose }: SimCardGuideProps) {
         {/* Step by Step Guide */}
         <div className="bg-white/5 backdrop-blur-sm rounded-lg p-6 shadow-lg">
           <h2 className="text-2xl font-bold text-chile-text-primary mb-4 flex items-center gap-2">
-            <CheckCircle className="w-6 h-6 text-green-400" />
+            ✅
             Schritt-für-Schritt
           </h2>
           
@@ -166,7 +178,7 @@ export default function SimCardGuide({ onClose }: SimCardGuideProps) {
         {/* Price Options */}
         <div className="bg-white/5 backdrop-blur-sm rounded-lg p-6 shadow-lg">
           <h2 className="text-2xl font-bold text-chile-text-primary mb-4 flex items-center gap-2">
-            <CreditCard className="w-6 h-6 text-yellow-400" />
+            💳
             Preise & Pakete
           </h2>
           
@@ -195,7 +207,7 @@ export default function SimCardGuide({ onClose }: SimCardGuideProps) {
           </div>
 
           <div className="mt-4 p-4 bg-blue-500/10 border border-blue-500/20 rounded-lg">
-            <Info className="w-5 h-5 text-blue-400 inline-block mr-2" />
+            ℹ️
             <span className="text-sm text-chile-text-muted">
               <strong className="text-blue-400">Warum Entel?</strong> Bestes Netz für ländliche Gebiete und Chiloé. 
               Movistar ist 3€ günstiger, aber schlechterer Empfang außerhalb der Städte.
@@ -206,7 +218,7 @@ export default function SimCardGuide({ onClose }: SimCardGuideProps) {
         {/* Shops with Google Maps Links */}
         <div className="bg-white/5 backdrop-blur-sm rounded-lg p-6 shadow-lg">
           <h2 className="text-2xl font-bold text-chile-text-primary mb-4 flex items-center gap-2">
-            <MapPin className="w-6 h-6 text-red-400" />
+            📍
             Entel-Shops in Santiago
           </h2>
 
@@ -235,9 +247,9 @@ export default function SimCardGuide({ onClose }: SimCardGuideProps) {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-semibold text-sm transition-colors mb-3"
                 >
-                  <MapPin className="w-4 h-4" />
+                  <MapPinIcon className="w-4 h-4" />
                   In Google Maps öffnen
-                  <ExternalLink className="w-4 h-4" />
+                  <ExternalLinkIcon className="w-4 h-4" />
                 </a>
 
                 <div className="mt-3 pt-3 border-t border-white/10">
