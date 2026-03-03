@@ -335,25 +335,7 @@ function App() {
     return () => window.removeEventListener('popstate', handlePopState)
   }, [showSearchResults, clearSearch])
 
-  // Deep-link hook (handles URL params and browser history)
-  const { getShareUrl } = useDeepLink({
-    locations: tripData.locations,
-    selectedLocation,
-    selectedRecommendation,
-    onLocationSelect: handleLocationSelect,
-    onRecommendationSelect: handleRecommendationSelect
-  })
-
-  // Select first location by default (only if no deep-link present)
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search)
-    const hasDeepLink = params.has('loc') || params.has('rec')
-    
-    if (tripData.locations.length > 0 && !selectedLocation && !hasDeepLink) {
-      setSelectedLocation(tripData.locations[0])
-    }
-  }, [])
-
+  // Handler functions (must be defined before useDeepLink)
   const handleLocationSelect = (location: Location, fromMap: boolean = false) => {
     setSelectedLocation(location)
     setSelectedRecommendation(null)
@@ -380,6 +362,25 @@ function App() {
       }
     }, 200)
   }
+
+  // Deep-link hook (handles URL params and browser history)
+  const { getShareUrl } = useDeepLink({
+    locations: tripData.locations,
+    selectedLocation,
+    selectedRecommendation,
+    onLocationSelect: handleLocationSelect,
+    onRecommendationSelect: handleRecommendationSelect
+  })
+
+  // Select first location by default (only if no deep-link present)
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    const hasDeepLink = params.has('loc') || params.has('rec')
+    
+    if (tripData.locations.length > 0 && !selectedLocation && !hasDeepLink) {
+      setSelectedLocation(tripData.locations[0])
+    }
+  }, [])
 
   const handleAccommodationSelect = (accommodation: Accommodation) => {
     setSelectedAccommodation(accommodation)
