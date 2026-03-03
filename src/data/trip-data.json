@@ -24,6 +24,168 @@
       "description": "Chiles lebendige Hauptstadt mit Weltklasse-Gastronomie, historischen Vierteln und atemberaubender Anden-Aussicht",
       "recommendations": [
         {
+          "id": "santiago-entel-centro",
+          "name": "Entel Centro",
+          "nameEs": "Entel Centro",
+          "category": "service",
+          "coordinates": [
+            -33.4372,
+            -70.6484
+          ],
+          "description": "Hauptgeschäft von Entel im Stadtzentrum. Perfekt für SIM-Karten direkt nach Ankunft. Plan Fácil 40GB Prepaid = 8.000 CLP (~8€). Bestes Mobilfunknetz für ländliche Gebiete und Chiloé. Bringe Reisepass und Bargeld/Karte mit.",
+          "descriptionEs": "Tienda principal de Entel en el centro. Perfecto para tarjetas SIM después de llegar. Plan Fácil 40GB Prepago = 8.000 CLP (~8€). La mejor red móvil para áreas rurales y Chiloé. Trae pasaporte y efectivo/tarjeta.",
+          "address": "Huérfanos 1160, Santiago Centro",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4372,-70.6484",
+          "hours": "Mo-Fr 9:00-19:00, Sa 10:00-14:00",
+          "priceRange": "$",
+          "tags": [
+            "sim-card",
+            "mobile",
+            "essential",
+            "entel",
+            "prepaid",
+            "gringo-priority"
+          ],
+          "gringoTips": [
+            "Sage 'Quiero Plan Fácil 40GB prepago'",
+            "40GB + 600 Min für 8.000 CLP (8€)",
+            "Reisepass nötig zur Aktivierung",
+            "Besser als Movistar fürs Netz, aber 3€ teurer",
+            "15-20 Min vom Flughafen mit Uber"
+          ],
+          "source": "user-request-2026-03-02"
+        },
+        {
+          "id": "santiago-entel-costanera",
+          "name": "Entel Costanera Center",
+          "nameEs": "Entel Costanera Center",
+          "category": "service",
+          "coordinates": [
+            -33.4178,
+            -70.6063
+          ],
+          "description": "Entel-Shop in Chiles größter Mall (Costanera Center). Bequemer als Centro - klimatisiert, mehr Zeit, bessere Atmosphäre. Gleiche Preise: Plan Fácil 40GB = 8.000 CLP. Auch So geöffnet. Kombinierbar mit Mall-Besuch.",
+          "descriptionEs": "Tienda Entel en el mall más grande de Chile. Más cómodo que el centro - aire acondicionado, más tiempo. Mismos precios: Plan Fácil 40GB = 8.000 CLP. Abierto domingos. Se puede combinar con visita al mall.",
+          "address": "Av. Andrés Bello 2425, Providencia (Costanera Center)",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4178,-70.6063",
+          "hours": "Mo-So 10:00-21:00",
+          "priceRange": "$",
+          "tags": [
+            "sim-card",
+            "mobile",
+            "essential",
+            "entel",
+            "mall",
+            "sunday-open",
+            "gringo-priority"
+          ],
+          "gringoTips": [
+            "Im größten Mall Südamerikas - 300m hoher Turm",
+            "Entspannter als Centro-Shop, keine Hektik",
+            "Kombiniere mit Essen/Shopping in der Mall",
+            "Auch sonntags geöffnet (Centro ist zu)",
+            "Food Court im 4. Stock hat gute Optionen"
+          ],
+          "source": "user-request-2026-03-02"
+        },
+        {
+          "id": "santiago-movistar-centro",
+          "name": "Movistar Centro",
+          "nameEs": "Movistar Centro",
+          "category": "service",
+          "coordinates": [
+            -33.4378,
+            -70.6505
+          ],
+          "description": "Movistar-Hauptgeschäft als günstigere Alternative zu Entel. 40GB + 500 Min = 5.000 CLP (~5€), 3€ billiger als Entel. Schlechteres Netz in ländlichen Gebieten, aber OK für Städte. Backup falls Entel ausverkauft.",
+          "descriptionEs": "Tienda principal Movistar como alternativa más barata a Entel. 40GB + 500 Min = 5.000 CLP (~5€), 3€ más barato que Entel. Red peor en zonas rurales, pero OK para ciudades.",
+          "address": "Huérfanos 623, Santiago Centro",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4378,-70.6505",
+          "hours": "Mo-Fr 9:00-19:00, Sa Geschlossen",
+          "priceRange": "$",
+          "tags": [
+            "sim-card",
+            "mobile",
+            "backup",
+            "movistar",
+            "cheaper",
+            "gringo-option"
+          ],
+          "gringoTips": [
+            "3€ günstiger als Entel (5€ vs 8€)",
+            "Schlechteres Netz auf dem Land / Chiloé",
+            "Für reine Stadt-Nutzung völlig OK",
+            "Nur Mo-Fr geöffnet (Sa geschlossen)",
+            "Näher am Zentrum als Entel (Huérfanos 623)"
+          ],
+          "source": "user-request-2026-03-02"
+        },
+        {
+          "id": "santiago-lider-express-centro",
+          "name": "Lider Express Centro",
+          "nameEs": "Lider Express Centro",
+          "category": "shopping",
+          "coordinates": [
+            -33.4425,
+            -70.654
+          ],
+          "description": "Walmart-Kette von Chile, günstigste Supermarkt-Option. Perfekt für Snacks, Wasser, Basics vor Abfahrt. Preise ~30% günstiger als Tankstellen. Eigenmarke 'Líder' ist sehr günstig und OK. Akzeptiert Kreditkarten.",
+          "descriptionEs": "Cadena chilena de Walmart, la opción más económica. Perfecto para snacks, agua, básicos antes de salir. Precios ~30% más baratos que gasolineras. Marca propia 'Líder' es muy barata y OK. Acepta tarjetas.",
+          "address": "Ahumada 131, Santiago Centro",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4425,-70.6540",
+          "hours": "Mo-So 8:00-22:00",
+          "priceRange": "$",
+          "tags": [
+            "supermarket",
+            "groceries",
+            "cheap",
+            "basics",
+            "water",
+            "snacks",
+            "gringo-essential"
+          ],
+          "gringoTips": [
+            "Günstigster Supermarkt (Walmart von Chile)",
+            "Wasser: 6er Pack ~2€ (Tankstelle: ~5€)",
+            "Eigenmarke 'Líder' = billig & gut genug",
+            "Kreditkarten funktionieren problemlos",
+            "Vor Roadtrip hier statt unterwegs tanken"
+          ],
+          "source": "user-request-2026-03-02"
+        },
+        {
+          "id": "santiago-banco-chile-atm",
+          "name": "Banco de Chile ATM",
+          "nameEs": "Cajero Banco de Chile",
+          "category": "service",
+          "coordinates": [
+            -33.4372,
+            -70.65
+          ],
+          "description": "Geldautomat mit fairen Wechselkursen. Banco de Chile/BCI = beste Kurse, niedrigste Gebühren in Chile. Meide ATMs an Touristen-Hotspots (Airport, Hotels). Max 200.000 CLP (~200€) pro Abhebung. Visa/Mastercard funktionieren.",
+          "descriptionEs": "Cajero con tipos de cambio justos. Banco de Chile/BCI = mejores tasas, comisiones más bajas en Chile. Evita cajeros en zonas turísticas (aeropuerto, hoteles). Máx 200.000 CLP (~200€) por retiro. Visa/Mastercard funcionan.",
+          "address": "Paseo Huérfanos 1134, Santiago Centro",
+          "googleMapsLink": "https://maps.google.com/?q=-33.4372,-70.6500",
+          "hours": "24/7",
+          "priceRange": "$",
+          "tags": [
+            "atm",
+            "cash",
+            "exchange",
+            "banco-chile",
+            "fair-rate",
+            "gringo-tip"
+          ],
+          "gringoTips": [
+            "Banco de Chile/BCI = beste ATM-Kurse",
+            "Airport-ATMs haben schlechtere Kurse",
+            "Max 200.000 CLP pro Abhebung",
+            "Frag deine Bank nach Auslandsgebühren",
+            "Kreditkarten sind überall akzeptiert"
+          ],
+          "source": "user-request-2026-03-02"
+        },
+        {
           "id": "santiago-mercado-central",
           "name": "Central Market",
           "nameEs": "Mercado Central",
@@ -320,13 +482,16 @@
           "googleMapsLink": "https://maps.google.com/?q=-33.4500,-70.6200",
           "priceRange": "$$",
           "tags": [
-            "neighborhood",
-            "antiques",
             "vintage",
-            "cafes",
-            "trendy"
+            "antiques",
+            "design",
+            "shopping",
+            "neighborhood",
+            "trendy",
+            "cafes"
           ],
-          "source": "brave-search"
+          "source": "brave-search",
+          "sourceUrl": "https://chile.travel/en/attractions/barrio-italia-and-bellavista/"
         },
         {
           "id": "santiago-plaza-armas",
@@ -507,13 +672,17 @@
           "googleMapsLink": "https://maps.google.com/?q=-33.4333,-70.6333",
           "priceRange": "$$",
           "tags": [
-            "neighborhood",
-            "nightlife",
-            "restaurants",
+            "street-art",
             "bars",
-            "neruda"
+            "neighborhood",
+            "neruda",
+            "gastronomy",
+            "bohemian",
+            "nightlife",
+            "restaurants"
           ],
-          "source": "Rough Guide 2023"
+          "source": "Rough Guide 2023",
+          "sourceUrl": "https://chile.travel/en/attractions/barrio-italia-and-bellavista/"
         },
         {
           "id": "santiago-la-chascona",
@@ -774,7 +943,8 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/en/attractions/cerro-san-cristobal/",
-          "googleMapsLink": "https://maps.google.com/?q=-33.4254,-70.6325"
+          "googleMapsLink": "https://maps.google.com/?q=-33.4254,-70.6325",
+          "sourceUrl": "https://chile.travel/en/attractions/cerro-san-cristobal/"
         },
         {
           "id": "santiago-la-chascona-pablo-neruda-haus",
@@ -795,7 +965,8 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/en/blog/neighborhoods-of-santiago-walking-the-capitals-best-spots/",
-          "googleMapsLink": "https://maps.google.com/?q=-33.4305,-70.6335"
+          "googleMapsLink": "https://maps.google.com/?q=-33.4305,-70.6335",
+          "sourceUrl": "https://chile.travel/en/blog/neighborhoods-of-santiago-walking-the-capitals-best-spots/"
         },
         {
           "id": "santiago-centro-hist-rico-plaza-de-armas-la-moneda",
@@ -817,7 +988,8 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/en/attractions/historic-center/",
-          "googleMapsLink": "https://maps.google.com/?q=-33.4378,-70.6504"
+          "googleMapsLink": "https://maps.google.com/?q=-33.4378,-70.6504",
+          "sourceUrl": "https://chile.travel/en/attractions/historic-center/"
         },
         {
           "id": "santiago-sky-costanera",
@@ -837,7 +1009,8 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/en/blog/what-to-do-in-santiago-in-3-days/",
-          "googleMapsLink": "https://maps.google.com/?q=-33.417,-70.607"
+          "googleMapsLink": "https://maps.google.com/?q=-33.417,-70.607",
+          "sourceUrl": "https://chile.travel/en/blog/what-to-do-in-santiago-in-3-days/"
         },
         {
           "id": "santiago-parque-de-las-esculturas",
@@ -858,7 +1031,8 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/en/itineraries/2-day-itinerary-in-santiago-what-to-see-and-do/",
-          "googleMapsLink": "https://maps.google.com/?q=-33.414,-70.611"
+          "googleMapsLink": "https://maps.google.com/?q=-33.414,-70.611",
+          "sourceUrl": "https://chile.travel/en/itineraries/2-day-itinerary-in-santiago-what-to-see-and-do/"
         },
         {
           "id": "santiago-museo-a-cielo-abierto-san-miguel",
@@ -879,7 +1053,63 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/en/blog/what-to-do-in-santiago-in-3-days/",
-          "googleMapsLink": "https://maps.google.com/?q=-33.4976,-70.6525"
+          "googleMapsLink": "https://maps.google.com/?q=-33.4976,-70.6525",
+          "sourceUrl": "https://chile.travel/en/blog/what-to-do-in-santiago-in-3-days/"
+        },
+        {
+          "id": "santiago-cerro-santa-luc-a",
+          "name": "Cerro Santa Lucía",
+          "category": "culture",
+          "coordinates": [
+            -33.4404,
+            -70.6438
+          ],
+          "description": "Historischer Hügel im Zentrum, Gründungsort Santiagos 1541. Neptun-Terrasse, Castillo Hidalgo und Panoramablick auf die Stadt.",
+          "tags": [
+            "viewpoint",
+            "history",
+            "park"
+          ],
+          "source": "chile.travel",
+          "nameEs": "Cerro Santa Lucía",
+          "sourceUrl": "https://chile.travel/en/itineraries/2-day-itinerary-in-santiago-what-to-see-and-do/"
+        },
+        {
+          "id": "santiago-barrio-lastarria",
+          "name": "Barrio Lastarria",
+          "category": "culture",
+          "coordinates": [
+            -33.4395,
+            -70.642
+          ],
+          "description": "Künstlerisches und bohèmes Viertel nahe Cerro Santa Lucía. Straßenmusik, Ausstellungen, Handwerkskunst und kulinarische Vielfalt.",
+          "tags": [
+            "bohemian",
+            "art",
+            "gastronomy",
+            "culture"
+          ],
+          "source": "chile.travel",
+          "nameEs": "Barrio Lastarria",
+          "sourceUrl": "https://chile.travel/en/blog/what-to-do-in-santiago-in-3-days/"
+        },
+        {
+          "id": "santiago-mercado-central",
+          "name": "Mercado Central",
+          "category": "restaurant",
+          "coordinates": [
+            -33.4335,
+            -70.6507
+          ],
+          "description": "Berühmter Fischmarkt mit frischen Meeresfrüchte-Gerichten, Empanadas und lokaler Handwerkskunst in historischem Gebäude.",
+          "tags": [
+            "market",
+            "seafood",
+            "gastronomy"
+          ],
+          "source": "chile.travel",
+          "nameEs": "Mercado Central",
+          "sourceUrl": "https://chile.travel/en/blog/what-to-do-in-santiago-in-3-days/"
         }
       ]
     },
@@ -2013,7 +2243,8 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/atractivos/isla-negra/",
-          "googleMapsLink": "https://maps.google.com/?q=-33.4431,-71.6905"
+          "googleMapsLink": "https://maps.google.com/?q=-33.4431,-71.6905",
+          "sourceUrl": "https://chile.travel/atractivos/isla-negra/"
         }
       ]
     },
@@ -2660,7 +2891,8 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/en/itineraries/guide-for-a-perfect-day-in-the-colchagua-valley/",
-          "googleMapsLink": "https://maps.google.com/?q=-34.6267,-71.3644"
+          "googleMapsLink": "https://maps.google.com/?q=-34.6267,-71.3644",
+          "sourceUrl": "https://chile.travel/en/itineraries/guide-for-a-perfect-day-in-the-colchagua-valley/"
         },
         {
           "id": "wine-resort-vi-a-santa-cruz",
@@ -2681,7 +2913,8 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/en/blog/wine-tours-in-chile-tasting-2/",
-          "googleMapsLink": "https://maps.google.com/?q=-34.635,-71.37"
+          "googleMapsLink": "https://maps.google.com/?q=-34.635,-71.37",
+          "sourceUrl": "https://chile.travel/en/blog/wine-tours-in-chile-tasting-2/"
         }
       ]
     },
@@ -3736,7 +3969,8 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/en/attractions/nevados-de-chillan/",
-          "googleMapsLink": "https://maps.google.com/?q=-36.8633,-71.4017"
+          "googleMapsLink": "https://maps.google.com/?q=-36.8633,-71.4017",
+          "sourceUrl": "https://chile.travel/en/attractions/nevados-de-chillan/"
         },
         {
           "id": "chillan-valle-de-las-trancas",
@@ -3757,7 +3991,27 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/en/itineraries/adventure-and-relaxation-in-nevados-de-chillan/",
-          "googleMapsLink": "https://maps.google.com/?q=-36.84,-71.46"
+          "googleMapsLink": "https://maps.google.com/?q=-36.84,-71.46",
+          "sourceUrl": "https://chile.travel/en/itineraries/adventure-and-relaxation-in-nevados-de-chillan/"
+        },
+        {
+          "id": "chillan-termas-de-chill-n",
+          "name": "Termas de Chillán",
+          "category": "activity",
+          "coordinates": [
+            -36.862,
+            -71.3967
+          ],
+          "description": "Vulkanische Thermalbäder im Nevados de Chillán-Komplex. Outdoor-Pools mit therapeutischen Eigenschaften und Bergpanorama.",
+          "tags": [
+            "hot-springs",
+            "thermal",
+            "wellness",
+            "volcano"
+          ],
+          "source": "chile.travel",
+          "nameEs": "Termas de Chillán",
+          "sourceUrl": "https://chile.travel/en/attractions/chillan-hot-springs/"
         }
       ]
     },
@@ -4403,7 +4657,8 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/en/attractions/conguillio-national-park/",
-          "googleMapsLink": "https://maps.google.com/?q=-38.65,-71.6333"
+          "googleMapsLink": "https://maps.google.com/?q=-38.65,-71.6333",
+          "sourceUrl": "https://chile.travel/en/attractions/conguillio-national-park/"
         },
         {
           "id": "conguillio-reserva-nacional-malalcahuello-nalcas",
@@ -4424,7 +4679,26 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/en/destinations/andean-araucania/",
-          "googleMapsLink": "https://maps.google.com/?q=-38.43,-71.57"
+          "googleMapsLink": "https://maps.google.com/?q=-38.43,-71.57",
+          "sourceUrl": "https://chile.travel/en/destinations/andean-araucania/"
+        },
+        {
+          "id": "conguillio-corralco-skizentrum",
+          "name": "Corralco Skizentrum",
+          "category": "activity",
+          "coordinates": [
+            -38.48,
+            -71.55
+          ],
+          "description": "Skigebiet am Lonquimay-Vulkan mit Bergaktivitäten in der Araucanía-Region.",
+          "tags": [
+            "skiing",
+            "mountain",
+            "volcano"
+          ],
+          "source": "chile.travel",
+          "nameEs": "Centro de Ski Corralco",
+          "sourceUrl": "https://chile.travel/en/destinations/andean-araucania/"
         }
       ]
     },
@@ -4458,13 +4732,18 @@
           "googleMapsLink": "https://maps.google.com/?q=-39.5167,-71.8833",
           "priceRange": "$$$",
           "tags": [
-            "hotspring",
+            "relaxation",
             "design",
+            "hot-springs",
+            "forest",
+            "architecture",
             "nature",
+            "hotspring",
             "must-visit",
-            "relaxation"
+            "thermal"
           ],
-          "source": "brave-search"
+          "source": "brave-search",
+          "sourceUrl": "https://chile.travel/en/itineraries/pucon-hot-springs-two-days-of-absolute-relaxation-in-the-araucania/"
         },
         {
           "id": "pucon-ojos-del-caburgua",
@@ -5129,7 +5408,8 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/en/attractions/villarrica-national-park/",
-          "googleMapsLink": "https://maps.google.com/?q=-39.3667,-71.9333"
+          "googleMapsLink": "https://maps.google.com/?q=-39.3667,-71.9333",
+          "sourceUrl": "https://chile.travel/en/attractions/villarrica-national-park/"
         },
         {
           "id": "pucon-lago-villarrica",
@@ -5150,7 +5430,46 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/en/attractions/lake-villarrica/",
-          "googleMapsLink": "https://maps.google.com/?q=-39.2833,-72.0667"
+          "googleMapsLink": "https://maps.google.com/?q=-39.2833,-72.0667",
+          "sourceUrl": "https://chile.travel/en/attractions/lake-villarrica/"
+        },
+        {
+          "id": "pucon-parque-nacional-huerquehue",
+          "name": "Parque Nacional Huerquehue",
+          "category": "nature",
+          "coordinates": [
+            -39.1667,
+            -71.6833
+          ],
+          "description": "12.500 Hektar Berglandschaft mit uralten Araukarien. 'Los Lagos'-Trail zu den Lagunen Chico, Verde und Toro. Blick auf den Villarrica-Vulkan.",
+          "tags": [
+            "national-park",
+            "trekking",
+            "lagoons",
+            "araucaria"
+          ],
+          "source": "chile.travel",
+          "nameEs": "Parque Nacional Huerquehue",
+          "sourceUrl": "https://chile.travel/en/attractions/huerquehue-national-park/"
+        },
+        {
+          "id": "pucon-ojos-del-caburga",
+          "name": "Ojos del Caburga",
+          "category": "nature",
+          "coordinates": [
+            -39.144,
+            -71.715
+          ],
+          "description": "Türkisfarbene Wasserfälle und Naturpools des Caburga-Sees. Wanderwege durch Wälder zu beeindruckenden Kaskaden.",
+          "tags": [
+            "waterfall",
+            "turquoise",
+            "nature",
+            "swimming"
+          ],
+          "source": "chile.travel",
+          "nameEs": "Ojos del Caburgua",
+          "sourceUrl": "https://chile.travel/en/itineraries/pucon-outdoors-hiking-and-hot-springs/"
         }
       ]
     },
@@ -5816,7 +6135,8 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/en/attractions/isla-teja-and-the-riverside-market/",
-          "googleMapsLink": "https://maps.google.com/?q=-39.8142,-73.2458"
+          "googleMapsLink": "https://maps.google.com/?q=-39.8142,-73.2458",
+          "sourceUrl": "https://chile.travel/en/attractions/isla-teja-and-the-riverside-market/"
         },
         {
           "id": "valdivia-castillo-de-niebla",
@@ -5838,7 +6158,27 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/en/attractions/niebla/",
-          "googleMapsLink": "https://maps.google.com/?q=-39.8688,-73.3938"
+          "googleMapsLink": "https://maps.google.com/?q=-39.8688,-73.3938",
+          "sourceUrl": "https://chile.travel/en/attractions/niebla/"
+        },
+        {
+          "id": "valdivia-cervecer-a-kunstmann",
+          "name": "Cervecería Kunstmann",
+          "category": "restaurant",
+          "coordinates": [
+            -39.8325,
+            -73.27
+          ],
+          "description": "Berühmte Brauerei und Emblem der Valdivianischen Bier-Tradition. Brauereiführung, Bierverkostung und deutsch-inspiriertes Restaurant.",
+          "tags": [
+            "craft-beer",
+            "brewery",
+            "gastronomy",
+            "german-heritage"
+          ],
+          "source": "chile.travel",
+          "nameEs": "Cervecería Kunstmann",
+          "sourceUrl": "https://chile.travel/en/itineraries/discover-the-must-sees-of-valdivia-in-2-days/"
         }
       ]
     },
@@ -6395,7 +6735,8 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/en/itineraries/culture-center-automobile-museum-and-osorno-streets/",
-          "googleMapsLink": "https://maps.google.com/?q=-40.6833,-72.4833"
+          "googleMapsLink": "https://maps.google.com/?q=-40.6833,-72.4833",
+          "sourceUrl": "https://chile.travel/en/itineraries/culture-center-automobile-museum-and-osorno-streets/"
         },
         {
           "id": "osorno-calle-mackenna-zona-patrimonial",
@@ -6416,7 +6757,8 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/en/itineraries/culture-center-automobile-museum-and-osorno-streets/",
-          "googleMapsLink": "https://maps.google.com/?q=-40.5728,-73.13"
+          "googleMapsLink": "https://maps.google.com/?q=-40.5728,-73.13",
+          "sourceUrl": "https://chile.travel/en/itineraries/culture-center-automobile-museum-and-osorno-streets/"
         },
         {
           "id": "osorno-parque-nacional-puyehue",
@@ -6438,7 +6780,8 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/atractivos/puyehue/",
-          "googleMapsLink": "https://maps.google.com/?q=-40.6833,-72.1333"
+          "googleMapsLink": "https://maps.google.com/?q=-40.6833,-72.1333",
+          "sourceUrl": "https://chile.travel/atractivos/puyehue/"
         }
       ]
     },
@@ -6473,12 +6816,15 @@
           "priceRange": "$$",
           "tags": [
             "theater",
-            "architecture",
+            "classical",
             "culture",
+            "architecture",
+            "music",
             "lake-view",
             "must-visit"
           ],
-          "source": "brave-search"
+          "source": "brave-search",
+          "sourceUrl": "https://chile.travel/en/destinations/puerto-varas-and-frutillar/"
         },
         {
           "id": "frutillar-costanera",
@@ -6903,13 +7249,18 @@
           "address": "Puerto Octay, Los Lagos",
           "priceRange": "Kostenlos",
           "tags": [
+            "bavarian",
             "german",
+            "german-heritage",
+            "museum",
             "colonial",
             "church",
-            "bavarian",
+            "lake",
+            "heritage",
             "historic"
           ],
-          "source": "Rough Guide 2023"
+          "source": "Rough Guide 2023",
+          "sourceUrl": "https://chile.travel/de/wohin/bestimmung/frutillar/"
         },
         {
           "id": "frutillar-semanas-musicales",
@@ -6988,7 +7339,7 @@
           "category": "museum",
           "coordinates": [
             -41.31,
-            -73.0
+            -73
           ],
           "description": "Museum in Nueva Braunau mit umfangreicher Sammlung von Antiquitäten aus der deutschen Kolonialzeit. Möbel, Werkzeuge, Fotos und Gegenstände der ersten deutschen Siedler am Llanquihue-See.",
           "descriptionEs": "Museo en Nueva Braunau con extensa colección de antigüedades del período de colonización alemana. Muebles, herramientas, fotos y objetos de los primeros colonos alemanes del Lago Llanquihue.",
@@ -7049,7 +7400,8 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/atractivos/parque-nacional-vicente-perez-rosales/",
-          "googleMapsLink": "https://maps.google.com/?q=-41.0903,-72.2528"
+          "googleMapsLink": "https://maps.google.com/?q=-41.0903,-72.2528",
+          "sourceUrl": "https://chile.travel/atractivos/parque-nacional-vicente-perez-rosales/"
         },
         {
           "id": "frutillar-puerto-varas-lago-todos-los-santos-villa-peulla",
@@ -7070,7 +7422,8 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/en/attractions/lake-todos-los-santos/",
-          "googleMapsLink": "https://maps.google.com/?q=-41.0833,-72.1667"
+          "googleMapsLink": "https://maps.google.com/?q=-41.0833,-72.1667",
+          "sourceUrl": "https://chile.travel/en/attractions/lake-todos-los-santos/"
         },
         {
           "id": "frutillar-puerto-varas-pablo-fierro-museum-puerto-varas",
@@ -7090,7 +7443,8 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/en/itineraries/the-heart-of-southern-chile-adventure-on-lake-llanquihue/",
-          "googleMapsLink": "https://maps.google.com/?q=-41.3195,-72.9854"
+          "googleMapsLink": "https://maps.google.com/?q=-41.3195,-72.9854",
+          "sourceUrl": "https://chile.travel/en/itineraries/the-heart-of-southern-chile-adventure-on-lake-llanquihue/"
         },
         {
           "id": "frutillar-puerto-varas-molino-machmar-art-center-puerto-varas",
@@ -7111,7 +7465,170 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/en/itineraries/the-heart-of-southern-chile-adventure-on-lake-llanquihue/",
-          "googleMapsLink": "https://maps.google.com/?q=-41.317,-72.983"
+          "googleMapsLink": "https://maps.google.com/?q=-41.317,-72.983",
+          "sourceUrl": "https://chile.travel/en/itineraries/the-heart-of-southern-chile-adventure-on-lake-llanquihue/"
+        },
+        {
+          "id": "frutillar-puerto-varas-lago-llanquihue",
+          "name": "Lago Llanquihue",
+          "category": "nature",
+          "coordinates": [
+            -41.1,
+            -72.8
+          ],
+          "description": "Zweitgrößter See Chiles, gekrönt von Vulkanen Osorno, Calbuco und Puntiagudo. Radweg, Kajak, Segeln und Windsurfen.",
+          "tags": [
+            "lake",
+            "cycling",
+            "water-sports",
+            "volcano-view"
+          ],
+          "source": "chile.travel",
+          "nameEs": "Lago Llanquihue",
+          "sourceUrl": "https://chile.travel/atractivos/lago-llanquihue/"
+        }
+      ]
+    },
+    {
+      "id": "puerto-varas",
+      "name": "Puerto Varas",
+      "nameEs": "Puerto Varas",
+      "coordinates": [
+        -41.3275,
+        -72.9833
+      ],
+      "startDate": "2025-03-19",
+      "endDate": "2025-03-21",
+      "durationDays": 2,
+      "type": "main",
+      "description": "Klein-Deutschland am Llanquihue-See. Perfekter Stop zwischen Santiago und Chiloé. Deutsche Architektur, Vulkanblick (Osorno + Calbuco), erstklassige Restaurants. 20 km von Puerto Montt (Fährhafen nach Chiloé).",
+      "descriptionEs": "La pequeña Alemania junto al Lago Llanquihue. Parada perfecta entre Santiago y Chiloé. Arquitectura alemana, vista de volcanes (Osorno + Calbuco), excelentes restaurantes. A 20 km de Puerto Montt (puerto de ferry a Chiloé).",
+      "recommendations": [
+        {
+          "id": "puerto-varas-waterfront",
+          "name": "Puerto Varas Waterfront",
+          "nameEs": "Costanera de Puerto Varas",
+          "category": "viewpoint",
+          "coordinates": [
+            -41.3206,
+            -72.9839
+          ],
+          "description": "Uferpromenade mit Vulkan-Panorama. Der Osorno-Vulkan spiegelt sich im See - besonders schön bei Sonnenuntergang. Cafés und Restaurants direkt am Wasser.",
+          "descriptionEs": "Paseo costero con panorama volcánico. El volcán Osorno se refleja en el lago - especialmente hermoso al atardecer. Cafés y restaurantes junto al agua.",
+          "address": "Costanera, Puerto Varas",
+          "googleMapsLink": "https://maps.google.com/?q=-41.3206,-72.9839",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "waterfront",
+            "volcano-view",
+            "sunset",
+            "photography",
+            "must-see",
+            "gringo-priority"
+          ],
+          "source": "user-request-2026-03-03"
+        },
+        {
+          "id": "puerto-varas-iglesia-sagrado-corazon",
+          "name": "Sacred Heart Church",
+          "nameEs": "Iglesia del Sagrado Corazón",
+          "category": "historical",
+          "coordinates": [
+            -41.3189,
+            -72.9828
+          ],
+          "description": "Ikonische deutsche Kirche aus 1915, Wahrzeichen von Puerto Varas. Steht auf einem Hügel mit Seeblick. Innen: schöne Holzarbeiten. Foto-Hotspot!",
+          "descriptionEs": "Icónica iglesia alemana de 1915, símbolo de Puerto Varas. Ubicada en una colina con vista al lago. Interior: hermosa carpintería. ¡Punto fotográfico!",
+          "address": "San Francisco 410, Puerto Varas",
+          "googleMapsLink": "https://maps.google.com/?q=-41.3189,-72.9828",
+          "priceRange": "Kostenlos",
+          "tags": [
+            "church",
+            "german-architecture",
+            "landmark",
+            "photography",
+            "historical",
+            "must-see"
+          ],
+          "source": "user-request-2026-03-03"
+        },
+        {
+          "id": "puerto-varas-casa-valdez",
+          "name": "Casa Valdés Restaurant",
+          "nameEs": "Restaurante Casa Valdés",
+          "category": "restaurant",
+          "coordinates": [
+            -41.3167,
+            -72.985
+          ],
+          "description": "Gehobene chilenische Küche in historischem deutschen Haus. Spezialisiert auf Lammgerichte und lokalen Fisch. Reservierung empfohlen. Beste Adresse in Puerto Varas.",
+          "descriptionEs": "Cocina chilena de alta gama en casa histórica alemana. Especializada en cordero y pescado local. Reserva recomendada. Mejor dirección en Puerto Varas.",
+          "address": "Av. Vicente Pérez Rosales 1315, Puerto Varas",
+          "googleMapsLink": "https://maps.google.com/?q=-41.3167,-72.9850",
+          "priceRange": "$$$",
+          "tags": [
+            "fine-dining",
+            "lamb",
+            "fish",
+            "german-house",
+            "reservation",
+            "romantic"
+          ],
+          "source": "user-request-2026-03-03"
+        },
+        {
+          "id": "puerto-varas-mesa-tropera",
+          "name": "Mesa Tropera",
+          "nameEs": "Mesa Tropera",
+          "category": "restaurant",
+          "coordinates": [
+            -41.3192,
+            -72.9833
+          ],
+          "description": "Patagonisches Grill-Restaurant. Hervorragendes Rindfleisch, rustikale Atmosphäre, faire Preise. Keine Reservierung nötig. Einheimischen-Tipp!",
+          "descriptionEs": "Parrilla patagónica. Excelente carne de res, atmósfera rústica, precios justos. No requiere reserva. ¡Favorito de los locales!",
+          "address": "Santa Rosa 068, Puerto Varas",
+          "googleMapsLink": "https://maps.google.com/?q=-41.3192,-72.9833",
+          "priceRange": "$$",
+          "tags": [
+            "grill",
+            "beef",
+            "local-favorite",
+            "casual",
+            "no-reservation"
+          ],
+          "source": "user-request-2026-03-03"
+        },
+        {
+          "id": "puerto-varas-route-info",
+          "name": "Route Info: Puerto Varas → Chiloé",
+          "nameEs": "Info de Ruta: Puerto Varas → Chiloé",
+          "category": "info",
+          "coordinates": [
+            -41.3275,
+            -72.9833
+          ],
+          "description": "Von Puerto Varas nach Chiloé: 80 km bis Pargua (1h Fahrt) → Fähre Pargua-Chacao (30 Min, ~16€) → Chiloé erreicht! Fähren fahren alle 15-20 Min von morgens bis abends. Keine Reservierung nötig.",
+          "descriptionEs": "De Puerto Varas a Chiloé: 80 km hasta Pargua (1h de viaje) → Ferry Pargua-Chacao (30 min, ~16€) → ¡Chiloé alcanzado! Los ferries salen cada 15-20 min desde la mañana hasta la noche. No requiere reserva.",
+          "address": "Ruta 5 Sur hacia Pargua",
+          "googleMapsLink": "https://maps.google.com/?q=-41.3275,-72.9833",
+          "priceRange": "$",
+          "tags": [
+            "route",
+            "ferry",
+            "chiloe",
+            "transportation",
+            "essential",
+            "gringo-tip"
+          ],
+          "gringoTips": [
+            "Puerto Montt ist nur Durchfahrt - Puerto Varas ist hübscher!",
+            "Fähre Pargua-Chacao: Keine Vorab-Buchung nötig, alle 15-20 Min",
+            "Fährkosten ~16€ (einmalig, im Buspreis oft enthalten)",
+            "Von hier 1h bis zur Fähre, dann 30 Min Überfahrt",
+            "Deutsche Bäckerei 'The Haus' hat gutes Frühstück"
+          ],
+          "source": "user-request-2026-03-03"
         }
       ]
     },
@@ -8105,7 +8622,8 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/itinerarios/imperdibles-de-chiloe-que-ver-y-hacer-durante-tres-dias/",
-          "googleMapsLink": "https://maps.google.com/?q=-42.1389,-73.5208"
+          "googleMapsLink": "https://maps.google.com/?q=-42.1389,-73.5208",
+          "sourceUrl": "https://chile.travel/itinerarios/imperdibles-de-chiloe-que-ver-y-hacer-durante-tres-dias/"
         },
         {
           "id": "chiloe-fuerte-san-antonio-ancud",
@@ -8126,7 +8644,8 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/en/attractions/ancud-and-castro/",
-          "googleMapsLink": "https://maps.google.com/?q=-41.8661,-73.8303"
+          "googleMapsLink": "https://maps.google.com/?q=-41.8661,-73.8303",
+          "sourceUrl": "https://chile.travel/en/attractions/ancud-and-castro/"
         },
         {
           "id": "chiloe-islotes-de-pu-ihuil-pinguine",
@@ -8147,7 +8666,8 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/en/attractions/ancud-and-castro/",
-          "googleMapsLink": "https://maps.google.com/?q=-41.9219,-74.0139"
+          "googleMapsLink": "https://maps.google.com/?q=-41.9219,-74.0139",
+          "sourceUrl": "https://chile.travel/en/attractions/ancud-and-castro/"
         },
         {
           "id": "chiloe-muelle-de-las-almas-pier-of-souls",
@@ -8168,7 +8688,104 @@
           ],
           "source": "chile.travel",
           "website": "https://chile.travel/en/blog/explore-chiloe-in-3-days-visit-the-best-this-magical-chilean-island-has-to-offer-2/",
-          "googleMapsLink": "https://maps.google.com/?q=-42.6489,-74.1267"
+          "googleMapsLink": "https://maps.google.com/?q=-42.6489,-74.1267",
+          "sourceUrl": "https://chile.travel/en/blog/explore-chiloe-in-3-days-visit-the-best-this-magical-chilean-island-has-to-offer-2/"
+        },
+        {
+          "id": "chiloe-palafitos-de-castro",
+          "name": "Palafitos de Castro",
+          "category": "culture",
+          "coordinates": [
+            -42.48,
+            -73.7625
+          ],
+          "description": "Ikonische bunte Pfahlbauten über dem Meer in Castro. Einige dienen als Hostels und Restaurants. Bootstouren für beste Aussicht.",
+          "tags": [
+            "architecture",
+            "heritage",
+            "colorful",
+            "stilt-houses"
+          ],
+          "source": "chile.travel",
+          "nameEs": "Palafitos de Castro",
+          "sourceUrl": "https://chile.travel/itinerarios/imperdibles-de-chiloe-que-ver-y-hacer-durante-tres-dias/"
+        },
+        {
+          "id": "chiloe-iglesia-san-francisco-de-castro-unesco",
+          "name": "Iglesia San Francisco de Castro (UNESCO)",
+          "category": "culture",
+          "coordinates": [
+            -42.481,
+            -73.763
+          ],
+          "description": "UNESCO-Weltkulturerbe. Imposante Holzkirche von 1910 aus Alerce, Zypresse, Coigüe, Raulí und Olivillo. Wahrzeichen Castros.",
+          "tags": [
+            "UNESCO",
+            "church",
+            "heritage",
+            "wooden-architecture"
+          ],
+          "source": "chile.travel",
+          "nameEs": "Iglesia San Francisco de Castro",
+          "sourceUrl": "https://chile.travel/itinerarios/imperdibles-de-chiloe-que-ver-y-hacer-durante-tres-dias/"
+        },
+        {
+          "id": "chiloe-parque-tantauco",
+          "name": "Parque Tantauco",
+          "category": "nature",
+          "coordinates": [
+            -43.1,
+            -73.8
+          ],
+          "description": "Privates Naturschutzgebiet mit dem Sendero del Bosque Hundido. Kajak-Sonnenaufgänge und Walbeobachtung im Corcovado-Golf.",
+          "tags": [
+            "nature-reserve",
+            "trekking",
+            "kayak",
+            "whales"
+          ],
+          "source": "chile.travel",
+          "nameEs": "Parque Tantauco",
+          "sourceUrl": "https://chile.travel/itinerarios/imperdibles-de-chiloe-que-ver-y-hacer-durante-tres-dias/"
+        },
+        {
+          "id": "chiloe-parque-nacional-chilo-cucao",
+          "name": "Parque Nacional Chiloé (Cucao)",
+          "category": "nature",
+          "coordinates": [
+            -42.6167,
+            -74.1
+          ],
+          "description": "Valdivianischer Regenwald trifft Pazifikküste. El Tepual-Trail durch Sumpfwald, Cucao-Dünen, Lago Huelde und Cole-Cole Sektor.",
+          "tags": [
+            "national-park",
+            "rainforest",
+            "dunes",
+            "coast",
+            "trekking"
+          ],
+          "source": "chile.travel",
+          "nameEs": "Parque Nacional Chiloé",
+          "sourceUrl": "https://chile.travel/en/attractions/chiloe-national-park/"
+        },
+        {
+          "id": "chiloe-parque-nacional-alerce-andino",
+          "name": "Parque Nacional Alerce Andino",
+          "category": "nature",
+          "coordinates": [
+            -41.6167,
+            -72.2
+          ],
+          "description": "Biosphärenreservat nahe Puerto Montt mit über 2.500 Jahre alten Alerce-Bäumen. Correntoso- und Laguna Sargazo-Trails. Heimat des Pudú.",
+          "tags": [
+            "national-park",
+            "ancient-trees",
+            "biosphere-reserve",
+            "trekking"
+          ],
+          "source": "chile.travel",
+          "nameEs": "Parque Nacional Alerce Andino",
+          "sourceUrl": "https://chile.travel/en/attractions/alerce-andino-national-park/"
         }
       ]
     }

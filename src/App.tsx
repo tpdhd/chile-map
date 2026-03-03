@@ -22,6 +22,7 @@ const TripRoute = lazy(() => import('./components/TripRoute'))
 const NearbyFinder = lazy(() => import('./components/NearbyFinder'))
 const QuoteCarousel = lazy(() => import('./components/QuoteCarousel'))
 const SuitGuide = lazy(() => import('./components/SuitGuide'))
+const SimCardGuide = lazy(() => import('./components/SimCardGuide'))
 
 export type Location = typeof tripData.locations[0]
 export type Recommendation = typeof tripData.locations[0]['recommendations'][0]
@@ -156,6 +157,7 @@ function App() {
   const [showNearby, setShowNearby] = useState(false)
   const [showQuotes, setShowQuotes] = useState(false)
   const [showSuitGuide, setShowSuitGuide] = useState(false)
+  const [showSimCardGuide, setShowSimCardGuide] = useState(false)
   const [showAccommodationsOnMap, setShowAccommodationsOnMap] = useState(false)
   const [selectedAccommodation, setSelectedAccommodation] = useState<Accommodation | null>(null)
 
@@ -610,6 +612,12 @@ function App() {
               className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm"
             >
               <span>👔</span> Anzug-Guide
+            </button>
+            <button
+              onClick={() => { setShowSimCardGuide(true); setShowMenu(false) }}
+              className="w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm bg-gradient-to-r from-purple-500/10 to-pink-500/10 border border-purple-500/20"
+            >
+              <span>📱</span> SIM-Karten Guide
             </button>
             <button
               onClick={toggleAccommodationsOnMap}
@@ -1351,6 +1359,13 @@ function App() {
       {showSuitGuide && (
         <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">👔</div></div>}>
           <SuitGuide onClose={() => setShowSuitGuide(false)} />
+        </Suspense>
+      )}
+
+      {/* SIM CARD GUIDE */}
+      {showSimCardGuide && (
+        <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">📱</div></div>}>
+          <SimCardGuide onClose={() => setShowSimCardGuide(false)} />
         </Suspense>
       )}
 
