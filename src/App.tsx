@@ -160,24 +160,33 @@ function App() {
   const [selectedAccommodation, setSelectedAccommodation] = useState<Accommodation | null>(null)
 
   // Merge accommodation data
-  const allAccommodations = useMemo(() => {
+  const allAccommodationsWithLocation = useMemo(() => {
     const part1 = accommodationsPart1 as unknown as { accommodations: Record<string, Accommodation[]> }
     const part2 = accommodationsPart2 as unknown as { accommodations: Record<string, Accommodation[]> }
     
-    const merged: Accommodation[] = []
+    const merged: (Accommodation & { locationKey: string })[] = []
     const locations = new Set([...Object.keys(part1.accommodations), ...Object.keys(part2.accommodations)])
     
     locations.forEach(loc => {
       if (part1.accommodations[loc]) {
-        merged.push(...part1.accommodations[loc])
+        merged.push(...part1.accommodations[loc].map(a => ({ ...a, locationKey: loc })))
       }
       if (part2.accommodations[loc]) {
-        merged.push(...part2.accommodations[loc])
+        merged.push(...part2.accommodations[loc].map(a => ({ ...a, locationKey: loc })))
       }
     })
     
     return merged
   }, [])
+
+  // Flat list without locationKey for Map component compatibility
+  const allAccommodations = useMemo(() => allAccommodationsWithLocation as Accommodation[], [allAccommodationsWithLocation])
+
+  // Accommodations filtered by selected location
+  const locationAccommodations = useMemo(() => {
+    if (!selectedLocation) return []
+    return allAccommodationsWithLocation.filter(a => a.locationKey === selectedLocation.id)
+  }, [selectedLocation, allAccommodationsWithLocation])
 
   // Bottom sheet swipe gesture handling
   const sheetRef = useRef<HTMLDivElement>(null)
@@ -355,6 +364,9 @@ function App() {
   const handleLocationSelect = (location: Location, fromMap: boolean = false) => {
     setSelectedLocation(location)
     setSelectedRecommendation(null)
+    setActiveCategory(null)
+    setShowAccommodationsOnMap(false)
+    setSelectedAccommodation(null)
     setSheetExpanded(true)
     
     if (!fromMap) {
@@ -432,7 +444,7 @@ function App() {
 
   // Filter recommendations by search and category (searches through invisible tags too)
   const filteredRecommendations = selectedLocation?.recommendations.filter(rec => {
-    const matchesCategory = !activeCategory || rec.category === activeCategory
+    const matchesCategory = !activeCategory || activeCategory === '__accommodations__' || rec.category === activeCategory
     const query = searchQuery.toLowerCase()
     const matchesSearch = !searchQuery || 
       rec.name.toLowerCase().includes(query) ||
@@ -828,11 +840,15 @@ function App() {
           >
             <div className="flex-1 min-w-0">
               <h2 className="font-bold text-base truncate">
-                {showAccommodationsOnMap ? '🏠 Unterkünfte' : (selectedLocation?.name || 'Wähle einen Ort')}
+                {activeCategory === '__accommodations__' && selectedLocation 
+                  ? `🏠 ${selectedLocation.name}` 
+                  : showAccommodationsOnMap 
+                    ? '🏠 Unterkünfte' 
+                    : (selectedLocation?.name || 'Wähle einen Ort')}
               </h2>
               {showAccommodationsOnMap ? (
                 <p className="text-xs text-chile-text-muted">
-                  {selectedAccommodation ? selectedAccommodation.name : `${allAccommodations.length} Unterkünfte`}
+                  {selectedAccommodation ? selectedAccommodation.name : `${activeCategory === '__accommodations__' ? locationAccommodations.length : allAccommodations.length} Unterkünfte`}
                 </p>
               ) : selectedLocation && (
                 <p className="text-xs text-chile-text-muted">
@@ -843,8 +859,8 @@ function App() {
           </div>
         </div>
 
-        {/* Sheet Content - Accommodations Mode (same style as Recommendations) */}
-        {sheetExpanded && showAccommodationsOnMap && (
+        {/* Sheet Content - Accommodations Mode (old full list - only when not using category filter) */}
+        {sheetExpanded && showAccommodationsOnMap && activeCategory !== '__accommodations__' && (
           <div className="overflow-y-auto px-4 pb-4" style={{ maxHeight: 'calc(50vh - 70px)' }}>
             <div className="space-y-2">
               {allAccommodations.map(acc => (
@@ -974,13 +990,17 @@ function App() {
           </div>
         )}
 
-        {/* Sheet Content - Recommendations Mode */}
-        {sheetExpanded && selectedLocation && !showAccommodationsOnMap && (
+        {/* Sheet Content - Recommendations Mode (also used for accommodation category) */}
+        {sheetExpanded && selectedLocation && (!showAccommodationsOnMap || activeCategory === '__accommodations__') && (
           <div className="overflow-y-auto px-4 pb-4" style={{ maxHeight: 'calc(50vh - 70px)' }}>
             {/* Category Filter - Compact */}
             <div className="flex gap-1.5 overflow-x-auto pb-2 mb-2 scrollbar-hide">
               <button
-                onClick={() => setActiveCategory(null)}
+                onClick={() => {
+                  setActiveCategory(null)
+                  setShowAccommodationsOnMap(false)
+                  setSelectedAccommodation(null)
+                }}
                 className={`px-3 py-1.5 rounded-full text-sm whitespace-nowrap ${!activeCategory ? 'bg-chile-accent-red text-white' : 'bg-white/10'}`}
               >
                 Alle ({selectedLocation.recommendations.length})
@@ -1000,10 +1020,119 @@ function App() {
                   </button>
                 )
               })}
+              {/* Accommodations category button - only show if location has accommodations */}
+              {locationAccommodations.length > 0 && (
+                <button
+                  onClick={() => {
+                    setActiveCategory(activeCategory === '__accommodations__' ? null : '__accommodations__')
+                    if (activeCategory !== '__accommodations__') {
+                      setShowAccommodationsOnMap(true)
+                      setSelectedRecommendation(null)
+                    } else {
+                      setShowAccommodationsOnMap(false)
+                      setSelectedAccommodation(null)
+                    }
+                  }}
+                  className={`px-3 py-1.5 rounded-full text-sm whitespace-nowrap flex items-center gap-1 ${activeCategory === '__accommodations__' ? 'bg-purple-500 text-white' : 'bg-white/10'}`}
+                >
+                  <span>🏠</span>
+                  <span>Unterkünfte</span>
+                  <span className="opacity-60">({locationAccommodations.length})</span>
+                </button>
+              )}
             </div>
 
-            {/* Recommendations List - Compact */}
-            <div className="space-y-2">
+            {/* Accommodations List - when accommodation category is active */}
+            {activeCategory === '__accommodations__' && (
+              <div className="space-y-2">
+                {locationAccommodations.map(acc => (
+                  <div 
+                    key={acc.id}
+                    id={`acc-${acc.id}`}
+                    className={`
+                      p-2.5 rounded-lg transition-all cursor-pointer
+                      ${selectedAccommodation?.id === acc.id ? 'recommendation-highlighted ring-2 ring-green-500' : 'bg-white/5'}
+                    `}
+                    onClick={() => handleAccommodationSelect(acc)}
+                  >
+                    <div className="flex items-center gap-2">
+                      <span className="text-lg flex-shrink-0">🏠</span>
+                      <div className="flex-1 min-w-0">
+                        <div className="font-medium text-sm truncate">{acc.name}</div>
+                        <div className="text-xs text-chile-text-muted truncate">
+                          {acc.type === 'apartment' ? 'Apartment' :
+                           acc.type === 'hotel' ? 'Hotel' :
+                           acc.type === 'hostel' ? 'Hostel' :
+                           acc.type === 'cabana' ? 'Cabaña' : acc.type}
+                          {' • '}{acc.priceRange}
+                          {' • ⭐ '}{acc.rating}
+                        </div>
+                      </div>
+                      <a
+                        href={acc.googleMapsLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="w-7 h-7 rounded-full bg-white flex items-center justify-center flex-shrink-0"
+                        title="In Google Maps öffnen"
+                      >
+                        <svg viewBox="0 0 48 48" className="w-4 h-4">
+                          <path fill="#48b564" d="M35.76,26.36h0.01c0,0-3.77,5.53-6.94,9.64c-2.74,3.55-3.54,6.59-3.77,8.06c-0.21,1.36-0.66,3.94-1.02,3.94c-0.36,0-0.81-2.59-1.02-3.94c-0.23-1.47-1.03-4.51-3.77-8.06c-3.17-4.11-6.95-9.64-6.95-9.64S8,20.45,8,16c0-7.73,6.27-14,14-14s14,6.27,14,14C36,20.45,35.76,26.36,35.76,26.36z"/>
+                          <circle cx="22" cy="16" r="5" fill="#fff"/>
+                        </svg>
+                      </a>
+                    </div>
+
+                    {/* Expanded detail when selected */}
+                    {selectedAccommodation?.id === acc.id && (
+                      <div className="mt-2 pt-2 border-t border-white/10 space-y-2 text-xs">
+                        <p className="text-chile-text-secondary">{acc.description}</p>
+                        <div className="flex items-center gap-3">
+                          <span className="text-amber-400 font-bold">{acc.priceEstimate}</span>
+                          <span className="text-chile-text-muted">⭐ {acc.rating} ({acc.ratingSource})</span>
+                        </div>
+                        {acc.amenities.length > 0 && (
+                          <div className="flex flex-wrap gap-1">
+                            {acc.amenities.slice(0, 6).map(amenity => (
+                              <span key={amenity} className="px-2 py-0.5 bg-white/5 text-[10px] text-chile-text-muted rounded-full">
+                                {amenity}
+                              </span>
+                            ))}
+                            {acc.amenities.length > 6 && (
+                              <span className="px-2 py-0.5 bg-white/5 text-[10px] text-chile-text-muted rounded-full">
+                                +{acc.amenities.length - 6}
+                              </span>
+                            )}
+                          </div>
+                        )}
+                        <div className="flex flex-wrap gap-2 pt-1">
+                          <a href={acc.googleMapsLink} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}
+                            className="flex-1 py-1.5 rounded text-xs bg-red-500/20 text-red-400 text-center font-medium">🗺️ Maps</a>
+                          {acc.bookingLink && (
+                            <a href={acc.bookingLink} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}
+                              className="flex-1 py-1.5 rounded text-xs bg-blue-500/20 text-blue-400 text-center font-medium">🏨 Booking</a>
+                          )}
+                          {acc.airbnbLink && (
+                            <a href={acc.airbnbLink} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}
+                              className="flex-1 py-1.5 rounded text-xs bg-pink-500/20 text-pink-400 text-center font-medium">🏠 Airbnb</a>
+                          )}
+                          {acc.phone && (
+                            <a href={`https://wa.me/${acc.phone.replace(/[^0-9]/g, '')}`} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}
+                              className="flex-1 py-1.5 rounded text-xs bg-green-500/20 text-green-400 text-center font-medium">💬 WhatsApp</a>
+                          )}
+                        </div>
+                        {acc.sourceNote && (
+                          <div className="text-[10px] text-chile-text-muted italic">💡 {acc.sourceNote}</div>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {/* Recommendations List - Compact (hide when accommodations active) */}
+            {activeCategory !== '__accommodations__' && <div className="space-y-2">
               {filteredRecommendations.map(rec => (
                 <div 
                   key={rec.id}
@@ -1162,9 +1291,9 @@ function App() {
                   )}
                 </div>
               ))}
-            </div>
+            </div>}
 
-            {filteredRecommendations.length === 0 && (
+            {activeCategory !== '__accommodations__' && filteredRecommendations.length === 0 && (
               <div className="text-center py-8 text-chile-text-muted">
                 Keine Ergebnisse gefunden
               </div>
