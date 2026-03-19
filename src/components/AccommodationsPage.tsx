@@ -4,6 +4,7 @@ import accommodationsPart2 from '../data/accommodations-part2.json'
 
 interface AccommodationsPageProps {
   onClose: () => void
+  onSelectAccommodation?: (accommodation: Accommodation & { locationKey: string }) => void
 }
 
 interface Accommodation {
@@ -94,7 +95,7 @@ const TYPE_NAMES: Record<string, string> = {
 
 const FAVORITES_KEY = 'chile-accommodations-favorites'
 
-export default function AccommodationsPage({ onClose }: AccommodationsPageProps) {
+export default function AccommodationsPage({ onClose, onSelectAccommodation }: AccommodationsPageProps) {
   // Merge both JSON files
   const allAccommodations = useMemo(() => {
     const part1 = accommodationsPart1 as unknown as AccommodationsData
@@ -605,6 +606,19 @@ export default function AccommodationsPage({ onClose }: AccommodationsPageProps)
                       )}
                     </div>
                   </div>
+                )}
+
+                {/* Show on Map Button */}
+                {onSelectAccommodation && (
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation()
+                      onSelectAccommodation(acc)
+                    }}
+                    className="w-full mb-2 px-3 py-2.5 rounded-lg bg-chile-accent-teal/20 text-chile-accent-teal border border-chile-accent-teal/30 text-sm font-bold text-center hover:bg-chile-accent-teal/30 transition-colors"
+                  >
+                    📍 Auf Karte zeigen
+                  </button>
                 )}
 
                 {/* Links */}

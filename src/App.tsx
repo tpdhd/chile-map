@@ -385,6 +385,18 @@ function App() {
     setSheetExpanded(true)
   }
 
+  const handleAccommodationFromPage = (accommodation: Accommodation & { locationKey: string }) => {
+    // Close the accommodations page
+    setShowAccommodations(false)
+    // Enable accommodations on map
+    setShowAccommodationsOnMap(true)
+    // Select the accommodation (triggers fly-to via MapController)
+    setSelectedAccommodation(accommodation)
+    setSelectedRecommendation(null)
+    setActiveCategory(null)
+    setSheetExpanded(true)
+  }
+
   const toggleAccommodationsOnMap = () => {
     setShowAccommodationsOnMap(prev => !prev)
     if (!showAccommodationsOnMap) {
@@ -1296,7 +1308,7 @@ function App() {
       {/* ACCOMMODATIONS PAGE */}
       {showAccommodations && (
         <Suspense fallback={<div className="absolute inset-0 z-[700] bg-chile-bg-primary flex items-center justify-center"><div className="animate-spin text-3xl">🏠</div></div>}>
-          <AccommodationsPage onClose={() => setShowAccommodations(false)} />
+          <AccommodationsPage onClose={() => setShowAccommodations(false)} onSelectAccommodation={handleAccommodationFromPage} />
         </Suspense>
       )}
 
