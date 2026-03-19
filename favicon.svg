@@ -1,0 +1,19 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#0f0f14"/>
+  
+  <!-- Chile flag inspired design -->
+  <rect x="40" y="120" width="432" height="136" fill="#ffffff"/>
+  <rect x="40" y="256" width="432" height="136" fill="#d52b1e"/>
+  <rect x="40" y="120" width="136" height="272" fill="#0039a6"/>
+  
+  <!-- Star -->
+  <polygon 
+    points="108,256 128,212 148,256 100,228 156,228" 
+    fill="#ffffff"
+    transform="scale(1.2) translate(-13, -51)"
+  />
+  
+  <!-- TRIP text -->
+  <text x="256" y="460" font-size="72" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-weight="800" letter-spacing="8">TRIP</text>
+</svg>
