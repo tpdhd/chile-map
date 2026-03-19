@@ -45,6 +45,7 @@ export interface Accommodation {
   imageUrl: string
   source: string
   sourceNote: string
+  locationKey?: string
 }
 
 const FAVORITES_KEY = 'chile-trip-favorites'
@@ -160,11 +161,11 @@ function App() {
   const [selectedAccommodation, setSelectedAccommodation] = useState<Accommodation | null>(null)
 
   // Merge accommodation data
-  const allAccommodationsWithLocation = useMemo(() => {
+  const allAccommodations = useMemo(() => {
     const part1 = accommodationsPart1 as unknown as { accommodations: Record<string, Accommodation[]> }
     const part2 = accommodationsPart2 as unknown as { accommodations: Record<string, Accommodation[]> }
     
-    const merged: (Accommodation & { locationKey: string })[] = []
+    const merged: Accommodation[] = []
     const locations = new Set([...Object.keys(part1.accommodations), ...Object.keys(part2.accommodations)])
     
     locations.forEach(loc => {
@@ -179,14 +180,11 @@ function App() {
     return merged
   }, [])
 
-  // Flat list without locationKey for Map component compatibility
-  const allAccommodations = useMemo(() => allAccommodationsWithLocation as Accommodation[], [allAccommodationsWithLocation])
-
   // Accommodations filtered by selected location
   const locationAccommodations = useMemo(() => {
     if (!selectedLocation) return []
-    return allAccommodationsWithLocation.filter(a => a.locationKey === selectedLocation.id)
-  }, [selectedLocation, allAccommodationsWithLocation])
+    return allAccommodations.filter(a => a.locationKey === selectedLocation.id)
+  }, [selectedLocation, allAccommodations])
 
   // Bottom sheet swipe gesture handling
   const sheetRef = useRef<HTMLDivElement>(null)
