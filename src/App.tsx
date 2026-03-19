@@ -408,14 +408,17 @@ function App() {
   }
 
   const toggleAccommodationsOnMap = () => {
-    setShowAccommodationsOnMap(prev => !prev)
-    if (!showAccommodationsOnMap) {
-      // When enabling accommodations layer: hide recommendations
-      setSelectedRecommendation(null)
+    if (activeCategory === '__accommodations__') {
+      // Turn off accommodations
       setActiveCategory(null)
-    } else {
-      // When disabling: clear selected accommodation
+      setShowAccommodationsOnMap(false)
       setSelectedAccommodation(null)
+    } else {
+      // Turn on accommodations (filtered by location if one is selected)
+      setActiveCategory('__accommodations__')
+      setShowAccommodationsOnMap(true)
+      setSelectedRecommendation(null)
+      setSheetExpanded(true)
     }
     setShowMenu(false)
   }
@@ -475,7 +478,7 @@ function App() {
             onLocationSelect={(loc) => handleLocationSelect(loc, true)}
             onRecommendationSelect={handleRecommendationSelect}
             activeCategory={activeCategory}
-            accommodations={allAccommodations}
+            accommodations={selectedLocation ? locationAccommodations : allAccommodations}
             showAccommodationsOnMap={showAccommodationsOnMap}
             selectedAccommodation={selectedAccommodation}
             onAccommodationSelect={handleAccommodationSelect}
@@ -636,10 +639,10 @@ function App() {
             <button
               onClick={toggleAccommodationsOnMap}
               className={`w-full px-4 py-2.5 text-left hover:bg-white/5 flex items-center gap-3 text-sm ${
-                showAccommodationsOnMap ? 'bg-green-500/20 text-green-400' : ''
+                activeCategory === '__accommodations__' ? 'bg-green-500/20 text-green-400' : ''
               }`}
             >
-              <span>🏠</span> Unterkünfte {showAccommodationsOnMap && '✓'}
+              <span>🏠</span> Unterkünfte {activeCategory === '__accommodations__' && '✓'}
             </button>
 
             {/* Section: Wissen */}
